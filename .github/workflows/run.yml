@@ -14,6 +14,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
+
       - name: Set up python
         id: setup-python
         uses: actions/setup-python@v4
@@ -38,3 +39,15 @@ jobs:
       - name: Install dependencies
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-root
+
+      - name: Generate token
+        id: generate_token
+        uses: pypi-data/github-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+        run: |
+          poetry run pypi-data print-index-urls > index-urls.json
