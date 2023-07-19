@@ -53,4 +53,21 @@ jobs:
       - env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: |
-          poetry run pypi-data print-index-urls > index-urls.json
+          poetry run pypi-data print-index-urls > index-urls.txt
+
+      - name: Download
+        run: |
+          mkdir data/
+          wget -i index-urls.txt -P data/
+
+      - name: Compact
+        run: |
+          poetry run pypi-data compact-indexes data/ compact/
+
+      - name: Publish
+        uses: softprops/action-gh-release@v1
+        with:
+          draft: false
+          name: "Latest Data"
+          tag_name: "latest"
+          files: 'compact/*'

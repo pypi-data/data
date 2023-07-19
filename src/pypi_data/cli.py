@@ -19,10 +19,11 @@ def print_index_urls(github_token: Annotated[str, typer.Argument(envvar="GITHUB_
     g.per_page = 100
     for repo in g.get_organization("pypi-data").get_repos():
         if repo.name.startswith('pypi-mirror-'):
-            print(json.dumps({
-                "url": f'{repo.html_url}/releases/download/latest/dataset.parquet',
-                "repo": repo.name,
-            }))
+            print(f'{repo.html_url}/releases/download/latest/dataset.parquet')
+            # print(json.dumps({
+            #     "url": f'{repo.html_url}/releases/download/latest/dataset.parquet',
+            #     "repo": repo.name,
+            # }))
 
 
 def group_by_size(directory: Path, target_size: int) -> Iterable[list[Path]]:
