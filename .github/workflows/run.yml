@@ -58,7 +58,7 @@ jobs:
       - name: Download
         run: |
           mkdir data/
-          wget -i index-urls.txt -P data/
+          wget --no-verbose -i index-urls.txt -P data/
 
       - name: Compact
         run: |
