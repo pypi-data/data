@@ -139,7 +139,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const response = await github.repos.listReleaseAssets({
+            const response = await github.rest.repos.listReleaseAssets({
               owner: context.repo.owner,
               repo: context.repo.repo,
               release_id: ${{ needs.generate-matrix.outputs.release_id }},
