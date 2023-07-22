@@ -156,3 +156,4 @@ jobs:
           message: "Add download links"
           push: true
           fetch: true
+          pull: '--rebase --autostash'
