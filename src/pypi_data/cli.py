@@ -9,7 +9,6 @@ from github import Auth
 import requests
 from concurrent.futures import ThreadPoolExecutor
 
-
 app = typer.Typer()
 session = requests.Session()
 MB = 1024 * 1024
@@ -62,14 +61,17 @@ def group_index_urls(github_token: GithubToken,
                      target_size: int = GB * 1.3):
     g = github_client(github_token)
     outputs = []
+    group_dir = output_path / "groups"
+    group_dir.mkdir()
+
     for idx, paths in enumerate(group_by_size(g, target_size=target_size)):
         name = str(idx)
         outputs.append(name)
-        (output_path / name).write_text(
-            json.dumps(paths, indent=2)
-        )
+        (group_dir / name).write_text(json.dumps(paths))
         # print(f"Group {idx} contains {len(paths)} paths", file=sys.stderr)
-    print(json.dumps(outputs))
+    (output_path / "groups.json").write_text(json.dumps(outputs))
+
+
 #
 #
 # def _download_file(url: str, to: Path):

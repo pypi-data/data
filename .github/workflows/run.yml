@@ -55,16 +55,13 @@ jobs:
         id: groups
         run: |
           mkdir output/
-          poetry run pypi-data group-index-urls output/ > index.txt
-          echo created groups
-          cat groups.txt
-          ls output/
-          
+          poetry run pypi-data group-index-urls output/
+          echo "matrix=$(cat output/groups.json)" >> "$GITHUB_OUTPUT"
 
       - uses: actions/upload-artifact@v3
         with:
-          name: splits
-          path: output/
+          name: groups
+          path: output/groups/
           retention-days: 1
 
 #      - name: Publish
