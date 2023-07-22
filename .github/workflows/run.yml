@@ -90,6 +90,9 @@ jobs:
       matrix:
         index: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
     steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
       - uses: actions/download-artifact@v3
         with:
           name: groups
