@@ -11,7 +11,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
-polars = {extras = ["pyarrow"], version = "^0.18.7"}
+polars = {extras = ["pyarrow", "fsspec"], version = "^0.18.7"}
 requests = "^2.31.0"
 typer = {extras = ["all"], version = "^0.9.0"}
 pygithub = "^1.59.0"
@@ -19,6 +19,9 @@ tqdm = "^4.65.0"
 
 [tool.poetry.scripts]
 pypi-data = "pypi_data.cli:app"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
 
 [build-system]
 requires = ["poetry-core"]

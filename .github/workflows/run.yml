@@ -62,7 +62,9 @@ jobs:
 
       - name: Compact
         run: |
-          poetry run pypi-data compact-indexes data/ compact/
+          poetry run pypi-data compact-indexes
+        env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
 
       - name: Publish
         uses: softprops/action-gh-release@v1
