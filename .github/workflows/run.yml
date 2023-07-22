@@ -54,8 +54,18 @@ jobs:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         id: groups
         run: |
-          GROUPS=$(poetry run pypi-data group-index-urls)
+          mkdir output/
+          GROUPS=$(poetry run pypi-data group-index-urls output/)
           echo "matrix=${GROUPS}" >> $GITHUB_OUTPUT
+
+#      - name: Publish
+#        uses: softprops/action-gh-release@v1
+#        with:
+#          draft: false
+#          name: "Latest Data"
+#          tag_name: "latest"
+#          files: 'compact/*'
+
 
     outputs:
       matrix: ${{ steps.groups.outputs.matrix }}
