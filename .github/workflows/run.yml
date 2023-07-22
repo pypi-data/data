@@ -9,7 +9,7 @@ concurrency: data
 
 name: Build data
 jobs:
-  build:
+  generate-matrix:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -50,26 +50,41 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
-#      - env:
-#          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-#        run: |
-#          poetry run pypi-data print-index-urls > index-urls.txt
-
-#      - name: Download
-#        run: |
-#          mkdir data/
-#          wget --no-verbose -i index-urls.txt -P data/
-
-      - name: Compact
-        run: |
-          poetry run pypi-data compact-indexes
-        env:
+      - env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+        id: groups
+        run: |
+          GROUPS=$(poetry run pypi-data group-index-urls)
+          echo "matrix=${GROUPS}" >> $GITHUB_OUTPUT
 
-      - name: Publish
-        uses: softprops/action-gh-release@v1
-        with:
-          draft: false
-          name: "Latest Data"
-          tag_name: "latest"
-          files: 'compact/*'
+    outputs:
+      matrix: ${{ steps.groups.outputs.matrix }}
+
+  combine:
+    needs: [generate-matrix]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        index: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
+    steps:
+      - run: echo ${{ matrix.index }}
+
+
+##      - name: Download
+##        run: |
+##          mkdir data/
+##          wget --no-verbose -i index-urls.txt -P data/
+#
+#      - name: Compact
+#        run: |
+#          poetry run pypi-data compact-indexes
+#        env:
+#          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+#
+##      - name: Publish
+##        uses: softprops/action-gh-release@v1
+##        with:
+##          draft: false
+##          name: "Latest Data"
+##          tag_name: "latest"
+##          files: 'compact/*'

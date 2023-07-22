@@ -1,3 +1,5 @@
+import json
+import sys
 import tempfile
 from pathlib import Path
 from typing import Annotated, Iterable
@@ -17,7 +19,7 @@ session = requests.Session()
 MB = 1024 * 1024
 GB = MB * 1024
 
-GithubToken = Annotated[str, typer.Argument(envvar="GITHUB_TOKEN")]
+GithubToken = Annotated[str, typer.Option(envvar="GITHUB_TOKEN")]
 
 
 def _get_index_urls(github: Github) -> Iterable[tuple[str]]:
@@ -58,6 +60,22 @@ def group_by_size(github: Github, target_size: int) -> Iterable[list[str]]:
         yield names
 
 
+@app.command()
+def group_index_urls(github_token: GithubToken,
+                     output_path: Annotated[Path, typer.Argument(dir_okay=True, file_okay=False)],
+                     target_size: int = GB * 1.3):
+    g = github_client(github_token)
+    outputs = []
+    for idx, paths in enumerate(group_by_size(g, target_size=target_size)):
+        name = str(idx)
+        outputs.append(name)
+        (output_path / name).write_text(
+            json.dumps(paths, indent=2)
+        )
+        print(f"Group {idx} contains {len(paths)} paths", file=sys.stderr)
+    print(json.dumps(outputs))
+
+
 def _download_file(url: str, to: Path):
     with requests.get(url, stream=True) as r:
         with to.open("wb") as f:
@@ -65,9 +83,7 @@ def _download_file(url: str, to: Path):
 
 
 @app.command()
-def compact_indexes(
-    github_token: GithubToken,
-):
+def compact_indexes(github_token: GithubToken):
     g = github_client(github_token)
     repo = g.get_repo("pypi-data/data")
     new_release = repo.create_git_release(
