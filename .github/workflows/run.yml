@@ -64,13 +64,18 @@ jobs:
           path: output/groups/
           retention-days: 1
 
+      - name: "Set current date as env variable"
+        run: |
+          echo "tag_name=$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_OUTPUT
+        id: version
+
       - name: Create Release
         id: create-release
         uses: shogo82148/actions-create-release@v1
         with:
           draft: true
-          release_name: latest
-          tag_name: latest
+          release_name: ${{ steps.version.outputs.tag_name }}
+          tag_name: ${{ steps.version.outputs.tag_name }}
           commitish: ${{ github.sha }}
 
     outputs:
