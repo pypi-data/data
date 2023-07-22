@@ -58,7 +58,7 @@ jobs:
           GROUPS=$(poetry run pypi-data group-index-urls output/)
           echo created groups ${GROUPS}
           ls output/
-          echo "matrix=${GROUPS}" >> "$GITHUB_OUTPUT"
+          
 
       - uses: actions/upload-artifact@v3
         with:
