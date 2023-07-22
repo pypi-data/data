@@ -76,6 +76,7 @@ jobs:
     outputs:
       matrix: ${{ steps.groups.outputs.matrix }}
       upload_url: ${{ steps.create-release.outputs.upload_url }}
+      release_id: ${{ steps.create-release.outputs.id }}
 
   combine:
     needs: [generate-matrix]
@@ -94,25 +95,14 @@ jobs:
         with:
           upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
           asset_path: ${{ matrix.index }}
-#
-#  makepublic:
-#    needs:
 
-##      - name: Download
-##        run: |
-##          mkdir data/
-##          wget --no-verbose -i index-urls.txt -P data/
-#
-#      - name: Compact
-#        run: |
-#          poetry run pypi-data compact-indexes
-#        env:
-#          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-#
-##      - name: Publish
-##        uses: softprops/action-gh-release@v1
-##        with:
-##          draft: false
-##          name: "Latest Data"
-##          tag_name: "latest"
-##          files: 'compact/*'
+  makepublic:
+    needs: [generate-matrix, combine]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish release
+        uses: StuYarrow/publish-release@v1.1.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          id: ${{ needs.generate-matrix.outputs.release_id }}
