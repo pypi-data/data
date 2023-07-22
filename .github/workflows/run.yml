@@ -69,7 +69,7 @@ jobs:
           draft: true
           name: latest
           tag: latest
-          commit: ${{ github.sha }
+          commit: ${{ github.sha }}
 
 #      - name: Publish
 #        uses: softprops/action-gh-release@v1
@@ -100,7 +100,7 @@ jobs:
           allowUpdates: true
           name: latest
           tag: latest
-          commit: ${{ github.sha }
+          commit: ${{ github.sha }}
           omitNameDuringUpdate: true
           omitDraftDuringUpdate: true
           omitBodyDuringUpdate: true
