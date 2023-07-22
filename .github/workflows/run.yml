@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-concurrency: data
+#concurrency: data
 
 name: Build data
 jobs:
