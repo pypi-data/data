@@ -107,7 +107,7 @@ jobs:
       - name: Download
         run: |
           mkdir input/
-          cat ${{ matrix.index }} | jq -rc '.[]' | parallel wget -nv -O input/{#}.parquet {}
+          cat ${{ matrix.index }} | jq -rc '.[]' | head -n 2 | parallel wget -nv -O input/{#}.parquet {}
 
       - name: Combine
         run: ${{ github.workspace }}/duckdb -batch foo.db < ${{ github.workspace }}/sql/combine.sql
