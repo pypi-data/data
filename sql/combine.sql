@@ -1,4 +1,4 @@
-PRAGMA memory_limit='7GB';
+PRAGMA memory_limit='5GB';
 COPY
 (
     select *
