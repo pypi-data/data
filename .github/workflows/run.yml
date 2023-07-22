@@ -64,24 +64,18 @@ jobs:
           path: output/groups/
           retention-days: 1
 
-      - uses: ncipollo/release-action@v1
+      - name: Create Release
+        id: create-release
+        uses: shogo82148/actions-create-release@v1
         with:
           draft: true
-          name: latest
-          tag: latest
-          commit: ${{ github.sha }}
-
-#      - name: Publish
-#        uses: softprops/action-gh-release@v1
-#        with:
-#          draft: false
-#          name: "Latest Data"
-#          tag_name: "latest"
-#          files: 'compact/*'
-
+          release_name: latest
+          tag_name: latest
+          commitish: ${{ github.sha }}
 
     outputs:
       matrix: ${{ steps.groups.outputs.matrix }}
+      upload_url: ${{ steps.create-release.outputs.upload_url }}
 
   combine:
     needs: [generate-matrix]
@@ -94,18 +88,15 @@ jobs:
         with:
           name: groups
       - run: echo ${{ matrix.index }}
-      - run: ls -R
-      - uses: ncipollo/release-action@v1
-        with:
-          allowUpdates: true
-          name: latest
-          tag: latest
-          commit: ${{ github.sha }}
-          omitNameDuringUpdate: true
-          omitDraftDuringUpdate: true
-          omitBodyDuringUpdate: true
-          artifacts: ${{ matrix.index }}
 
+      - name: Upload Assets
+        uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
+          asset_path: ${{ matrix.index }}
+#
+#  makepublic:
+#    needs:
 
 ##      - name: Download
 ##        run: |
