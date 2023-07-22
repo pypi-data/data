@@ -64,6 +64,11 @@ jobs:
           path: output/groups/
           retention-days: 1
 
+      - uses: ncipollo/release-action@v1
+        with:
+          draft: true
+          name: latest
+
 #      - name: Publish
 #        uses: softprops/action-gh-release@v1
 #        with:
