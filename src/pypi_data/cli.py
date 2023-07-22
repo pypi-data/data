@@ -72,7 +72,7 @@ def group_index_urls(github_token: GithubToken,
         (output_path / name).write_text(
             json.dumps(paths, indent=2)
         )
-        print(f"Group {idx} contains {len(paths)} paths", file=sys.stderr)
+        # print(f"Group {idx} contains {len(paths)} paths", file=sys.stderr)
     print(json.dumps(outputs))
 
 
