@@ -88,13 +88,23 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: groups
-      - run: cat ${{ matrix.index }}
+
+      - uses: opt-nc/setup-duckdb-action@v1.0.0
+
+      - name: Download
+        run: |
+          mkdir input/
+          cat ${{ matrix.index }} | jq -rc '.[]' | parallel wget -nv -O input/{#}.parquet {}
+
+      - name: Combine
+        run: duckdb < ${{ github.workspace }}/sql/combine.sql
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
         with:
           upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
-          asset_path: ${{ matrix.index }}
+          asset_path: output.parquet
+          asset_name: ${{ matrix.index }}.parquet
 
   makepublic:
     needs: [generate-matrix, combine]
