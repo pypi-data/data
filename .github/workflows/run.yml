@@ -129,3 +129,25 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           id: ${{ needs.generate-matrix.outputs.release_id }}
+      - name: Get download links
+        id: get_download_links
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const response = await github.repos.listReleaseAssets({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: ${{ needs.generate-matrix.outputs.release_id }},
+            });
+            const assets = response.data;
+            // Save the download links to a file
+            require('fs').writeFileSync('download_links.txt', assets.map(asset => asset.browser_download_url).join('\n'));
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: 'download_links.txt'
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          author_name: "commit-bot"
+          message: "Add download links"
+          push: true
+          fetch: false
