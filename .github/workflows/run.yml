@@ -55,7 +55,7 @@ jobs:
         id: groups
         run: |
           mkdir output/
-          poetry run pypi-data group-index-urls output/
+          poetry run pypi-data group-index-urls output/ > index.txt
           echo created groups
           cat groups.txt
           ls output/
