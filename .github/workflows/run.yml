@@ -110,7 +110,7 @@ jobs:
           cat ${{ matrix.index }} | jq -rc '.[]' | parallel wget -nv -O input/{#}.parquet {}
 
       - name: Combine
-        run: ${{ github.workspace }}/duckdb foo.db < ${{ github.workspace }}/sql/combine.sql
+        run: ${{ github.workspace }}/duckdb -batch foo.db < ${{ github.workspace }}/sql/combine.sql
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
