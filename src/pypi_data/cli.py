@@ -52,7 +52,8 @@ def group_by_size(github: Github, target_size: int) -> Iterable[list[str]]:
                 yield names
                 names.clear()
                 total_size = 0
-        yield names
+        if names:
+            yield names
 
 
 @app.command()
