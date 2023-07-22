@@ -58,7 +58,7 @@ def group_by_size(github: Github, target_size: int) -> Iterable[list[str]]:
 @app.command()
 def group_index_urls(github_token: GithubToken,
                      output_path: Annotated[Path, typer.Argument(dir_okay=True, file_okay=False)],
-                     target_size: int = GB * 1.7):
+                     target_size: int = 2 * GB):
     g = github_client(github_token)
     outputs = []
     group_dir = output_path / "groups"
