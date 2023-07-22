@@ -50,15 +50,15 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
-      - env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: |
-          poetry run pypi-data print-index-urls > index-urls.txt
+#      - env:
+#          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+#        run: |
+#          poetry run pypi-data print-index-urls > index-urls.txt
 
-      - name: Download
-        run: |
-          mkdir data/
-          wget --no-verbose -i index-urls.txt -P data/
+#      - name: Download
+#        run: |
+#          mkdir data/
+#          wget --no-verbose -i index-urls.txt -P data/
 
       - name: Compact
         run: |
