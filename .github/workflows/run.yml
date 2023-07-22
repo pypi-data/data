@@ -155,4 +155,4 @@ jobs:
           author_name: "commit-bot"
           message: "Add download links"
           push: true
-          fetch: false
+          fetch: true
