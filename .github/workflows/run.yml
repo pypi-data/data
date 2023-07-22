@@ -83,7 +83,11 @@ jobs:
       matrix:
         index: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
     steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: groups
       - run: echo ${{ matrix.index }}
+      - run: ls -R
 
 
 ##      - name: Download
