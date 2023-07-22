@@ -135,7 +135,7 @@ jobs:
 
       - name: Get download links
         id: get_download_links
-        uses: actions/github-script@v4
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
