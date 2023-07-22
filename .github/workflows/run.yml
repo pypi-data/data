@@ -153,7 +153,7 @@ jobs:
           add: 'download_links.txt'
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           author_name: "commit-bot"
-          message: "Add download links"
+          message: "Add download links for asset ${{ needs.generate-matrix.outputs.release_id }}"
           push: true
           fetch: true
           pull: '--rebase --autostash'
