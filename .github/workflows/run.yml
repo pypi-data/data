@@ -87,6 +87,7 @@ jobs:
     needs: [generate-matrix]
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         index: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
     steps:
