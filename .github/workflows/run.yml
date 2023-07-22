@@ -68,6 +68,8 @@ jobs:
         with:
           draft: true
           name: latest
+          tag: latest
+          commit: main
 
 #      - name: Publish
 #        uses: softprops/action-gh-release@v1
@@ -93,6 +95,14 @@ jobs:
           name: groups
       - run: echo ${{ matrix.index }}
       - run: ls -R
+      - uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          name: latest
+          omitNameDuringUpdate: true
+          omitDraftDuringUpdate: true
+          omitBodyDuringUpdate: true
+          artifacts: ${{ matrix.index }}
 
 
 ##      - name: Download
