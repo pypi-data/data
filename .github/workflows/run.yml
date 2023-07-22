@@ -123,12 +123,16 @@ jobs:
     needs: [generate-matrix, combine]
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
       - name: Publish release
         uses: StuYarrow/publish-release@v1.1.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           id: ${{ needs.generate-matrix.outputs.release_id }}
+
       - name: Get download links
         id: get_download_links
         uses: actions/github-script@v4
@@ -143,6 +147,7 @@ jobs:
             const assets = response.data;
             // Save the download links to a file
             require('fs').writeFileSync('download_links.txt', assets.map(asset => asset.browser_download_url).join('\n'));
+
       - uses: EndBug/add-and-commit@v9
         with:
           add: 'download_links.txt'
