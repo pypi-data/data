@@ -16,6 +16,9 @@ requests = "^2.31.0"
 typer = { extras = ["all"], version = "^0.9.0" }
 pygithub = "^1.59.0"
 fsspec = "^2023.6.0"
+duckdb = "^0.8.1"
+tqdm = "^4.65.0"
+more-itertools = "^9.1.0"
 
 [tool.poetry.scripts]
 pypi-data = "pypi_data.cli:app"
