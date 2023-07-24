@@ -1,0 +1,9 @@
+[
+	{"skip_reason":"binary","total":78238065,"size":42327494317167},
+	{"skip_reason":"empty","total":28885304,"size":0},
+	{"skip_reason":"ignored","total":8376442,"size":83319943863},
+	{"skip_reason":"too-large","total":5965881,"size":7502129645439},
+	{"skip_reason":"text-long-lines","total":1303917,"size":142804100203},
+	{"skip_reason":"pyarmor","total":124622,"size":4549142536},
+	{"skip_reason":"git-lfs","total":12478,"size":1620723}
+]
