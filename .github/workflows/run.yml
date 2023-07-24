@@ -193,7 +193,7 @@ jobs:
 
       - uses: EndBug/add-and-commit@v9
         with:
-          add: 'download_links.txt'
+          add: 'only_python_download_links.txt'
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           author_name: "commit-bot"
           message: "Add only python links for asset ${{ needs.generate-matrix.outputs.release_id }}"
