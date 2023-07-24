@@ -117,7 +117,7 @@ jobs:
         with:
           upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
           asset_path: output.parquet
-          asset_name: ${{ matrix.index }}.parquet
+          asset_name: index-${{ matrix.index }}.parquet
 
   makepublic:
     needs: [generate-matrix, combine]
@@ -154,6 +154,49 @@ jobs:
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           author_name: "commit-bot"
           message: "Add download links for asset ${{ needs.generate-matrix.outputs.release_id }}"
+          push: true
+          fetch: true
+          pull: '--rebase --autostash'
+
+  unique_python_files:
+    needs: [ makepublic, generate-matrix ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: Setup DuckDB
+        run: |
+          wget https://github.com/duckdb/duckdb/releases/download/v0.8.1/duckdb_cli-linux-amd64.zip -O /tmp/duckdb.zip
+          unzip /tmp/duckdb.zip -d ${{ github.workspace }}
+          chmod +x ${{ github.workspace }}/duckdb
+
+      - uses: robinraju/release-downloader@v1.8
+        with:
+          releaseId: ${{ needs.generate-matrix.outputs.release_id }}
+          fileName: index-*.parquet
+          out-file-path: data/
+          
+      - name: Combine
+        run: ${{ github.workspace }}/duckdb -echo -stats foo.db < ${{ github.workspace }}/sql/unique_python_files.sql
+
+      - name: Upload Assets
+        id: upload
+        uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
+          asset_name: unique-python-files.parquet
+
+      - name: Create download links
+        run: |
+          echo "${{ steps.upload.outputs.browser_download_url }}" > only_python_download_links.txt
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: 'download_links.txt'
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          author_name: "commit-bot"
+          message: "Add only python links for asset ${{ needs.generate-matrix.outputs.release_id }}"
           push: true
           fetch: true
           pull: '--rebase --autostash'
