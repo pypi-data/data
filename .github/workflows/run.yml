@@ -177,7 +177,7 @@ jobs:
       - name: Download releases
         run: |
           mkdir data/
-          wget2 (cat download_links.txt) --compression -P data/
+          wget2 $(cat download_links.txt) --compression -P data/
           
       - name: Combine
         run: ${{ github.workspace }}/duckdb -echo -stats foo.db < ${{ github.workspace }}/sql/unique_python_files.sql
