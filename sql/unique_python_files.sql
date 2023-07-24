@@ -1,5 +1,5 @@
 SET memory_limit='6GB';
-SET threads=4;
+SET threads=2;
 COPY
 (
 select hash, any_value(path)
