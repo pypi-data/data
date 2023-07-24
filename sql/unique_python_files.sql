@@ -4,6 +4,6 @@ COPY
 (
 select hash, any_value(path)
 from read_parquet('data/*.parquet')
-where path LIKE '%.py'
+where path LIKE '%.py' and skip_reason = ''
 group by 1
 ) TO 'unique-python-files.parquet' (FORMAT PARQUET, compression zstd);

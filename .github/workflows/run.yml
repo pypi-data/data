@@ -171,11 +171,13 @@ jobs:
           unzip /tmp/duckdb.zip -d ${{ github.workspace }}
           chmod +x ${{ github.workspace }}/duckdb
 
-      - uses: robinraju/release-downloader@v1.8
-        with:
-          releaseId: ${{ needs.generate-matrix.outputs.release_id }}
-          fileName: index-*.parquet
-          out-file-path: data/
+      - name: Setup wget2
+        run: apt-get update && apt-get install wget2
+
+      - name: Download releases
+        run: |
+          mkdir data/
+          wget2 (cat download_links.txt) --compression -P data/
           
       - name: Combine
         run: ${{ github.workspace }}/duckdb -echo -stats foo.db < ${{ github.workspace }}/sql/unique_python_files.sql
