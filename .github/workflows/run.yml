@@ -172,7 +172,7 @@ jobs:
           chmod +x ${{ github.workspace }}/duckdb
 
       - name: Setup wget2
-        run: apt-get update && apt-get install wget2
+        run: sudo apt-get update && sudo apt-get install wget2
 
       - name: Download releases
         run: |
