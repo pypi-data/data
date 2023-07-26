@@ -1,3 +1,4 @@
+import os
 import threading
 import time
 
@@ -112,7 +113,7 @@ def run_sql(
             time.sleep(1)
             memory = psutil.virtual_memory()
             cpu = psutil.cpu_percent()
-            disk = psutil.disk_usage("/")
+            disk = psutil.disk_usage(os.getcwd())
             print(f'\n{memory.available=} / {memory=} / {cpu=} / {disk=}\n')
 
     t = threading.Thread(target=print_thread, daemon=True)
