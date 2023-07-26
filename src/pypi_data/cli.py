@@ -120,7 +120,7 @@ def run_sql(
     duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
     duckdb.executemany(f"PRAGMA threads=4; "
                        f"PRAGMA memory_limit='2GB'; "
-                       f"PRAGMA enable_profiling='query_tree_optimizer';"
+                       f"PRAGMA enable_profiling;"
                        f"{sql}",
                        parameters=[parameter] if parameter else [])
     try:
