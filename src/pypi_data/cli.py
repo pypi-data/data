@@ -88,10 +88,17 @@ def run_sql(
     options = prql.CompileOptions(
         format=True, signature_comment=True, target="sql.duckdb"
     )
-
-    sql = prql.compile(prql_file.read_text(), options=options)
-    print(sql)
     print(f'{parameter=}')
+    if prql_file.name.endswith(".sql"):
+        sql = prql_file.read_text()
+        # Can't get it to work without doing this. So dumb.
+        sql = sql.replace('$1', json.dumps(parameter))
+        parameter = []
+    else:
+        compiled_sql = prql.compile(prql_file.read_text(), options=options)
+        sql = f"EXPLAIN ANALYZE COPY ({compiled_sql}) TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)"
+    print(sql)
+
     print("\n\n\n")
     # x = duckdb.execute(sql, parameters=[parameter] if parameter else [])
     # import pprint
@@ -110,15 +117,16 @@ def run_sql(
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
     duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
-    duckdb.execute(f"EXPLAIN COPY ({sql}) TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)", parameters=[parameter] if parameter else [])
-    for name, plan in duckdb.fetchall():
-        print(name)
-        print(plan)
-    print("\n\n\n")
     duckdb.executemany(f"PRAGMA threads=2; "
                        f"PRAGMA memory_limit='2GB'; "
-                       f"COPY ({sql}) TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)",
-                       parameters=[[parameter]] if parameter else [])
+                       f"{sql}",
+                       parameters=[parameter] if parameter else [])
+    try:
+        for name, plan in duckdb.fetchall():
+            print(name)
+            print(plan)
+    except duckdb.InvalidInputException:
+        pass
 
 
 if __name__ == "__main__":
