@@ -117,7 +117,7 @@ def run_sql(
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
     duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
-    duckdb.executemany(f"PRAGMA threads=2; "
+    duckdb.executemany(f"PRAGMA threads=4; "
                        f"PRAGMA memory_limit='2GB'; "
                        f"PRAGMA enable_profiling='query_tree_optimizer';"
                        f"{sql}",
