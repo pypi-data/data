@@ -1,0 +1,85 @@
+prql target:sql.duckdb
+
+let approx_count_distinct = column -> s"approx_count_distinct({column})"
+let regexp_extract = column r -> s"regexp_extract({column}, {r})"
+let row_to_json = name -> s"row_to_json({name})"
+let relation_to_json = func r -> (
+  from s=r
+  aggregate {
+    _to_json=s"row_to_json(s)"
+  }
+  aggregate {
+    stat = s"json_group_array({_to_json})",
+    name = s"'{r}'"
+   }
+)
+
+let base = (
+  from (read_parquet($1))
+)
+
+let base_with_extension = (
+  from base
+  select {
+    extension = (regexp_extract path "\\.[0-9a-z]+$"),
+    lines,
+    size,
+    skip_reason
+  }
+)
+
+let total_stats = (
+  from base
+  aggregate {
+    total_files = count(s"*"),
+    unique_files = approx_count_distinct(hash) | as bigint,
+    total_size = sum(size) | as bigint,
+    total_lines = sum(lines) | as bigint
+  }
+)
+
+let extension_stats = (
+  from base_with_extension
+  group {extension} (
+    aggregate {
+      total_files = count(s"*"),
+      total_lines = sum(lines) | as bigint,
+      total_size = sum(size) | as bigint
+    }
+  )
+  sort {-total_files}
+  take 10
+)
+
+let binary_extension_stats = (
+  from base_with_extension
+  filter skip_reason == "binary"
+  group {extension} (
+    aggregate {
+      total_files = count(s"*"),
+      total_lines = sum(lines) | as bigint,
+      total_size = sum(size) | as bigint
+    }
+  )
+  sort {-total_files}
+  take 10
+)
+
+let skipped_files_stats = (
+  from base_with_extension
+  filter skip_reason != "binary"
+  group {extension} (
+    aggregate {
+      total_files = count(s"*"),
+      total_size = sum(size) | as bigint
+    }
+  )
+  sort {-total_files}
+  take 10
+)
+
+
+relation_to_json(total_stats)
+append (relation_to_json extension_stats)
+append (relation_to_json binary_extension_stats)
+append (relation_to_json skipped_files_stats)

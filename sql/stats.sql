@@ -4,46 +4,46 @@ SET
 threads = 4;
 
 
-COPY
-(
-select count(*) as "total_files",
-       approx_count_distinct(hash)::bigint as "unique_files", sum(size)::bigint                   as "total_size", sum(lines)::bigint                  as "total_lines",
-from 'data/*.parquet' ) TO 'stats/general_stats.json';
-
-COPY
-(
-select regexp_extract(path, '\.[0-9a-z]+$') as extension,
-       count()                              as total,
-       sum(lines)::bigint                           as lines, sum(size) ::bigint as size,
-from 'data/*.parquet'
-group by extension
-order by total DESC
-    limit 10
-    ) TO 'stats/top_extensions.json';
-
-COPY
-(
-select regexp_extract(path, '\.[0-9a-z]+$') as extension,
-       count()                              as total,
-       sum(size) ::bigint as size,
-from 'data/*.parquet'
-where skip_reason = 'binary'
-group by extension
-order by total DESC
-    limit 10
-    ) TO 'stats/top_binary_extensions.json' (ARRAY TRUE);
-
-COPY
-(
-select skip_reason,
-       count(*) as total,
-       sum(size) ::bigint as size
-from 'data/*.parquet'
-where skip_reason != ''
-group by skip_reason
-order by total DESC
-    limit 10
-    ) TO 'stats/skipped_files.json' (ARRAY TRUE);
+-- COPY
+-- (
+-- select count(*) as "total_files",
+--        approx_count_distinct(hash)::bigint as "unique_files", sum(size)::bigint                   as "total_size", sum(lines)::bigint                  as "total_lines",
+-- from 'data/*.parquet' ) TO 'stats/general_stats.json';
+--
+-- COPY
+-- (
+-- select regexp_extract(path, '\.[0-9a-z]+$') as extension,
+--        count()                              as total,
+--        sum(lines)::bigint                           as lines, sum(size) ::bigint as size,
+-- from 'data/*.parquet'
+-- group by extension
+-- order by total DESC
+--     limit 10
+--     ) TO 'stats/top_extensions.json';
+--
+-- COPY
+-- (
+-- select regexp_extract(path, '\.[0-9a-z]+$') as extension,
+--        count()                              as total,
+--        sum(size) ::bigint as size,
+-- from 'data/*.parquet'
+-- where skip_reason = 'binary'
+-- group by extension
+-- order by total DESC
+--     limit 10
+--     ) TO 'stats/top_binary_extensions.json' (ARRAY TRUE);
+--
+-- COPY
+-- (
+-- select skip_reason,
+--        count(*) as total,
+--        sum(size) ::bigint as size
+-- from 'data/*.parquet'
+-- where skip_reason != ''
+-- group by skip_reason
+-- order by total DESC
+--     limit 10
+--     ) TO 'stats/skipped_files.json' (ARRAY TRUE);
 
 
 COPY

@@ -1,0 +1,11 @@
+prql target:sql.duckdb
+
+let any_value = column -> s"any_value({column})"
+
+from (read_parquet $1)
+filter path ~= "\\.py$"
+filter skip_reason == ""
+group {hash} (
+aggregate {
+  any_value(path)
+})

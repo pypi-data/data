@@ -94,23 +94,44 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
+      - name: Set up python
+        id: setup-python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          installer-parallel: true
+
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+
+      - name: Install root
+        run: poetry install --only-root
+
       - uses: actions/download-artifact@v3
         with:
           name: groups
 
-      - name: Setup DuckDB
-        run: |
-          wget https://github.com/duckdb/duckdb/releases/download/v0.8.1/duckdb_cli-linux-amd64.zip -O /tmp/duckdb.zip
-          unzip /tmp/duckdb.zip -d ${{ github.workspace }}
-          chmod +x ${{ github.workspace }}/duckdb
-
-      - name: Download
-        run: |
-          mkdir input/
-          cat ${{ matrix.index }} | jq -rc '.[]' | parallel wget -nv -O input/{#}.parquet {}
+      - name: Download links
+        run: cat ${{ matrix.index }} | jq -rc '.[]'
 
       - name: Combine
-        run: ${{ github.workspace }}/duckdb -echo -stats foo.db < ${{ github.workspace }}/sql/combine.sql
+        run: |
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/combine.prql output.parquet $(cat ${{ matrix.index }} | jq -rc '.[]')
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
@@ -162,25 +183,40 @@ jobs:
     needs: [ makepublic, generate-matrix ]
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
+      - name: Set up python
+        id: setup-python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
 
-      - name: Setup DuckDB
-        run: |
-          wget https://github.com/duckdb/duckdb/releases/download/v0.8.1/duckdb_cli-linux-amd64.zip -O /tmp/duckdb.zip
-          unzip /tmp/duckdb.zip -d ${{ github.workspace }}
-          chmod +x ${{ github.workspace }}/duckdb
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          installer-parallel: true
 
-      - name: Setup wget2
-        run: sudo apt-get update && sudo apt-get install wget2
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
 
-      - name: Download releases
-        run: |
-          mkdir data/
-          wget2 $(cat download_links.txt) --compression -P data/
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+
+      - name: Install root
+        run: poetry install --only-root
+
+      - name: Download links
+        run: cat download_links.txt
           
       - name: Combine
-        run: ${{ github.workspace }}/duckdb -echo -stats foo.db < ${{ github.workspace }}/sql/unique_python_files.sql
+        run: |
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql unique-python-files.parquet $(cat download_links.txt)
 
       - name: Upload Assets
         id: upload
@@ -202,3 +238,60 @@ jobs:
           push: true
           fetch: true
           pull: '--rebase --autostash'
+
+  generate_stats:
+    needs: [ makepublic, generate-matrix ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up python
+        id: setup-python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          installer-parallel: true
+
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+
+      - name: Install root
+        run: poetry install --only-root
+
+      - name: Combine
+        run: |
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats.parquet $(cat download_links.txt)
+#
+#      - name: Upload Assets
+#        id: upload
+#        uses: shogo82148/actions-upload-release-asset@v1
+#        with:
+#          upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
+#          asset_name: unique-python-files.parquet
+#
+#      - name: Create download links
+#        run: |
+#          echo "${{ steps.upload.outputs.browser_download_url }}" > only_python_download_links.txt
+#
+#      - uses: EndBug/add-and-commit@v9
+#        with:
+#          add: 'only_python_download_links.txt'
+#          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+#          author_name: "commit-bot"
+#          message: "Add only python links for asset ${{ needs.generate-matrix.outputs.release_id }}"
+#          push: true
+#          fetch: true
+#          pull: '--rebase --autostash'

@@ -1,9 +1,15 @@
+import threading
+import time
+
+import duckdb
 import json
 from pathlib import Path
-from typing import Annotated, Iterable
+from typing import Annotated, Iterable, List, Optional
+
+import psutil
 from fsspec.implementations.http_sync import HTTPFileSystem
 import typer
-import polars as pl
+import prql_python as prql
 from github import Github
 from github import Auth
 import requests
@@ -71,6 +77,48 @@ def group_index_urls(github_token: GithubToken,
         (group_dir / name).write_text(json.dumps(paths))
         # print(f"Group {idx} contains {len(paths)} paths", file=sys.stderr)
     (output_path / "groups.json").write_text(json.dumps(outputs))
+
+
+@app.command()
+def run_sql(
+        prql_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, readable=True)],
+        output_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, writable=True)],
+        parameter: Annotated[Optional[List[str]], typer.Argument()] = None
+):
+    options = prql.CompileOptions(
+        format=True, signature_comment=True, target="sql.duckdb"
+    )
+
+    sql = prql.compile(prql_file.read_text(), options=options)
+    print(sql)
+    print(f'{parameter=}')
+    print("\n\n\n")
+    # x = duckdb.execute(sql, parameters=[parameter] if parameter else [])
+    # import pprint
+    # pprint.pprint(x.fetchall())
+    duckdb.install_extension("httpfs")
+    duckdb.load_extension("httpfs")
+
+    def print_thread():
+        psutil.cpu_percent()
+        while True:
+            time.sleep(1)
+            memory = psutil.virtual_memory()
+            cpu = psutil.cpu_percent()
+            print(f'\n{memory.available=} / {memory=} / {cpu=}\n')
+
+    t = threading.Thread(target=print_thread, daemon=True)
+    t.start()
+    duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
+    duckdb.execute(f"EXPLAIN COPY ({sql}) TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)", parameters=[parameter] if parameter else [])
+    for name, plan in duckdb.fetchall():
+        print(name)
+        print(plan)
+    print("\n\n\n")
+    duckdb.executemany(f"PRAGMA threads=2; "
+                       f"PRAGMA memory_limit='2GB'; "
+                       f"COPY ({sql}) TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)",
+                       parameters=[[parameter]] if parameter else [])
 
 
 if __name__ == "__main__":
