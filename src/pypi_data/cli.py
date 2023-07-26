@@ -96,7 +96,7 @@ def run_sql(
         parameter = []
     else:
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
-        sql = f"EXPLAIN ANALYZE COPY ({compiled_sql}) TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)"
+        sql = f"COPY ({compiled_sql}) TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)"
     print(sql)
 
     print("\n\n\n")
@@ -119,6 +119,7 @@ def run_sql(
     duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
     duckdb.executemany(f"PRAGMA threads=2; "
                        f"PRAGMA memory_limit='2GB'; "
+                       f"PRAGMA enable_profiling='query_tree_optimizer';"
                        f"{sql}",
                        parameters=[parameter] if parameter else [])
     try:
