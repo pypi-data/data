@@ -138,14 +138,14 @@ jobs:
       - name: Download links
         run: cat ${{ matrix.index }} | jq -rc '.[]'
 
-#      - name: Download
-#        run: |
-#          mkdir input/
-#          cat ${{ matrix.index }} | jq -rc '.[]' | parallel wget -nv -O input/{#}.parquet {}
+      - name: Download
+        run: |
+          mkdir input/
+          cat ${{ matrix.index }} | jq -rc '.[]' | parallel wget -nv -O input/{#}.parquet {}
 
       - name: Combine
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/combine.sql output.parquet $(cat ${{ matrix.index }} | jq -rc '.[]')
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/combine.sql output.parquet input/*
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
@@ -239,10 +239,22 @@ jobs:
 
       - name: Download links
         run: cat download_links.txt
+
+      - name: Setup wget2
+        run: sudo apt-get update && sudo apt-get install wget2
+
+      - name: Download releases
+        run: |
+          mkdir data/
+          wget2 $(cat download_links.txt) --compression -P data/
           
       - name: Combine
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql unique-python-files.parquet $(cat download_links.txt)
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql unique-python-files.parquet data/*
+          
+      - name: Stats
+        run: |
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats.parquet data/*
 
       - name: Upload Assets
         id: upload
