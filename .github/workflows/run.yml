@@ -239,24 +239,16 @@ jobs:
 
       - name: Download links
         run: cat download_links.txt
-
-      - name: Setup wget2
-        run: sudo apt-get update && sudo apt-get install wget2
-
-      - name: Download releases
-        run: |
-          mkdir data/
-          wget2 $(cat download_links.txt) --compression -P data/
           
       - name: Combine
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql unique-python-files.parquet data/*
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql unique-python-files.parquet $(cat download_links.txt)
           
       - name: Stats
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats.parquet data/*
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats.parquet $(cat download_links.txt)
 
-      - name: Upload Assets
+      - name: Upload Assetsg
         id: upload
         uses: shogo82148/actions-upload-release-asset@v1
         with:
