@@ -123,7 +123,7 @@ def run_sql(
                        f"PRAGMA memory_limit='2GB'; "
                        f"PRAGMA enable_profiling;"
                        f"{sql}",
-                       parameters=[parameter] if parameter else [])
+                       parameters=[[parameter]] if parameter else [])
     try:
         for name, plan in duckdb.fetchall():
             print(name)
