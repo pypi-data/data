@@ -148,13 +148,15 @@ jobs:
 
       - name: Combine
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/combine.sql output.parquet input/*
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/combine.sql ${{ github.workspace }}/output.parquet input/*
+
+      - run: ls -la ${{ github.workspace }}
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
         with:
           upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
-          asset_path: output.parquet
+          asset_path: ${{ github.workspace }}/output.parquet
           asset_name: index-${{ matrix.index }}.parquet
 
   makepublic:
