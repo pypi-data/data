@@ -94,6 +94,7 @@ def run_sql(
         sql = prql_file.read_text()
         # Can't get it to work without doing this. So dumb.
         sql = sql.replace('$1', json.dumps(parameter))
+        sql = f"{sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd);"
         parameter = []
     else:
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
