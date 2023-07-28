@@ -3,6 +3,8 @@ prql target:sql.duckdb
 let approx_count_distinct = column -> s"approx_count_distinct({column})"
 let regexp_extract = column r -> s"regexp_extract({column}, {r})"
 let row_to_json = name -> s"row_to_json({name})"
+let month_trunc = name -> s"date_trunc('MONTH', {name})"
+
 let relation_to_json = func r -> (
   from s=r
   aggregate {
@@ -78,8 +80,28 @@ let skipped_files_stats = (
   take 10
 )
 
+let stats_over_time = (
+  from base
+  group {month_trunc(uploaded_on)} (
+    aggregate {
+      total_uploads = s"COUNT(DISTINCT {project_name})" | as bigint,
+      project_releases = s"COUNT(DISTINCT {project_release})" | as bigint,
+      project_version_releases = s"COUNT(DISTINCT ({project_name}, {project_version}))" | as bigint,
+      total_files = s"count(*)" | as bigint,
+      total_size = sum(size) | as bigint,
+      total_lines = sum(lines) | as bigint,
+      total_hours = s"date_diff('hours', min({uploaded_on}), max({uploaded_on}))",
+      lines_per_hour = total_lines / total_hours | as bigint,
+      bytes_per_hour = total_size / total_hours | as bigint,
+      files_per_hour = total_files / total_hours | as bigint,
+      releases_per_hour = total_uploads / total_hours | as bigint,
+    }
+  )
+)
+
 
 relation_to_json(total_stats)
 append (relation_to_json extension_stats)
 append (relation_to_json binary_extension_stats)
 append (relation_to_json skipped_files_stats)
+append (relation_to_json stats_over_time)
