@@ -183,6 +183,8 @@ jobs:
             // Save the download links to a file
             require('fs').writeFileSync('links/dataset.txt', assets.map(asset => asset.browser_download_url).join('\n'));
 
+      - run: cat links/dataset.txt
+
       - uses: EndBug/add-and-commit@v9
         with:
           add: 'links/dataset.txt'
