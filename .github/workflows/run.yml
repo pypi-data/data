@@ -78,6 +78,9 @@ jobs:
           tag_name: ${{ steps.version.outputs.tag_name }}
           commitish: ${{ github.sha }}
 
+      - name: Release URL
+        run: echo ${{ steps.create-release.html_url }}
+
     outputs:
       matrix: ${{ steps.groups.outputs.matrix }}
       upload_url: ${{ steps.create-release.outputs.upload_url }}
