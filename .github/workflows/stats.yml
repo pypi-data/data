@@ -132,8 +132,9 @@ jobs:
       - name: Install root
         run: poetry install --only-root
 
-      - name: Combine
+      - name: Generate stats
         run: |
+          cat links/dataset.txt
           poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats.parquet $(cat links/dataset.txt)
 
 #      - name: Upload Assets
