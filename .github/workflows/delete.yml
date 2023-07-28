@@ -8,9 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Delete drafts
-        uses: hugo19941994/delete-draft-releases@v1.0.1
+      - uses: sgpublic/delete-release-action@v1.0
         with:
-          threshold: 1d
+          release-drop: true
+          release-keep-count: 2
+          release-drop-tag: true
+          pre-release-drop: true
+          pre-release-keep-count: -1
+          pre-release-drop-tag: true
+          draft-drop: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
