@@ -132,7 +132,7 @@ def run_sql(
         if not db:
             db = Path(tempfile.mkdtemp(dir="data"))
         else:
-            db = Path(db)
+            db = data_dir / db
             db.mkdir(exist_ok=True)
         conn = duckdb.connect(str(db / "duck.db"))
 
@@ -179,7 +179,7 @@ def run_sql(
     sql = conn.sql(sql)
 
     if output == OutputFormat.TABLE:
-        sql.to_table("temp_table")
+        sql.insert_into("temp_table")
     elif output == OutputFormat.PARQUET:
         sql.to_parquet(str(output_file), compression="zstd")
     else:
