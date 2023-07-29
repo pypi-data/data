@@ -2,15 +2,18 @@ prql target:sql.duckdb
 
 let base = (
   read_parquet($1)
-  sort s"random()"
+  derive {random = s"random()"}
+  sort random
 )
 
 from (
   base
+  select !{random}
   take 3
 )
 append (
   base
   filter skip_reason != ""
+  select !{random}
   take 3
 )
