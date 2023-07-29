@@ -90,7 +90,8 @@ def run_sql(
         prql_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, readable=True)],
         output_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, writable=True)],
         parameter: Annotated[Optional[List[str]], typer.Argument()] = None,
-        output: Annotated[OutputFormat, typer.Option()] = OutputFormat.JSON
+        output: Annotated[OutputFormat, typer.Option()] = OutputFormat.JSON,
+        threads: Annotated[int, typer.Option()] = 2,
 ):
     options = prql.CompileOptions(
         format=True, signature_comment=True, target="sql.duckdb"
@@ -111,7 +112,7 @@ def run_sql(
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
         sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
         sql = sql.replace('$1', json.dumps(parameter))
-        sql = f"PRAGMA threads=2; PRAGMA memory_limit='6GB'; {sql}"
+        sql = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'; {sql}"
         conn = duckdb.connect("file.db")
     print(sql)
 
