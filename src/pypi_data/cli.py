@@ -110,6 +110,7 @@ def run_sql(
         no_limits: Annotated[bool, typer.Option()] = False,
         profile: Annotated[bool, typer.Option()] = False,
         db: Annotated[Optional[str], typer.Option()] = None,
+        per_thread_output: Annotated[bool, typer.Option()] = False,
 ):
     """
     This whole method is a fucking mess.
@@ -179,19 +180,22 @@ def run_sql(
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
 
-    sql = conn.sql(sql)
+    sql_obj = conn.sql(sql)
 
     if output == OutputFormat.TABLE:
         try:
             conn.table("temp_table")
         except duckdb.CatalogException:
-            sql.to_table("temp_table")
+            sql_obj.to_table("temp_table")
         else:
-            sql.insert_into("temp_table")
+            sql_obj.insert_into("temp_table")
     elif output == OutputFormat.PARQUET:
-        sql.to_parquet(str(output_file), compression="zstd")
+        if per_thread_output:
+            conn.execute(f'COPY ({sql}) TO \'{output_file}\' (FORMAT PARQUET, PER_THREAD_OUTPUT TRUE, COMPRESSION zstd)')
+        else:
+            sql_obj.to_parquet(str(output_file), compression="zstd")
     else:
-        sql.to_table("temp_table")
+        sql_obj.to_table("temp_table")
         # df: pd.DataFrame = sql.to_df()
         # df.set_index("name", inplace=True)
         # df["stat"] = df["stat"].apply(lambda x: json.loads(x))
