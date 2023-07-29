@@ -128,6 +128,7 @@ def run_sql(
     print(sql)
 
     print("\n\n\n")
+    conn.execute("DROP TABLE IF EXISTS temp_table;")
     # x = duckdb.execute(sql, parameters=[parameter] if parameter else [])
     # import pprint
     # pprint.pprint(x.fetchall()
@@ -145,10 +146,10 @@ def run_sql(
             disk = psutil.disk_usage(os.getcwd())
 
             net_new_value = psutil.net_io_counters(nowrap=True).bytes_sent + psutil.net_io_counters(nowrap=True).bytes_recv
-            net_usage = (net_new_value - net_old_value) / 1024.0
+            net_usage = (net_new_value - net_old_value) / 1024.0 / 1024
             net_old_value = net_new_value
 
-            print(f'\n{memory.percent=} {cpu=} {disk.percent=} {net_usage=}\n')
+            print(f'\n{memory.percent=} {cpu=} {disk.percent=} {net_usage=}/s\n')
 
 
     t = threading.Thread(target=print_thread, daemon=True)
