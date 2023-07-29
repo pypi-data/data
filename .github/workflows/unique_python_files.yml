@@ -55,9 +55,17 @@ jobs:
           mkdir dataset/
           cat links/dataset.txt | xargs -P 5 -n 4 wget --no-verbose -P dataset/
 
+      - name: Install parallel
+        run: |
+          sudo apt-get install parallel
+
       - name: Combine
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql unique-python-files.parquet --db=db --output=parquet --threads=2 dataset/*.parquet
+          mkdir combined/
+          find dataset/ -name '*.parquet' | parallel -j 1 --xargs -n2 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 combined/{#}.parquet {}
+
+      - name: List
+        run: ls combined/
 
       - name: Gets latest created release info
         id: latest_release_info
