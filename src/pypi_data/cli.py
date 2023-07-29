@@ -92,7 +92,7 @@ def get_size(bytes):
 
 
 class OutputFormat(enum.StrEnum):
-    PARQUET = "json"
+    PARQUET = "parquet"
     JSON = "json"
 
 
@@ -162,7 +162,6 @@ def run_sql(
         df: pd.DataFrame = sql.to_df()
         df["stat"] = df["stat"].apply(lambda x: json.loads(x))
         df.to_json(output_file, orient="records", lines=False, indent=2)
-
 
 
 if __name__ == "__main__":
