@@ -196,6 +196,7 @@ def run_sql(
             sql_obj.to_parquet(str(output_file), compression="zstd")
     else:
         sql_obj.to_table("temp_table")
+        conn.execute(f'COPY temp_table TO \'{output_file}\' (FORMAT JSON, array TRUE)')
         # df: pd.DataFrame = sql.to_df()
         # df.set_index("name", inplace=True)
         # df["stat"] = df["stat"].apply(lambda x: json.loads(x))
