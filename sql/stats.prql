@@ -4,6 +4,7 @@ let approx_count_distinct = column -> s"approx_count_distinct({column})"
 let regexp_extract = column r -> s"regexp_extract({column}, {r})"
 let row_to_json = name -> s"row_to_json({name})"
 let month_trunc = name -> s"date_trunc('MONTH', {name})"
+let current_date = s"current_date()"
 
 let relation_to_json = func r -> (
   from s=r
@@ -55,7 +56,7 @@ let extension_stats = (
   take 10
 )
 
-let base_binary_extension_stats = (
+let binary_extension_stats = (
   from base_with_extension
   filter skip_reason == "binary"
   group {extension = extension} (
@@ -102,6 +103,7 @@ let skipped_files_stats = (
 
 let stats_over_time = (
   from base
+  filter (month_trunc uploaded_on) < (month_trunc current_date)
   group {month = month_trunc(uploaded_on)} (
     aggregate {
       total_uploads = s"COUNT(DISTINCT {project_name})" | as bigint,
