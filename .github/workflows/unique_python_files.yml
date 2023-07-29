@@ -59,14 +59,14 @@ jobs:
         run: |
           sudo apt-get install parallel
 
-      - name: Combine
+      - name: Ingest
         run: |
           mkdir combined/
           find dataset/ -name '*.parquet' | parallel -j 1 --xargs -n2 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 combined/{#}.parquet {}
 
-      - name: Complete
+      - name: Combine
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 unique-python-files.parquet combined/*.parquet
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_combine.prql --output=parquet --threads=2 unique-python-files.parquet combined/*.parquet
 
       - name: List
         run: ls combined/
