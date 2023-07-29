@@ -55,7 +55,7 @@ jobs:
 
       - name: Combine
         run: |
-          cat links/dataset.txt | xargs -P1 -n 6 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_download.prql null.parquet --no-limits --db=db --output=table
+          cat links/dataset.txt | xargs -P1 -n 4 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_download.prql null.parquet --no-limits --db=db --output=table
 #          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_download.prql python-files.parquet $(cat links/dataset.txt) --no-limits
 
       - name: Filter
