@@ -1,0 +1,213 @@
+[
+  {
+    "stat": [
+      {
+        "total_files": 8876604,
+        "unique_files": 1039689,
+        "total_size": 435437558518,
+        "total_lines": 2760694292
+      }
+    ],
+    "name": "total_stats"
+  },
+  {
+    "stat": [
+      {
+        "extension": ".py",
+        "total_files": 4549666,
+        "total_lines": 1340614346,
+        "total_size": 53240855146
+      },
+      {
+        "extension": ".json",
+        "total_files": 665330,
+        "total_lines": 213809308,
+        "total_size": 8639202010
+      },
+      {
+        "extension": "",
+        "total_files": 510644,
+        "total_lines": 48034432,
+        "total_size": 24249141570
+      },
+      {
+        "extension": ".js",
+        "total_files": 380204,
+        "total_lines": 117783852,
+        "total_size": 12897768616
+      },
+      {
+        "extension": ".txt",
+        "total_files": 313480,
+        "total_lines": 309622668,
+        "total_size": 7601581698
+      },
+      {
+        "extension": ".png",
+        "total_files": 203520,
+        "total_lines": 8,
+        "total_size": 3774875002
+      },
+      {
+        "extension": ".rst",
+        "total_files": 195064,
+        "total_lines": 10787208,
+        "total_size": 438481148
+      },
+      {
+        "extension": ".h",
+        "total_files": 186394,
+        "total_lines": 54529376,
+        "total_size": 2057102944
+      },
+      {
+        "extension": ".hpp",
+        "total_files": 162726,
+        "total_lines": 30021146,
+        "total_size": 1151654280
+      },
+      {
+        "extension": ".pyi",
+        "total_files": 136686,
+        "total_lines": 19731670,
+        "total_size": 749755478
+      }
+    ],
+    "name": "extension_stats"
+  },
+  {
+    "stat": [
+      {
+        "extension": ".png",
+        "total_files": 203496,
+        "total_lines": 0,
+        "total_size": 3774874850
+      },
+      {
+        "extension": ".pyc",
+        "total_files": 84530,
+        "total_lines": 0,
+        "total_size": 590779088
+      },
+      {
+        "extension": "",
+        "total_files": 63584,
+        "total_lines": 0,
+        "total_size": 21895788258
+      },
+      {
+        "extension": ".gz",
+        "total_files": 52010,
+        "total_lines": 0,
+        "total_size": 2087843858
+      },
+      {
+        "extension": ".so",
+        "total_files": 36116,
+        "total_lines": 0,
+        "total_size": 150677015052
+      },
+      {
+        "extension": ".gif",
+        "total_files": 18962,
+        "total_lines": 0,
+        "total_size": 737761168
+      },
+      {
+        "extension": ".mo",
+        "total_files": 17420,
+        "total_lines": 0,
+        "total_size": 237224936
+      },
+      {
+        "extension": ".dll",
+        "total_files": 13678,
+        "total_lines": 0,
+        "total_size": 20167839186
+      },
+      {
+        "extension": ".jpg",
+        "total_files": 13524,
+        "total_lines": 0,
+        "total_size": 1091116542
+      },
+      {
+        "extension": ".qm",
+        "total_files": 8702,
+        "total_lines": 0,
+        "total_size": 462485070
+      }
+    ],
+    "name": "binary_extension_stats"
+  },
+  {
+    "stat": [
+      {
+        "extension": ".py",
+        "total_files": 4549650,
+        "total_size": 53153734186
+      },
+      {
+        "extension": ".json",
+        "total_files": 665322,
+        "total_size": 8639201138
+      },
+      {
+        "extension": "",
+        "total_files": 447060,
+        "total_size": 2353353312
+      },
+      {
+        "extension": ".js",
+        "total_files": 380204,
+        "total_size": 12897768616
+      },
+      {
+        "extension": ".txt",
+        "total_files": 313474,
+        "total_size": 7601578206
+      },
+      {
+        "extension": ".rst",
+        "total_files": 195040,
+        "total_size": 416461052
+      },
+      {
+        "extension": ".h",
+        "total_files": 186394,
+        "total_size": 2057102944
+      },
+      {
+        "extension": ".hpp",
+        "total_files": 162726,
+        "total_size": 1151654280
+      },
+      {
+        "extension": ".pyi",
+        "total_files": 136686,
+        "total_size": 749755478
+      },
+      {
+        "extension": ".html",
+        "total_files": 97742,
+        "total_size": 1385203490
+      }
+    ],
+    "name": "skipped_files_stats"
+  },
+  {
+    "stat": [
+      {
+        "date_trunc('MONTH', uploaded_on)": "2020-09-01",
+        "total_uploads": 8949,
+        "project_releases": 39996,
+        "project_version_releases": 20940,
+        "total_files": 8876604,
+        "total_size": 435437558518,
+        "total_lines": 2760694292,
+        "total_hours": 242
+      }
+    ],
+    "name": "stats_over_time"
+  }
+]

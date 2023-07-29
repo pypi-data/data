@@ -110,7 +110,7 @@ def run_sql(
     )
     print(f'{parameter=}')
     if output == OutputFormat.JSON:
-        fmt = "FORMAT JSON"
+        fmt = "FORMAT JSON, ARRAY true"
     else:
         fmt = "FORMAT PARQUET, COMPRESSION zstd"
     if prql_file.name.endswith(".sql"):
