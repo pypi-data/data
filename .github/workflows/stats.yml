@@ -131,7 +131,9 @@ jobs:
       - name: Generate stats
         run: |
           cat links/dataset.txt
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats.parquet $(cat links/dataset.txt)
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats.json --output=json $(cat links/dataset.txt)
+
+      - run: cat stats.json
 
 #      - name: Upload Assets
 #        id: upload

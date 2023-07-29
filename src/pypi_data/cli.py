@@ -1,3 +1,4 @@
+import enum
 import os
 import threading
 import time
@@ -80,26 +81,35 @@ def group_index_urls(github_token: GithubToken,
     (output_path / "groups.json").write_text(json.dumps(outputs))
 
 
+class OutputFormat(enum.StrEnum):
+    PARQUET = "json"
+    JSON = "json"
+
 @app.command()
 def run_sql(
         prql_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, readable=True)],
         output_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, writable=True)],
-        parameter: Annotated[Optional[List[str]], typer.Argument()] = None
+        parameter: Annotated[Optional[List[str]], typer.Argument()] = None,
+        output: Annotated[OutputFormat, typer.Option()] = OutputFormat.JSON
 ):
     options = prql.CompileOptions(
         format=True, signature_comment=True, target="sql.duckdb"
     )
     print(f'{parameter=}')
+    if output == OutputFormat.JSON:
+        fmt = "FORMAT JSON"
+    else:
+        fmt = "FORMAT PARQUET, COMPRESSION zstd"
     if prql_file.name.endswith(".sql"):
         sql = prql_file.read_text()
         # Can't get it to work without doing this. So dumb.
         sql = sql.replace('$1', json.dumps(parameter))
-        sql = f"{sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd);"
+        sql = f"{sql}; COPY temp_table TO '{output_file}' ({fmt});"
         parameter = []
         conn = duckdb
     else:
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
-        sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)"
+        sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
         sql = sql.replace('$1', json.dumps(parameter))
         conn = duckdb.connect("file.db")
     print(sql)
