@@ -147,8 +147,9 @@ def run_sql(
             print(f"PRAGMA profile_output='{db}/profile.json';")
             # sql = f'EXPLAIN ANALYZE ({sql})'
 
-        limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'" if not no_limits else ""
-        sql = f"{limits}; {sql};"
+        if not no_limits:
+            limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB';"
+            conn.executemany(limits)
 
     print(sql)
 
@@ -179,7 +180,12 @@ def run_sql(
     sql = conn.sql(sql)
 
     if output == OutputFormat.TABLE:
-        sql.insert_into("temp_table")
+        try:
+            conn.table("temp_table")
+        except duckdb.CatalogException:
+            sql.to_table("temp_table")
+        else:
+            sql.insert_into("temp_table")
     elif output == OutputFormat.PARQUET:
         sql.to_parquet(str(output_file), compression="zstd")
     else:
