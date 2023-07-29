@@ -48,7 +48,7 @@ jobs:
 
       - name: Generate stats
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/random.prql stats/random_sample.json --output=json --threads=8 dataset/*.parquet
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/random.prql stats/random_sample.json --output=json dataset/*.parquet
 
       - run: |
           cp stats/random_sample.json t
