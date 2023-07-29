@@ -62,7 +62,11 @@ jobs:
 #
       - name: Combine
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql unique-python-files.parquet $(cat links/dataset.txt)
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_download.prql python-files.parquet $(cat links/dataset.txt)
+
+      - name: Filter
+        run: |
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_group_by.prql unique-python-files.parquet python-files.parquet
 
       - name: Upload Assets
         id: upload

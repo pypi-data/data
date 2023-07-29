@@ -1,0 +1,6 @@
+prql target:sql.duckdb
+
+from (read_parquet $1)
+filter path ~= "\\.py$"
+filter skip_reason == ""
+select {hash, path}
