@@ -103,6 +103,7 @@ def run_sql(
         parameter: Annotated[Optional[List[str]], typer.Argument()] = None,
         output: Annotated[OutputFormat, typer.Option()] = OutputFormat.JSON,
         threads: Annotated[int, typer.Option()] = 2,
+        db: Annotated[Optional[str], typer.Option()] = None
 ):
     options = prql.CompileOptions(
         format=True, signature_comment=True, target="sql.duckdb"
@@ -123,7 +124,7 @@ def run_sql(
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
         sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
         sql = sql.replace('$1', json.dumps(parameter))
-        sql = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'; {sql}"
+        sql = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'; {sql};"
         conn = duckdb.connect("file.db")
     print(sql)
 
@@ -154,8 +155,8 @@ def run_sql(
 
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
-    # duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
-    conn.executemany(sql)
+    duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
+    conn.executemany(f'EXPLAIN ANALYZE {sql}')
     try:
         for name, plan in conn.fetchall():
             print(name)
