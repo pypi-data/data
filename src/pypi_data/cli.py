@@ -103,6 +103,7 @@ def run_sql(
         parameter: Annotated[Optional[List[str]], typer.Argument()] = None,
         output: Annotated[OutputFormat, typer.Option()] = OutputFormat.PARQUET,
         threads: Annotated[int, typer.Option()] = 2,
+        no_limits: Annotated[bool, typer.Option()] = False,
 ):
     options = prql.CompileOptions(
         format=True, signature_comment=True, target="sql.duckdb"
@@ -122,7 +123,8 @@ def run_sql(
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
         # sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
         sql = compiled_sql.replace('$1', json.dumps(parameter))
-        sql = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'; {sql};"
+        limits = "PRAGMA threads={threads}; PRAGMA memory_limit='6GB'" if not no_limits else ""
+        sql = f"{limits}; {sql};"
         conn = duckdb.connect("duck.db")
     print(sql)
 
@@ -160,8 +162,9 @@ def run_sql(
         sql.to_parquet(str(output_file), compression="zstd")
     else:
         df: pd.DataFrame = sql.to_df()
+        df.set_index("name", inplace=True)
         df["stat"] = df["stat"].apply(lambda x: json.loads(x))
-        df.to_json(output_file, orient="records", lines=False, indent=2)
+        df.to_json(output_file, orient="index", lines=False, indent=2)
 
 
 if __name__ == "__main__":

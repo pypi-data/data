@@ -1,213 +1,418 @@
-[
-  {
-    "stat": [
+{
+  "total_stats":{
+    "stat":[
       {
-        "total_files": 8876604,
-        "unique_files": 1039689,
-        "total_size": 435437558518,
-        "total_lines": 2760694292
+        "total_files":77401357,
+        "unique_files":8933593,
+        "total_size":3390487346419,
+        "total_lines":23764202250
       }
-    ],
-    "name": "total_stats"
+    ]
   },
-  {
-    "stat": [
+  "stats_over_time":{
+    "stat":[
       {
-        "extension": ".py",
-        "total_files": 4549666,
-        "total_lines": 1340614346,
-        "total_size": 53240855146
+        "month":"2017-09-01",
+        "total_uploads":8651,
+        "project_releases":30184,
+        "project_version_releases":20229,
+        "total_files":2876087,
+        "total_size":100559094293,
+        "total_lines":956998936,
+        "total_hours":719
       },
       {
-        "extension": ".json",
-        "total_files": 665330,
-        "total_lines": 213809308,
-        "total_size": 8639202010
+        "month":"2017-10-01",
+        "total_uploads":8974,
+        "project_releases":30977,
+        "project_version_releases":20715,
+        "total_files":3216200,
+        "total_size":115819662755,
+        "total_lines":932694824,
+        "total_hours":743
       },
       {
-        "extension": "",
-        "total_files": 510644,
-        "total_lines": 48034432,
-        "total_size": 24249141570
+        "month":"2017-11-01",
+        "total_uploads":9104,
+        "project_releases":31985,
+        "project_version_releases":21302,
+        "total_files":3286688,
+        "total_size":121028109332,
+        "total_lines":961169941,
+        "total_hours":719
       },
       {
-        "extension": ".js",
-        "total_files": 380204,
-        "total_lines": 117783852,
-        "total_size": 12897768616
+        "month":"2017-12-01",
+        "total_uploads":8761,
+        "project_releases":28300,
+        "project_version_releases":19255,
+        "total_files":2750128,
+        "total_size":109450685999,
+        "total_lines":740182257,
+        "total_hours":743
       },
       {
-        "extension": ".txt",
-        "total_files": 313480,
-        "total_lines": 309622668,
-        "total_size": 7601581698
+        "month":"2018-01-01",
+        "total_uploads":9431,
+        "project_releases":32613,
+        "project_version_releases":22201,
+        "total_files":3174698,
+        "total_size":111605675365,
+        "total_lines":793708417,
+        "total_hours":743
       },
       {
-        "extension": ".png",
-        "total_files": 203520,
-        "total_lines": 8,
-        "total_size": 3774875002
+        "month":"2017-07-01",
+        "total_uploads":8148,
+        "project_releases":28229,
+        "project_version_releases":18906,
+        "total_files":2632729,
+        "total_size":97212304333,
+        "total_lines":867956652,
+        "total_hours":743
       },
       {
-        "extension": ".rst",
-        "total_files": 195064,
-        "total_lines": 10787208,
-        "total_size": 438481148
+        "month":"2017-08-01",
+        "total_uploads":8074,
+        "project_releases":30297,
+        "project_version_releases":19912,
+        "total_files":3697560,
+        "total_size":186468188907,
+        "total_lines":1778208557,
+        "total_hours":743
       },
       {
-        "extension": ".h",
-        "total_files": 186394,
-        "total_lines": 54529376,
-        "total_size": 2057102944
+        "month":"2018-03-01",
+        "total_uploads":10599,
+        "project_releases":38676,
+        "project_version_releases":25632,
+        "total_files":3545966,
+        "total_size":147984155626,
+        "total_lines":1119136880,
+        "total_hours":743
       },
       {
-        "extension": ".hpp",
-        "total_files": 162726,
-        "total_lines": 30021146,
-        "total_size": 1151654280
+        "month":"2018-04-01",
+        "total_uploads":10868,
+        "project_releases":41192,
+        "project_version_releases":27811,
+        "total_files":3655738,
+        "total_size":183283280647,
+        "total_lines":1061704510,
+        "total_hours":719
       },
       {
-        "extension": ".pyi",
-        "total_files": 136686,
-        "total_lines": 19731670,
-        "total_size": 749755478
+        "month":"2018-11-01",
+        "total_uploads":11699,
+        "project_releases":48106,
+        "project_version_releases":28291,
+        "total_files":5336077,
+        "total_size":275839364227,
+        "total_lines":1791360632,
+        "total_hours":719
+      },
+      {
+        "month":"2018-10-01",
+        "total_uploads":11943,
+        "project_releases":49209,
+        "project_version_releases":28527,
+        "total_files":5136493,
+        "total_size":251217989117,
+        "total_lines":1894949260,
+        "total_hours":743
+      },
+      {
+        "month":"2018-05-01",
+        "total_uploads":10270,
+        "project_releases":38060,
+        "project_version_releases":24701,
+        "total_files":3999846,
+        "total_size":189869806693,
+        "total_lines":1191359848,
+        "total_hours":743
+      },
+      {
+        "month":"2018-09-01",
+        "total_uploads":10335,
+        "project_releases":41609,
+        "project_version_releases":24730,
+        "total_files":4154615,
+        "total_size":260681172267,
+        "total_lines":1260486714,
+        "total_hours":719
+      },
+      {
+        "month":"2017-06-01",
+        "total_uploads":8107,
+        "project_releases":28936,
+        "project_version_releases":20365,
+        "total_files":3109134,
+        "total_size":108199225039,
+        "total_lines":858195258,
+        "total_hours":719
+      },
+      {
+        "month":"2017-05-01",
+        "total_uploads":8914,
+        "project_releases":28321,
+        "project_version_releases":19615,
+        "total_files":2973793,
+        "total_size":95334411830,
+        "total_lines":774003847,
+        "total_hours":743
+      },
+      {
+        "month":"2018-06-01",
+        "total_uploads":12670,
+        "project_releases":41530,
+        "project_version_releases":27164,
+        "total_files":3910673,
+        "total_size":162540651242,
+        "total_lines":1151734386,
+        "total_hours":719
+      },
+      {
+        "month":"2018-07-01",
+        "total_uploads":10447,
+        "project_releases":40873,
+        "project_version_releases":24517,
+        "total_files":4839896,
+        "total_size":223643714467,
+        "total_lines":1243211876,
+        "total_hours":743
+      },
+      {
+        "month":"2018-12-01",
+        "total_uploads":8949,
+        "project_releases":33777,
+        "project_version_releases":19578,
+        "total_files":3965047,
+        "total_size":242045245120,
+        "total_lines":1220054978,
+        "total_hours":497
+      },
+      {
+        "month":"2017-03-01",
+        "total_uploads":1019,
+        "project_releases":2300,
+        "project_version_releases":1501,
+        "total_files":174932,
+        "total_size":9727574674,
+        "total_lines":61056303,
+        "total_hours":56
+      },
+      {
+        "month":"2017-04-01",
+        "total_uploads":9385,
+        "project_releases":35672,
+        "project_version_releases":27127,
+        "total_files":3283914,
+        "total_size":99520366206,
+        "total_lines":919456884,
+        "total_hours":719
+      },
+      {
+        "month":"2018-02-01",
+        "total_uploads":9513,
+        "project_releases":32475,
+        "project_version_releases":21605,
+        "total_files":3073154,
+        "total_size":109346158126,
+        "total_lines":869140015,
+        "total_hours":671
+      },
+      {
+        "month":"2018-08-01",
+        "total_uploads":10819,
+        "project_releases":44339,
+        "project_version_releases":25891,
+        "total_files":4607989,
+        "total_size":189110510154,
+        "total_lines":1317431275,
+        "total_hours":743
       }
-    ],
-    "name": "extension_stats"
+    ]
   },
-  {
-    "stat": [
+  "skipped_files_stats":{
+    "stat":[
       {
-        "extension": ".png",
-        "total_files": 203496,
-        "total_lines": 0,
-        "total_size": 3774874850
+        "extension":".py",
+        "total_files":28962948,
+        "total_size":285650991321
       },
       {
-        "extension": ".pyc",
-        "total_files": 84530,
-        "total_lines": 0,
-        "total_size": 590779088
+        "extension":"",
+        "total_files":4243988,
+        "total_size":49387574466
       },
       {
-        "extension": "",
-        "total_files": 63584,
-        "total_lines": 0,
-        "total_size": 21895788258
+        "extension":".hpp",
+        "total_files":4164894,
+        "total_size":35311942012
       },
       {
-        "extension": ".gz",
-        "total_files": 52010,
-        "total_lines": 0,
-        "total_size": 2087843858
+        "extension":".txt",
+        "total_files":3812681,
+        "total_size":64597527834
       },
       {
-        "extension": ".so",
-        "total_files": 36116,
-        "total_lines": 0,
-        "total_size": 150677015052
+        "extension":".js",
+        "total_files":3317480,
+        "total_size":99580057001
       },
       {
-        "extension": ".gif",
-        "total_files": 18962,
-        "total_lines": 0,
-        "total_size": 737761168
+        "extension":".rst",
+        "total_files":2949192,
+        "total_size":6116220854
       },
       {
-        "extension": ".mo",
-        "total_files": 17420,
-        "total_lines": 0,
-        "total_size": 237224936
+        "extension":".h",
+        "total_files":2642044,
+        "total_size":34814306524
       },
       {
-        "extension": ".dll",
-        "total_files": 13678,
-        "total_lines": 0,
-        "total_size": 20167839186
+        "extension":".html",
+        "total_files":2270412,
+        "total_size":22833738617
       },
       {
-        "extension": ".jpg",
-        "total_files": 13524,
-        "total_lines": 0,
-        "total_size": 1091116542
+        "extension":".json",
+        "total_files":2111213,
+        "total_size":64872252513
       },
       {
-        "extension": ".qm",
-        "total_files": 8702,
-        "total_lines": 0,
-        "total_size": 462485070
+        "extension":".po",
+        "total_files":1769740,
+        "total_size":33675864712
       }
-    ],
-    "name": "binary_extension_stats"
+    ]
   },
-  {
-    "stat": [
+  "binary_extension_stats":{
+    "stat":[
       {
-        "extension": ".py",
-        "total_files": 4549650,
-        "total_size": 53153734186
+        "extension":".png",
+        "total_files":3340260,
+        "total_lines":0,
+        "total_size":45989571791
       },
       {
-        "extension": ".json",
-        "total_files": 665322,
-        "total_size": 8639201138
+        "extension":".pyc",
+        "total_files":1247268,
+        "total_lines":0,
+        "total_size":9068033483
       },
       {
-        "extension": "",
-        "total_files": 447060,
-        "total_size": 2353353312
+        "extension":"",
+        "total_files":585706,
+        "total_lines":0,
+        "total_size":105398365658
       },
       {
-        "extension": ".js",
-        "total_files": 380204,
-        "total_size": 12897768616
+        "extension":".mo",
+        "total_files":551974,
+        "total_lines":0,
+        "total_size":8026693798
       },
       {
-        "extension": ".txt",
-        "total_files": 313474,
-        "total_size": 7601578206
+        "extension":".gif",
+        "total_files":327206,
+        "total_lines":0,
+        "total_size":3545731734
       },
       {
-        "extension": ".rst",
-        "total_files": 195040,
-        "total_size": 416461052
+        "extension":".so",
+        "total_files":268164,
+        "total_lines":0,
+        "total_size":950540211816
       },
       {
-        "extension": ".h",
-        "total_files": 186394,
-        "total_size": 2057102944
+        "extension":".gz",
+        "total_files":212303,
+        "total_lines":0,
+        "total_size":43805749312
       },
       {
-        "extension": ".hpp",
-        "total_files": 162726,
-        "total_size": 1151654280
+        "extension":".dll",
+        "total_files":129944,
+        "total_lines":0,
+        "total_size":172828755904
       },
       {
-        "extension": ".pyi",
-        "total_files": 136686,
-        "total_size": 749755478
+        "extension":".jpg",
+        "total_files":127948,
+        "total_lines":0,
+        "total_size":18643527121
       },
       {
-        "extension": ".html",
-        "total_files": 97742,
-        "total_size": 1385203490
+        "extension":".ttf",
+        "total_files":116079,
+        "total_lines":0,
+        "total_size":18290220514
       }
-    ],
-    "name": "skipped_files_stats"
+    ]
   },
-  {
-    "stat": [
+  "extension_stats":{
+    "stat":[
       {
-        "date_trunc('MONTH', uploaded_on)": "2020-09-01",
-        "total_uploads": 8949,
-        "project_releases": 39996,
-        "project_version_releases": 20940,
-        "total_files": 8876604,
-        "total_size": 435437558518,
-        "total_lines": 2760694292,
-        "total_hours": 242
+        "extension":".py",
+        "total_files":28963162,
+        "total_lines":7269879708,
+        "total_size":285885591315
+      },
+      {
+        "extension":"",
+        "total_files":4829694,
+        "total_lines":894962513,
+        "total_size":154785940124
+      },
+      {
+        "extension":".hpp",
+        "total_files":4164894,
+        "total_lines":755020064,
+        "total_size":35311942012
+      },
+      {
+        "extension":".txt",
+        "total_files":3814017,
+        "total_lines":1426163568,
+        "total_size":64729523652
+      },
+      {
+        "extension":".png",
+        "total_files":3341195,
+        "total_lines":65098,
+        "total_size":46005989257
+      },
+      {
+        "extension":".js",
+        "total_files":3317577,
+        "total_lines":1555084317,
+        "total_size":99593569172
+      },
+      {
+        "extension":".rst",
+        "total_files":2949436,
+        "total_lines":176103690,
+        "total_size":6583689949
+      },
+      {
+        "extension":".h",
+        "total_files":2642071,
+        "total_lines":871495754,
+        "total_size":34814342592
+      },
+      {
+        "extension":".html",
+        "total_files":2272071,
+        "total_lines":351867198,
+        "total_size":22835561279
+      },
+      {
+        "extension":".json",
+        "total_files":2111421,
+        "total_lines":1289758406,
+        "total_size":64872609723
       }
-    ],
-    "name": "stats_over_time"
+    ]
   }
-]
+}
