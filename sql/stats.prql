@@ -69,6 +69,20 @@ let base_binary_extension_stats = (
   take 10
 )
 
+let projects_by_files = (
+  from base_with_extension
+  group {project_name = project_name} (
+    aggregate {
+      total_files = count(s"*"),
+      unique_files = approx_count_distinct(hash) | as bigint,
+      total_lines = sum(lines) | as bigint,
+      total_size = sum(size) | as bigint
+    }
+  )
+  sort {-total_size}
+  take 10
+)
+
 let skipped_files_stats = (
   from base_with_extension
   filter skip_reason != "binary"
@@ -108,3 +122,4 @@ append (relation_to_json extension_stats)
 append (relation_to_json binary_extension_stats)
 append (relation_to_json skipped_files_stats)
 append (relation_to_json stats_over_time)
+append (relation_to_json projects_by_files)
