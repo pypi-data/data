@@ -73,6 +73,7 @@ let skipped_files_stats = (
   group {extension = extension} (
     aggregate {
       total_files = count(s"*"),
+      total_lines = sum(lines) | as bigint,
       total_size = sum(size) | as bigint
     }
   )
