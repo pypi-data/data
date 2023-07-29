@@ -114,6 +114,7 @@ let stats_over_time = (
       unique_files = approx_count_distinct(hash) | as bigint,
     }
   )
+  sort {month}
 )
 
 
