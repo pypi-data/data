@@ -131,8 +131,11 @@ def run_sql(
         sql = compiled_sql.replace('$1', json.dumps(parameter))
 
         if profile:
-            conn.execute("PRAGMA enable_profiling;")
-            sql = f'EXPLAIN ANALYZE ({sql})'
+            conn.execute("PRAGMA enable_profiling='query_tree_optimizer';")
+            conn.execute(f"PRAGMA profile_output='{temp_db}/profile.json';")
+            conn.execute(f"PRAGMA profiling_output='{temp_db}/profile.json';")
+            print(f"PRAGMA profile_output='{temp_db}/profile.json';")
+            # sql = f'EXPLAIN ANALYZE ({sql})'
 
         limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'" if not no_limits else ""
         sql = f"{limits}; {sql};"
@@ -169,9 +172,7 @@ def run_sql(
 
     sql = conn.sql(sql)
 
-    if profile:
-        sql.execute()
-    elif output == OutputFormat.PARQUET:
+    if output == OutputFormat.PARQUET:
         sql.to_parquet(str(output_file), compression="zstd")
     else:
         df: pd.DataFrame = sql.to_df()
