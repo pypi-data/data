@@ -1,0 +1,26 @@
+# On every push this script is executed
+on:
+  workflow_dispatch:
+
+#concurrency: data
+
+name: Percentage tracking
+jobs:
+  unique_python_files:
+    timeout-minutes: 120
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: 'data/python_files_dataset.txt'
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          author_name: "commit-bot"
+          message: "Add only python links for asset ${{ needs.generate-matrix.outputs.release_id }}"
+          push: true
+          fetch: true
+          pull: '--rebase --autostash'

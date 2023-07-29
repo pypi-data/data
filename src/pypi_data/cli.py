@@ -2,7 +2,7 @@ import enum
 import os
 import threading
 import time
-
+import pandas as pd
 import duckdb
 import json
 from pathlib import Path
@@ -103,8 +103,6 @@ def run_sql(
         parameter: Annotated[Optional[List[str]], typer.Argument()] = None,
         output: Annotated[OutputFormat, typer.Option()] = OutputFormat.PARQUET,
         threads: Annotated[int, typer.Option()] = 2,
-        explain: Annotated[bool, typer.Option()] = False,
-        # db: Annotated[Optional[str], typer.Option()] = None
 ):
     options = prql.CompileOptions(
         format=True, signature_comment=True, target="sql.duckdb"
@@ -119,14 +117,13 @@ def run_sql(
         # Can't get it to work without doing this. So dumb.
         sql = sql.replace('$1', json.dumps(parameter))
         sql = f"{sql}; COPY temp_table TO '{output_file}' ({fmt});"
-        parameter = []
         conn = duckdb
     else:
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
-        sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
-        sql = sql.replace('$1', json.dumps(parameter))
+        # sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
+        sql = compiled_sql.replace('$1', json.dumps(parameter))
         sql = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'; {sql};"
-        conn = duckdb.connect("file.db")
+        conn = duckdb.connect("duck.db")
     print(sql)
 
     print("\n\n\n")
@@ -156,17 +153,16 @@ def run_sql(
 
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
-    if explain:
-        conn.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
-        conn.execute(f'EXPLAIN ANALYZE {sql}')
+
+    sql = conn.sql(sql)
+
+    if output == OutputFormat.PARQUET:
+        sql.to_parquet(str(output_file), compression="zstd")
     else:
-        conn.executemany(f'{sql}')
-    try:
-        for name, plan in conn.fetchall():
-            print(name)
-            print(plan)
-    except duckdb.InvalidInputException:
-        pass
+        df: pd.DataFrame = sql.to_df()
+        df["stat"] = df["stat"].apply(lambda x: json.loads(x))
+        df.to_json(output_file, orient="records", lines=False, indent=2)
+
 
 
 if __name__ == "__main__":
