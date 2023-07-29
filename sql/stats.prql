@@ -71,7 +71,7 @@ let base_binary_extension_stats = (
 )
 
 let projects_by_files = (
-  from base_with_extension
+  from base
   group {project_name = project_name} (
     aggregate {
       total_files = count(s"*"),
