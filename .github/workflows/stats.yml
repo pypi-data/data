@@ -7,6 +7,7 @@ on:
 name: Generate Stats
 jobs:
   generate_stats:
+    timeout-minutes: 120
     runs-on: ubuntu-latest
     steps:
       - name: Maximize build space
