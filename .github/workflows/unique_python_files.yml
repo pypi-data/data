@@ -4,9 +4,9 @@ on:
 
 #concurrency: data
 
-name: Generate Stats
+name: Unique Python files
 jobs:
-  generate_stats:
+  unique_python_files:
     runs-on: ubuntu-latest
     steps:
       - name: Maximize build space
@@ -49,19 +49,34 @@ jobs:
       - name: Install root
         run: poetry install --only-root
 
-      - name: Generate stats
-        run: |
-          cat links/dataset.txt
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats/overall.json --output=json --threads=4 $(cat links/dataset.txt)
+      - name: Download links
+        run: cat links/dataset.txt
 
-      - run: cat stats/overall.json
+      - name: Combine
+        run: |
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_download.prql python-files.parquet $(cat links/dataset.txt)
+
+      - name: Filter
+        run: |
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_group_by.prql unique-python-files.parquet python-files.parquet
+
+      - name: Upload Assets
+        id: upload
+        uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
+          asset_name: unique-python-files.parquet
+
+      - name: Create download links
+        run: |
+          echo "${{ steps.upload.outputs.browser_download_url }}" > data/python_files_dataset.txt
 
       - uses: EndBug/add-and-commit@v9
         with:
-          add: 'stats/overall.json'
+          add: 'data/python_files_dataset.txt'
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           author_name: "commit-bot"
-          message: "Add stats"
+          message: "Add only python links for asset ${{ needs.generate-matrix.outputs.release_id }}"
           push: true
           fetch: true
           pull: '--rebase --autostash'
