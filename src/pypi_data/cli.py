@@ -81,9 +81,20 @@ def group_index_urls(github_token: GithubToken,
     (output_path / "groups.json").write_text(json.dumps(outputs))
 
 
+def get_size(bytes):
+    """
+    Returns size of bytes in a nice format
+    """
+    for unit in ['', 'K', 'M', 'G', 'T', 'P']:
+        if bytes < 1024:
+            return f"{bytes:.2f}{unit}B"
+        bytes /= 1024
+
+
 class OutputFormat(enum.StrEnum):
     PARQUET = "json"
     JSON = "json"
+
 
 @app.command()
 def run_sql(
@@ -126,12 +137,19 @@ def run_sql(
 
     def print_thread():
         psutil.cpu_percent()
+        net_old_value = psutil.net_io_counters(nowrap=True).bytes_sent + psutil.net_io_counters(nowrap=True).bytes_recv
         while True:
             time.sleep(1)
             memory = psutil.virtual_memory()
             cpu = psutil.cpu_percent()
             disk = psutil.disk_usage(os.getcwd())
-            print(f'\n{memory.available=} / {memory=} / {cpu=} / {disk=}\n')
+
+            net_new_value = psutil.net_io_counters(nowrap=True).bytes_sent + psutil.net_io_counters(nowrap=True).bytes_recv
+            net_usage = (net_new_value - net_old_value) / 1024.0 * 8
+            net_old_value = net_new_value
+
+            print(f'\n{memory.percent=} {cpu=} {disk.percent=} {net_usage=}\n')
+
 
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
