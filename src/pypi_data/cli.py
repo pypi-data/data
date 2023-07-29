@@ -133,6 +133,7 @@ def run_sql(
             db = Path(tempfile.mkdtemp(dir="data"))
         else:
             db = Path(db)
+            db.mkdir(exist_ok=True)
         conn = duckdb.connect(str(db / "duck.db"))
 
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
