@@ -106,40 +106,17 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
-      - name: Set up python
-        id: setup-python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-          cache: 'pip'
-
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-          installer-parallel: true
-
-      - name: Load cached venv
-        id: cached-poetry-dependencies
-        uses: actions/cache@v3
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
-
-      - name: Install dependencies
-        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: poetry install --no-interaction --no-root
-
-      - name: Install root
-        run: poetry install --only-root
-
       - uses: actions/download-artifact@v3
         with:
           name: groups
 
       - name: Download links
         run: cat ${{ matrix.index }} | jq -rc '.[]'
+      - name: Setup DuckDB
+        run: |
+          wget https://github.com/duckdb/duckdb/releases/download/v0.8.1/duckdb_cli-linux-amd64.zip -O /tmp/duckdb.zip
+          unzip /tmp/duckdb.zip -d ${{ github.workspace }}
+          chmod +x ${{ github.workspace }}/duckdb
 
       - name: Download
         run: |
@@ -147,8 +124,7 @@ jobs:
           cat ${{ matrix.index }} | jq -rc '.[]' | parallel wget -nv -O input/{#}.parquet {}
 
       - name: Combine
-        run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/combine.sql ${{ github.workspace }}/output.parquet input/*
+        run: ${{ github.workspace }}/duckdb -echo -stats foo.db < ${{ github.workspace }}/sql/combine.sql
 
       - run: ls -la ${{ github.workspace }}/*.parquet
 
