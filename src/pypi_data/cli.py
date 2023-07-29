@@ -122,6 +122,7 @@ def run_sql(
         sql = f"{sql}; COPY temp_table TO '{output_file}' ({fmt});"
         conn = duckdb
     else:
+        (Path.cwd() / "data").mkdir(exist_ok=True)
         temp_db = Path(tempfile.mkdtemp(dir="data"))
         conn = duckdb.connect(str(temp_db / "duck.db"))
 
