@@ -105,8 +105,9 @@ def run_sql(
     # x = duckdb.execute(sql, parameters=[parameter] if parameter else [])
     # import pprint
     # pprint.pprint(x.fetchall())
-    duckdb.install_extension("httpfs")
-    duckdb.load_extension("httpfs")
+    con = duckdb.connect('file.db')
+    con.install_extension("httpfs")
+    con.load_extension("httpfs")
 
     def print_thread():
         psutil.cpu_percent()
@@ -120,13 +121,13 @@ def run_sql(
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
     # duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
-    duckdb.executemany(f"PRAGMA threads=4; "
+    con.executemany(f"PRAGMA threads=4; "
                        f"PRAGMA memory_limit='2GB'; "
                        # f"PRAGMA enable_profiling;"
                        f"{sql}",
                        parameters=[[parameter]] if parameter else [])
     try:
-        for name, plan in duckdb.fetchall():
+        for name, plan in con.fetchall():
             print(name)
             print(plan)
     except duckdb.InvalidInputException:
