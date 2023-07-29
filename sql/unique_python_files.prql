@@ -10,3 +10,4 @@ group {hash} (
 aggregate {
   path = any_value(path)
 })
+sort {hash}

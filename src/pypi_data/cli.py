@@ -106,6 +106,7 @@ def run_sql(
         parameter: Annotated[Optional[List[str]], typer.Argument()] = None,
         output: Annotated[OutputFormat, typer.Option()] = OutputFormat.PARQUET,
         threads: Annotated[int, typer.Option()] = 2,
+        memory: Annotated[int, typer.Option()] = 6,
         no_limits: Annotated[bool, typer.Option()] = False,
         profile: Annotated[bool, typer.Option()] = False,
         db: Annotated[Optional[str], typer.Option()] = None,
@@ -149,7 +150,7 @@ def run_sql(
             # sql = f'EXPLAIN ANALYZE ({sql})'
 
         if not no_limits:
-            limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB';"
+            limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='{memory}GB';"
             conn.executemany(limits)
 
     print(sql)
