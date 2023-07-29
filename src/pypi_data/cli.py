@@ -145,7 +145,7 @@ def run_sql(
             disk = psutil.disk_usage(os.getcwd())
 
             net_new_value = psutil.net_io_counters(nowrap=True).bytes_sent + psutil.net_io_counters(nowrap=True).bytes_recv
-            net_usage = (net_new_value - net_old_value) / 1024.0 * 8
+            net_usage = (net_new_value - net_old_value) / 1024.0
             net_old_value = net_new_value
 
             print(f'\n{memory.percent=} {cpu=} {disk.percent=} {net_usage=}\n')
