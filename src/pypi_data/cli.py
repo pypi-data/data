@@ -1,5 +1,6 @@
 import enum
 import os
+import tempfile
 import threading
 import time
 import pandas as pd
@@ -121,11 +122,17 @@ def run_sql(
         sql = f"{sql}; COPY temp_table TO '{output_file}' ({fmt});"
         conn = duckdb
     else:
-        conn = duckdb.connect("duck.db")
+        temp_db = Path(tempfile.mkdtemp(dir="data"))
+        conn = duckdb.connect(str(temp_db / "duck.db"))
 
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
         # sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
         sql = compiled_sql.replace('$1', json.dumps(parameter))
+
+        if profile:
+            conn.execute("SET enable_profiling='QUERY_TREE_OPTIMIZER';")
+            sql = f'EXPLAIN ANALYZE {sql}'
+
         limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'" if not no_limits else ""
         sql = f"{limits}; {sql};"
 
@@ -161,10 +168,7 @@ def run_sql(
 
     sql = conn.sql(sql)
 
-    if profile:
-        sql.explain('analyze')
-
-    elif output == OutputFormat.PARQUET:
+    if output == OutputFormat.PARQUET:
         sql.to_parquet(str(output_file), compression="zstd")
     else:
         df: pd.DataFrame = sql.to_df()
