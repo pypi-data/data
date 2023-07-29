@@ -57,7 +57,7 @@ jobs:
 
       - name: Combine
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql unique-python-files.parquet --no-limits --db=db --output=parquet dataset/*.parquet
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql unique-python-files.parquet --db=db --output=parquet dataset/*.parquet
 
       - name: Gets latest created release info
         id: latest_release_info
