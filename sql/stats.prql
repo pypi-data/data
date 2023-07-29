@@ -103,6 +103,7 @@ let skipped_files_stats = (
 
 let stats_over_time = (
   from base
+  filter uploaded_on > @2013-01-01
   filter (month_trunc uploaded_on) < (month_trunc current_date)
   group {month = month_trunc(uploaded_on)} (
     aggregate {
