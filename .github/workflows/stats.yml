@@ -52,15 +52,15 @@ jobs:
       - name: Generate stats
         run: |
           cat links/dataset.txt
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats/overall.json --output=json --threads=4 $(cat links/dataset.txt)
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats/totals.json --output=json --threads=4 $(cat links/dataset.txt)
 
       - run:
-          cp stats/overall.json t
-          cat t | jq '.' > stats/overall.json
+          cp stats/totals.json t
+          cat t | jq '.' > stats/totals.json
 
       - uses: EndBug/add-and-commit@v9
         with:
-          add: 'stats/overall.json'
+          add: 'stats/totals.json'
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           author_name: "commit-bot"
           message: "Add stats"
