@@ -103,6 +103,7 @@ def run_sql(
         parameter: Annotated[Optional[List[str]], typer.Argument()] = None,
         output: Annotated[OutputFormat, typer.Option()] = OutputFormat.JSON,
         threads: Annotated[int, typer.Option()] = 2,
+        explain: Annotated[bool, typer.Option()] = False,
         db: Annotated[Optional[str], typer.Option()] = None
 ):
     options = prql.CompileOptions(
@@ -146,17 +147,20 @@ def run_sql(
             cpu = psutil.cpu_percent()
             disk = psutil.disk_usage(os.getcwd())
 
-            net_new_value = psutil.net_io_counters(nowrap=True).bytes_sent + psutil.net_io_counters(nowrap=True).bytes_recv
+            net_new_value = psutil.net_io_counters(nowrap=True).bytes_sent + psutil.net_io_counters(
+                nowrap=True).bytes_recv
             net_usage = (net_new_value - net_old_value) / 1024.0 / 1024
             net_old_value = net_new_value
 
             print(f'\n{memory.percent=} {cpu=} {disk.percent=} {net_usage=} mb/s\n')
 
-
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
-    duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
-    conn.executemany(f'EXPLAIN ANALYZE {sql}')
+    if explain:
+        conn.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
+        conn.execute(f'EXPLAIN ANALYZE {sql}')
+    else:
+        conn.executemany(f'{sql}')
     try:
         for name, plan in conn.fetchall():
             print(name)
