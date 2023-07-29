@@ -96,18 +96,20 @@ def run_sql(
         sql = sql.replace('$1', json.dumps(parameter))
         sql = f"{sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd);"
         parameter = []
+        conn = duckdb
     else:
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
         sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)"
+        conn = duckdb.connect("file.db")
     print(sql)
 
     print("\n\n\n")
     # x = duckdb.execute(sql, parameters=[parameter] if parameter else [])
     # import pprint
-    # pprint.pprint(x.fetchall())
-    con = duckdb.connect('file.db')
-    con.install_extension("httpfs")
-    con.load_extension("httpfs")
+    # pprint.pprint(x.fetchall()
+    # )
+    conn.install_extension("httpfs")
+    conn.load_extension("httpfs")
 
     def print_thread():
         psutil.cpu_percent()
@@ -121,12 +123,12 @@ def run_sql(
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
     # duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
-    con.executemany(f"PRAGMA threads=4; "
+    conn.executemany(f"PRAGMA threads=4; "
                        f"PRAGMA memory_limit='2GB'; "
                        # f"PRAGMA enable_profiling;"
                        f"{sql}")
     try:
-        for name, plan in con.fetchall():
+        for name, plan in conn.fetchall():
             print(name)
             print(plan)
     except duckdb.InvalidInputException:
