@@ -150,7 +150,7 @@ jobs:
         run: |
           poetry run pypi-data run-sql ${{ github.workspace }}/sql/combine.sql ${{ github.workspace }}/output.parquet input/*
 
-      - run: ls -la ${{ github.workspace }}
+      - run: ls -la ${{ github.workspace }}/*.parquet
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
