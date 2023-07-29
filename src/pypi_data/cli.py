@@ -93,12 +93,12 @@ def run_sql(
     if prql_file.name.endswith(".sql"):
         sql = prql_file.read_text()
         # Can't get it to work without doing this. So dumb.
-        sql = sql.replace('$1', json.dumps(parameter))
-        sql = f"{sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd);"
+        compiled_sql = sql.replace('$1', json.dumps(parameter))
+        # sql = f"{sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd);"
         parameter = []
     else:
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
-        sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)"
+    sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)"
     print(sql)
 
     print("\n\n\n")
