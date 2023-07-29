@@ -189,10 +189,11 @@ def run_sql(
     elif output == OutputFormat.PARQUET:
         sql.to_parquet(str(output_file), compression="zstd")
     else:
-        df: pd.DataFrame = sql.to_df()
-        df.set_index("name", inplace=True)
-        df["stat"] = df["stat"].apply(lambda x: json.loads(x))
-        df.to_json(output_file, orient="index", lines=False, indent=2)
+        sql.to_table("temp_table")
+        # df: pd.DataFrame = sql.to_df()
+        # df.set_index("name", inplace=True)
+        # df["stat"] = df["stat"].apply(lambda x: json.loads(x))
+        # df.to_json(output_file, orient="index", lines=False, indent=2)
 
 
 if __name__ == "__main__":

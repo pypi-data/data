@@ -53,7 +53,7 @@ jobs:
       - name: Generate stats
         run: |
           cat links/dataset.txt
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats/totals.json --output=json --no-limits $(cat links/dataset.txt)
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats/totals.json --output=json --threads=4 $(cat links/dataset.txt)
 
       - run: |
           cp stats/totals.json t
