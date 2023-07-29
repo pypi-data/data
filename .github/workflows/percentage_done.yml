@@ -6,7 +6,7 @@ on:
 
 name: Percentage tracking
 jobs:
-  unique_python_files:
+  percentage_track:
     timeout-minutes: 120
     runs-on: ubuntu-latest
     steps:
