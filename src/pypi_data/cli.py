@@ -131,8 +131,8 @@ def run_sql(
         sql = compiled_sql.replace('$1', json.dumps(parameter))
 
         if profile:
-            conn.execute("SET enable_profiling='QUERY_TREE_OPTIMIZER';")
-            sql = f'EXPLAIN ANALYZE {sql}'
+            conn.execute("PRAGMA enable_profiling;")
+            sql = f'EXPLAIN ANALYZE ({sql})'
 
         limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'" if not no_limits else ""
         sql = f"{limits}; {sql};"
