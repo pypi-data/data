@@ -32,12 +32,15 @@ jobs:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: |
           ${{ github.workspace }}/toolchain/pypi-data-toolchain list-repositories --json > stats/repositories.json
+          ${{ github.workspace }}/toolchain/pypi-data-toolchain list-repositories --json --with-release-stats > stats/repositories_with_releases.json
 
       - run: head stats/repositories.json -n 20
 
       - uses: EndBug/add-and-commit@v9
         with:
-          add: 'stats/repositories.json'
+          add: |
+            stats/repositories.json
+            stats/repositories_with_releases.json
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           author_name: "commit-bot"
           message: "Add repo stats information"
