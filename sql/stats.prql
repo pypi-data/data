@@ -54,7 +54,7 @@ let extension_stats = (
   take 10
 )
 
-let binary_extension_stats = (
+let base_binary_extension_stats = (
   from base_with_extension
   filter skip_reason == "binary"
   group {extension = extension} (
@@ -65,7 +65,7 @@ let binary_extension_stats = (
       total_size = sum(size) | as bigint
     }
   )
-  sort {-total_files}
+  sort {-total_size}
   take 10
 )
 
