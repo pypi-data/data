@@ -149,7 +149,7 @@ def run_sql(
             net_usage = (net_new_value - net_old_value) / 1024.0 / 1024
             net_old_value = net_new_value
 
-            print(f'\n{memory.percent=} {cpu=} {disk.percent=} {net_usage=}/s\n')
+            print(f'\n{memory.percent=} {cpu=} {disk.percent=} {net_usage=} mb/s\n')
 
 
     t = threading.Thread(target=print_thread, daemon=True)
