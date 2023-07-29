@@ -13,14 +13,32 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
+      - uses: robinraju/release-downloader@v1.8
+        with:
+          repository: "pypi-data/toolchain"
+          fileName: "pypi-data-toolchain.tar.gz"
+          extract: true
+          latest: true
+          out-file-path: "toolchain/"
 
+      - name: Generate token
+        id: generate_token
+        uses: pypi-data/github-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+        run: |
+          ${{ github.workspace }}/toolchain/pypi-data-toolchain list-repositories --json > stats/repositories.json      
 
       - uses: EndBug/add-and-commit@v9
         with:
-          add: 'data/python_files_dataset.txt'
+          add: 'stats/repositories.json'
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           author_name: "commit-bot"
-          message: "Add only python links for asset ${{ needs.generate-matrix.outputs.release_id }}"
+          message: "Add repo stats information"
           push: true
           fetch: true
           pull: '--rebase --autostash'
