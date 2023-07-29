@@ -1,5 +1,16 @@
 prql target:sql.duckdb
 
-let sample = i -> s"SELECT * FROM {i} USING SAMPLE 5"
+let base = (
+  read_parquet($1)
+  sort s"random()"
+)
 
-from (sample(read_parquet($1)))
+from (
+  base
+  take 3
+)
+append (
+  base
+  filter skip_reason != ""
+  take 3
+)
