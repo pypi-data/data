@@ -1,5 +1,6 @@
 import enum
 import os
+import sys
 import tempfile
 import threading
 import time
@@ -152,8 +153,8 @@ def run_sql(
             conn.executemany(limits)
 
     print(sql)
-
     print("\n\n\n")
+    sys.stdout.flush()
 
     conn.install_extension("httpfs")
     conn.load_extension("httpfs")
