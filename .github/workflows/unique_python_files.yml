@@ -57,6 +57,8 @@ jobs:
         run: |
           poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_download.prql python-files.parquet $(cat links/dataset.txt)
 
+      - run: ls -la
+
       - name: Filter
         run: |
           poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_group_by.prql unique-python-files.parquet python-files.parquet

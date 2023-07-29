@@ -101,10 +101,10 @@ def run_sql(
         prql_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, readable=True)],
         output_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, writable=True)],
         parameter: Annotated[Optional[List[str]], typer.Argument()] = None,
-        output: Annotated[OutputFormat, typer.Option()] = OutputFormat.JSON,
+        output: Annotated[OutputFormat, typer.Option()] = OutputFormat.PARQUET,
         threads: Annotated[int, typer.Option()] = 2,
         explain: Annotated[bool, typer.Option()] = False,
-        db: Annotated[Optional[str], typer.Option()] = None
+        # db: Annotated[Optional[str], typer.Option()] = None
 ):
     options = prql.CompileOptions(
         format=True, signature_comment=True, target="sql.duckdb"
