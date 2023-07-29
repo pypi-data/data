@@ -111,6 +111,7 @@ def run_sql(
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
         sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
         sql = sql.replace('$1', json.dumps(parameter))
+        sql = f"PRAGMA threads=2; PRAGMA memory_limit='6GB'; {sql}"
         conn = duckdb.connect("file.db")
     print(sql)
 
@@ -134,10 +135,7 @@ def run_sql(
     t = threading.Thread(target=print_thread, daemon=True)
     t.start()
     # duckdb.execute("PRAGMA EXPLAIN_OUTPUT='ALL';")
-    conn.executemany(f"PRAGMA threads=4; "
-                       f"PRAGMA memory_limit='2GB'; "
-                       # f"PRAGMA enable_profiling;"
-                       f"{sql}")
+    conn.executemany(sql)
     try:
         for name, plan in conn.fetchall():
             print(name)
