@@ -1,3 +1,5 @@
 prql target:sql.duckdb
 
-from (read_parquet($1))
+let sample = i -> s"SELECT * FROM {i} USING SAMPLE 5"
+
+from (sample(read_parquet($1)))
