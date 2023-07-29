@@ -95,6 +95,7 @@ def get_size(bytes):
 class OutputFormat(enum.StrEnum):
     PARQUET = "parquet"
     JSON = "json"
+    TABLE = "table"
 
 
 @app.command()
@@ -106,7 +107,11 @@ def run_sql(
         threads: Annotated[int, typer.Option()] = 2,
         no_limits: Annotated[bool, typer.Option()] = False,
         profile: Annotated[bool, typer.Option()] = False,
+        db: Annotated[Optional[str], typer.Option()] = None,
 ):
+    """
+    This whole method is a fucking mess.
+    """
     options = prql.CompileOptions(
         format=True, signature_comment=True, target="sql.duckdb"
     )
@@ -122,9 +127,13 @@ def run_sql(
         sql = f"{sql}; COPY temp_table TO '{output_file}' ({fmt});"
         conn = duckdb
     else:
-        (Path.cwd() / "data").mkdir(exist_ok=True)
-        temp_db = Path(tempfile.mkdtemp(dir="data"))
-        conn = duckdb.connect(str(temp_db / "duck.db"))
+        data_dir = (Path.cwd() / "data")
+        data_dir.mkdir(exist_ok=True)
+        if not db:
+            db = Path(tempfile.mkdtemp(dir="data"))
+        else:
+            db = Path(db)
+        conn = duckdb.connect(str(db / "duck.db"))
 
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
         # sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
@@ -132,9 +141,9 @@ def run_sql(
 
         if profile:
             conn.execute("PRAGMA enable_profiling='query_tree_optimizer';")
-            conn.execute(f"PRAGMA profile_output='{temp_db}/profile.json';")
-            conn.execute(f"PRAGMA profiling_output='{temp_db}/profile.json';")
-            print(f"PRAGMA profile_output='{temp_db}/profile.json';")
+            conn.execute(f"PRAGMA profile_output='{db}/profile.json';")
+            conn.execute(f"PRAGMA profiling_output='{db}/profile.json';")
+            print(f"PRAGMA profile_output='{db}/profile.json';")
             # sql = f'EXPLAIN ANALYZE ({sql})'
 
         limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='6GB'" if not no_limits else ""
@@ -143,11 +152,7 @@ def run_sql(
     print(sql)
 
     print("\n\n\n")
-    conn.execute("DROP TABLE IF EXISTS temp_table;")
-    # x = duckdb.execute(sql, parameters=[parameter] if parameter else [])
-    # import pprint
-    # pprint.pprint(x.fetchall()
-    # )
+
     conn.install_extension("httpfs")
     conn.load_extension("httpfs")
 
@@ -172,7 +177,9 @@ def run_sql(
 
     sql = conn.sql(sql)
 
-    if output == OutputFormat.PARQUET:
+    if output == OutputFormat.TABLE:
+        sql.to_table("temp_table")
+    elif output == OutputFormat.PARQUET:
         sql.to_parquet(str(output_file), compression="zstd")
     else:
         df: pd.DataFrame = sql.to_df()
