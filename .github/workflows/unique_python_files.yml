@@ -10,12 +10,6 @@ jobs:
     timeout-minutes: 120
     runs-on: ubuntu-latest
     steps:
-      - name: Gets latest created release info
-        id: latest_release_info
-        uses: jossef/action-latest-release-info@v1.2.2
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-
       - name: Maximize build space
         uses: easimon/maximize-build-space@master
         with:
@@ -76,6 +70,12 @@ jobs:
 
       - name: List
         run: ls combined/
+
+      - name: Gets latest created release info
+        id: latest_release_info
+        uses: jossef/action-latest-release-info@v1.2.1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Upload Assets
         id: upload
