@@ -1,3 +1,8 @@
+*.db
+*.wal
+duckdb_*
+input/*
+
 .idea/
 data/
 ### Python template
