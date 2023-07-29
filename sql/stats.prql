@@ -26,7 +26,8 @@ let base_with_extension = (
     extension = (regexp_extract path "\\.[0-9a-z]+$"),
     lines,
     size,
-    skip_reason
+    skip_reason,
+    hash
   }
 )
 
