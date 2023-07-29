@@ -10,6 +10,12 @@ jobs:
     timeout-minutes: 120
     runs-on: ubuntu-latest
     steps:
+      - name: Gets latest created release info
+        id: latest_release_info
+        uses: jossef/action-latest-release-info@v1.2.2
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
       - name: Maximize build space
         uses: easimon/maximize-build-space@master
         with:
@@ -64,14 +70,12 @@ jobs:
           mkdir combined/
           find dataset/ -name '*.parquet' | parallel -j 1 --xargs -n2 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 combined/{#}.parquet {}
 
+      - name: Complete
+        run: |
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 unique-python-files.parquet combined/*.parquet
+
       - name: List
         run: ls combined/
-
-      - name: Gets latest created release info
-        id: latest_release_info
-        uses: jossef/action-latest-release-info@v1.2.2
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Upload Assets
         id: upload
