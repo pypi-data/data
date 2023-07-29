@@ -8,5 +8,5 @@ filter skip_reason == ""
 select {hash, path}
 group {hash} (
 aggregate {
-  any_value(path)
+  path = any_value(path)
 })

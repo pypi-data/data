@@ -5,5 +5,5 @@ let any_value = column -> s"any_value({column})"
 from temp_table
 group {hash} (
 aggregate {
-  any_value(path)
+  path = any_value(path)
 })
