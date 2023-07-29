@@ -45,6 +45,7 @@ let extension_stats = (
   group {extension = extension} (
     aggregate {
       total_files = count(s"*"),
+      unique_files = approx_count_distinct(hash) | as bigint,
       total_lines = sum(lines) | as bigint,
       total_size = sum(size) | as bigint
     }
@@ -59,6 +60,7 @@ let binary_extension_stats = (
   group {extension = extension} (
     aggregate {
       total_files = count(s"*"),
+      unique_files = approx_count_distinct(hash) | as bigint,
       total_lines = sum(lines) | as bigint,
       total_size = sum(size) | as bigint
     }
@@ -70,9 +72,11 @@ let binary_extension_stats = (
 let skipped_files_stats = (
   from base_with_extension
   filter skip_reason != "binary"
+  filter skip_reason != ""
   group {extension = extension} (
     aggregate {
       total_files = count(s"*"),
+      unique_files = approx_count_distinct(hash) | as bigint,
       total_lines = sum(lines) | as bigint,
       total_size = sum(size) | as bigint
     }
@@ -92,6 +96,7 @@ let stats_over_time = (
       total_size = sum(size) | as bigint,
       total_lines = sum(lines) | as bigint,
       total_hours = s"date_diff('hours', min({uploaded_on}), max({uploaded_on}))",
+      unique_files = approx_count_distinct(hash) | as bigint,
     }
   )
 )
