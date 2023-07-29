@@ -91,13 +91,10 @@ let stats_over_time = (
       total_size = sum(size) | as bigint,
       total_lines = sum(lines) | as bigint,
       total_hours = s"date_diff('hours', min({uploaded_on}), max({uploaded_on}))",
-      lines_per_hour = total_lines / total_hours | as bigint,
-      bytes_per_hour = total_size / total_hours | as bigint,
-      files_per_hour = total_files / total_hours | as bigint,
-      releases_per_hour = total_uploads / total_hours | as bigint,
     }
   )
 )
+
 
 
 relation_to_json(total_stats)
