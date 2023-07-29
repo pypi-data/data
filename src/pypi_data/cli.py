@@ -169,7 +169,9 @@ def run_sql(
 
     sql = conn.sql(sql)
 
-    if output == OutputFormat.PARQUET:
+    if profile:
+        sql.execute()
+    elif output == OutputFormat.PARQUET:
         sql.to_parquet(str(output_file), compression="zstd")
     else:
         df: pd.DataFrame = sql.to_df()
