@@ -9,11 +9,11 @@ let base = (
 from (
   base
   select !{random}
-  take 3
+  take 1
 )
 append (
   base
   filter skip_reason != ""
   select !{random}
-  take 3
+  take 1
 )
