@@ -98,7 +98,7 @@ def run_sql(
         parameter = []
     else:
         compiled_sql = prql.compile(prql_file.read_text(), options=options)
-        sql = f"COPY ({compiled_sql}) TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)"
+        sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' (FORMAT PARQUET, COMPRESSION zstd)"
     print(sql)
 
     print("\n\n\n")
