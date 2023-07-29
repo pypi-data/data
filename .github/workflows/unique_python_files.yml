@@ -62,7 +62,7 @@ jobs:
       - name: Ingest
         run: |
           mkdir combined/
-          find dataset/ -name '*.parquet' | parallel -j 1 --xargs -n2 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 combined/{#}.parquet {}
+          find dataset/ -name '*.parquet' | parallel -j 1 --xargs -n4 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 combined/{#}.parquet {}
 
       - name: Combine
         run: |
