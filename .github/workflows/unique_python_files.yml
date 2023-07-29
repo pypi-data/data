@@ -60,7 +60,7 @@ jobs:
 
       - name: Filter
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_group_by.prql unique-python-files.parquet python-files.parquet --no-limits --output=parquet --db=db
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_group_by.prql unique-python-files.parquet python-files.parquet --output=parquet --db=db
 
       - name: Gets latest created release info
         id: latest_release_info
