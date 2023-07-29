@@ -2,6 +2,7 @@
 *.wal
 duckdb_*
 input/*
+*.parquet
 
 .idea/
 data/

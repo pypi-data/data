@@ -1,10 +1,8 @@
 # On every push this script is executed
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-
+  schedule:
+    - cron: "0 3 * * *"
 #concurrency: data
 
 name: Build data
