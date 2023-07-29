@@ -74,6 +74,7 @@ jobs:
         with:
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_name: unique-python-files.parquet
+          asset_path: unique-python-files.parquet
           overwrite: true
 
       - name: Create download links
