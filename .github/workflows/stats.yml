@@ -50,10 +50,14 @@ jobs:
       - name: Install root
         run: poetry install --only-root
 
+      - name: Download links
+        run: |
+          mkdir dataset/
+          cat links/dataset.txt | xargs -P 5 -n 4 wget --no-verbose -P dataset/
+
       - name: Generate stats
         run: |
-          cat links/dataset.txt
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats/totals.json --output=json --threads=8 $(cat links/dataset.txt)
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats/totals.json --output=json --threads=8 dataset/*.parquet
 
       - run: |
           cp stats/totals.json t
