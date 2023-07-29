@@ -1,0 +1,66 @@
+# On every push this script is executed
+on:
+  workflow_dispatch:
+
+#concurrency: data
+
+name: Generate Documentation Samples
+jobs:
+  generate_samples:
+    timeout-minutes: 120
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: Set up python
+        id: setup-python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          installer-parallel: true
+
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+
+      - name: Install root
+        run: poetry install --only-root
+
+      - name: Download links
+        run: |
+          mkdir dataset/
+          cat links/dataset.txt | shuf | head -n1 | xargs -P 5 -n 4 wget --no-verbose -P dataset/
+
+      - name: Generate stats
+        run: |
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/random.prql stats/random_sample.json --output=json --threads=8 dataset/*.parquet
+
+      - run: |
+          cp stats/random_sample.json t
+          cat t | jq '.' > stats/random_sample.json
+          head stats/random_sample.json
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: 'stats/random_sample.json'
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          author_name: "commit-bot"
+          message: "Add random samples"
+          push: true
+          fetch: true
+          pull: '--rebase --autostash'

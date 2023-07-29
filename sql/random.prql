@@ -1,0 +1,3 @@
+prql target:sql.duckdb
+
+from (read_parquet($1))
