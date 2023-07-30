@@ -5,6 +5,8 @@ let regexp_extract = column r -> s"regexp_extract({column}, {r})"
 let row_to_json = name -> s"row_to_json({name})"
 let month_trunc = name -> s"date_trunc('MONTH', {name})"
 let current_date = s"current_date()"
+let suffix = name value -> s"suffix({name}, {value})"
+let contains = name value -> s"contains({name}, {value})"
 
 let relation_to_json = func r -> (
   from s=r
@@ -101,10 +103,15 @@ let skipped_files_stats = (
   take 15
 )
 
-let stats_over_time = (
+
+let time_stats_base = (
   from base
   filter uploaded_on > @2013-01-01
   filter (month_trunc uploaded_on) < (month_trunc current_date)
+)
+
+let stats_over_time = (
+  from time_stats_base
   group {month = month_trunc(uploaded_on)} (
     aggregate {
       total_uploads = s"COUNT(DISTINCT {project_name})" | as bigint,
@@ -118,6 +125,32 @@ let stats_over_time = (
     }
   )
   sort {month}
+)
+
+
+let project_level_breakdowns = (
+   from time_stats_base
+   derive {
+    has_pyproject = suffix path 'pyproject.toml',
+    has_setup_py =  suffix path 'setup.py',
+    has_pyproject_and_setup_py = has_pyproject && has_setup_py,
+
+    has_tests = contains path 'test',
+
+    has_rst = suffix path '.rst',
+    has_markdown = suffix path '.md'
+   }
+   group {month = month_trunc(uploaded_on)} (
+    aggregate {
+      total_project_uploads = s"COUNT(DISTINCT {project_name})",
+      has_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject} = true)",
+      has_setup_py = s"COUNT(DISTINCT {project_name}) FILTER ({has_setup_py} = true)",
+      has_setup_py_and_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject_and_setup_py})",
+      has_markdown = s"COUNT(DISTINCT {project_name}) FILTER ({has_markdown})",
+      has_rst = s"COUNT(DISTINCT {project_name}) FILTER ({has_rst})",
+      has_tests = s"COUNT(DISTINCT {project_name}) FILTER ({has_tests})",
+    }
+   )
 )
 
 let skip_reason_stats = (
@@ -146,6 +179,7 @@ append (relation_to_json extension_stats)
 append (relation_to_json binary_extension_stats)
 append (relation_to_json skipped_files_stats)
 append (relation_to_json stats_over_time)
+append (relation_to_json project_level_breakdowns)
 append (relation_to_json projects_by_files)
 append (relation_to_json skip_reason_stats)
 append (relation_to_json binary_sizes)
