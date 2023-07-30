@@ -1,10 +1,5 @@
 prql target:sql.duckdb
 
-let any_value = column -> s"any_value({column})"
-
 from (read_parquet $1)
-select {hash, path}
-group {hash} (
-aggregate {
-  path = any_value(path)
-})
+select {s"distinct on({hash}) {hash}", path}
+
