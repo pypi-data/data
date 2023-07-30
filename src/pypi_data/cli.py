@@ -4,7 +4,6 @@ import sys
 import tempfile
 import threading
 import time
-import pandas as pd
 import duckdb
 import json
 from pathlib import Path
