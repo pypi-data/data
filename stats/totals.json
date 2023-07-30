@@ -238,15 +238,15 @@
   {
     "stat": [
       {
-        "month": "2016-04-01",
-        "total_uploads": 5838,
-        "project_releases": 19436,
-        "project_version_releases": 13899,
-        "total_files": 1858489,
-        "total_size": 59754105599,
-        "total_lines": 456873137,
-        "total_hours": 719,
-        "unique_files": 508141
+        "month": "2016-02-01",
+        "total_uploads": 5912,
+        "project_releases": 18384,
+        "project_version_releases": 13326,
+        "total_files": 1586955,
+        "total_size": 41108923850,
+        "total_lines": 386766709,
+        "total_hours": 695,
+        "unique_files": 477567
       },
       {
         "month": "2016-03-01",
@@ -258,6 +258,17 @@
         "total_lines": 450098709,
         "total_hours": 743,
         "unique_files": 532011
+      },
+      {
+        "month": "2016-04-01",
+        "total_uploads": 5838,
+        "project_releases": 19436,
+        "project_version_releases": 13899,
+        "total_files": 1858489,
+        "total_size": 59754105599,
+        "total_lines": 456873137,
+        "total_hours": 719,
+        "unique_files": 508141
       },
       {
         "month": "2017-03-01",
@@ -304,15 +315,15 @@
         "unique_files": 213249
       },
       {
-        "month": "2013-10-01",
-        "total_uploads": 2900,
-        "project_releases": 6745,
-        "project_version_releases": 6009,
-        "total_files": 667353,
-        "total_size": 7980102553,
-        "total_lines": 130877054,
-        "total_hours": 743,
-        "unique_files": 224994
+        "month": "2013-11-01",
+        "total_uploads": 2797,
+        "project_releases": 6397,
+        "project_version_releases": 5650,
+        "total_files": 646261,
+        "total_size": 8933541694,
+        "total_lines": 134789454,
+        "total_hours": 719,
+        "unique_files": 216153
       },
       {
         "month": "2013-05-01",
@@ -324,6 +335,17 @@
         "total_lines": 84351704,
         "total_hours": 743,
         "unique_files": 184939
+      },
+      {
+        "month": "2013-06-01",
+        "total_uploads": 2358,
+        "project_releases": 5095,
+        "project_version_releases": 4687,
+        "total_files": 403197,
+        "total_size": 3760319873,
+        "total_lines": 62227126,
+        "total_hours": 719,
+        "unique_files": 155986
       },
       {
         "month": "2013-07-01",
@@ -359,6 +381,17 @@
         "unique_files": 556253
       },
       {
+        "month": "2015-05-01",
+        "total_uploads": 4663,
+        "project_releases": 13181,
+        "project_version_releases": 9963,
+        "total_files": 979394,
+        "total_size": 23100413882,
+        "total_lines": 252742582,
+        "total_hours": 743,
+        "unique_files": 388251
+      },
+      {
         "month": "2015-06-01",
         "total_uploads": 4673,
         "project_releases": 13642,
@@ -368,17 +401,6 @@
         "total_lines": 344623370,
         "total_hours": 719,
         "unique_files": 368496
-      },
-      {
-        "month": "2015-04-01",
-        "total_uploads": 4695,
-        "project_releases": 12902,
-        "project_version_releases": 10066,
-        "total_files": 973230,
-        "total_size": 17634251586,
-        "total_lines": 242640006,
-        "total_hours": 719,
-        "unique_files": 374642
       },
       {
         "month": "2015-07-01",
@@ -425,6 +447,17 @@
         "unique_files": 278164
       },
       {
+        "month": "2015-01-01",
+        "total_uploads": 4049,
+        "project_releases": 10524,
+        "project_version_releases": 8651,
+        "total_files": 1019778,
+        "total_size": 18105206868,
+        "total_lines": 265555649,
+        "total_hours": 743,
+        "unique_files": 339114
+      },
+      {
         "month": "2014-10-01",
         "total_uploads": 3890,
         "project_releases": 10026,
@@ -469,17 +502,6 @@
         "unique_files": 420455
       },
       {
-        "month": "2016-02-01",
-        "total_uploads": 5912,
-        "project_releases": 18384,
-        "project_version_releases": 13326,
-        "total_files": 1586955,
-        "total_size": 41108923850,
-        "total_lines": 386766709,
-        "total_hours": 695,
-        "unique_files": 477567
-      },
-      {
         "month": "2016-01-01",
         "total_uploads": 5497,
         "project_releases": 16804,
@@ -491,15 +513,26 @@
         "unique_files": 449250
       },
       {
-        "month": "2014-07-01",
-        "total_uploads": 3559,
-        "project_releases": 9455,
-        "project_version_releases": 7874,
-        "total_files": 937104,
-        "total_size": 15385274685,
-        "total_lines": 195244510,
+        "month": "2014-04-01",
+        "total_uploads": 3402,
+        "project_releases": 7976,
+        "project_version_releases": 6780,
+        "total_files": 712917,
+        "total_size": 13570376416,
+        "total_lines": 137623793,
+        "total_hours": 719,
+        "unique_files": 246982
+      },
+      {
+        "month": "2014-05-01",
+        "total_uploads": 3399,
+        "project_releases": 8709,
+        "project_version_releases": 7322,
+        "total_files": 745704,
+        "total_size": 12534246649,
+        "total_lines": 145653008,
         "total_hours": 743,
-        "unique_files": 283365
+        "unique_files": 266779
       },
       {
         "month": "2014-08-01",
@@ -513,15 +546,15 @@
         "unique_files": 296759
       },
       {
-        "month": "2014-05-01",
-        "total_uploads": 3399,
-        "project_releases": 8709,
-        "project_version_releases": 7322,
-        "total_files": 745704,
-        "total_size": 12534246649,
-        "total_lines": 145653008,
-        "total_hours": 743,
-        "unique_files": 266779
+        "month": "2014-06-01",
+        "total_uploads": 3473,
+        "project_releases": 8911,
+        "project_version_releases": 7484,
+        "total_files": 756749,
+        "total_size": 12811014047,
+        "total_lines": 161135685,
+        "total_hours": 719,
+        "unique_files": 256477
       },
       {
         "month": "2016-07-01",
@@ -579,17 +612,6 @@
         "unique_files": 578030
       },
       {
-        "month": "2015-10-01",
-        "total_uploads": 5312,
-        "project_releases": 16345,
-        "project_version_releases": 11946,
-        "total_files": 1554328,
-        "total_size": 34503639005,
-        "total_lines": 368652750,
-        "total_hours": 743,
-        "unique_files": 480763
-      },
-      {
         "month": "2015-11-01",
         "total_uploads": 5364,
         "project_releases": 15424,
@@ -599,6 +621,17 @@
         "total_lines": 378234500,
         "total_hours": 719,
         "unique_files": 444343
+      },
+      {
+        "month": "2015-10-01",
+        "total_uploads": 5312,
+        "project_releases": 16345,
+        "project_version_releases": 11946,
+        "total_files": 1554328,
+        "total_size": 34503639005,
+        "total_lines": 368652750,
+        "total_hours": 743,
+        "unique_files": 480763
       },
       {
         "month": "2017-01-01",
@@ -612,17 +645,6 @@
         "unique_files": 668957
       },
       {
-        "month": "2013-01-01",
-        "total_uploads": 2323,
-        "project_releases": 5249,
-        "project_version_releases": 4727,
-        "total_files": 494172,
-        "total_size": 5194803396,
-        "total_lines": 92632646,
-        "total_hours": 743,
-        "unique_files": 203097
-      },
-      {
         "month": "2013-02-01",
         "total_uploads": 2344,
         "project_releases": 5212,
@@ -632,17 +654,6 @@
         "total_lines": 81030332,
         "total_hours": 671,
         "unique_files": 196741
-      },
-      {
-        "month": "2013-03-01",
-        "total_uploads": 2596,
-        "project_releases": 5982,
-        "project_version_releases": 5219,
-        "total_files": 422295,
-        "total_size": 6770915833,
-        "total_lines": 79354997,
-        "total_hours": 743,
-        "unique_files": 183819
       },
       {
         "month": "2013-04-01",
@@ -678,15 +689,15 @@
         "unique_files": 398298
       },
       {
-        "month": "2015-01-01",
-        "total_uploads": 4049,
-        "project_releases": 10524,
-        "project_version_releases": 8651,
-        "total_files": 1019778,
-        "total_size": 18105206868,
-        "total_lines": 265555649,
-        "total_hours": 743,
-        "unique_files": 339114
+        "month": "2015-04-01",
+        "total_uploads": 4695,
+        "project_releases": 12902,
+        "project_version_releases": 10066,
+        "total_files": 973230,
+        "total_size": 17634251586,
+        "total_lines": 242640006,
+        "total_hours": 719,
+        "unique_files": 374642
       },
       {
         "month": "2015-02-01",
@@ -700,26 +711,15 @@
         "unique_files": 335627
       },
       {
-        "month": "2014-02-01",
-        "total_uploads": 3228,
-        "project_releases": 7034,
-        "project_version_releases": 6123,
-        "total_files": 612498,
-        "total_size": 8590266223,
-        "total_lines": 127907180,
-        "total_hours": 671,
-        "unique_files": 260230
-      },
-      {
-        "month": "2014-04-01",
-        "total_uploads": 3402,
-        "project_releases": 7976,
-        "project_version_releases": 6780,
-        "total_files": 712917,
-        "total_size": 13570376416,
-        "total_lines": 137623793,
-        "total_hours": 719,
-        "unique_files": 246982
+        "month": "2014-03-01",
+        "total_uploads": 3380,
+        "project_releases": 8340,
+        "project_version_releases": 7172,
+        "total_files": 609287,
+        "total_size": 8457692169,
+        "total_lines": 117432007,
+        "total_hours": 743,
+        "unique_files": 237276
       },
       {
         "month": "2013-12-01",
@@ -733,6 +733,17 @@
         "unique_files": 250338
       },
       {
+        "month": "2014-01-01",
+        "total_uploads": 3132,
+        "project_releases": 7787,
+        "project_version_releases": 6616,
+        "total_files": 676715,
+        "total_size": 9603151404,
+        "total_lines": 149866740,
+        "total_hours": 743,
+        "unique_files": 231494
+      },
+      {
         "month": "2018-10-01",
         "total_uploads": 11943,
         "project_releases": 49209,
@@ -744,15 +755,15 @@
         "unique_files": 1155733
       },
       {
-        "month": "2018-11-01",
-        "total_uploads": 11699,
-        "project_releases": 48106,
-        "project_version_releases": 28291,
-        "total_files": 5336077,
-        "total_size": 275839364227,
-        "total_lines": 1791360632,
-        "total_hours": 719,
-        "unique_files": 1153342
+        "month": "2018-08-01",
+        "total_uploads": 10819,
+        "project_releases": 44339,
+        "project_version_releases": 25891,
+        "total_files": 4607989,
+        "total_size": 189110510154,
+        "total_lines": 1317431275,
+        "total_hours": 743,
+        "unique_files": 990374
       },
       {
         "month": "2018-07-01",
@@ -764,17 +775,6 @@
         "total_lines": 1243211876,
         "total_hours": 743,
         "unique_files": 1065523
-      },
-      {
-        "month": "2018-08-01",
-        "total_uploads": 10819,
-        "project_releases": 44339,
-        "project_version_releases": 25891,
-        "total_files": 4607989,
-        "total_size": 189110510154,
-        "total_lines": 1317431275,
-        "total_hours": 743,
-        "unique_files": 990374
       },
       {
         "month": "2017-07-01",
@@ -810,17 +810,6 @@
         "unique_files": 1135985
       },
       {
-        "month": "2018-04-01",
-        "total_uploads": 10868,
-        "project_releases": 41192,
-        "project_version_releases": 27811,
-        "total_files": 3655738,
-        "total_size": 183283280647,
-        "total_lines": 1061704510,
-        "total_hours": 719,
-        "unique_files": 964563
-      },
-      {
         "month": "2018-05-01",
         "total_uploads": 10270,
         "project_releases": 38060,
@@ -830,6 +819,17 @@
         "total_lines": 1191359848,
         "total_hours": 743,
         "unique_files": 934713
+      },
+      {
+        "month": "2018-04-01",
+        "total_uploads": 10868,
+        "project_releases": 41192,
+        "project_version_releases": 27811,
+        "total_files": 3655738,
+        "total_size": 183283280647,
+        "total_lines": 1061704510,
+        "total_hours": 719,
+        "unique_files": 964563
       },
       {
         "month": "2017-08-01",
@@ -863,6 +863,17 @@
         "total_lines": 1260486714,
         "total_hours": 719,
         "unique_files": 1043050
+      },
+      {
+        "month": "2018-11-01",
+        "total_uploads": 11699,
+        "project_releases": 48106,
+        "project_version_releases": 28291,
+        "total_files": 5336077,
+        "total_size": 275839364227,
+        "total_lines": 1791360632,
+        "total_hours": 719,
+        "unique_files": 1153342
       },
       {
         "month": "2018-12-01",
@@ -1481,17 +1492,6 @@
         "unique_files": 2962570
       },
       {
-        "month": "2022-07-01",
-        "total_uploads": 24258,
-        "project_releases": 161694,
-        "project_version_releases": 76780,
-        "total_files": 24886333,
-        "total_size": 1792404942745,
-        "total_lines": 7925608913,
-        "total_hours": 743,
-        "unique_files": 3098303
-      },
-      {
         "month": "2022-06-01",
         "total_uploads": 24663,
         "project_releases": 165003,
@@ -1501,6 +1501,17 @@
         "total_lines": 9102353251,
         "total_hours": 719,
         "unique_files": 3180386
+      },
+      {
+        "month": "2022-07-01",
+        "total_uploads": 24258,
+        "project_releases": 161694,
+        "project_version_releases": 76780,
+        "total_files": 24886333,
+        "total_size": 1792404942745,
+        "total_lines": 7925608913,
+        "total_hours": 743,
+        "unique_files": 3098303
       },
       {
         "month": "2022-05-01",
@@ -1558,70 +1569,59 @@
         "unique_files": 2763006
       },
       {
-        "month": "2013-11-01",
-        "total_uploads": 2797,
-        "project_releases": 6397,
-        "project_version_releases": 5650,
-        "total_files": 646261,
-        "total_size": 8933541694,
-        "total_lines": 134789454,
-        "total_hours": 719,
-        "unique_files": 216153
-      },
-      {
-        "month": "2013-06-01",
-        "total_uploads": 2358,
-        "project_releases": 5095,
-        "project_version_releases": 4687,
-        "total_files": 403197,
-        "total_size": 3760319873,
-        "total_lines": 62227126,
-        "total_hours": 719,
-        "unique_files": 155986
-      },
-      {
-        "month": "2015-05-01",
-        "total_uploads": 4663,
-        "project_releases": 13181,
-        "project_version_releases": 9963,
-        "total_files": 979394,
-        "total_size": 23100413882,
-        "total_lines": 252742582,
+        "month": "2013-10-01",
+        "total_uploads": 2900,
+        "project_releases": 6745,
+        "project_version_releases": 6009,
+        "total_files": 667353,
+        "total_size": 7980102553,
+        "total_lines": 130877054,
         "total_hours": 743,
-        "unique_files": 388251
+        "unique_files": 224994
       },
       {
-        "month": "2014-06-01",
-        "total_uploads": 3473,
-        "project_releases": 8911,
-        "project_version_releases": 7484,
-        "total_files": 756749,
-        "total_size": 12811014047,
-        "total_lines": 161135685,
-        "total_hours": 719,
-        "unique_files": 256477
-      },
-      {
-        "month": "2014-03-01",
-        "total_uploads": 3380,
-        "project_releases": 8340,
-        "project_version_releases": 7172,
-        "total_files": 609287,
-        "total_size": 8457692169,
-        "total_lines": 117432007,
+        "month": "2014-07-01",
+        "total_uploads": 3559,
+        "project_releases": 9455,
+        "project_version_releases": 7874,
+        "total_files": 937104,
+        "total_size": 15385274685,
+        "total_lines": 195244510,
         "total_hours": 743,
-        "unique_files": 237276
+        "unique_files": 283365
       },
       {
-        "month": "2014-01-01",
-        "total_uploads": 3132,
-        "project_releases": 7787,
-        "project_version_releases": 6616,
-        "total_files": 676715,
-        "total_size": 9603151404,
-        "total_lines": 149866740,
+        "month": "2013-01-01",
+        "total_uploads": 2323,
+        "project_releases": 5249,
+        "project_version_releases": 4727,
+        "total_files": 494172,
+        "total_size": 5194803396,
+        "total_lines": 92632646,
         "total_hours": 743,
-        "unique_files": 231494
+        "unique_files": 203097
+      },
+      {
+        "month": "2013-03-01",
+        "total_uploads": 2596,
+        "project_releases": 5982,
+        "project_version_releases": 5219,
+        "total_files": 422295,
+        "total_size": 6770915833,
+        "total_lines": 79354997,
+        "total_hours": 743,
+        "unique_files": 183819
+      },
+      {
+        "month": "2014-02-01",
+        "total_uploads": 3228,
+        "project_releases": 7034,
+        "project_version_releases": 6123,
+        "total_files": 612498,
+        "total_size": 8590266223,
+        "total_lines": 127907180,
+        "total_hours": 671,
+        "unique_files": 260230
       }
     ],
     "name": "stats_over_time"
