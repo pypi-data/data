@@ -199,11 +199,18 @@ def run_sql(
     else:
         sql_obj.to_table("temp_table")
         conn.execute(f'COPY temp_table TO \'{output_file}\' (FORMAT JSON, array TRUE)')
-        # df: pd.DataFrame = sql.to_df()
-        # df.set_index("name", inplace=True)
-        # df["stat"] = df["stat"].apply(lambda x: json.loads(x))
-        # df.to_json(output_file, orient="index", lines=False, indent=2)
 
+
+@app.command()
+def sort_json_stats(
+        json_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, readable=True, writable=True)]
+):
+    json_contents = json.loads(json_file.read_text())
+    for element in json_contents:
+        if element["name"] == "stats_over_time":
+            element["stat"] = sorted(element["stat"], key=lambda x: x["month"])
+
+    json_file.write_text(json.dumps(json_contents, indent=2))
 
 if __name__ == "__main__":
     app()
