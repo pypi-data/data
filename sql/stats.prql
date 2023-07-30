@@ -152,7 +152,7 @@ let project_level_breakdowns = (
       init_py_files = s"COUNT(*) FILTER ({is_init_py})",
       has_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject} = true)",
       has_setup_py = s"COUNT(DISTINCT {project_name}) FILTER ({has_setup_py} = true)",
-      has_setup_py_and_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject_and_setup_py})",
+      #has_setup_py_and_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject_and_setup_py})",
       has_requirements_txt = s"COUNT(DISTINCT {project_name}) FILTER ({has_requirements_txt} = true)",
       has_markdown = s"COUNT(DISTINCT {project_name}) FILTER ({has_markdown})",
       has_rst = s"COUNT(DISTINCT {project_name}) FILTER ({has_rst})",
