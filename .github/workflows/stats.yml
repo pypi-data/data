@@ -60,7 +60,7 @@ jobs:
           poetry run pypi-data run-sql ${{ github.workspace }}/sql/stats.prql stats/totals.json --output=json --threads=8 dataset/*.parquet
 
       - run: |
-          poetry run pypi-data sort-json-stats ${{ github.workspace }}/stats/total.json
+          poetry run pypi-data sort-json-stats ${{ github.workspace }}/stats/totals.json
           head stats/totals.json
 
       - uses: EndBug/add-and-commit@v9
