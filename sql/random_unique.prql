@@ -1,0 +1,13 @@
+prql target:sql.duckdb
+
+let base = (
+  read_parquet($1)
+  derive {random = s"random()"}
+  sort random
+)
+
+from (
+  base
+  select !{random}
+  take 2
+)
