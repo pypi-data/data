@@ -137,6 +137,8 @@ let project_level_breakdowns = (
     has_requirements_txt = suffix path 'requirements.txt',
 
     has_tests = contains path 'test',
+    has_pytest = (suffix path 'conftest.py')  || (suffix path 'pytest.ini'),
+    has_tox = (suffix path 'tox.ini'),
 
     is_init_py = suffix path '__init__.py',
 
@@ -154,7 +156,10 @@ let project_level_breakdowns = (
       has_requirements_txt = s"COUNT(DISTINCT {project_name}) FILTER ({has_requirements_txt} = true)",
       has_markdown = s"COUNT(DISTINCT {project_name}) FILTER ({has_markdown})",
       has_rst = s"COUNT(DISTINCT {project_name}) FILTER ({has_rst})",
+
       has_tests = s"COUNT(DISTINCT {project_name}) FILTER ({has_tests})",
+      has_pytest = s"COUNT(DISTINCT {project_name}) FILTER ({has_pytest})",
+      has_tox = s"COUNT(DISTINCT {project_name}) FILTER ({has_tox})",
     }
    )
 )
@@ -178,7 +183,6 @@ let binary_sizes = (
     }
   )
 )
-
 
 relation_to_json(total_stats)
 append (relation_to_json extension_stats)
