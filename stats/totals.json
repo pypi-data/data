@@ -81,6 +81,41 @@
         "unique_files": 308384,
         "total_lines": 1327972937,
         "total_size": 178969010560
+      },
+      {
+        "extension": ".pyi",
+        "total_files": 15406354,
+        "unique_files": 428689,
+        "total_lines": 3039587813,
+        "total_size": 107624979812
+      },
+      {
+        "extension": ".html",
+        "total_files": 14769920,
+        "unique_files": 1532242,
+        "total_lines": 2711622202,
+        "total_size": 204127285000
+      },
+      {
+        "extension": ".yaml",
+        "total_files": 10536888,
+        "unique_files": 319299,
+        "total_lines": 995662738,
+        "total_size": 38883963875
+      },
+      {
+        "extension": ".pyc",
+        "total_files": 10528279,
+        "unique_files": 4856746,
+        "total_lines": 276456,
+        "total_size": 71080140696
+      },
+      {
+        "extension": ".yml",
+        "total_files": 9794363,
+        "unique_files": 286134,
+        "total_lines": 685466442,
+        "total_size": 21877348002
       }
     ],
     "name": "extension_stats"
@@ -156,6 +191,41 @@
         "unique_files": 37640,
         "total_lines": 0,
         "total_size": 437284385173
+      },
+      {
+        "extension": ".lib",
+        "total_files": 105376,
+        "unique_files": 29414,
+        "total_lines": 0,
+        "total_size": 429294964769
+      },
+      {
+        "extension": ".gz",
+        "total_files": 4043976,
+        "unique_files": 530710,
+        "total_lines": 0,
+        "total_size": 391236463718
+      },
+      {
+        "extension": ".exe",
+        "total_files": 181776,
+        "unique_files": 39633,
+        "total_lines": 0,
+        "total_size": 383726166328
+      },
+      {
+        "extension": ".tgz",
+        "total_files": 326382,
+        "unique_files": 155820,
+        "total_lines": 0,
+        "total_size": 365220058357
+      },
+      {
+        "extension": ".7",
+        "total_files": 34872,
+        "unique_files": 2449,
+        "total_lines": 0,
+        "total_size": 325026958317
       }
     ],
     "name": "binary_extension_stats"
@@ -231,6 +301,41 @@
         "unique_files": 38,
         "total_lines": 3196,
         "total_size": 51103
+      },
+      {
+        "extension": ".h",
+        "total_files": 459155,
+        "unique_files": 7553,
+        "total_lines": 4732430250,
+        "total_size": 270363827022
+      },
+      {
+        "extension": ".c",
+        "total_files": 437327,
+        "unique_files": 136955,
+        "total_lines": 8670318502,
+        "total_size": 349290545102
+      },
+      {
+        "extension": ".gz",
+        "total_files": 322325,
+        "unique_files": 54,
+        "total_lines": 95620,
+        "total_size": 88846985
+      },
+      {
+        "extension": ".po",
+        "total_files": 272696,
+        "unique_files": 42943,
+        "total_lines": 2496985777,
+        "total_size": 83586845325
+      },
+      {
+        "extension": ".svg",
+        "total_files": 264775,
+        "unique_files": 6058,
+        "total_lines": 821678838,
+        "total_size": 123294468172
       }
     ],
     "name": "skipped_files_stats"
@@ -1697,6 +1802,41 @@
         "unique_files": 33546,
         "total_lines": 66348683,
         "total_size": 625182654678
+      },
+      {
+        "project_name": "tf-nightly-intel",
+        "total_files": 7263510,
+        "unique_files": 81380,
+        "total_lines": 2958885573,
+        "total_size": 524378332240
+      },
+      {
+        "project_name": "tensorflow-cpu",
+        "total_files": 4509827,
+        "unique_files": 51528,
+        "total_lines": 1742858925,
+        "total_size": 470984521536
+      },
+      {
+        "project_name": "OpenVisus",
+        "total_files": 3658052,
+        "unique_files": 59756,
+        "total_lines": 718721460,
+        "total_size": 460777051567
+      },
+      {
+        "project_name": "frida",
+        "total_files": 185802,
+        "unique_files": 34459,
+        "total_lines": 19313375,
+        "total_size": 431357059966
+      },
+      {
+        "project_name": "graphscope-client",
+        "total_files": 911629,
+        "unique_files": 34311,
+        "total_lines": 105893124,
+        "total_size": 359186697785
       }
     ],
     "name": "projects_by_files"
@@ -1704,16 +1844,12 @@
   {
     "stat": [
       {
-        "skip_reason": "empty",
-        "count": 29332101
-      },
-      {
-        "skip_reason": "ignored",
-        "count": 8661015
-      },
-      {
         "skip_reason": "binary",
         "count": 79374440
+      },
+      {
+        "skip_reason": "empty",
+        "count": 29332101
       },
       {
         "skip_reason": "too-large",
@@ -1722,6 +1858,10 @@
       {
         "skip_reason": "text-long-lines",
         "count": 1321773
+      },
+      {
+        "skip_reason": "ignored",
+        "count": 8661015
       },
       {
         "skip_reason": "git-lfs",
