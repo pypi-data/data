@@ -191,7 +191,9 @@ def run_sql(
             sql_obj.insert_into("temp_table")
     elif output == OutputFormat.PARQUET:
         if per_thread_output:
-            conn.execute(f'COPY ({sql}) TO \'{output_file}\' (FORMAT PARQUET, PER_THREAD_OUTPUT TRUE, COMPRESSION zstd)')
+            output_sql = f'COPY ({sql}) TO \'{output_file}\' (FORMAT PARQUET, PER_THREAD_OUTPUT TRUE)'
+            print(f'\n\nper_thread_output {output_sql}\n\n\n')
+            conn.execute(output_sql)
         else:
             sql_obj.to_parquet(str(output_file), compression="zstd")
     else:
