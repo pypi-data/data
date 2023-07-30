@@ -142,6 +142,8 @@ def run_sql(
         # sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
         sql = compiled_sql.replace('$1', json.dumps(parameter))
 
+        conn.execute("PRAGMA default_order='DESCENDING';")
+
         if profile:
             conn.execute("PRAGMA enable_profiling='query_tree_optimizer';")
             conn.execute(f"PRAGMA profile_output='{db}/profile.json';")
