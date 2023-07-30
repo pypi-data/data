@@ -53,7 +53,7 @@ let extension_stats = (
     }
   )
   sort {-total_files}
-  take 10
+  take 15
 )
 
 let binary_extension_stats = (
@@ -68,7 +68,7 @@ let binary_extension_stats = (
     }
   )
   sort {-total_size}
-  take 10
+  take 15
 )
 
 let projects_by_files = (
@@ -82,7 +82,7 @@ let projects_by_files = (
     }
   )
   sort {-total_size}
-  take 10
+  take 15
 )
 
 let skipped_files_stats = (
@@ -98,7 +98,7 @@ let skipped_files_stats = (
     }
   )
   sort {-total_files}
-  take 10
+  take 15
 )
 
 let stats_over_time = (
