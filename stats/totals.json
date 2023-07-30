@@ -1864,14 +1864,29 @@
         "count": 8661015
       },
       {
-        "skip_reason": "git-lfs",
-        "count": 13148
-      },
-      {
         "skip_reason": "pyarmor",
         "count": 125084
+      },
+      {
+        "skip_reason": "git-lfs",
+        "count": 13148
       }
     ],
     "name": "skip_reason_stats"
+  },
+  {
+    "stat": [
+      {
+        "is_binary": false,
+        "total_size": 15046854401258.0,
+        "total_files": 920871839
+      },
+      {
+        "is_binary": true,
+        "total_size": 43185608200290.0,
+        "total_files": 79374440
+      }
+    ],
+    "name": "binary_sizes"
   }
 ]
