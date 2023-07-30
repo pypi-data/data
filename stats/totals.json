@@ -2,10 +2,10 @@
   {
     "stat": [
       {
-        "total_files": 985082254,
-        "unique_files": 76561975,
-        "total_size": 57214297620447,
-        "total_lines": 308151824637
+        "total_files": 1000246279,
+        "unique_files": 77693874,
+        "total_size": 58232462601548,
+        "total_lines": 312353046026
       }
     ],
     "name": "total_stats"
@@ -14,73 +14,73 @@
     "stat": [
       {
         "extension": ".py",
-        "total_files": 425807380,
-        "unique_files": 29379726,
-        "total_lines": 111755494424,
-        "total_size": 4504967554439
+        "total_files": 432757637,
+        "unique_files": 29786370,
+        "total_lines": 113494678781,
+        "total_size": 4574378153017
       },
       {
         "extension": ".h",
-        "total_files": 77336343,
-        "unique_files": 682422,
-        "total_lines": 23296419538,
-        "total_size": 991543071265
+        "total_files": 77855357,
+        "unique_files": 690828,
+        "total_lines": 23467477338,
+        "total_size": 998232136196
       },
       {
         "extension": "",
-        "total_files": 54780628,
-        "unique_files": 14043224,
-        "total_lines": 7278850777,
-        "total_size": 2302995227596
+        "total_files": 55765220,
+        "unique_files": 14247018,
+        "total_lines": 7366898543,
+        "total_size": 2347937647445
       },
       {
         "extension": ".json",
-        "total_files": 48876212,
-        "unique_files": 1447588,
-        "total_lines": 19260601977,
-        "total_size": 1046157562546
-      },
-      {
-        "extension": ".txt",
-        "total_files": 35267069,
-        "unique_files": 3372513,
-        "total_lines": 16350755313,
-        "total_size": 629449665259
+        "total_files": 49571858,
+        "unique_files": 1464343,
+        "total_lines": 19644483024,
+        "total_size": 1067141443115
       },
       {
         "extension": ".hpp",
-        "total_files": 35131819,
-        "unique_files": 270515,
-        "total_lines": 7218276330,
-        "total_size": 311500570477
+        "total_files": 36178713,
+        "unique_files": 273090,
+        "total_lines": 7435246664,
+        "total_size": 321399704438
+      },
+      {
+        "extension": ".txt",
+        "total_files": 35691658,
+        "unique_files": 3411389,
+        "total_lines": 16604289641,
+        "total_size": 644175690729
       },
       {
         "extension": ".js",
-        "total_files": 29212675,
-        "unique_files": 1280873,
-        "total_lines": 11880616937,
-        "total_size": 1057005101906
+        "total_files": 29624510,
+        "unique_files": 1296241,
+        "total_lines": 11987693223,
+        "total_size": 1071322135352
       },
       {
         "extension": ".png",
-        "total_files": 24165777,
-        "unique_files": 744550,
-        "total_lines": 892528,
-        "total_size": 497892211858
+        "total_files": 24390417,
+        "unique_files": 745998,
+        "total_lines": 892724,
+        "total_size": 504705164733
       },
       {
         "extension": ".rst",
-        "total_files": 20511673,
-        "unique_files": 1177899,
-        "total_lines": 1297422323,
-        "total_size": 53510097923
+        "total_files": 20692767,
+        "unique_files": 1189316,
+        "total_lines": 1308382049,
+        "total_size": 53944317196
       },
       {
         "extension": ".svg",
-        "total_files": 15695056,
-        "unique_files": 304939,
-        "total_lines": 1318268324,
-        "total_size": 177369820776
+        "total_files": 16065646,
+        "unique_files": 308384,
+        "total_lines": 1327972937,
+        "total_size": 178969010560
       }
     ],
     "name": "extension_stats"
@@ -89,73 +89,73 @@
     "stat": [
       {
         "extension": ".so",
-        "total_files": 5823737,
-        "unique_files": 3277973,
+        "total_files": 5936387,
+        "unique_files": 3329652,
         "total_lines": 0,
-        "total_size": 20068627256391
+        "total_size": 20465542805146
       },
       {
         "extension": ".pyd",
-        "total_files": 1587612,
-        "unique_files": 1438873,
+        "total_files": 1608367,
+        "unique_files": 1450048,
         "total_lines": 0,
-        "total_size": 4192867014645
+        "total_size": 4237890612747
       },
       {
         "extension": ".dylib",
-        "total_files": 946991,
-        "unique_files": 329337,
+        "total_files": 969371,
+        "unique_files": 333815,
         "total_lines": 0,
-        "total_size": 2667895193454
+        "total_size": 2717681090694
       },
       {
         "extension": ".dll",
-        "total_files": 1146090,
-        "unique_files": 346546,
+        "total_files": 1175886,
+        "unique_files": 354773,
         "total_lines": 0,
-        "total_size": 1916466424560
+        "total_size": 1957312681911
       },
       {
         "extension": "",
-        "total_files": 4612001,
-        "unique_files": 1608796,
+        "total_files": 4646484,
+        "unique_files": 1609214,
         "total_lines": 0,
-        "total_size": 1890582965694
+        "total_size": 1930363445977
       },
       {
         "extension": ".2",
-        "total_files": 138699,
-        "unique_files": 16772,
+        "total_files": 141536,
+        "unique_files": 16963,
         "total_lines": 0,
-        "total_size": 1461919105804
+        "total_size": 1477937662495
       },
       {
         "extension": ".0",
-        "total_files": 524428,
-        "unique_files": 65350,
+        "total_files": 539099,
+        "unique_files": 65843,
         "total_lines": 0,
-        "total_size": 1193870685941
+        "total_size": 1217327569107
       },
       {
         "extension": ".jar",
-        "total_files": 337301,
-        "unique_files": 39419,
+        "total_files": 351064,
+        "unique_files": 40162,
         "total_lines": 0,
-        "total_size": 788954512149
+        "total_size": 810852828889
       },
       {
         "extension": ".png",
-        "total_files": 24130940,
-        "unique_files": 743572,
+        "total_files": 24355422,
+        "unique_files": 745017,
         "total_lines": 0,
-        "total_size": 497810687700
+        "total_size": 504623623797
       },
       {
         "extension": ".1",
-        "total_files": 255826,
-        "unique_files": 37456,
+        "total_files": 263141,
+        "unique_files": 37640,
         "total_lines": 0,
-        "total_size": 424719639132
+        "total_size": 437284385173
       }
     ],
     "name": "binary_extension_stats"
@@ -164,73 +164,73 @@
     "stat": [
       {
         "extension": ".py",
-        "total_files": 31079678,
-        "unique_files": 381128,
-        "total_lines": 9533827236,
-        "total_size": 500455252520
+        "total_files": 31644538,
+        "unique_files": 386272,
+        "total_lines": 9645286217,
+        "total_size": 506394998927
       },
       {
         "extension": ".pyi",
-        "total_files": 1389141,
-        "unique_files": 17363,
-        "total_lines": 1145037122,
-        "total_size": 40397792687
+        "total_files": 1412630,
+        "unique_files": 17499,
+        "total_lines": 1150335917,
+        "total_size": 40613550869
       },
       {
         "extension": ".js",
-        "total_files": 1372885,
-        "unique_files": 148465,
-        "total_lines": 7822486949,
-        "total_size": 827556358404
+        "total_files": 1392544,
+        "unique_files": 149475,
+        "total_lines": 7895851609,
+        "total_size": 839362068684
       },
       {
         "extension": ".json",
-        "total_files": 1184030,
-        "unique_files": 98766,
-        "total_lines": 12254660779,
-        "total_size": 772207954043
+        "total_files": 1209020,
+        "unique_files": 100096,
+        "total_lines": 12507986009,
+        "total_size": 788219368457
       },
       {
         "extension": "",
-        "total_files": 913028,
-        "unique_files": 97440,
-        "total_lines": 2951079191,
-        "total_size": 209572743267
+        "total_files": 935874,
+        "unique_files": 98741,
+        "total_lines": 2976104463,
+        "total_size": 211655708413
       },
       {
         "extension": ".typed",
-        "total_files": 862106,
-        "unique_files": 50,
-        "total_lines": 10204,
-        "total_size": 584801
+        "total_files": 878677,
+        "unique_files": 51,
+        "total_lines": 10577,
+        "total_size": 606614
       },
       {
         "extension": ".txt",
-        "total_files": 787854,
-        "unique_files": 43115,
-        "total_lines": 12093124050,
-        "total_size": 484522442921
+        "total_files": 800771,
+        "unique_files": 43355,
+        "total_lines": 12315216426,
+        "total_size": 498035649967
       },
       {
         "extension": ".map",
-        "total_files": 554528,
-        "unique_files": 87415,
-        "total_lines": 19327320,
-        "total_size": 590701402748
+        "total_files": 562279,
+        "unique_files": 88722,
+        "total_lines": 19337374,
+        "total_size": 598208591608
       },
       {
         "extension": ".inc",
-        "total_files": 525710,
-        "unique_files": 2825,
-        "total_lines": 7134292731,
-        "total_size": 304803521113
+        "total_files": 526890,
+        "unique_files": 2841,
+        "total_lines": 7150317329,
+        "total_size": 305490856988
       },
       {
         "extension": ".gitignore",
-        "total_files": 481980,
+        "total_files": 482295,
         "unique_files": 38,
-        "total_lines": 3074,
-        "total_size": 48495
+        "total_lines": 3196,
+        "total_size": 51103
       }
     ],
     "name": "skipped_files_stats"
@@ -1658,10 +1658,10 @@
       },
       {
         "project_name": "paddlepaddle-gpu",
-        "total_files": 1978830,
-        "unique_files": 29928,
-        "total_lines": 426949682,
-        "total_size": 899182824412
+        "total_files": 2000670,
+        "unique_files": 29979,
+        "total_lines": 433161447,
+        "total_size": 919821123609
       },
       {
         "project_name": "tensorflow",
@@ -1686,10 +1686,10 @@
       },
       {
         "project_name": "tf-nightly-cpu-aws",
-        "total_files": 7336012,
-        "unique_files": 43081,
-        "total_lines": 2817355345,
-        "total_size": 638027232165
+        "total_files": 7346730,
+        "unique_files": 43950,
+        "total_lines": 2821950630,
+        "total_size": 639057843671
       },
       {
         "project_name": "catboost-dev",
@@ -1700,5 +1700,38 @@
       }
     ],
     "name": "projects_by_files"
+  },
+  {
+    "stat": [
+      {
+        "skip_reason": "empty",
+        "count": 29332101
+      },
+      {
+        "skip_reason": "ignored",
+        "count": 8661015
+      },
+      {
+        "skip_reason": "binary",
+        "count": 79374440
+      },
+      {
+        "skip_reason": "too-large",
+        "count": 6052258
+      },
+      {
+        "skip_reason": "text-long-lines",
+        "count": 1321773
+      },
+      {
+        "skip_reason": "git-lfs",
+        "count": 13148
+      },
+      {
+        "skip_reason": "pyarmor",
+        "count": 125084
+      }
+    ],
+    "name": "skip_reason_stats"
   }
 ]
