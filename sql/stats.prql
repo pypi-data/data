@@ -134,7 +134,7 @@ let project_level_breakdowns = (
     has_pyproject = suffix path 'pyproject.toml',
     has_setup_py =  suffix path 'setup.py',
     has_pyproject_and_setup_py = has_pyproject || has_setup_py,
-
+    has_requirements_txt = suffix path 'requirements.txt',
     has_tests = contains path 'test',
 
     has_rst = suffix path '.rst',
@@ -146,6 +146,7 @@ let project_level_breakdowns = (
       has_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject} = true)",
       has_setup_py = s"COUNT(DISTINCT {project_name}) FILTER ({has_setup_py} = true)",
       has_setup_py_and_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject_and_setup_py})",
+      has_requirements_txt = s"COUNT(DISTINCT {project_name}) FILTER ({has_requirements_txt} = true)",
       has_markdown = s"COUNT(DISTINCT {project_name}) FILTER ({has_markdown})",
       has_rst = s"COUNT(DISTINCT {project_name}) FILTER ({has_rst})",
       has_tests = s"COUNT(DISTINCT {project_name}) FILTER ({has_tests})",
