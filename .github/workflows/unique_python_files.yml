@@ -62,14 +62,15 @@ jobs:
       - name: Ingest
         run: |
           mkdir combined/
-          find dataset/ -name '*.parquet' | parallel -j 1 --xargs -n4 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 combined/{#}.parquet {}
+          find dataset/ -name '*.parquet' | parallel -j 1 --xargs -n4 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --per-thread-output --output=parquet --threads=2 combined/{#}.parquet {}
+          
+      - name: List
+        run: ls combined/
 
       - name: Combine
         run: |
           poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_combine.prql --per-thread-output --output=parquet --memory=3 --threads=2 unique-python-files.parquet combined/*.parquet
 
-      - name: List
-        run: ls combined/
 #
 #      - name: Gets latest created release info
 #        id: latest_release_info
