@@ -135,7 +135,10 @@ let project_level_breakdowns = (
     has_setup_py =  suffix path 'setup.py',
     has_pyproject_and_setup_py = has_pyproject || has_setup_py,
     has_requirements_txt = suffix path 'requirements.txt',
+
     has_tests = contains path 'test',
+
+    is_init_py = suffix path '__init__.py',
 
     has_rst = suffix path '.rst',
     has_markdown = suffix path '.md'
@@ -143,6 +146,8 @@ let project_level_breakdowns = (
    group {month = month_trunc(uploaded_on)} (
     aggregate {
       total_project_uploads = s"COUNT(DISTINCT {project_name})",
+      project_version_releases = s"COUNT(DISTINCT ({project_name} || {project_version}))",
+      init_py_files = s"COUNT(*) FILTER ({is_init_py})",
       has_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject} = true)",
       has_setup_py = s"COUNT(DISTINCT {project_name}) FILTER ({has_setup_py} = true)",
       has_setup_py_and_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject_and_setup_py})",
