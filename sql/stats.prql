@@ -133,7 +133,7 @@ let project_level_breakdowns = (
    derive {
     has_pyproject = suffix path 'pyproject.toml',
     has_setup_py =  suffix path 'setup.py',
-    has_pyproject_and_setup_py = has_pyproject && has_setup_py,
+    has_pyproject_and_setup_py = has_pyproject || has_setup_py,
 
     has_tests = contains path 'test',
 
