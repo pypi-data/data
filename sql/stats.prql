@@ -145,10 +145,11 @@ let project_level_breakdowns = (
     has_xml = (suffix path '.xml'),
     has_toml = (suffix path '.toml') && ! has_pyproject,
     has_yaml = (suffix path '.yml') || (suffix path '.yaml'),
+    has_rust = (suffix path '.rs') || (suffix path 'Cargo.toml'),
+    has_c_or_cpp = (suffix path '.hpp') || (suffix path '.cpp') || (suffix path '.h') || (suffix path '.c'),
 
     has_pyi = (suffix path '.pyi'),
     has_py_typed = (suffix path 'py.typed'),
-    has_types = has_pyi || has_py_typed,
 
     is_init_py = suffix path '__init__.py',
 
@@ -173,10 +174,11 @@ let project_level_breakdowns = (
       has_xml = s"COUNT(DISTINCT {project_name}) FILTER ({has_xml})",
       has_toml = s"COUNT(DISTINCT {project_name}) FILTER ({has_toml})",
       has_yaml = s"COUNT(DISTINCT {project_name}) FILTER ({has_yaml})",
+      has_rust = s"COUNT(DISTINCT {project_name}) FILTER ({has_rust})",
+      has_c_or_cpp = s"COUNT(DISTINCT {project_name}) FILTER ({has_c_or_cpp})",
 
       has_pyi = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyi})",
       has_py_typed = s"COUNT(DISTINCT {project_name}) FILTER ({has_py_typed})",
-      has_types = s"COUNT(DISTINCT {project_name}) FILTER ({has_types})",
 
       has_tests = s"COUNT(DISTINCT {project_name}) FILTER ({has_tests})",
       has_pytest = s"COUNT(DISTINCT {project_name}) FILTER ({has_pytest})",
