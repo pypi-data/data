@@ -146,6 +146,8 @@ let project_level_breakdowns = (
     has_toml = (suffix path '.toml') && ! has_pyproject,
     has_yaml = (suffix path '.yml') || (suffix path '.yaml'),
 
+    has_types = (suffix path 'py.typed') || (suffix path '.pyi')
+
     is_init_py = suffix path '__init__.py',
 
     has_rst = suffix path '.rst',
@@ -169,6 +171,8 @@ let project_level_breakdowns = (
       has_xml = s"COUNT(DISTINCT {project_name}) FILTER ({has_xml})",
       has_toml = s"COUNT(DISTINCT {project_name}) FILTER ({has_toml})",
       has_yaml = s"COUNT(DISTINCT {project_name}) FILTER ({has_yaml})",
+
+      has_types = s"COUNT(DISTINCT {project_name}) FILTER ({has_types})",
 
       has_tests = s"COUNT(DISTINCT {project_name}) FILTER ({has_tests})",
       has_pytest = s"COUNT(DISTINCT {project_name}) FILTER ({has_pytest})",
