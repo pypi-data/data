@@ -140,6 +140,12 @@ let project_level_breakdowns = (
     has_pytest = (suffix path 'conftest.py')  || (suffix path 'pytest.ini'),
     has_tox = (suffix path 'tox.ini'),
 
+    has_ini = (suffix path '.ini'),
+    has_json = (suffix path '.json'),
+    has_xml = (suffix path '.xml'),
+    has_toml = (suffix path '.toml'),
+    has_yaml = (suffix path '.yml') || (suffix path '.yaml'),
+
     is_init_py = suffix path '__init__.py',
 
     has_rst = suffix path '.rst',
@@ -153,9 +159,16 @@ let project_level_breakdowns = (
       has_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject} = true)",
       has_setup_py = s"COUNT(DISTINCT {project_name}) FILTER ({has_setup_py} = true)",
       #has_setup_py_and_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject_and_setup_py})",
+
       has_requirements_txt = s"COUNT(DISTINCT {project_name}) FILTER ({has_requirements_txt} = true)",
       has_markdown = s"COUNT(DISTINCT {project_name}) FILTER ({has_markdown})",
       has_rst = s"COUNT(DISTINCT {project_name}) FILTER ({has_rst})",
+
+      has_ini = s"COUNT(DISTINCT {project_name}) FILTER ({has_ini})",
+      has_json = s"COUNT(DISTINCT {project_name}) FILTER ({has_json})",
+      has_xml = s"COUNT(DISTINCT {project_name}) FILTER ({has_xml})",
+      has_toml = s"COUNT(DISTINCT {project_name}) FILTER ({has_toml})",
+      has_yaml = s"COUNT(DISTINCT {project_name}) FILTER ({has_yaml})",
 
       has_tests = s"COUNT(DISTINCT {project_name}) FILTER ({has_tests})",
       has_pytest = s"COUNT(DISTINCT {project_name}) FILTER ({has_pytest})",
