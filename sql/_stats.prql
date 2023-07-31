@@ -117,18 +117,14 @@ let time_stats_base = (
 let stats_over_time = (
   from time_stats_base
   group {month = month_trunc(uploaded_on)} (
+    sort {month}
     aggregate {
-      total_uploads = s"COUNT(DISTINCT {project_name})" | as bigint,
-      project_releases = s"COUNT(DISTINCT {project_release})" | as bigint,
-      project_version_releases = s"COUNT(DISTINCT ({project_name}, {project_version}))" | as bigint,
       total_files = s"count(*)" | as bigint,
       total_size = sum(size) | as bigint,
       total_lines = sum(lines) | as bigint,
-      total_hours = s"date_diff('hours', min({uploaded_on}), max({uploaded_on}))",
       unique_files = approx_count_distinct(hash) | as bigint,
     }
   )
-  sort {month}
 )
 
 
@@ -161,6 +157,7 @@ let project_level_breakdowns = (
     has_markdown = suffix path '.md'
    }
    group {month = month_trunc(uploaded_on)} (
+    sort {month}
     aggregate {
       total_project_uploads = s"COUNT(DISTINCT {project_name})",
       #project_version_releases = s"COUNT(DISTINCT ({project_name} || {project_version}))",
@@ -212,5 +209,19 @@ let binary_sizes = (
       total_size = sum(size),
       total_files = count(s"*")
     }
+  )
+)
+
+let project_releases_over_time = (
+  from time_stats_base
+  group {month = month_trunc(uploaded_on)} (
+    sort {month}
+    window expanding:true	(
+      derive {
+        cumulative_projects = count_distinct(project_name),
+        cumulative_versions = count_distinct(s"({project_name}, {project_version})"),
+        cumulative_releases = count_distinct(project_release),
+      }
+    )
   )
 )

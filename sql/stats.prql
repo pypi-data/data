@@ -1,4 +1,3 @@
-
 relation_to_json(total_stats)
 append (relation_to_json extension_stats)
 append (relation_to_json binary_extension_stats)
@@ -8,3 +7,4 @@ append (relation_to_json project_level_breakdowns)
 append (relation_to_json projects_by_files)
 append (relation_to_json skip_reason_stats)
 append (relation_to_json binary_sizes)
+append (relation_to_json project_releases_over_time)
