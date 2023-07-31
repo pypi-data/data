@@ -215,16 +215,55 @@ let binary_sizes = (
   )
 )
 
-let project_releases_over_time = (
+
+let by_month = (
   from time_stats_base
+  select {
+    project_name,
+    project_version,
+    project_release,
+    month = month_trunc(uploaded_on)
+  }
+)
+
+let new_projects_over_time = (
+  from by_month
   group {project_name} (
     aggregate {
-      uploaded_on = min(uploaded_on)
+      month = min(month)
     }
   )
-  group {month = month_trunc(uploaded_on)} (
+  group {month} (
     aggregate {
       count = count(project_name)
+    }
+  )
+)
+
+let new_project_versions_over_time = (
+  from by_month
+  group {project_name, project_version} (
+    aggregate {
+      month = min(month)
+    }
+  )
+  group {month} (
+    aggregate {
+      count = s"count(*)"
+    }
+  )
+)
+
+let new_releases_over_time = (
+  from by_month
+  group {project_release} (
+    aggregate {
+      month = min(month)
+    }
+  )
+  group {month} (
+    aggregate {
+      count = s"count(*)"
     }
   )
 )
