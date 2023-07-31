@@ -1,0 +1,216 @@
+prql target:sql.duckdb
+
+let approx_count_distinct = column -> s"approx_count_distinct({column})"
+let regexp_extract = column r -> s"regexp_extract({column}, {r})"
+let row_to_json = name -> s"row_to_json({name})"
+let month_trunc = name -> s"date_trunc('MONTH', {name})"
+let current_date = s"current_date()"
+let suffix = name value -> s"suffix({name}, {value})"
+let contains = name value -> s"contains({name}, {value})"
+
+let relation_to_json = func r -> (
+  from s=r
+  aggregate {
+    _to_json=s"row_to_json(s)"
+  }
+  aggregate {
+    stat = s"json_group_array({_to_json})",
+    name = s"'{r}'"
+   }
+)
+
+let base = (
+  from (read_parquet($1))
+)
+
+let base_with_extension = (
+  from base
+  select {
+    extension = (regexp_extract path "\\.[0-9a-z]+$"),
+    lines,
+    size,
+    skip_reason,
+    hash,
+    project_name
+  }
+)
+
+let total_stats = (
+  from base
+  aggregate {
+    total_files = count(s"*"),
+    unique_files = approx_count_distinct(hash) | as bigint,
+    total_size = sum(size) | as bigint,
+    total_lines = sum(lines) | as bigint
+  }
+)
+
+let extension_stats = (
+  from base_with_extension
+  group {extension = extension} (
+    aggregate {
+      total_projects = approx_count_distinct(project_name) | as bigint,
+      total_files = count(s"*"),
+      unique_files = approx_count_distinct(hash) | as bigint,
+      total_lines = sum(lines) | as bigint,
+      total_size = sum(size) | as bigint
+    }
+  )
+  sort {-total_files}
+  take 15
+)
+
+let binary_extension_stats = (
+  from base_with_extension
+  filter skip_reason == "binary"
+  group {extension = extension} (
+    aggregate {
+      total_projects = approx_count_distinct(project_name) | as bigint,
+      total_files = count(s"*"),
+      unique_files = approx_count_distinct(hash) | as bigint,
+      total_lines = sum(lines) | as bigint,
+      total_size = sum(size) | as bigint
+    }
+  )
+  sort {-total_size}
+  take 15
+)
+
+let projects_by_files = (
+  from base
+  group {project_name = project_name} (
+    aggregate {
+      total_files = count(s"*"),
+      unique_files = approx_count_distinct(hash) | as bigint,
+      total_lines = sum(lines) | as bigint,
+      total_size = sum(size) | as bigint
+    }
+  )
+  sort {-total_size}
+  take 15
+)
+
+let skipped_files_stats = (
+  from base_with_extension
+  filter skip_reason != "binary"
+  filter skip_reason != ""
+  group {extension = extension} (
+    aggregate {
+      total_projects = approx_count_distinct(project_name) | as bigint,
+      total_files = count(s"*"),
+      unique_files = approx_count_distinct(hash) | as bigint,
+      total_lines = sum(lines) | as bigint,
+      total_size = sum(size) | as bigint
+    }
+  )
+  sort {-total_files}
+  take 15
+)
+
+
+let time_stats_base = (
+  from base
+  filter uploaded_on > @2013-01-01
+  filter (month_trunc uploaded_on) < (month_trunc current_date)
+)
+
+let stats_over_time = (
+  from time_stats_base
+  group {month = month_trunc(uploaded_on)} (
+    aggregate {
+      total_uploads = s"COUNT(DISTINCT {project_name})" | as bigint,
+      project_releases = s"COUNT(DISTINCT {project_release})" | as bigint,
+      project_version_releases = s"COUNT(DISTINCT ({project_name}, {project_version}))" | as bigint,
+      total_files = s"count(*)" | as bigint,
+      total_size = sum(size) | as bigint,
+      total_lines = sum(lines) | as bigint,
+      total_hours = s"date_diff('hours', min({uploaded_on}), max({uploaded_on}))",
+      unique_files = approx_count_distinct(hash) | as bigint,
+    }
+  )
+  sort {month}
+)
+
+
+let project_level_breakdowns = (
+   from time_stats_base
+   derive {
+    has_pyproject = suffix path 'pyproject.toml',
+    has_setup_py =  suffix path 'setup.py',
+    has_pyproject_and_setup_py = has_pyproject || has_setup_py,
+    has_requirements_txt = suffix path 'requirements.txt',
+
+    has_tests = contains path 'test',
+    has_pytest = (suffix path 'conftest.py')  || (suffix path 'pytest.ini'),
+    has_tox = (suffix path 'tox.ini'),
+
+    has_ini = (suffix path '.ini'),
+    has_json = (suffix path '.json'),
+    has_xml = (suffix path '.xml'),
+    has_toml = (suffix path '.toml') && ! has_pyproject,
+    has_yaml = (suffix path '.yml') || (suffix path '.yaml'),
+    has_rust = (suffix path '.rs') || (suffix path 'Cargo.toml'),
+    has_c_or_cpp = (suffix path '.hpp') || (suffix path '.cpp') || (suffix path '.h') || (suffix path '.c'),
+
+    has_pyi = (suffix path '.pyi'),
+    has_py_typed = (suffix path 'py.typed'),
+
+    is_init_py = suffix path '__init__.py',
+
+    has_rst = suffix path '.rst',
+    has_markdown = suffix path '.md'
+   }
+   group {month = month_trunc(uploaded_on)} (
+    aggregate {
+      total_project_uploads = s"COUNT(DISTINCT {project_name})",
+      #project_version_releases = s"COUNT(DISTINCT ({project_name} || {project_version}))",
+      #init_py_files = s"COUNT(*) FILTER ({is_init_py})",
+      has_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject} = true)",
+      has_setup_py = s"COUNT(DISTINCT {project_name}) FILTER ({has_setup_py} = true)",
+      #has_setup_py_and_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject_and_setup_py})",
+
+      has_requirements_txt = s"COUNT(DISTINCT {project_name}) FILTER ({has_requirements_txt} = true)",
+      has_markdown = s"COUNT(DISTINCT {project_name}) FILTER ({has_markdown})",
+      has_rst = s"COUNT(DISTINCT {project_name}) FILTER ({has_rst})",
+
+      has_ini = s"COUNT(DISTINCT {project_name}) FILTER ({has_ini})",
+      has_json = s"COUNT(DISTINCT {project_name}) FILTER ({has_json})",
+      has_xml = s"COUNT(DISTINCT {project_name}) FILTER ({has_xml})",
+      has_toml = s"COUNT(DISTINCT {project_name}) FILTER ({has_toml})",
+      has_yaml = s"COUNT(DISTINCT {project_name}) FILTER ({has_yaml})",
+      has_rust = s"COUNT(DISTINCT {project_name}) FILTER ({has_rust})",
+      has_c_or_cpp = s"COUNT(DISTINCT {project_name}) FILTER ({has_c_or_cpp})",
+
+      has_pyi = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyi})",
+      has_py_typed = s"COUNT(DISTINCT {project_name}) FILTER ({has_py_typed})",
+
+      has_tests = s"COUNT(DISTINCT {project_name}) FILTER ({has_tests})",
+      has_pytest = s"COUNT(DISTINCT {project_name}) FILTER ({has_pytest})",
+      has_tox = s"COUNT(DISTINCT {project_name}) FILTER ({has_tox})",
+    }
+   )
+)
+
+let skip_reason_stats = (
+  from base
+  group {skip_reason} (
+    aggregate {
+      total_projects = approx_count_distinct(project_name) | as bigint,
+      count = count(skip_reason),
+      unique_files = approx_count_distinct(hash) | as bigint,
+      total_size = sum(size) | as bigint,
+      total_lines = sum(lines) | as bigint
+    }
+  )
+)
+
+let binary_sizes = (
+  from base
+  group {is_binary = skip_reason == "binary"} (
+    aggregate {
+      total_projects = approx_count_distinct(project_name) | as bigint,
+      total_size = sum(size),
+      total_files = count(s"*")
+    }
+  )
+)

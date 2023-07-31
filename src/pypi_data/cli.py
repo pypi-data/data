@@ -18,10 +18,15 @@ from github import Auth
 import requests
 from concurrent.futures import ThreadPoolExecutor
 
+from rich.syntax import Syntax
+from rich.console import Console
+
 app = typer.Typer()
 session = requests.Session()
 MB = 1024 * 1024
 GB = MB * 1024
+
+console = Console()
 
 GithubToken = Annotated[str, typer.Option(envvar="GITHUB_TOKEN")]
 
@@ -98,6 +103,31 @@ class OutputFormat(enum.StrEnum):
     TABLE = "table"
 
 
+def _compile_sql(prql_file: Path) -> str:
+    options = prql.CompileOptions(
+        format=True, signature_comment=True, target="sql.duckdb"
+    )
+
+    extra_module = (prql_file.parent / f'_{prql_file.name}')
+    if extra_module.exists():
+        prefix = extra_module.read_text()
+    else:
+        prefix = ""
+
+    prql_value = prql_file.read_text()
+    compiled_sql = prql.compile(f'{prefix}\n{prql_value}', options=options)
+    return compiled_sql
+
+
+@app.command()
+def compile_sql(
+        prql_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, readable=True)],
+):
+    result = _compile_sql(prql_file)
+    syntax = Syntax(result, "sql")
+    console.print(syntax)
+
+
 @app.command()
 def run_sql(
         prql_file: Annotated[Path, typer.Argument(dir_okay=False, file_okay=True, readable=True)],
@@ -114,9 +144,7 @@ def run_sql(
     """
     This whole method is a fucking mess.
     """
-    options = prql.CompileOptions(
-        format=True, signature_comment=True, target="sql.duckdb"
-    )
+
     print(f'{parameter=}')
     if output == OutputFormat.JSON:
         fmt = "FORMAT JSON, ARRAY true"
@@ -137,8 +165,7 @@ def run_sql(
             db = data_dir / db
             db.mkdir(exist_ok=True)
         conn = duckdb.connect(str(db / "duck.db"))
-
-        compiled_sql = prql.compile(prql_file.read_text(), options=options)
+        compiled_sql = _compile_sql(prql_file)
         # sql = f"CREATE TABLE temp_table AS {compiled_sql}; COPY temp_table TO '{output_file}' ({fmt})"
         sql = compiled_sql.replace('$1', json.dumps(parameter))
 
@@ -212,6 +239,7 @@ def sort_json_stats(
             element["stat"] = sorted(element["stat"], key=lambda x: x["month"])
 
     json_file.write_text(json.dumps(json_contents, indent=2))
+
 
 if __name__ == "__main__":
     app()
