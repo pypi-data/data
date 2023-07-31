@@ -193,11 +193,13 @@ let project_level_breakdowns = (
 
 let skip_reason_stats = (
   from base
-  filter skip_reason != ""
   group {skip_reason} (
     aggregate {
       total_projects = approx_count_distinct(project_name) | as bigint,
-      count = count(skip_reason)
+      count = count(skip_reason),
+      unique_files = approx_count_distinct(hash) | as bigint,
+      total_size = sum(size) | as bigint,
+      total_lines = sum(lines) | as bigint
     }
   )
 )
