@@ -1,5 +1,8 @@
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * *"
+
 
 name: Delete Draft Releases older than 1 days
 

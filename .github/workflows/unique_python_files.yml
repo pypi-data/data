@@ -1,8 +1,8 @@
 # On every push this script is executed
 on:
   workflow_dispatch:
-
-#concurrency: data
+  schedule:
+    - cron: "0 5 * * *"
 
 name: Unique Python files
 jobs:
