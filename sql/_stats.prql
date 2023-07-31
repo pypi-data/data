@@ -196,7 +196,10 @@ let skip_reason_stats = (
       count = count(skip_reason),
       unique_files = approx_count_distinct(hash) | as bigint,
       total_size = sum(size) | as bigint,
-      total_lines = sum(lines) | as bigint
+      total_lines = sum(lines) | as bigint,
+
+      max_size = max(size) | as bigint,
+      max_lines = max(lines) | as bigint,
     }
   )
 )
