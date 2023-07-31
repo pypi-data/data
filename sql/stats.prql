@@ -143,7 +143,7 @@ let project_level_breakdowns = (
     has_ini = (suffix path '.ini'),
     has_json = (suffix path '.json'),
     has_xml = (suffix path '.xml'),
-    has_toml = (suffix path '.toml'),
+    has_toml = (suffix path '.toml') && not has_pyproject,
     has_yaml = (suffix path '.yml') || (suffix path '.yaml'),
 
     is_init_py = suffix path '__init__.py',
