@@ -210,6 +210,7 @@ let binary_sizes = (
       total_size = sum(size),
       total_files = count(s"*")
     }
+    sort {total_size}
   )
 )
 
@@ -231,6 +232,7 @@ let new_projects_over_time = (
     }
   )
   group {month} (
+    sort {month}
     aggregate {
       count = count(project_name)
     }
@@ -245,6 +247,7 @@ let new_project_versions_over_time = (
     }
   )
   group {month} (
+    sort {month}
     aggregate {
       count = s"count(*)"
     }
@@ -259,6 +262,7 @@ let new_releases_over_time = (
     }
   )
   group {month} (
+    sort {month}
     aggregate {
       count = s"count(*)"
     }
