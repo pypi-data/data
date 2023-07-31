@@ -217,14 +217,14 @@ let binary_sizes = (
 
 let project_releases_over_time = (
   from time_stats_base
+  group {project_name} (
+    aggregate {
+      uploaded_on = min(uploaded_on)
+    }
+  )
   group {month = month_trunc(uploaded_on)} (
-    sort {month}
-    window expanding:true	(
-      derive {
-        cumulative_projects = count_distinct(project_name),
-        cumulative_versions = count_distinct(s"({project_name}, {project_version})"),
-        cumulative_releases = count_distinct(project_release),
-      }
-    )
+    aggregate {
+      count = count(project_name)
+    }
   )
 )
