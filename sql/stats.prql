@@ -30,7 +30,8 @@ let base_with_extension = (
     lines,
     size,
     skip_reason,
-    hash
+    hash,
+    project_name
   }
 )
 
@@ -48,6 +49,7 @@ let extension_stats = (
   from base_with_extension
   group {extension = extension} (
     aggregate {
+      total_projects = s"COUNT(DISTINCT {project_name})" | as bigint,
       total_files = count(s"*"),
       unique_files = approx_count_distinct(hash) | as bigint,
       total_lines = sum(lines) | as bigint,
@@ -63,6 +65,7 @@ let binary_extension_stats = (
   filter skip_reason == "binary"
   group {extension = extension} (
     aggregate {
+      total_projects = s"COUNT(DISTINCT {project_name})" | as bigint,
       total_files = count(s"*"),
       unique_files = approx_count_distinct(hash) | as bigint,
       total_lines = sum(lines) | as bigint,
@@ -93,6 +96,7 @@ let skipped_files_stats = (
   filter skip_reason != ""
   group {extension = extension} (
     aggregate {
+      total_projects = s"COUNT(DISTINCT {project_name})" | as bigint,
       total_files = count(s"*"),
       unique_files = approx_count_distinct(hash) | as bigint,
       total_lines = sum(lines) | as bigint,
@@ -192,6 +196,7 @@ let skip_reason_stats = (
   filter skip_reason != ""
   group {skip_reason} (
     aggregate {
+      total_projects = s"COUNT(DISTINCT {project_name})" | as bigint,
       count = count(skip_reason)
     }
   )
@@ -201,6 +206,7 @@ let binary_sizes = (
   from base
   group {is_binary = skip_reason == "binary"} (
     aggregate {
+      total_projects = s"COUNT(DISTINCT {project_name})" | as bigint,
       total_size = sum(size),
       total_files = count(s"*")
     }
