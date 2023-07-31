@@ -1,24 +1,24 @@
 [
   {
-    "project_name": "botocore-a-la-carte-mgn",
-    "project_version": "1.31.5",
-    "project_release": "botocore_a_la_carte_mgn-1.31.5-py3-none-any.whl",
-    "uploaded_on": "2023-07-19 02:49:04.438",
-    "path": "packages/botocore-a-la-carte-mgn/botocore_a_la_carte_mgn-1.31.5-py3-none-any.whl/botocore/data/mgn/2020-02-26/endpoint-rule-set-1.json",
-    "size": 17612,
-    "hash": "d5179b3bd2c05ccc69d1c052ff5133ab769049558e7a8afa3d77aece0b984c5c",
-    "skip_reason": "",
-    "lines": 350
-  },
-  {
-    "project_name": "onnx-weekly",
-    "project_version": "1.15.0.dev20230717",
-    "project_release": "onnx_weekly-1.15.0.dev20230717-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2023-07-17 00:19:33.334",
-    "path": "onnx/backend/test/data/node/test_softmax_axis_0_expanded_ver18/model.onnx",
-    "size": 905,
-    "hash": "75769d5fd0e8b268a3c15227d5fe898f98df8067dfa2cfbdc26ed71549244a5d",
+    "project_name": "lalsuite",
+    "project_version": "6.49.1.dev20181009",
+    "project_release": "lalsuite-6.49.1.dev20181009-cp27-cp27m-manylinux1_x86_64.whl",
+    "uploaded_on": "2018-10-09 14:09:47.128",
+    "path": "lalapps/bin/lalapps_tmpltbank",
+    "size": 140512,
+    "hash": "dffbfd0665709230d518024e51f90decaed0838c9bf15699687c4a1d302a6af1",
     "skip_reason": "binary",
     "lines": 0
+  },
+  {
+    "project_name": "ImagingReso",
+    "project_version": "1.5.10",
+    "project_release": "ImagingReso-1.5.10-py2.py3-none-any.whl",
+    "uploaded_on": "2017-10-16 15:23:01.698",
+    "path": "ImagingReso/reference_data/ENDF_VIII/Hf-177.csv",
+    "size": 502995,
+    "hash": "b71b449eafc43407e2c8aee40f6425a455d56acd27cb54edf0dbe129d4800f1c",
+    "skip_reason": "too-large",
+    "lines": 31827
   }
 ]
