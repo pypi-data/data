@@ -107,7 +107,6 @@ let skipped_files_stats = (
   take 15
 )
 
-
 let time_stats_base = (
   from base
   filter uploaded_on > @2013-01-01
@@ -126,7 +125,6 @@ let stats_over_time = (
     }
   )
 )
-
 
 let project_level_breakdowns = (
    from time_stats_base
@@ -156,12 +154,12 @@ let project_level_breakdowns = (
     has_rst = suffix path '.rst',
     has_markdown = suffix path '.md'
    }
+
    group {month = month_trunc(uploaded_on)} (
     sort {month}
     aggregate {
       total_project_uploads = s"COUNT(DISTINCT {project_name})",
-      #project_version_releases = s"COUNT(DISTINCT ({project_name} || {project_version}))",
-      #init_py_files = s"COUNT(*) FILTER ({is_init_py})",
+
       has_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject} = true)",
       has_setup_py = s"COUNT(DISTINCT {project_name}) FILTER ({has_setup_py} = true)",
       #has_setup_py_and_pyproject = s"COUNT(DISTINCT {project_name}) FILTER ({has_pyproject_and_setup_py})",
@@ -214,7 +212,6 @@ let binary_sizes = (
     }
   )
 )
-
 
 let by_month = (
   from time_stats_base
