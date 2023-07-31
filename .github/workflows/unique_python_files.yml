@@ -73,7 +73,8 @@ jobs:
 
       - name: Gets latest created release info
         id: latest_release_info
-        uses: jossef/action-latest-release-info@v1.2.2
+        # 1.2.2 is broken: https://github.com/jossef/action-latest-release-info/issues/7
+        uses: jossef/action-latest-release-info@40167002208bfed9f789cccc7d3222fda2d82dd6
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
