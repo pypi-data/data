@@ -4,7 +4,7 @@ on:
     - cron: "0 5 * * *"
 
 
-name: Delete Draft Releases older than 1 days
+name: Delete releases
 
 jobs:
   build:
@@ -15,3 +15,8 @@ jobs:
         uses: hugo19941994/delete-draft-releases@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Delete Older Releases
+        uses: dev-drprasad/delete-older-releases@v0.2.1
+        with:
+          keep_latest: 5
