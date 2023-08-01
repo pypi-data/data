@@ -132,6 +132,11 @@ jobs:
           unzip /tmp/duckdb.zip -d ${{ github.workspace }}
           chmod +x ${{ github.workspace }}/duckdb
 
+      - name: Debug
+        run: |
+          echo "Links for ${{ matrix.index }}" 
+          cat ${{ matrix.index }} | jq -rc '.[] | [.name, .id] | @tsv'
+
       - name: Download
         run: |
           mkdir input/
