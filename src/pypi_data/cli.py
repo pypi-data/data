@@ -180,7 +180,7 @@ def run_sql(
             conn.execute(f"PRAGMA profiling_output='{db}/profile.json';")
             print(f"PRAGMA profile_output='{db}/profile.json';")
             # sql = f'EXPLAIN ANALYZE ({sql})'
-
+        conn.execute(f"SET enable_progress_bar=true;")
         if not no_limits:
             limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='{memory}GB';"
             conn.executemany(limits)
