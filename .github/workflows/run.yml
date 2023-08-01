@@ -137,6 +137,8 @@ jobs:
           mkdir input/
           cat ${{ matrix.index }} | jq -rc '.[] | [.name, .id] | @tsv' | parallel --colsep '\t' -N 2 wget -nv -O input/{2}.parquet {1}
 
+      - run: ls -la ${{ github.workspace }}/input/
+
       - name: Combine
         run: ${{ github.workspace }}/duckdb -echo -stats foo.db < ${{ github.workspace }}/sql/combine.sql
 
