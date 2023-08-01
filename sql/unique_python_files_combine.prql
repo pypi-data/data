@@ -1,5 +1,9 @@
 prql target:sql.duckdb
 
 from (read_parquet $1)
-select {s"distinct on({hash}) {hash}", path}
-
+select {hash, repository, path, uploaded_on}
+group {hash} (
+  sort uploaded_on
+  take 1
+)
+sort path

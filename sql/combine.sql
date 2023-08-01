@@ -6,5 +6,5 @@ FROM read_parquet('input/*.parquet', union_by_name = True, filename = true);
 COPY (
     select *
     from temp_table
-    order by (path)
+    order by (project_name)
 ) TO 'output.parquet' (FORMAT PARQUET, COMPRESSION zstd);
