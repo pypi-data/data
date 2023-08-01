@@ -6,4 +6,3 @@ group {hash} (
   sort uploaded_on
   take 1
 )
-sort path
