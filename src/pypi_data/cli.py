@@ -51,7 +51,7 @@ def print_git_urls(github_token: GithubToken):
         print(url)
 
 
-def group_by_size(github: Github, target_size: int) -> Iterable[list[str]]:
+def group_by_size(github: Github, target_size: int) -> Iterable[list[tuple[int, str]]]:
     fs = HTTPFileSystem()
     urls = (u[1] for u in _get_urls(github))
     with ThreadPoolExecutor() as pool:
@@ -60,7 +60,12 @@ def group_by_size(github: Github, target_size: int) -> Iterable[list[str]]:
         names = []
         total_size = 0
         for stat_result in stat_results:
-            names.append(stat_result["name"])
+            name = stat_result["name"]
+            index = int(name.removeprefix('https://github.com/pypi-data/pypi-mirror-').split('/')[0])
+            names.append({
+                "name": stat_result["name"],
+                "id": index
+            })
             total_size += stat_result["size"]
             if total_size >= target_size:
                 yield names

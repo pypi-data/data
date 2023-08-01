@@ -125,6 +125,7 @@ jobs:
 
       - name: Download links
         run: cat ${{ matrix.index }} | jq -rc '.[]'
+
       - name: Setup DuckDB
         run: |
           wget https://github.com/duckdb/duckdb/releases/download/v0.8.1/duckdb_cli-linux-amd64.zip -O /tmp/duckdb.zip
@@ -134,7 +135,7 @@ jobs:
       - name: Download
         run: |
           mkdir input/
-          cat ${{ matrix.index }} | jq -rc '.[]' | parallel wget -nv -O input/{#}.parquet {}
+          cat ${{ matrix.index }} | jq -rc '.[] | [.name, .id] | @tsv' | parallel --colsep '\t' -N 2 wget -nv -O {2}.parquet {1}
 
       - name: Combine
         run: ${{ github.workspace }}/duckdb -echo -stats foo.db < ${{ github.workspace }}/sql/combine.sql
