@@ -50,6 +50,21 @@ jobs:
 
       - env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+        run: |
+          poetry run pypi-data print-git-urls > links/repositories.txt
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: 'links/repositories.txt'
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          author_name: "commit-bot"
+          message: "Add repository URLs"
+          push: true
+          fetch: true
+          pull: '--rebase --autostash'
+
+      - env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         id: groups
         run: |
           mkdir output/
