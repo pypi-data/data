@@ -145,7 +145,7 @@ jobs:
       - run: ls -la ${{ github.workspace }}/input/
 
       - name: Combine
-        run: ${{ github.workspace }}/duckdb -echo -stats foo.db < ${{ github.workspace }}/sql/combine.sql
+        run: ${{ github.workspace }}/duckdb -echo foo.db < ${{ github.workspace }}/sql/combine.sql
 
       - run: ls -la ${{ github.workspace }}/*.parquet
 
