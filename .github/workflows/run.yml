@@ -52,10 +52,13 @@ jobs:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: |
           poetry run pypi-data print-git-urls > links/repositories.txt
+          poetry run pypi-data print-git-urls --ssh-urls > links/repositories_ssh.txt
 
       - uses: EndBug/add-and-commit@v9
         with:
-          add: 'links/repositories.txt'
+          add: |
+            links/repositories.txt
+            links/repositories_ssh.txt
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           author_name: "commit-bot"
           message: "Add repository URLs"

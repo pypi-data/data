@@ -31,10 +31,10 @@ console = Console()
 GithubToken = Annotated[str, typer.Option(envvar="GITHUB_TOKEN")]
 
 
-def _get_urls(github: Github) -> Iterable[tuple[str, str]]:
+def _get_urls(github: Github) -> Iterable[tuple[str, str, str]]:
     for repo in github.get_organization("pypi-data").get_repos():
         if repo.name.startswith("pypi-mirror-"):
-            yield f'{repo.html_url}.git', f"{repo.html_url}/releases/download/latest/dataset.parquet"
+            yield f'{repo.html_url}.git', repo.ssh_url, f"{repo.html_url}/releases/download/latest/dataset.parquet"
 
 
 def github_client(github_token) -> Github:
@@ -45,15 +45,18 @@ def github_client(github_token) -> Github:
 
 
 @app.command()
-def print_git_urls(github_token: GithubToken):
+def print_git_urls(github_token: GithubToken, ssh_urls: bool = False):
     g = github_client(github_token)
-    for url, _ in _get_urls(g):
-        print(url)
+    for https_url, ssh_url, _ in _get_urls(g):
+        if ssh_urls:
+            print(ssh_url)
+        else:
+            print(https_url)
 
 
 def group_by_size(github: Github, target_size: int) -> Iterable[list[tuple[int, str]]]:
     fs = HTTPFileSystem()
-    urls = (u[1] for u in _get_urls(github))
+    urls = (u[2] for u in _get_urls(github))
     with ThreadPoolExecutor() as pool:
         stat_results = pool.map(lambda url: fs.stat(url), urls)
 
