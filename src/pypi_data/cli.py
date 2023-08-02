@@ -226,7 +226,7 @@ def run_sql(
             print(f'\n\nper_thread_output {output_sql}\n\n\n')
             conn.execute(output_sql)
         else:
-            sql_obj.to_parquet(str(output_file), compression="zstd")
+            sql_obj.to_parquet(str(output_file), compression="snappy")
     else:
         sql_obj.to_table("temp_table")
         conn.execute(f'COPY temp_table TO \'{output_file}\' (FORMAT JSON, array TRUE)')
