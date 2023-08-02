@@ -222,7 +222,7 @@ def run_sql(
             sql_obj.insert_into("temp_table")
     elif output == OutputFormat.PARQUET:
         if per_thread_output:
-            output_sql = f'COPY ({sql}) TO \'{output_file}\' (FORMAT PARQUET, PER_THREAD_OUTPUT TRUE)'
+            output_sql = f'COPY ({sql}) TO \'{output_file}\' (FORMAT PARQUET, COMPRESSION zstd)'
             print(f'\n\nper_thread_output {output_sql}\n\n\n')
             conn.execute(output_sql)
         else:
