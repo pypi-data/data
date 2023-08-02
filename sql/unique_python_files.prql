@@ -8,4 +8,4 @@ group {hash} (
   take 1
   select {hash, path, repository, uploaded_on}
 )
-select {hash, path, uploaded_on} | sort {path}
+select {hash, path, uploaded_on}
