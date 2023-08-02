@@ -48,33 +48,20 @@ jobs:
           mkdir dataset/
           cat links/dataset.txt | shuf | head -n1 | xargs -P 5 -n 4 wget --no-verbose -P dataset/
 
-      - name: Download python links
-        run: |
-          mkdir dataset_python/
-          cat links/unique_python_files.txt | shuf | head -n1 | xargs -P 5 -n 4 wget --no-verbose -P dataset_python/
 
       - name: Generate sample
         run: |
           poetry run pypi-data run-sql ${{ github.workspace }}/sql/random.prql stats/random_sample.json --output=json dataset/*.parquet
-          
-      - name: Generate python-only sample
-        run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/random_unique.prql stats/random_sample_python_only.json --output=json dataset_python/*.parquet
 
       - run: |
           cp stats/random_sample.json t
           cat t | jq '.' > stats/random_sample.json
           head stats/random_sample.json
-          
-          cp stats/random_sample_python_only.json t
-          cat t | jq '.' > stats/random_sample_python_only.json
-          head stats/random_sample_python_only.json
 
       - uses: EndBug/add-and-commit@v9
         with:
           add: |
             stats/random_sample.json
-            stats/random_sample_python_only.json
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           author_name: "commit-bot"
           message: "Add random samples"
