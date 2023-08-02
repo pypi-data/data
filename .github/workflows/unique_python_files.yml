@@ -62,14 +62,10 @@ jobs:
       - name: Ingest
         run: |
           mkdir combined/
-          find dataset/ -name '*.parquet' | parallel -j 1 --xargs -n4 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 combined/{#}.parquet {}
+          find dataset/ -name '*.parquet' | parallel -j 1 --xargs -n4 poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files.prql --output=parquet --threads=2 combined/unique-python-files-{#}.parquet {}
           
       - name: List
         run: ls combined/
-
-      - name: Combine
-        run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_combine.prql --output=parquet --memory=3 --threads=2 --per-thread-output unique-python-files.parquet combined/*.parquet
 
       - name: Gets latest created release info
         id: latest_release_info
@@ -83,8 +79,7 @@ jobs:
         uses: shogo82148/actions-upload-release-asset@v1
         with:
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
-          asset_name: unique-python-files.parquet
-          asset_path: unique-python-files.parquet
+          asset_path: combined/unique-python-files-*.parquet
           overwrite: true
 
       - name: Create download links

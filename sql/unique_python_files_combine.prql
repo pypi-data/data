@@ -1,4 +1,0 @@
-prql target:sql.duckdb
-
-from (read_parquet $1)
-select {s"distinct on({hash}) {hash}", path, repository}

@@ -3,4 +3,5 @@ prql target:sql.duckdb
 from (read_parquet $1)
 filter s"suffix({path}, '.py')"
 filter skip_reason == ""
-select {s"distinct on({hash}) {hash}", path, repository}
+select {s"distinct on({hash}) {hash}", path, repository, uploaded_on}
+sort {uploaded_on}
