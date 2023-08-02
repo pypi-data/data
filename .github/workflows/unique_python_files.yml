@@ -69,7 +69,7 @@ jobs:
 
       - name: Combine
         run: |
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_combine.prql --output=parquet --memory=3 --threads=2 unique-python-files.parquet combined/*.parquet
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/unique_python_files_combine.prql --output=parquet --memory=3 --threads=2 --per-thread-output unique-python-files.parquet combined/*.parquet
 
       - name: Gets latest created release info
         id: latest_release_info
