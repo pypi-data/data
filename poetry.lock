@@ -505,16 +505,16 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-co
 
 [[package]]
 name = "prql-python"
-version = "0.9.2"
+version = "0.9.3"
 description = ""
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "prql_python-0.9.2-cp37-abi3-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl", hash = "sha256:0da87163da01646820bc4a460403c667d19e66c7b4c946ce8279d434fefb649e"},
-    {file = "prql_python-0.9.2-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4d90ade324bf2b5aa1b95de71551bd2ee29fc377f553695d8d9d78fd8575e8a3"},
-    {file = "prql_python-0.9.2-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:550d1832d850b8d40393a89ed62043a1ad924e80be21170fa6a2908134a6e74e"},
-    {file = "prql_python-0.9.2-cp37-abi3-win_amd64.whl", hash = "sha256:4598ad722f048a25a29a85aeee8dcb1e046c85af06825cfe90d003d750354583"},
-    {file = "prql_python-0.9.2.tar.gz", hash = "sha256:98de2534e29069c356a0a0f2967a7a2f41922771d9a18305ea29e97291852e67"},
+    {file = "prql_python-0.9.3-cp37-abi3-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl", hash = "sha256:c328c69d467cd28060246403aeae7834e48dc1e220da9dc934161ccc05cdb3cd"},
+    {file = "prql_python-0.9.3-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:909a389bbcc80a61a631ef79d90c0542bce6de69e0a5ff3be0ac252606d071b2"},
+    {file = "prql_python-0.9.3-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:98371e0f0bedbe6d8fc93acdd4c3a81db504bfe42ac976000216b30cb0314636"},
+    {file = "prql_python-0.9.3-cp37-abi3-win_amd64.whl", hash = "sha256:8c519bebbe446c9ca34d2bdaf2fa4c546c706a52ac76ba1c0d53a4a6035ce1c7"},
+    {file = "prql_python-0.9.3.tar.gz", hash = "sha256:14fbf0c81aa32bf3d4516f5931dd962ed82b97f9d40c44f6b6114f7b7a81d874"},
 ]
 
 [[package]]
@@ -840,4 +840,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "0ea03cf7c440b21aa4d831e6690dbc6184a516fa3985a131c17b0a8f74c86f55"
+content-hash = "d78be4a2e34ed9f4fcc339d1cbf26a4cdd22475ff7b334e17683a37a033d4a06"
