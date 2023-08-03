@@ -18,7 +18,7 @@ fsspec = "^2023.6.0"
 duckdb = "^0.8.1"
 tqdm = "^4.65.0"
 more-itertools = "^10.0.0"
-prql-python = "^0.9.2"
+prql-python = "^0.9.3"
 psutil = "^5.9.5"
 
 [tool.poetry.scripts]
