@@ -56,7 +56,7 @@ def print_git_urls(github_token: GithubToken, ssh_urls: bool = False):
 def group_by_size(github: Github, target_size: int) -> Iterable[list[tuple[int, str]]]:
     urls = (u[2] for u in _get_urls(github))
     with ThreadPoolExecutor() as pool:
-        stat_results = pool.map(lambda ds_url: (ds_url, session.head(ds_url)), urls)
+        stat_results = pool.map(lambda ds_url: (ds_url, session.head(ds_url, allow_redirects=True)), urls)
 
         names = []
         total_size = 0
