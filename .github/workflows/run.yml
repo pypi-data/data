@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 3 * * *"
-#concurrency: data
+
+concurrency: data
 
 name: Build data
 jobs:
