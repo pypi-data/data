@@ -10,7 +10,6 @@ from pathlib import Path
 from typing import Annotated, Iterable, List, Optional
 
 import psutil
-from fsspec.implementations.http_sync import HTTPFileSystem
 import typer
 import prql_python as prql
 from github import Github
@@ -55,21 +54,23 @@ def print_git_urls(github_token: GithubToken, ssh_urls: bool = False):
 
 
 def group_by_size(github: Github, target_size: int) -> Iterable[list[tuple[int, str]]]:
-    fs = HTTPFileSystem()
     urls = (u[2] for u in _get_urls(github))
     with ThreadPoolExecutor() as pool:
-        stat_results = pool.map(lambda url: fs.stat(url), urls)
+        stat_results = pool.map(lambda ds_url: (ds_url, session.head(ds_url)), urls)
 
         names = []
         total_size = 0
-        for stat_result in stat_results:
-            name = stat_result["name"]
-            index = int(name.removeprefix('https://github.com/pypi-data/pypi-mirror-').split('/')[0])
+        for (url, response) in stat_results:
+            response: requests.Response
+            if response.status_code == 404:
+                continue
+            content_length = int(response.headers["content-length"])
+            index = int(url.removeprefix('https://github.com/pypi-data/pypi-mirror-').split('/')[0])
             names.append({
-                "name": stat_result["name"],
+                "name": url,
                 "id": index
             })
-            total_size += stat_result["size"]
+            total_size += content_length
             if total_size >= target_size:
                 yield names
                 names.clear()
