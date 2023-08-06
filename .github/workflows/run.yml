@@ -133,7 +133,11 @@ jobs:
           toolchain: stable
           override: true
 
-      - run: cargo install parquet -F cli
+      - name: Install parquet cli from crates.io
+        uses: baptiste0928/cargo-install@v2
+        with:
+          crate: parquet
+          features: cli
 
       - name: Download links
         run: cat ${{ matrix.index }} | jq -rc '.[]'
