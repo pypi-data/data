@@ -144,7 +144,7 @@ jobs:
       - name: Download
         run: |
           mkdir input/
-          cat ${{ matrix.index }} | jq -rc '.[] | [.name, .id] | @tsv' | parallel --colsep '\t' wget -nv -O input/{2}.parquet {1}
+          cat ${{ matrix.index }} | jq -rc '.[] | [.name, .id] | @tsv' | parallel --colsep '\t' wget --tries=2 -nv -O input/{2}.parquet {1}
 
       - run: ls -la ${{ github.workspace }}/input/
 
