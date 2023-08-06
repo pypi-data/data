@@ -155,7 +155,7 @@ jobs:
       - run: ls -la ${{ github.workspace }}/input/
 
       - name: Combine
-        run: parquet-concat ${{ github.workspace }}/input/*.parquet ${{ github.workspace }}/merged.parquet
+        run: parquet-concat ${{ github.workspace }}/merged.parquet ${{ github.workspace }}/input/*.parquet
 
       - name: Merged size
         run: du -hs ${{ github.workspace }}/merged.parquet
