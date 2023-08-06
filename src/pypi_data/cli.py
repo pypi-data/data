@@ -53,6 +53,13 @@ def print_git_urls(github_token: GithubToken, ssh_urls: bool = False):
             print(https_url)
 
 
+@app.command()
+def print_dataset_urls(github_token: GithubToken):
+    g = github_client(github_token)
+    for _, _, dataset_url in _get_urls(g):
+        print(dataset_url)
+
+
 def group_by_size(github: Github, target_size: int) -> Iterable[list[tuple[int, str]]]:
     urls = (u[2] for u in _get_urls(github))
     with ThreadPoolExecutor() as pool:
