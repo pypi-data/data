@@ -166,7 +166,7 @@ jobs:
             --bloom-filter-enabled=true
 
       - name: Output size
-        run: du -hs ${{ github.workspace }}/merged.parquet
+        run: du -hs ${{ github.workspace }}/output.parquet
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
