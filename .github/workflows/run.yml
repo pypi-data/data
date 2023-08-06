@@ -162,12 +162,14 @@ jobs:
 
       - name: Rewrite
         run: |
-          parquet-rewrite --compression=zstd \
-            --input=${{ github.workspace }}/merged.parquet \
-            --output=${{ github.workspace }}/output.parquet \
+          parquet-rewrite \
+            --compression=zstd \
             --writer-version=2.0 \
             --statistics-enabled=page \
-            --bloom-filter-enabled=true
+            --bloom-filter-enabled=true \
+            --bloom-filter-fpp 0.1 \
+            --input=${{ github.workspace }}/merged.parquet \
+            --output=${{ github.workspace }}/output.parquet 
 
       - name: Output size
         run: du -hs ${{ github.workspace }}/output.parquet
