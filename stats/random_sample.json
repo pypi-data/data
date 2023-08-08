@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "awscli",
-    "project_version": "1.27.6",
-    "project_release": "awscli-1.27.6.tar.gz",
-    "uploaded_on": "2022-11-09 20:40:20.716",
-    "path": "packages/awscli/awscli-1.27.6.tar.gz/awscli-1.27.6/awscli/examples/ses/list-identities.rst",
-    "archive_path": "awscli-1.27.6/awscli/examples/ses/list-identities.rst",
-    "size": 906,
-    "hash": "\\x11\\xC5\\xAB\\xE0\\xF79\\x95\\xA1pA\\x22\\x85\\x00K\\x81W\\xDB\\xEA%x",
+    "project_name": "akshare",
+    "project_version": "1.7.27",
+    "project_release": "akshare-1.7.27-py3-none-any.whl",
+    "uploaded_on": "2022-09-21 09:27:34.44",
+    "path": "packages/akshare/akshare-1.7.27-py3-none-any.whl/akshare/stock_fundamental/stock_finance_hk.py",
+    "archive_path": "akshare/stock_fundamental/stock_finance_hk.py",
+    "size": 5980,
+    "hash": "y\\xE9\\xE4DqT\\x89g6\\x1A;\\x87Sv;P\\x16\\x017\\xD3",
     "skip_reason": "",
-    "lines": 24,
-    "repository": 176
+    "lines": 155,
+    "repository": 168
   },
   {
-    "project_name": "lino",
-    "project_version": "22.11.0",
-    "project_release": "lino-22.11.0.tar.gz",
-    "uploaded_on": "2022-11-19 11:18:13.94",
-    "path": "packages/lino/lino-22.11.0.tar.gz/lino-22.11.0/lino/modlib/extjs/static/ext-3.3.1/examples/docs/resources/images/default/menu/checked.gif",
-    "archive_path": "lino-22.11.0/lino/modlib/extjs/static/ext-3.3.1/examples/docs/resources/images/default/menu/checked.gif",
-    "size": 959,
-    "hash": "\\xFA\\xD5\\x897\\x27\\xEE\\x8A\\x13\\xF4(\\xAAws\\x80\\xAE\\x97\\x15*\\xDE\\xC8",
+    "project_name": "jijmodeling",
+    "project_version": "0.10.4",
+    "project_release": "jijmodeling-0.10.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl",
+    "uploaded_on": "2022-09-27 05:21:26.976",
+    "path": "packages/jijmodeling/jijmodeling-0.10.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl/jijmodeling/__pycache__/__init__.cpython-39.opt-1.pyc",
+    "archive_path": "jijmodeling/__pycache__/__init__.cpython-39.opt-1.pyc",
+    "size": 3661,
+    "hash": "\\x94\\xEB\\x0B\\xBBS\\xC4n\\xE5\\x06y>\\x9Eg\\xD3\\x94\\xE5(\\xDD\\xA7{",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 177
+    "repository": 169
   }
 ]
