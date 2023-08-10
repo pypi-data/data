@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "backend.ai-manager",
-    "project_version": "20.3.15",
-    "project_release": "backend.ai-manager-20.3.15.tar.gz",
-    "uploaded_on": "2021-01-06 13:35:01.176",
-    "path": "packages/backend.ai-manager/backend.ai-manager-20.3.15.tar.gz/backend.ai-manager-20.3.15/src/ai/backend/gateway/events.py",
-    "archive_path": "backend.ai-manager-20.3.15/src/ai/backend/gateway/events.py",
-    "size": 21305,
-    "hash": "Iv+\\xAA.1\\xE9\\xF3\\xD2\\xB6\\x5Ck\\xB13\\xFA\\x85,\\x1E0\\x17",
+    "project_name": "cnext-test",
+    "project_version": "0.4.36",
+    "project_release": "cnext_test-0.4.36-py3-none-any.whl",
+    "uploaded_on": "2022-07-07 02:55:29.723",
+    "path": "packages/cnext-test/cnext_test-0.4.36-py3-none-any.whl/cnext_app/tests/intergration/node_modules/ansi-regex/index.js",
+    "archive_path": "cnext_app/tests/intergration/node_modules/ansi-regex/index.js",
+    "size": 350,
+    "hash": "ao\\xF87\\xD3\\xFF\\x01\\xE0(\\xC2\\x08\\x06/\\xC6\\x99\\xC7\\xF1\\xC8\\xD4\\x18",
     "skip_reason": "",
-    "lines": 565,
-    "repository": 90
+    "lines": 10,
+    "repository": 158
   },
   {
-    "project_name": "shuup",
-    "project_version": "2.3.11",
-    "project_release": "shuup-2.3.11-py2.py3-none-any.whl",
-    "uploaded_on": "2021-01-25 15:33:06.599",
-    "path": "packages/shuup/shuup-2.3.11-py2.py3-none-any.whl/shuup/xtheme/static/xtheme/open-sans-regular.1a958d2d.woff",
-    "archive_path": "shuup/xtheme/static/xtheme/open-sans-regular.1a958d2d.woff",
-    "size": 96116,
-    "hash": "\\x12Q\\xD5\\x1AdI\\xA01\\xEF\\x84\\x89\\xC4H\\x9Em\\x9F\\x81\\x5C\\x19\\xD0",
+    "project_name": "medical-image",
+    "project_version": "0.0.41",
+    "project_release": "medical_image-0.0.41-py3-none-any.whl",
+    "uploaded_on": "2022-07-05 09:17:12.557",
+    "path": "packages/medical-image/medical_image-0.0.41-py3-none-any.whl/medical_image/logo/deepnoid.png",
+    "archive_path": "medical_image/logo/deepnoid.png",
+    "size": 23561,
+    "hash": "\\xC5\\x91}\\x00hjU\\xB56FS\\x12\\xCA\\xF1\\xA2\\xBE]t7\\xD5",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 92
+    "repository": 157
   }
 ]
