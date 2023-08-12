@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "c2cciutils",
-    "project_version": "1.4.13.dev18",
-    "project_release": "c2cciutils-1.4.13.dev18-py3-none-any.whl",
-    "uploaded_on": "2023-07-18 11:27:08.773",
-    "path": "packages/c2cciutils/c2cciutils-1.4.13.dev18-py3-none-any.whl/c2cciutils/node_modules/snyk/dist/cli/sql-wasm.wasm",
-    "archive_path": "c2cciutils/node_modules/snyk/dist/cli/sql-wasm.wasm",
-    "size": 608663,
-    "hash": "p\\xAA\\xD2a\\xDE\\xF3p\\xC5\\xAA\\xF47\\x27\\xD8Z\\xD9\\xAB1\\x95#U",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 220
+    "project_name": "tf-nightly-cpu-aws",
+    "project_version": "2.13.0.dev20230402",
+    "project_release": "tf_nightly_cpu_aws-2.13.0.dev20230402-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "uploaded_on": "2023-04-02 09:20:07.238",
+    "path": "packages/tf-nightly-cpu-aws/tf_nightly_cpu_aws-2.13.0.dev20230402-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/tensorflow/include/external/compute_library/tests/validation/reference/ElementwiseOperations.h",
+    "archive_path": "tensorflow/include/external/compute_library/tests/validation/reference/ElementwiseOperations.h",
+    "size": 2003,
+    "hash": "y\\xD0\\x04 \\xE1\\xE7\\x94It\\xB8\\xBF\\xDBa8W\\xE1`\\xCC\\xB8\\xFD",
+    "skip_reason": "",
+    "lines": 47,
+    "repository": 200
   },
   {
-    "project_name": "aws-cdk.aws-panorama",
-    "project_version": "1.204.0",
-    "project_release": "aws-cdk.aws-panorama-1.204.0.tar.gz",
-    "uploaded_on": "2023-06-19 21:06:35.496",
-    "path": "packages/aws-cdk.aws-panorama/aws-cdk.aws-panorama-1.204.0.tar.gz/aws-cdk.aws-panorama-1.204.0/src/aws_cdk/aws_panorama/_jsii/aws-panorama@1.204.0.jsii.tgz",
-    "archive_path": "aws-cdk.aws-panorama-1.204.0/src/aws_cdk/aws_panorama/_jsii/aws-panorama@1.204.0.jsii.tgz",
-    "size": 39887,
-    "hash": "\\xC3\\xC8\\xC2\\xB9\\xE3\\x12\\xB5\\xAEwA\\xEAH?N\\x89\\x9F@\\x8D\\xAD\\xA1",
+    "project_name": "tensorslow",
+    "project_version": "1.0.2",
+    "project_release": "tensorslow-1.0.2.tar.gz",
+    "uploaded_on": "2023-04-06 06:56:25.224",
+    "path": "packages/tensorslow/tensorslow-1.0.2.tar.gz/tensorslow-1.0.2/src/tensorslow/datasets/mnist_data/train/8/8300.png",
+    "archive_path": "tensorslow-1.0.2/src/tensorslow/datasets/mnist_data/train/8/8300.png",
+    "size": 259,
+    "hash": ";\\x0C\\xD4\\xDDL\\x82L\\xB6\\xE0p\\x1C3\\xD6\\x90\\xBC;\\xE0\\xA0\\x9A\\xF5",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 214
+    "repository": 201
   }
 ]
