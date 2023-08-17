@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "perspective-python",
-    "project_version": "0.5.6",
-    "project_release": "perspective_python-0.5.6-cp37-cp37m-macosx_10_15_x86_64.whl",
-    "uploaded_on": "2020-10-27 15:27:26.666",
-    "path": "packages/perspective-python/perspective_python-0.5.6-cp37-cp37m-macosx_10_15_x86_64.whl/perspective/src/computed.cpp",
-    "archive_path": "perspective/src/computed.cpp",
-    "size": 2115,
-    "hash": "Z\\xC1\\xE3_\\x83\\x9C\\xCB\\xBB\\xC2\\x8A\\xD7ZRd\\x93\\xB2\\xB7\\xDF\\xA5]",
+    "project_name": "reqmgr2",
+    "project_version": "2.2.4rc1",
+    "project_release": "reqmgr2-2.2.4rc1.tar.gz",
+    "uploaded_on": "2023-08-15 11:39:43.708",
+    "path": "packages/reqmgr2/reqmgr2-2.2.4rc1.tar.gz/reqmgr2-2.2.4rc1/src/python/reqmgr2.egg-info/requires.txt",
+    "archive_path": "reqmgr2-2.2.4rc1/src/python/reqmgr2.egg-info/requires.txt",
+    "size": 182,
+    "hash": "z\\xF6\\x93\\xB3*\\x96q\\x22J\\x07;\\xA3h\\x9A\\xB8\\x18\\xF2\\xF5V]",
     "skip_reason": "",
-    "lines": 65,
-    "repository": 83
+    "lines": 11,
+    "repository": 225
   },
   {
-    "project_name": "tencentcloud-sdk-python-kms",
-    "project_version": "3.0.263",
-    "project_release": "tencentcloud_sdk_python_kms-3.0.263-py2.py3-none-any.whl",
-    "uploaded_on": "2020-09-24 00:36:12.574",
-    "path": "packages/tencentcloud-sdk-python-kms/tencentcloud_sdk_python_kms-3.0.263-py2.py3-none-any.whl/tencentcloud/tia/v20180226/__init__.py",
-    "archive_path": "tencentcloud/tia/v20180226/__init__.py",
+    "project_name": "tencentcloud-sdk-python",
+    "project_version": "3.0.956",
+    "project_release": "tencentcloud-sdk-python-3.0.956.tar.gz",
+    "uploaded_on": "2023-08-11 00:19:33.283",
+    "path": "packages/tencentcloud-sdk-python/tencentcloud-sdk-python-3.0.956.tar.gz/tencentcloud-sdk-python-3.0.956/tencentcloud/dcdb/v20180411/__init__.py",
+    "archive_path": "tencentcloud-sdk-python-3.0.956/tencentcloud/dcdb/v20180411/__init__.py",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 80
+    "repository": 224
   }
 ]
