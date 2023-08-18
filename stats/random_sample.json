@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "reqmgr2",
-    "project_version": "2.2.4rc1",
-    "project_release": "reqmgr2-2.2.4rc1.tar.gz",
-    "uploaded_on": "2023-08-15 11:39:43.708",
-    "path": "packages/reqmgr2/reqmgr2-2.2.4rc1.tar.gz/reqmgr2-2.2.4rc1/src/python/reqmgr2.egg-info/requires.txt",
-    "archive_path": "reqmgr2-2.2.4rc1/src/python/reqmgr2.egg-info/requires.txt",
-    "size": 182,
-    "hash": "z\\xF6\\x93\\xB3*\\x96q\\x22J\\x07;\\xA3h\\x9A\\xB8\\x18\\xF2\\xF5V]",
+    "project_name": "python-opensesame",
+    "project_version": "3.3.0a49",
+    "project_release": "python_opensesame-3.3.0a49-py2.py3-none-any.whl",
+    "uploaded_on": "2020-01-05 08:55:34.126",
+    "path": "packages/python-opensesame/python_opensesame-3.3.0a49-py2.py3-none-any.whl/python_opensesame-3.3.0a49.data/data/share/opensesame_plugins/text_display/info.yaml",
+    "archive_path": "python_opensesame-3.3.0a49.data/data/share/opensesame_plugins/text_display/info.yaml",
+    "size": 298,
+    "hash": "2\\x09\\xD7H[\\x99So2\\xBC*\\x85\\xAA\\x07\\xB5d\\xC0\\x89VE",
     "skip_reason": "",
-    "lines": 11,
-    "repository": 225
+    "lines": 8,
+    "repository": 58
   },
   {
-    "project_name": "tencentcloud-sdk-python",
-    "project_version": "3.0.956",
-    "project_release": "tencentcloud-sdk-python-3.0.956.tar.gz",
-    "uploaded_on": "2023-08-11 00:19:33.283",
-    "path": "packages/tencentcloud-sdk-python/tencentcloud-sdk-python-3.0.956.tar.gz/tencentcloud-sdk-python-3.0.956/tencentcloud/dcdb/v20180411/__init__.py",
-    "archive_path": "tencentcloud-sdk-python-3.0.956/tencentcloud/dcdb/v20180411/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "reprobench",
+    "project_version": "0.11.0.dev10",
+    "project_release": "reprobench-0.11.0.dev10.tar.gz",
+    "uploaded_on": "2019-06-12 14:07:12.119",
+    "path": "packages/reprobench/reprobench-0.11.0.dev10.tar.gz/reprobench-0.11.0.dev10/reprobench/statistics/.DS_Store",
+    "archive_path": "reprobench-0.11.0.dev10/reprobench/statistics/.DS_Store",
+    "size": 6148,
+    "hash": "C\\x82\\x89\\xE39\\x7F(F\\xDF\\xFAzt\\xFA\\xF9K9\\xE7\\x1F]P",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 224
+    "repository": 47
   }
 ]
