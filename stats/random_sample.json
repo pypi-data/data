@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "python-opensesame",
-    "project_version": "3.3.0a49",
-    "project_release": "python_opensesame-3.3.0a49-py2.py3-none-any.whl",
-    "uploaded_on": "2020-01-05 08:55:34.126",
-    "path": "packages/python-opensesame/python_opensesame-3.3.0a49-py2.py3-none-any.whl/python_opensesame-3.3.0a49.data/data/share/opensesame_plugins/text_display/info.yaml",
-    "archive_path": "python_opensesame-3.3.0a49.data/data/share/opensesame_plugins/text_display/info.yaml",
-    "size": 298,
-    "hash": "2\\x09\\xD7H[\\x99So2\\xBC*\\x85\\xAA\\x07\\xB5d\\xC0\\x89VE",
+    "project_name": "tf-nightly-cpu",
+    "project_version": "2.12.0.dev20221211",
+    "project_release": "tf_nightly_cpu-2.12.0.dev20221211-cp37-cp37m-macosx_10_15_x86_64.whl",
+    "uploaded_on": "2022-12-11 11:01:40.347",
+    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.12.0.dev20221211-cp37-cp37m-macosx_10_15_x86_64.whl/tensorflow/include/external/mkl_dnn_v1/src/cpu/x64/gemm/bf16/common_s16.hpp",
+    "archive_path": "tensorflow/include/external/mkl_dnn_v1/src/cpu/x64/gemm/bf16/common_s16.hpp",
+    "size": 3105,
+    "hash": "\\xEB\\x0D\\xE3\\xA9\\xBE\\x90\\x04\\x0A\\xF4(\\x16\\x84\\xC7z\\xF3\\xBB3\\xD9\\x09C",
     "skip_reason": "",
-    "lines": 8,
-    "repository": 58
+    "lines": 97,
+    "repository": 180
   },
   {
-    "project_name": "reprobench",
-    "project_version": "0.11.0.dev10",
-    "project_release": "reprobench-0.11.0.dev10.tar.gz",
-    "uploaded_on": "2019-06-12 14:07:12.119",
-    "path": "packages/reprobench/reprobench-0.11.0.dev10.tar.gz/reprobench-0.11.0.dev10/reprobench/statistics/.DS_Store",
-    "archive_path": "reprobench-0.11.0.dev10/reprobench/statistics/.DS_Store",
-    "size": 6148,
-    "hash": "C\\x82\\x89\\xE39\\x7F(F\\xDF\\xFAzt\\xFA\\xF9K9\\xE7\\x1F]P",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 47
+    "project_name": "astroget",
+    "project_version": "0.0.1",
+    "project_release": "astroget-0.0.1.tar.gz",
+    "uploaded_on": "2023-01-01 19:50:18.528",
+    "path": "packages/astroget/astroget-0.0.1.tar.gz/astroget-0.0.1/venv/lib/python3.10/site-packages/setuptools/_distutils/msvccompiler.py",
+    "archive_path": "astroget-0.0.1/venv/lib/python3.10/site-packages/setuptools/_distutils/msvccompiler.py",
+    "size": 23540,
+    "hash": "-D{\\x85}4\\xC8\\xE8\\xED\\x1E\\x16\\xB4\\x8E}\\x1Dj~\\x5C):",
+    "skip_reason": "virtualenv",
+    "lines": 643,
+    "repository": 183
   }
 ]
