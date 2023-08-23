@@ -4,13 +4,13 @@ on:
 #    - cron: "0 0 * * *"
 
 name: Build unique python files
-concurrency: build
+concurrency: build-unique-python
 
 jobs:
   build_and_test:
     name: Compile toolchain
     runs-on: ubuntu-latest
-    if: github.repository == 'pypi-data/internal-toolchain'
+    if: github.repository == 'pypi-data/data'
     env:
       RUST_BACKTRACE: "1"
     steps:
