@@ -33,11 +33,11 @@ jobs:
           args: --profile=optimized
         env:
           RUSTFLAGS: '-C target-cpu=native'
-#
-#      - name: Run
-#        run: |
-#          ./target/optimized/data links/dataset.txt data/ --limit=5
-#
-#      - name: Check
-#        run: |
-#          ls -la data/
+
+      - name: Run
+        run: |
+          ./target/optimized/data links/dataset.txt data/ --limit=5
+
+      - name: Check
+        run: |
+          ls -la data/
