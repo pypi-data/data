@@ -33,3 +33,7 @@ jobs:
           args: --profile=optimized
         env:
           RUSTFLAGS: '-C target-cpu=native'
+
+      - name: Run
+        run: |
+          ./target/optimized/data links/dataset.txt data/
