@@ -49,8 +49,22 @@ jobs:
           github_token: ${{ github.token }}
 
       - name: Upload Assets
+        id: upload-assets
         uses: shogo82148/actions-upload-release-asset@v1
         with:
           upload_url: ${{ steps.get_release.outputs.upload_url }}
           asset_path: ${{ github.workspace }}/data/combined.parquet
           asset_name: unique_python_files.parquet
+
+      - run: |
+          echo "${{ steps.upload-assets.outputs.browser_download_url }}" > links/only_python_files.txt
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: 'links/only_python_files.txt'
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          author_name: "commit-bot"
+          message: "Add stats"
+          push: true
+          fetch: true
+          pull: '--rebase --autostash'

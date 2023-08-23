@@ -36,13 +36,13 @@ async fn main() -> Result<()> {
 
     let download_dir = args.working_directory.join("downloads");
     let output_dir = args.working_directory.join("output");
-    let only_python_dir = args.working_directory.join("only_python");
+    //     let only_python_dir = args.working_directory.join("only_python");
     let final_output_dir = args.working_directory.join("final");
     let combined_parquet_file = args.working_directory.join("combined.parquet");
     tokio::fs::create_dir_all(&args.working_directory).await?;
     tokio::fs::create_dir_all(&download_dir).await?;
     tokio::fs::create_dir_all(&output_dir).await?;
-    tokio::fs::create_dir_all(&only_python_dir).await?;
+    //     tokio::fs::create_dir_all(&only_python_dir).await?;
 
     let urls_file = BufReader::new(File::open(&args.urls_file).await?);
     let mut lines = urls_file.lines();
@@ -60,11 +60,11 @@ async fn main() -> Result<()> {
     for (idx, url) in urls.into_iter().enumerate() {
         let path = download_dir.join(format!("url-{}.parquet", idx));
         let output_dir = output_dir.join(format!("url-{}/", idx));
-        let only_python_dir = only_python_dir.join(format!("url-{}/", idx));
+        //         let only_python_dir = only_python_dir.join(format!("url-{}/", idx));
         download_file(&url, &path).await?;
         run_sql(&path, &output_dir, include_str!("../sql/unique_files.sql")).await?;
-        run_sql(&path, &only_python_dir, include_str!("../sql/only_python_files.sql"))
-            .await?;
+        //         run_sql(&path, &only_python_dir, include_str!("../sql/only_python_files.sql"))
+        //             .await?;
         tokio::fs::remove_file(&path).await?;
     }
 
