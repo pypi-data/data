@@ -46,9 +46,10 @@ async fn main() -> Result<()> {
         let path = download_dir.join(format!("url-{}.parquet", idx));
         let output_dir = output_dir.join(format!("url-{}/", idx));
         download_file(&url, &path).await?;
-        get_unique_python_files(&path, &output_dir).await?;
+        get_unique_python_files(&path, &output_dir, include_str!("../sql/unique_files.sql")).await?;
         tokio::fs::remove_file(&path).await?;
     }
+    get_unique_python_files(Path::new("data/combined.parquet"), Path::new("data/combined/"), include_str!("../sql/unique_files_combined.sql")).await?;
     Ok(())
 }
 
@@ -82,12 +83,12 @@ async fn download_file(url: &str, path: &Path) -> Result<()> {
     Ok(())
 }
 
-async fn get_unique_python_files(path: &Path, output: &Path) -> Result<()> {
+async fn get_unique_python_files(path: &Path, output: &Path, sql: &str) -> Result<()> {
     let ctx = SessionContext::new();
     let read_options = ParquetReadOptions::default().parquet_pruning(true);
     ctx.register_parquet("input_dataset", path.to_str().unwrap(), read_options).await?;
 
-    let df = ctx.sql(include_str!("../sql/unique_files.sql")).await.unwrap();
+    let df = ctx.sql(sql).await.unwrap();
 
     let props = WriterProperties::builder()
         .set_compression(Compression::ZSTD(ZstdLevel::try_new(13).unwrap()))

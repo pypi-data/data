@@ -19,5 +19,5 @@ snmalloc-rs = "0.3"
 
 [profile.optimized]
 inherits = "release"
-lto = true
-codegen-units = 1
+#lto = true
+#codegen-units = 1
