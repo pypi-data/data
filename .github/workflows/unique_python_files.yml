@@ -36,8 +36,21 @@ jobs:
 
       - name: Run
         run: |
-          ./target/optimized/data links/dataset.txt data/ --limit=5
+          ./target/optimized/data links/dataset.txt data/
 
       - name: Check
         run: |
           ls -la data/
+
+      - name: Fetch Latest Release
+        id: get_release
+        uses: gregziegan/fetch-latest-release@v2.0.0
+        with:
+          github_token: ${{ github.token }}
+
+      - name: Upload Assets
+        uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.get_release.outputs.upload_url }}
+          asset_path: ${{ github.workspace }}/data/combined.parquet
+          asset_name: unique_python_files.parquet
