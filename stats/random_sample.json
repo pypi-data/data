@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "slepc",
-    "project_version": "3.17.0",
-    "project_release": "slepc-3.17.0.tar.gz",
-    "uploaded_on": "2022-04-08 08:51:13.326",
-    "path": "packages/slepc/slepc-3.17.0.tar.gz/slepc-3.17.0/src/sys/classes/bv/tests/test13.c",
-    "archive_path": "slepc-3.17.0/src/sys/classes/bv/tests/test13.c",
-    "size": 2967,
-    "hash": ">\\x0F\\x01\\x8B\\xA7\\x90<\\xB8\\x0C\\xB3\\x14\\xF88\\xDE\\xA7\\xB0@\\x8E!\\xF8",
+    "project_name": "onednn-devel-cpu-vcomp",
+    "project_version": "2023.2.0",
+    "project_release": "onednn_devel_cpu_vcomp-2023.2.0-py2.py3-none-win_amd64.whl",
+    "uploaded_on": "2023-07-14 14:24:55.193",
+    "path": "packages/onednn-devel-cpu-vcomp/onednn_devel_cpu_vcomp-2023.2.0-py2.py3-none-win_amd64.whl/onednn_devel_cpu_vcomp-2023.2.0.data/data/Library/include/dnnl_ocl.h",
+    "archive_path": "onednn_devel_cpu_vcomp-2023.2.0.data/data/Library/include/dnnl_ocl.h",
+    "size": 864,
+    "hash": "\\xB4UE4\\xDEaA>j\\xAA>N8\\xEB7!\\xB7\\xDC\\xF9\\x10",
     "skip_reason": "",
-    "lines": 94,
-    "repository": 145
+    "lines": 22,
+    "repository": 219
   },
   {
-    "project_name": "paradoxdjango",
-    "project_version": "0.0.7",
-    "project_release": "paradoxdjango-0.0.7.tar.gz",
-    "uploaded_on": "2022-05-12 05:57:14.68",
-    "path": "packages/paradoxdjango/paradoxdjango-0.0.7.tar.gz/paradoxdjango-0.0.7/tests/apps/one_config_app/__init__.py",
-    "archive_path": "paradoxdjango-0.0.7/tests/apps/one_config_app/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "onnx-weekly",
+    "project_version": "1.15.0.dev20230529",
+    "project_release": "onnx_weekly-1.15.0.dev20230529-cp311-cp311-macosx_10_12_x86_64.whl",
+    "uploaded_on": "2023-05-29 00:17:01.743",
+    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230529-cp311-cp311-macosx_10_12_x86_64.whl/onnx/backend/test/data/node/test_min_uint16/test_data_set_0/output_0.pb",
+    "archive_path": "onnx/backend/test/data/node/test_min_uint16/test_data_set_0/output_0.pb",
+    "size": 20,
+    "hash": "\\xDF\\x02\\xE2\\x02\\xD0\\xA2\\xB4=\\xE1\\xCE\\x1B\\xF1MY\\x09\\x8Ds8\\xF9M",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 150
+    "repository": 210
   }
 ]
