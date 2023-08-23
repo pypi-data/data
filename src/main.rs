@@ -7,7 +7,7 @@ use clap::Parser;
 use datafusion::parquet;
 use datafusion::parquet::basic::{Compression, Encoding, ZstdLevel};
 use datafusion::parquet::column::writer::ColumnCloseResult;
-use datafusion::parquet::file::properties::WriterProperties;
+use datafusion::parquet::file::properties::{WriterProperties, WriterVersion};
 use datafusion::parquet::file::writer::SerializedFileWriter;
 use datafusion::parquet::format::SortingColumn;
 use datafusion::parquet::schema::types::ColumnPath;
@@ -63,8 +63,8 @@ async fn main() -> Result<()> {
         let only_python_dir = only_python_dir.join(format!("url-{}/", idx));
         download_file(&url, &path).await?;
         run_sql(&path, &output_dir, include_str!("../sql/unique_files.sql")).await?;
-        // run_sql(&path, &only_python_dir, include_str!("../sql/only_python_files.sql"))
-        //     .await?;
+        run_sql(&path, &only_python_dir, include_str!("../sql/only_python_files.sql"))
+            .await?;
         tokio::fs::remove_file(&path).await?;
     }
 
@@ -148,6 +148,7 @@ async fn run_sql(path: &Path, output: &Path, sql: &str) -> Result<()> {
 
     let props = WriterProperties::builder()
         .set_compression(Compression::ZSTD(ZstdLevel::try_new(13).unwrap()))
+        .set_writer_version(WriterVersion::PARQUET_2_0)
         .set_sorting_columns(Some(vec![SortingColumn::new(0, true, true)]))
         .set_column_encoding(
             ColumnPath::new(vec!["hash".into()]),
