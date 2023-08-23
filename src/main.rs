@@ -69,11 +69,15 @@ async fn main() -> Result<()> {
         .unwrap()
         .flatten()
         .collect();
+
+    println!("Combining {} files", all_files.len());
     let combined_parquet_file_cloned = combined_parquet_file.clone();
     tokio::task::spawn_blocking(move || {
         combine_parquet_files(&all_files, &combined_parquet_file_cloned)
     })
     .await??;
+
+    println!("Reducing combined files to unique records");
 
     get_unique_python_files(
         &combined_parquet_file,
@@ -88,6 +92,8 @@ async fn main() -> Result<()> {
         .unwrap()
         .flatten()
         .collect();
+
+    println!("Finally reducing {} files to {}", all_files.len(), combined_parquet_file.display());
 
     tokio::task::spawn_blocking(move || {
         combine_parquet_files(&all_files, &combined_parquet_file)
