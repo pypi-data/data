@@ -1,0 +1,35 @@
+on:
+  workflow_dispatch:
+#  schedule:
+#    - cron: "0 0 * * *"
+
+name: Build unique python files
+concurrency: build
+
+jobs:
+  build_and_test:
+    name: Compile toolchain
+    runs-on: ubuntu-latest
+    if: github.repository == 'pypi-data/internal-toolchain'
+    env:
+      RUST_BACKTRACE: "1"
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: unique-python-files-
+
+      - name: Build optimized release
+        uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --profile=optimized
+        env:
+          RUSTFLAGS: '-C target-cpu=native'
