@@ -36,8 +36,8 @@ async fn main() -> Result<()> {
 
     let download_dir = args.working_directory.join("downloads");
     let output_dir = args.working_directory.join("output");
-    let combined_parquet_file = args.working_directory.join("combined.parquet");
     let final_output_dir = args.working_directory.join("final");
+    let combined_parquet_file = args.working_directory.join("combined.parquet");
     tokio::fs::create_dir_all(&args.working_directory).await?;
     tokio::fs::create_dir_all(&download_dir).await?;
     tokio::fs::create_dir_all(&output_dir).await?;
@@ -81,6 +81,18 @@ async fn main() -> Result<()> {
         include_str!("../sql/unique_files_combined.sql"),
     )
     .await?;
+
+    tokio::fs::remove_file(&combined_parquet_file).await?;
+
+    let all_files: Vec<_> = glob::glob(&format!("{}/**/*.parquet", final_output_dir.display()))
+        .unwrap()
+        .flatten()
+        .collect();
+
+    tokio::task::spawn_blocking(move || {
+        combine_parquet_files(&all_files, &combined_parquet_file)
+    })
+    .await??;
 
     Ok(())
 }

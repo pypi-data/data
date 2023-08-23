@@ -22,9 +22,6 @@ jobs:
           toolchain: stable
           override: true
 
-      - name: Install parquet-cli
-        run: cargo install parquet --features=cli
-
       - uses: Swatinem/rust-cache@v2
         with:
           prefix-key: unique-python-files-
@@ -41,6 +38,6 @@ jobs:
         run: |
           ./target/optimized/data links/dataset.txt data/
 
-      - name: Combine
+      - name: Check
         run: |
-          parquet-concat data/combined.parquet data/output/**/*.parquet
+          ls -la data/
