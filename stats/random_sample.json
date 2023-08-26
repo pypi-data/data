@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "azureml-core",
-    "project_version": "1.47.0",
-    "project_release": "azureml_core-1.47.0-py3-none-any.whl",
-    "uploaded_on": "2022-10-25 21:04:08.359",
-    "path": "packages/azureml-core/azureml_core-1.47.0-py3-none-any.whl/azureml/_vendor/azure_network/operations/_virtual_network_peerings_operations.py",
-    "archive_path": "azureml/_vendor/azure_network/operations/_virtual_network_peerings_operations.py",
-    "size": 18866,
-    "hash": "\\x00k\\x0E\\x222\\xDAT\\xD5\\xA4\\x02B\\xECfRgL\\x1D\\x03\\x8E\\xF9",
+    "project_name": "openbb-nightly",
+    "project_version": "3.2.1.dev20230817",
+    "project_release": "openbb_nightly-3.2.1.dev20230817-py3-none-any.whl",
+    "uploaded_on": "2023-08-17 00:09:16.768",
+    "path": "packages/openbb-nightly/openbb_nightly-3.2.1.dev20230817-py3-none-any.whl/openbb_terminal/miscellaneous/gpt_index/data/stocks_ins_lis.txt",
+    "archive_path": "openbb_terminal/miscellaneous/gpt_index/data/stocks_ins_lis.txt",
+    "size": 1463,
+    "hash": "\\xACd\\x98\\xD9\\xF1\\xD4\\x16\\x9F\\x19\\x9D\\x1Ee\\x8A\\xE1\\x1AV\\x91\\x18\\xC2\\xDB",
     "skip_reason": "",
-    "lines": 371,
-    "repository": 173
+    "lines": 10,
+    "repository": 225
   },
   {
-    "project_name": "GalSim",
-    "project_version": "2.4.5",
-    "project_release": "GalSim-2.4.5-cp39-cp39-musllinux_1_1_x86_64.whl",
-    "uploaded_on": "2022-10-21 21:02:33.156",
-    "path": "packages/GalSim/GalSim-2.4.5-cp39-cp39-musllinux_1_1_x86_64.whl/galsim/share/roman/Roman_SRR_WFC_Pupil_Mask_Longwave_2048_reformatted.fits.gz",
-    "archive_path": "galsim/share/roman/Roman_SRR_WFC_Pupil_Mask_Longwave_2048_reformatted.fits.gz",
-    "size": 204929,
-    "hash": "\\xB2\\xF6\\xCD\\x03^eY\\x87\\xEAy\\xB5\\xF1\\xF3\\x15Vcs\\xFE\\xA7\\x82",
+    "project_name": "sourcery-cli",
+    "project_version": "1.8.0",
+    "project_release": "sourcery_cli-1.8.0-py2.py3-none-win_amd64.whl",
+    "uploaded_on": "2023-08-21 13:52:18.945",
+    "path": "packages/sourcery-cli/sourcery_cli-1.8.0-py2.py3-none-win_amd64.whl/sourcery_cli-1.8.0.data/purelib/sourcery/black/handle_ipynb_magics.pyd",
+    "archive_path": "sourcery_cli-1.8.0.data/purelib/sourcery/black/handle_ipynb_magics.pyd",
+    "size": 10752,
+    "hash": "V\\xE7\\xF5\\xD9\\xDB^\\xB0A\\x1E\\x1E%\\xA5\\xCDK\\xA0\\xBA\\xE31\\xA3\\x16",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 172
+    "repository": 226
   }
 ]
