@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "cx-Freeze",
-    "project_version": "6.16.0.dev2",
-    "project_release": "cx_Freeze-6.16.0.dev2-cp312-cp312-macosx_11_0_arm64.whl",
-    "uploaded_on": "2023-07-11 02:38:33.32",
-    "path": "packages/cx-Freeze/cx_Freeze-6.16.0.dev2-cp312-cp312-macosx_11_0_arm64.whl/cx_Freeze/bases/lib-dynload/_codecs_cn.cpython-312-darwin.so",
-    "archive_path": "cx_Freeze/bases/lib-dynload/_codecs_cn.cpython-312-darwin.so",
-    "size": 387104,
-    "hash": "\\xA4\\x13z\\xF4\\xE9\\xD0{\\xE2W(\\xD6Ga@\\x9F\\xAF\\x94Ko\\xC8",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 218
+    "project_name": "tencentcloud-sdk-python-mvj",
+    "project_version": "3.0.788",
+    "project_release": "tencentcloud-sdk-python-mvj-3.0.788.tar.gz",
+    "uploaded_on": "2022-12-07 01:17:05.223",
+    "path": "packages/tencentcloud-sdk-python-mvj/tencentcloud-sdk-python-mvj-3.0.788.tar.gz/tencentcloud-sdk-python-mvj-3.0.788/tencentcloud/mvj/v20190926/models.py",
+    "archive_path": "tencentcloud-sdk-python-mvj-3.0.788/tencentcloud/mvj/v20190926/models.py",
+    "size": 4078,
+    "hash": "\\xDE\\x08\\xDA\\xBB\\xAA\\x87\\xB5\\xDF\\xDB\\x95\\xC9{\\xBB[\\x0B\\xD6\\x14\\xE0\\x5C\\xCC",
+    "skip_reason": "",
+    "lines": 125,
+    "repository": 180
   },
   {
-    "project_name": "onnx-weekly",
-    "project_version": "1.15.0.dev20230724",
-    "project_release": "onnx_weekly-1.15.0.dev20230724-cp39-cp39-win_amd64.whl",
-    "uploaded_on": "2023-07-24 00:28:27.984",
-    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230724-cp39-cp39-win_amd64.whl/onnx/backend/test/data/node/test_nllloss_NCd1_weight/model.onnx",
-    "archive_path": "onnx/backend/test/data/node/test_nllloss_NCd1_weight/model.onnx",
-    "size": 224,
-    "hash": "6\\x0B\\xC7\\x0A\\x91\\xCF\\xEE\\xEC5r\\xA1L\\x87\\xA9\\xA5\\xD3)\\xE0\\xA5\\xCB",
+    "project_name": "pytigon",
+    "project_version": "0.230129",
+    "project_release": "pytigon-0.230129-py3-none-any.whl",
+    "uploaded_on": "2023-01-29 13:33:27.655",
+    "path": "packages/pytigon/pytigon-0.230129-py3-none-any.whl/pytigon/static/fonts/fork-awesome/fonts/32x32/file-excel-o.png",
+    "archive_path": "pytigon/static/fonts/fork-awesome/fonts/32x32/file-excel-o.png",
+    "size": 526,
+    "hash": "\\x13D\\x9D\\xF23\\xE6\\xC1\\xE3\\xC5\\x88V\\xCB\\x0E\\xB6\\x9A\\x88\\xD0\\x83\\x1C5",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 221
+    "repository": 188
   }
 ]
