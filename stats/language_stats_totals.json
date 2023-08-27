@@ -1,17 +1,15 @@
-[
-  {
-    "total": 459175,
-    "has_async": 29329,
-    "has_async_comp": 1064,
-    "has_fstring": 155226,
-    "has_annotations": 131143,
-    "has_try_star": 22,
-    "has_match": 2676,
-    "has_walrus": 9728,
-    "has_dataclasses": 26935,
-    "has_generator_expression": 121229,
-    "has_list_comp": 226072,
-    "has_dict_comp": 89232,
-    "has_set_comp": 21746
-  }
-]
+{
+  "total": 459175,
+  "has_async": 29329,
+  "has_async_comp": 1064,
+  "has_fstring": 155226,
+  "has_annotations": 131143,
+  "has_try_star": 22,
+  "has_match": 2676,
+  "has_walrus": 9728,
+  "has_dataclasses": 26935,
+  "has_generator_expression": 121229,
+  "has_list_comp": 226072,
+  "has_dict_comp": 89232,
+  "has_set_comp": 21746
+}
