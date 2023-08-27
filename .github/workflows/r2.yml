@@ -16,8 +16,7 @@ jobs:
 
       - name: Copy test
         run: |
-            echo "test" > abc
-            aws s3 cp abc --endpoint-url ${{secrets.ENDPOINT}} s3://pypi-data/test --region=auto
+            cat links/dataset.txt | parallel --progress --eta --jobs 5 'curl -L {} | aws s3 cp - --endpoint-url ${{secrets.ENDPOINT}} s3://pypi-data/data/$(basename {}) --region=auto'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
