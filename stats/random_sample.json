@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "openbb-nightly",
-    "project_version": "3.2.1.dev20230817",
-    "project_release": "openbb_nightly-3.2.1.dev20230817-py3-none-any.whl",
-    "uploaded_on": "2023-08-17 00:09:16.768",
-    "path": "packages/openbb-nightly/openbb_nightly-3.2.1.dev20230817-py3-none-any.whl/openbb_terminal/miscellaneous/gpt_index/data/stocks_ins_lis.txt",
-    "archive_path": "openbb_terminal/miscellaneous/gpt_index/data/stocks_ins_lis.txt",
-    "size": 1463,
-    "hash": "\\xACd\\x98\\xD9\\xF1\\xD4\\x16\\x9F\\x19\\x9D\\x1Ee\\x8A\\xE1\\x1AV\\x91\\x18\\xC2\\xDB",
-    "skip_reason": "",
-    "lines": 10,
-    "repository": 225
-  },
-  {
-    "project_name": "sourcery-cli",
-    "project_version": "1.8.0",
-    "project_release": "sourcery_cli-1.8.0-py2.py3-none-win_amd64.whl",
-    "uploaded_on": "2023-08-21 13:52:18.945",
-    "path": "packages/sourcery-cli/sourcery_cli-1.8.0-py2.py3-none-win_amd64.whl/sourcery_cli-1.8.0.data/purelib/sourcery/black/handle_ipynb_magics.pyd",
-    "archive_path": "sourcery_cli-1.8.0.data/purelib/sourcery/black/handle_ipynb_magics.pyd",
-    "size": 10752,
-    "hash": "V\\xE7\\xF5\\xD9\\xDB^\\xB0A\\x1E\\x1E%\\xA5\\xCDK\\xA0\\xBA\\xE31\\xA3\\x16",
+    "project_name": "cx-Freeze",
+    "project_version": "6.16.0.dev2",
+    "project_release": "cx_Freeze-6.16.0.dev2-cp312-cp312-macosx_11_0_arm64.whl",
+    "uploaded_on": "2023-07-11 02:38:33.32",
+    "path": "packages/cx-Freeze/cx_Freeze-6.16.0.dev2-cp312-cp312-macosx_11_0_arm64.whl/cx_Freeze/bases/lib-dynload/_codecs_cn.cpython-312-darwin.so",
+    "archive_path": "cx_Freeze/bases/lib-dynload/_codecs_cn.cpython-312-darwin.so",
+    "size": 387104,
+    "hash": "\\xA4\\x13z\\xF4\\xE9\\xD0{\\xE2W(\\xD6Ga@\\x9F\\xAF\\x94Ko\\xC8",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 226
+    "repository": 218
+  },
+  {
+    "project_name": "onnx-weekly",
+    "project_version": "1.15.0.dev20230724",
+    "project_release": "onnx_weekly-1.15.0.dev20230724-cp39-cp39-win_amd64.whl",
+    "uploaded_on": "2023-07-24 00:28:27.984",
+    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230724-cp39-cp39-win_amd64.whl/onnx/backend/test/data/node/test_nllloss_NCd1_weight/model.onnx",
+    "archive_path": "onnx/backend/test/data/node/test_nllloss_NCd1_weight/model.onnx",
+    "size": 224,
+    "hash": "6\\x0B\\xC7\\x0A\\x91\\xCF\\xEE\\xEC5r\\xA1L\\x87\\xA9\\xA5\\xD3)\\xE0\\xA5\\xCB",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 221
   }
 ]
