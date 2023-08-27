@@ -53,7 +53,7 @@ jobs:
       - name: Generate sample
         run: |
           poetry run pypi-data run-sql ${{ github.workspace }}/sql/random.prql stats/random_sample.json --output=json dataset/*.parquet
-          poetry run pypi-data run-sql ${{ github.workspace }}/sql/random.prql stats/random_sample_python_only.json --output=json dataset_python_only/*.parquet
+          poetry run pypi-data run-sql ${{ github.workspace }}/sql/random_unique.prql stats/random_sample_python_only.json --output=json dataset_python_only/*.parquet
 
       - run: |
           cp stats/random_sample.json t
