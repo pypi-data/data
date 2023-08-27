@@ -1,0 +1,23 @@
+on:
+  workflow_dispatch:
+#  schedule:
+#    - cron: "0 5 * * *"
+
+#concurrency: data
+
+name: Deploy
+jobs:
+  copy:
+    timeout-minutes: 120
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: Copy test
+        run: |
+            echo "test" > abc
+            aws s3 cp abc --endpoint-url ${{secrets.ENDPOINT}} s3://pypi-data/test --region=auto
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
