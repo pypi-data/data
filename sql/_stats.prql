@@ -204,8 +204,13 @@ let skip_reason_stats = (
 
 let binary_sizes = (
   from base
-  group {is_binary = skip_reason == "binary"} (
+  derive {
+    is_binary = skip_reason == "binary"
+  }
+
+  group {is_binary} (
     aggregate {
+      is_binary,
       total_projects = approx_count_distinct(project_name) | as bigint,
       total_size = sum(size),
       total_files = count(s"*")
