@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "ansible",
-    "project_version": "7.1.0",
-    "project_release": "ansible-7.1.0.tar.gz",
-    "uploaded_on": "2022-12-07 16:09:19.253",
-    "path": "packages/ansible/ansible-7.1.0.tar.gz/ansible-7.1.0/ansible_collections/f5networks/f5_modules/plugins/modules/bigip_gtm_datacenter.py",
-    "archive_path": "ansible-7.1.0/ansible_collections/f5networks/f5_modules/plugins/modules/bigip_gtm_datacenter.py",
-    "size": 14031,
-    "hash": "\\xE8\\xEFz\\xF7\\xC5\\xAD\\xEF#\\x909B&d\\x93\\x03,\\x88\\x11\\xDE\\xDE",
+    "project_name": "Euphorie",
+    "project_version": "13.0.5",
+    "project_release": "Euphorie-13.0.5.tar.gz",
+    "uploaded_on": "2022-01-11 13:55:15.355",
+    "path": "packages/Euphorie/Euphorie-13.0.5.tar.gz/Euphorie-13.0.5/src/euphorie/deployment/browser/templates/search.pt",
+    "archive_path": "Euphorie-13.0.5/src/euphorie/deployment/browser/templates/search.pt",
+    "size": 1952,
+    "hash": "\\xC7\\x0C\\xD3Kg\\x0CS\\xC8Y\\x93\\xE7\\xC2Q\\x88\\xA2\\x86\\xB4j\\xA9\\xB8",
     "skip_reason": "",
-    "lines": 495,
-    "repository": 180
+    "lines": 53,
+    "repository": 134
   },
   {
-    "project_name": "Orange3",
-    "project_version": "3.34.1",
-    "project_release": "Orange3-3.34.1-cp310-cp310-win32.whl",
-    "uploaded_on": "2022-12-13 13:11:02.483",
-    "path": "packages/Orange3/Orange3-3.34.1-cp310-cp310-win32.whl/Orange3-3.34.1.data/data/share/help/en/orange3/htmlhelp/_images/Melt-Workflow.png",
-    "archive_path": "Orange3-3.34.1.data/data/share/help/en/orange3/htmlhelp/_images/Melt-Workflow.png",
-    "size": 128544,
-    "hash": "Z\\xCEVe\\x91n\\x1A\\xD8\\xAF\\xBC\\xDE\\x15\\x8A\\xC8\\x8E\\x93\\xD5\\xB2A>",
-    "skip_reason": "binary",
+    "project_name": "DIRAC",
+    "project_version": "7.3.7",
+    "project_release": "DIRAC-7.3.7-py3-none-any.whl",
+    "uploaded_on": "2021-10-25 18:58:22.32",
+    "path": "packages/DIRAC/DIRAC-7.3.7-py3-none-any.whl/DIRAC/MonitoringSystem/Client/__init__.py",
+    "archive_path": "DIRAC/MonitoringSystem/Client/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 181
+    "repository": 124
   }
 ]
