@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "Euphorie",
-    "project_version": "13.0.5",
-    "project_release": "Euphorie-13.0.5.tar.gz",
-    "uploaded_on": "2022-01-11 13:55:15.355",
-    "path": "packages/Euphorie/Euphorie-13.0.5.tar.gz/Euphorie-13.0.5/src/euphorie/deployment/browser/templates/search.pt",
-    "archive_path": "Euphorie-13.0.5/src/euphorie/deployment/browser/templates/search.pt",
-    "size": 1952,
-    "hash": "\\xC7\\x0C\\xD3Kg\\x0CS\\xC8Y\\x93\\xE7\\xC2Q\\x88\\xA2\\x86\\xB4j\\xA9\\xB8",
+    "project_name": "correctionlib",
+    "project_version": "2.3.1",
+    "project_release": "correctionlib-2.3.1-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl",
+    "uploaded_on": "2023-08-24 23:00:56.103",
+    "path": "packages/correctionlib/correctionlib-2.3.1-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl/correctionlib/schemav1.py",
+    "archive_path": "correctionlib/schemav1.py",
+    "size": 2244,
+    "hash": "%\\x0A\\xACB\\x1FffC\\x9B)\\xA7Mj;\\x99\\x1E?*\\x9D\\xCE",
     "skip_reason": "",
-    "lines": 53,
-    "repository": 134
+    "lines": 96,
+    "repository": 227
   },
   {
-    "project_name": "DIRAC",
-    "project_version": "7.3.7",
-    "project_release": "DIRAC-7.3.7-py3-none-any.whl",
-    "uploaded_on": "2021-10-25 18:58:22.32",
-    "path": "packages/DIRAC/DIRAC-7.3.7-py3-none-any.whl/DIRAC/MonitoringSystem/Client/__init__.py",
-    "archive_path": "DIRAC/MonitoringSystem/Client/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "skyCatalogs",
+    "project_version": "1.6.0rc2",
+    "project_release": "skyCatalogs-1.6.0rc2.tar.gz",
+    "uploaded_on": "2023-08-15 00:30:22.802",
+    "path": "packages/skyCatalogs/skyCatalogs-1.6.0rc2.tar.gz/skyCatalogs-1.6.0rc2/skycatalogs/data/ci_sample/galaxy_flux_9684.parquet",
+    "archive_path": "skyCatalogs-1.6.0rc2/skycatalogs/data/ci_sample/galaxy_flux_9684.parquet",
+    "size": 15445,
+    "hash": "\\x8B\\x8D\\xB4\\xDBO\\x13S\\xFB\\x94_\\xDF\\xDFF\\x8B\\xCERS\\xF1=V",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 124
+    "repository": 225
   }
 ]
