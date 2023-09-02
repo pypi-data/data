@@ -13,12 +13,15 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: count lines
-        id: count-lines
+        id: matrix
         run: |
           lines=$(wc -l links/repositories.txt | awk '{print $1}')
           job_matrix=$(echo $lines | jq -cr "[range(0;.;10) | {index: .}]")
           echo $job_matrix
           echo "matrix=$job_matrix" >> "$GITHUB_OUTPUT"
+
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
 
   copy:
     timeout-minutes: 120
