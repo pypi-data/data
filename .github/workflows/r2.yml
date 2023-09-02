@@ -16,7 +16,7 @@ jobs:
         id: matrix
         run: |
           lines=$(wc -l links/repositories.txt | awk '{print $1}')
-          job_matrix=$(echo $lines | jq -cr "[range(0;.;5)]")
+          job_matrix=$(echo $lines | jq -cr "[range(0;.;4)]")
           echo $job_matrix
           echo "matrix=$job_matrix" >> "$GITHUB_OUTPUT"
 
@@ -41,11 +41,11 @@ jobs:
           
           git init checkout/
           
-          for repo in $(head -$(expr ${{ matrix.index }} + 5) links/repositories.txt | tail -n10); do
+          for repo in $(head -$(expr ${{ matrix.index }} + 5) links/repositories.txt | tail -n 5); do
             git -C checkout/ remote add $(basename "$repo") "$repo"
           done;
           git -C checkout/ fetch --multiple --depth=1 --jobs=5 --progress --all
-          git -C checkout/ repack -a -d -f --depth=100 --window=100
+          git -C checkout/ repack -a -d -f --depth=200 --window=200
           # git -C checkout/ rev-list --all --objects | gzip > "checkout/.git/objects/pack/$repo_id.objects.gz"
           aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
         env:
