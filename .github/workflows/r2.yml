@@ -7,7 +7,7 @@ on:
 
 name: Deploy
 jobs:
-  generate_matrix:
+  generate-matrix:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
