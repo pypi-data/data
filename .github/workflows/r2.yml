@@ -19,7 +19,7 @@ jobs:
           for repo in $(cat links/repositories.txt); do
             echo "Handling $repo"
             ./clone_and_rename.sh "${repo}" checkout/
-            aws s3 cp --recursive checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
+            aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
             rm -rf checkout/
           done;
         env:
