@@ -18,3 +18,5 @@ for file in "$directory"/.git/objects/pack/*; do
     extension="${file##*.}"
     mv "$file" "$directory/.git/objects/pack/$repo_id.$extension"
 done
+
+git -C "$directory" rev-list --all --objects | gzip > "$directory/.git/objects/pack/$repo_id.objects.gz"
