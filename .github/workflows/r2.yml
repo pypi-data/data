@@ -14,13 +14,14 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
-      - name: Clone repo
+      - name: Clone and push repositories
         run: |
-          ./clone_and_rename.sh https://github.com/pypi-data/pypi-mirror-221.git checkout/
-
-      - name: Copy test
-        run: |
-            aws s3 cp --recursive checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}}
+          for repo in $(cat links/repositories.txt); do
+            echo "Handling $repo"
+            ./clone_and_rename.sh "${repo}" checkout/
+            aws s3 cp --recursive checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
+            rm -rf checkout/
+          done;
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
