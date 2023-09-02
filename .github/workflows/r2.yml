@@ -46,9 +46,9 @@ jobs:
           done;
           git -C checkout/ fetch --multiple --depth=1 --jobs=4 --progress --all
           git -C checkout/ repack -a -d -f --depth=250 --window=250
-#          git -C checkout/ rev-list --all --objects | gzip > "$directory/.git/objects/pack/$repo_id.objects.gz"
+          # git -C checkout/ rev-list --all --objects | gzip > "$directory/.git/objects/pack/$repo_id.objects.gz"
           git -C checkout/ rev-list --all --objects | wc -l
-#          aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
+          # aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
