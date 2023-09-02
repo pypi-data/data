@@ -24,7 +24,7 @@ jobs:
       matrix: ${{ steps.matrix.outputs.matrix }}
 
   copy:
-    timeout-minutes: 120
+    timeout-minutes: 360
     runs-on: ubuntu-latest
     needs: [generate-matrix]
     strategy:
