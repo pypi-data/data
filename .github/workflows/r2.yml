@@ -7,16 +7,34 @@ on:
 
 name: Deploy
 jobs:
+  generate_matrix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: count lines
+        id: count-lines
+        run: |
+          lines=$(wc -l links/repositories.txt | awk '{print $1}')
+#          num_jobs=$(expr $lines / 10)
+          job_matrix=$(echo $lines | jq -cr "[range(0;.;10) | {index: .}]")
+          echo "matrix=$job_matrix" >> "$GITHUB_OUTPUT"
+
   copy:
     timeout-minutes: 120
     runs-on: ubuntu-latest
+    needs: [generate-matrix]
+    strategy:
+      fail-fast: true
+      matrix:
+        index: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
     steps:
       - name: checkout
         uses: actions/checkout@v3
 
       - name: Clone and push repositories
         run: |
-          for repo in $(cat links/repositories.txt); do
+          for repo in $(head -$(expr ${{ matrix.index }} + 10) links/repositories.txt | tail -n10); do
             echo "Handling $repo"
             ./clone_and_rename.sh "${repo}" checkout/
             aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
