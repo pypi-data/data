@@ -20,7 +20,7 @@ jobs:
 
       - name: Copy test
         run: |
-            aws s3 cp checkout/.git/objects/pack/* --endpoint-url ${{secrets.ENDPOINT}} s3://pypi-data/packfiles/ --region=auto
+            aws s3 cp --recursive checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}}
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
