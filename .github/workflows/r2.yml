@@ -37,15 +37,14 @@ jobs:
 
       - name: Clone and push repositories
         run: |
-          echo Index: ${{ matrix.index }} 
-          echo $(expr ${{ matrix.index }} + 10)
-          echo $(head -n $(expr ${{ matrix.index }} + 10) links/repositories.txt | tail -n10)
-#          for repo in $(head -$(expr ${{ matrix.index }} + 10) links/repositories.txt | tail -n10); do
-#            echo "Handling $repo"
-#            ./clone_and_rename.sh "${repo}" checkout/
-#            aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
-#            rm -rf checkout/
-#          done;
+          echo Uploading $(head -$(expr ${{ matrix.index }} + 10) links/repositories.txt | tail -n10)
+          
+          for repo in $(head -$(expr ${{ matrix.index }} + 10) links/repositories.txt | tail -n10); do
+            echo "Handling $repo"
+            ./clone_and_rename.sh "${repo}" checkout/
+            aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
+            rm -rf checkout/
+          done;
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
