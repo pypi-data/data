@@ -14,9 +14,13 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
+      - name: Clone repo
+        run: |
+          ./clone_and_rename.sh https://github.com/pypi-data/pypi-mirror-221.git checkout/
+
       - name: Copy test
         run: |
-            cat links/dataset.txt | parallel --jobs 5 'curl -L {} | aws s3 cp - --endpoint-url ${{secrets.ENDPOINT}} s3://pypi-data/data/$(basename {}) --region=auto'
+            aws s3 cp checkout/.git/objects/pack/* --endpoint-url ${{secrets.ENDPOINT}} s3://pypi-data/packfiles/ --region=auto'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
