@@ -37,7 +37,7 @@ jobs:
 
       - name: Clone and push repositories
         run: |
-          echo Uploading $(head -$(expr ${{ matrix.index }} + 5) links/repositories.txt | tail -n10)
+          echo Uploading $(head -$(expr ${{ matrix.index }} + 5) links/repositories.txt | tail -n 5)
           
           git init checkout/
           
