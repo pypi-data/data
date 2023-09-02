@@ -16,7 +16,6 @@ jobs:
         id: count-lines
         run: |
           lines=$(wc -l links/repositories.txt | awk '{print $1}')
-#          num_jobs=$(expr $lines / 10)
           job_matrix=$(echo $lines | jq -cr "[range(0;.;10) | {index: .}]")
           echo "matrix=$job_matrix" >> "$GITHUB_OUTPUT"
 
