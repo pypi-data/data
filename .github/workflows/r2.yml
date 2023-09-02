@@ -44,7 +44,7 @@ jobs:
           for repo in $(head -$(expr ${{ matrix.index }} + 5) links/repositories.txt | tail -n10); do
             git -C checkout/ remote add $(basename "$repo") "$repo"
           done;
-          git -C checkout/ fetch --multiple --depth=1 --jobs=4 --progress --all
+          git -C checkout/ fetch --multiple --depth=1 --jobs=5 --progress --all
           git -C checkout/ repack -a -d -f --depth=250 --window=250
           git -C checkout/ rev-list --all --objects | gzip > "checkout/.git/objects/pack/$repo_id.objects.gz"
           aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
