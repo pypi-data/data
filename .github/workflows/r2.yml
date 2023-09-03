@@ -60,7 +60,7 @@ jobs:
             git -C checkout/ remote add $(basename "$repo") "$repo"
           done;
           
-          git -C checkout/ fetch --multiple --depth=1 --jobs=$limit --progress --all
+          git -C checkout/ fetch --multiple --depth=1 --jobs=4 --progress --all
           
           echo "Repacking"
           
