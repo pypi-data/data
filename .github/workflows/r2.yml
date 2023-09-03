@@ -64,6 +64,25 @@ jobs:
           
           echo "Repacking"
           
+          print_stats() {
+            while :
+            do 
+              # Get the current usage of CPU and memory
+              cpuUsage=$(top -bn1 | awk '/Cpu/ { print $2}')
+              memUsage=$(free -m | awk '/Mem/{print $3}')
+            
+              # Print the usage
+              echo "CPU Usage: $cpuUsage%"
+              echo "Memory Usage: $memUsage MB"
+             
+              # Sleep for 1 second
+              sleep 1
+            done
+          }
+          
+          print_stats &
+          STATS_PID=$!
+          
           git -C checkout/ repack -a -d -f --depth=100 --window=600 --threads=2 --window-memory=3g
           
           for file in checkout/.git/objects/pack/*; do
@@ -73,6 +92,8 @@ jobs:
           
           git -C checkout/ rev-list --all --objects | gzip > "checkout/.git/objects/pack/$file_prefix.objects.gz"
           aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles-2/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
+          
+          kill $STATS_PID
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
