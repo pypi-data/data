@@ -44,7 +44,7 @@ jobs:
           start_index=${{ matrix.index }}
           limit=${{needs.generate-matrix.outputs.limit}}
           end_index=$(expr $start_index + $limit)
-          lines="$(head -n $start_index links/repositories.txt | tail -n $limit)"
+          lines="$(head -n $end_index links/repositories.txt | tail -n $limit)"
           file_prefix="$start_index-$end_index"
           
           echo "************"
