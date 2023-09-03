@@ -60,7 +60,7 @@ jobs:
           for repo in "$lines"; do
             git -C checkout/ remote add $(basename "$repo") "$repo"
           done;
-          git -C checkout/ fetch --multiple --depth=1 --jobs=5 --progress --all
+          git -C checkout/ fetch --multiple --depth=1 --jobs=$limit --progress --all
           git -C checkout/ repack -a -d -f --depth=250 --window=250
           
           for file in checkout/.git/objects/pack/*; do
