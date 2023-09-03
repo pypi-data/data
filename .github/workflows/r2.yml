@@ -39,7 +39,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Clone and push repositories
-        shell: 'script -q -e -c "bash {0}"'
         run: |
           start_index=$(expr ${{ matrix.index }} + 1)
           limit=${{needs.generate-matrix.outputs.limit}}
@@ -60,8 +59,12 @@ jobs:
           for repo in $lines; do
             git -C checkout/ remote add $(basename "$repo") "$repo"
           done;
+          
           git -C checkout/ fetch --multiple --depth=1 --jobs=$limit --progress --all
-          git -C checkout/ repack -a -d -f --depth=250 --window=250
+          
+          echo "Repacking"
+          
+          git -C checkout/ repack -a -d -f --depth=100 --window=600 --threads=2 --window-memory=3g
           
           for file in checkout/.git/objects/pack/*; do
             extension="${file##*.}"
