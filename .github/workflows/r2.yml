@@ -15,13 +15,16 @@ jobs:
       - name: count lines
         id: matrix
         run: |
+          limit=5
           lines=$(wc -l links/repositories.txt | awk '{print $1}')
-          job_matrix=$(echo $lines | jq -cr "[range(0;.;5)]")
+          job_matrix=$(echo $lines | jq -cr "[range(0;.;$limit)]")
           echo $job_matrix
           echo "matrix=$job_matrix" >> "$GITHUB_OUTPUT"
+          echo "limit=$limit" >> "$GITHUB_OUTPUT"
 
     outputs:
       matrix: ${{ steps.matrix.outputs.matrix }}
+      limit: ${{ steps.matrix.outputs.limit }}
 
   copy:
     timeout-minutes: 360
@@ -36,17 +39,36 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Clone and push repositories
+        shell: bash
         run: |
-          echo Uploading $(head -$(expr ${{ matrix.index }} + 5) links/repositories.txt | tail -n 5)
+          start_index=${{ matrix.index }}
+          limit=${{needs.generate-matrix.outputs.limit}}
+          end_index=$(expr $start_index + $limit)
+          lines="$(head -n $start_index links/repositories.txt | tail -n $limit)"
+          file_prefix="$start_index-$end_index"
+          
+          echo "************"
+          echo "Uploading: $lines"
+          echo "Start index: $start_index"
+          echo "End index: $start_index"
+          echo "Limit: $limit"
+          echo "File prefix: $file_prefix"
+          echo "************"
           
           git init checkout/
           
-          for repo in $(head -$(expr ${{ matrix.index }} + 5) links/repositories.txt | tail -n 5); do
+          for repo in "$lines"; do
             git -C checkout/ remote add $(basename "$repo") "$repo"
           done;
           git -C checkout/ fetch --multiple --depth=1 --jobs=5 --progress --all
-          git -C checkout/ repack -a -d -f --depth=200 --window=200
-          # git -C checkout/ rev-list --all --objects | gzip > "checkout/.git/objects/pack/$repo_id.objects.gz"
+          git -C checkout/ repack -a -d -f --depth=250 --window=250
+          
+          for file in checkout/.git/objects/pack/*; do
+            extension="${file##*.}"
+            mv "$file" "checkout/.git/objects/pack/$file_prefix.$extension"
+          done
+          
+          git -C checkout/ rev-list --all --objects | gzip > "checkout/.git/objects/pack/$file_prefix.objects.gz"
           aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
