@@ -5,7 +5,7 @@ on:
 
 #concurrency: data
 
-name: Deploy
+name: Repack
 jobs:
   generate-matrix:
     runs-on: ubuntu-latest
