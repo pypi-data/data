@@ -83,7 +83,7 @@ jobs:
           print_stats &
           STATS_PID=$!
           
-          git -C checkout/ repack -a -d -f --depth=100 --window=600 --threads=2 --window-memory=3g
+          git -C checkout/ repack -a -d -f --depth=200 --window=600 --threads=2 --window-memory=3g
           
           for file in checkout/.git/objects/pack/*; do
             extension="${file##*.}"
