@@ -50,14 +50,14 @@ jobs:
           echo "************"
           echo "Uploading: $lines"
           echo "Start index: $start_index"
-          echo "End index: $start_index"
+          echo "End index: $end_index"
           echo "Limit: $limit"
           echo "File prefix: $file_prefix"
           echo "************"
           
           git init checkout/
           
-          for repo in "$lines"; do
+          for repo in $lines; do
             git -C checkout/ remote add $(basename "$repo") "$repo"
           done;
           git -C checkout/ fetch --multiple --depth=1 --jobs=$limit --progress --all
