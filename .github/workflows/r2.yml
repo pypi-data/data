@@ -69,7 +69,7 @@ jobs:
           done
           
           git -C checkout/ rev-list --all --objects | gzip > "checkout/.git/objects/pack/$file_prefix.objects.gz"
-          aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
+          aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles-2/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
