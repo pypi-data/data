@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "grimoire-reports",
-    "project_version": "0.1.4",
-    "project_release": "grimoire_reports-0.1.4-py3-none-any.whl",
-    "uploaded_on": "2017-11-27 18:52:14.67",
-    "path": "packages/grimoire-reports/grimoire_reports-0.1.4-py3-none-any.whl/report/latex_template/process/github_prs.tex",
-    "archive_path": "report/latex_template/process/github_prs.tex",
-    "size": 1407,
-    "hash": "\\x188\\x16W\\x80K\\xE8\\x84\\xCF\\xC3\\xC0\\xDD\\xA2\\xB5\\x95\\x5C\\x98`\\x0F\\xD0",
+    "project_name": "mkdocs-material",
+    "project_version": "9.1.17",
+    "project_release": "mkdocs_material-9.1.17-py3-none-any.whl",
+    "uploaded_on": "2023-06-23 18:27:29.879",
+    "path": "packages/mkdocs-material/mkdocs_material-9.1.17-py3-none-any.whl/material/.icons/material/airballoon.svg",
+    "archive_path": "material/.icons/material/airballoon.svg",
+    "size": 496,
+    "hash": "6\\xA9\\x22h\\x9FZ\\xB7b&6zS\\x92\\x9F\\x94\\x04\\x1Fx\\xCFG",
     "skip_reason": "",
-    "lines": 28,
-    "repository": 27
+    "lines": 1,
+    "repository": 215
   },
   {
-    "project_name": "wagtail",
-    "project_version": "2.2",
-    "project_release": "wagtail-2.2.tar.gz",
-    "uploaded_on": "2018-08-10 14:58:49.608",
-    "path": "packages/wagtail/wagtail-2.2.tar.gz/wagtail-2.2/wagtail/contrib/settings/locale/el/LC_MESSAGES/django.mo",
-    "archive_path": "wagtail-2.2/wagtail/contrib/settings/locale/el/LC_MESSAGES/django.mo",
-    "size": 1065,
-    "hash": "E]\\x904\\x11\\x1E\\xC6\\x9A\\x9D\\x1FG\\x0F#iI\\xFB\\x83M\\xD5\\xFE",
+    "project_name": "onnx-weekly",
+    "project_version": "1.15.0.dev20230724",
+    "project_release": "onnx_weekly-1.15.0.dev20230724-cp38-cp38-win_amd64.whl",
+    "uploaded_on": "2023-07-24 00:29:37.331",
+    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230724-cp38-cp38-win_amd64.whl/onnx/backend/test/data/node/test_bitshift_right_uint32/test_data_set_0/input_1.pb",
+    "archive_path": "onnx/backend/test/data/node/test_bitshift_right_uint32/test_data_set_0/input_1.pb",
+    "size": 21,
+    "hash": "\\xD5\\x8C\\xF2\\x893\\x93\\xD7\\x14\\x91>\\xD6\\xF6\\xED\\xD4r\\x97\\x8F\\xB0IL",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 34
+    "repository": 221
   }
 ]
