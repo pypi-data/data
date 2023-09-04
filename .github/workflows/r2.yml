@@ -62,7 +62,7 @@ jobs:
           
           git -C checkout/ fetch --multiple --depth=1 --jobs=4 --progress --all
           
-          git for-each-ref --sort=committerdate refs/remotes --format='%(objectname)' > commits.txt
+          git -C checkout/ for-each-ref --sort=committerdate refs/remotes --format='%(objectname)' > commits.txt
           
           echo "Repacking"
           
