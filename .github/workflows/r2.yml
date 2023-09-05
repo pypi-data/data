@@ -95,7 +95,7 @@ jobs:
           
           git -C checkout/ rev-list --all --objects | gzip > "checkout/.git/objects/pack/$file_prefix.objects.gz"
           aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles-2/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
-          aws s3 cp commits.txt s3://pypi-data/packfiles-2/$file_prefix.commits.txt --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
+          aws s3 cp commits.txt s3://pypi-data/packfiles/$file_prefix.commits.txt --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
           
           kill $STATS_PID
         env:
