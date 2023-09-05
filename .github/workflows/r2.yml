@@ -86,7 +86,7 @@ jobs:
           print_stats &
           STATS_PID=$!
           
-          git -C checkout/ repack -a -d -f --depth=250 --window=250 --threads=2 --window-memory=3g
+          git -C checkout/ repack -a -d -f --depth=100 --window=250 --threads=2 --window-memory=3g
           
           for file in checkout/.git/objects/pack/*; do
             extension="${file##*.}"
@@ -94,7 +94,7 @@ jobs:
           done
           
           git -C checkout/ rev-list --all --objects | gzip > "checkout/.git/objects/pack/$file_prefix.objects.gz"
-          aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles-2/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
+          aws s3 sync checkout/.git/objects/pack/ s3://pypi-data/packfiles/ --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
           aws s3 cp commits.txt s3://pypi-data/packfiles/$file_prefix.commits.txt --region=auto --endpoint-url ${{secrets.ENDPOINT}} --no-progress
           
           kill $STATS_PID
