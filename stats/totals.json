@@ -2,10 +2,10 @@
   {
     "stat": [
       {
-        "total_files": 1038034940,
-        "unique_files": 78330466,
-        "total_size": 60999770845297,
-        "total_lines": 323641538362
+        "total_files": 1039031616,
+        "unique_files": 78419531,
+        "total_size": 61086875341948,
+        "total_lines": 323965296609
       }
     ],
     "name": "total_stats"
@@ -14,123 +14,123 @@
     "stat": [
       {
         "extension": ".py",
-        "total_projects": 465148,
-        "total_files": 449894588,
-        "unique_files": 30546556,
-        "total_lines": 117763622873,
-        "total_size": 4747521852847
+        "total_projects": 465279,
+        "total_files": 450458112,
+        "unique_files": 30571871,
+        "total_lines": 117919855679,
+        "total_size": 4753964341038
       },
       {
         "extension": ".h",
-        "total_projects": 8187,
-        "total_files": 80181761,
-        "unique_files": 690057,
-        "total_lines": 24168936207,
-        "total_size": 1026475911889
+        "total_projects": 8200,
+        "total_files": 80253465,
+        "unique_files": 690365,
+        "total_lines": 24190259991,
+        "total_size": 1027323556317
       },
       {
         "extension": "",
-        "total_projects": 468290,
-        "total_files": 57272087,
+        "total_projects": 468422,
+        "total_files": 57310655,
         "unique_files": 15356340,
-        "total_lines": 7604670648,
-        "total_size": 2469341053109
+        "total_lines": 7609150496,
+        "total_size": 2472059111035
       },
       {
         "extension": ".json",
-        "total_projects": 75257,
-        "total_files": 51839963,
+        "total_projects": 75286,
+        "total_files": 51921172,
         "unique_files": 1562854,
-        "total_lines": 20701369542,
-        "total_size": 1123222499561
+        "total_lines": 20748803158,
+        "total_size": 1125489270060
       },
       {
         "extension": ".hpp",
-        "total_projects": 1832,
-        "total_files": 37938183,
+        "total_projects": 1835,
+        "total_files": 37971779,
         "unique_files": 276302,
-        "total_lines": 7809477302,
-        "total_size": 338037789874
+        "total_lines": 7817485698,
+        "total_size": 338393921069
       },
       {
         "extension": ".txt",
-        "total_projects": 422965,
-        "total_files": 36792336,
+        "total_projects": 423074,
+        "total_files": 36819908,
         "unique_files": 3269983,
-        "total_lines": 17070099706,
-        "total_size": 676016978315
+        "total_lines": 17075696999,
+        "total_size": 676676459090
       },
       {
         "extension": ".js",
-        "total_projects": 23502,
-        "total_files": 30658979,
-        "unique_files": 1291363,
-        "total_lines": 12398978838,
-        "total_size": 1116612334039
+        "total_projects": 23505,
+        "total_files": 30667285,
+        "unique_files": 1292036,
+        "total_lines": 12400781093,
+        "total_size": 1117107573790
       },
       {
         "extension": ".png",
         "total_projects": 42248,
-        "total_files": 24776149,
+        "total_files": 24783088,
         "unique_files": 766473,
-        "total_lines": 895633,
-        "total_size": 521486846479
+        "total_lines": 895641,
+        "total_size": 521879283089
       },
       {
         "extension": ".rst",
-        "total_projects": 129542,
-        "total_files": 21321969,
+        "total_projects": 129564,
+        "total_files": 21335884,
         "unique_files": 1224380,
-        "total_lines": 1339172737,
-        "total_size": 55209834771
+        "total_lines": 1339789129,
+        "total_size": 55233392519
       },
       {
         "extension": ".svg",
-        "total_projects": 11195,
-        "total_files": 16748434,
+        "total_projects": 11202,
+        "total_files": 16755439,
         "unique_files": 307633,
-        "total_lines": 1349671501,
-        "total_size": 182501479967
+        "total_lines": 1350259091,
+        "total_size": 182564984815
       },
       {
         "extension": ".pyi",
-        "total_projects": 4580,
-        "total_files": 16145695,
-        "unique_files": 453970,
-        "total_lines": 3139432581,
-        "total_size": 111412266826
+        "total_projects": 4586,
+        "total_files": 16149439,
+        "unique_files": 454037,
+        "total_lines": 3140648299,
+        "total_size": 111449563966
       },
       {
         "extension": ".html",
-        "total_projects": 37966,
-        "total_files": 15075616,
-        "unique_files": 1577143,
-        "total_lines": 2807296940,
-        "total_size": 213582645669
+        "total_projects": 37972,
+        "total_files": 15081512,
+        "unique_files": 1577947,
+        "total_lines": 2808414858,
+        "total_size": 213713289225
       },
       {
         "extension": ".yaml",
-        "total_projects": 17057,
-        "total_files": 11451720,
-        "unique_files": 323846,
-        "total_lines": 1079845930,
-        "total_size": 41626250407
+        "total_projects": 17071,
+        "total_files": 11463122,
+        "unique_files": 324100,
+        "total_lines": 1081480022,
+        "total_size": 41705149920
       },
       {
         "extension": ".pyc",
         "total_projects": 33687,
-        "total_files": 10631816,
+        "total_files": 10633640,
         "unique_files": 4958453,
         "total_lines": 276458,
-        "total_size": 71909748233
+        "total_size": 71916639609
       },
       {
         "extension": ".yml",
-        "total_projects": 27491,
-        "total_files": 9919453,
-        "unique_files": 295609,
-        "total_lines": 708376377,
-        "total_size": 22622580534
+        "total_projects": 27524,
+        "total_files": 9921804,
+        "unique_files": 295715,
+        "total_lines": 708771385,
+        "total_size": 22633815874
       }
     ],
     "name": "extension_stats"
@@ -139,123 +139,123 @@
     "stat": [
       {
         "extension": ".so",
-        "total_projects": 12133,
-        "total_files": 6301393,
-        "unique_files": 3532860,
+        "total_projects": 12138,
+        "total_files": 6311195,
+        "unique_files": 3533868,
         "total_lines": 0,
-        "total_size": 21394567786589
+        "total_size": 21425705771145
       },
       {
         "extension": ".pyd",
-        "total_projects": 6788,
-        "total_files": 1685089,
-        "unique_files": 1548888,
+        "total_projects": 6798,
+        "total_files": 1687473,
+        "unique_files": 1551785,
         "total_lines": 0,
-        "total_size": 4350249211275
+        "total_size": 4353978013453
       },
       {
         "extension": ".dylib",
         "total_projects": 1909,
-        "total_files": 1035876,
-        "unique_files": 344302,
+        "total_files": 1037839,
+        "unique_files": 344742,
         "total_lines": 0,
-        "total_size": 2936727567910
+        "total_size": 2943120825256
       },
       {
         "extension": ".dll",
-        "total_projects": 3069,
-        "total_files": 1249971,
+        "total_projects": 3073,
+        "total_files": 1250631,
         "unique_files": 368225,
         "total_lines": 0,
-        "total_size": 2053380680146
+        "total_size": 2054466637263
       },
       {
         "extension": "",
-        "total_projects": 12489,
-        "total_files": 4727993,
+        "total_projects": 12491,
+        "total_files": 4730935,
         "unique_files": 1661367,
         "total_lines": 0,
-        "total_size": 2038610287040
+        "total_size": 2041075506549
       },
       {
         "extension": ".2",
-        "total_projects": 794,
-        "total_files": 147456,
-        "unique_files": 17157,
+        "total_projects": 795,
+        "total_files": 147708,
+        "unique_files": 17248,
         "total_lines": 0,
-        "total_size": 1534131360493
+        "total_size": 1537193029783
       },
       {
         "extension": ".0",
-        "total_projects": 1901,
-        "total_files": 575537,
-        "unique_files": 64913,
+        "total_projects": 1902,
+        "total_files": 576521,
+        "unique_files": 65129,
         "total_lines": 0,
-        "total_size": 1273484176835
+        "total_size": 1275191613911
       },
       {
         "extension": ".jar",
         "total_projects": 1411,
-        "total_files": 398751,
-        "unique_files": 41720,
+        "total_files": 400197,
+        "unique_files": 41818,
         "total_lines": 0,
-        "total_size": 879594279404
+        "total_size": 880792297908
       },
       {
         "extension": ".png",
         "total_projects": 42230,
-        "total_files": 24740737,
+        "total_files": 24747661,
         "unique_files": 763875,
         "total_lines": 0,
-        "total_size": 521405052532
+        "total_size": 521797486550
       },
       {
         "extension": ".1",
-        "total_projects": 1631,
-        "total_files": 279860,
-        "unique_files": 38929,
+        "total_projects": 1634,
+        "total_files": 280303,
+        "unique_files": 38956,
         "total_lines": 0,
-        "total_size": 471119922167
+        "total_size": 472761672579
       },
       {
         "extension": ".lib",
-        "total_projects": 753,
-        "total_files": 110389,
-        "unique_files": 32397,
+        "total_projects": 754,
+        "total_files": 110603,
+        "unique_files": 32482,
         "total_lines": 0,
-        "total_size": 460970853803
+        "total_size": 461543161431
       },
       {
         "extension": ".exe",
-        "total_projects": 2097,
-        "total_files": 190994,
-        "unique_files": 43280,
+        "total_projects": 2102,
+        "total_files": 191411,
+        "unique_files": 43414,
         "total_lines": 0,
-        "total_size": 410715680093
+        "total_size": 411132180900
       },
       {
         "extension": ".gz",
-        "total_projects": 3876,
-        "total_files": 4143100,
-        "unique_files": 542582,
+        "total_projects": 3879,
+        "total_files": 4149366,
+        "unique_files": 543284,
         "total_lines": 0,
-        "total_size": 404054103429
+        "total_size": 404502726625
       },
       {
         "extension": ".tgz",
         "total_projects": 1741,
-        "total_files": 333618,
-        "unique_files": 154157,
+        "total_files": 333781,
+        "unique_files": 154188,
         "total_lines": 0,
-        "total_size": 380535744775
+        "total_size": 380821328480
       },
       {
         "extension": ".7",
-        "total_projects": 399,
-        "total_files": 36458,
-        "unique_files": 2484,
+        "total_projects": 401,
+        "total_files": 36504,
+        "unique_files": 2489,
         "total_lines": 0,
-        "total_size": 326889063072
+        "total_size": 326948897966
       }
     ],
     "name": "binary_extension_stats"
@@ -264,104 +264,104 @@
     "stat": [
       {
         "extension": ".py",
-        "total_projects": 184488,
-        "total_files": 32986003,
-        "unique_files": 292317,
-        "total_lines": 9927336960,
-        "total_size": 518854179092
+        "total_projects": 184552,
+        "total_files": 33024510,
+        "unique_files": 292635,
+        "total_lines": 9938532971,
+        "total_size": 519412281551
       },
       {
         "extension": ".pyi",
-        "total_projects": 794,
-        "total_files": 1476627,
+        "total_projects": 798,
+        "total_files": 1476884,
         "unique_files": 17923,
-        "total_lines": 1186530689,
-        "total_size": 42136919534
+        "total_lines": 1186741670,
+        "total_size": 42142513749
       },
       {
         "extension": ".js",
         "total_projects": 11483,
-        "total_files": 1463769,
-        "unique_files": 155407,
-        "total_lines": 8278913560,
-        "total_size": 882494851175
+        "total_files": 1464724,
+        "unique_files": 155528,
+        "total_lines": 8279951556,
+        "total_size": 882892421525
       },
       {
         "extension": ".json",
-        "total_projects": 5341,
-        "total_files": 1313047,
-        "unique_files": 105101,
-        "total_lines": 13371239406,
-        "total_size": 837159500586
+        "total_projects": 5346,
+        "total_files": 1322901,
+        "unique_files": 105302,
+        "total_lines": 13405145545,
+        "total_size": 838942227242
       },
       {
         "extension": "",
-        "total_projects": 14251,
-        "total_files": 997962,
-        "unique_files": 104196,
-        "total_lines": 3107598115,
-        "total_size": 219506100510
+        "total_projects": 14263,
+        "total_files": 1000655,
+        "unique_files": 104330,
+        "total_lines": 3108575808,
+        "total_size": 219573641326
       },
       {
         "extension": ".typed",
-        "total_projects": 12784,
-        "total_files": 926557,
+        "total_projects": 12791,
+        "total_files": 927920,
         "unique_files": 51,
-        "total_lines": 12102,
-        "total_size": 689259
+        "total_lines": 12205,
+        "total_size": 693303
       },
       {
         "extension": ".txt",
-        "total_projects": 15374,
-        "total_files": 839318,
-        "unique_files": 45751,
-        "total_lines": 12732676189,
-        "total_size": 528043314325
+        "total_projects": 15375,
+        "total_files": 840890,
+        "unique_files": 45824,
+        "total_lines": 12735685880,
+        "total_size": 528620062927
       },
       {
         "extension": ".map",
         "total_projects": 3811,
-        "total_files": 581340,
-        "unique_files": 90714,
-        "total_lines": 29158267,
-        "total_size": 616660838399
+        "total_files": 581866,
+        "unique_files": 90753,
+        "total_lines": 29158793,
+        "total_size": 617150695753
       },
       {
         "extension": ".inc",
         "total_projects": 69,
-        "total_files": 568455,
-        "unique_files": 3154,
-        "total_lines": 7548363352,
-        "total_size": 322796850271
+        "total_files": 569050,
+        "unique_files": 3158,
+        "total_lines": 7557646064,
+        "total_size": 323210205325
       },
       {
         "extension": ".h",
-        "total_projects": 1310,
-        "total_files": 493926,
-        "unique_files": 7778,
-        "total_lines": 4964604000,
-        "total_size": 281055389472
+        "total_projects": 1313,
+        "total_files": 494245,
+        "unique_files": 7784,
+        "total_lines": 4967614413,
+        "total_size": 281211321740
       },
       {
         "extension": ".gitignore",
-        "total_projects": 921,
-        "total_files": 483420,
+        "total_projects": 924,
+        "total_files": 483430,
         "unique_files": 38,
-        "total_lines": 3397,
-        "total_size": 55068
+        "total_lines": 3411,
+        "total_size": 55362
       },
       {
         "extension": ".c",
-        "total_projects": 3504,
-        "total_files": 480390,
+        "total_projects": 3509,
+        "total_files": 481049,
         "unique_files": 143721,
-        "total_lines": 9451617508,
-        "total_size": 382039265539
+        "total_lines": 9463374019,
+        "total_size": 382546596193
       },
       {
         "extension": ".gz",
         "total_projects": 105,
-        "total_files": 348443,
+        "total_files": 348725,
         "unique_files": 334,
         "total_lines": 105180,
         "total_size": 92032897
@@ -369,18 +369,18 @@
       {
         "extension": ".po",
         "total_projects": 544,
-        "total_files": 317791,
-        "unique_files": 44414,
-        "total_lines": 2578089377,
-        "total_size": 86098520792
+        "total_files": 318126,
+        "unique_files": 44500,
+        "total_lines": 2578555283,
+        "total_size": 86114643851
       },
       {
         "extension": ".csv",
-        "total_projects": 3195,
-        "total_files": 278819,
-        "unique_files": 19258,
-        "total_lines": 8060111017,
-        "total_size": 664209984702
+        "total_projects": 3197,
+        "total_files": 279018,
+        "unique_files": 19280,
+        "total_lines": 8071645933,
+        "total_size": 665367539696
       }
     ],
     "name": "skipped_files_stats"
@@ -1289,46 +1289,67 @@
   {
     "stat": [
       {
-        "month": "2015-09-01",
-        "total_project_uploads": 5118,
+        "month": "2015-05-01",
+        "total_project_uploads": 4663,
         "has_pyproject": 0,
-        "has_setup_py": 4944,
-        "has_requirements_txt": 808,
-        "has_markdown": 832,
-        "has_rst": 3170,
-        "has_ini": 422,
-        "has_json": 2149,
-        "has_xml": 413,
-        "has_toml": 4,
-        "has_yaml": 345,
+        "has_setup_py": 4557,
+        "has_requirements_txt": 658,
+        "has_markdown": 711,
+        "has_rst": 2776,
+        "has_ini": 314,
+        "has_json": 1455,
+        "has_xml": 289,
+        "has_toml": 1,
+        "has_yaml": 270,
         "has_rust": 1,
-        "has_c_or_cpp": 334,
+        "has_c_or_cpp": 229,
         "has_pyi": 0,
         "has_py_typed": 0,
-        "has_tests": 2580,
-        "has_pytest": 161,
-        "has_tox": 335
+        "has_tests": 2208,
+        "has_pytest": 109,
+        "has_tox": 245
       },
       {
-        "month": "2015-08-01",
-        "total_project_uploads": 4768,
+        "month": "2015-06-01",
+        "total_project_uploads": 4673,
         "has_pyproject": 0,
-        "has_setup_py": 4622,
-        "has_requirements_txt": 731,
-        "has_markdown": 781,
-        "has_rst": 2935,
-        "has_ini": 373,
-        "has_json": 2037,
-        "has_xml": 272,
+        "has_setup_py": 4579,
+        "has_requirements_txt": 750,
+        "has_markdown": 754,
+        "has_rst": 2812,
+        "has_ini": 357,
+        "has_json": 1513,
+        "has_xml": 306,
         "has_toml": 3,
-        "has_yaml": 303,
+        "has_yaml": 289,
         "has_rust": 2,
-        "has_c_or_cpp": 263,
+        "has_c_or_cpp": 282,
         "has_pyi": 0,
         "has_py_typed": 0,
-        "has_tests": 2285,
-        "has_pytest": 162,
-        "has_tox": 313
+        "has_tests": 2309,
+        "has_pytest": 96,
+        "has_tox": 276
+      },
+      {
+        "month": "2015-04-01",
+        "total_project_uploads": 4695,
+        "has_pyproject": 0,
+        "has_setup_py": 4590,
+        "has_requirements_txt": 727,
+        "has_markdown": 729,
+        "has_rst": 2842,
+        "has_ini": 321,
+        "has_json": 1488,
+        "has_xml": 352,
+        "has_toml": 3,
+        "has_yaml": 245,
+        "has_rust": 1,
+        "has_c_or_cpp": 258,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 2362,
+        "has_pytest": 92,
+        "has_tox": 251
       },
       {
         "month": "2015-07-01",
@@ -1373,27 +1394,6 @@
         "has_tox": 318
       },
       {
-        "month": "2015-11-01",
-        "total_project_uploads": 5364,
-        "has_pyproject": 0,
-        "has_setup_py": 5217,
-        "has_requirements_txt": 858,
-        "has_markdown": 827,
-        "has_rst": 3238,
-        "has_ini": 429,
-        "has_json": 2082,
-        "has_xml": 355,
-        "has_toml": 0,
-        "has_yaml": 303,
-        "has_rust": 0,
-        "has_c_or_cpp": 332,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 2575,
-        "has_pytest": 173,
-        "has_tox": 311
-      },
-      {
         "month": "2015-12-01",
         "total_project_uploads": 5085,
         "has_pyproject": 0,
@@ -1415,88 +1415,67 @@
         "has_tox": 315
       },
       {
-        "month": "2016-04-01",
-        "total_project_uploads": 5838,
+        "month": "2015-11-01",
+        "total_project_uploads": 5364,
         "has_pyproject": 0,
-        "has_setup_py": 5590,
-        "has_requirements_txt": 927,
-        "has_markdown": 972,
-        "has_rst": 3629,
-        "has_ini": 476,
-        "has_json": 2357,
-        "has_xml": 304,
-        "has_toml": 3,
-        "has_yaml": 411,
-        "has_rust": 2,
-        "has_c_or_cpp": 345,
+        "has_setup_py": 5217,
+        "has_requirements_txt": 858,
+        "has_markdown": 827,
+        "has_rst": 3238,
+        "has_ini": 429,
+        "has_json": 2082,
+        "has_xml": 355,
+        "has_toml": 0,
+        "has_yaml": 303,
+        "has_rust": 0,
+        "has_c_or_cpp": 332,
         "has_pyi": 0,
         "has_py_typed": 0,
-        "has_tests": 2697,
-        "has_pytest": 234,
-        "has_tox": 333
+        "has_tests": 2575,
+        "has_pytest": 173,
+        "has_tox": 311
       },
       {
-        "month": "2016-03-01",
-        "total_project_uploads": 6241,
-        "has_pyproject": 0,
-        "has_setup_py": 5995,
-        "has_requirements_txt": 995,
-        "has_markdown": 1047,
-        "has_rst": 3812,
-        "has_ini": 587,
-        "has_json": 2442,
-        "has_xml": 324,
+        "month": "2016-06-01",
+        "total_project_uploads": 5800,
+        "has_pyproject": 2,
+        "has_setup_py": 5529,
+        "has_requirements_txt": 935,
+        "has_markdown": 965,
+        "has_rst": 3561,
+        "has_ini": 522,
+        "has_json": 2353,
+        "has_xml": 251,
         "has_toml": 3,
-        "has_yaml": 474,
-        "has_rust": 4,
-        "has_c_or_cpp": 343,
+        "has_yaml": 455,
+        "has_rust": 3,
+        "has_c_or_cpp": 327,
         "has_pyi": 1,
         "has_py_typed": 0,
-        "has_tests": 2858,
-        "has_pytest": 229,
-        "has_tox": 378
+        "has_tests": 2633,
+        "has_pytest": 231,
+        "has_tox": 390
       },
       {
-        "month": "2016-02-01",
-        "total_project_uploads": 5912,
-        "has_pyproject": 0,
-        "has_setup_py": 5705,
-        "has_requirements_txt": 900,
-        "has_markdown": 977,
-        "has_rst": 3692,
-        "has_ini": 461,
-        "has_json": 2354,
-        "has_xml": 326,
-        "has_toml": 2,
-        "has_yaml": 389,
-        "has_rust": 2,
-        "has_c_or_cpp": 333,
-        "has_pyi": 3,
-        "has_py_typed": 0,
-        "has_tests": 2793,
-        "has_pytest": 196,
-        "has_tox": 334
-      },
-      {
-        "month": "2016-08-01",
-        "total_project_uploads": 6464,
-        "has_pyproject": 2,
-        "has_setup_py": 6220,
-        "has_requirements_txt": 1100,
-        "has_markdown": 1053,
-        "has_rst": 4156,
-        "has_ini": 540,
-        "has_json": 2618,
-        "has_xml": 427,
-        "has_toml": 4,
-        "has_yaml": 467,
-        "has_rust": 2,
-        "has_c_or_cpp": 331,
+        "month": "2016-05-01",
+        "total_project_uploads": 5848,
+        "has_pyproject": 1,
+        "has_setup_py": 5604,
+        "has_requirements_txt": 927,
+        "has_markdown": 974,
+        "has_rst": 3654,
+        "has_ini": 505,
+        "has_json": 2316,
+        "has_xml": 394,
+        "has_toml": 5,
+        "has_yaml": 440,
+        "has_rust": 3,
+        "has_c_or_cpp": 317,
         "has_pyi": 2,
         "has_py_typed": 0,
-        "has_tests": 3053,
-        "has_pytest": 260,
-        "has_tox": 405
+        "has_tests": 2734,
+        "has_pytest": 213,
+        "has_tox": 375
       },
       {
         "month": "2016-07-01",
@@ -1520,46 +1499,109 @@
         "has_tox": 397
       },
       {
-        "month": "2017-01-01",
-        "total_project_uploads": 6910,
-        "has_pyproject": 1,
-        "has_setup_py": 6527,
-        "has_requirements_txt": 1175,
-        "has_markdown": 1221,
-        "has_rst": 4582,
-        "has_ini": 604,
-        "has_json": 3147,
-        "has_xml": 335,
-        "has_toml": 4,
-        "has_yaml": 593,
+        "month": "2016-04-01",
+        "total_project_uploads": 5838,
+        "has_pyproject": 0,
+        "has_setup_py": 5590,
+        "has_requirements_txt": 927,
+        "has_markdown": 972,
+        "has_rst": 3629,
+        "has_ini": 476,
+        "has_json": 2357,
+        "has_xml": 304,
+        "has_toml": 3,
+        "has_yaml": 411,
         "has_rust": 2,
-        "has_c_or_cpp": 416,
-        "has_pyi": 9,
+        "has_c_or_cpp": 345,
+        "has_pyi": 0,
         "has_py_typed": 0,
-        "has_tests": 3241,
-        "has_pytest": 321,
-        "has_tox": 471
+        "has_tests": 2697,
+        "has_pytest": 234,
+        "has_tox": 333
       },
       {
-        "month": "2016-12-01",
-        "total_project_uploads": 6290,
+        "month": "2016-10-01",
+        "total_project_uploads": 6535,
         "has_pyproject": 1,
-        "has_setup_py": 5947,
-        "has_requirements_txt": 1015,
-        "has_markdown": 1040,
-        "has_rst": 4188,
-        "has_ini": 571,
-        "has_json": 2854,
-        "has_xml": 361,
-        "has_toml": 5,
-        "has_yaml": 483,
-        "has_rust": 3,
-        "has_c_or_cpp": 407,
+        "has_setup_py": 6100,
+        "has_requirements_txt": 1173,
+        "has_markdown": 1110,
+        "has_rst": 4153,
+        "has_ini": 551,
+        "has_json": 2747,
+        "has_xml": 281,
+        "has_toml": 3,
+        "has_yaml": 498,
+        "has_rust": 2,
+        "has_c_or_cpp": 371,
         "has_pyi": 7,
         "has_py_typed": 0,
-        "has_tests": 2962,
-        "has_pytest": 267,
-        "has_tox": 389
+        "has_tests": 3025,
+        "has_pytest": 277,
+        "has_tox": 430
+      },
+      {
+        "month": "2016-09-01",
+        "total_project_uploads": 6391,
+        "has_pyproject": 2,
+        "has_setup_py": 6109,
+        "has_requirements_txt": 1122,
+        "has_markdown": 1061,
+        "has_rst": 4177,
+        "has_ini": 555,
+        "has_json": 2734,
+        "has_xml": 359,
+        "has_toml": 4,
+        "has_yaml": 518,
+        "has_rust": 2,
+        "has_c_or_cpp": 333,
+        "has_pyi": 9,
+        "has_py_typed": 0,
+        "has_tests": 3011,
+        "has_pytest": 283,
+        "has_tox": 418
+      },
+      {
+        "month": "2016-08-01",
+        "total_project_uploads": 6464,
+        "has_pyproject": 2,
+        "has_setup_py": 6220,
+        "has_requirements_txt": 1100,
+        "has_markdown": 1053,
+        "has_rst": 4156,
+        "has_ini": 540,
+        "has_json": 2618,
+        "has_xml": 427,
+        "has_toml": 4,
+        "has_yaml": 467,
+        "has_rust": 2,
+        "has_c_or_cpp": 331,
+        "has_pyi": 2,
+        "has_py_typed": 0,
+        "has_tests": 3053,
+        "has_pytest": 260,
+        "has_tox": 405
+      },
+      {
+        "month": "2017-03-01",
+        "total_project_uploads": 7638,
+        "has_pyproject": 0,
+        "has_setup_py": 7200,
+        "has_requirements_txt": 1241,
+        "has_markdown": 1336,
+        "has_rst": 4957,
+        "has_ini": 601,
+        "has_json": 3489,
+        "has_xml": 400,
+        "has_toml": 6,
+        "has_yaml": 617,
+        "has_rust": 3,
+        "has_c_or_cpp": 387,
+        "has_pyi": 10,
+        "has_py_typed": 0,
+        "has_tests": 3472,
+        "has_pytest": 339,
+        "has_tox": 478
       },
       {
         "month": "2017-02-01",
@@ -1604,27 +1646,6 @@
         "has_tox": 516
       },
       {
-        "month": "2017-03-01",
-        "total_project_uploads": 7638,
-        "has_pyproject": 0,
-        "has_setup_py": 7200,
-        "has_requirements_txt": 1241,
-        "has_markdown": 1336,
-        "has_rst": 4957,
-        "has_ini": 601,
-        "has_json": 3489,
-        "has_xml": 400,
-        "has_toml": 6,
-        "has_yaml": 617,
-        "has_rust": 3,
-        "has_c_or_cpp": 387,
-        "has_pyi": 10,
-        "has_py_typed": 0,
-        "has_tests": 3472,
-        "has_pytest": 339,
-        "has_tox": 478
-      },
-      {
         "month": "2017-05-01",
         "total_project_uploads": 8914,
         "has_pyproject": 3,
@@ -1644,27 +1665,6 @@
         "has_tests": 4373,
         "has_pytest": 389,
         "has_tox": 528
-      },
-      {
-        "month": "2017-07-01",
-        "total_project_uploads": 8148,
-        "has_pyproject": 4,
-        "has_setup_py": 6791,
-        "has_requirements_txt": 1234,
-        "has_markdown": 1318,
-        "has_rst": 5960,
-        "has_ini": 647,
-        "has_json": 4549,
-        "has_xml": 1148,
-        "has_toml": 9,
-        "has_yaml": 751,
-        "has_rust": 5,
-        "has_c_or_cpp": 397,
-        "has_pyi": 12,
-        "has_py_typed": 0,
-        "has_tests": 3956,
-        "has_pytest": 331,
-        "has_tox": 501
       },
       {
         "month": "2017-06-01",
@@ -1688,88 +1688,67 @@
         "has_tox": 482
       },
       {
-        "month": "2013-09-01",
-        "total_project_uploads": 2598,
-        "has_pyproject": 0,
-        "has_setup_py": 2577,
-        "has_requirements_txt": 259,
-        "has_markdown": 334,
-        "has_rst": 1290,
-        "has_ini": 138,
-        "has_json": 142,
-        "has_xml": 275,
-        "has_toml": 0,
-        "has_yaml": 114,
-        "has_rust": 0,
-        "has_c_or_cpp": 109,
-        "has_pyi": 0,
+        "month": "2017-07-01",
+        "total_project_uploads": 8148,
+        "has_pyproject": 4,
+        "has_setup_py": 6791,
+        "has_requirements_txt": 1234,
+        "has_markdown": 1318,
+        "has_rst": 5960,
+        "has_ini": 647,
+        "has_json": 4549,
+        "has_xml": 1148,
+        "has_toml": 9,
+        "has_yaml": 751,
+        "has_rust": 5,
+        "has_c_or_cpp": 397,
+        "has_pyi": 12,
         "has_py_typed": 0,
-        "has_tests": 1343,
-        "has_pytest": 41,
-        "has_tox": 94
+        "has_tests": 3956,
+        "has_pytest": 331,
+        "has_tox": 501
       },
       {
-        "month": "2013-08-01",
-        "total_project_uploads": 2605,
+        "month": "2013-12-01",
+        "total_project_uploads": 2871,
         "has_pyproject": 0,
-        "has_setup_py": 2589,
-        "has_requirements_txt": 235,
-        "has_markdown": 386,
-        "has_rst": 1279,
-        "has_ini": 142,
-        "has_json": 123,
-        "has_xml": 217,
-        "has_toml": 1,
-        "has_yaml": 91,
+        "has_setup_py": 2843,
+        "has_requirements_txt": 240,
+        "has_markdown": 368,
+        "has_rst": 1353,
+        "has_ini": 133,
+        "has_json": 218,
+        "has_xml": 432,
+        "has_toml": 2,
+        "has_yaml": 185,
         "has_rust": 0,
         "has_c_or_cpp": 136,
         "has_pyi": 0,
         "has_py_typed": 0,
-        "has_tests": 1357,
-        "has_pytest": 34,
-        "has_tox": 92
+        "has_tests": 1451,
+        "has_pytest": 28,
+        "has_tox": 86
       },
       {
-        "month": "2013-07-01",
-        "total_project_uploads": 2518,
+        "month": "2014-01-01",
+        "total_project_uploads": 3132,
         "has_pyproject": 0,
-        "has_setup_py": 2507,
-        "has_requirements_txt": 196,
-        "has_markdown": 353,
-        "has_rst": 1209,
-        "has_ini": 108,
-        "has_json": 113,
-        "has_xml": 272,
-        "has_toml": 1,
-        "has_yaml": 82,
+        "has_setup_py": 3097,
+        "has_requirements_txt": 295,
+        "has_markdown": 468,
+        "has_rst": 1669,
+        "has_ini": 160,
+        "has_json": 291,
+        "has_xml": 267,
+        "has_toml": 0,
+        "has_yaml": 159,
         "has_rust": 0,
-        "has_c_or_cpp": 118,
+        "has_c_or_cpp": 162,
         "has_pyi": 0,
         "has_py_typed": 0,
-        "has_tests": 1308,
-        "has_pytest": 23,
-        "has_tox": 67
-      },
-      {
-        "month": "2013-10-01",
-        "total_project_uploads": 2900,
-        "has_pyproject": 0,
-        "has_setup_py": 2884,
-        "has_requirements_txt": 268,
-        "has_markdown": 406,
-        "has_rst": 1434,
-        "has_ini": 163,
-        "has_json": 158,
-        "has_xml": 331,
-        "has_toml": 1,
-        "has_yaml": 113,
-        "has_rust": 0,
-        "has_c_or_cpp": 142,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1505,
-        "has_pytest": 33,
-        "has_tox": 120
+        "has_tests": 1606,
+        "has_pytest": 36,
+        "has_tox": 104
       },
       {
         "month": "2013-11-01",
@@ -1793,153 +1772,6 @@
         "has_tox": 89
       },
       {
-        "month": "2013-06-01",
-        "total_project_uploads": 2358,
-        "has_pyproject": 0,
-        "has_setup_py": 2342,
-        "has_requirements_txt": 163,
-        "has_markdown": 337,
-        "has_rst": 1087,
-        "has_ini": 105,
-        "has_json": 87,
-        "has_xml": 209,
-        "has_toml": 1,
-        "has_yaml": 82,
-        "has_rust": 0,
-        "has_c_or_cpp": 113,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1218,
-        "has_pytest": 16,
-        "has_tox": 57
-      },
-      {
-        "month": "2013-05-01",
-        "total_project_uploads": 2584,
-        "has_pyproject": 0,
-        "has_setup_py": 2568,
-        "has_requirements_txt": 171,
-        "has_markdown": 342,
-        "has_rst": 1199,
-        "has_ini": 108,
-        "has_json": 96,
-        "has_xml": 269,
-        "has_toml": 0,
-        "has_yaml": 85,
-        "has_rust": 1,
-        "has_c_or_cpp": 131,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1362,
-        "has_pytest": 23,
-        "has_tox": 74
-      },
-      {
-        "month": "2014-08-01",
-        "total_project_uploads": 3468,
-        "has_pyproject": 0,
-        "has_setup_py": 3433,
-        "has_requirements_txt": 411,
-        "has_markdown": 615,
-        "has_rst": 1909,
-        "has_ini": 212,
-        "has_json": 581,
-        "has_xml": 231,
-        "has_toml": 3,
-        "has_yaml": 158,
-        "has_rust": 1,
-        "has_c_or_cpp": 199,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1659,
-        "has_pytest": 61,
-        "has_tox": 145
-      },
-      {
-        "month": "2014-05-01",
-        "total_project_uploads": 3399,
-        "has_pyproject": 0,
-        "has_setup_py": 3373,
-        "has_requirements_txt": 404,
-        "has_markdown": 541,
-        "has_rst": 1726,
-        "has_ini": 189,
-        "has_json": 426,
-        "has_xml": 200,
-        "has_toml": 1,
-        "has_yaml": 165,
-        "has_rust": 0,
-        "has_c_or_cpp": 177,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1651,
-        "has_pytest": 45,
-        "has_tox": 136
-      },
-      {
-        "month": "2014-07-01",
-        "total_project_uploads": 3559,
-        "has_pyproject": 0,
-        "has_setup_py": 3523,
-        "has_requirements_txt": 388,
-        "has_markdown": 529,
-        "has_rst": 1877,
-        "has_ini": 244,
-        "has_json": 536,
-        "has_xml": 275,
-        "has_toml": 2,
-        "has_yaml": 167,
-        "has_rust": 1,
-        "has_c_or_cpp": 201,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1785,
-        "has_pytest": 61,
-        "has_tox": 142
-      },
-      {
-        "month": "2014-06-01",
-        "total_project_uploads": 3473,
-        "has_pyproject": 0,
-        "has_setup_py": 3444,
-        "has_requirements_txt": 394,
-        "has_markdown": 500,
-        "has_rst": 1781,
-        "has_ini": 191,
-        "has_json": 481,
-        "has_xml": 236,
-        "has_toml": 1,
-        "has_yaml": 161,
-        "has_rust": 1,
-        "has_c_or_cpp": 203,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1718,
-        "has_pytest": 51,
-        "has_tox": 139
-      },
-      {
-        "month": "2014-09-01",
-        "total_project_uploads": 3789,
-        "has_pyproject": 0,
-        "has_setup_py": 3757,
-        "has_requirements_txt": 472,
-        "has_markdown": 604,
-        "has_rst": 2090,
-        "has_ini": 249,
-        "has_json": 662,
-        "has_xml": 311,
-        "has_toml": 1,
-        "has_yaml": 168,
-        "has_rust": 1,
-        "has_c_or_cpp": 194,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1873,
-        "has_pytest": 73,
-        "has_tox": 189
-      },
-      {
         "month": "2014-04-01",
         "total_project_uploads": 3402,
         "has_pyproject": 0,
@@ -1961,67 +1793,88 @@
         "has_tox": 121
       },
       {
-        "month": "2014-12-01",
-        "total_project_uploads": 3795,
+        "month": "2014-03-01",
+        "total_project_uploads": 3380,
         "has_pyproject": 0,
-        "has_setup_py": 3740,
-        "has_requirements_txt": 511,
-        "has_markdown": 628,
-        "has_rst": 2078,
-        "has_ini": 315,
-        "has_json": 689,
-        "has_xml": 225,
+        "has_setup_py": 3361,
+        "has_requirements_txt": 365,
+        "has_markdown": 501,
+        "has_rst": 1712,
+        "has_ini": 181,
+        "has_json": 340,
+        "has_xml": 249,
+        "has_toml": 0,
+        "has_yaml": 160,
+        "has_rust": 0,
+        "has_c_or_cpp": 186,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1694,
+        "has_pytest": 46,
+        "has_tox": 135
+      },
+      {
+        "month": "2014-02-01",
+        "total_project_uploads": 3228,
+        "has_pyproject": 0,
+        "has_setup_py": 3204,
+        "has_requirements_txt": 330,
+        "has_markdown": 480,
+        "has_rst": 1553,
+        "has_ini": 165,
+        "has_json": 303,
+        "has_xml": 460,
+        "has_toml": 0,
+        "has_yaml": 220,
+        "has_rust": 0,
+        "has_c_or_cpp": 150,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1652,
+        "has_pytest": 37,
+        "has_tox": 119
+      },
+      {
+        "month": "2015-03-01",
+        "total_project_uploads": 4797,
+        "has_pyproject": 0,
+        "has_setup_py": 4710,
+        "has_requirements_txt": 726,
+        "has_markdown": 773,
+        "has_rst": 2751,
+        "has_ini": 365,
+        "has_json": 1310,
+        "has_xml": 342,
         "has_toml": 1,
-        "has_yaml": 233,
+        "has_yaml": 267,
+        "has_rust": 0,
+        "has_c_or_cpp": 263,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 2337,
+        "has_pytest": 117,
+        "has_tox": 272
+      },
+      {
+        "month": "2015-02-01",
+        "total_project_uploads": 4266,
+        "has_pyproject": 0,
+        "has_setup_py": 4183,
+        "has_requirements_txt": 604,
+        "has_markdown": 684,
+        "has_rst": 2432,
+        "has_ini": 291,
+        "has_json": 1040,
+        "has_xml": 306,
+        "has_toml": 1,
+        "has_yaml": 200,
         "has_rust": 1,
-        "has_c_or_cpp": 230,
+        "has_c_or_cpp": 235,
         "has_pyi": 0,
         "has_py_typed": 0,
-        "has_tests": 1886,
-        "has_pytest": 57,
-        "has_tox": 224
-      },
-      {
-        "month": "2014-10-01",
-        "total_project_uploads": 3890,
-        "has_pyproject": 0,
-        "has_setup_py": 3851,
-        "has_requirements_txt": 487,
-        "has_markdown": 669,
-        "has_rst": 2131,
-        "has_ini": 265,
-        "has_json": 622,
-        "has_xml": 388,
-        "has_toml": 2,
-        "has_yaml": 169,
-        "has_rust": 3,
-        "has_c_or_cpp": 210,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 2023,
-        "has_pytest": 66,
-        "has_tox": 167
-      },
-      {
-        "month": "2014-11-01",
-        "total_project_uploads": 3719,
-        "has_pyproject": 0,
-        "has_setup_py": 3664,
-        "has_requirements_txt": 442,
-        "has_markdown": 640,
-        "has_rst": 1957,
-        "has_ini": 205,
-        "has_json": 612,
-        "has_xml": 240,
-        "has_toml": 3,
-        "has_yaml": 170,
-        "has_rust": 4,
-        "has_c_or_cpp": 244,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1823,
-        "has_pytest": 71,
-        "has_tox": 145
+        "has_tests": 2039,
+        "has_pytest": 110,
+        "has_tox": 211
       },
       {
         "month": "2015-01-01",
@@ -2045,27 +1898,6 @@
         "has_tox": 190
       },
       {
-        "month": "2017-08-01",
-        "total_project_uploads": 8074,
-        "has_pyproject": 4,
-        "has_setup_py": 6979,
-        "has_requirements_txt": 1249,
-        "has_markdown": 1349,
-        "has_rst": 5751,
-        "has_ini": 777,
-        "has_json": 4321,
-        "has_xml": 778,
-        "has_toml": 7,
-        "has_yaml": 725,
-        "has_rust": 4,
-        "has_c_or_cpp": 455,
-        "has_pyi": 12,
-        "has_py_typed": 0,
-        "has_tests": 3828,
-        "has_pytest": 393,
-        "has_tox": 517
-      },
-      {
         "month": "2017-09-01",
         "total_project_uploads": 8651,
         "has_pyproject": 2,
@@ -2085,6 +1917,27 @@
         "has_tests": 4099,
         "has_pytest": 375,
         "has_tox": 456
+      },
+      {
+        "month": "2017-10-01",
+        "total_project_uploads": 8974,
+        "has_pyproject": 4,
+        "has_setup_py": 7480,
+        "has_requirements_txt": 1327,
+        "has_markdown": 2435,
+        "has_rst": 6538,
+        "has_ini": 800,
+        "has_json": 5014,
+        "has_xml": 1250,
+        "has_toml": 5,
+        "has_yaml": 903,
+        "has_rust": 2,
+        "has_c_or_cpp": 453,
+        "has_pyi": 16,
+        "has_py_typed": 0,
+        "has_tests": 4277,
+        "has_pytest": 412,
+        "has_tox": 609
       },
       {
         "month": "2017-11-01",
@@ -2108,25 +1961,25 @@
         "has_tox": 488
       },
       {
-        "month": "2017-10-01",
-        "total_project_uploads": 8974,
-        "has_pyproject": 4,
-        "has_setup_py": 7480,
-        "has_requirements_txt": 1327,
-        "has_markdown": 2435,
-        "has_rst": 6538,
-        "has_ini": 800,
-        "has_json": 5014,
-        "has_xml": 1250,
-        "has_toml": 5,
-        "has_yaml": 903,
-        "has_rust": 2,
-        "has_c_or_cpp": 453,
+        "month": "2017-12-01",
+        "total_project_uploads": 8762,
+        "has_pyproject": 25,
+        "has_setup_py": 7295,
+        "has_requirements_txt": 1171,
+        "has_markdown": 2550,
+        "has_rst": 6161,
+        "has_ini": 708,
+        "has_json": 4743,
+        "has_xml": 1024,
+        "has_toml": 9,
+        "has_yaml": 696,
+        "has_rust": 4,
+        "has_c_or_cpp": 442,
         "has_pyi": 16,
         "has_py_typed": 0,
-        "has_tests": 4277,
-        "has_pytest": 412,
-        "has_tox": 609
+        "has_tests": 4104,
+        "has_pytest": 388,
+        "has_tox": 442
       },
       {
         "month": "2018-01-01",
@@ -2192,27 +2045,6 @@
         "has_tox": 548
       },
       {
-        "month": "2018-04-01",
-        "total_project_uploads": 10868,
-        "has_pyproject": 37,
-        "has_setup_py": 9030,
-        "has_requirements_txt": 1605,
-        "has_markdown": 3793,
-        "has_rst": 6954,
-        "has_ini": 961,
-        "has_json": 4677,
-        "has_xml": 858,
-        "has_toml": 15,
-        "has_yaml": 1036,
-        "has_rust": 8,
-        "has_c_or_cpp": 573,
-        "has_pyi": 19,
-        "has_py_typed": 5,
-        "has_tests": 4730,
-        "has_pytest": 486,
-        "has_tox": 700
-      },
-      {
         "month": "2018-05-01",
         "total_project_uploads": 10270,
         "has_pyproject": 57,
@@ -2234,46 +2066,25 @@
         "has_tox": 563
       },
       {
-        "month": "2018-06-01",
-        "total_project_uploads": 12670,
-        "has_pyproject": 81,
-        "has_setup_py": 8793,
-        "has_requirements_txt": 1380,
-        "has_markdown": 4308,
-        "has_rst": 8038,
-        "has_ini": 852,
-        "has_json": 5740,
-        "has_xml": 3143,
-        "has_toml": 20,
-        "has_yaml": 1048,
+        "month": "2018-04-01",
+        "total_project_uploads": 10868,
+        "has_pyproject": 37,
+        "has_setup_py": 9030,
+        "has_requirements_txt": 1605,
+        "has_markdown": 3793,
+        "has_rst": 6954,
+        "has_ini": 961,
+        "has_json": 4677,
+        "has_xml": 858,
+        "has_toml": 15,
+        "has_yaml": 1036,
         "has_rust": 8,
-        "has_c_or_cpp": 575,
-        "has_pyi": 29,
-        "has_py_typed": 19,
-        "has_tests": 6040,
-        "has_pytest": 487,
-        "has_tox": 567
-      },
-      {
-        "month": "2018-07-01",
-        "total_project_uploads": 10447,
-        "has_pyproject": 98,
-        "has_setup_py": 9023,
-        "has_requirements_txt": 1530,
-        "has_markdown": 4632,
-        "has_rst": 5496,
-        "has_ini": 800,
-        "has_json": 2978,
-        "has_xml": 825,
-        "has_toml": 12,
-        "has_yaml": 965,
-        "has_rust": 5,
-        "has_c_or_cpp": 606,
-        "has_pyi": 33,
-        "has_py_typed": 22,
-        "has_tests": 4765,
-        "has_pytest": 515,
-        "has_tox": 601
+        "has_c_or_cpp": 573,
+        "has_pyi": 19,
+        "has_py_typed": 5,
+        "has_tests": 4730,
+        "has_pytest": 486,
+        "has_tox": 700
       },
       {
         "month": "2018-08-01",
@@ -2295,6 +2106,27 @@
         "has_tests": 4787,
         "has_pytest": 530,
         "has_tox": 561
+      },
+      {
+        "month": "2018-07-01",
+        "total_project_uploads": 10447,
+        "has_pyproject": 98,
+        "has_setup_py": 9023,
+        "has_requirements_txt": 1530,
+        "has_markdown": 4632,
+        "has_rst": 5496,
+        "has_ini": 800,
+        "has_json": 2978,
+        "has_xml": 825,
+        "has_toml": 12,
+        "has_yaml": 965,
+        "has_rust": 5,
+        "has_c_or_cpp": 606,
+        "has_pyi": 33,
+        "has_py_typed": 22,
+        "has_tests": 4765,
+        "has_pytest": 515,
+        "has_tox": 601
       },
       {
         "month": "2018-09-01",
@@ -2360,27 +2192,6 @@
         "has_tox": 607
       },
       {
-        "month": "2019-01-01",
-        "total_project_uploads": 11825,
-        "has_pyproject": 327,
-        "has_setup_py": 10457,
-        "has_requirements_txt": 1671,
-        "has_markdown": 6210,
-        "has_rst": 5201,
-        "has_ini": 881,
-        "has_json": 2079,
-        "has_xml": 728,
-        "has_toml": 32,
-        "has_yaml": 1269,
-        "has_rust": 8,
-        "has_c_or_cpp": 521,
-        "has_pyi": 45,
-        "has_py_typed": 73,
-        "has_tests": 5337,
-        "has_pytest": 696,
-        "has_tox": 664
-      },
-      {
         "month": "2018-12-01",
         "total_project_uploads": 10806,
         "has_pyproject": 236,
@@ -2400,6 +2211,27 @@
         "has_tests": 4917,
         "has_pytest": 598,
         "has_tox": 472
+      },
+      {
+        "month": "2019-01-01",
+        "total_project_uploads": 11825,
+        "has_pyproject": 327,
+        "has_setup_py": 10457,
+        "has_requirements_txt": 1671,
+        "has_markdown": 6210,
+        "has_rst": 5201,
+        "has_ini": 881,
+        "has_json": 2079,
+        "has_xml": 728,
+        "has_toml": 32,
+        "has_yaml": 1269,
+        "has_rust": 8,
+        "has_c_or_cpp": 521,
+        "has_pyi": 45,
+        "has_py_typed": 73,
+        "has_tests": 5337,
+        "has_pytest": 696,
+        "has_tox": 664
       },
       {
         "month": "2019-02-01",
@@ -2633,27 +2465,6 @@
         "has_tox": 910
       },
       {
-        "month": "2019-05-01",
-        "total_project_uploads": 13604,
-        "has_pyproject": 537,
-        "has_setup_py": 11587,
-        "has_requirements_txt": 1696,
-        "has_markdown": 7317,
-        "has_rst": 5370,
-        "has_ini": 971,
-        "has_json": 2021,
-        "has_xml": 1176,
-        "has_toml": 48,
-        "has_yaml": 1331,
-        "has_rust": 11,
-        "has_c_or_cpp": 670,
-        "has_pyi": 28,
-        "has_py_typed": 193,
-        "has_tests": 5976,
-        "has_pytest": 723,
-        "has_tox": 725
-      },
-      {
         "month": "2019-04-01",
         "total_project_uploads": 14961,
         "has_pyproject": 448,
@@ -2673,6 +2484,27 @@
         "has_tests": 6683,
         "has_pytest": 697,
         "has_tox": 734
+      },
+      {
+        "month": "2019-05-01",
+        "total_project_uploads": 13604,
+        "has_pyproject": 537,
+        "has_setup_py": 11587,
+        "has_requirements_txt": 1696,
+        "has_markdown": 7317,
+        "has_rst": 5370,
+        "has_ini": 971,
+        "has_json": 2021,
+        "has_xml": 1176,
+        "has_toml": 48,
+        "has_yaml": 1331,
+        "has_rust": 11,
+        "has_c_or_cpp": 670,
+        "has_pyi": 28,
+        "has_py_typed": 193,
+        "has_tests": 5976,
+        "has_pytest": 723,
+        "has_tox": 725
       },
       {
         "month": "2019-06-01",
@@ -2715,6 +2547,27 @@
         "has_tests": 6424,
         "has_pytest": 667,
         "has_tox": 556
+      },
+      {
+        "month": "2019-08-01",
+        "total_project_uploads": 13712,
+        "has_pyproject": 652,
+        "has_setup_py": 11833,
+        "has_requirements_txt": 1723,
+        "has_markdown": 7712,
+        "has_rst": 4758,
+        "has_ini": 810,
+        "has_json": 1782,
+        "has_xml": 892,
+        "has_toml": 38,
+        "has_yaml": 1258,
+        "has_rust": 21,
+        "has_c_or_cpp": 621,
+        "has_pyi": 58,
+        "has_py_typed": 267,
+        "has_tests": 5679,
+        "has_pytest": 690,
+        "has_tox": 569
       },
       {
         "month": "2019-09-01",
@@ -3032,27 +2885,6 @@
         "has_tox": 874
       },
       {
-        "month": "2021-03-01",
-        "total_project_uploads": 24286,
-        "has_pyproject": 5184,
-        "has_setup_py": 20238,
-        "has_requirements_txt": 3069,
-        "has_markdown": 15200,
-        "has_rst": 6893,
-        "has_ini": 1594,
-        "has_json": 2525,
-        "has_xml": 1898,
-        "has_toml": 183,
-        "has_yaml": 2808,
-        "has_rust": 50,
-        "has_c_or_cpp": 956,
-        "has_pyi": 468,
-        "has_py_typed": 1470,
-        "has_tests": 9727,
-        "has_pytest": 1398,
-        "has_tox": 981
-      },
-      {
         "month": "2021-04-01",
         "total_project_uploads": 22450,
         "has_pyproject": 5212,
@@ -3135,6 +2967,27 @@
         "has_tests": 8418,
         "has_pytest": 1284,
         "has_tox": 742
+      },
+      {
+        "month": "2021-03-01",
+        "total_project_uploads": 24286,
+        "has_pyproject": 5184,
+        "has_setup_py": 20238,
+        "has_requirements_txt": 3069,
+        "has_markdown": 15200,
+        "has_rst": 6893,
+        "has_ini": 1594,
+        "has_json": 2525,
+        "has_xml": 1898,
+        "has_toml": 183,
+        "has_yaml": 2808,
+        "has_rust": 50,
+        "has_c_or_cpp": 956,
+        "has_pyi": 468,
+        "has_py_typed": 1470,
+        "has_tests": 9727,
+        "has_pytest": 1398,
+        "has_tox": 981
       },
       {
         "month": "2021-06-01",
@@ -3536,69 +3389,6 @@
         "has_tox": 875
       },
       {
-        "month": "2015-06-01",
-        "total_project_uploads": 4673,
-        "has_pyproject": 0,
-        "has_setup_py": 4579,
-        "has_requirements_txt": 750,
-        "has_markdown": 754,
-        "has_rst": 2812,
-        "has_ini": 357,
-        "has_json": 1513,
-        "has_xml": 306,
-        "has_toml": 3,
-        "has_yaml": 289,
-        "has_rust": 2,
-        "has_c_or_cpp": 282,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 2309,
-        "has_pytest": 96,
-        "has_tox": 276
-      },
-      {
-        "month": "2015-05-01",
-        "total_project_uploads": 4663,
-        "has_pyproject": 0,
-        "has_setup_py": 4557,
-        "has_requirements_txt": 658,
-        "has_markdown": 711,
-        "has_rst": 2776,
-        "has_ini": 314,
-        "has_json": 1455,
-        "has_xml": 289,
-        "has_toml": 1,
-        "has_yaml": 270,
-        "has_rust": 1,
-        "has_c_or_cpp": 229,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 2208,
-        "has_pytest": 109,
-        "has_tox": 245
-      },
-      {
-        "month": "2015-04-01",
-        "total_project_uploads": 4695,
-        "has_pyproject": 0,
-        "has_setup_py": 4590,
-        "has_requirements_txt": 727,
-        "has_markdown": 729,
-        "has_rst": 2842,
-        "has_ini": 321,
-        "has_json": 1488,
-        "has_xml": 352,
-        "has_toml": 3,
-        "has_yaml": 245,
-        "has_rust": 1,
-        "has_c_or_cpp": 258,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 2362,
-        "has_pytest": 92,
-        "has_tox": 251
-      },
-      {
         "month": "2016-01-01",
         "total_project_uploads": 5497,
         "has_pyproject": 0,
@@ -3620,277 +3410,67 @@
         "has_tox": 321
       },
       {
-        "month": "2016-05-01",
-        "total_project_uploads": 5848,
-        "has_pyproject": 1,
-        "has_setup_py": 5604,
-        "has_requirements_txt": 927,
-        "has_markdown": 974,
-        "has_rst": 3654,
-        "has_ini": 505,
-        "has_json": 2316,
-        "has_xml": 394,
-        "has_toml": 5,
-        "has_yaml": 440,
-        "has_rust": 3,
-        "has_c_or_cpp": 317,
-        "has_pyi": 2,
-        "has_py_typed": 0,
-        "has_tests": 2734,
-        "has_pytest": 213,
-        "has_tox": 375
-      },
-      {
-        "month": "2016-06-01",
-        "total_project_uploads": 5800,
-        "has_pyproject": 2,
-        "has_setup_py": 5529,
-        "has_requirements_txt": 935,
-        "has_markdown": 965,
-        "has_rst": 3561,
-        "has_ini": 522,
-        "has_json": 2353,
-        "has_xml": 251,
-        "has_toml": 3,
-        "has_yaml": 455,
-        "has_rust": 3,
-        "has_c_or_cpp": 327,
-        "has_pyi": 1,
-        "has_py_typed": 0,
-        "has_tests": 2633,
-        "has_pytest": 231,
-        "has_tox": 390
-      },
-      {
-        "month": "2016-10-01",
-        "total_project_uploads": 6535,
-        "has_pyproject": 1,
-        "has_setup_py": 6100,
-        "has_requirements_txt": 1173,
-        "has_markdown": 1110,
-        "has_rst": 4153,
-        "has_ini": 551,
-        "has_json": 2747,
-        "has_xml": 281,
-        "has_toml": 3,
-        "has_yaml": 498,
-        "has_rust": 2,
-        "has_c_or_cpp": 371,
-        "has_pyi": 7,
-        "has_py_typed": 0,
-        "has_tests": 3025,
-        "has_pytest": 277,
-        "has_tox": 430
-      },
-      {
-        "month": "2016-09-01",
-        "total_project_uploads": 6391,
-        "has_pyproject": 2,
-        "has_setup_py": 6109,
-        "has_requirements_txt": 1122,
-        "has_markdown": 1061,
-        "has_rst": 4177,
-        "has_ini": 555,
-        "has_json": 2734,
-        "has_xml": 359,
-        "has_toml": 4,
-        "has_yaml": 518,
+        "month": "2016-02-01",
+        "total_project_uploads": 5912,
+        "has_pyproject": 0,
+        "has_setup_py": 5705,
+        "has_requirements_txt": 900,
+        "has_markdown": 977,
+        "has_rst": 3692,
+        "has_ini": 461,
+        "has_json": 2354,
+        "has_xml": 326,
+        "has_toml": 2,
+        "has_yaml": 389,
         "has_rust": 2,
         "has_c_or_cpp": 333,
+        "has_pyi": 3,
+        "has_py_typed": 0,
+        "has_tests": 2793,
+        "has_pytest": 196,
+        "has_tox": 334
+      },
+      {
+        "month": "2017-01-01",
+        "total_project_uploads": 6910,
+        "has_pyproject": 1,
+        "has_setup_py": 6527,
+        "has_requirements_txt": 1175,
+        "has_markdown": 1221,
+        "has_rst": 4582,
+        "has_ini": 604,
+        "has_json": 3147,
+        "has_xml": 335,
+        "has_toml": 4,
+        "has_yaml": 593,
+        "has_rust": 2,
+        "has_c_or_cpp": 416,
         "has_pyi": 9,
         "has_py_typed": 0,
-        "has_tests": 3011,
-        "has_pytest": 283,
-        "has_tox": 418
+        "has_tests": 3241,
+        "has_pytest": 321,
+        "has_tox": 471
       },
       {
-        "month": "2013-12-01",
-        "total_project_uploads": 2871,
-        "has_pyproject": 0,
-        "has_setup_py": 2843,
-        "has_requirements_txt": 240,
-        "has_markdown": 368,
-        "has_rst": 1353,
-        "has_ini": 133,
-        "has_json": 218,
-        "has_xml": 432,
-        "has_toml": 2,
-        "has_yaml": 185,
-        "has_rust": 0,
-        "has_c_or_cpp": 136,
-        "has_pyi": 0,
+        "month": "2016-12-01",
+        "total_project_uploads": 6290,
+        "has_pyproject": 1,
+        "has_setup_py": 5947,
+        "has_requirements_txt": 1015,
+        "has_markdown": 1040,
+        "has_rst": 4188,
+        "has_ini": 571,
+        "has_json": 2854,
+        "has_xml": 361,
+        "has_toml": 5,
+        "has_yaml": 483,
+        "has_rust": 3,
+        "has_c_or_cpp": 407,
+        "has_pyi": 7,
         "has_py_typed": 0,
-        "has_tests": 1451,
-        "has_pytest": 28,
-        "has_tox": 86
-      },
-      {
-        "month": "2014-01-01",
-        "total_project_uploads": 3132,
-        "has_pyproject": 0,
-        "has_setup_py": 3097,
-        "has_requirements_txt": 295,
-        "has_markdown": 468,
-        "has_rst": 1669,
-        "has_ini": 160,
-        "has_json": 291,
-        "has_xml": 267,
-        "has_toml": 0,
-        "has_yaml": 159,
-        "has_rust": 0,
-        "has_c_or_cpp": 162,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1606,
-        "has_pytest": 36,
-        "has_tox": 104
-      },
-      {
-        "month": "2014-03-01",
-        "total_project_uploads": 3380,
-        "has_pyproject": 0,
-        "has_setup_py": 3361,
-        "has_requirements_txt": 365,
-        "has_markdown": 501,
-        "has_rst": 1712,
-        "has_ini": 181,
-        "has_json": 340,
-        "has_xml": 249,
-        "has_toml": 0,
-        "has_yaml": 160,
-        "has_rust": 0,
-        "has_c_or_cpp": 186,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1694,
-        "has_pytest": 46,
-        "has_tox": 135
-      },
-      {
-        "month": "2014-02-01",
-        "total_project_uploads": 3228,
-        "has_pyproject": 0,
-        "has_setup_py": 3204,
-        "has_requirements_txt": 330,
-        "has_markdown": 480,
-        "has_rst": 1553,
-        "has_ini": 165,
-        "has_json": 303,
-        "has_xml": 460,
-        "has_toml": 0,
-        "has_yaml": 220,
-        "has_rust": 0,
-        "has_c_or_cpp": 150,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1652,
-        "has_pytest": 37,
-        "has_tox": 119
-      },
-      {
-        "month": "2015-03-01",
-        "total_project_uploads": 4797,
-        "has_pyproject": 0,
-        "has_setup_py": 4710,
-        "has_requirements_txt": 726,
-        "has_markdown": 773,
-        "has_rst": 2751,
-        "has_ini": 365,
-        "has_json": 1310,
-        "has_xml": 342,
-        "has_toml": 1,
-        "has_yaml": 267,
-        "has_rust": 0,
-        "has_c_or_cpp": 263,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 2337,
-        "has_pytest": 117,
-        "has_tox": 272
-      },
-      {
-        "month": "2015-02-01",
-        "total_project_uploads": 4266,
-        "has_pyproject": 0,
-        "has_setup_py": 4183,
-        "has_requirements_txt": 604,
-        "has_markdown": 684,
-        "has_rst": 2432,
-        "has_ini": 291,
-        "has_json": 1040,
-        "has_xml": 306,
-        "has_toml": 1,
-        "has_yaml": 200,
-        "has_rust": 1,
-        "has_c_or_cpp": 235,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 2039,
-        "has_pytest": 110,
-        "has_tox": 211
-      },
-      {
-        "month": "2017-12-01",
-        "total_project_uploads": 8762,
-        "has_pyproject": 25,
-        "has_setup_py": 7295,
-        "has_requirements_txt": 1171,
-        "has_markdown": 2550,
-        "has_rst": 6161,
-        "has_ini": 708,
-        "has_json": 4743,
-        "has_xml": 1024,
-        "has_toml": 9,
-        "has_yaml": 696,
-        "has_rust": 4,
-        "has_c_or_cpp": 442,
-        "has_pyi": 16,
-        "has_py_typed": 0,
-        "has_tests": 4104,
-        "has_pytest": 388,
-        "has_tox": 442
-      },
-      {
-        "month": "2019-08-01",
-        "total_project_uploads": 13712,
-        "has_pyproject": 652,
-        "has_setup_py": 11833,
-        "has_requirements_txt": 1723,
-        "has_markdown": 7712,
-        "has_rst": 4758,
-        "has_ini": 810,
-        "has_json": 1782,
-        "has_xml": 892,
-        "has_toml": 38,
-        "has_yaml": 1258,
-        "has_rust": 21,
-        "has_c_or_cpp": 621,
-        "has_pyi": 58,
-        "has_py_typed": 267,
-        "has_tests": 5679,
-        "has_pytest": 690,
-        "has_tox": 569
-      },
-      {
-        "month": "2013-04-01",
-        "total_project_uploads": 2487,
-        "has_pyproject": 0,
-        "has_setup_py": 2468,
-        "has_requirements_txt": 169,
-        "has_markdown": 295,
-        "has_rst": 1201,
-        "has_ini": 127,
-        "has_json": 88,
-        "has_xml": 293,
-        "has_toml": 1,
-        "has_yaml": 108,
-        "has_rust": 0,
-        "has_c_or_cpp": 119,
-        "has_pyi": 0,
-        "has_py_typed": 0,
-        "has_tests": 1439,
-        "has_pytest": 22,
-        "has_tox": 83
+        "has_tests": 2962,
+        "has_pytest": 267,
+        "has_tox": 389
       },
       {
         "month": "2013-02-01",
@@ -3935,6 +3515,27 @@
         "has_tox": 52
       },
       {
+        "month": "2013-04-01",
+        "total_project_uploads": 2487,
+        "has_pyproject": 0,
+        "has_setup_py": 2468,
+        "has_requirements_txt": 169,
+        "has_markdown": 295,
+        "has_rst": 1201,
+        "has_ini": 127,
+        "has_json": 88,
+        "has_xml": 293,
+        "has_toml": 1,
+        "has_yaml": 108,
+        "has_rust": 0,
+        "has_c_or_cpp": 119,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1439,
+        "has_pytest": 22,
+        "has_tox": 83
+      },
+      {
         "month": "2013-03-01",
         "total_project_uploads": 2596,
         "has_pyproject": 0,
@@ -3956,6 +3557,216 @@
         "has_tox": 106
       },
       {
+        "month": "2013-05-01",
+        "total_project_uploads": 2584,
+        "has_pyproject": 0,
+        "has_setup_py": 2568,
+        "has_requirements_txt": 171,
+        "has_markdown": 342,
+        "has_rst": 1199,
+        "has_ini": 108,
+        "has_json": 96,
+        "has_xml": 269,
+        "has_toml": 0,
+        "has_yaml": 85,
+        "has_rust": 1,
+        "has_c_or_cpp": 131,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1362,
+        "has_pytest": 23,
+        "has_tox": 74
+      },
+      {
+        "month": "2014-10-01",
+        "total_project_uploads": 3890,
+        "has_pyproject": 0,
+        "has_setup_py": 3851,
+        "has_requirements_txt": 487,
+        "has_markdown": 669,
+        "has_rst": 2131,
+        "has_ini": 265,
+        "has_json": 622,
+        "has_xml": 388,
+        "has_toml": 2,
+        "has_yaml": 169,
+        "has_rust": 3,
+        "has_c_or_cpp": 210,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 2023,
+        "has_pytest": 66,
+        "has_tox": 167
+      },
+      {
+        "month": "2014-09-01",
+        "total_project_uploads": 3789,
+        "has_pyproject": 0,
+        "has_setup_py": 3757,
+        "has_requirements_txt": 472,
+        "has_markdown": 604,
+        "has_rst": 2090,
+        "has_ini": 249,
+        "has_json": 662,
+        "has_xml": 311,
+        "has_toml": 1,
+        "has_yaml": 168,
+        "has_rust": 1,
+        "has_c_or_cpp": 194,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1873,
+        "has_pytest": 73,
+        "has_tox": 189
+      },
+      {
+        "month": "2014-12-01",
+        "total_project_uploads": 3795,
+        "has_pyproject": 0,
+        "has_setup_py": 3740,
+        "has_requirements_txt": 511,
+        "has_markdown": 628,
+        "has_rst": 2078,
+        "has_ini": 315,
+        "has_json": 689,
+        "has_xml": 225,
+        "has_toml": 1,
+        "has_yaml": 233,
+        "has_rust": 1,
+        "has_c_or_cpp": 230,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1886,
+        "has_pytest": 57,
+        "has_tox": 224
+      },
+      {
+        "month": "2014-11-01",
+        "total_project_uploads": 3719,
+        "has_pyproject": 0,
+        "has_setup_py": 3664,
+        "has_requirements_txt": 442,
+        "has_markdown": 640,
+        "has_rst": 1957,
+        "has_ini": 205,
+        "has_json": 612,
+        "has_xml": 240,
+        "has_toml": 3,
+        "has_yaml": 170,
+        "has_rust": 4,
+        "has_c_or_cpp": 244,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1823,
+        "has_pytest": 71,
+        "has_tox": 145
+      },
+      {
+        "month": "2017-08-01",
+        "total_project_uploads": 8074,
+        "has_pyproject": 4,
+        "has_setup_py": 6979,
+        "has_requirements_txt": 1249,
+        "has_markdown": 1349,
+        "has_rst": 5751,
+        "has_ini": 777,
+        "has_json": 4321,
+        "has_xml": 778,
+        "has_toml": 7,
+        "has_yaml": 725,
+        "has_rust": 4,
+        "has_c_or_cpp": 455,
+        "has_pyi": 12,
+        "has_py_typed": 0,
+        "has_tests": 3828,
+        "has_pytest": 393,
+        "has_tox": 517
+      },
+      {
+        "month": "2018-06-01",
+        "total_project_uploads": 12670,
+        "has_pyproject": 81,
+        "has_setup_py": 8793,
+        "has_requirements_txt": 1380,
+        "has_markdown": 4308,
+        "has_rst": 8038,
+        "has_ini": 852,
+        "has_json": 5740,
+        "has_xml": 3143,
+        "has_toml": 20,
+        "has_yaml": 1048,
+        "has_rust": 8,
+        "has_c_or_cpp": 575,
+        "has_pyi": 29,
+        "has_py_typed": 19,
+        "has_tests": 6040,
+        "has_pytest": 487,
+        "has_tox": 567
+      },
+      {
+        "month": "2015-09-01",
+        "total_project_uploads": 5118,
+        "has_pyproject": 0,
+        "has_setup_py": 4944,
+        "has_requirements_txt": 808,
+        "has_markdown": 832,
+        "has_rst": 3170,
+        "has_ini": 422,
+        "has_json": 2149,
+        "has_xml": 413,
+        "has_toml": 4,
+        "has_yaml": 345,
+        "has_rust": 1,
+        "has_c_or_cpp": 334,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 2580,
+        "has_pytest": 161,
+        "has_tox": 335
+      },
+      {
+        "month": "2015-08-01",
+        "total_project_uploads": 4768,
+        "has_pyproject": 0,
+        "has_setup_py": 4622,
+        "has_requirements_txt": 731,
+        "has_markdown": 781,
+        "has_rst": 2935,
+        "has_ini": 373,
+        "has_json": 2037,
+        "has_xml": 272,
+        "has_toml": 3,
+        "has_yaml": 303,
+        "has_rust": 2,
+        "has_c_or_cpp": 263,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 2285,
+        "has_pytest": 162,
+        "has_tox": 313
+      },
+      {
+        "month": "2016-03-01",
+        "total_project_uploads": 6241,
+        "has_pyproject": 0,
+        "has_setup_py": 5995,
+        "has_requirements_txt": 995,
+        "has_markdown": 1047,
+        "has_rst": 3812,
+        "has_ini": 587,
+        "has_json": 2442,
+        "has_xml": 324,
+        "has_toml": 3,
+        "has_yaml": 474,
+        "has_rust": 4,
+        "has_c_or_cpp": 343,
+        "has_pyi": 1,
+        "has_py_typed": 0,
+        "has_tests": 2858,
+        "has_pytest": 229,
+        "has_tox": 378
+      },
+      {
         "month": "2016-11-01",
         "total_project_uploads": 6665,
         "has_pyproject": 0,
@@ -3975,6 +3786,195 @@
         "has_tests": 3208,
         "has_pytest": 274,
         "has_tox": 413
+      },
+      {
+        "month": "2013-08-01",
+        "total_project_uploads": 2605,
+        "has_pyproject": 0,
+        "has_setup_py": 2589,
+        "has_requirements_txt": 235,
+        "has_markdown": 386,
+        "has_rst": 1279,
+        "has_ini": 142,
+        "has_json": 123,
+        "has_xml": 217,
+        "has_toml": 1,
+        "has_yaml": 91,
+        "has_rust": 0,
+        "has_c_or_cpp": 136,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1357,
+        "has_pytest": 34,
+        "has_tox": 92
+      },
+      {
+        "month": "2013-07-01",
+        "total_project_uploads": 2518,
+        "has_pyproject": 0,
+        "has_setup_py": 2507,
+        "has_requirements_txt": 196,
+        "has_markdown": 353,
+        "has_rst": 1209,
+        "has_ini": 108,
+        "has_json": 113,
+        "has_xml": 272,
+        "has_toml": 1,
+        "has_yaml": 82,
+        "has_rust": 0,
+        "has_c_or_cpp": 118,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1308,
+        "has_pytest": 23,
+        "has_tox": 67
+      },
+      {
+        "month": "2013-06-01",
+        "total_project_uploads": 2358,
+        "has_pyproject": 0,
+        "has_setup_py": 2342,
+        "has_requirements_txt": 163,
+        "has_markdown": 337,
+        "has_rst": 1087,
+        "has_ini": 105,
+        "has_json": 87,
+        "has_xml": 209,
+        "has_toml": 1,
+        "has_yaml": 82,
+        "has_rust": 0,
+        "has_c_or_cpp": 113,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1218,
+        "has_pytest": 16,
+        "has_tox": 57
+      },
+      {
+        "month": "2013-10-01",
+        "total_project_uploads": 2900,
+        "has_pyproject": 0,
+        "has_setup_py": 2884,
+        "has_requirements_txt": 268,
+        "has_markdown": 406,
+        "has_rst": 1434,
+        "has_ini": 163,
+        "has_json": 158,
+        "has_xml": 331,
+        "has_toml": 1,
+        "has_yaml": 113,
+        "has_rust": 0,
+        "has_c_or_cpp": 142,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1505,
+        "has_pytest": 33,
+        "has_tox": 120
+      },
+      {
+        "month": "2013-09-01",
+        "total_project_uploads": 2598,
+        "has_pyproject": 0,
+        "has_setup_py": 2577,
+        "has_requirements_txt": 259,
+        "has_markdown": 334,
+        "has_rst": 1290,
+        "has_ini": 138,
+        "has_json": 142,
+        "has_xml": 275,
+        "has_toml": 0,
+        "has_yaml": 114,
+        "has_rust": 0,
+        "has_c_or_cpp": 109,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1343,
+        "has_pytest": 41,
+        "has_tox": 94
+      },
+      {
+        "month": "2014-05-01",
+        "total_project_uploads": 3399,
+        "has_pyproject": 0,
+        "has_setup_py": 3373,
+        "has_requirements_txt": 404,
+        "has_markdown": 541,
+        "has_rst": 1726,
+        "has_ini": 189,
+        "has_json": 426,
+        "has_xml": 200,
+        "has_toml": 1,
+        "has_yaml": 165,
+        "has_rust": 0,
+        "has_c_or_cpp": 177,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1651,
+        "has_pytest": 45,
+        "has_tox": 136
+      },
+      {
+        "month": "2014-06-01",
+        "total_project_uploads": 3473,
+        "has_pyproject": 0,
+        "has_setup_py": 3444,
+        "has_requirements_txt": 394,
+        "has_markdown": 500,
+        "has_rst": 1781,
+        "has_ini": 191,
+        "has_json": 481,
+        "has_xml": 236,
+        "has_toml": 1,
+        "has_yaml": 161,
+        "has_rust": 1,
+        "has_c_or_cpp": 203,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1718,
+        "has_pytest": 51,
+        "has_tox": 139
+      },
+      {
+        "month": "2014-07-01",
+        "total_project_uploads": 3559,
+        "has_pyproject": 0,
+        "has_setup_py": 3523,
+        "has_requirements_txt": 388,
+        "has_markdown": 529,
+        "has_rst": 1877,
+        "has_ini": 244,
+        "has_json": 536,
+        "has_xml": 275,
+        "has_toml": 2,
+        "has_yaml": 167,
+        "has_rust": 1,
+        "has_c_or_cpp": 201,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1785,
+        "has_pytest": 61,
+        "has_tox": 142
+      },
+      {
+        "month": "2014-08-01",
+        "total_project_uploads": 3468,
+        "has_pyproject": 0,
+        "has_setup_py": 3433,
+        "has_requirements_txt": 411,
+        "has_markdown": 615,
+        "has_rst": 1909,
+        "has_ini": 212,
+        "has_json": 581,
+        "has_xml": 231,
+        "has_toml": 3,
+        "has_yaml": 158,
+        "has_rust": 1,
+        "has_c_or_cpp": 199,
+        "has_pyi": 0,
+        "has_py_typed": 0,
+        "has_tests": 1659,
+        "has_pytest": 61,
+        "has_tox": 145
       }
     ],
     "name": "project_level_breakdowns"
@@ -4032,10 +4032,10 @@
       },
       {
         "project_name": "tf-nightly-cpu-aws",
-        "total_files": 8014850,
-        "unique_files": 46866,
-        "total_lines": 3090359925,
-        "total_size": 699499516592
+        "total_files": 8044389,
+        "unique_files": 47617,
+        "total_lines": 3102457612,
+        "total_size": 702381157564
       },
       {
         "project_name": "tensorflow-gpu",
@@ -4066,25 +4066,25 @@
         "total_size": 511284624837
       },
       {
-        "project_name": "OpenVisus",
-        "total_files": 3671162,
-        "unique_files": 59904,
-        "total_lines": 721759004,
-        "total_size": 463005459641
+        "project_name": "tf-nightly-macos",
+        "total_files": 4688097,
+        "unique_files": 23844,
+        "total_lines": 2235081945,
+        "total_size": 468217068899
       },
       {
-        "project_name": "tf-nightly-macos",
-        "total_files": 4641160,
-        "unique_files": 23704,
-        "total_lines": 2213249524,
-        "total_size": 462825215208
+        "project_name": "OpenVisus",
+        "total_files": 3682973,
+        "unique_files": 60143,
+        "total_lines": 724495069,
+        "total_size": 465013126249
       },
       {
         "project_name": "graphscope-client",
-        "total_files": 1206630,
-        "unique_files": 36047,
-        "total_lines": 139058408,
-        "total_size": 438044668700
+        "total_files": 1213399,
+        "unique_files": 36064,
+        "total_lines": 139827491,
+        "total_size": 439486546548
       }
     ],
     "name": "projects_by_files"
@@ -4093,38 +4093,28 @@
     "stat": [
       {
         "skip_reason": "",
-        "total_projects": 468290,
-        "count": 908454519,
-        "unique_files": 62762664,
-        "total_size": 7410150251172,
-        "total_lines": 186798433693,
+        "total_projects": 468422,
+        "count": 909335696,
+        "unique_files": 62829784,
+        "total_size": 7418604528742,
+        "total_lines": 187008557618,
         "max_size": 5239900,
         "max_lines": 378607
       },
       {
-        "skip_reason": "too-large",
-        "total_projects": 30982,
-        "count": 6489954,
-        "unique_files": 743169,
-        "total_size": 8090827206487,
-        "total_lines": 134224309915,
-        "max_size": 1459364478,
-        "max_lines": 20010001
-      },
-      {
         "skip_reason": "binary",
         "total_projects": 106743,
-        "count": 81928458,
-        "unique_files": 15825252,
-        "total_size": 45258475130092,
-        "total_lines": 126311,
+        "count": 81982254,
+        "unique_files": 15836627,
+        "total_size": 45328200454214,
+        "total_lines": 126521,
         "max_size": 2075871152,
         "max_lines": 1
       },
       {
         "skip_reason": "empty",
-        "total_projects": 208197,
-        "count": 30467047,
+        "total_projects": 208279,
+        "count": 30491977,
         "unique_files": 1,
         "total_size": 0,
         "total_lines": 0,
@@ -4132,32 +4122,42 @@
         "max_lines": 0
       },
       {
-        "skip_reason": "text-long-lines",
-        "total_projects": 9819,
-        "count": 1359039,
-        "unique_files": 148920,
-        "total_size": 147437413367,
-        "total_lines": 2217094,
-        "max_size": 5196111,
-        "max_lines": 5
+        "skip_reason": "too-large",
+        "total_projects": 31024,
+        "count": 6496570,
+        "unique_files": 743783,
+        "total_size": 8099244772844,
+        "total_lines": 134326912618,
+        "max_size": 1459364478,
+        "max_lines": 20010001
       },
       {
         "skip_reason": "virtualenv",
-        "total_projects": 5625,
-        "count": 9174343,
-        "unique_files": 429087,
-        "total_size": 92698563387,
-        "total_lines": 2611980358,
+        "total_projects": 5635,
+        "count": 9203351,
+        "unique_files": 429117,
+        "total_size": 93108050977,
+        "total_lines": 2623004513,
         "max_size": 2251164,
         "max_lines": 71126
       },
       {
+        "skip_reason": "text-long-lines",
+        "total_projects": 9820,
+        "count": 1360033,
+        "unique_files": 149082,
+        "total_size": 147535078871,
+        "total_lines": 2218634,
+        "max_size": 5196111,
+        "max_lines": 5
+      },
+      {
         "skip_reason": "version-control",
-        "total_projects": 601,
-        "count": 161580,
-        "unique_files": 26828,
-        "total_size": 182280792,
-        "total_lines": 4470991,
+        "total_projects": 602,
+        "count": 161735,
+        "unique_files": 26846,
+        "total_size": 182456300,
+        "total_lines": 4476705,
         "max_size": 201722,
         "max_lines": 10500
       }
@@ -4167,16 +4167,16 @@
   {
     "stat": [
       {
-        "is_binary": true,
-        "total_projects": 106743,
-        "total_size": 45258475130092.0,
-        "total_files": 81928458
+        "is_binary": false,
+        "total_projects": 468422,
+        "total_size": 15758674887734.0,
+        "total_files": 957049362
       },
       {
-        "is_binary": false,
-        "total_projects": 468290,
-        "total_size": 15741295715205.0,
-        "total_files": 956106482
+        "is_binary": true,
+        "total_projects": 106743,
+        "total_size": 45328200454214.0,
+        "total_files": 81982254
       }
     ],
     "name": "binary_sizes"
@@ -4184,164 +4184,188 @@
   {
     "stat": [
       {
-        "month": "2021-04-01",
-        "count": 5796
-      },
-      {
-        "month": "2021-05-01",
-        "count": 5808
-      },
-      {
-        "month": "2021-01-01",
-        "count": 5548
-      },
-      {
-        "month": "2021-03-01",
-        "count": 6368
-      },
-      {
-        "month": "2020-08-01",
-        "count": 5157
-      },
-      {
-        "month": "2020-10-01",
-        "count": 5214
-      },
-      {
-        "month": "2020-11-01",
-        "count": 5475
-      },
-      {
-        "month": "2018-03-01",
-        "count": 3021
-      },
-      {
-        "month": "2020-12-01",
-        "count": 5655
-      },
-      {
-        "month": "2018-11-01",
-        "count": 3269
-      },
-      {
-        "month": "2017-04-01",
-        "count": 4232
-      },
-      {
-        "month": "2021-02-01",
-        "count": 7402
-      },
-      {
-        "month": "2020-09-01",
-        "count": 5077
-      },
-      {
-        "month": "2020-07-01",
-        "count": 6255
-      },
-      {
-        "month": "2020-03-01",
-        "count": 4975
-      },
-      {
-        "month": "2020-05-01",
-        "count": 6100
-      },
-      {
         "month": "2021-06-01",
         "count": 5317
       },
       {
-        "month": "2018-05-01",
-        "count": 2962
+        "month": "2021-04-01",
+        "count": 5796
       },
       {
-        "month": "2019-01-01",
-        "count": 3291
-      },
-      {
-        "month": "2020-06-01",
-        "count": 6164
-      },
-      {
-        "month": "2019-11-01",
-        "count": 4266
-      },
-      {
-        "month": "2016-12-01",
-        "count": 1723
-      },
-      {
-        "month": "2018-12-01",
-        "count": 2952
-      },
-      {
-        "month": "2013-05-01",
-        "count": 1260
-      },
-      {
-        "month": "2019-07-01",
-        "count": 4287
+        "month": "2018-08-01",
+        "count": 3155
       },
       {
         "month": "2021-07-01",
         "count": 5462
       },
       {
-        "month": "2020-02-01",
-        "count": 4535
+        "month": "2021-03-01",
+        "count": 6368
       },
       {
-        "month": "2019-12-01",
-        "count": 3879
+        "month": "2021-05-01",
+        "count": 5808
       },
       {
-        "month": "2019-06-01",
-        "count": 3590
+        "month": "2018-12-01",
+        "count": 2952
+      },
+      {
+        "month": "2020-03-01",
+        "count": 4975
+      },
+      {
+        "month": "2020-07-01",
+        "count": 6255
+      },
+      {
+        "month": "2020-12-01",
+        "count": 5655
+      },
+      {
+        "month": "2020-01-01",
+        "count": 4410
       },
       {
         "month": "2021-08-01",
         "count": 5694
       },
       {
-        "month": "2017-01-01",
-        "count": 1972
-      },
-      {
-        "month": "2020-04-01",
-        "count": 5562
-      },
-      {
-        "month": "2019-10-01",
-        "count": 4120
-      },
-      {
         "month": "2021-09-01",
         "count": 5445
+      },
+      {
+        "month": "2020-11-01",
+        "count": 5475
+      },
+      {
+        "month": "2020-02-01",
+        "count": 4535
+      },
+      {
+        "month": "2018-05-01",
+        "count": 2962
+      },
+      {
+        "month": "2014-07-01",
+        "count": 1194
+      },
+      {
+        "month": "2021-01-01",
+        "count": 5548
+      },
+      {
+        "month": "2021-02-01",
+        "count": 7402
       },
       {
         "month": "2017-07-01",
         "count": 2260
       },
       {
-        "month": "2014-09-01",
-        "count": 1267
+        "month": "2019-05-01",
+        "count": 3852
       },
       {
-        "month": "2021-11-01",
-        "count": 5776
+        "month": "2018-09-01",
+        "count": 2925
+      },
+      {
+        "month": "2019-12-01",
+        "count": 3879
+      },
+      {
+        "month": "2017-04-01",
+        "count": 4232
+      },
+      {
+        "month": "2020-04-01",
+        "count": 5562
+      },
+      {
+        "month": "2020-10-01",
+        "count": 5214
+      },
+      {
+        "month": "2020-09-01",
+        "count": 5077
+      },
+      {
+        "month": "2014-05-01",
+        "count": 1235
+      },
+      {
+        "month": "2019-11-01",
+        "count": 4266
+      },
+      {
+        "month": "2016-06-01",
+        "count": 1684
+      },
+      {
+        "month": "2018-02-01",
+        "count": 2560
       },
       {
         "month": "2019-08-01",
         "count": 3904
       },
       {
+        "month": "2020-05-01",
+        "count": 6100
+      },
+      {
+        "month": "2020-08-01",
+        "count": 5157
+      },
+      {
+        "month": "2018-10-01",
+        "count": 3377
+      },
+      {
+        "month": "2020-06-01",
+        "count": 6164
+      },
+      {
+        "month": "2019-07-01",
+        "count": 4287
+      },
+      {
+        "month": "2018-04-01",
+        "count": 3326
+      },
+      {
+        "month": "2017-05-01",
+        "count": 2344
+      },
+      {
+        "month": "2021-11-01",
+        "count": 5776
+      },
+      {
+        "month": "2013-01-01",
+        "count": 2323
+      },
+      {
+        "month": "2019-01-01",
+        "count": 3291
+      },
+      {
         "month": "2021-12-01",
         "count": 5603
       },
       {
+        "month": "2019-10-01",
+        "count": 4120
+      },
+      {
         "month": "2022-01-01",
         "count": 5967
+      },
+      {
+        "month": "2016-11-01",
+        "count": 1882
       },
       {
         "month": "2022-02-01",
@@ -4352,48 +4376,20 @@
         "count": 6614
       },
       {
-        "month": "2019-02-01",
-        "count": 3395
+        "month": "2019-09-01",
+        "count": 3812
+      },
+      {
+        "month": "2018-06-01",
+        "count": 2829
       },
       {
         "month": "2022-04-01",
         "count": 6004
       },
       {
-        "month": "2018-01-01",
-        "count": 2668
-      },
-      {
-        "month": "2019-05-01",
-        "count": 3852
-      },
-      {
-        "month": "2019-03-01",
-        "count": 3915
-      },
-      {
-        "month": "2014-12-01",
-        "count": 1171
-      },
-      {
-        "month": "2014-01-01",
-        "count": 1116
-      },
-      {
-        "month": "2018-10-01",
-        "count": 3377
-      },
-      {
-        "month": "2015-08-01",
-        "count": 1481
-      },
-      {
         "month": "2022-05-01",
         "count": 6229
-      },
-      {
-        "month": "2016-09-01",
-        "count": 1856
       },
       {
         "month": "2022-06-01",
@@ -4404,20 +4400,28 @@
         "count": 6125
       },
       {
-        "month": "2019-09-01",
-        "count": 3812
+        "month": "2018-11-01",
+        "count": 3269
       },
       {
-        "month": "2014-07-01",
-        "count": 1194
+        "month": "2019-02-01",
+        "count": 3395
+      },
+      {
+        "month": "2015-01-01",
+        "count": 1261
+      },
+      {
+        "month": "2019-04-01",
+        "count": 3651
+      },
+      {
+        "month": "2017-03-01",
+        "count": 2155
       },
       {
         "month": "2022-08-01",
         "count": 6382
-      },
-      {
-        "month": "2015-03-01",
-        "count": 1498
       },
       {
         "month": "2022-09-01",
@@ -4428,16 +4432,84 @@
         "count": 7267
       },
       {
-        "month": "2013-10-01",
-        "count": 1106
+        "month": "2019-06-01",
+        "count": 3590
       },
       {
         "month": "2022-11-01",
         "count": 7659
       },
       {
+        "month": "2016-12-01",
+        "count": 1723
+      },
+      {
         "month": "2022-12-01",
         "count": 6754
+      },
+      {
+        "month": "2015-09-01",
+        "count": 1477
+      },
+      {
+        "month": "2015-08-01",
+        "count": 1481
+      },
+      {
+        "month": "2015-06-01",
+        "count": 1382
+      },
+      {
+        "month": "2013-05-01",
+        "count": 1260
+      },
+      {
+        "month": "2023-07-01",
+        "count": 7129
+      },
+      {
+        "month": "2023-08-01",
+        "count": 7498
+      },
+      {
+        "month": "2019-03-01",
+        "count": 3915
+      },
+      {
+        "month": "2023-06-01",
+        "count": 7161
+      },
+      {
+        "month": "2018-01-01",
+        "count": 2668
+      },
+      {
+        "month": "2015-12-01",
+        "count": 1473
+      },
+      {
+        "month": "2016-01-01",
+        "count": 1659
+      },
+      {
+        "month": "2015-10-01",
+        "count": 1643
+      },
+      {
+        "month": "2014-03-01",
+        "count": 1225
+      },
+      {
+        "month": "2017-09-01",
+        "count": 2308
+      },
+      {
+        "month": "2017-06-01",
+        "count": 2206
+      },
+      {
+        "month": "2017-10-01",
+        "count": 2414
       },
       {
         "month": "2013-03-01",
@@ -4448,244 +4520,172 @@
         "count": 2919
       },
       {
-        "month": "2017-08-01",
-        "count": 2271
-      },
-      {
-        "month": "2018-09-01",
-        "count": 2925
-      },
-      {
-        "month": "2015-09-01",
-        "count": 1477
-      },
-      {
-        "month": "2013-12-01",
-        "count": 1200
-      },
-      {
-        "month": "2015-10-01",
-        "count": 1643
-      },
-      {
-        "month": "2015-11-01",
-        "count": 1565
-      },
-      {
-        "month": "2015-02-01",
-        "count": 1288
-      },
-      {
-        "month": "2014-10-01",
-        "count": 1194
-      },
-      {
-        "month": "2016-04-01",
-        "count": 1723
-      },
-      {
-        "month": "2016-03-01",
-        "count": 1938
-      },
-      {
-        "month": "2015-04-01",
-        "count": 1438
-      },
-      {
-        "month": "2016-02-01",
-        "count": 1754
-      },
-      {
-        "month": "2016-07-01",
-        "count": 1875
-      },
-      {
-        "month": "2016-08-01",
-        "count": 1845
-      },
-      {
-        "month": "2016-05-01",
-        "count": 1684
-      },
-      {
-        "month": "2016-06-01",
-        "count": 1684
-      },
-      {
-        "month": "2016-11-01",
-        "count": 1882
-      },
-      {
-        "month": "2016-10-01",
-        "count": 1824
-      },
-      {
-        "month": "2015-01-01",
-        "count": 1261
-      },
-      {
-        "month": "2014-05-01",
-        "count": 1235
-      },
-      {
-        "month": "2017-03-01",
-        "count": 2155
-      },
-      {
-        "month": "2017-02-01",
-        "count": 1938
-      },
-      {
-        "month": "2017-05-01",
-        "count": 2344
-      },
-      {
-        "month": "2017-06-01",
-        "count": 2206
-      },
-      {
-        "month": "2014-03-01",
-        "count": 1225
-      },
-      {
-        "month": "2014-04-01",
-        "count": 1158
-      },
-      {
-        "month": "2014-02-01",
-        "count": 1041
-      },
-      {
-        "month": "2013-11-01",
-        "count": 994
-      },
-      {
-        "month": "2013-08-01",
-        "count": 1121
-      },
-      {
-        "month": "2013-09-01",
-        "count": 1046
-      },
-      {
-        "month": "2013-06-01",
-        "count": 1071
-      },
-      {
-        "month": "2013-07-01",
-        "count": 1121
-      },
-      {
-        "month": "2014-11-01",
-        "count": 1203
-      },
-      {
-        "month": "2014-06-01",
-        "count": 1209
-      },
-      {
-        "month": "2013-02-01",
-        "count": 1716
-      },
-      {
-        "month": "2017-09-01",
-        "count": 2308
-      },
-      {
-        "month": "2017-10-01",
-        "count": 2414
-      },
-      {
-        "month": "2017-12-01",
-        "count": 2343
-      },
-      {
-        "month": "2017-11-01",
-        "count": 2446
-      },
-      {
-        "month": "2018-02-01",
-        "count": 2560
-      },
-      {
-        "month": "2018-04-01",
-        "count": 3326
-      },
-      {
-        "month": "2018-06-01",
-        "count": 2829
-      },
-      {
-        "month": "2018-08-01",
-        "count": 3155
+        "month": "2014-01-01",
+        "count": 1116
       },
       {
         "month": "2014-08-01",
         "count": 1127
       },
       {
-        "month": "2023-01-01",
-        "count": 7800
-      },
-      {
-        "month": "2023-02-01",
-        "count": 8414
-      },
-      {
-        "month": "2023-03-01",
-        "count": 8283
-      },
-      {
-        "month": "2023-04-01",
-        "count": 7796
-      },
-      {
-        "month": "2023-05-01",
-        "count": 7668
-      },
-      {
-        "month": "2023-06-01",
-        "count": 7161
-      },
-      {
         "month": "2015-05-01",
         "count": 1444
       },
       {
-        "month": "2015-06-01",
-        "count": 1382
+        "month": "2014-11-01",
+        "count": 1203
       },
       {
         "month": "2013-04-01",
         "count": 1326
       },
       {
-        "month": "2013-01-01",
-        "count": 2323
+        "month": "2013-11-01",
+        "count": 994
       },
       {
-        "month": "2016-01-01",
-        "count": 1659
+        "month": "2015-04-01",
+        "count": 1438
       },
       {
-        "month": "2015-12-01",
-        "count": 1473
+        "month": "2015-11-01",
+        "count": 1565
       },
       {
-        "month": "2020-01-01",
-        "count": 4410
+        "month": "2014-10-01",
+        "count": 1194
       },
       {
-        "month": "2019-04-01",
-        "count": 3651
+        "month": "2014-12-01",
+        "count": 1171
       },
       {
-        "month": "2023-07-01",
-        "count": 7129
+        "month": "2016-05-01",
+        "count": 1684
       },
       {
-        "month": "2023-08-01",
-        "count": 7498
+        "month": "2016-08-01",
+        "count": 1845
+      },
+      {
+        "month": "2016-07-01",
+        "count": 1875
+      },
+      {
+        "month": "2016-02-01",
+        "count": 1754
+      },
+      {
+        "month": "2016-09-01",
+        "count": 1856
+      },
+      {
+        "month": "2016-10-01",
+        "count": 1824
+      },
+      {
+        "month": "2016-04-01",
+        "count": 1723
+      },
+      {
+        "month": "2017-02-01",
+        "count": 1938
+      },
+      {
+        "month": "2023-03-01",
+        "count": 8283
+      },
+      {
+        "month": "2023-05-01",
+        "count": 7668
+      },
+      {
+        "month": "2023-02-01",
+        "count": 8414
+      },
+      {
+        "month": "2023-04-01",
+        "count": 7796
+      },
+      {
+        "month": "2023-01-01",
+        "count": 7800
+      },
+      {
+        "month": "2017-12-01",
+        "count": 2343
+      },
+      {
+        "month": "2017-01-01",
+        "count": 1972
+      },
+      {
+        "month": "2014-04-01",
+        "count": 1158
+      },
+      {
+        "month": "2013-12-01",
+        "count": 1200
+      },
+      {
+        "month": "2018-03-01",
+        "count": 3021
+      },
+      {
+        "month": "2017-11-01",
+        "count": 2446
+      },
+      {
+        "month": "2017-08-01",
+        "count": 2271
+      },
+      {
+        "month": "2014-06-01",
+        "count": 1209
+      },
+      {
+        "month": "2016-03-01",
+        "count": 1938
+      },
+      {
+        "month": "2013-09-01",
+        "count": 1046
+      },
+      {
+        "month": "2013-02-01",
+        "count": 1716
+      },
+      {
+        "month": "2015-02-01",
+        "count": 1288
+      },
+      {
+        "month": "2014-09-01",
+        "count": 1267
+      },
+      {
+        "month": "2015-03-01",
+        "count": 1498
+      },
+      {
+        "month": "2013-06-01",
+        "count": 1071
+      },
+      {
+        "month": "2014-02-01",
+        "count": 1041
+      },
+      {
+        "month": "2013-10-01",
+        "count": 1106
+      },
+      {
+        "month": "2013-07-01",
+        "count": 1121
+      },
+      {
+        "month": "2013-08-01",
+        "count": 1121
       },
       {
         "month": "2021-10-01",
@@ -4701,136 +4701,24 @@
   {
     "stat": [
       {
-        "month": "2023-05-01",
-        "count": 100280
-      },
-      {
-        "month": "2023-04-01",
-        "count": 95404
-      },
-      {
-        "month": "2023-06-01",
-        "count": 99133
-      },
-      {
-        "month": "2022-04-01",
-        "count": 78121
-      },
-      {
-        "month": "2023-07-01",
-        "count": 99455
-      },
-      {
-        "month": "2023-03-01",
-        "count": 106766
-      },
-      {
-        "month": "2023-08-01",
-        "count": 102388
-      },
-      {
-        "month": "2022-08-01",
-        "count": 82817
-      },
-      {
-        "month": "2022-09-01",
-        "count": 78467
-      },
-      {
-        "month": "2022-10-01",
-        "count": 79631
-      },
-      {
-        "month": "2022-01-01",
-        "count": 75251
-      },
-      {
-        "month": "2022-11-01",
-        "count": 84798
-      },
-      {
-        "month": "2022-06-01",
-        "count": 80117
-      },
-      {
-        "month": "2022-12-01",
-        "count": 80009
-      },
-      {
-        "month": "2021-12-01",
-        "count": 68946
-      },
-      {
-        "month": "2016-08-01",
-        "count": 15857
-      },
-      {
-        "month": "2016-10-01",
-        "count": 14748
-      },
-      {
-        "month": "2016-09-01",
-        "count": 14529
-      },
-      {
-        "month": "2016-11-01",
-        "count": 15190
-      },
-      {
-        "month": "2016-12-01",
-        "count": 13740
-      },
-      {
-        "month": "2017-01-01",
-        "count": 16128
-      },
-      {
-        "month": "2017-02-01",
-        "count": 16125
-      },
-      {
-        "month": "2016-04-01",
-        "count": 13796
-      },
-      {
-        "month": "2016-03-01",
-        "count": 14638
-      },
-      {
-        "month": "2016-02-01",
-        "count": 13291
-      },
-      {
-        "month": "2016-07-01",
-        "count": 14056
-      },
-      {
-        "month": "2017-04-01",
-        "count": 27077
-      },
-      {
-        "month": "2017-03-01",
-        "count": 17833
+        "month": "2017-06-01",
+        "count": 20281
       },
       {
         "month": "2017-05-01",
         "count": 19549
       },
       {
-        "month": "2017-06-01",
-        "count": 20281
-      },
-      {
-        "month": "2017-07-01",
-        "count": 18822
-      },
-      {
-        "month": "2013-05-01",
-        "count": 5240
+        "month": "2013-09-01",
+        "count": 5477
       },
       {
         "month": "2013-10-01",
         "count": 6003
+      },
+      {
+        "month": "2013-06-01",
+        "count": 4681
       },
       {
         "month": "2013-07-01",
@@ -4845,64 +4733,52 @@
         "count": 5278
       },
       {
-        "month": "2013-06-01",
-        "count": 4681
+        "month": "2013-05-01",
+        "count": 5240
       },
       {
-        "month": "2013-09-01",
-        "count": 5477
+        "month": "2014-06-01",
+        "count": 7464
       },
       {
-        "month": "2019-04-01",
-        "count": 35036
+        "month": "2014-05-01",
+        "count": 7298
       },
       {
-        "month": "2019-03-01",
-        "count": 33267
+        "month": "2014-07-01",
+        "count": 7846
       },
       {
-        "month": "2019-05-01",
-        "count": 34493
+        "month": "2014-08-01",
+        "count": 7471
       },
       {
-        "month": "2018-06-01",
-        "count": 27054
+        "month": "2014-04-01",
+        "count": 6760
       },
       {
-        "month": "2019-07-01",
-        "count": 37850
+        "month": "2014-09-01",
+        "count": 7796
       },
       {
-        "month": "2019-06-01",
-        "count": 31356
+        "month": "2014-02-01",
+        "count": 6113
       },
       {
-        "month": "2019-02-01",
-        "count": 29761
+        "month": "2014-03-01",
+        "count": 7155
       },
       {
-        "month": "2020-02-01",
-        "count": 45257
+        "month": "2023-01-01",
+        "count": 95221
       },
       {
-        "month": "2019-10-01",
-        "count": 38749
+        "month": "2023-02-01",
+        "count": 97426
       },
       {
-        "month": "2019-11-01",
-        "count": 40530
-      },
-      {
-        "month": "2020-01-01",
-        "count": 44944
-      },
-      {
-        "month": "2019-12-01",
-        "count": 40437
-      },
-      {
-        "month": "2020-03-01",
-        "count": 54416
+        "month": "2022-07-01",
+        "count": 76591
       },
       {
         "month": "2020-04-01",
@@ -4913,8 +4789,272 @@
         "count": 58191
       },
       {
+        "month": "2019-07-01",
+        "count": 37850
+      },
+      {
+        "month": "2020-06-01",
+        "count": 60518
+      },
+      {
+        "month": "2019-12-01",
+        "count": 40437
+      },
+      {
+        "month": "2020-01-01",
+        "count": 44944
+      },
+      {
+        "month": "2017-04-01",
+        "count": 27077
+      },
+      {
+        "month": "2020-07-01",
+        "count": 59330
+      },
+      {
+        "month": "2020-08-01",
+        "count": 55559
+      },
+      {
+        "month": "2019-05-01",
+        "count": 34493
+      },
+      {
+        "month": "2021-06-01",
+        "count": 70624
+      },
+      {
+        "month": "2021-05-01",
+        "count": 73019
+      },
+      {
+        "month": "2021-07-01",
+        "count": 68712
+      },
+      {
+        "month": "2021-03-01",
+        "count": 80356
+      },
+      {
+        "month": "2020-10-01",
+        "count": 61635
+      },
+      {
+        "month": "2017-01-01",
+        "count": 16128
+      },
+      {
+        "month": "2016-12-01",
+        "count": 13740
+      },
+      {
+        "month": "2017-02-01",
+        "count": 16125
+      },
+      {
+        "month": "2017-03-01",
+        "count": 17833
+      },
+      {
+        "month": "2016-10-01",
+        "count": 14748
+      },
+      {
+        "month": "2016-09-01",
+        "count": 14529
+      },
+      {
+        "month": "2016-08-01",
+        "count": 15857
+      },
+      {
+        "month": "2017-07-01",
+        "count": 18822
+      },
+      {
+        "month": "2013-12-01",
+        "count": 5715
+      },
+      {
+        "month": "2014-01-01",
+        "count": 6594
+      },
+      {
+        "month": "2015-03-01",
+        "count": 10480
+      },
+      {
+        "month": "2015-02-01",
+        "count": 9238
+      },
+      {
+        "month": "2015-01-01",
+        "count": 8628
+      },
+      {
+        "month": "2015-04-01",
+        "count": 10026
+      },
+      {
+        "month": "2014-11-01",
+        "count": 7831
+      },
+      {
+        "month": "2023-07-01",
+        "count": 99455
+      },
+      {
+        "month": "2023-08-01",
+        "count": 102388
+      },
+      {
+        "month": "2022-11-01",
+        "count": 84798
+      },
+      {
+        "month": "2019-03-01",
+        "count": 33267
+      },
+      {
+        "month": "2019-04-01",
+        "count": 35036
+      },
+      {
+        "month": "2019-01-01",
+        "count": 30061
+      },
+      {
+        "month": "2019-06-01",
+        "count": 31356
+      },
+      {
+        "month": "2018-12-01",
+        "count": 25111
+      },
+      {
+        "month": "2018-07-01",
+        "count": 24407
+      },
+      {
+        "month": "2019-08-01",
+        "count": 36469
+      },
+      {
+        "month": "2019-09-01",
+        "count": 35478
+      },
+      {
+        "month": "2019-10-01",
+        "count": 38749
+      },
+      {
+        "month": "2019-11-01",
+        "count": 40530
+      },
+      {
+        "month": "2022-03-01",
+        "count": 84127
+      },
+      {
+        "month": "2022-02-01",
+        "count": 72099
+      },
+      {
+        "month": "2022-01-01",
+        "count": 75251
+      },
+      {
+        "month": "2022-04-01",
+        "count": 78121
+      },
+      {
+        "month": "2018-03-01",
+        "count": 25529
+      },
+      {
+        "month": "2018-02-01",
+        "count": 21513
+      },
+      {
+        "month": "2018-01-01",
+        "count": 22121
+      },
+      {
+        "month": "2017-09-01",
+        "count": 20168
+      },
+      {
+        "month": "2017-10-01",
+        "count": 20622
+      },
+      {
+        "month": "2017-12-01",
+        "count": 19171
+      },
+      {
+        "month": "2017-11-01",
+        "count": 21232
+      },
+      {
+        "month": "2018-05-01",
+        "count": 24635
+      },
+      {
+        "month": "2018-04-01",
+        "count": 27710
+      },
+      {
+        "month": "2018-06-01",
+        "count": 27054
+      },
+      {
         "month": "2018-08-01",
         "count": 25757
+      },
+      {
+        "month": "2018-09-01",
+        "count": 24633
+      },
+      {
+        "month": "2018-11-01",
+        "count": 28167
+      },
+      {
+        "month": "2020-09-01",
+        "count": 59525
+      },
+      {
+        "month": "2017-08-01",
+        "count": 19857
+      },
+      {
+        "month": "2019-02-01",
+        "count": 29761
+      },
+      {
+        "month": "2018-10-01",
+        "count": 28402
+      },
+      {
+        "month": "2022-12-01",
+        "count": 80009
+      },
+      {
+        "month": "2023-03-01",
+        "count": 106766
+      },
+      {
+        "month": "2020-11-01",
+        "count": 59871
+      },
+      {
+        "month": "2021-04-01",
+        "count": 72930
+      },
+      {
+        "month": "2020-12-01",
+        "count": 62716
       },
       {
         "month": "2021-01-01",
@@ -4925,34 +5065,6 @@
         "count": 67966
       },
       {
-        "month": "2020-12-01",
-        "count": 62716
-      },
-      {
-        "month": "2021-03-01",
-        "count": 80356
-      },
-      {
-        "month": "2021-05-01",
-        "count": 73019
-      },
-      {
-        "month": "2021-04-01",
-        "count": 72930
-      },
-      {
-        "month": "2021-06-01",
-        "count": 70624
-      },
-      {
-        "month": "2021-07-01",
-        "count": 68712
-      },
-      {
-        "month": "2020-07-01",
-        "count": 59330
-      },
-      {
         "month": "2021-08-01",
         "count": 70745
       },
@@ -4961,108 +5073,44 @@
         "count": 70992
       },
       {
-        "month": "2021-10-01",
-        "count": 75146
-      },
-      {
         "month": "2021-11-01",
         "count": 74035
       },
       {
-        "month": "2020-09-01",
-        "count": 59525
-      },
-      {
-        "month": "2022-02-01",
-        "count": 72099
-      },
-      {
-        "month": "2020-10-01",
-        "count": 61635
-      },
-      {
-        "month": "2022-03-01",
-        "count": 84127
-      },
-      {
-        "month": "2015-04-01",
-        "count": 10026
-      },
-      {
-        "month": "2015-05-01",
-        "count": 9933
-      },
-      {
-        "month": "2015-06-01",
-        "count": 10246
-      },
-      {
-        "month": "2018-09-01",
-        "count": 24633
-      },
-      {
-        "month": "2019-01-01",
-        "count": 30061
-      },
-      {
-        "month": "2018-12-01",
-        "count": 25111
-      },
-      {
-        "month": "2018-01-01",
-        "count": 22121
-      },
-      {
-        "month": "2018-11-01",
-        "count": 28167
-      },
-      {
-        "month": "2019-08-01",
-        "count": 36469
-      },
-      {
-        "month": "2018-04-01",
-        "count": 27710
-      },
-      {
-        "month": "2019-09-01",
-        "count": 35478
-      },
-      {
-        "month": "2017-09-01",
-        "count": 20168
-      },
-      {
-        "month": "2020-08-01",
-        "count": 55559
+        "month": "2021-12-01",
+        "count": 68946
       },
       {
         "month": "2022-05-01",
         "count": 83778
       },
       {
-        "month": "2018-10-01",
-        "count": 28402
+        "month": "2023-04-01",
+        "count": 95404
       },
       {
-        "month": "2023-02-01",
-        "count": 97426
+        "month": "2023-05-01",
+        "count": 100280
       },
       {
-        "month": "2020-06-01",
-        "count": 60518
+        "month": "2023-06-01",
+        "count": 99133
       },
       {
-        "month": "2022-07-01",
-        "count": 76591
+        "month": "2022-06-01",
+        "count": 80117
       },
       {
-        "month": "2015-08-01",
-        "count": 10520
+        "month": "2022-08-01",
+        "count": 82817
       },
       {
-        "month": "2015-09-01",
-        "count": 11064
+        "month": "2022-09-01",
+        "count": 78467
+      },
+      {
+        "month": "2022-10-01",
+        "count": 79631
       },
       {
         "month": "2015-10-01",
@@ -5077,12 +5125,60 @@
         "count": 10915
       },
       {
+        "month": "2016-06-01",
+        "count": 13473
+      },
+      {
+        "month": "2016-04-01",
+        "count": 13796
+      },
+      {
         "month": "2016-05-01",
         "count": 13490
       },
       {
-        "month": "2016-06-01",
-        "count": 13473
+        "month": "2016-07-01",
+        "count": 14056
+      },
+      {
+        "month": "2015-08-01",
+        "count": 10520
+      },
+      {
+        "month": "2016-02-01",
+        "count": 13291
+      },
+      {
+        "month": "2016-03-01",
+        "count": 14638
+      },
+      {
+        "month": "2016-01-01",
+        "count": 12318
+      },
+      {
+        "month": "2015-09-01",
+        "count": 11064
+      },
+      {
+        "month": "2014-12-01",
+        "count": 8107
+      },
+      {
+        "month": "2013-02-01",
+        "count": 4646
+      },
+      {
+        "month": "2016-11-01",
+        "count": 15190
+      },
+      {
+        "month": "2020-03-01",
+        "count": 54416
+      },
+      {
+        "month": "2013-03-01",
+        "count": 5198
       },
       {
         "month": "2013-01-01",
@@ -5093,124 +5189,28 @@
         "count": 4880
       },
       {
-        "month": "2013-03-01",
-        "count": 5198
-      },
-      {
-        "month": "2013-02-01",
-        "count": 4646
-      },
-      {
-        "month": "2014-12-01",
-        "count": 8107
-      },
-      {
-        "month": "2014-11-01",
-        "count": 7831
-      },
-      {
-        "month": "2014-09-01",
-        "count": 7796
-      },
-      {
         "month": "2014-10-01",
         "count": 8180
       },
       {
-        "month": "2015-01-01",
-        "count": 8628
+        "month": "2020-02-01",
+        "count": 45257
       },
       {
-        "month": "2017-08-01",
-        "count": 19857
+        "month": "2015-06-01",
+        "count": 10246
       },
       {
-        "month": "2013-12-01",
-        "count": 5715
+        "month": "2015-05-01",
+        "count": 9933
       },
       {
-        "month": "2014-03-01",
-        "count": 7155
-      },
-      {
-        "month": "2014-02-01",
-        "count": 6113
-      },
-      {
-        "month": "2014-04-01",
-        "count": 6760
-      },
-      {
-        "month": "2014-01-01",
-        "count": 6594
-      },
-      {
-        "month": "2017-11-01",
-        "count": 21232
-      },
-      {
-        "month": "2017-10-01",
-        "count": 20622
-      },
-      {
-        "month": "2018-02-01",
-        "count": 21513
-      },
-      {
-        "month": "2018-03-01",
-        "count": 25529
-      },
-      {
-        "month": "2014-05-01",
-        "count": 7298
-      },
-      {
-        "month": "2014-08-01",
-        "count": 7471
-      },
-      {
-        "month": "2018-07-01",
-        "count": 24407
-      },
-      {
-        "month": "2014-07-01",
-        "count": 7846
-      },
-      {
-        "month": "2014-06-01",
-        "count": 7464
-      },
-      {
-        "month": "2018-05-01",
-        "count": 24635
-      },
-      {
-        "month": "2023-01-01",
-        "count": 95221
-      },
-      {
-        "month": "2016-01-01",
-        "count": 12318
-      },
-      {
-        "month": "2015-03-01",
-        "count": 10480
-      },
-      {
-        "month": "2015-02-01",
-        "count": 9238
-      },
-      {
-        "month": "2017-12-01",
-        "count": 19171
+        "month": "2021-10-01",
+        "count": 75146
       },
       {
         "month": "2015-07-01",
         "count": 11012
-      },
-      {
-        "month": "2020-11-01",
-        "count": 59871
       }
     ],
     "name": "new_project_versions_over_time"
@@ -5218,32 +5218,152 @@
   {
     "stat": [
       {
-        "month": "2015-11-01",
-        "count": 15424
+        "month": "2017-02-01",
+        "count": 23677
       },
       {
-        "month": "2015-12-01",
-        "count": 14952
+        "month": "2017-01-01",
+        "count": 23672
       },
       {
-        "month": "2015-10-01",
-        "count": 16345
+        "month": "2016-12-01",
+        "count": 20544
       },
       {
-        "month": "2016-05-01",
-        "count": 18349
+        "month": "2017-04-01",
+        "count": 35672
       },
       {
-        "month": "2016-06-01",
-        "count": 18704
+        "month": "2017-03-01",
+        "count": 26021
       },
       {
-        "month": "2016-04-01",
-        "count": 19436
+        "month": "2017-05-01",
+        "count": 28320
       },
       {
-        "month": "2016-07-01",
-        "count": 20770
+        "month": "2023-05-01",
+        "count": 222288
+      },
+      {
+        "month": "2023-06-01",
+        "count": 217839
+      },
+      {
+        "month": "2023-07-01",
+        "count": 222660
+      },
+      {
+        "month": "2023-08-01",
+        "count": 237191
+      },
+      {
+        "month": "2019-04-01",
+        "count": 59822
+      },
+      {
+        "month": "2019-03-01",
+        "count": 56259
+      },
+      {
+        "month": "2019-05-01",
+        "count": 58913
+      },
+      {
+        "month": "2019-07-01",
+        "count": 63814
+      },
+      {
+        "month": "2019-06-01",
+        "count": 53873
+      },
+      {
+        "month": "2019-08-01",
+        "count": 62636
+      },
+      {
+        "month": "2019-09-01",
+        "count": 62718
+      },
+      {
+        "month": "2019-10-01",
+        "count": 69381
+      },
+      {
+        "month": "2019-12-01",
+        "count": 70938
+      },
+      {
+        "month": "2019-11-01",
+        "count": 74659
+      },
+      {
+        "month": "2020-01-01",
+        "count": 77420
+      },
+      {
+        "month": "2020-02-01",
+        "count": 78836
+      },
+      {
+        "month": "2020-03-01",
+        "count": 91678
+      },
+      {
+        "month": "2020-04-01",
+        "count": 100277
+      },
+      {
+        "month": "2020-05-01",
+        "count": 104739
+      },
+      {
+        "month": "2020-06-01",
+        "count": 112078
+      },
+      {
+        "month": "2020-07-01",
+        "count": 111475
+      },
+      {
+        "month": "2020-08-01",
+        "count": 106156
+      },
+      {
+        "month": "2020-09-01",
+        "count": 115385
+      },
+      {
+        "month": "2020-10-01",
+        "count": 122179
+      },
+      {
+        "month": "2020-11-01",
+        "count": 116835
+      },
+      {
+        "month": "2021-04-01",
+        "count": 144194
+      },
+      {
+        "month": "2020-12-01",
+        "count": 124034
+      },
+      {
+        "month": "2021-01-01",
+        "count": 128025
+      },
+      {
+        "month": "2021-02-01",
+        "count": 133506
+      },
+      {
+        "month": "2021-03-01",
+        "count": 157409
+      },
+      {
+        "month": "2021-05-01",
+        "count": 147312
       },
       {
         "month": "2021-06-01",
@@ -5254,20 +5374,12 @@
         "count": 136105
       },
       {
-        "month": "2021-05-01",
-        "count": 147312
-      },
-      {
         "month": "2021-08-01",
         "count": 139502
       },
       {
         "month": "2021-09-01",
         "count": 139702
-      },
-      {
-        "month": "2021-10-01",
-        "count": 151196
       },
       {
         "month": "2021-11-01",
@@ -5326,160 +5438,132 @@
         "count": 177767
       },
       {
-        "month": "2015-09-01",
-        "count": 14984
+        "month": "2015-04-01",
+        "count": 12902
       },
       {
-        "month": "2015-08-01",
-        "count": 14089
+        "month": "2015-05-01",
+        "count": 13181
       },
       {
-        "month": "2016-03-01",
-        "count": 19734
+        "month": "2015-06-01",
+        "count": 13642
+      },
+      {
+        "month": "2016-06-01",
+        "count": 18704
+      },
+      {
+        "month": "2016-05-01",
+        "count": 18349
+      },
+      {
+        "month": "2016-07-01",
+        "count": 20770
+      },
+      {
+        "month": "2016-04-01",
+        "count": 19436
+      },
+      {
+        "month": "2015-12-01",
+        "count": 14952
+      },
+      {
+        "month": "2015-11-01",
+        "count": 15424
+      },
+      {
+        "month": "2015-10-01",
+        "count": 16345
       },
       {
         "month": "2016-02-01",
         "count": 18384
       },
       {
-        "month": "2016-08-01",
-        "count": 22877
-      },
-      {
-        "month": "2016-11-01",
-        "count": 22155
-      },
-      {
-        "month": "2016-12-01",
-        "count": 20544
+        "month": "2016-01-01",
+        "count": 16804
       },
       {
         "month": "2016-10-01",
         "count": 21065
       },
       {
-        "month": "2017-02-01",
-        "count": 23677
+        "month": "2016-09-01",
+        "count": 20869
       },
       {
-        "month": "2017-03-01",
-        "count": 26021
-      },
-      {
-        "month": "2017-05-01",
-        "count": 28320
+        "month": "2016-08-01",
+        "count": 22877
       },
       {
         "month": "2017-06-01",
         "count": 28936
       },
       {
-        "month": "2013-05-01",
-        "count": 5797
-      },
-      {
-        "month": "2013-01-01",
-        "count": 5249
-      },
-      {
-        "month": "2013-03-01",
-        "count": 5982
-      },
-      {
-        "month": "2013-04-01",
-        "count": 5397
-      },
-      {
-        "month": "2013-02-01",
-        "count": 5212
-      },
-      {
-        "month": "2013-06-01",
-        "count": 5095
-      },
-      {
-        "month": "2013-07-01",
-        "count": 5522
-      },
-      {
-        "month": "2013-10-01",
-        "count": 6745
-      },
-      {
-        "month": "2013-08-01",
-        "count": 5829
-      },
-      {
-        "month": "2013-11-01",
-        "count": 6397
-      },
-      {
-        "month": "2013-09-01",
-        "count": 6025
+        "month": "2017-07-01",
+        "count": 28229
       },
       {
         "month": "2014-01-01",
         "count": 7787
       },
       {
-        "month": "2014-07-01",
-        "count": 9455
-      },
-      {
-        "month": "2014-06-01",
-        "count": 8911
-      },
-      {
-        "month": "2014-05-01",
-        "count": 8709
-      },
-      {
-        "month": "2014-08-01",
-        "count": 9037
-      },
-      {
-        "month": "2014-09-01",
-        "count": 9456
+        "month": "2014-03-01",
+        "count": 8340
       },
       {
         "month": "2014-04-01",
         "count": 7976
       },
       {
+        "month": "2014-02-01",
+        "count": 7034
+      },
+      {
+        "month": "2013-12-01",
+        "count": 6468
+      },
+      {
+        "month": "2013-11-01",
+        "count": 6397
+      },
+      {
+        "month": "2014-11-01",
+        "count": 9458
+      },
+      {
+        "month": "2014-12-01",
+        "count": 10030
+      },
+      {
+        "month": "2014-09-01",
+        "count": 9456
+      },
+      {
+        "month": "2014-10-01",
+        "count": 10026
+      },
+      {
         "month": "2015-01-01",
         "count": 10524
-      },
-      {
-        "month": "2015-04-01",
-        "count": 12902
-      },
-      {
-        "month": "2015-03-01",
-        "count": 13191
       },
       {
         "month": "2015-02-01",
         "count": 11440
       },
       {
-        "month": "2014-03-01",
-        "count": 8340
+        "month": "2015-03-01",
+        "count": 13191
       },
       {
-        "month": "2017-10-01",
-        "count": 30977
+        "month": "2017-08-01",
+        "count": 30297
       },
       {
-        "month": "2017-09-01",
-        "count": 30184
-      },
-      {
-        "month": "2017-12-01",
-        "count": 28300
-      },
-      {
-        "month": "2017-11-01",
-        "count": 31983
+        "month": "2018-02-01",
+        "count": 32475
       },
       {
         "month": "2018-01-01",
@@ -5490,24 +5574,36 @@
         "count": 38676
       },
       {
-        "month": "2018-02-01",
-        "count": 32475
+        "month": "2017-09-01",
+        "count": 30184
+      },
+      {
+        "month": "2017-10-01",
+        "count": 30977
+      },
+      {
+        "month": "2017-11-01",
+        "count": 31983
+      },
+      {
+        "month": "2017-12-01",
+        "count": 28300
+      },
+      {
+        "month": "2018-04-01",
+        "count": 41192
       },
       {
         "month": "2018-05-01",
         "count": 38060
       },
       {
-        "month": "2018-06-01",
-        "count": 41530
+        "month": "2018-08-01",
+        "count": 44339
       },
       {
         "month": "2018-07-01",
         "count": 40873
-      },
-      {
-        "month": "2018-08-01",
-        "count": 44339
       },
       {
         "month": "2018-09-01",
@@ -5522,6 +5618,10 @@
         "count": 48106
       },
       {
+        "month": "2018-06-01",
+        "count": 41530
+      },
+      {
         "month": "2019-01-01",
         "count": 52038
       },
@@ -5532,10 +5632,6 @@
       {
         "month": "2019-02-01",
         "count": 51305
-      },
-      {
-        "month": "2019-03-01",
-        "count": 56259
       },
       {
         "month": "2023-01-01",
@@ -5554,180 +5650,84 @@
         "count": 214140
       },
       {
-        "month": "2023-05-01",
-        "count": 222288
+        "month": "2015-09-01",
+        "count": 14984
       },
       {
-        "month": "2023-06-01",
-        "count": 217839
+        "month": "2015-08-01",
+        "count": 14089
       },
       {
-        "month": "2023-07-01",
-        "count": 222660
+        "month": "2013-02-01",
+        "count": 5212
       },
       {
-        "month": "2023-08-01",
-        "count": 237191
+        "month": "2013-04-01",
+        "count": 5397
       },
       {
-        "month": "2019-04-01",
-        "count": 59822
+        "month": "2013-03-01",
+        "count": 5982
       },
       {
-        "month": "2019-06-01",
-        "count": 53873
+        "month": "2013-01-01",
+        "count": 5249
       },
       {
-        "month": "2019-05-01",
-        "count": 58913
+        "month": "2013-05-01",
+        "count": 5797
       },
       {
-        "month": "2019-07-01",
-        "count": 63814
+        "month": "2016-11-01",
+        "count": 22155
       },
       {
-        "month": "2019-08-01",
-        "count": 62636
+        "month": "2016-03-01",
+        "count": 19734
       },
       {
-        "month": "2019-09-01",
-        "count": 62718
+        "month": "2013-08-01",
+        "count": 5829
       },
       {
-        "month": "2019-10-01",
-        "count": 69381
+        "month": "2013-07-01",
+        "count": 5522
       },
       {
-        "month": "2019-11-01",
-        "count": 74659
+        "month": "2013-06-01",
+        "count": 5095
       },
       {
-        "month": "2019-12-01",
-        "count": 70938
+        "month": "2013-09-01",
+        "count": 6025
       },
       {
-        "month": "2020-01-01",
-        "count": 77420
+        "month": "2013-10-01",
+        "count": 6745
       },
       {
-        "month": "2020-02-01",
-        "count": 78836
+        "month": "2014-06-01",
+        "count": 8911
       },
       {
-        "month": "2020-03-01",
-        "count": 91678
+        "month": "2014-07-01",
+        "count": 9455
       },
       {
-        "month": "2020-04-01",
-        "count": 100277
+        "month": "2014-08-01",
+        "count": 9037
       },
       {
-        "month": "2020-05-01",
-        "count": 104739
+        "month": "2014-05-01",
+        "count": 8709
       },
       {
-        "month": "2020-06-01",
-        "count": 112078
-      },
-      {
-        "month": "2020-07-01",
-        "count": 111475
-      },
-      {
-        "month": "2020-08-01",
-        "count": 106156
-      },
-      {
-        "month": "2020-09-01",
-        "count": 115385
-      },
-      {
-        "month": "2020-10-01",
-        "count": 122179
-      },
-      {
-        "month": "2021-03-01",
-        "count": 157409
-      },
-      {
-        "month": "2021-04-01",
-        "count": 144194
-      },
-      {
-        "month": "2020-12-01",
-        "count": 124034
-      },
-      {
-        "month": "2021-02-01",
-        "count": 133506
-      },
-      {
-        "month": "2021-01-01",
-        "count": 128025
-      },
-      {
-        "month": "2017-01-01",
-        "count": 23672
-      },
-      {
-        "month": "2017-04-01",
-        "count": 35672
-      },
-      {
-        "month": "2017-07-01",
-        "count": 28229
-      },
-      {
-        "month": "2017-08-01",
-        "count": 30297
-      },
-      {
-        "month": "2018-04-01",
-        "count": 41192
-      },
-      {
-        "month": "2016-01-01",
-        "count": 16804
-      },
-      {
-        "month": "2014-02-01",
-        "count": 7034
-      },
-      {
-        "month": "2013-12-01",
-        "count": 6468
-      },
-      {
-        "month": "2015-06-01",
-        "count": 13642
-      },
-      {
-        "month": "2015-05-01",
-        "count": 13181
-      },
-      {
-        "month": "2016-09-01",
-        "count": 20869
-      },
-      {
-        "month": "2014-11-01",
-        "count": 9458
-      },
-      {
-        "month": "2014-10-01",
-        "count": 10026
-      },
-      {
-        "month": "2014-12-01",
-        "count": 10030
+        "month": "2021-10-01",
+        "count": 151196
       },
       {
         "month": "2015-07-01",
         "count": 14489
-      },
-      {
-        "month": "2020-11-01",
-        "count": 116835
       }
     ],
     "name": "new_releases_over_time"
