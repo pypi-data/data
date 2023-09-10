@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "aerforge",
-    "project_version": "0.2.6",
-    "project_release": "aerforge-0.2.6.tar.gz",
-    "uploaded_on": "2022-01-25 13:10:41.469",
-    "path": "packages/aerforge/aerforge-0.2.6.tar.gz/aerforge-0.2.6/aerforge/prefabs/textbox.py",
-    "archive_path": "aerforge-0.2.6/aerforge/prefabs/textbox.py",
-    "size": 4949,
-    "hash": "Np\\x03+l\\x5C\\x02\\xFCs\\xE11\\xC8\\x14\\xFE\\x07\\xE5\\xF3:7\\x93",
+    "project_name": "homeassistant",
+    "project_version": "0.111.4",
+    "project_release": "homeassistant-0.111.4.tar.gz",
+    "uploaded_on": "2020-06-17 23:25:55.783",
+    "path": "packages/homeassistant/homeassistant-0.111.4.tar.gz/homeassistant-0.111.4/homeassistant/components/adguard/translations/sl.json",
+    "archive_path": "homeassistant-0.111.4/homeassistant/components/adguard/translations/sl.json",
+    "size": 1461,
+    "hash": "E\\xF0\\xF2\\xA2\\xD0\\xD4\\xB1b\\x80\\xE2\\x8D\\xE6a\\xED\\x84\\xAFI\\xE4\\xCA\\x8C",
     "skip_reason": "",
-    "lines": 142,
-    "repository": 136
+    "lines": 30,
+    "repository": 71
   },
   {
-    "project_name": "connect-cli",
-    "project_version": "24.6",
-    "project_release": "connect_cli-24.6-py3-none-any.whl",
-    "uploaded_on": "2021-12-15 17:05:14.072",
-    "path": "packages/connect-cli/connect_cli-24.6-py3-none-any.whl/connect/.data/connect_reports/reports/listing_list/__init__.py",
-    "archive_path": "connect/.data/connect_reports/reports/listing_list/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "griddly",
+    "project_version": "0.1.2",
+    "project_release": "griddly-0.1.2-cp38-cp38-manylinux2014_x86_64.whl",
+    "uploaded_on": "2020-09-28 09:20:39.228",
+    "path": "packages/griddly/griddly-0.1.2-cp38-cp38-manylinux2014_x86_64.whl/griddly/resources/images/gvgai/newset/piranha1.png",
+    "archive_path": "griddly/resources/images/gvgai/newset/piranha1.png",
+    "size": 3618,
+    "hash": "\\x0B\\xD4\\x11\\xF4,\\xCC\\xF9S\\x86\\xFA\\xAB\\xA7\\xD7E\\xF8^\\x94U\\xE8\\xA7",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 131
+    "repository": 80
   }
 ]
