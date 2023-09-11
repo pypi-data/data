@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "homeassistant",
-    "project_version": "0.111.4",
-    "project_release": "homeassistant-0.111.4.tar.gz",
-    "uploaded_on": "2020-06-17 23:25:55.783",
-    "path": "packages/homeassistant/homeassistant-0.111.4.tar.gz/homeassistant-0.111.4/homeassistant/components/adguard/translations/sl.json",
-    "archive_path": "homeassistant-0.111.4/homeassistant/components/adguard/translations/sl.json",
-    "size": 1461,
-    "hash": "E\\xF0\\xF2\\xA2\\xD0\\xD4\\xB1b\\x80\\xE2\\x8D\\xE6a\\xED\\x84\\xAFI\\xE4\\xCA\\x8C",
+    "project_name": "mkdocs-material",
+    "project_version": "8.5.6",
+    "project_release": "mkdocs_material-8.5.6.tar.gz",
+    "uploaded_on": "2022-10-02 14:48:19.231",
+    "path": "packages/mkdocs-material/mkdocs_material-8.5.6.tar.gz/mkdocs_material-8.5.6/material/.icons/octicons/link-external-16.svg",
+    "archive_path": "mkdocs_material-8.5.6/material/.icons/octicons/link-external-16.svg",
+    "size": 468,
+    "hash": "\\x8D#i\\xBCi\\x80bg\\x86y\\xAC\\x1B\\xB23\\x83\\xBCSiC\\xB5",
     "skip_reason": "",
-    "lines": 30,
-    "repository": 71
+    "lines": 1,
+    "repository": 170
   },
   {
-    "project_name": "griddly",
-    "project_version": "0.1.2",
-    "project_release": "griddly-0.1.2-cp38-cp38-manylinux2014_x86_64.whl",
-    "uploaded_on": "2020-09-28 09:20:39.228",
-    "path": "packages/griddly/griddly-0.1.2-cp38-cp38-manylinux2014_x86_64.whl/griddly/resources/images/gvgai/newset/piranha1.png",
-    "archive_path": "griddly/resources/images/gvgai/newset/piranha1.png",
-    "size": 3618,
-    "hash": "\\x0B\\xD4\\x11\\xF4,\\xCC\\xF9S\\x86\\xFA\\xAB\\xA7\\xD7E\\xF8^\\x94U\\xE8\\xA7",
-    "skip_reason": "binary",
+    "project_name": "django-dashboards-app",
+    "project_version": "1.0.0",
+    "project_release": "django-dashboards-app-1.0.0.tar.gz",
+    "uploaded_on": "2022-11-07 18:46:34.345",
+    "path": "packages/django-dashboards-app/django-dashboards-app-1.0.0.tar.gz/django-dashboards-app-1.0.0/migrations/__init__.py",
+    "archive_path": "django-dashboards-app-1.0.0/migrations/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 80
+    "repository": 175
   }
 ]
