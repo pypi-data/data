@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "mkdocs-material",
-    "project_version": "8.5.6",
-    "project_release": "mkdocs_material-8.5.6.tar.gz",
-    "uploaded_on": "2022-10-02 14:48:19.231",
-    "path": "packages/mkdocs-material/mkdocs_material-8.5.6.tar.gz/mkdocs_material-8.5.6/material/.icons/octicons/link-external-16.svg",
-    "archive_path": "mkdocs_material-8.5.6/material/.icons/octicons/link-external-16.svg",
-    "size": 468,
-    "hash": "\\x8D#i\\xBCi\\x80bg\\x86y\\xAC\\x1B\\xB23\\x83\\xBCSiC\\xB5",
+    "project_name": "python3-indy",
+    "project_version": "1.16.0-dev-1642",
+    "project_release": "python3-indy-1.16.0-dev-1642.tar.gz",
+    "uploaded_on": "2022-01-31 23:48:43.98",
+    "path": "packages/python3-indy/python3-indy-1.16.0-dev-1642.tar.gz/python3-indy-1.16.0-dev-1642/indy/cache.py",
+    "archive_path": "python3-indy-1.16.0-dev-1642/indy/cache.py",
+    "size": 7593,
+    "hash": "\\xB8[\\xE11\\x13y\\xFA\\xDF_\\x1F\\xDC\\xAC\\xB1\\xAC\\xEBQ\\xD9\\xB0w\\xC4",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 170
+    "lines": 197,
+    "repository": 136
   },
   {
-    "project_name": "django-dashboards-app",
-    "project_version": "1.0.0",
-    "project_release": "django-dashboards-app-1.0.0.tar.gz",
-    "uploaded_on": "2022-11-07 18:46:34.345",
-    "path": "packages/django-dashboards-app/django-dashboards-app-1.0.0.tar.gz/django-dashboards-app-1.0.0/migrations/__init__.py",
-    "archive_path": "django-dashboards-app-1.0.0/migrations/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "griddly",
+    "project_version": "1.2.13",
+    "project_release": "griddly-1.2.13-cp38-cp38-macosx_10_15_x86_64.whl",
+    "uploaded_on": "2021-11-15 14:46:33.934",
+    "path": "packages/griddly/griddly-1.2.13-cp38-cp38-macosx_10_15_x86_64.whl/griddly/resources/images/gvgai/oryx/dirtWall_15.png",
+    "archive_path": "griddly/resources/images/gvgai/oryx/dirtWall_15.png",
+    "size": 1190,
+    "hash": "Sh\\xCF\\x86\\xAB\\x96\\xF7\\xBAu\\x9E\\x1C\\xEAoP\\x07\\x99>ZyT",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 175
+    "repository": 127
   }
 ]
