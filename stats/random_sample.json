@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "python3-indy",
-    "project_version": "1.16.0-dev-1642",
-    "project_release": "python3-indy-1.16.0-dev-1642.tar.gz",
-    "uploaded_on": "2022-01-31 23:48:43.98",
-    "path": "packages/python3-indy/python3-indy-1.16.0-dev-1642.tar.gz/python3-indy-1.16.0-dev-1642/indy/cache.py",
-    "archive_path": "python3-indy-1.16.0-dev-1642/indy/cache.py",
-    "size": 7593,
-    "hash": "\\xB8[\\xE11\\x13y\\xFA\\xDF_\\x1F\\xDC\\xAC\\xB1\\xAC\\xEBQ\\xD9\\xB0w\\xC4",
+    "project_name": "botocore",
+    "project_version": "1.24.46",
+    "project_release": "botocore-1.24.46-py3-none-any.whl",
+    "uploaded_on": "2022-04-22 19:06:03.139",
+    "path": "packages/botocore/botocore-1.24.46-py3-none-any.whl/botocore/data/ecs/2014-11-13/waiters-2.json",
+    "archive_path": "botocore/data/ecs/2014-11-13/waiters-2.json",
+    "size": 2246,
+    "hash": "\\x8A\\x0B\\x19\\xD8\\xE3{\\x9DA-\\x92\\xADrS\\x00\\x1D\\x0F\\xB1\\x81\\x17\\xF2",
     "skip_reason": "",
-    "lines": 197,
-    "repository": 136
+    "lines": 93,
+    "repository": 147
   },
   {
-    "project_name": "griddly",
-    "project_version": "1.2.13",
-    "project_release": "griddly-1.2.13-cp38-cp38-macosx_10_15_x86_64.whl",
-    "uploaded_on": "2021-11-15 14:46:33.934",
-    "path": "packages/griddly/griddly-1.2.13-cp38-cp38-macosx_10_15_x86_64.whl/griddly/resources/images/gvgai/oryx/dirtWall_15.png",
-    "archive_path": "griddly/resources/images/gvgai/oryx/dirtWall_15.png",
-    "size": 1190,
-    "hash": "Sh\\xCF\\x86\\xAB\\x96\\xF7\\xBAu\\x9E\\x1C\\xEAoP\\x07\\x99>ZyT",
+    "project_name": "tf-nightly-gpu",
+    "project_version": "2.9.0.dev20220316",
+    "project_release": "tf_nightly_gpu-2.9.0.dev20220316-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
+    "uploaded_on": "2022-03-16 08:34:23.34",
+    "path": "packages/tf-nightly-gpu/tf_nightly_gpu-2.9.0.dev20220316-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl/tensorflow/lite/experimental/microfrontend/python/ops/_audio_microfrontend_op.so",
+    "archive_path": "tensorflow/lite/experimental/microfrontend/python/ops/_audio_microfrontend_op.so",
+    "size": 954744,
+    "hash": "\\xD0\\xE8T\\xAFl\\xEB\\xE2\\xD5\\x80\\x1FG\\xA2\\x83\\x8C\\xC4{\\xCCx\\xB0\\xA4",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 127
+    "repository": 142
   }
 ]
