@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "ytdl-sub",
-    "project_version": "2023.3.17.post1",
-    "project_release": "ytdl_sub-2023.3.17.post1-py3-none-any.whl",
-    "uploaded_on": "2023-03-17 06:48:53.033",
-    "path": "packages/ytdl-sub/ytdl_sub-2023.3.17.post1-py3-none-any.whl/ytdl_sub/entries/variables/entry_variables.py",
-    "archive_path": "ytdl_sub/entries/variables/entry_variables.py",
-    "size": 18275,
-    "hash": "\\x91v\\x22E\\x950\\xB5\\xD0l\\xF2\\xFC\\xE7\\x08\\xEA\\x9DEA\\x07[2",
+    "project_name": "tensorflow-aarch64",
+    "project_version": "2.12.0rc0",
+    "project_release": "tensorflow_aarch64-2.12.0rc0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "uploaded_on": "2023-02-17 10:13:17.978",
+    "path": "packages/tensorflow-aarch64/tensorflow_aarch64-2.12.0rc0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/tensorflow/core/framework/attr_value_pb2.py",
+    "archive_path": "tensorflow/core/framework/attr_value_pb2.py",
+    "size": 4045,
+    "hash": "eC\\x8Ay\\x27\\xE3\\x0Dm\\xC4\\xD9\\xA2\\xBC\\xD8\\x05[\\xDA\\x1D\\x1C\\xE1t",
     "skip_reason": "",
-    "lines": 638,
-    "repository": 197
+    "lines": 45,
+    "repository": 192
   },
   {
-    "project_name": "pantsbuild.pants",
-    "project_version": "2.14.2rc0",
-    "project_release": "pantsbuild.pants-2.14.2rc0-cp39-cp39-manylinux2014_x86_64.whl",
-    "uploaded_on": "2023-03-25 03:52:21.252",
-    "path": "packages/pantsbuild.pants/pantsbuild.pants-2.14.2rc0-cp39-cp39-manylinux2014_x86_64.whl/pants/backend/codegen/thrift/scrooge/scala/__init__.py",
-    "archive_path": "pants/backend/codegen/thrift/scrooge/scala/__init__.py",
+    "project_name": "tf-nightly-cpu",
+    "project_version": "2.12.0.dev20230120",
+    "project_release": "tf_nightly_cpu-2.12.0.dev20230120-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2023-01-20 11:11:17.245",
+    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.12.0.dev20230120-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/compiler/xla/__init__.py",
+    "archive_path": "tensorflow/compiler/xla/__init__.py",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 199
+    "repository": 187
   }
 ]
