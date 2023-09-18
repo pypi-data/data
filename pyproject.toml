@@ -24,7 +24,7 @@ psutil = "^5.9.5"
 pypi-data = "pypi_data.cli:app"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.7.0"
+black = "^23.9.1"
 
 [build-system]
 requires = ["poetry-core"]
