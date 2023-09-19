@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "cirq-core",
-    "project_version": "1.1.0.dev20220902212056",
-    "project_release": "cirq_core-1.1.0.dev20220902212056-py3-none-any.whl",
-    "uploaded_on": "2022-09-02 21:21:04.202",
-    "path": "packages/cirq-core/cirq_core-1.1.0.dev20220902212056-py3-none-any.whl/cirq/interop/quirk/__init__.py",
-    "archive_path": "cirq/interop/quirk/__init__.py",
-    "size": 1092,
-    "hash": "\\xA2?qw$L\\xB4T\\x5C\\xBD\\x8A$\\x0A\\xA9\\xA5\\x85\\x91K\\xE5\\xBF",
+    "project_name": "dgl-cu101",
+    "project_version": "0.6.0",
+    "project_release": "dgl_cu101-0.6.0-cp38-cp38-win_amd64.whl",
+    "uploaded_on": "2021-02-26 00:04:06.03",
+    "path": "packages/dgl-cu101/dgl_cu101-0.6.0-cp38-cp38-win_amd64.whl/dgl_cu101-0.6.0.data/purelib/dgl/_deprecate/runtime/scheduler.py",
+    "archive_path": "dgl_cu101-0.6.0.data/purelib/dgl/_deprecate/runtime/scheduler.py",
+    "size": 41534,
+    "hash": "\\x92\\x81\\x84\\x10u]\\xC0\\xBAD\\x93\\xA4\\xC5\\xCF\\xB7\\x9E\\xA4\\xD5<N#",
     "skip_reason": "",
-    "lines": 28,
-    "repository": 166
+    "lines": 1052,
+    "repository": 96
   },
   {
-    "project_name": "tf-nightly-intel",
-    "project_version": "2.12.0.dev20221101",
-    "project_release": "tf_nightly_intel-2.12.0.dev20221101-cp37-cp37m-win_amd64.whl",
-    "uploaded_on": "2022-11-01 15:27:27.937",
-    "path": "packages/tf-nightly-intel/tf_nightly_intel-2.12.0.dev20221101-cp37-cp37m-win_amd64.whl/tensorflow/lite/experimental/microfrontend/python/__init__.py",
-    "archive_path": "tensorflow/lite/experimental/microfrontend/python/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "WizardVsWorld",
+    "project_version": "1.0.0",
+    "project_release": "WizardVsWorld-1.0.0.tar.gz",
+    "uploaded_on": "2020-11-30 21:45:45.353",
+    "path": "packages/WizardVsWorld/WizardVsWorld-1.0.0.tar.gz/WizardVsWorld-1.0.0/WizardVsWorld/assets/dirtORANGE.png",
+    "archive_path": "WizardVsWorld-1.0.0/WizardVsWorld/assets/dirtORANGE.png",
+    "size": 18966,
+    "hash": "\\x1A\\x96\\xB9\\xBE$\\x10\\xEE\\xB01\\xF7@E0\\x9C\\x12\\xB2\\x06L\\x10\\xD9",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 174
+    "repository": 87
   }
 ]
