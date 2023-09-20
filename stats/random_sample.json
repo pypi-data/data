@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "dgl-cu101",
-    "project_version": "0.6.0",
-    "project_release": "dgl_cu101-0.6.0-cp38-cp38-win_amd64.whl",
-    "uploaded_on": "2021-02-26 00:04:06.03",
-    "path": "packages/dgl-cu101/dgl_cu101-0.6.0-cp38-cp38-win_amd64.whl/dgl_cu101-0.6.0.data/purelib/dgl/_deprecate/runtime/scheduler.py",
-    "archive_path": "dgl_cu101-0.6.0.data/purelib/dgl/_deprecate/runtime/scheduler.py",
-    "size": 41534,
-    "hash": "\\x92\\x81\\x84\\x10u]\\xC0\\xBAD\\x93\\xA4\\xC5\\xCF\\xB7\\x9E\\xA4\\xD5<N#",
+    "project_name": "tagmaps",
+    "project_version": "0.22.5",
+    "project_release": "tagmaps-0.22.5-py3-none-any.whl",
+    "uploaded_on": "2023-08-04 06:58:00.945",
+    "path": "packages/tagmaps/tagmaps-0.22.5-py3-none-any.whl/tagmaps/classes/cluster.py",
+    "archive_path": "tagmaps/classes/cluster.py",
+    "size": 41054,
+    "hash": "\\xA1\\xA0}7\\xB7\\x8E\\xE6\\x90y\\xF1\\xEB@\\xA1Zi\\xE3\\xBC\\x12f\\x09",
     "skip_reason": "",
-    "lines": 1052,
-    "repository": 96
+    "lines": 1047,
+    "repository": 223
   },
   {
-    "project_name": "WizardVsWorld",
-    "project_version": "1.0.0",
-    "project_release": "WizardVsWorld-1.0.0.tar.gz",
-    "uploaded_on": "2020-11-30 21:45:45.353",
-    "path": "packages/WizardVsWorld/WizardVsWorld-1.0.0.tar.gz/WizardVsWorld-1.0.0/WizardVsWorld/assets/dirtORANGE.png",
-    "archive_path": "WizardVsWorld-1.0.0/WizardVsWorld/assets/dirtORANGE.png",
-    "size": 18966,
-    "hash": "\\x1A\\x96\\xB9\\xBE$\\x10\\xEE\\xB01\\xF7@E0\\x9C\\x12\\xB2\\x06L\\x10\\xD9",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 87
+    "project_name": "lensfunpy",
+    "project_version": "1.13.1",
+    "project_release": "lensfunpy-1.13.1-cp311-cp311-win_amd64.whl",
+    "uploaded_on": "2023-08-08 13:25:17.729",
+    "path": "packages/lensfunpy/lensfunpy-1.13.1-cp311-cp311-win_amd64.whl/lensfunpy/db_files/mil-panasonic.xml",
+    "archive_path": "lensfunpy/db_files/mil-panasonic.xml",
+    "size": 210658,
+    "hash": "\\xEA\\x98\\x8Aw\\xFFlt3\\xE9W\\x15\\x95t\\x13\\xDC\\x19\\xFA2\\xDA\\x15",
+    "skip_reason": "too-large",
+    "lines": 2329,
+    "repository": 223
   }
 ]
