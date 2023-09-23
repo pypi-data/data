@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "django-bt5-modulo",
-    "project_version": "0.1",
-    "project_release": "django_bt5_modulo-0.1-py3-none-any.whl",
-    "uploaded_on": "2023-09-19 14:37:11.73",
-    "path": "packages/django-bt5-modulo/django_bt5_modulo-0.1-py3-none-any.whl/modulo/static/modulo/plugins/bootstrap/bootstrap-icons/icons/cloud-rain-fill.svg",
-    "archive_path": "modulo/static/modulo/plugins/bootstrap/bootstrap-icons/icons/cloud-rain-fill.svg",
-    "size": 569,
-    "hash": "\\x1C 6\\xD5\\xDD\\xF1Q\\xC1\\xE0\\x0F:]\\xFF?(\\x1B\\xAA\\x19\\xD4B",
-    "skip_reason": "",
-    "lines": 3,
-    "repository": 231
+    "project_name": "tf-nightly-cpu",
+    "project_version": "2.10.0.dev20220407",
+    "project_release": "tf_nightly_cpu-2.10.0.dev20220407-cp37-cp37m-macosx_10_14_x86_64.whl",
+    "uploaded_on": "2022-04-07 10:42:27.257",
+    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.10.0.dev20220407-cp37-cp37m-macosx_10_14_x86_64.whl/tensorflow/python/keras/optimizer_v2/__init__.py",
+    "archive_path": "tensorflow/python/keras/optimizer_v2/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
+    "lines": 0,
+    "repository": 145
   },
   {
-    "project_name": "OpenVisusNoGui",
-    "project_version": "2.2.114",
-    "project_release": "OpenVisusNoGui-2.2.114-cp38-none-manylinux2010_x86_64.whl",
-    "uploaded_on": "2023-09-07 12:20:19.835",
-    "path": "packages/OpenVisusNoGui/OpenVisusNoGui-2.2.114-cp38-none-manylinux2010_x86_64.whl/OpenVisus/datasets/midx/tif/pressure/D_time_04.tif",
-    "archive_path": "OpenVisus/datasets/midx/tif/pressure/D_time_04.tif",
-    "size": 32056,
-    "hash": "\\xE8\\x03\\xD1\\xECxS\\x9AAE\\x97o\\xC5\\x13K\\xA3\\xDDq[\\xDE\\xFE",
+    "project_name": "mercurial",
+    "project_version": "6.1rc0",
+    "project_release": "mercurial-6.1rc0-cp39-cp39-win32.whl",
+    "uploaded_on": "2022-02-27 22:04:44.969",
+    "path": "packages/mercurial/mercurial-6.1rc0-cp39-cp39-win32.whl/mercurial/templates/static/hgicon.png",
+    "archive_path": "mercurial/templates/static/hgicon.png",
+    "size": 792,
+    "hash": "`\\xEF\\xFB\\xC5\\xE6\\x13\\xD8\\xC8\\xA6\\xF1A\\x88S\\xDE\\xD6\\xAANY\\x96q",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 229
+    "repository": 140
   }
 ]
