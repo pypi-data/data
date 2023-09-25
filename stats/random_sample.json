@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "wavespectra",
-    "project_version": "3.10.0",
-    "project_release": "wavespectra-3.10.0.tar.gz",
-    "uploaded_on": "2021-08-09 05:18:50.964",
-    "path": "packages/wavespectra/wavespectra-3.10.0.tar.gz/wavespectra-3.10.0/tests/io/test_funwave.py",
-    "archive_path": "wavespectra-3.10.0/tests/io/test_funwave.py",
-    "size": 3272,
-    "hash": "\\xA5\\xA2\\xA5:P8\\xCA5\\xF1\\xB7Ky\\xEA\\x190\\x1B\\xD3\\xC4\\x88K",
+    "project_name": "assetic",
+    "project_version": "2022.17.1.0",
+    "project_release": "assetic-2022.17.1.0-py2.py3-none-any.whl",
+    "uploaded_on": "2022-08-26 04:43:31.095",
+    "path": "packages/assetic/assetic-2022.17.1.0-py2.py3-none-any.whl/assetic/models/assetic3_integration_representations_maintenance_work_order.py",
+    "archive_path": "assetic/models/assetic3_integration_representations_maintenance_work_order.py",
+    "size": 567,
+    "hash": "2]\\xE2\\xD3\\xA8\\xD6\\xB6\\xF0w\\x06\\x10;\\xDB\\x85\\xB5\\xBESh\\xC62",
     "skip_reason": "",
-    "lines": 98,
-    "repository": 115
+    "lines": 12,
+    "repository": 164
   },
   {
-    "project_name": "cloudcomponents.cdk-pull-request-approval-rule",
-    "project_version": "1.38.0",
-    "project_release": "cloudcomponents.cdk_pull_request_approval_rule-1.38.0-py3-none-any.whl",
-    "uploaded_on": "2021-07-22 09:40:58.054",
-    "path": "packages/cloudcomponents.cdk-pull-request-approval-rule/cloudcomponents.cdk_pull_request_approval_rule-1.38.0-py3-none-any.whl/cloudcomponents/cdk_pull_request_approval_rule/_jsii/cdk-pull-request-approval-rule@1.38.0.jsii.tgz",
-    "archive_path": "cloudcomponents/cdk_pull_request_approval_rule/_jsii/cdk-pull-request-approval-rule@1.38.0.jsii.tgz",
-    "size": 38541,
-    "hash": "\\xDF=\\xFB\\xBB\\x0Bob/\\xCF\\xFF\\xE2j\\x88M\\xDFZIzJ\\xD4",
-    "skip_reason": "binary",
+    "project_name": "ddtrace",
+    "project_version": "1.2.0rc3",
+    "project_release": "ddtrace-1.2.0rc3-cp37-cp37m-musllinux_1_1_x86_64.whl",
+    "uploaded_on": "2022-06-16 16:41:18.724",
+    "path": "packages/ddtrace/ddtrace-1.2.0rc3-cp37-cp37m-musllinux_1_1_x86_64.whl/ddtrace/appsec/__init__.py",
+    "archive_path": "ddtrace/appsec/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 113
+    "repository": 155
   }
 ]
