@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "assetic",
-    "project_version": "2022.17.1.0",
-    "project_release": "assetic-2022.17.1.0-py2.py3-none-any.whl",
-    "uploaded_on": "2022-08-26 04:43:31.095",
-    "path": "packages/assetic/assetic-2022.17.1.0-py2.py3-none-any.whl/assetic/models/assetic3_integration_representations_maintenance_work_order.py",
-    "archive_path": "assetic/models/assetic3_integration_representations_maintenance_work_order.py",
-    "size": 567,
-    "hash": "2]\\xE2\\xD3\\xA8\\xD6\\xB6\\xF0w\\x06\\x10;\\xDB\\x85\\xB5\\xBESh\\xC62",
+    "project_name": "tensorflow-aarch64",
+    "project_version": "2.7.2",
+    "project_release": "tensorflow_aarch64-2.7.2-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "uploaded_on": "2022-06-08 14:05:39.232",
+    "path": "packages/tensorflow-aarch64/tensorflow_aarch64-2.7.2-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/tensorflow/_api/v2/experimental/dlpack/__init__.py",
+    "archive_path": "tensorflow/_api/v2/experimental/dlpack/__init__.py",
+    "size": 396,
+    "hash": "\\x1FS\\xA1.\\xDBFH?LA\\xE7C\\xBA\\xF3g;\\x1E\\xF1\\xCB\\xD7",
     "skip_reason": "",
-    "lines": 12,
-    "repository": 164
+    "lines": 13,
+    "repository": 154
   },
   {
-    "project_name": "ddtrace",
-    "project_version": "1.2.0rc3",
-    "project_release": "ddtrace-1.2.0rc3-cp37-cp37m-musllinux_1_1_x86_64.whl",
-    "uploaded_on": "2022-06-16 16:41:18.724",
-    "path": "packages/ddtrace/ddtrace-1.2.0rc3-cp37-cp37m-musllinux_1_1_x86_64.whl/ddtrace/appsec/__init__.py",
-    "archive_path": "ddtrace/appsec/__init__.py",
+    "project_name": "pytype",
+    "project_version": "2022.6.23",
+    "project_release": "pytype-2022.6.23-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2022-06-24 00:03:45.364",
+    "path": "packages/pytype/pytype-2022.6.23-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/pytype/typeshed/stubs/urllib3/urllib3/contrib/__init__.pyi",
+    "archive_path": "pytype/typeshed/stubs/urllib3/urllib3/contrib/__init__.pyi",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 155
+    "repository": 156
   }
 ]
