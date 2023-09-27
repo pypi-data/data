@@ -1249,12 +1249,12 @@
     "index": 232,
     "stats": {
       "earliest_package": "2023-09-23T22:15:52.170576Z",
-      "latest_package": "2023-09-25T20:22:24.542081Z",
-      "total_packages": 11679,
-      "done_packages": 10708
+      "latest_package": "2023-09-26T20:22:41.827462Z",
+      "total_packages": 20815,
+      "done_packages": 19679
     },
-    "percent_done": 91,
-    "size": 476778496,
+    "percent_done": 94,
+    "size": 921803776,
     "url": "https://github.com/pypi-data/pypi-mirror-232",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-232/tree/code/packages",
     "projects": {}
