@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-gpu",
-    "project_version": "2.10.0.dev20220502",
-    "project_release": "tf_nightly_gpu-2.10.0.dev20220502-cp310-cp310-win_amd64.whl",
-    "uploaded_on": "2022-05-02 13:20:58.979",
-    "path": "packages/tf-nightly-gpu/tf_nightly_gpu-2.10.0.dev20220502-cp310-cp310-win_amd64.whl/tensorflow/python/ops/logging_ops.py",
-    "archive_path": "tensorflow/python/ops/logging_ops.py",
-    "size": 27441,
-    "hash": "\\xFE\\x1B\\xF9\\x9DL\\xED\\xC4\\xD4\\x0A\\xA3\\x18\\x00\\xD5\\xBB\\x9A\\x90\\x86\\xFD&H",
+    "project_name": "lusid-sdk-preview",
+    "project_version": "0.11.3047",
+    "project_release": "lusid-sdk-preview-0.11.3047.tar.gz",
+    "uploaded_on": "2021-05-20 20:14:27.52",
+    "path": "packages/lusid-sdk-preview/lusid-sdk-preview-0.11.3047.tar.gz/lusid-sdk-preview-0.11.3047/lusid/models/resource_list_of_property_interval.py",
+    "archive_path": "lusid-sdk-preview-0.11.3047/lusid/models/resource_list_of_property_interval.py",
+    "size": 6593,
+    "hash": "\\x9A2\\x0D\\xC0I\\xB4\\x1A]r\\xC6\\xFD\\x22 6\\x1C\\xF9\\x12*=\\xE9",
     "skip_reason": "",
-    "lines": 698,
-    "repository": 149
+    "lines": 237,
+    "repository": 106
   },
   {
-    "project_name": "tf-nightly-cpu",
-    "project_version": "2.9.0.dev20220225",
-    "project_release": "tf_nightly_cpu-2.9.0.dev20220225-cp38-cp38-win_amd64.whl",
-    "uploaded_on": "2022-02-25 14:18:57.962",
-    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.9.0.dev20220225-cp38-cp38-win_amd64.whl/tensorflow/python/client/_pywrap_device_lib.pyd",
-    "archive_path": "tensorflow/python/client/_pywrap_device_lib.pyd",
-    "size": 3347968,
-    "hash": "\\x274qd>\\xA5\\xCC/\\x13\\xC1\\xB8\\xA4ka\\xE4a\\xD4\\x00\\x9Eh",
+    "project_name": "django-countries",
+    "project_version": "7.2",
+    "project_release": "django_countries-7.2-py3-none-any.whl",
+    "uploaded_on": "2021-05-09 23:57:58.185",
+    "path": "packages/django-countries/django_countries-7.2-py3-none-any.whl/django_countries/locale/fr/LC_MESSAGES/django.mo",
+    "archive_path": "django_countries/locale/fr/LC_MESSAGES/django.mo",
+    "size": 13137,
+    "hash": "`\\x96;yp\\xD3\\xD2d\\xA3\\xAA\\x83\\xAB\\x8B\\x9A\\xC1\\xE6\\xAE\\xF2V\\xEA",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 140
+    "repository": 105
   }
 ]
