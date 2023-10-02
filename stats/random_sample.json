@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "lusid-sdk-preview",
-    "project_version": "0.11.3047",
-    "project_release": "lusid-sdk-preview-0.11.3047.tar.gz",
-    "uploaded_on": "2021-05-20 20:14:27.52",
-    "path": "packages/lusid-sdk-preview/lusid-sdk-preview-0.11.3047.tar.gz/lusid-sdk-preview-0.11.3047/lusid/models/resource_list_of_property_interval.py",
-    "archive_path": "lusid-sdk-preview-0.11.3047/lusid/models/resource_list_of_property_interval.py",
-    "size": 6593,
-    "hash": "\\x9A2\\x0D\\xC0I\\xB4\\x1A]r\\xC6\\xFD\\x22 6\\x1C\\xF9\\x12*=\\xE9",
+    "project_name": "scancode-toolkit-mini",
+    "project_version": "21.3.31",
+    "project_release": "scancode_toolkit_mini-21.3.31-py3-none-any.whl",
+    "uploaded_on": "2021-04-01 15:27:43.302",
+    "path": "packages/scancode-toolkit-mini/scancode_toolkit_mini-21.3.31-py3-none-any.whl/licensedcode/data/rules/mit_nuget_url_1.RULE",
+    "archive_path": "licensedcode/data/rules/mit_nuget_url_1.RULE",
+    "size": 63,
+    "hash": "r\\xC2\\xC3\\x0Fj-\\x05i\\xB5\\x5CR\\x0F&\\x85\\x18\\x17\\xE0\\x8E\\x1Aj",
     "skip_reason": "",
-    "lines": 237,
-    "repository": 106
+    "lines": 1,
+    "repository": 100
   },
   {
-    "project_name": "django-countries",
-    "project_version": "7.2",
-    "project_release": "django_countries-7.2-py3-none-any.whl",
-    "uploaded_on": "2021-05-09 23:57:58.185",
-    "path": "packages/django-countries/django_countries-7.2-py3-none-any.whl/django_countries/locale/fr/LC_MESSAGES/django.mo",
-    "archive_path": "django_countries/locale/fr/LC_MESSAGES/django.mo",
-    "size": 13137,
-    "hash": "`\\x96;yp\\xD3\\xD2d\\xA3\\xAA\\x83\\xAB\\x8B\\x9A\\xC1\\xE6\\xAE\\xF2V\\xEA",
+    "project_name": "scarletcms",
+    "project_version": "3.1.0b7",
+    "project_release": "scarletcms-3.1.0b7.tar.gz",
+    "uploaded_on": "2020-11-19 17:10:38.374",
+    "path": "packages/scarletcms/scarletcms-3.1.0b7.tar.gz/scarletcms-3.1.0b7/tests/env/lib/python3.7/site-packages/django/contrib/admindocs/locale/ru/LC_MESSAGES/django.mo",
+    "archive_path": "scarletcms-3.1.0b7/tests/env/lib/python3.7/site-packages/django/contrib/admindocs/locale/ru/LC_MESSAGES/django.mo",
+    "size": 8569,
+    "hash": "\\xB38\\xB8C#\\xA0\\xDA)\\x10)\\xD90\\x99WL\\x03\\xC6\\x80\\xD7\\xB8",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 105
+    "repository": 86
   }
 ]
