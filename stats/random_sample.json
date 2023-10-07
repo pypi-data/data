@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "deepchem",
-    "project_version": "2.6.1.dev20220731183342",
-    "project_release": "deepchem-2.6.1.dev20220731183342.tar.gz",
-    "uploaded_on": "2022-07-31 18:33:46.802",
-    "path": "packages/deepchem/deepchem-2.6.1.dev20220731183342.tar.gz/deepchem-2.6.1.dev20220731183342/deepchem/molnet/load_function/factors_datasets.py",
-    "archive_path": "deepchem-2.6.1.dev20220731183342/deepchem/molnet/load_function/factors_datasets.py",
-    "size": 6580,
-    "hash": "\\x83P\\xD0\\x9E\\x84\\xAA\\xF9\\x81\\x8F\\xB4\\x16\\xAD\\x16\\xCA<\\xA4\\xDA\\xA2\\xBD9",
+    "project_name": "homeassistant",
+    "project_version": "2023.10.0b2",
+    "project_release": "homeassistant-2023.10.0b2-py3-none-any.whl",
+    "uploaded_on": "2023-09-29 00:45:32.043",
+    "path": "packages/homeassistant/homeassistant-2023.10.0b2-py3-none-any.whl/homeassistant/components/nx584/translations/tr.json",
+    "archive_path": "homeassistant/components/nx584/translations/tr.json",
+    "size": 757,
+    "hash": "\\xA3FL\\x9C\\xA7\\xCF\\xF6\\xB3\\xB4\\x0AO\\x9A\\x7F\\x85P\\xF0l\\xFF\\x96\\xB7",
     "skip_reason": "",
-    "lines": 189,
-    "repository": 161
+    "lines": 24,
+    "repository": 232
   },
   {
-    "project_name": "ctranslate2",
-    "project_version": "2.21.1",
-    "project_release": "ctranslate2-2.21.1-cp310-cp310-macosx_11_0_arm64.whl",
-    "uploaded_on": "2022-07-29 17:49:04.115",
-    "path": "packages/ctranslate2/ctranslate2-2.21.1-cp310-cp310-macosx_11_0_arm64.whl/ctranslate2/.dylibs/libctranslate2.dylib",
-    "archive_path": "ctranslate2/.dylibs/libctranslate2.dylib",
-    "size": 1240304,
-    "hash": "\\xF6\\xE3\\xDD\\xF3\\xF4M[u82\\xD6`\\xAF/I\\x11\\xDAT\\xBE ",
+    "project_name": "sherpa-onnx",
+    "project_version": "1.7.8",
+    "project_release": "sherpa_onnx-1.7.8-cp311-cp311-macosx_10_14_universal2.whl",
+    "uploaded_on": "2023-08-16 14:47:21.578",
+    "path": "packages/sherpa-onnx/sherpa_onnx-1.7.8-cp311-cp311-macosx_10_14_universal2.whl/sherpa_onnx-1.7.8.data/data/bin/sherpa-onnx-online-websocket-server",
+    "archive_path": "sherpa_onnx-1.7.8.data/data/bin/sherpa-onnx-online-websocket-server",
+    "size": 1291104,
+    "hash": "3\\xFC73\\xA0\\xD9T\\xD4\\xEEl\\xC8j}S\\x5C\\x94\\x05h\\xDA\\x11",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 161
+    "repository": 225
   }
 ]
