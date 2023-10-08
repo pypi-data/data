@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "homeassistant",
-    "project_version": "2023.10.0b2",
-    "project_release": "homeassistant-2023.10.0b2-py3-none-any.whl",
-    "uploaded_on": "2023-09-29 00:45:32.043",
-    "path": "packages/homeassistant/homeassistant-2023.10.0b2-py3-none-any.whl/homeassistant/components/nx584/translations/tr.json",
-    "archive_path": "homeassistant/components/nx584/translations/tr.json",
-    "size": 757,
-    "hash": "\\xA3FL\\x9C\\xA7\\xCF\\xF6\\xB3\\xB4\\x0AO\\x9A\\x7F\\x85P\\xF0l\\xFF\\x96\\xB7",
+    "project_name": "django-comments-xtd",
+    "project_version": "2.5.0",
+    "project_release": "django-comments-xtd-2.5.0.tar.gz",
+    "uploaded_on": "2020-04-22 19:31:02.619",
+    "path": "packages/django-comments-xtd/django-comments-xtd-2.5.0.tar.gz/django-comments-xtd-2.5.0/docs/settings.rst",
+    "archive_path": "django-comments-xtd-2.5.0/docs/settings.rst",
+    "size": 8402,
+    "hash": "\\xED\\xD0\\x1C\\x168\\x82k\\xB4\\xD8\\xD0&\\xDA\\xEB\\xDD\\xB0&\\x1Axss",
     "skip_reason": "",
-    "lines": 24,
-    "repository": 232
+    "lines": 251,
+    "repository": 66
   },
   {
-    "project_name": "sherpa-onnx",
-    "project_version": "1.7.8",
-    "project_release": "sherpa_onnx-1.7.8-cp311-cp311-macosx_10_14_universal2.whl",
-    "uploaded_on": "2023-08-16 14:47:21.578",
-    "path": "packages/sherpa-onnx/sherpa_onnx-1.7.8-cp311-cp311-macosx_10_14_universal2.whl/sherpa_onnx-1.7.8.data/data/bin/sherpa-onnx-online-websocket-server",
-    "archive_path": "sherpa_onnx-1.7.8.data/data/bin/sherpa-onnx-online-websocket-server",
-    "size": 1291104,
-    "hash": "3\\xFC73\\xA0\\xD9T\\xD4\\xEEl\\xC8j}S\\x5C\\x94\\x05h\\xDA\\x11",
+    "project_name": "lixi",
+    "project_version": "0.1.24",
+    "project_release": "lixi-0.1.24-py3-none-any.whl",
+    "uploaded_on": "2020-06-16 06:21:50.101",
+    "path": "packages/lixi/lixi-0.1.24-py3-none-any.whl/lixi/xslts/LIXI-CDA-2_0_10-LIXI-CDA-2_0_9.zip",
+    "archive_path": "lixi/xslts/LIXI-CDA-2_0_10-LIXI-CDA-2_0_9.zip",
+    "size": 639,
+    "hash": "\\xF9Kg\\xB8\\xE2`\\x81\\xE0\\x9E{l\\xCF\\x08\\x1E\\xE3\\x86\\x0A\\xF2\\xFC\\x82",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 225
+    "repository": 71
   }
 ]
