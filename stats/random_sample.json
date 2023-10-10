@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "windmill-api",
-    "project_version": "1.164.0",
-    "project_release": "windmill_api-1.164.0-py3-none-any.whl",
-    "uploaded_on": "2023-08-31 10:33:06.94",
-    "path": "packages/windmill-api/windmill_api-1.164.0-py3-none-any.whl/windmill_api/models/flow_module_value_2_type_5_branches_item_modules_item_retry_exponential.py",
-    "archive_path": "windmill_api/models/flow_module_value_2_type_5_branches_item_modules_item_retry_exponential.py",
-    "size": 2305,
-    "hash": "2\\x08\\xC12aKv8\\xAE\\xE7/)B\\xCA\\xA4p\\x95]\\x97\\xA3",
+    "project_name": "django-avishan",
+    "project_version": "0.2.43",
+    "project_release": "django-avishan-0.2.43.tar.gz",
+    "uploaded_on": "2020-06-11 13:45:47.905",
+    "path": "packages/django-avishan/django-avishan-0.2.43.tar.gz/django-avishan-0.2.43/avishan/static/node_modules/schema-utils/LICENSE",
+    "archive_path": "django-avishan-0.2.43/avishan/static/node_modules/schema-utils/LICENSE",
+    "size": 1071,
+    "hash": "\\x8C\\x11\\xFCr\\x89\\xB7Tc\\xFE\\x07SO\\xCC\\x82$\\xE33\\xFE\\xB7\\xFF",
     "skip_reason": "",
-    "lines": 73,
-    "repository": 228
+    "lines": 20,
+    "repository": 71
   },
   {
-    "project_name": "pymobiledevice3",
-    "project_version": "2.3.0",
-    "project_release": "pymobiledevice3-2.3.0.tar.gz",
-    "uploaded_on": "2023-08-10 11:45:20.571",
-    "path": "packages/pymobiledevice3/pymobiledevice3-2.3.0.tar.gz/pymobiledevice3-2.3.0/pymobiledevice3/services/__init__.py",
-    "archive_path": "pymobiledevice3-2.3.0/pymobiledevice3/services/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "DalineUnit",
+    "project_version": "0.0.6",
+    "project_release": "DalineUnit-0.0.6.tar.gz",
+    "uploaded_on": "2020-05-27 03:10:02.443",
+    "path": "packages/DalineUnit/DalineUnit-0.0.6.tar.gz/DalineUnit-0.0.6/venv/Lib/site-packages/pygments/styles/__pycache__/__init__.cpython-37.pyc",
+    "archive_path": "DalineUnit-0.0.6/venv/Lib/site-packages/pygments/styles/__pycache__/__init__.cpython-37.pyc",
+    "size": 2614,
+    "hash": "\\xC9\\xAB\\x9E\\x98\\xD2C\\xFF\\xD3\\xC6=\\xCA\\xEE\\x81sb\\xB6BK\\x13\\xA6",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 224
+    "repository": 69
   }
 ]
