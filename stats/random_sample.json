@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "django-avishan",
-    "project_version": "0.2.43",
-    "project_release": "django-avishan-0.2.43.tar.gz",
-    "uploaded_on": "2020-06-11 13:45:47.905",
-    "path": "packages/django-avishan/django-avishan-0.2.43.tar.gz/django-avishan-0.2.43/avishan/static/node_modules/schema-utils/LICENSE",
-    "archive_path": "django-avishan-0.2.43/avishan/static/node_modules/schema-utils/LICENSE",
-    "size": 1071,
-    "hash": "\\x8C\\x11\\xFCr\\x89\\xB7Tc\\xFE\\x07SO\\xCC\\x82$\\xE33\\xFE\\xB7\\xFF",
+    "project_name": "tensorflow-cpu",
+    "project_version": "2.4.1",
+    "project_release": "tensorflow_cpu-2.4.1-cp37-cp37m-manylinux2010_x86_64.whl",
+    "uploaded_on": "2021-01-21 19:44:01.064",
+    "path": "packages/tensorflow-cpu/tensorflow_cpu-2.4.1-cp37-cp37m-manylinux2010_x86_64.whl/tensorflow/include/tensorflow/compiler/xla/service/cpu/vector_support_library.h",
+    "archive_path": "tensorflow/include/tensorflow/compiler/xla/service/cpu/vector_support_library.h",
+    "size": 13378,
+    "hash": "\\xCB\\xED#(\\x97\\xF9n##\\xE0\\xAD\\x93\\xFD\\x0B\\x84\\x9B3\\xEB\\xBF$",
     "skip_reason": "",
-    "lines": 20,
-    "repository": 71
+    "lines": 343,
+    "repository": 92
   },
   {
-    "project_name": "DalineUnit",
-    "project_version": "0.0.6",
-    "project_release": "DalineUnit-0.0.6.tar.gz",
-    "uploaded_on": "2020-05-27 03:10:02.443",
-    "path": "packages/DalineUnit/DalineUnit-0.0.6.tar.gz/DalineUnit-0.0.6/venv/Lib/site-packages/pygments/styles/__pycache__/__init__.cpython-37.pyc",
-    "archive_path": "DalineUnit-0.0.6/venv/Lib/site-packages/pygments/styles/__pycache__/__init__.cpython-37.pyc",
-    "size": 2614,
-    "hash": "\\xC9\\xAB\\x9E\\x98\\xD2C\\xFF\\xD3\\xC6=\\xCA\\xEE\\x81sb\\xB6BK\\x13\\xA6",
+    "project_name": "kython",
+    "project_version": "1.2.3",
+    "project_release": "kython-1.2.3.tar.gz",
+    "uploaded_on": "2021-01-18 08:25:30.355",
+    "path": "packages/kython/kython-1.2.3.tar.gz/kython-1.2.3/venv/lib/python3.8/site-packages/_pytest/__pycache__/pytester_assertions.cpython-38.pyc",
+    "archive_path": "kython-1.2.3/venv/lib/python3.8/site-packages/_pytest/__pycache__/pytester_assertions.cpython-38.pyc",
+    "size": 1554,
+    "hash": "\\xC3\\xAAKUDy`u\\xB0\\x12\\x5C\\x5C,\\x80\\xC4\\xC9=\\x9C\\xD63",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 69
+    "repository": 91
   }
 ]
