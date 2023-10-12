@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tensorflow-cpu",
-    "project_version": "2.4.1",
-    "project_release": "tensorflow_cpu-2.4.1-cp37-cp37m-manylinux2010_x86_64.whl",
-    "uploaded_on": "2021-01-21 19:44:01.064",
-    "path": "packages/tensorflow-cpu/tensorflow_cpu-2.4.1-cp37-cp37m-manylinux2010_x86_64.whl/tensorflow/include/tensorflow/compiler/xla/service/cpu/vector_support_library.h",
-    "archive_path": "tensorflow/include/tensorflow/compiler/xla/service/cpu/vector_support_library.h",
-    "size": 13378,
-    "hash": "\\xCB\\xED#(\\x97\\xF9n##\\xE0\\xAD\\x93\\xFD\\x0B\\x84\\x9B3\\xEB\\xBF$",
+    "project_name": "tfp-nightly",
+    "project_version": "0.13.0.dev20210305",
+    "project_release": "tfp_nightly-0.13.0.dev20210305-py2.py3-none-any.whl",
+    "uploaded_on": "2021-03-05 09:43:13.51",
+    "path": "packages/tfp-nightly/tfp_nightly-0.13.0.dev20210305-py2.py3-none-any.whl/tensorflow_probability/substrates/jax/bijectors/softmax_centered.py",
+    "archive_path": "tensorflow_probability/substrates/jax/bijectors/softmax_centered.py",
+    "size": 7489,
+    "hash": "D\\xBE\\x80|\\x01B@g\\x5C\\xA5\\xCC\\x0Az0\\xD8/\\xE0\\x01\\x881",
     "skip_reason": "",
-    "lines": 343,
-    "repository": 92
+    "lines": 187,
+    "repository": 97
   },
   {
-    "project_name": "kython",
-    "project_version": "1.2.3",
-    "project_release": "kython-1.2.3.tar.gz",
-    "uploaded_on": "2021-01-18 08:25:30.355",
-    "path": "packages/kython/kython-1.2.3.tar.gz/kython-1.2.3/venv/lib/python3.8/site-packages/_pytest/__pycache__/pytester_assertions.cpython-38.pyc",
-    "archive_path": "kython-1.2.3/venv/lib/python3.8/site-packages/_pytest/__pycache__/pytester_assertions.cpython-38.pyc",
-    "size": 1554,
-    "hash": "\\xC3\\xAAKUDy`u\\xB0\\x12\\x5C\\x5C,\\x80\\xC4\\xC9=\\x9C\\xD63",
+    "project_name": "silx",
+    "project_version": "0.14.0",
+    "project_release": "silx-0.14.0-cp38-cp38-win_amd64.whl",
+    "uploaded_on": "2020-12-11 16:01:01.1",
+    "path": "packages/silx/silx-0.14.0-cp38-cp38-win_amd64.whl/silx/resources/gui/icons/math-fit.png",
+    "archive_path": "silx/resources/gui/icons/math-fit.png",
+    "size": 768,
+    "hash": "\\xC4\\xFC\\xD3\\x03\\xD5o\\xFF\\xFE\\xD2\\xB7g\\xB1XC\\xCFf\\x88.\\xDB\\x89",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 91
+    "repository": 88
   }
 ]
