@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "larvaworld",
-    "project_version": "0.0.64",
-    "project_release": "larvaworld-0.0.64.tar.gz",
-    "uploaded_on": "2023-10-04 22:27:11.809",
-    "path": "packages/larvaworld/larvaworld-0.0.64.tar.gz/larvaworld-0.0.64/src/larvaworld/lib/reg/__pycache__/generators.cpython-310.pyc",
-    "archive_path": "larvaworld-0.0.64/src/larvaworld/lib/reg/__pycache__/generators.cpython-310.pyc",
-    "size": 22184,
-    "hash": "\\xC2\\x13l\\xDD\\xBEH:\\xCB\\x09\\x0E\\x27d\\x13\\xFD\\x83\\xFA\\xF4\\xF8\\x13U",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 233
+    "project_name": "mediawiki-utilities",
+    "project_version": "0.4.16",
+    "project_release": "mediawiki-utilities-0.4.16.tar.gz",
+    "uploaded_on": "2015-08-05 01:55:46.16",
+    "path": "packages/mediawiki-utilities/mediawiki-utilities-0.4.16.tar.gz/mediawiki-utilities-0.4.16/mw/xml_dump/__init__.py",
+    "archive_path": "mediawiki-utilities-0.4.16/mw/xml_dump/__init__.py",
+    "size": 1291,
+    "hash": "k=~\\xC5\\xF1\\xEA\\xC3\\xF6P\\xA2n\\x5C\\x93P2&J},?",
+    "skip_reason": "",
+    "lines": 27,
+    "repository": 11
   },
   {
-    "project_name": "ais-dom-frontend",
-    "project_version": "20230905.0",
-    "project_release": "ais_dom_frontend-20230905.0-py3-none-any.whl",
-    "uploaded_on": "2023-09-06 07:57:30.549",
-    "path": "packages/ais-dom-frontend/ais_dom_frontend-20230905.0-py3-none-any.whl/hass_frontend/static/locale-data/intl-datetimeformat/ru.json",
-    "archive_path": "hass_frontend/static/locale-data/intl-datetimeformat/ru.json",
-    "size": 58638,
-    "hash": "7\\xADs\\xD8\\x03\\x0C\\xEBEa\\xA3_g\\xA8\\x93\\xC4dV\\x06\\xE6\\xC6",
-    "skip_reason": "text-long-lines",
-    "lines": 1,
-    "repository": 229
+    "project_name": "trytond_health_genetics",
+    "project_version": "3.0.5",
+    "project_release": "trytond_health_genetics-3.0.5.tar.gz",
+    "uploaded_on": "2016-12-12 10:47:50.691",
+    "path": "packages/trytond_health_genetics/trytond_health_genetics-3.0.5.tar.gz/trytond_health_genetics-3.0.5/locale/es_EC.po",
+    "archive_path": "trytond_health_genetics-3.0.5/locale/es_EC.po",
+    "size": 489189,
+    "hash": "\\x86\\xF0Wf\\xB2\\x90\\xEC%\\x82\\xA8\\xDE\\xC7\\x8E\\x0B\\x1E+\\x86\\x85\\x16\\x0F",
+    "skip_reason": "too-large",
+    "lines": 17863,
+    "repository": 18
   }
 ]
