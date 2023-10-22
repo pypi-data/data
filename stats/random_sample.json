@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-gpu",
-    "project_version": "2.9.0.dev20220224",
-    "project_release": "tf_nightly_gpu-2.9.0.dev20220224-cp38-cp38-win_amd64.whl",
-    "uploaded_on": "2022-02-24 14:22:19.629",
-    "path": "packages/tf-nightly-gpu/tf_nightly_gpu-2.9.0.dev20220224-cp38-cp38-win_amd64.whl/tensorflow/include/unsupported/Eigen/src/NonLinearOptimization/covar.h",
-    "archive_path": "tensorflow/include/unsupported/Eigen/src/NonLinearOptimization/covar.h",
-    "size": 1951,
-    "hash": "\\x18\\x1CO2\\xC7>R\\xFFi\\x95\\x87\\xB1\\x0C\\x82\\xB7\\x81\\xA4\\xC2\\x27u",
+    "project_name": "intel-extension-for-transformers",
+    "project_version": "1.1",
+    "project_release": "intel_extension_for_transformers-1.1.tar.gz",
+    "uploaded_on": "2023-07-14 08:36:16.661",
+    "path": "packages/intel-extension-for-transformers/intel_extension_for_transformers-1.1.tar.gz/intel_extension_for_transformers-1.1/intel_extension_for_transformers/backends/neural_engine/third_party/oneDNNGraph/src/backend/graph_compiler/core/src/compiler/ir/graph/transform/horizontal_merge.cpp",
+    "archive_path": "intel_extension_for_transformers-1.1/intel_extension_for_transformers/backends/neural_engine/third_party/oneDNNGraph/src/backend/graph_compiler/core/src/compiler/ir/graph/transform/horizontal_merge.cpp",
+    "size": 3580,
+    "hash": "]jsR\\x9AF\\x0A\\x05\\xBB\\xB2/\\x90\\xBC\\x8A\\xAD-5\\xDBF\\xB3",
     "skip_reason": "",
-    "lines": 72,
-    "repository": 140
+    "lines": 96,
+    "repository": 219
   },
   {
-    "project_name": "Stratega",
-    "project_version": "0.1.2",
-    "project_release": "Stratega-0.1.2-cp36-cp36m-macosx_10_15_x86_64.whl",
-    "uploaded_on": "2022-03-31 11:00:05.714",
-    "path": "packages/Stratega/Stratega-0.1.2-cp36-cp36m-macosx_10_15_x86_64.whl/resources/assets/Entities/treeHouse.png",
-    "archive_path": "resources/assets/Entities/treeHouse.png",
-    "size": 76236,
-    "hash": "m\\x07\\xB6\\xDD\\x9CR\\x95\\x09l\\xDE\\xB8K\\xB0\\xA6+\\xA2`\\xE7\\xA4\\x82",
+    "project_name": "thumbor",
+    "project_version": "7.5.1",
+    "project_release": "thumbor-7.5.1.tar.gz",
+    "uploaded_on": "2023-06-20 20:04:24.51",
+    "path": "packages/thumbor/thumbor-7.5.1.tar.gz/thumbor-7.5.1/tests/fixtures/images/weird_normalize_error.jpg",
+    "archive_path": "thumbor-7.5.1/tests/fixtures/images/weird_normalize_error.jpg",
+    "size": 10059,
+    "hash": "^2\\x03\\x8A\\xF4\\xC9\\x83<\\xCF2OK\\x9B6\\x10QrE\\x8B\\xBB",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 144
+    "repository": 215
   }
 ]
