@@ -1249,12 +1249,12 @@
     "index": 236,
     "stats": {
       "earliest_package": "2023-10-17T22:17:19.960091Z",
-      "latest_package": "2023-10-21T22:20:48.571541Z",
-      "total_packages": 36484,
-      "done_packages": 36484
+      "latest_package": "2023-10-22T22:18:04.367016Z",
+      "total_packages": 41480,
+      "done_packages": 41458
     },
-    "percent_done": 100,
-    "size": 1613947904,
+    "percent_done": 99,
+    "size": 1720529920,
     "url": "https://github.com/pypi-data/pypi-mirror-236",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-236/tree/code/packages",
     "projects": {}
