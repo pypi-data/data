@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "intel-extension-for-transformers",
-    "project_version": "1.1",
-    "project_release": "intel_extension_for_transformers-1.1.tar.gz",
-    "uploaded_on": "2023-07-14 08:36:16.661",
-    "path": "packages/intel-extension-for-transformers/intel_extension_for_transformers-1.1.tar.gz/intel_extension_for_transformers-1.1/intel_extension_for_transformers/backends/neural_engine/third_party/oneDNNGraph/src/backend/graph_compiler/core/src/compiler/ir/graph/transform/horizontal_merge.cpp",
-    "archive_path": "intel_extension_for_transformers-1.1/intel_extension_for_transformers/backends/neural_engine/third_party/oneDNNGraph/src/backend/graph_compiler/core/src/compiler/ir/graph/transform/horizontal_merge.cpp",
-    "size": 3580,
-    "hash": "]jsR\\x9AF\\x0A\\x05\\xBB\\xB2/\\x90\\xBC\\x8A\\xAD-5\\xDBF\\xB3",
+    "project_name": "finvizfinance",
+    "project_version": "0.12.0",
+    "project_release": "finvizfinance-0.12.0-py3-none-any.whl",
+    "uploaded_on": "2022-03-02 21:30:35.083",
+    "path": "packages/finvizfinance/finvizfinance-0.12.0-py3-none-any.whl/finvizfinance/screener/ticker.py",
+    "archive_path": "finvizfinance/screener/ticker.py",
+    "size": 2001,
+    "hash": "\\x0B\\xFF\\xB9\\x99\\x22x\\xC7\\xAC\\x00\\xB1\\xECA.\\x16\\xC3\\x853\\xE7\\xC4r",
     "skip_reason": "",
-    "lines": 96,
-    "repository": 219
+    "lines": 63,
+    "repository": 140
   },
   {
-    "project_name": "thumbor",
-    "project_version": "7.5.1",
-    "project_release": "thumbor-7.5.1.tar.gz",
-    "uploaded_on": "2023-06-20 20:04:24.51",
-    "path": "packages/thumbor/thumbor-7.5.1.tar.gz/thumbor-7.5.1/tests/fixtures/images/weird_normalize_error.jpg",
-    "archive_path": "thumbor-7.5.1/tests/fixtures/images/weird_normalize_error.jpg",
-    "size": 10059,
-    "hash": "^2\\x03\\x8A\\xF4\\xC9\\x83<\\xCF2OK\\x9B6\\x10QrE\\x8B\\xBB",
+    "project_name": "powa-web",
+    "project_version": "4.1.3",
+    "project_release": "powa_web-4.1.3-py3-none-any.whl",
+    "uploaded_on": "2022-05-16 07:52:09.018",
+    "path": "packages/powa-web/powa_web-4.1.3-py3-none-any.whl/powa/static/bower_components/backgrid-filter/api/resources/images/x.png",
+    "archive_path": "powa/static/bower_components/backgrid-filter/api/resources/images/x.png",
+    "size": 1299,
+    "hash": ".Q\\x97\\x22l\\xA3d\\x08v\\xC7b\\xBD|A\\xB2*\\xDB\\xFAR\\x1A",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 215
+    "repository": 150
   }
 ]
