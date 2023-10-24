@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "finvizfinance",
-    "project_version": "0.12.0",
-    "project_release": "finvizfinance-0.12.0-py3-none-any.whl",
-    "uploaded_on": "2022-03-02 21:30:35.083",
-    "path": "packages/finvizfinance/finvizfinance-0.12.0-py3-none-any.whl/finvizfinance/screener/ticker.py",
-    "archive_path": "finvizfinance/screener/ticker.py",
-    "size": 2001,
-    "hash": "\\x0B\\xFF\\xB9\\x99\\x22x\\xC7\\xAC\\x00\\xB1\\xECA.\\x16\\xC3\\x853\\xE7\\xC4r",
+    "project_name": "python-liquid",
+    "project_version": "1.9.0",
+    "project_release": "python_liquid-1.9.0.tar.gz",
+    "uploaded_on": "2023-04-17 10:40:47.873",
+    "path": "packages/python-liquid/python_liquid-1.9.0.tar.gz/python_liquid-1.9.0/liquid/expressions/filtered/.mypy_cache/3.10/liquid/expressions/boolean/__init__.data.json",
+    "archive_path": "python_liquid-1.9.0/liquid/expressions/filtered/.mypy_cache/3.10/liquid/expressions/boolean/__init__.data.json",
+    "size": 2896,
+    "hash": "\\x0D\\x9B\\x1C\\x1AM\\xE4\\x8CG\\xB8>9?[\\x04\\xAF^\\xB6\\xAD\\x11\\xC8",
     "skip_reason": "",
-    "lines": 63,
-    "repository": 140
+    "lines": 1,
+    "repository": 203
   },
   {
-    "project_name": "powa-web",
-    "project_version": "4.1.3",
-    "project_release": "powa_web-4.1.3-py3-none-any.whl",
-    "uploaded_on": "2022-05-16 07:52:09.018",
-    "path": "packages/powa-web/powa_web-4.1.3-py3-none-any.whl/powa/static/bower_components/backgrid-filter/api/resources/images/x.png",
-    "archive_path": "powa/static/bower_components/backgrid-filter/api/resources/images/x.png",
-    "size": 1299,
-    "hash": ".Q\\x97\\x22l\\xA3d\\x08v\\xC7b\\xBD|A\\xB2*\\xDB\\xFAR\\x1A",
+    "project_name": "dartpy",
+    "project_version": "0.1.0.post72",
+    "project_release": "dartpy-0.1.0.post72-cp311-cp311-win_amd64.whl",
+    "uploaded_on": "2023-02-26 12:40:09.279",
+    "path": "packages/dartpy/dartpy-0.1.0.post72-cp311-cp311-win_amd64.whl/ccd.dll",
+    "archive_path": "ccd.dll",
+    "size": 37888,
+    "hash": "+\\x9D\\xA2Z\\xE8Tt\\xCB.b\\x9Ft\\x02\\xC5\\x8D1\\x9B\\xE9_\\xC3",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 150
+    "repository": 194
   }
 ]
