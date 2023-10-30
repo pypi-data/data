@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "home-assistant-frontend",
-    "project_version": "20210127.1",
-    "project_release": "home-assistant-frontend-20210127.1.tar.gz",
-    "uploaded_on": "2021-01-27 16:42:22.095",
-    "path": "packages/home-assistant-frontend/home-assistant-frontend-20210127.1.tar.gz/home-assistant-frontend-20210127.1/hass_frontend/static/translations/shopping_list/ca-b00de9ae1a02ed61d1f029423f783e6f.json",
-    "archive_path": "home-assistant-frontend-20210127.1/hass_frontend/static/translations/shopping_list/ca-b00de9ae1a02ed61d1f029423f783e6f.json",
-    "size": 63,
-    "hash": "\\xE1\\xE6\\xCDa\\x13\\x0Dts\\xFA\\xFDi!\\x05\\xC4\\xEAa\\xDD2]\\xF0",
+    "project_name": "myams-js",
+    "project_version": "1.15.4",
+    "project_release": "myams_js-1.15.4-py3.11.egg",
+    "uploaded_on": "2023-01-31 09:40:15.654",
+    "path": "packages/myams-js/myams_js-1.15.4-py3.11.egg/pkg/css/svgs/brands/yandex.svg",
+    "archive_path": "pkg/css/svgs/brands/yandex.svg",
+    "size": 493,
+    "hash": "\\xA6\\x14_$ \\xE9\\xEE\\xE9\\xE4\\x03b5\\xB4\\x11\\xDC\\x16Rw\\x8D:",
     "skip_reason": "",
     "lines": 1,
-    "repository": 92
+    "repository": 188
   },
   {
-    "project_name": "gradio",
-    "project_version": "1.5.4",
-    "project_release": "gradio-1.5.4-py3-none-any.whl",
-    "uploaded_on": "2021-02-22 21:25:52.374",
-    "path": "packages/gradio/gradio-1.5.4-py3-none-any.whl/gradio/static/css/vendor/images/ui-icons_ffffff_256x240.png",
-    "archive_path": "gradio/static/css/vendor/images/ui-icons_ffffff_256x240.png",
-    "size": 3264,
-    "hash": "\\x1C\\xBAC\\x13\\xD3\\xB91\\xDF\\x821\\xFD\\x95\\x80\\x84\\xBB\\x9D\\xC2~1\\xBD",
+    "project_name": "nibabies-wrapper",
+    "project_version": "22.2.0",
+    "project_release": "nibabies_wrapper-22.2.0-py2.py3-none-any.whl",
+    "uploaded_on": "2022-12-13 17:27:32.875",
+    "path": "packages/nibabies-wrapper/nibabies_wrapper-22.2.0-py2.py3-none-any.whl/python3.9/site-packages/pip/_internal/utils/__pycache__/inject_securetransport.cpython-39.pyc",
+    "archive_path": "python3.9/site-packages/pip/_internal/utils/__pycache__/inject_securetransport.cpython-39.pyc",
+    "size": 971,
+    "hash": ",\\x99N\\xB3\\x88\\xC4\\xF9?\\x13\\x08\\xE1T\\xFD\\xA2m\\x90\\x04\\xB7\\xA8a",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 96
+    "repository": 181
   }
 ]
