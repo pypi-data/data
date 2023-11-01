@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "home-assistant-frontend",
-    "project_version": "20231025.1",
-    "project_release": "home_assistant_frontend-20231025.1-py3-none-any.whl",
-    "uploaded_on": "2023-10-25 12:28:27.295",
-    "path": "packages/home-assistant-frontend/home_assistant_frontend-20231025.1-py3-none-any.whl/hass_frontend/frontend_latest/99528-3XevnZ8HFpA.js.gz",
-    "archive_path": "hass_frontend/frontend_latest/99528-3XevnZ8HFpA.js.gz",
-    "size": 5428,
-    "hash": "\\xEF\\x10\\x11\\x05\\xE1p@\\xF1I\\xD0\\x9A\\xED-M\\xE2\\xD0V`\\xBD9",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 237
+    "project_name": "afpy",
+    "project_version": "0.0.4",
+    "project_release": "afpy-0.0.4.tar.gz",
+    "uploaded_on": "2021-09-16 17:41:46.886",
+    "path": "packages/afpy/afpy-0.0.4.tar.gz/afpy-0.0.4/afpy.egg-info/SOURCES.txt",
+    "archive_path": "afpy-0.0.4/afpy.egg-info/SOURCES.txt",
+    "size": 201,
+    "hash": "\\x7F\\x08\\x27\\x90\\xFD?\\xD1\\xEA\\xDD\\xD1\\xC52\\xE0\\xE7\\xDB\\x07\\xCD0\\xDDg",
+    "skip_reason": "",
+    "lines": 11,
+    "repository": 120
   },
   {
-    "project_name": "pmpc",
-    "project_version": "0.7.1",
-    "project_release": "pmpc-0.7.1-cp310-cp310-manylinux_2_28_x86_64.whl",
-    "uploaded_on": "2023-10-30 00:45:18.777",
-    "path": "packages/pmpc/pmpc-0.7.1-cp310-cp310-manylinux_2_28_x86_64.whl/PMPC.jl/pmpcjl/share/julia/artifacts/7661e5a9aa217ce3c468389d834a4fb43b0911e8/bin/bzip2recover",
-    "archive_path": "PMPC.jl/pmpcjl/share/julia/artifacts/7661e5a9aa217ce3c468389d834a4fb43b0911e8/bin/bzip2recover",
-    "size": 32486,
-    "hash": "\\x1A@\\x98\\x1D\\x1CK\\x92V\\x84\\x07\\xC9Kr\\x97\\x95PCo\\x9E\\xAA",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 238
+    "project_name": "ais-dom-frontend",
+    "project_version": "20210706.0",
+    "project_release": "ais-dom-frontend-20210706.0.tar.gz",
+    "uploaded_on": "2021-07-06 13:55:57.972",
+    "path": "packages/ais-dom-frontend/ais-dom-frontend-20210706.0.tar.gz/ais-dom-frontend-20210706.0/hass_frontend/static/mdi/7afc6805d1661392f0476a8a6037789831938260.json",
+    "archive_path": "ais-dom-frontend-20210706.0/hass_frontend/static/mdi/7afc6805d1661392f0476a8a6037789831938260.json",
+    "size": 52333,
+    "hash": "\\x13G\\xD7\\x8CL\\x86\\x0F\\xF0\\xA4!\\xC26S\\x8E\\xA2f\\xB4y\\x1D\\xEF",
+    "skip_reason": "text-long-lines",
+    "lines": 1,
+    "repository": 112
   }
 ]
