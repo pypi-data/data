@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tiled",
-    "project_version": "0.1.0a101",
-    "project_release": "tiled-0.1.0a101.tar.gz",
-    "uploaded_on": "2023-07-11 16:17:08.796",
-    "path": "packages/tiled/tiled-0.1.0a101.tar.gz/tiled-0.1.0a101/web-frontend/node_modules/@mui/icons-material/BorderStyleOutlined.d.ts",
-    "archive_path": "tiled-0.1.0a101/web-frontend/node_modules/@mui/icons-material/BorderStyleOutlined.d.ts",
-    "size": 48,
-    "hash": "\\x11D\\xA6\\x8C\\xB2\\x89\\xE6\\xBE\\x97<\\x82\\xA0W\\x0F\\x1A\\x83\\xE8\\x0DI\\xE1",
+    "project_name": "apache-beam",
+    "project_version": "2.40.0",
+    "project_release": "apache_beam-2.40.0-cp39-cp39-manylinux2010_i686.whl",
+    "uploaded_on": "2022-06-27 21:52:18.109",
+    "path": "packages/apache-beam/apache_beam-2.40.0-cp39-cp39-manylinux2010_i686.whl/apache_beam/internal/metrics/__init__.py",
+    "archive_path": "apache_beam/internal/metrics/__init__.py",
+    "size": 853,
+    "hash": "\\x0B\\xCE]h\\xF7$43\\xAB\\xF3\\x5C$b\\xA2`\\xA3q\\x1B\\x18\\x16",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 218
+    "lines": 18,
+    "repository": 156
   },
   {
-    "project_name": "abstra",
-    "project_version": "1.8.3",
-    "project_release": "abstra-1.8.3.tar.gz",
-    "uploaded_on": "2023-08-01 22:43:34.18",
-    "path": "packages/abstra/abstra-1.8.3.tar.gz/abstra-1.8.3/abstra_statics/dist/assets/editor.main.87a0a348.js",
-    "archive_path": "abstra-1.8.3/abstra_statics/dist/assets/editor.main.87a0a348.js",
-    "size": 2786473,
-    "hash": "\\xDFI3Oe\\xF2*\\x8D\\x0B\\x03Cv\\xAD\\xC1\\xD3\\xB4\\x03\\x05\\x0B\\x08",
-    "skip_reason": "too-large",
-    "lines": 798,
-    "repository": 222
+    "project_name": "nbclassic",
+    "project_version": "0.4.2",
+    "project_release": "nbclassic-0.4.2.tar.gz",
+    "uploaded_on": "2022-07-06 18:51:11.337",
+    "path": "packages/nbclassic/nbclassic-0.4.2.tar.gz/nbclassic-0.4.2/nbclassic/static/components/MathJax/fonts/HTML-CSS/TeX/png/Caligraphic/Bold/283/004B.png",
+    "archive_path": "nbclassic-0.4.2/nbclassic/static/components/MathJax/fonts/HTML-CSS/TeX/png/Caligraphic/Bold/283/004B.png",
+    "size": 374,
+    "hash": "A\\x95.\\xB1\\x09w\\x05\\xAA\\xD2V\\xFC\\xD7\\x0Bv`\\xE7\\xB5f\\xED8",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 158
   }
 ]
