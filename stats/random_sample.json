@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "apache-beam",
-    "project_version": "2.40.0",
-    "project_release": "apache_beam-2.40.0-cp39-cp39-manylinux2010_i686.whl",
-    "uploaded_on": "2022-06-27 21:52:18.109",
-    "path": "packages/apache-beam/apache_beam-2.40.0-cp39-cp39-manylinux2010_i686.whl/apache_beam/internal/metrics/__init__.py",
-    "archive_path": "apache_beam/internal/metrics/__init__.py",
-    "size": 853,
-    "hash": "\\x0B\\xCE]h\\xF7$43\\xAB\\xF3\\x5C$b\\xA2`\\xA3q\\x1B\\x18\\x16",
+    "project_name": "aws-cdk.pipelines",
+    "project_version": "1.108.0",
+    "project_release": "aws_cdk.pipelines-1.108.0-py3-none-any.whl",
+    "uploaded_on": "2021-06-09 12:31:17.367",
+    "path": "packages/aws-cdk.pipelines/aws_cdk.pipelines-1.108.0-py3-none-any.whl/aws_cdk.pipelines-1.108.0.dist-info/NOTICE",
+    "archive_path": "aws_cdk.pipelines-1.108.0.dist-info/NOTICE",
+    "size": 113,
+    "hash": "_\\xC3\\x82i&\\xB5\\xB8\\x0A\\x8A(f\\x5C\\xA4nB\\xA1\\x98\\xAA\\xC3L",
     "skip_reason": "",
-    "lines": 18,
-    "repository": 156
+    "lines": 2,
+    "repository": 109
   },
   {
-    "project_name": "nbclassic",
-    "project_version": "0.4.2",
-    "project_release": "nbclassic-0.4.2.tar.gz",
-    "uploaded_on": "2022-07-06 18:51:11.337",
-    "path": "packages/nbclassic/nbclassic-0.4.2.tar.gz/nbclassic-0.4.2/nbclassic/static/components/MathJax/fonts/HTML-CSS/TeX/png/Caligraphic/Bold/283/004B.png",
-    "archive_path": "nbclassic-0.4.2/nbclassic/static/components/MathJax/fonts/HTML-CSS/TeX/png/Caligraphic/Bold/283/004B.png",
-    "size": 374,
-    "hash": "A\\x95.\\xB1\\x09w\\x05\\xAA\\xD2V\\xFC\\xD7\\x0Bv`\\xE7\\xB5f\\xED8",
-    "skip_reason": "binary",
+    "project_name": "spiketoolkit",
+    "project_version": "0.7.6",
+    "project_release": "spiketoolkit-0.7.6.tar.gz",
+    "uploaded_on": "2021-07-27 15:35:25.914",
+    "path": "packages/spiketoolkit/spiketoolkit-0.7.6.tar.gz/spiketoolkit-0.7.6/spiketoolkit/validation/quality_metric_classes/utils/__init__.py",
+    "archive_path": "spiketoolkit-0.7.6/spiketoolkit/validation/quality_metric_classes/utils/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 158
+    "repository": 114
   }
 ]
