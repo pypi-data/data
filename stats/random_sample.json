@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "aws-cdk.pipelines",
-    "project_version": "1.108.0",
-    "project_release": "aws_cdk.pipelines-1.108.0-py3-none-any.whl",
-    "uploaded_on": "2021-06-09 12:31:17.367",
-    "path": "packages/aws-cdk.pipelines/aws_cdk.pipelines-1.108.0-py3-none-any.whl/aws_cdk.pipelines-1.108.0.dist-info/NOTICE",
-    "archive_path": "aws_cdk.pipelines-1.108.0.dist-info/NOTICE",
-    "size": 113,
-    "hash": "_\\xC3\\x82i&\\xB5\\xB8\\x0A\\x8A(f\\x5C\\xA4nB\\xA1\\x98\\xAA\\xC3L",
+    "project_name": "homeassistant",
+    "project_version": "2023.11.1",
+    "project_release": "homeassistant-2023.11.1.tar.gz",
+    "uploaded_on": "2023-11-04 15:34:01.479",
+    "path": "packages/homeassistant/homeassistant-2023.11.1.tar.gz/homeassistant-2023.11.1/homeassistant/components/hlk_sw16/translations/pl.json",
+    "archive_path": "homeassistant-2023.11.1/homeassistant/components/hlk_sw16/translations/pl.json",
+    "size": 635,
+    "hash": "%\\xDA\\xB5g\\x96\\xCC\\x15OB\\x92\\xAF\\x15\\xDE\\x27\\xC8\\x059\\xD0D\\x19",
     "skip_reason": "",
-    "lines": 2,
-    "repository": 109
+    "lines": 21,
+    "repository": 239
   },
   {
-    "project_name": "spiketoolkit",
-    "project_version": "0.7.6",
-    "project_release": "spiketoolkit-0.7.6.tar.gz",
-    "uploaded_on": "2021-07-27 15:35:25.914",
-    "path": "packages/spiketoolkit/spiketoolkit-0.7.6.tar.gz/spiketoolkit-0.7.6/spiketoolkit/validation/quality_metric_classes/utils/__init__.py",
-    "archive_path": "spiketoolkit-0.7.6/spiketoolkit/validation/quality_metric_classes/utils/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "reflex",
+    "project_version": "0.3.2a1",
+    "project_release": "reflex-0.3.2a1.tar.gz",
+    "uploaded_on": "2023-11-03 20:32:57.45",
+    "path": "packages/reflex/reflex-0.3.2a1.tar.gz/reflex-0.3.2a1/reflex/components/layout/__pycache__/stack.cpython-311.pyc",
+    "archive_path": "reflex-0.3.2a1/reflex/components/layout/__pycache__/stack.cpython-311.pyc",
+    "size": 1757,
+    "hash": "\\x8C\\x00\\x1F\\x0D\\xE9\\x13k\\xE2?\\xFE;q\\x05\\xD0\\xE7Lu\\x11e\\xB7",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 114
+    "repository": 239
   }
 ]
