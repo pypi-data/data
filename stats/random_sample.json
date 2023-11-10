@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tensorflow-macos",
-    "project_version": "2.15.0rc0",
-    "project_release": "tensorflow_macos-2.15.0rc0-cp311-cp311-macosx_12_0_arm64.whl",
-    "uploaded_on": "2023-10-26 15:26:14.403",
-    "path": "packages/tensorflow-macos/tensorflow_macos-2.15.0rc0-cp311-cp311-macosx_12_0_arm64.whl/tensorflow/include/tensorflow/compiler/xla/mlir_hlo/mhlo/transforms/map_stablehlo_to_hlo_op.h",
-    "archive_path": "tensorflow/include/tensorflow/compiler/xla/mlir_hlo/mhlo/transforms/map_stablehlo_to_hlo_op.h",
-    "size": 5686,
-    "hash": "6gV:\\xC0x\\xE7h\\xAE/\\xF6\\x93\\xB8\\xCB\\xF8\\xD9\\xBDR\\xBE\\x83",
+    "project_name": "jax",
+    "project_version": "0.1.11",
+    "project_release": "jax-0.1.11.tar.gz",
+    "uploaded_on": "2018-12-16 04:16:49.986",
+    "path": "packages/jax/jax-0.1.11.tar.gz/jax-0.1.11/README.md",
+    "archive_path": "jax-0.1.11/README.md",
+    "size": 28164,
+    "hash": "\\x1D\\x94\\x8E\\x06\\xB6N\\xCFAL\\xC6\\xA8d2\\x83E\\xBF\\x9C\\x97\\xC0\\xF7",
     "skip_reason": "",
-    "lines": 168,
-    "repository": 237
+    "lines": 692,
+    "repository": 39
   },
   {
-    "project_name": "flet",
-    "project_version": "0.12.0.dev1778",
-    "project_release": "flet-0.12.0.dev1778-py3-none-musllinux_1_2_x86_64.whl",
-    "uploaded_on": "2023-11-07 22:24:22.225",
-    "path": "packages/flet/flet-0.12.0.dev1778-py3-none-musllinux_1_2_x86_64.whl/flet/web/favicon.png",
-    "archive_path": "flet/web/favicon.png",
-    "size": 1028,
-    "hash": "\\xB3\\xA4\\xCA\\xC7\\x81\\xE9h},\\x16T\\xE2\\xABr\\x9A\\x98h\\x1A\\xE8\\x08",
+    "project_name": "thinc",
+    "project_version": "7.0.1",
+    "project_release": "thinc-7.0.1-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl",
+    "uploaded_on": "2019-02-16 16:58:37.297",
+    "path": "packages/thinc/thinc-7.0.1-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl/thinc/linear/serialize.so",
+    "archive_path": "thinc/linear/serialize.so",
+    "size": 151408,
+    "hash": "\\x8F\\xBB/\\x1A&u\\x80\\x06\\x1BJ\\x0Et>X;\\xA2\\x02]\\xABE",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 239
+    "repository": 42
   }
 ]
