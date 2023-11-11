@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "jax",
-    "project_version": "0.1.11",
-    "project_release": "jax-0.1.11.tar.gz",
-    "uploaded_on": "2018-12-16 04:16:49.986",
-    "path": "packages/jax/jax-0.1.11.tar.gz/jax-0.1.11/README.md",
-    "archive_path": "jax-0.1.11/README.md",
-    "size": 28164,
-    "hash": "\\x1D\\x94\\x8E\\x06\\xB6N\\xCFAL\\xC6\\xA8d2\\x83E\\xBF\\x9C\\x97\\xC0\\xF7",
+    "project_name": "sentencepiece",
+    "project_version": "0.1.99",
+    "project_release": "sentencepiece-0.1.99.tar.gz",
+    "uploaded_on": "2023-05-02 04:26:46.454",
+    "path": "packages/sentencepiece/sentencepiece-0.1.99.tar.gz/sentencepiece-0.1.99/sentencepiece/third_party/absl/strings/str_format.h",
+    "archive_path": "sentencepiece-0.1.99/sentencepiece/third_party/absl/strings/str_format.h",
+    "size": 1088,
+    "hash": "\\x15\\x89\\x02\\xA9h&\\xABs\\xA7;`\\x9F\\x27\\x0FhiZ\\xB3\\xF12",
     "skip_reason": "",
-    "lines": 692,
-    "repository": 39
+    "lines": 37,
+    "repository": 206
   },
   {
-    "project_name": "thinc",
-    "project_version": "7.0.1",
-    "project_release": "thinc-7.0.1-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl",
-    "uploaded_on": "2019-02-16 16:58:37.297",
-    "path": "packages/thinc/thinc-7.0.1-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl/thinc/linear/serialize.so",
-    "archive_path": "thinc/linear/serialize.so",
-    "size": 151408,
-    "hash": "\\x8F\\xBB/\\x1A&u\\x80\\x06\\x1BJ\\x0Et>X;\\xA2\\x02]\\xABE",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 42
+    "project_name": "ord-mediascout-client",
+    "project_version": "0.0.7",
+    "project_release": "ord_mediascout_client-0.0.7.tar.gz",
+    "uploaded_on": "2023-04-20 16:09:58.278",
+    "path": "packages/ord-mediascout-client/ord_mediascout_client-0.0.7.tar.gz/ord_mediascout_client-0.0.7/.venv/lib/python3.11/site-packages/webencodings-0.5.1.dist-info/WHEEL",
+    "archive_path": "ord_mediascout_client-0.0.7/.venv/lib/python3.11/site-packages/webencodings-0.5.1.dist-info/WHEEL",
+    "size": 110,
+    "hash": "\\x8Bm\\xD1\\xB5\\xA8\\x84\\xBF\\xC0{_w\\x1A\\xB5\\xDCV\\xED\\x02251",
+    "skip_reason": "virtualenv",
+    "lines": 6,
+    "repository": 204
   }
 ]
