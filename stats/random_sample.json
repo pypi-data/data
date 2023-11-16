@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pulumi-azure-native",
-    "project_version": "1.91.0a1673132175",
-    "project_release": "pulumi_azure_native-1.91.0a1673132175.tar.gz",
-    "uploaded_on": "2023-01-08 01:15:21.587",
-    "path": "packages/pulumi-azure-native/pulumi_azure_native-1.91.0a1673132175.tar.gz/pulumi_azure_native-1.91.0a1673132175/pulumi_azure_native/recoveryservices/v20211001/private_endpoint_connection.py",
-    "archive_path": "pulumi_azure_native-1.91.0a1673132175/pulumi_azure_native/recoveryservices/v20211001/private_endpoint_connection.py",
-    "size": 14310,
-    "hash": "\\xA2\\x04\\xB4\\xCB\\xEA\\xF8\\xFA6m\\x97\\x15\\x8F\\xCB\\xD4_9\\xDEV\\x93\\x96",
+    "project_name": "pulumi-aws",
+    "project_version": "4.27.0",
+    "project_release": "pulumi_aws-4.27.0.tar.gz",
+    "uploaded_on": "2021-11-08 16:37:44.389",
+    "path": "packages/pulumi-aws/pulumi_aws-4.27.0.tar.gz/pulumi_aws-4.27.0/pulumi_aws/directconnect/hosted_private_virtual_interface.py",
+    "archive_path": "pulumi_aws-4.27.0/pulumi_aws/directconnect/hosted_private_virtual_interface.py",
+    "size": 31972,
+    "hash": "T\\x9Dy\\x91nuL_\\x1B\\x9F\\xC8\\xCF\\xDC\\xC2\\xD8p\\x9C\\x95\\x02\\x1C",
     "skip_reason": "",
-    "lines": 293,
-    "repository": 184
+    "lines": 723,
+    "repository": 126
   },
   {
-    "project_name": "sxc-api-client",
-    "project_version": "0.1.4",
-    "project_release": "sxc_api_client-0.1.4.tar.gz",
-    "uploaded_on": "2022-12-21 15:00:25.758",
-    "path": "packages/sxc-api-client/sxc_api_client-0.1.4.tar.gz/sxc_api_client-0.1.4/venv/Lib/site-packages/pytz/zoneinfo/Africa/Mbabane",
-    "archive_path": "sxc_api_client-0.1.4/venv/Lib/site-packages/pytz/zoneinfo/Africa/Mbabane",
-    "size": 246,
-    "hash": "\\xB1\\xC4%\\xDA\\xCE\\xD4T\\xF5=}\\x18\\xFE\\xA8\\x07\\xBF\\x8D\\x08\\x1C\\xF9~",
+    "project_name": "pysurvive",
+    "project_version": "1.0.7",
+    "project_release": "pysurvive-1.0.7-cp36-cp36m-win_amd64.whl",
+    "uploaded_on": "2022-02-11 16:45:11.307",
+    "path": "packages/pysurvive/pysurvive-1.0.7-cp36-cp36m-win_amd64.whl/pysurvive/images/running_icon.png",
+    "archive_path": "pysurvive/images/running_icon.png",
+    "size": 8644,
+    "hash": "z\\x8BQ\\xC6l\\xF4\\xA92^aF\\x19\\xCD\\x90?\\xD3\\xD2p-\\x99",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 182
+    "repository": 138
   }
 ]
