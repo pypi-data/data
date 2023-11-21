@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pretix",
-    "project_version": "2.5.0",
-    "project_release": "pretix-2.5.0.tar.gz",
-    "uploaded_on": "2019-03-11 17:20:03.877",
-    "path": "packages/pretix/pretix-2.5.0.tar.gz/pretix-2.5.0/pretix/static/bootstrap/fonts/glyphicons-halflings-regular.woff",
-    "archive_path": "pretix-2.5.0/pretix/static/bootstrap/fonts/glyphicons-halflings-regular.woff",
-    "size": 23424,
-    "hash": "\\x9Ea(X\\xF8\\x02$]\\xDC\\xBFYx\\x8A\\x0D\\xB9B\\x22K\\xAB5",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 43
+    "project_name": "scancode-toolkit-mini",
+    "project_version": "31.2.5",
+    "project_release": "scancode_toolkit_mini-31.2.5-cp38-none-any.whl",
+    "uploaded_on": "2023-04-12 19:05:29.523",
+    "path": "packages/scancode-toolkit-mini/scancode_toolkit_mini-31.2.5-cp38-none-any.whl/licensedcode/data/rules/proprietary-license_188.yml",
+    "archive_path": "licensedcode/data/rules/proprietary-license_188.yml",
+    "size": 78,
+    "hash": "\\xE5_\\xCC$\\xA2\\x82\\x9F\\x8E}Y\\xFA\\xE75\\xE9`\\xD0\\xC45\\xE6\\xF7",
+    "skip_reason": "",
+    "lines": 3,
+    "repository": 202
   },
   {
-    "project_name": "qss-debugger",
-    "project_version": "0.1.5",
-    "project_release": "qss_debugger-0.1.5.tar.gz",
-    "uploaded_on": "2018-05-28 03:26:59.818",
-    "path": "packages/qss-debugger/qss_debugger-0.1.5.tar.gz/qss_debugger-0.1.5/venv/Lib/site-packages/PyQt5/pylupdate_main.py",
-    "archive_path": "qss_debugger-0.1.5/venv/Lib/site-packages/PyQt5/pylupdate_main.py",
-    "size": 7370,
-    "hash": "\\x96I~\\x03W\\xE2\\x83\\xDE+y?\\x9A\\xC0\\xE5\\x04\\xF0\\xDD\\x9D)\\x9E",
+    "project_name": "hbtools",
+    "project_version": "0.0.1",
+    "project_release": "hbtools-0.0.1.tar.gz",
+    "uploaded_on": "2023-05-07 08:42:49.132",
+    "path": "packages/hbtools/hbtools-0.0.1.tar.gz/hbtools-0.0.1/venv/lib/python3.11/site-packages/numpy/lib/tests/test_arrayterator.py",
+    "archive_path": "hbtools-0.0.1/venv/lib/python3.11/site-packages/numpy/lib/tests/test_arrayterator.py",
+    "size": 1291,
+    "hash": "\\xC0\\x0E\\xD1=\\x7F0v\\xD5>\\xC0\\x80\\xA4o\\xE7\\xE1?\\xF7\\xDF\\xB5\\xA2",
     "skip_reason": "virtualenv",
-    "lines": 239,
-    "repository": 32
+    "lines": 46,
+    "repository": 207
   }
 ]
