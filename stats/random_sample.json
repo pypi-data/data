@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "scancode-toolkit-mini",
-    "project_version": "31.2.5",
-    "project_release": "scancode_toolkit_mini-31.2.5-cp38-none-any.whl",
-    "uploaded_on": "2023-04-12 19:05:29.523",
-    "path": "packages/scancode-toolkit-mini/scancode_toolkit_mini-31.2.5-cp38-none-any.whl/licensedcode/data/rules/proprietary-license_188.yml",
-    "archive_path": "licensedcode/data/rules/proprietary-license_188.yml",
-    "size": 78,
-    "hash": "\\xE5_\\xCC$\\xA2\\x82\\x9F\\x8E}Y\\xFA\\xE75\\xE9`\\xD0\\xC45\\xE6\\xF7",
+    "project_name": "aim",
+    "project_version": "3.14.4",
+    "project_release": "aim-3.14.4-cp310-cp310-macosx_11_0_arm64.whl",
+    "uploaded_on": "2022-11-11 08:25:26.665",
+    "path": "packages/aim/aim-3.14.4-cp310-cp310-macosx_11_0_arm64.whl/aim/sdk/sequences/audio_sequence.py",
+    "archive_path": "aim/sdk/sequences/audio_sequence.py",
+    "size": 458,
+    "hash": "\\xE3\\xC2:\\x15\\x94Q\\xA2l\\xC5\\x000\\xAB\\xC4\\x9E{\\xED}v{\\x05",
     "skip_reason": "",
-    "lines": 3,
-    "repository": 202
+    "lines": 17,
+    "repository": 176
   },
   {
-    "project_name": "hbtools",
-    "project_version": "0.0.1",
-    "project_release": "hbtools-0.0.1.tar.gz",
-    "uploaded_on": "2023-05-07 08:42:49.132",
-    "path": "packages/hbtools/hbtools-0.0.1.tar.gz/hbtools-0.0.1/venv/lib/python3.11/site-packages/numpy/lib/tests/test_arrayterator.py",
-    "archive_path": "hbtools-0.0.1/venv/lib/python3.11/site-packages/numpy/lib/tests/test_arrayterator.py",
-    "size": 1291,
-    "hash": "\\xC0\\x0E\\xD1=\\x7F0v\\xD5>\\xC0\\x80\\xA4o\\xE7\\xE1?\\xF7\\xDF\\xB5\\xA2",
-    "skip_reason": "virtualenv",
-    "lines": 46,
-    "repository": 207
+    "project_name": "PySide6-Essentials",
+    "project_version": "6.4.0",
+    "project_release": "PySide6_Essentials-6.4.0-pp39-pypy39_pp73-win_amd64.whl",
+    "uploaded_on": "2022-10-13 16:25:43.866",
+    "path": "packages/PySide6-Essentials/PySide6_Essentials-6.4.0-pp39-pypy39_pp73-win_amd64.whl/PySide6/examples/widgets/richtext/textedit/images/mac/textcenter.png",
+    "archive_path": "PySide6/examples/widgets/richtext/textedit/images/mac/textcenter.png",
+    "size": 1404,
+    "hash": ".\\xF5\\xB2\\xEEo<\\x08\\xED:\\xAF8ZI\\x1B4\\xA9\\x8C!\\xF5\\xE4",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 171
   }
 ]
