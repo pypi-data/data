@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "autogluon.core",
-    "project_version": "0.5.1b20220628",
-    "project_release": "autogluon.core-0.5.1b20220628-py3-none-any.whl",
-    "uploaded_on": "2022-06-28 09:04:09.159",
-    "path": "packages/autogluon.core/autogluon.core-0.5.1b20220628-py3-none-any.whl/autogluon/core/searcher/local_random_searcher.py",
-    "archive_path": "autogluon/core/searcher/local_random_searcher.py",
-    "size": 3011,
-    "hash": "\\xD7q\\xCFO8\\xF8Bp\\xDA\\x5CD\\x1B\\xB5Ew\\xFD\\xFCRe\\xB0",
+    "project_name": "pythondata-software-picolibc",
+    "project_version": "1.7.8.post449",
+    "project_release": "pythondata-software-picolibc-1.7.8.post449.tar.gz",
+    "uploaded_on": "2022-09-13 09:18:41.35",
+    "path": "packages/pythondata-software-picolibc/pythondata-software-picolibc-1.7.8.post449.tar.gz/pythondata-software-picolibc-1.7.8.post449/pythondata_software_picolibc/data/newlib/libc/machine/nvptx/malloc.c",
+    "archive_path": "pythondata-software-picolibc-1.7.8.post449/pythondata_software_picolibc/data/newlib/libc/machine/nvptx/malloc.c",
+    "size": 998,
+    "hash": "7\\xABu\\xA1\\xB2K5\\xE0!\\xC6X\\xAA\\xA2\\x09\\xCB\\x8A\\xC7\\xB5s\\x1C",
     "skip_reason": "",
-    "lines": 78,
-    "repository": 156
+    "lines": 29,
+    "repository": 167
   },
   {
-    "project_name": "stream-gears",
-    "project_version": "0.1.3",
-    "project_release": "stream_gears-0.1.3-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
-    "uploaded_on": "2022-06-23 17:58:07.949",
-    "path": "packages/stream-gears/stream_gears-0.1.3-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl/stream_gears/stream_gears.cpython-310-darwin.so",
-    "archive_path": "stream_gears/stream_gears.cpython-310-darwin.so",
-    "size": 9938114,
-    "hash": "\\x22\\xC2\\xF1\\x9C\\xD0e\\xB4\\x0B\\xCD\\xAB\\xBBK\\x8E\\xF1J\\xD9Sk\\x00\\xCC",
+    "project_name": "pyats.log",
+    "project_version": "22.9",
+    "project_release": "pyats.log-22.9-cp38-cp38-macosx_11_0_arm64.whl",
+    "uploaded_on": "2022-09-27 13:58:29.231",
+    "path": "packages/pyats.log/pyats.log-22.9-cp38-cp38-macosx_11_0_arm64.whl/pyats/log/commands/static/assets/fonts/CiscoSans/CiscoSansTTExtraLight/CiscoSansTTExtraLight.woff2",
+    "archive_path": "pyats/log/commands/static/assets/fonts/CiscoSans/CiscoSansTTExtraLight/CiscoSansTTExtraLight.woff2",
+    "size": 53096,
+    "hash": "\\x11\\x95\\x0C\\x9B/\\x84&}\\x0E\\xB0\\xE5\\xE83\\x99_P\\x86\\x89#\\xA4",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 156
+    "repository": 169
   }
 ]
