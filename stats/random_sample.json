@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pythondata-software-picolibc",
-    "project_version": "1.7.8.post449",
-    "project_release": "pythondata-software-picolibc-1.7.8.post449.tar.gz",
-    "uploaded_on": "2022-09-13 09:18:41.35",
-    "path": "packages/pythondata-software-picolibc/pythondata-software-picolibc-1.7.8.post449.tar.gz/pythondata-software-picolibc-1.7.8.post449/pythondata_software_picolibc/data/newlib/libc/machine/nvptx/malloc.c",
-    "archive_path": "pythondata-software-picolibc-1.7.8.post449/pythondata_software_picolibc/data/newlib/libc/machine/nvptx/malloc.c",
-    "size": 998,
-    "hash": "7\\xABu\\xA1\\xB2K5\\xE0!\\xC6X\\xAA\\xA2\\x09\\xCB\\x8A\\xC7\\xB5s\\x1C",
+    "project_name": "awscli",
+    "project_version": "1.19.105",
+    "project_release": "awscli-1.19.105.tar.gz",
+    "uploaded_on": "2021-07-02 19:25:35.702",
+    "path": "packages/awscli/awscli-1.19.105.tar.gz/awscli-1.19.105/awscli/examples/servicecatalog/accept-portfolio-share.rst",
+    "archive_path": "awscli-1.19.105/awscli/examples/servicecatalog/accept-portfolio-share.rst",
+    "size": 295,
+    "hash": "ix\\x85\\xCE\\xB6\\x5C\\xFB\\xB6x\\x16i\\x9F\\x1Df\\xE5\\x10\\x19\\x14*:",
     "skip_reason": "",
-    "lines": 29,
-    "repository": 167
+    "lines": 8,
+    "repository": 111
   },
   {
-    "project_name": "pyats.log",
-    "project_version": "22.9",
-    "project_release": "pyats.log-22.9-cp38-cp38-macosx_11_0_arm64.whl",
-    "uploaded_on": "2022-09-27 13:58:29.231",
-    "path": "packages/pyats.log/pyats.log-22.9-cp38-cp38-macosx_11_0_arm64.whl/pyats/log/commands/static/assets/fonts/CiscoSans/CiscoSansTTExtraLight/CiscoSansTTExtraLight.woff2",
-    "archive_path": "pyats/log/commands/static/assets/fonts/CiscoSans/CiscoSansTTExtraLight/CiscoSansTTExtraLight.woff2",
-    "size": 53096,
-    "hash": "\\x11\\x95\\x0C\\x9B/\\x84&}\\x0E\\xB0\\xE5\\xE83\\x99_P\\x86\\x89#\\xA4",
-    "skip_reason": "binary",
+    "project_name": "CveXplore",
+    "project_version": "0.2.2",
+    "project_release": "CveXplore-0.2.2-py3-none-any.whl",
+    "uploaded_on": "2021-06-29 17:29:08.807",
+    "path": "packages/CveXplore/CveXplore-0.2.2-py3-none-any.whl/CveXplore/database/connection/__init__.py",
+    "archive_path": "CveXplore/database/connection/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 169
+    "repository": 111
   }
 ]
