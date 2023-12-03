@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "robotpy-hal",
-    "project_version": "2023.4.1.0",
-    "project_release": "robotpy_hal-2023.4.1.0-cp311-cp311-manylinux_2_35_x86_64.whl",
-    "uploaded_on": "2023-02-18 05:59:15.303",
-    "path": "packages/robotpy-hal/robotpy_hal-2023.4.1.0-cp311-cp311-manylinux_2_35_x86_64.whl/hal/exceptions.py",
-    "archive_path": "hal/exceptions.py",
-    "size": 39,
-    "hash": "@\\xDC\\xB1\\x94\\xB4<\\xF5$\\x89\\x10\\xB3\\xB4.\\xB8\\xEFQ\\xAF\\xFCy\\x84",
+    "project_name": "cdpcli",
+    "project_version": "0.9.33",
+    "project_release": "cdpcli-0.9.33.tar.gz",
+    "uploaded_on": "2021-04-29 22:07:44.853",
+    "path": "packages/cdpcli/cdpcli-0.9.33.tar.gz/cdpcli-0.9.33/cdpcli/clicommand.py",
+    "archive_path": "cdpcli-0.9.33/cdpcli/clicommand.py",
+    "size": 1207,
+    "hash": "t\\x89\\x99\\x0C;\\xA4\\xA8\\xBF\\xBEe}\\x14\\x1F^\\x80\\x0Bf\\xD7v)",
     "skip_reason": "",
-    "lines": 2,
-    "repository": 192
+    "lines": 44,
+    "repository": 104
   },
   {
-    "project_name": "tcsoa",
-    "project_version": "0.11.2",
-    "project_release": "tcsoa-0.11.2-py3-none-any.whl",
-    "uploaded_on": "2023-01-11 09:32:48.063",
-    "path": "packages/tcsoa/tcsoa-0.11.2-py3-none-any.whl/tcsoa/gen/Cae/__init__.py",
-    "archive_path": "tcsoa/gen/Cae/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "NREL-PySAM",
+    "project_version": "2.2.0",
+    "project_release": "NREL_PySAM-2.2.0-cp35-cp35m-macosx_10_6_x86_64.whl",
+    "uploaded_on": "2020-12-02 17:24:38.69",
+    "path": "packages/NREL-PySAM/NREL_PySAM-2.2.0-cp35-cp35m-macosx_10_6_x86_64.whl/PySAM/defaults/equpartflip_physicaltroughallequitypartnershipflip.df",
+    "archive_path": "PySAM/defaults/equpartflip_physicaltroughallequitypartnershipflip.df",
+    "size": 90294,
+    "hash": "C\\xFB\\x96\\x18\\x98\\xBC\\xDB_/\\x9A\\xF9I\\x1Bd\\x8A$\\xAD\\xA0Q\\xEA",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 185
+    "repository": 87
   }
 ]
