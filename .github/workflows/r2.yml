@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: count lines
         id: matrix
         run: |
@@ -36,7 +36,7 @@ jobs:
         index: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Clone and push repositories
         run: |
