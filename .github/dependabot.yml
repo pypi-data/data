@@ -4,11 +4,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-  - package-ecosystem: "npm"
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "pip"
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
+  # - package-ecosystem: "pip"
+  #   directory: "/" # Location of package manifests
+  #   schedule:
+  #     interval: "daily"
