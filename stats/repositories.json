@@ -1234,12 +1234,12 @@
     "index": 245,
     "stats": {
       "earliest_package": "2023-12-06T10:15:38.755535Z",
-      "latest_package": "2023-12-07T22:22:48.220907Z",
-      "total_packages": 16753,
-      "done_packages": 13620
+      "latest_package": "2023-12-08T22:19:53.575181Z",
+      "total_packages": 25516,
+      "done_packages": 24019
     },
-    "percent_done": 81,
-    "size": 802299904,
+    "percent_done": 94,
+    "size": 1177059328,
     "url": "https://github.com/pypi-data/pypi-mirror-245",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-245/tree/code/packages",
     "projects": {}
