@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "docassemble.base",
-    "project_version": "1.4.4",
-    "project_release": "docassemble.base-1.4.4.tar.gz",
-    "uploaded_on": "2022-08-11 12:23:36.1",
-    "path": "packages/docassemble.base/docassemble.base-1.4.4.tar.gz/docassemble.base-1.4.4/docassemble/base/data/questions/examples/alignment.yml",
-    "archive_path": "docassemble.base-1.4.4/docassemble/base/data/questions/examples/alignment.yml",
-    "size": 1189,
-    "hash": "\\x8B`\\x88O\\xF1\\xB9\\x8E\\xE7I\\xE7\\xB3q\\xA9c\\x90\\x27\\xBE\\xABz\\xA2",
+    "project_name": "tensorflow-cpu",
+    "project_version": "2.13.0",
+    "project_release": "tensorflow_cpu-2.13.0-cp310-cp310-macosx_10_15_x86_64.whl",
+    "uploaded_on": "2023-07-05 17:44:55.203",
+    "path": "packages/tensorflow-cpu/tensorflow_cpu-2.13.0-cp310-cp310-macosx_10_15_x86_64.whl/tensorflow/_api/v2/__internal__/autograph/__init__.py",
+    "archive_path": "tensorflow/_api/v2/__internal__/autograph/__init__.py",
+    "size": 340,
+    "hash": "\\xE1]c\\xA6\\x8D\\x1D\\xE1\\xB0\\xA8\\x91\\xA6YV\\x87\\xF0\\xDE\\xC9%\\xA0T",
     "skip_reason": "",
-    "lines": 48,
-    "repository": 162
+    "lines": 9,
+    "repository": 217
   },
   {
-    "project_name": "Hector-Observations-Pipeline",
-    "project_version": "1.2",
-    "project_release": "Hector_Observations_Pipeline-1.2-py3-none-any.whl",
-    "uploaded_on": "2022-06-03 15:19:35.526",
-    "path": "packages/Hector-Observations-Pipeline/Hector_Observations_Pipeline-1.2-py3-none-any.whl/hop/distortion_correction/HectorTranslationSoftware/DataFiles/.DS_Store",
-    "archive_path": "hop/distortion_correction/HectorTranslationSoftware/DataFiles/.DS_Store",
-    "size": 12292,
-    "hash": "3\\xE2\\xE7\\x02\\xC8\\xCC\\xE5Q=\\xA5$\\x88d\\x98\\xF1\\xDE\\xBB\\x92\\xF6_",
+    "project_name": "mayan-edms",
+    "project_version": "4.2.17",
+    "project_release": "mayan-edms-4.2.17.tar.gz",
+    "uploaded_on": "2023-07-10 05:26:52.523",
+    "path": "packages/mayan-edms/mayan-edms-4.2.17.tar.gz/mayan-edms-4.2.17/mayan/apps/storage/locale/bg/LC_MESSAGES/django.mo",
+    "archive_path": "mayan-edms-4.2.17/mayan/apps/storage/locale/bg/LC_MESSAGES/django.mo",
+    "size": 5690,
+    "hash": " ,3\\xAD?a\\xB0\\xF8\\xC3\\xAF\\x81\\xCF\\xF0\\x15\\xF4\\xFF\\xD0+\\xA2\\x87",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 153
+    "repository": 218
   }
 ]
