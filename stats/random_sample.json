@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "anna-unittasks",
-    "project_version": "1.0.10",
-    "project_release": "anna_unittasks-1.0.10.tar.gz",
-    "uploaded_on": "2020-07-27 21:23:40.944",
-    "path": "packages/anna-unittasks/anna_unittasks-1.0.10.tar.gz/anna_unittasks-1.0.10/anna_unittasks/fail.py",
-    "archive_path": "anna_unittasks-1.0.10/anna_unittasks/fail.py",
-    "size": 257,
-    "hash": "\\xFE\\xF2\\xDC\\xAA\\x9Cj\\x04s[w0\\xE7\\xBC\\x0F~v\\xB7\\x16=e",
+    "project_name": "mypy",
+    "project_version": "0.782",
+    "project_release": "mypy-0.782-cp38-cp38-manylinux1_x86_64.whl",
+    "uploaded_on": "2020-06-23 08:47:41.984",
+    "path": "packages/mypy/mypy-0.782-cp38-cp38-manylinux1_x86_64.whl/mypy/typeshed/third_party/2and3/maxminddb/extension.pyi",
+    "archive_path": "mypy/typeshed/third_party/2and3/maxminddb/extension.pyi",
+    "size": 1122,
+    "hash": "\\xDED#\\xC3J\\xC6\\xBB]\\xF7\\xAB\\xD4 Q\\x8D\\xA8>\\x10\\x98\\xF9\\xFA",
     "skip_reason": "",
-    "lines": 10,
-    "repository": 75
+    "lines": 33,
+    "repository": 72
   },
   {
-    "project_name": "chellow",
-    "project_version": "2317",
-    "project_release": "chellow-2317-py3-none-any.whl",
-    "uploaded_on": "2020-06-08 07:52:07.782",
-    "path": "packages/chellow/chellow-2317-py3-none-any.whl/chellow/rate_scripts/lafs_17/201003312300_201103312230.zish",
-    "archive_path": "chellow/rate_scripts/lafs_17/201003312300_201103312230.zish",
-    "size": 1676820,
-    "hash": "\\xA2@y\\xC4\\x99\\x077\\xD7\\xCE\\x01m\\x0A4\\xA0\\xE7\\x08\\x8C\\xC06\\xC0",
-    "skip_reason": "too-large",
-    "lines": 74133,
-    "repository": 70
+    "project_name": "tensorflow-io-nightly",
+    "project_version": "0.16.0.dev20201021164045",
+    "project_release": "tensorflow_io_nightly-0.16.0.dev20201021164045-cp37-cp37m-manylinux2010_x86_64.whl",
+    "uploaded_on": "2020-10-21 18:28:06.978",
+    "path": "packages/tensorflow-io-nightly/tensorflow_io_nightly-0.16.0.dev20201021164045-cp37-cp37m-manylinux2010_x86_64.whl/tensorflow_io_nightly-0.16.0.dev20201021164045.data/purelib/tensorflow_io/kafka/python/ops/__init__.py",
+    "archive_path": "tensorflow_io_nightly-0.16.0.dev20201021164045.data/purelib/tensorflow_io/kafka/python/ops/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
+    "lines": 0,
+    "repository": 83
   }
 ]
