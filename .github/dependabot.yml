@@ -18,11 +18,11 @@ updates:
         patterns:
           - "*"
 
-  - package-ecosystem: "pip"
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
+#  - package-ecosystem: "pip"
+#    directory: "/" # Location of package manifests
+#    schedule:
+#      interval: "daily"
+#    groups:
+#      dependencies:
+#        patterns:
+#          - "*"
