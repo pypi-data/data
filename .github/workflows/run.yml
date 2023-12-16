@@ -75,7 +75,7 @@ jobs:
           poetry run pypi-data group-index-urls output/
           echo "matrix=$(cat output/groups.json)" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: groups
           path: output/groups/
