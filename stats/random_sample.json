@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "demisto-sdk",
-    "project_version": "1.10.3",
-    "project_release": "demisto_sdk-1.10.3-py3-none-any.whl",
-    "uploaded_on": "2023-02-20 12:35:58.899",
-    "path": "packages/demisto-sdk/demisto_sdk-1.10.3-py3-none-any.whl/demisto_sdk/commands/generate_outputs/generate_context/tests/generate_integration_context_test.py",
-    "archive_path": "demisto_sdk/commands/generate_outputs/generate_context/tests/generate_integration_context_test.py",
-    "size": 6492,
-    "hash": "aD\\x14\\xAD6\\x1B\\xB3\\xAD\\xB0\\xDCq\\xD0_ U\\xBEK\\xD7\\xF8V",
+    "project_name": "mqt.ddsim",
+    "project_version": "1.19.0",
+    "project_release": "mqt_ddsim-1.19.0.tar.gz",
+    "uploaded_on": "2023-08-29 04:46:59.425",
+    "path": "packages/mqt.ddsim/mqt_ddsim-1.19.0.tar.gz/mqt_ddsim-1.19.0/extern/mqt-core/include/Definitions.hpp",
+    "archive_path": "mqt_ddsim-1.19.0/extern/mqt-core/include/Definitions.hpp",
+    "size": 2248,
+    "hash": "\\xC3\\xA4\\xDC\\xEC\\xEA\\xD6an\\x22\\x13\\x1Ai\\x94-\\xD8\\xC8\\x1D\\x12\\x5C\\x01",
     "skip_reason": "",
-    "lines": 205,
-    "repository": 193
+    "lines": 74,
+    "repository": 227
   },
   {
-    "project_name": "tensorslow",
-    "project_version": "1.0.0",
-    "project_release": "tensorslow-1.0.0.tar.gz",
-    "uploaded_on": "2023-03-31 02:48:49.69",
-    "path": "packages/tensorslow/tensorslow-1.0.0.tar.gz/tensorslow-1.0.0/src/tensorslow/datasets/mnist_data/train/2/9489.png",
-    "archive_path": "tensorslow-1.0.0/src/tensorslow/datasets/mnist_data/train/2/9489.png",
-    "size": 283,
-    "hash": "s\\xCD\\x0D\\xBC\\xCA\\xD1oO*7\\xAFv\\xA2J\\x9B\\x8F\\x22\\x94\\xC0\\x07",
-    "skip_reason": "binary",
+    "project_name": "pantsbuild.pants",
+    "project_version": "2.17.1rc1",
+    "project_release": "pantsbuild.pants-2.17.1rc1-cp37-cp37m-macosx_10_15_x86_64.whl",
+    "uploaded_on": "2023-10-10 18:02:41.016",
+    "path": "packages/pantsbuild.pants/pantsbuild.pants-2.17.1rc1-cp37-cp37m-macosx_10_15_x86_64.whl/pants/backend/codegen/thrift/scrooge/scala/__init__.py",
+    "archive_path": "pants/backend/codegen/thrift/scrooge/scala/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 200
+    "repository": 234
   }
 ]
