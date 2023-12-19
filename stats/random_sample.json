@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "mqt.ddsim",
-    "project_version": "1.19.0",
-    "project_release": "mqt_ddsim-1.19.0.tar.gz",
-    "uploaded_on": "2023-08-29 04:46:59.425",
-    "path": "packages/mqt.ddsim/mqt_ddsim-1.19.0.tar.gz/mqt_ddsim-1.19.0/extern/mqt-core/include/Definitions.hpp",
-    "archive_path": "mqt_ddsim-1.19.0/extern/mqt-core/include/Definitions.hpp",
-    "size": 2248,
-    "hash": "\\xC3\\xA4\\xDC\\xEC\\xEA\\xD6an\\x22\\x13\\x1Ai\\x94-\\xD8\\xC8\\x1D\\x12\\x5C\\x01",
+    "project_name": "pythonmatsim",
+    "project_version": "0.1.0",
+    "project_release": "pythonmatsim-0.1.0.tar.gz",
+    "uploaded_on": "2019-08-26 13:48:57.983",
+    "path": "packages/pythonmatsim/pythonmatsim-0.1.0.tar.gz/pythonmatsim-0.1.0/pythonmatsim/jvm.py",
+    "archive_path": "pythonmatsim-0.1.0/pythonmatsim/jvm.py",
+    "size": 2209,
+    "hash": "x\\x9Bd?\\x87}\\xEFWp<\\xA1\\xBB\\x1B\\xAD\\x0D\\x02\\xBE\\x17\\xAAs",
     "skip_reason": "",
-    "lines": 74,
-    "repository": 227
+    "lines": 50,
+    "repository": 51
   },
   {
-    "project_name": "pantsbuild.pants",
-    "project_version": "2.17.1rc1",
-    "project_release": "pantsbuild.pants-2.17.1rc1-cp37-cp37m-macosx_10_15_x86_64.whl",
-    "uploaded_on": "2023-10-10 18:02:41.016",
-    "path": "packages/pantsbuild.pants/pantsbuild.pants-2.17.1rc1-cp37-cp37m-macosx_10_15_x86_64.whl/pants/backend/codegen/thrift/scrooge/scala/__init__.py",
-    "archive_path": "pants/backend/codegen/thrift/scrooge/scala/__init__.py",
+    "project_name": "napoleontoolbox",
+    "project_version": "0.8.1",
+    "project_release": "napoleontoolbox-0.8.1.tar.gz",
+    "uploaded_on": "2020-01-03 13:23:42.236",
+    "path": "packages/napoleontoolbox/napoleontoolbox-0.8.1.tar.gz/napoleontoolbox-0.8.1/napoleontoolbox/movie/__init__.py",
+    "archive_path": "napoleontoolbox-0.8.1/napoleontoolbox/movie/__init__.py",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 234
+    "repository": 58
   }
 ]
