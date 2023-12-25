@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "sherlockpipe",
-    "project_version": "0.13.8",
-    "project_release": "sherlockpipe-0.13.8.tar.gz",
-    "uploaded_on": "2020-10-22 14:05:43.892",
-    "path": "packages/sherlockpipe/sherlockpipe-0.13.8.tar.gz/sherlockpipe-0.13.8/examples/programmatical/complete_example.py",
-    "archive_path": "sherlockpipe-0.13.8/examples/programmatical/complete_example.py",
-    "size": 4133,
-    "hash": "\\x09\\x85\\xD0\\x95|#0O\\xF0\\xA9\\xA9\\x8D\\xBB\\xF6$ \\x99mh6",
+    "project_name": "fastavro",
+    "project_version": "0.22.3",
+    "project_release": "fastavro-0.22.3.tar.gz",
+    "uploaded_on": "2019-07-12 20:27:58.831",
+    "path": "packages/fastavro/fastavro-0.22.3.tar.gz/fastavro-0.22.3/fastavro/_schema.pyx",
+    "archive_path": "fastavro-0.22.3/fastavro/_schema.pyx",
+    "size": 7154,
+    "hash": "\\x81v\\x1Fa\\xCC.y\\xDC=\\xC9\\xF54\\x05b\\xC0\\x86*\\xF5E\\x92",
     "skip_reason": "",
-    "lines": 62,
-    "repository": 83
+    "lines": 240,
+    "repository": 49
   },
   {
-    "project_name": "python-opensesame",
-    "project_version": "3.3.4a4",
-    "project_release": "python-opensesame-3.3.4a4.tar.gz",
-    "uploaded_on": "2020-07-27 09:15:11.79",
-    "path": "packages/python-opensesame/python-opensesame-3.3.4a4.tar.gz/python-opensesame-3.3.4a4/opensesame_resources/theme/default/Faba/24x24/actions/mail-archive.png",
-    "archive_path": "python-opensesame-3.3.4a4/opensesame_resources/theme/default/Faba/24x24/actions/mail-archive.png",
-    "size": 1048,
-    "hash": " \\xBC\\xC8\\xDF@\\xC2\\xFE\\xD0\\x5C\\x1Cwk(D\\x9CWx;\\xD2<",
+    "project_name": "lalsuite",
+    "project_version": "6.53.1.dev20190401",
+    "project_release": "lalsuite-6.53.1.dev20190401-cp36-cp36m-macosx_10_12_x86_64.whl",
+    "uploaded_on": "2019-04-01 09:59:00.061",
+    "path": "packages/lalsuite/lalsuite-6.53.1.dev20190401-cp36-cp36m-macosx_10_12_x86_64.whl/lalapps/bin/lalapps_SFTclean",
+    "archive_path": "lalapps/bin/lalapps_SFTclean",
+    "size": 58460,
+    "hash": "\\xC5\\xFB\\xEA\\xAE\\x03\\x00\\x1D\\xF5c\\xF4\\x050vLv\\x80\\xD3\\xE1Cq",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 75
+    "repository": 44
   }
 ]
