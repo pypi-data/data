@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "fastavro",
-    "project_version": "0.22.3",
-    "project_release": "fastavro-0.22.3.tar.gz",
-    "uploaded_on": "2019-07-12 20:27:58.831",
-    "path": "packages/fastavro/fastavro-0.22.3.tar.gz/fastavro-0.22.3/fastavro/_schema.pyx",
-    "archive_path": "fastavro-0.22.3/fastavro/_schema.pyx",
-    "size": 7154,
-    "hash": "\\x81v\\x1Fa\\xCC.y\\xDC=\\xC9\\xF54\\x05b\\xC0\\x86*\\xF5E\\x92",
+    "project_name": "tf-nightly-intel",
+    "project_version": "2.12.0.dev20230126",
+    "project_release": "tf_nightly_intel-2.12.0.dev20230126-cp310-cp310-win_amd64.whl",
+    "uploaded_on": "2023-01-26 15:19:40.153",
+    "path": "packages/tf-nightly-intel/tf_nightly_intel-2.12.0.dev20230126-cp310-cp310-win_amd64.whl/tensorflow/include/external/libjpeg_turbo/jdmainct.h",
+    "archive_path": "tensorflow/include/external/libjpeg_turbo/jdmainct.h",
+    "size": 2448,
+    "hash": "7\\xB2\\x01\\xCA\\x88&\\x05C\\xA4\\xA7\\xE4\\xB8f/\\xD9L\\x96\\x81\\xA3\\xE0",
     "skip_reason": "",
-    "lines": 240,
-    "repository": 49
+    "lines": 71,
+    "repository": 188
   },
   {
-    "project_name": "lalsuite",
-    "project_version": "6.53.1.dev20190401",
-    "project_release": "lalsuite-6.53.1.dev20190401-cp36-cp36m-macosx_10_12_x86_64.whl",
-    "uploaded_on": "2019-04-01 09:59:00.061",
-    "path": "packages/lalsuite/lalsuite-6.53.1.dev20190401-cp36-cp36m-macosx_10_12_x86_64.whl/lalapps/bin/lalapps_SFTclean",
-    "archive_path": "lalapps/bin/lalapps_SFTclean",
-    "size": 58460,
-    "hash": "\\xC5\\xFB\\xEA\\xAE\\x03\\x00\\x1D\\xF5c\\xF4\\x050vLv\\x80\\xD3\\xE1Cq",
-    "skip_reason": "binary",
+    "project_name": "supervisely",
+    "project_version": "6.68.60",
+    "project_release": "supervisely-6.68.60-py3-none-any.whl",
+    "uploaded_on": "2022-12-21 19:50:52.704",
+    "path": "packages/supervisely/supervisely-6.68.60-py3-none-any.whl/supervisely/nn/legacy/pytorch/__init__.py",
+    "archive_path": "supervisely/nn/legacy/pytorch/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 44
+    "repository": 182
   }
 ]
