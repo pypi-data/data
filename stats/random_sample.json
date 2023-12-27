@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-intel",
-    "project_version": "2.12.0.dev20230126",
-    "project_release": "tf_nightly_intel-2.12.0.dev20230126-cp310-cp310-win_amd64.whl",
-    "uploaded_on": "2023-01-26 15:19:40.153",
-    "path": "packages/tf-nightly-intel/tf_nightly_intel-2.12.0.dev20230126-cp310-cp310-win_amd64.whl/tensorflow/include/external/libjpeg_turbo/jdmainct.h",
-    "archive_path": "tensorflow/include/external/libjpeg_turbo/jdmainct.h",
-    "size": 2448,
-    "hash": "7\\xB2\\x01\\xCA\\x88&\\x05C\\xA4\\xA7\\xE4\\xB8f/\\xD9L\\x96\\x81\\xA3\\xE0",
+    "project_name": "gplugins",
+    "project_version": "0.8.7",
+    "project_release": "gplugins-0.8.7-py3-none-any.whl",
+    "uploaded_on": "2023-11-22 02:08:45.38",
+    "path": "packages/gplugins/gplugins-0.8.7-py3-none-any.whl/gplugins/web/server_jupyter.py",
+    "archive_path": "gplugins/web/server_jupyter.py",
+    "size": 636,
+    "hash": "H4b\\x13\\xF6#\\x98 R!\\xC0Y\\x06\\xA5\\xC2\\x91\\xBER\\xBA\\xF2",
     "skip_reason": "",
-    "lines": 71,
-    "repository": 188
+    "lines": 28,
+    "repository": 242
   },
   {
-    "project_name": "supervisely",
-    "project_version": "6.68.60",
-    "project_release": "supervisely-6.68.60-py3-none-any.whl",
-    "uploaded_on": "2022-12-21 19:50:52.704",
-    "path": "packages/supervisely/supervisely-6.68.60-py3-none-any.whl/supervisely/nn/legacy/pytorch/__init__.py",
-    "archive_path": "supervisely/nn/legacy/pytorch/__init__.py",
+    "project_name": "litellm",
+    "project_version": "1.14.1",
+    "project_release": "litellm-1.14.1-py3-none-any.whl",
+    "uploaded_on": "2023-12-14 01:03:56.903",
+    "path": "packages/litellm/litellm-1.14.1-py3-none-any.whl/litellm/proxy/tests/request_log.txt",
+    "archive_path": "litellm/proxy/tests/request_log.txt",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 182
+    "repository": 246
   }
 ]
