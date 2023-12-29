@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "cg",
-    "project_version": "31.1.4",
-    "project_release": "cg-31.1.4.tar.gz",
-    "uploaded_on": "2023-05-23 12:58:16.193",
-    "path": "packages/cg/cg-31.1.4.tar.gz/cg-31.1.4/tests/apps/coverage/test_coverage.py",
-    "archive_path": "cg-31.1.4/tests/apps/coverage/test_coverage.py",
-    "size": 6211,
-    "hash": "\\xD6v\\x1DH\\x97O\\x08\\x8C|]\\xE6\\xCB\\xB5\\xBB\\x0E\\xDE\\x85\\xC3\\xCC\\x0B",
+    "project_name": "lava-nc",
+    "project_version": "0.8.0",
+    "project_release": "lava_nc-0.8.0.tar.gz",
+    "uploaded_on": "2023-07-25 07:25:09.046",
+    "path": "packages/lava-nc/lava_nc-0.8.0.tar.gz/lava_nc-0.8.0/tests/lava/utils/test_slurm.py",
+    "archive_path": "lava_nc-0.8.0/tests/lava/utils/test_slurm.py",
+    "size": 11140,
+    "hash": "\\x12\\x8Ea\\xB1\\xA6V>:\\xDDF\\x9EVV\\x00\\xA5V\\xDB\\x020$",
     "skip_reason": "",
-    "lines": 188,
-    "repository": 209
+    "lines": 321,
+    "repository": 221
   },
   {
-    "project_name": "edwh",
-    "project_version": "0.20.2b1",
-    "project_release": "edwh-0.20.2b1.tar.gz",
-    "uploaded_on": "2023-08-01 10:29:27.152",
-    "path": "packages/edwh/edwh-0.20.2b1.tar.gz/edwh-0.20.2b1/venv310/lib/python3.10/site-packages/cffi-1.15.1.dist-info/INSTALLER",
-    "archive_path": "edwh-0.20.2b1/venv310/lib/python3.10/site-packages/cffi-1.15.1.dist-info/INSTALLER",
-    "size": 4,
-    "hash": "\\xA1\\xB5\\x89\\xE3\\x8A2\\x04\\x1EI3.^\\x81\\xC2\\xD3c\\xDCA\\x8Dh",
-    "skip_reason": "virtualenv",
-    "lines": 1,
-    "repository": 222
+    "project_name": "byzerllm",
+    "project_version": "0.0.6",
+    "project_release": "byzerllm-0.0.6.tar.gz",
+    "uploaded_on": "2023-06-24 13:14:44.479",
+    "path": "packages/byzerllm/byzerllm-0.0.6.tar.gz/byzerllm-0.0.6/src/byzerllm/bark/assets/prompts/v2/zh_speaker_0.npz",
+    "archive_path": "byzerllm-0.0.6/src/byzerllm/bark/assets/prompts/v2/zh_speaker_0.npz",
+    "size": 20636,
+    "hash": "\\x0B\\xD0\\xDB\\x1D\\xCD\\xE3\\x0F\\xA2\\xFB\\x98V \\x93]\\x95\\xF5\\x1F\\x00\\xB1\\xB8",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 215
   }
 ]
