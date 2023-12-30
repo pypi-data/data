@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "lava-nc",
-    "project_version": "0.8.0",
-    "project_release": "lava_nc-0.8.0.tar.gz",
-    "uploaded_on": "2023-07-25 07:25:09.046",
-    "path": "packages/lava-nc/lava_nc-0.8.0.tar.gz/lava_nc-0.8.0/tests/lava/utils/test_slurm.py",
-    "archive_path": "lava_nc-0.8.0/tests/lava/utils/test_slurm.py",
-    "size": 11140,
-    "hash": "\\x12\\x8Ea\\xB1\\xA6V>:\\xDDF\\x9EVV\\x00\\xA5V\\xDB\\x020$",
+    "project_name": "nodejs-bin",
+    "project_version": "16.15.1a4",
+    "project_release": "nodejs_bin-16.15.1a4-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "uploaded_on": "2022-07-06 22:10:25.42",
+    "path": "packages/nodejs-bin/nodejs_bin-16.15.1a4-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/nodejs/lib/node_modules/npm/node_modules/chalk/source/util.js",
+    "archive_path": "nodejs/lib/node_modules/npm/node_modules/chalk/source/util.js",
+    "size": 1035,
+    "hash": "\\xCAFo\\xD4f\\xC0\\x7F[\\x0B\\xE8\\x0E\\xD7\\xA9\\x92\\x07\\x81>\\x8Fv\\x5C",
     "skip_reason": "",
-    "lines": 321,
-    "repository": 221
+    "lines": 39,
+    "repository": 158
   },
   {
-    "project_name": "byzerllm",
-    "project_version": "0.0.6",
-    "project_release": "byzerllm-0.0.6.tar.gz",
-    "uploaded_on": "2023-06-24 13:14:44.479",
-    "path": "packages/byzerllm/byzerllm-0.0.6.tar.gz/byzerllm-0.0.6/src/byzerllm/bark/assets/prompts/v2/zh_speaker_0.npz",
-    "archive_path": "byzerllm-0.0.6/src/byzerllm/bark/assets/prompts/v2/zh_speaker_0.npz",
-    "size": 20636,
-    "hash": "\\x0B\\xD0\\xDB\\x1D\\xCD\\xE3\\x0F\\xA2\\xFB\\x98V \\x93]\\x95\\xF5\\x1F\\x00\\xB1\\xB8",
+    "project_name": "nbclassic",
+    "project_version": "0.4.3",
+    "project_release": "nbclassic-0.4.3.tar.gz",
+    "uploaded_on": "2022-07-12 06:39:43.092",
+    "path": "packages/nbclassic/nbclassic-0.4.3.tar.gz/nbclassic-0.4.3/nbclassic/static/components/MathJax/fonts/HTML-CSS/TeX/png/Script/Regular/085/0020.png",
+    "archive_path": "nbclassic-0.4.3/nbclassic/static/components/MathJax/fonts/HTML-CSS/TeX/png/Script/Regular/085/0020.png",
+    "size": 95,
+    "hash": "\\xC2\\xDA[\\x88\\x9D\\x84@\\x9Ay7\\xB0-\\xEB\\xF9\\xD2\\xE9i\\x8B\\x13c",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 215
+    "repository": 158
   }
 ]
