@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "c2cgeoform",
-    "project_version": "2.0.dev20171231",
-    "project_release": "c2cgeoform-2.0.dev20171231.tar.gz",
-    "uploaded_on": "2017-12-31 10:51:44.455",
-    "path": "packages/c2cgeoform/c2cgeoform-2.0.dev20171231.tar.gz/c2cgeoform-2.0.dev20171231/c2cgeoform/scaffolds/c2cgeoform/+package+/templates/edit.jinja2",
-    "archive_path": "c2cgeoform-2.0.dev20171231/c2cgeoform/scaffolds/c2cgeoform/+package+/templates/edit.jinja2",
-    "size": 123,
-    "hash": "\\x80\\xDF\\xF0\\xA5\\x1A\\xF8\\xA4h[\\xF8\\xBC7\\xD3\\xCCk#\\xFEv:\\xFD",
+    "project_name": "anyscale",
+    "project_version": "0.5.37",
+    "project_release": "anyscale-0.5.37.tar.gz",
+    "uploaded_on": "2022-07-27 21:44:17.545",
+    "path": "packages/anyscale/anyscale-0.5.37.tar.gz/anyscale-0.5.37/anyscale/client/openapi_client/models/decoratedservedeployment_response.py",
+    "archive_path": "anyscale-0.5.37/anyscale/client/openapi_client/models/decoratedservedeployment_response.py",
+    "size": 3682,
+    "hash": "\\xF70\\xFA\\xB2\\xAD\\x06\\xAA\\xF8m\\xEA\\xCA\\xCF\\xF4\\x7FT\\xA873\\xBF\\x22",
     "skip_reason": "",
-    "lines": 4,
-    "repository": 27
+    "lines": 121,
+    "repository": 160
   },
   {
-    "project_name": "home-assistant-frontend",
-    "project_version": "20190228.0",
-    "project_release": "home-assistant-frontend-20190228.0.tar.gz",
-    "uploaded_on": "2019-03-01 01:58:27.284",
-    "path": "packages/home-assistant-frontend/home-assistant-frontend-20190228.0.tar.gz/home-assistant-frontend-20190228.0/hass_frontend_es5/8974aa4a84ba16e67f78.chunk.js.gz",
-    "archive_path": "home-assistant-frontend-20190228.0/hass_frontend_es5/8974aa4a84ba16e67f78.chunk.js.gz",
-    "size": 7584,
-    "hash": "?\\x8B\\xCA\\x22\\x869pY\\xA5\\xAA\\x05J*9\\x17\\xDA\\xFEB\\xD4\\xB0",
+    "project_name": "ecmwflibs",
+    "project_version": "0.4.18rc9",
+    "project_release": "ecmwflibs-0.4.18rc9-cp38-cp38-win_amd64.whl",
+    "uploaded_on": "2022-08-31 11:51:10.771",
+    "path": "packages/ecmwflibs/ecmwflibs-0.4.18rc9-cp38-cp38-win_amd64.whl/ecmwflibs/proj_9_1.dll",
+    "archive_path": "ecmwflibs/proj_9_1.dll",
+    "size": 5528064,
+    "hash": "\\xF5vb\\xFDp~\\x9C\\x08\\xB9k\\xBC\\x165\\xD4\\xF32\\xEF\\xD3+_",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 42
+    "repository": 165
   }
 ]
