@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "baiduads-sdk-auto",
-    "project_version": "2023.1.0",
-    "project_release": "baiduads_sdk_auto-2023.1.0-py3-none-any.whl",
-    "uploaded_on": "2023-05-20 03:52:54.745",
-    "path": "packages/baiduads-sdk-auto/baiduads_sdk_auto-2023.1.0-py3-none-any.whl/baiduads/openapireport/model/get_report_data_response_wrapper.py",
-    "archive_path": "baiduads/openapireport/model/get_report_data_response_wrapper.py",
-    "size": 11660,
-    "hash": "\\xD6\\x1D\\xC0\\xFA\\xA6G\\xC0\\xD1\\xCC\\xE6>\\xE8\\x94i\\xC3\\xFEa\\x01u<",
+    "project_name": "tensorflow-macos",
+    "project_version": "2.15.0",
+    "project_release": "tensorflow_macos-2.15.0-cp310-cp310-macosx_12_0_arm64.whl",
+    "uploaded_on": "2023-11-13 21:55:57.814",
+    "path": "packages/tensorflow-macos/tensorflow_macos-2.15.0-cp310-cp310-macosx_12_0_arm64.whl/tensorflow/include/tensorflow/core/grappler/optimizers/data/enable_gradient_descent.h",
+    "archive_path": "tensorflow/include/tensorflow/core/grappler/optimizers/data/enable_gradient_descent.h",
+    "size": 2281,
+    "hash": "!\\xF7B\\xA9W\\xDE\\x88+:\\xAD\\xA3\\x5C\\x8A\\xAF\\xDA\\xD7EPBd",
     "skip_reason": "",
-    "lines": 266,
-    "repository": 209
+    "lines": 64,
+    "repository": 240
   },
   {
-    "project_name": "onnx-weekly",
-    "project_version": "1.15.0.dev20230710",
-    "project_release": "onnx_weekly-1.15.0.dev20230710-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2023-07-10 00:22:03.155",
-    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230710-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/onnx/backend/test/data/node/test_range_float_type_positive_delta_expanded/test_data_set_0/input_1.pb",
-    "archive_path": "onnx/backend/test/data/node/test_range_float_type_positive_delta_expanded/test_data_set_0/input_1.pb",
-    "size": 15,
-    "hash": "\\xFCu\\x0F\\x08\\xE5}r\\x05\\x18\\xF6GI\\xCC\\x172D\\xB7[n\\xA6",
-    "skip_reason": "binary",
+    "project_name": "tf-nightly",
+    "project_version": "2.16.0.dev20231130",
+    "project_release": "tf_nightly-2.16.0.dev20231130-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2023-11-30 09:30:47.815",
+    "path": "packages/tf-nightly/tf_nightly-2.16.0.dev20231130-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/python/trackable/__init__.py",
+    "archive_path": "tensorflow/python/trackable/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 218
+    "repository": 243
   }
 ]
