@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tensorflow-macos",
-    "project_version": "2.15.0",
-    "project_release": "tensorflow_macos-2.15.0-cp310-cp310-macosx_12_0_arm64.whl",
-    "uploaded_on": "2023-11-13 21:55:57.814",
-    "path": "packages/tensorflow-macos/tensorflow_macos-2.15.0-cp310-cp310-macosx_12_0_arm64.whl/tensorflow/include/tensorflow/core/grappler/optimizers/data/enable_gradient_descent.h",
-    "archive_path": "tensorflow/include/tensorflow/core/grappler/optimizers/data/enable_gradient_descent.h",
-    "size": 2281,
-    "hash": "!\\xF7B\\xA9W\\xDE\\x88+:\\xAD\\xA3\\x5C\\x8A\\xAF\\xDA\\xD7EPBd",
+    "project_name": "manifest-tool",
+    "project_version": "2.4.0",
+    "project_release": "manifest_tool-2.4.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2021-09-23 07:44:34.068",
+    "path": "packages/manifest-tool/manifest_tool-2.4.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/manifesttool/mtool/actions/schema.py",
+    "archive_path": "manifesttool/mtool/actions/schema.py",
+    "size": 1382,
+    "hash": "*\\x94;0\\x1E\\xD1\\xBD\\x9B\\x272\\xD1\\x8F\\x27\\xAE\\x08\\xDD[@\\xE9\\x10",
     "skip_reason": "",
-    "lines": 64,
-    "repository": 240
+    "lines": 42,
+    "repository": 120
   },
   {
-    "project_name": "tf-nightly",
-    "project_version": "2.16.0.dev20231130",
-    "project_release": "tf_nightly-2.16.0.dev20231130-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2023-11-30 09:30:47.815",
-    "path": "packages/tf-nightly/tf_nightly-2.16.0.dev20231130-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/python/trackable/__init__.py",
-    "archive_path": "tensorflow/python/trackable/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "ensmallen",
+    "project_version": "0.6.1",
+    "project_release": "ensmallen-0.6.1.tar.gz",
+    "uploaded_on": "2021-09-06 15:27:56.841",
+    "path": "packages/ensmallen/ensmallen-0.6.1.tar.gz/ensmallen-0.6.1/ensmallen/datasets/string/MethylobacteriumSpLeaf456.json.gz",
+    "archive_path": "ensmallen-0.6.1/ensmallen/datasets/string/MethylobacteriumSpLeaf456.json.gz",
+    "size": 822,
+    "hash": "s\\x80&\\x90\\x91\\xCES\\xFC4\\x5C\\xA9\\xBA\\xFF-\\xCB\\x88P\\x0Cy\\xCC",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 243
+    "repository": 119
   }
 ]
