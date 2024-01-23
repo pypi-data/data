@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "manifest-tool",
-    "project_version": "2.4.0",
-    "project_release": "manifest_tool-2.4.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2021-09-23 07:44:34.068",
-    "path": "packages/manifest-tool/manifest_tool-2.4.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/manifesttool/mtool/actions/schema.py",
-    "archive_path": "manifesttool/mtool/actions/schema.py",
-    "size": 1382,
-    "hash": "*\\x94;0\\x1E\\xD1\\xBD\\x9B\\x272\\xD1\\x8F\\x27\\xAE\\x08\\xDD[@\\xE9\\x10",
+    "project_name": "napari-spatialdata",
+    "project_version": "0.2.5",
+    "project_release": "napari_spatialdata-0.2.5-py3-none-any.whl",
+    "uploaded_on": "2023-07-13 15:16:42.425",
+    "path": "packages/napari-spatialdata/napari_spatialdata-0.2.5-py3-none-any.whl/napari_spatialdata/_sdata_widgets.py",
+    "archive_path": "napari_spatialdata/_sdata_widgets.py",
+    "size": 6023,
+    "hash": "M\\xAE\\xAF=\\x12\\xAB>:\\xA8\\x066kYnq_\\x1D\\x8C\\x0B\\x91",
     "skip_reason": "",
-    "lines": 42,
-    "repository": 120
+    "lines": 142,
+    "repository": 219
   },
   {
-    "project_name": "ensmallen",
-    "project_version": "0.6.1",
-    "project_release": "ensmallen-0.6.1.tar.gz",
-    "uploaded_on": "2021-09-06 15:27:56.841",
-    "path": "packages/ensmallen/ensmallen-0.6.1.tar.gz/ensmallen-0.6.1/ensmallen/datasets/string/MethylobacteriumSpLeaf456.json.gz",
-    "archive_path": "ensmallen-0.6.1/ensmallen/datasets/string/MethylobacteriumSpLeaf456.json.gz",
-    "size": 822,
-    "hash": "s\\x80&\\x90\\x91\\xCES\\xFC4\\x5C\\xA9\\xBA\\xFF-\\xCB\\x88P\\x0Cy\\xCC",
+    "project_name": "onnx-weekly",
+    "project_version": "1.15.0.dev20230731",
+    "project_release": "onnx_weekly-1.15.0.dev20230731-cp310-cp310-macosx_10_12_universal2.whl",
+    "uploaded_on": "2023-07-31 00:25:32.927",
+    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230731-cp310-cp310-macosx_10_12_universal2.whl/onnx/backend/test/data/simple/test_expand_shape_model3/test_data_set_0/input_1.pb",
+    "archive_path": "onnx/backend/test/data/simple/test_expand_shape_model3/test_data_set_0/input_1.pb",
+    "size": 37,
+    "hash": "]x\\xA12\\xF48\\x96\\x80k\\xFB\\xA1\\xF7Q.\\x0B{\\x0DA\\x99<",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 119
+    "repository": 222
   }
 ]
