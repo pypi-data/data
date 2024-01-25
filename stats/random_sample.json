@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "Diofant",
-    "project_version": "0.9.0b1",
-    "project_release": "Diofant-0.9.0b1-py3-none-any.whl",
-    "uploaded_on": "2018-02-05 13:15:26.466",
-    "path": "packages/Diofant/Diofant-0.9.0b1-py3-none-any.whl/diofant/tests/__init__.py",
-    "archive_path": "diofant/tests/__init__.py",
-    "size": 23,
-    "hash": "P(V%\\xA2\\xE2B\\xBBEP\\xFAG\\xEF\\xB7\\xE6u\\x0FlK=",
+    "project_name": "simo",
+    "project_version": "1.7.18",
+    "project_release": "simo-1.7.18.tar.gz",
+    "uploaded_on": "2024-01-24 08:45:26.779",
+    "path": "packages/simo/simo-1.7.18.tar.gz/simo-1.7.18/src/simo/core/static/third_party/fontawesome-pro/svgs/solid/sign-out-alt.svg",
+    "archive_path": "simo-1.7.18/src/simo/core/static/third_party/fontawesome-pro/svgs/solid/sign-out-alt.svg",
+    "size": 557,
+    "hash": "\\x90\\x8E\\xD7\\xD7\\xFE\\xE3\\xADj\\x7F\\xAE\\xE2\\xF9y\\xAEy\\x88\\x07\\x8E\\xCB\\xBD",
     "skip_reason": "",
-    "lines": 3,
-    "repository": 28
+    "lines": 1,
+    "repository": 252
   },
   {
-    "project_name": "tendenci",
-    "project_version": "7.4.1",
-    "project_release": "tendenci-7.4.1.tar.gz",
-    "uploaded_on": "2017-12-04 21:18:58.557",
-    "path": "packages/tendenci/tendenci-7.4.1.tar.gz/tendenci-7.4.1/tendenci/apps/base/static/famfamfam/icons/contrast.png",
-    "archive_path": "tendenci-7.4.1/tendenci/apps/base/static/famfamfam/icons/contrast.png",
-    "size": 434,
-    "hash": "\\xAD\\xCC\\x00F\\xF8o\\xA7\\xF5*)V\\xEE\\x0D}n\\x5C\\x141\\xC5\\x1F",
+    "project_name": "onnx-weekly",
+    "project_version": "1.16.0.dev20240101",
+    "project_release": "onnx_weekly-1.16.0.dev20240101-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2024-01-01 00:15:47.968",
+    "path": "packages/onnx-weekly/onnx_weekly-1.16.0.dev20240101-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/onnx/backend/test/data/node/test_pow_types_float32_int32/test_data_set_0/output_0.pb",
+    "archive_path": "onnx/backend/test/data/node/test_pow_types_float32_int32/test_data_set_0/output_0.pb",
+    "size": 21,
+    "hash": "\\x0C\\xC3\\x97\\x08\\xCA\\x5C\\xD9\\x84\\xC0\\xC3\\x22\\x85e{\\x92\\xF0TY\\x14\\xBA",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 27
+    "repository": 248
   }
 ]
