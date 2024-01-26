@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "simo",
-    "project_version": "1.7.18",
-    "project_release": "simo-1.7.18.tar.gz",
-    "uploaded_on": "2024-01-24 08:45:26.779",
-    "path": "packages/simo/simo-1.7.18.tar.gz/simo-1.7.18/src/simo/core/static/third_party/fontawesome-pro/svgs/solid/sign-out-alt.svg",
-    "archive_path": "simo-1.7.18/src/simo/core/static/third_party/fontawesome-pro/svgs/solid/sign-out-alt.svg",
-    "size": 557,
-    "hash": "\\x90\\x8E\\xD7\\xD7\\xFE\\xE3\\xADj\\x7F\\xAE\\xE2\\xF9y\\xAEy\\x88\\x07\\x8E\\xCB\\xBD",
+    "project_name": "rocketbot",
+    "project_version": "0.2.5",
+    "project_release": "rocketbot-0.2.5.tar.gz",
+    "uploaded_on": "2019-10-30 15:38:07.876",
+    "path": "packages/rocketbot/rocketbot-0.2.5.tar.gz/rocketbot-0.2.5/rocketbot/models/enums.py",
+    "archive_path": "rocketbot-0.2.5/rocketbot/models/enums.py",
+    "size": 1078,
+    "hash": "9\\xAAddDO\\x85x\\x83\\xDD\\xEA\\xDF5i\\x99\\x07\\xD2\\xEAl\\xC9",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 252
+    "lines": 42,
+    "repository": 54
   },
   {
-    "project_name": "onnx-weekly",
-    "project_version": "1.16.0.dev20240101",
-    "project_release": "onnx_weekly-1.16.0.dev20240101-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2024-01-01 00:15:47.968",
-    "path": "packages/onnx-weekly/onnx_weekly-1.16.0.dev20240101-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/onnx/backend/test/data/node/test_pow_types_float32_int32/test_data_set_0/output_0.pb",
-    "archive_path": "onnx/backend/test/data/node/test_pow_types_float32_int32/test_data_set_0/output_0.pb",
-    "size": 21,
-    "hash": "\\x0C\\xC3\\x97\\x08\\xCA\\x5C\\xD9\\x84\\xC0\\xC3\\x22\\x85e{\\x92\\xF0TY\\x14\\xBA",
+    "project_name": "bpp-iplweb",
+    "project_version": "201910.5a0",
+    "project_release": "bpp_iplweb-201910.5a0-py3-none-any.whl",
+    "uploaded_on": "2019-10-09 07:23:04.867",
+    "path": "packages/bpp-iplweb/bpp_iplweb-201910.5a0-py3-none-any.whl/django_bpp/staticroot/grappelli/images/icons/ui-datepicker-prev_hover.png",
+    "archive_path": "django_bpp/staticroot/grappelli/images/icons/ui-datepicker-prev_hover.png",
+    "size": 1009,
+    "hash": "\\xB8\\x052\\xA9.3\\xA3Y\\xFAB\\x08\\xDC\\x09\\xDA\\x9At/\\x89JL",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 248
+    "repository": 53
   }
 ]
