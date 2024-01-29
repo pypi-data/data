@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "cdk-cloudfront-plus",
-    "project_version": "0.3.149",
-    "project_release": "cdk_cloudfront_plus-0.3.149-py3-none-any.whl",
-    "uploaded_on": "2021-11-13 00:22:15.424",
-    "path": "packages/cdk-cloudfront-plus/cdk_cloudfront_plus-0.3.149-py3-none-any.whl/cdk_cloudfront_plus-0.3.149.dist-info/top_level.txt",
-    "archive_path": "cdk_cloudfront_plus-0.3.149.dist-info/top_level.txt",
-    "size": 20,
-    "hash": "a\\xD1VC\\x15\\x1AL\\xD17g]\\xD3\\xCF;QaQ\\xAA\\x8D\\x86",
+    "project_name": "oci-cli",
+    "project_version": "3.5.1",
+    "project_release": "oci-cli-3.5.1.tar.gz",
+    "uploaded_on": "2022-02-15 19:21:45.924",
+    "path": "packages/oci-cli/oci-cli-3.5.1.tar.gz/oci-cli-3.5.1/src/oci_cli/help_text_producer/data_files/text/cmdref/db/autonomous-exadata-infrastructure/rotate-ssl-certs.txt",
+    "archive_path": "oci-cli-3.5.1/src/oci_cli/help_text_producer/data_files/text/cmdref/db/autonomous-exadata-infrastructure/rotate-ssl-certs.txt",
+    "size": 4976,
+    "hash": "\\xF3\\xB7s\\x8C,<\\x05Y}\\xD4\\x88\\xC9QB\\x12{\\xED\\xAB\\xC0\\x05",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 127
+    "lines": 130,
+    "repository": 138
   },
   {
-    "project_name": "Caroline-presentation",
-    "project_version": "0.2.2",
-    "project_release": "Caroline-presentation-0.2.2.tar.gz",
-    "uploaded_on": "2021-12-11 11:36:13.539",
-    "path": "packages/Caroline-presentation/Caroline-presentation-0.2.2.tar.gz/Caroline-presentation-0.2.2/caroline/example/presentation_files/em1.png",
-    "archive_path": "Caroline-presentation-0.2.2/caroline/example/presentation_files/em1.png",
-    "size": 43073,
-    "hash": "\\xF85\\xFA$\\xBE\\x1Au\\x22p@\\x03b\\xAF\\x836\\xB6\\xD3Y\\xDFv",
-    "skip_reason": "binary",
+    "project_name": "allure-pytest",
+    "project_version": "2.9.45",
+    "project_release": "allure-pytest-2.9.45.tar.gz",
+    "uploaded_on": "2021-10-15 08:22:29.407",
+    "path": "packages/allure-pytest/allure-pytest-2.9.45.tar.gz/allure-pytest-2.9.45/test/acceptance/label/__init__.py",
+    "archive_path": "allure-pytest-2.9.45/test/acceptance/label/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 130
+    "repository": 123
   }
 ]
