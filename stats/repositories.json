@@ -1219,12 +1219,12 @@
     "index": 253,
     "stats": {
       "earliest_package": "2024-01-25T06:20:50.990765Z",
-      "latest_package": "2024-01-28T22:34:34.366023Z",
-      "total_packages": 30949,
-      "done_packages": 29967
+      "latest_package": "2024-01-29T22:28:42.989995Z",
+      "total_packages": 40333,
+      "done_packages": 37134
     },
-    "percent_done": 96,
-    "size": 1364285440,
+    "percent_done": 92,
+    "size": 1535210496,
     "url": "https://github.com/pypi-data/pypi-mirror-253",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-253/tree/code/packages",
     "projects": {}
