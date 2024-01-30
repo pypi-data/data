@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "oci-cli",
-    "project_version": "3.5.1",
-    "project_release": "oci-cli-3.5.1.tar.gz",
-    "uploaded_on": "2022-02-15 19:21:45.924",
-    "path": "packages/oci-cli/oci-cli-3.5.1.tar.gz/oci-cli-3.5.1/src/oci_cli/help_text_producer/data_files/text/cmdref/db/autonomous-exadata-infrastructure/rotate-ssl-certs.txt",
-    "archive_path": "oci-cli-3.5.1/src/oci_cli/help_text_producer/data_files/text/cmdref/db/autonomous-exadata-infrastructure/rotate-ssl-certs.txt",
-    "size": 4976,
-    "hash": "\\xF3\\xB7s\\x8C,<\\x05Y}\\xD4\\x88\\xC9QB\\x12{\\xED\\xAB\\xC0\\x05",
+    "project_name": "ansible",
+    "project_version": "2.10.5",
+    "project_release": "ansible-2.10.5.tar.gz",
+    "uploaded_on": "2021-01-05 21:16:51.981",
+    "path": "packages/ansible/ansible-2.10.5.tar.gz/ansible-2.10.5/ansible_collections/google/cloud/tests/integration/targets/gcp_appengine_firewall_rule/tasks/autogen.yml",
+    "archive_path": "ansible-2.10.5/ansible_collections/google/cloud/tests/integration/targets/gcp_appengine_firewall_rule/tasks/autogen.yml",
+    "size": 3517,
+    "hash": "V\\x1D\\x5Cn\\xBC\\xD8\\xA1@Pf?\\xD4\\x94\\x12\\x89\\x9Ae\\xEA\\x97~",
     "skip_reason": "",
-    "lines": 130,
-    "repository": 138
+    "lines": 108,
+    "repository": 90
   },
   {
-    "project_name": "allure-pytest",
-    "project_version": "2.9.45",
-    "project_release": "allure-pytest-2.9.45.tar.gz",
-    "uploaded_on": "2021-10-15 08:22:29.407",
-    "path": "packages/allure-pytest/allure-pytest-2.9.45.tar.gz/allure-pytest-2.9.45/test/acceptance/label/__init__.py",
-    "archive_path": "allure-pytest-2.9.45/test/acceptance/label/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
-    "lines": 0,
-    "repository": 123
+    "project_name": "pythondata-misc-opentitan",
+    "project_version": "0.0.post5369",
+    "project_release": "pythondata_misc_opentitan-0.0.post5369-py2-none-any.whl",
+    "uploaded_on": "2021-03-12 20:16:12.274",
+    "path": "packages/pythondata-misc-opentitan/pythondata_misc_opentitan-0.0.post5369-py2-none-any.whl/pythondata_misc_opentitan/resources/hw/ip/pattgen/doc/dv/tb.svg",
+    "archive_path": "pythondata_misc_opentitan/resources/hw/ip/pattgen/doc/dv/tb.svg",
+    "size": 931561,
+    "hash": "\\x9B]/\\xC8\\xB6\\x87\\x8E\\xF6\\xA1\\x99\\x8D>t\\xA8\\xCET[\\xC8\\x0A\\xA3",
+    "skip_reason": "too-large",
+    "lines": 1,
+    "repository": 98
   }
 ]
