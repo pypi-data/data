@@ -1221,10 +1221,10 @@
       "earliest_package": "2024-01-25T06:20:50.990765Z",
       "latest_package": "2024-01-30T20:26:42.096046Z",
       "total_packages": 50000,
-      "done_packages": 48009
+      "done_packages": 50000
     },
-    "percent_done": 96,
-    "size": 2087385088,
+    "percent_done": 100,
+    "size": 2176779264,
     "url": "https://github.com/pypi-data/pypi-mirror-253",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-253/tree/code/packages",
     "projects": {}
