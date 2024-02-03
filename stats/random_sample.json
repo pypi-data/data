@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "resnest",
-    "project_version": "0.0.6b20220605",
-    "project_release": "resnest-0.0.6b20220605-py3-none-any.whl",
-    "uploaded_on": "2022-06-05 12:02:22.53",
-    "path": "packages/resnest/resnest-0.0.6b20220605-py3-none-any.whl/resnest/gluon/resnet.py",
-    "archive_path": "resnest/gluon/resnet.py",
-    "size": 18705,
-    "hash": "^\\x14\\x82\\xE1\\xF8C\\x10\\x82j\\xF2\\xF7,\\xB4:%\\x94\\xBB\\xD5\\xAA\\x27",
+    "project_name": "cx-Freeze",
+    "project_version": "6.15.2",
+    "project_release": "cx_Freeze-6.15.2-cp39-cp39-macosx_10_9_universal2.whl",
+    "uploaded_on": "2023-06-27 08:36:34.279",
+    "path": "packages/cx-Freeze/cx_Freeze-6.15.2-cp39-cp39-macosx_10_9_universal2.whl/cx_Freeze/bases/tcltk/tcl8.6/msgs/ja.msg",
+    "archive_path": "cx_Freeze/bases/tcltk/tcl8.6/msgs/ja.msg",
+    "size": 1645,
+    "hash": "\\xCFp\\xC2\\xF3&\\x04>\\x83\\xEF\\xC1y\\x22&3\\x17d\\xD2q\\xBEo",
     "skip_reason": "",
-    "lines": 339,
-    "repository": 153
+    "lines": 44,
+    "repository": 216
   },
   {
-    "project_name": "torch-airflow-sdk",
-    "project_version": "0.0.29",
-    "project_release": "torch_airflow_sdk-0.0.29.tar.gz",
-    "uploaded_on": "2022-06-02 11:41:00.228",
-    "path": "packages/torch-airflow-sdk/torch_airflow_sdk-0.0.29.tar.gz/torch_airflow_sdk-0.0.29/docs/sphinx_venv/lib/python3.8/site-packages/airflow/contrib/hooks/datastore_hook.py",
-    "archive_path": "torch_airflow_sdk-0.0.29/docs/sphinx_venv/lib/python3.8/site-packages/airflow/contrib/hooks/datastore_hook.py",
-    "size": 1140,
-    "hash": "\\x98\\x98\\xE2\\xFB\\x16\\x81N&\\xA5\\xA5\\xCE\\xA1xK\\xF0f\\xCAQ69",
-    "skip_reason": "virtualenv",
-    "lines": 28,
-    "repository": 153
+    "project_name": "onnx-weekly",
+    "project_version": "1.15.0.dev20230529",
+    "project_release": "onnx_weekly-1.15.0.dev20230529-cp310-cp310-macosx_10_12_x86_64.whl",
+    "uploaded_on": "2023-05-29 00:18:09.899",
+    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230529-cp310-cp310-macosx_10_12_x86_64.whl/onnx/backend/test/data/node/test_logsoftmax_axis_1/model.onnx",
+    "archive_path": "onnx/backend/test/data/node/test_logsoftmax_axis_1/model.onnx",
+    "size": 131,
+    "hash": "\\x8DZ-+&D[K\\xFB\\xB1*Jdi\\xBD\\xF1\\xCD\\x88\\xB6\\xE8",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 210
   }
 ]
