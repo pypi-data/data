@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "cx-Freeze",
-    "project_version": "6.15.2",
-    "project_release": "cx_Freeze-6.15.2-cp39-cp39-macosx_10_9_universal2.whl",
-    "uploaded_on": "2023-06-27 08:36:34.279",
-    "path": "packages/cx-Freeze/cx_Freeze-6.15.2-cp39-cp39-macosx_10_9_universal2.whl/cx_Freeze/bases/tcltk/tcl8.6/msgs/ja.msg",
-    "archive_path": "cx_Freeze/bases/tcltk/tcl8.6/msgs/ja.msg",
-    "size": 1645,
-    "hash": "\\xCFp\\xC2\\xF3&\\x04>\\x83\\xEF\\xC1y\\x22&3\\x17d\\xD2q\\xBEo",
+    "project_name": "tf-nightly-intel",
+    "project_version": "2.12.0.dev20221105",
+    "project_release": "tf_nightly_intel-2.12.0.dev20221105-cp310-cp310-win_amd64.whl",
+    "uploaded_on": "2022-11-05 15:28:14.191",
+    "path": "packages/tf-nightly-intel/tf_nightly_intel-2.12.0.dev20221105-cp310-cp310-win_amd64.whl/tensorflow/include/tensorflow/core/util/reporter.h",
+    "archive_path": "tensorflow/include/tensorflow/core/util/reporter.h",
+    "size": 1262,
+    "hash": "\\xC5i\\xE5\\xFD\\x9A\\xDA\\xF5\\xF9\\xF3\\x1DVE\\x86\\xC5.8p\\x0D\\x876",
     "skip_reason": "",
-    "lines": 44,
-    "repository": 216
+    "lines": 37,
+    "repository": 175
   },
   {
-    "project_name": "onnx-weekly",
-    "project_version": "1.15.0.dev20230529",
-    "project_release": "onnx_weekly-1.15.0.dev20230529-cp310-cp310-macosx_10_12_x86_64.whl",
-    "uploaded_on": "2023-05-29 00:18:09.899",
-    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230529-cp310-cp310-macosx_10_12_x86_64.whl/onnx/backend/test/data/node/test_logsoftmax_axis_1/model.onnx",
-    "archive_path": "onnx/backend/test/data/node/test_logsoftmax_axis_1/model.onnx",
-    "size": 131,
-    "hash": "\\x8DZ-+&D[K\\xFB\\xB1*Jdi\\xBD\\xF1\\xCD\\x88\\xB6\\xE8",
+    "project_name": "OpenGeode-core",
+    "project_version": "12.1.2",
+    "project_release": "OpenGeode_core-12.1.2-cp38-cp38-manylinux2014_x86_64.whl",
+    "uploaded_on": "2022-09-27 07:12:41.972",
+    "path": "packages/OpenGeode-core/OpenGeode_core-12.1.2-cp38-cp38-manylinux2014_x86_64.whl/opengeode/libabsl_flags_handle.so",
+    "archive_path": "opengeode/libabsl_flags_handle.so",
+    "size": 22024,
+    "hash": "\\x8F\\x8E\\x07\\x08U\\x18\\x17\\x02\\xF7s\\x05\\xC2\\xAB1\\x1BA\\xD3q\\x1C\\x85",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 210
+    "repository": 169
   }
 ]
