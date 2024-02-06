@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "glyphsLib",
-    "project_version": "6.6.2",
-    "project_release": "glyphsLib-6.6.2.tar.gz",
-    "uploaded_on": "2024-01-30 16:24:46.934",
-    "path": "packages/glyphsLib/glyphsLib-6.6.2.tar.gz/glyphsLib-6.6.2/tests/data/designspace/spectral/spectral-xlight-italic.ufo/glyphs/cedillacomb.case.glif",
-    "archive_path": "glyphsLib-6.6.2/tests/data/designspace/spectral/spectral-xlight-italic.ufo/glyphs/cedillacomb.case.glif",
-    "size": 259,
-    "hash": "\\xDF*\\xD6\\x0Dzq\\x93\\x11\\xB0\\x1AMM\\x13;\\x1A\\xE2\\xFF\\x22\\x0A\\x97",
+    "project_name": "docassemble.base",
+    "project_version": "1.1.79",
+    "project_release": "docassemble.base-1.1.79.tar.gz",
+    "uploaded_on": "2020-09-28 17:52:37.319",
+    "path": "packages/docassemble.base/docassemble.base-1.1.79.tar.gz/docassemble.base-1.1.79/docassemble/base/data/questions/examples/fields-mc-6.yml",
+    "archive_path": "docassemble.base-1.1.79/docassemble/base/data/questions/examples/fields-mc-6.yml",
+    "size": 949,
+    "hash": "\\xD3\\x19\\xF1\\xD9k\\xAE\\xDF5IX\\xCF\\xA00\\xFD%&\\x0F\\xBE\\x1DK",
     "skip_reason": "",
-    "lines": 10,
-    "repository": 253
+    "lines": 40,
+    "repository": 80
   },
   {
-    "project_name": "roche-datachapter-lib",
-    "project_version": "0.0.5",
-    "project_release": "roche_datachapter_lib-0.0.5.tar.gz",
-    "uploaded_on": "2024-01-08 18:42:48.764",
-    "path": "packages/roche-datachapter-lib/roche_datachapter_lib-0.0.5.tar.gz/roche_datachapter_lib-0.0.5/venv/Lib/site-packages/oauthlib/oauth2/rfc6749/clients/web_application.py",
-    "archive_path": "roche_datachapter_lib-0.0.5/venv/Lib/site-packages/oauthlib/oauth2/rfc6749/clients/web_application.py",
-    "size": 12088,
-    "hash": "P\\x89\\x0F\\xBF\\x8AQIP\\x9E\\xCD\\x228\\xD9\\x15)\\x1F\\x7F\\xD0\\x1B\\xE9",
-    "skip_reason": "virtualenv",
-    "lines": 222,
-    "repository": 250
+    "project_name": "ocrmypdf",
+    "project_version": "10.3.3",
+    "project_release": "ocrmypdf-10.3.3.tar.gz",
+    "uploaded_on": "2020-08-07 09:55:39.975",
+    "path": "packages/ocrmypdf/ocrmypdf-10.3.3.tar.gz/ocrmypdf-10.3.3/src/ocrmypdf/data/sRGB.icc",
+    "archive_path": "ocrmypdf-10.3.3/src/ocrmypdf/data/sRGB.icc",
+    "size": 6922,
+    "hash": "\\x1D\\x8Ft\\x19\\xC3\\xBF,j=\\xD7\\x8F,g\\x9F\\xDE\\xFB\\xDA\\x17v\\xA3",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 76
   }
 ]
