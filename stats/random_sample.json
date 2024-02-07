@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "docassemble.base",
-    "project_version": "1.1.79",
-    "project_release": "docassemble.base-1.1.79.tar.gz",
-    "uploaded_on": "2020-09-28 17:52:37.319",
-    "path": "packages/docassemble.base/docassemble.base-1.1.79.tar.gz/docassemble.base-1.1.79/docassemble/base/data/questions/examples/fields-mc-6.yml",
-    "archive_path": "docassemble.base-1.1.79/docassemble/base/data/questions/examples/fields-mc-6.yml",
-    "size": 949,
-    "hash": "\\xD3\\x19\\xF1\\xD9k\\xAE\\xDF5IX\\xCF\\xA00\\xFD%&\\x0F\\xBE\\x1DK",
+    "project_name": "tf-nightly-cpu",
+    "project_version": "2.10.0.dev20220602",
+    "project_release": "tf_nightly_cpu-2.10.0.dev20220602-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2022-06-02 09:52:40.539",
+    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.10.0.dev20220602-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/include/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsImpl.h",
+    "archive_path": "tensorflow/include/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsImpl.h",
+    "size": 58803,
+    "hash": "\\x0A\\xDD\\xD0\\x9A4\\x00\\xB0h\\x83\\x87\\xD0\\xC7b\\xEF\\xA0\\xB1\\x97FO\\x9A",
     "skip_reason": "",
-    "lines": 40,
-    "repository": 80
+    "lines": 2053,
+    "repository": 153
   },
   {
-    "project_name": "ocrmypdf",
-    "project_version": "10.3.3",
-    "project_release": "ocrmypdf-10.3.3.tar.gz",
-    "uploaded_on": "2020-08-07 09:55:39.975",
-    "path": "packages/ocrmypdf/ocrmypdf-10.3.3.tar.gz/ocrmypdf-10.3.3/src/ocrmypdf/data/sRGB.icc",
-    "archive_path": "ocrmypdf-10.3.3/src/ocrmypdf/data/sRGB.icc",
-    "size": 6922,
-    "hash": "\\x1D\\x8Ft\\x19\\xC3\\xBF,j=\\xD7\\x8F,g\\x9F\\xDE\\xFB\\xDA\\x17v\\xA3",
-    "skip_reason": "binary",
+    "project_name": "RelevanceAI-dev",
+    "project_version": "2.4.2.2022.6.28.4.21.25.651106",
+    "project_release": "RelevanceAI-dev-2.4.2.2022.6.28.4.21.25.651106.tar.gz",
+    "uploaded_on": "2022-06-28 04:21:30.029",
+    "path": "packages/RelevanceAI-dev/RelevanceAI-dev-2.4.2.2022.6.28.4.21.25.651106.tar.gz/RelevanceAI-dev-2.4.2.2022.6.28.4.21.25.651106/relevanceai/operations_new/processing/transformers/__init__.py",
+    "archive_path": "RelevanceAI-dev-2.4.2.2022.6.28.4.21.25.651106/relevanceai/operations_new/processing/transformers/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 76
+    "repository": 156
   }
 ]
