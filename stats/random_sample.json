@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "mayan-edms",
-    "project_version": "3.3.5",
-    "project_release": "mayan_edms-3.3.5-py2.py3-none-any.whl",
-    "uploaded_on": "2019-12-13 09:41:19.343",
-    "path": "packages/mayan-edms/mayan_edms-3.3.5-py2.py3-none-any.whl/mayan/apps/appearance/locale/tr_TR/LC_MESSAGES/django.mo",
-    "archive_path": "mayan/apps/appearance/locale/tr_TR/LC_MESSAGES/django.mo",
-    "size": 2328,
-    "hash": "\\xA6\\xD8\\xCB\\x95t2\\xC3\\xADT>\\xCEs9\\x84\\x16Z\\x11\\x873\\x86",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 57
+    "project_name": "scancode-toolkit",
+    "project_version": "31.1.0",
+    "project_release": "scancode-toolkit-31.1.0.tar.gz",
+    "uploaded_on": "2022-08-29 12:59:34.319",
+    "path": "packages/scancode-toolkit/scancode-toolkit-31.1.0.tar.gz/scancode-toolkit-31.1.0/src/licensedcode/data/rules/gpl-2.0-plus_204.yml",
+    "archive_path": "scancode-toolkit-31.1.0/src/licensedcode/data/rules/gpl-2.0-plus_204.yml",
+    "size": 92,
+    "hash": "\\xE0a\\xFDA\\x84$\\xB7\\xF9L\\xB2\\x03\\xE1X\\xA6\\xBC\\xE6\\xB2\\xB6\\x1B\\xCC",
+    "skip_reason": "",
+    "lines": 4,
+    "repository": 165
   },
   {
-    "project_name": "satnogs-db",
-    "project_version": "0.27",
-    "project_release": "satnogs_db-0.27-py3-none-any.whl",
-    "uploaded_on": "2020-02-05 16:58:24.08",
-    "path": "packages/satnogs-db/satnogs_db-0.27-py3-none-any.whl/db/static/img/satellites.png",
-    "archive_path": "db/static/img/satellites.png",
-    "size": 502,
-    "hash": " 8S#\\x0F\\xF9)5\\xF8tITe\\xD0e\\xA7\\xC0\\x5C\\xED\\x90",
+    "project_name": "detkit",
+    "project_version": "0.1.0",
+    "project_release": "detkit-0.1.0-cp36-cp36m-win_amd64.whl",
+    "uploaded_on": "2022-07-13 21:43:29.195",
+    "path": "packages/detkit/detkit-0.1.0-cp36-cp36m-win_amd64.whl/detkit/_definitions/get_config.cp36-win_amd64.pyd",
+    "archive_path": "detkit/_definitions/get_config.cp36-win_amd64.pyd",
+    "size": 104448,
+    "hash": "s\\xD7\\xF7\\xB9\\x89\\x11=jm\\xCD\\xE3\\xBC1\\xFEC\\x98\\x965\\xAB%",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 60
+    "repository": 159
   }
 ]
