@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "scancode-toolkit",
-    "project_version": "31.1.0",
-    "project_release": "scancode-toolkit-31.1.0.tar.gz",
-    "uploaded_on": "2022-08-29 12:59:34.319",
-    "path": "packages/scancode-toolkit/scancode-toolkit-31.1.0.tar.gz/scancode-toolkit-31.1.0/src/licensedcode/data/rules/gpl-2.0-plus_204.yml",
-    "archive_path": "scancode-toolkit-31.1.0/src/licensedcode/data/rules/gpl-2.0-plus_204.yml",
-    "size": 92,
-    "hash": "\\xE0a\\xFDA\\x84$\\xB7\\xF9L\\xB2\\x03\\xE1X\\xA6\\xBC\\xE6\\xB2\\xB6\\x1B\\xCC",
+    "project_name": "pressio4py",
+    "project_version": "0.6.1rc1",
+    "project_release": "pressio4py-0.6.1rc1.tar.gz",
+    "uploaded_on": "2021-01-05 15:46:21.627",
+    "path": "packages/pressio4py/pressio4py-0.6.1rc1.tar.gz/pressio4py-0.6.1rc1/pressio/packages/containers/src/tensor/containers_tensor_traits.hpp",
+    "archive_path": "pressio4py-0.6.1rc1/pressio/packages/containers/src/tensor/containers_tensor_traits.hpp",
+    "size": 6748,
+    "hash": ":AB\\xB7\\xC8x\\x9AX\\xFC\\x88\\x0FQ\\xB5E\\x9F\\xD6T3-\\x9A",
     "skip_reason": "",
-    "lines": 4,
-    "repository": 165
+    "lines": 171,
+    "repository": 90
   },
   {
-    "project_name": "detkit",
-    "project_version": "0.1.0",
-    "project_release": "detkit-0.1.0-cp36-cp36m-win_amd64.whl",
-    "uploaded_on": "2022-07-13 21:43:29.195",
-    "path": "packages/detkit/detkit-0.1.0-cp36-cp36m-win_amd64.whl/detkit/_definitions/get_config.cp36-win_amd64.pyd",
-    "archive_path": "detkit/_definitions/get_config.cp36-win_amd64.pyd",
-    "size": 104448,
-    "hash": "s\\xD7\\xF7\\xB9\\x89\\x11=jm\\xCD\\xE3\\xBC1\\xFEC\\x98\\x965\\xAB%",
+    "project_name": "tfkit",
+    "project_version": "0.6.32",
+    "project_release": "tfkit-0.6.32-py3.7.egg",
+    "uploaded_on": "2021-03-21 14:09:11.555",
+    "path": "packages/tfkit/tfkit-0.6.32-py3.7.egg/tfkit/model/tagcrf/__pycache__/model.cpython-37.pyc",
+    "archive_path": "tfkit/model/tagcrf/__pycache__/model.cpython-37.pyc",
+    "size": 4466,
+    "hash": "\\xD9\\x8C\\x92\\xC1\\x87h@\\x94\\xBA\\x94E\\x8B\\x9D\\x7FJ\\xBF\\x16\\xF6}:",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 159
+    "repository": 99
   }
 ]
