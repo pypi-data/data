@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pressio4py",
-    "project_version": "0.6.1rc1",
-    "project_release": "pressio4py-0.6.1rc1.tar.gz",
-    "uploaded_on": "2021-01-05 15:46:21.627",
-    "path": "packages/pressio4py/pressio4py-0.6.1rc1.tar.gz/pressio4py-0.6.1rc1/pressio/packages/containers/src/tensor/containers_tensor_traits.hpp",
-    "archive_path": "pressio4py-0.6.1rc1/pressio/packages/containers/src/tensor/containers_tensor_traits.hpp",
-    "size": 6748,
-    "hash": ":AB\\xB7\\xC8x\\x9AX\\xFC\\x88\\x0FQ\\xB5E\\x9F\\xD6T3-\\x9A",
+    "project_name": "sickrage",
+    "project_version": "10.0.26.dev1",
+    "project_release": "sickrage-10.0.26.dev1-py2.py3-none-any.whl",
+    "uploaded_on": "2021-08-03 16:22:07.183",
+    "path": "packages/sickrage/sickrage-10.0.26.dev1-py2.py3-none-any.whl/sickrage/autoProcessTV/autoProcessTV.cfg.sample",
+    "archive_path": "sickrage/autoProcessTV/autoProcessTV.cfg.sample",
+    "size": 60,
+    "hash": "47\\xC7\\xAD%tA\\x1E\\x88p_\\x92\\x91,\\xB9\\x01LK\\xB9l",
     "skip_reason": "",
-    "lines": 171,
-    "repository": 90
+    "lines": 6,
+    "repository": 115
   },
   {
-    "project_name": "tfkit",
-    "project_version": "0.6.32",
-    "project_release": "tfkit-0.6.32-py3.7.egg",
-    "uploaded_on": "2021-03-21 14:09:11.555",
-    "path": "packages/tfkit/tfkit-0.6.32-py3.7.egg/tfkit/model/tagcrf/__pycache__/model.cpython-37.pyc",
-    "archive_path": "tfkit/model/tagcrf/__pycache__/model.cpython-37.pyc",
-    "size": 4466,
-    "hash": "\\xD9\\x8C\\x92\\xC1\\x87h@\\x94\\xBA\\x94E\\x8B\\x9D\\x7FJ\\xBF\\x16\\xF6}:",
+    "project_name": "metadrive-simulator",
+    "project_version": "0.2.2",
+    "project_release": "metadrive-simulator-0.2.2.tar.gz",
+    "uploaded_on": "2021-09-06 04:38:22.905",
+    "path": "packages/metadrive-simulator/metadrive-simulator-0.2.2.tar.gz/metadrive-simulator-0.2.2/metadrive/assets/background/logo-color9.png",
+    "archive_path": "metadrive-simulator-0.2.2/metadrive/assets/background/logo-color9.png",
+    "size": 762657,
+    "hash": "M\\x8F}\\xEF\\x09\\x19\\x03\\xE3\\xF6\\x08{W*3\\x14\\xE6\\x95\\xCD\\xD2\\x18",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 99
+    "repository": 118
   }
 ]
