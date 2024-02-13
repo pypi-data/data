@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "lalsuite",
-    "project_version": "6.57.1.dev20190613",
-    "project_release": "lalsuite-6.57.1.dev20190613-cp35-cp35m-manylinux1_x86_64.whl",
-    "uploaded_on": "2019-06-13 09:58:44.83",
-    "path": "packages/lalsuite/lalsuite-6.57.1.dev20190613-cp35-cp35m-manylinux1_x86_64.whl/lalapps/inspiral.py",
-    "archive_path": "lalapps/inspiral.py",
-    "size": 99082,
-    "hash": "z\\x9B\\xEF\\xB4X\\x1D\\xAEx\\x85\\x9F\\xDA\\xF8\\xD1\\xE1\\x99\\xFERrfM",
+    "project_name": "scalyr-agent-2",
+    "project_version": "2.1.32",
+    "project_release": "scalyr_agent_2-2.1.32-py2.py3-none-any.whl",
+    "uploaded_on": "2022-07-27 12:22:52.532",
+    "path": "packages/scalyr-agent-2/scalyr_agent_2-2.1.32-py2.py3-none-any.whl/scalyr_agent/third_party/pysnmp/carrier/twisted/dgram/__init__.py",
+    "archive_path": "scalyr_agent/third_party/pysnmp/carrier/twisted/dgram/__init__.py",
+    "size": 59,
+    "hash": "\\x8C0f\\xB2\\xE6\\x8F\\x18\\x83\\xE4oid\\x91\\xDA\\xAD\\x96{\\xA6\\x06\\xBF",
     "skip_reason": "",
-    "lines": 3463,
-    "repository": 47
+    "lines": 1,
+    "repository": 160
   },
   {
-    "project_name": "atropos",
-    "project_version": "1.1.23",
-    "project_release": "atropos-1.1.23-py3.6-macosx-10.14-x86_64.egg",
-    "uploaded_on": "2019-11-22 16:46:00.224",
-    "path": "packages/atropos/atropos-1.1.23-py3.6-macosx-10.14-x86_64.egg/atropos/commands/trim/__pycache__/filters.cpython-36.pyc",
-    "archive_path": "atropos/commands/trim/__pycache__/filters.cpython-36.pyc",
-    "size": 9642,
-    "hash": "k\\xD6\\x91\\xD1Y\\x11\\xE8g\\xBA\\xFD\\xDA\\xED\\xEEV\\x04\\x88\\xF5\\x07\\xC7\\xF1",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 56
+    "project_name": "asrassessment",
+    "project_version": "0.1.14",
+    "project_release": "asrassessment-0.1.14.tar.gz",
+    "uploaded_on": "2022-08-16 02:17:59.229",
+    "path": "packages/asrassessment/asrassessment-0.1.14.tar.gz/asrassessment-0.1.14/.virtualenvs/venv/lib/python3.9/site-packages/plotly/validators/indicator/gauge/axis/_tickformatstops.py",
+    "archive_path": "asrassessment-0.1.14/.virtualenvs/venv/lib/python3.9/site-packages/plotly/validators/indicator/gauge/axis/_tickformatstops.py",
+    "size": 2320,
+    "hash": "\\x00\\xC3|\\x95\\xD1i9Gc\\x02\\xAB\\xE3B\\xCB,\\x88\\xD9\\xAD\\xF60",
+    "skip_reason": "virtualenv",
+    "lines": 54,
+    "repository": 163
   }
 ]
