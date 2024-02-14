@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "scalyr-agent-2",
-    "project_version": "2.1.32",
-    "project_release": "scalyr_agent_2-2.1.32-py2.py3-none-any.whl",
-    "uploaded_on": "2022-07-27 12:22:52.532",
-    "path": "packages/scalyr-agent-2/scalyr_agent_2-2.1.32-py2.py3-none-any.whl/scalyr_agent/third_party/pysnmp/carrier/twisted/dgram/__init__.py",
-    "archive_path": "scalyr_agent/third_party/pysnmp/carrier/twisted/dgram/__init__.py",
-    "size": 59,
-    "hash": "\\x8C0f\\xB2\\xE6\\x8F\\x18\\x83\\xE4oid\\x91\\xDA\\xAD\\x96{\\xA6\\x06\\xBF",
+    "project_name": "webspace",
+    "project_version": "2.7.159",
+    "project_release": "webspace-2.7.159-py3-none-any.whl",
+    "uploaded_on": "2020-08-20 12:56:44.639",
+    "path": "packages/webspace/webspace-2.7.159-py3-none-any.whl/webspace/account/admin.py",
+    "archive_path": "webspace/account/admin.py",
+    "size": 85,
+    "hash": "\\xC4\\xA6T\\xC4\\x87\\xF5\\xA9%m\\x19{\\x05TA\\x18M2`\\x90\\xF1",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 160
+    "lines": 4,
+    "repository": 77
   },
   {
-    "project_name": "asrassessment",
-    "project_version": "0.1.14",
-    "project_release": "asrassessment-0.1.14.tar.gz",
-    "uploaded_on": "2022-08-16 02:17:59.229",
-    "path": "packages/asrassessment/asrassessment-0.1.14.tar.gz/asrassessment-0.1.14/.virtualenvs/venv/lib/python3.9/site-packages/plotly/validators/indicator/gauge/axis/_tickformatstops.py",
-    "archive_path": "asrassessment-0.1.14/.virtualenvs/venv/lib/python3.9/site-packages/plotly/validators/indicator/gauge/axis/_tickformatstops.py",
-    "size": 2320,
-    "hash": "\\x00\\xC3|\\x95\\xD1i9Gc\\x02\\xAB\\xE3B\\xCB,\\x88\\xD9\\xAD\\xF60",
-    "skip_reason": "virtualenv",
-    "lines": 54,
-    "repository": 163
+    "project_name": "mkdocs-kpn",
+    "project_version": "0.19.2",
+    "project_release": "mkdocs_kpn-0.19.2-py3-none-any.whl",
+    "uploaded_on": "2020-08-21 08:01:27.474",
+    "path": "packages/mkdocs-kpn/mkdocs_kpn-0.19.2-py3-none-any.whl/kpn_theme/css/kpn-metric-normal.svg",
+    "archive_path": "kpn_theme/css/kpn-metric-normal.svg",
+    "size": 389277,
+    "hash": "\\xBF\\x0556Kh{*AmQ\\xED\\x8A\\x1F\\x85\\xE8T\\xA0\\xBE\\xB9",
+    "skip_reason": "too-large",
+    "lines": 7616,
+    "repository": 77
   }
 ]
