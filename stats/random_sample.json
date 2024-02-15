@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "webspace",
-    "project_version": "2.7.159",
-    "project_release": "webspace-2.7.159-py3-none-any.whl",
-    "uploaded_on": "2020-08-20 12:56:44.639",
-    "path": "packages/webspace/webspace-2.7.159-py3-none-any.whl/webspace/account/admin.py",
-    "archive_path": "webspace/account/admin.py",
-    "size": 85,
-    "hash": "\\xC4\\xA6T\\xC4\\x87\\xF5\\xA9%m\\x19{\\x05TA\\x18M2`\\x90\\xF1",
+    "project_name": "homeassistant",
+    "project_version": "2023.1.0b2",
+    "project_release": "homeassistant-2023.1.0b2.tar.gz",
+    "uploaded_on": "2022-12-30 01:58:19.277",
+    "path": "packages/homeassistant/homeassistant-2023.1.0b2.tar.gz/homeassistant-2023.1.0b2/homeassistant/components/meater/translations/et.json",
+    "archive_path": "homeassistant-2023.1.0b2/homeassistant/components/meater/translations/et.json",
+    "size": 895,
+    "hash": "\\xDC_o\\x91\\x02\\xF3v\\xBA,#\\x14\\xB8\\xD7S\\xC97|\\x1E\\x12\\x18",
     "skip_reason": "",
-    "lines": 4,
-    "repository": 77
+    "lines": 27,
+    "repository": 183
   },
   {
-    "project_name": "mkdocs-kpn",
-    "project_version": "0.19.2",
-    "project_release": "mkdocs_kpn-0.19.2-py3-none-any.whl",
-    "uploaded_on": "2020-08-21 08:01:27.474",
-    "path": "packages/mkdocs-kpn/mkdocs_kpn-0.19.2-py3-none-any.whl/kpn_theme/css/kpn-metric-normal.svg",
-    "archive_path": "kpn_theme/css/kpn-metric-normal.svg",
-    "size": 389277,
-    "hash": "\\xBF\\x0556Kh{*AmQ\\xED\\x8A\\x1F\\x85\\xE8T\\xA0\\xBE\\xB9",
-    "skip_reason": "too-large",
-    "lines": 7616,
-    "repository": 77
+    "project_name": "theos-ai",
+    "project_version": "0.0.26",
+    "project_release": "theos_ai-0.0.26-cp37-cp37m-macosx_10_9_x86_64.whl",
+    "uploaded_on": "2023-02-18 07:27:08.89",
+    "path": "packages/theos-ai/theos_ai-0.0.26-cp37-cp37m-macosx_10_9_x86_64.whl/theos/computer_vision/object_detection/api.cpython-37m-darwin.so",
+    "archive_path": "theos/computer_vision/object_detection/api.cpython-37m-darwin.so",
+    "size": 138864,
+    "hash": "\\xE9+\\xBF\\xD9/5W\\xDA\\x1B\\xFF\\xDB\\xB96\\xEEcr\\x86\\x1DA8",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 192
   }
 ]
