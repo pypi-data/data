@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-macos",
-    "project_version": "2.14.0.dev20230607",
-    "project_release": "tf_nightly_macos-2.14.0.dev20230607-cp38-cp38-macosx_12_0_arm64.whl",
-    "uploaded_on": "2023-06-08 04:36:39.337",
-    "path": "packages/tf-nightly-macos/tf_nightly_macos-2.14.0.dev20230607-cp38-cp38-macosx_12_0_arm64.whl/tensorflow/include/external/tf_runtime/include/tfrt/host_context/chain.h",
-    "archive_path": "tensorflow/include/external/tf_runtime/include/tfrt/host_context/chain.h",
-    "size": 1353,
-    "hash": "\\x0B\\xF1\\xDF\\xB1\\xF9q\\xB6\\xADb`)\\x11\\xA2\\xB3\\x0D\\xFDs8^\\xDD",
+    "project_name": "mmdet",
+    "project_version": "2.7.0",
+    "project_release": "mmdet-2.7.0-py3-none-any.whl",
+    "uploaded_on": "2020-11-30 16:10:28.973",
+    "path": "packages/mmdet/mmdet-2.7.0-py3-none-any.whl/mmdet/models/roi_heads/pisa_roi_head.py",
+    "archive_path": "mmdet/models/roi_heads/pisa_roi_head.py",
+    "size": 6608,
+    "hash": "\\xE0\\x11\\x13b\\x987\\xEB\\x9C\\x06[\\xA4\\x0C\\xD4\\x02X\\x99\\xB7\\xBD\\x01r",
     "skip_reason": "",
-    "lines": 42,
-    "repository": 212
+    "lines": 159,
+    "repository": 87
   },
   {
-    "project_name": "python-rdma-qe",
-    "project_version": "0.0.15",
-    "project_release": "python_rdma_qe-0.0.15.tar.gz",
-    "uploaded_on": "2023-07-21 01:46:50.506",
-    "path": "packages/python-rdma-qe/python_rdma_qe-0.0.15.tar.gz/python_rdma_qe-0.0.15/venv/lib/python3.11/site-packages/netapp_ontap/models/zapp_s3_bucket_application_components.py",
-    "archive_path": "python_rdma_qe-0.0.15/venv/lib/python3.11/site-packages/netapp_ontap/models/zapp_s3_bucket_application_components.py",
-    "size": 4111,
-    "hash": "\\xB3\\xF3\\xB4\\xB6\\xC1\\xE6\\x8F!\\x03\\xBC\\xF2\\xC5z\\x1EP\\xBE\\x81b^\\x10",
-    "skip_reason": "virtualenv",
-    "lines": 116,
-    "repository": 220
+    "project_name": "pythondata-cpu-microwatt",
+    "project_version": "0.0.post934",
+    "project_release": "pythondata_cpu_microwatt-0.0.post934-py3.9.egg",
+    "uploaded_on": "2021-02-04 05:59:04.958",
+    "path": "packages/pythondata-cpu-microwatt/pythondata_cpu_microwatt-0.0.post934-py3.9.egg/pythondata_cpu_microwatt/vhdl/tests/375.bin",
+    "archive_path": "pythondata_cpu_microwatt/vhdl/tests/375.bin",
+    "size": 131072,
+    "hash": "t\\xF6\\x1F)\\x9C\\xAD\\x87\\xF92gWL\\xC1\\xE6:-\\x9C\\x8E\\xEE\\xBB",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 93
   }
 ]
