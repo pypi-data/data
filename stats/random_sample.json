@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "mmdet",
-    "project_version": "2.7.0",
-    "project_release": "mmdet-2.7.0-py3-none-any.whl",
-    "uploaded_on": "2020-11-30 16:10:28.973",
-    "path": "packages/mmdet/mmdet-2.7.0-py3-none-any.whl/mmdet/models/roi_heads/pisa_roi_head.py",
-    "archive_path": "mmdet/models/roi_heads/pisa_roi_head.py",
-    "size": 6608,
-    "hash": "\\xE0\\x11\\x13b\\x987\\xEB\\x9C\\x06[\\xA4\\x0C\\xD4\\x02X\\x99\\xB7\\xBD\\x01r",
+    "project_name": "allennlp-pvt-nightly",
+    "project_version": "0.9.0.dev201909020500",
+    "project_release": "allennlp_pvt_nightly-0.9.0.dev201909020500-py3-none-any.whl",
+    "uploaded_on": "2019-09-02 05:00:36.959",
+    "path": "packages/allennlp-pvt-nightly/allennlp_pvt_nightly-0.9.0.dev201909020500-py3-none-any.whl/allennlp/tools/EVALB/sample/sample.tst",
+    "archive_path": "allennlp/tools/EVALB/sample/sample.tst",
+    "size": 1532,
+    "hash": "\\xC8@\\xE7\\x11S\\x12\\xB0kHRw\\xACD\\x81\\x81,7i\\x1F\\x89",
     "skip_reason": "",
-    "lines": 159,
-    "repository": 87
+    "lines": 24,
+    "repository": 51
   },
   {
-    "project_name": "pythondata-cpu-microwatt",
-    "project_version": "0.0.post934",
-    "project_release": "pythondata_cpu_microwatt-0.0.post934-py3.9.egg",
-    "uploaded_on": "2021-02-04 05:59:04.958",
-    "path": "packages/pythondata-cpu-microwatt/pythondata_cpu_microwatt-0.0.post934-py3.9.egg/pythondata_cpu_microwatt/vhdl/tests/375.bin",
-    "archive_path": "pythondata_cpu_microwatt/vhdl/tests/375.bin",
-    "size": 131072,
-    "hash": "t\\xF6\\x1F)\\x9C\\xAD\\x87\\xF92gWL\\xC1\\xE6:-\\x9C\\x8E\\xEE\\xBB",
-    "skip_reason": "binary",
+    "project_name": "elit",
+    "project_version": "0.1.32",
+    "project_release": "elit-0.1.32-py3-none-any.whl",
+    "uploaded_on": "2019-06-19 15:29:09.033",
+    "path": "packages/elit/elit-0.1.32-py3-none-any.whl/elit/resources/lemmatizer/__init__.py",
+    "archive_path": "elit/resources/lemmatizer/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 93
+    "repository": 48
   }
 ]
