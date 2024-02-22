@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "PyMCTranslate",
-    "project_version": "1.2.13",
-    "project_release": "PyMCTranslate-1.2.13.tar.gz",
-    "uploaded_on": "2023-07-01 15:41:27.655",
-    "path": "packages/PyMCTranslate/PyMCTranslate-1.2.13.tar.gz/PyMCTranslate-1.2.13/PyMCTranslate/json/versions/java_1_14_3/block/blockstate/from_universal/universal_minecraft/vanilla/ender_chest.json",
-    "archive_path": "PyMCTranslate-1.2.13/PyMCTranslate/json/versions/java_1_14_3/block/blockstate/from_universal/universal_minecraft/vanilla/ender_chest.json",
-    "size": 1766,
-    "hash": "\\x11\\xE3\\xEFY\\x8C\\x9F\\x8AY`\\x0C\\xC6\\x9D\\x1F\\xD9o_\\x98\\x8ER\\x90",
-    "skip_reason": "",
-    "lines": 66,
-    "repository": 217
+    "project_name": "pytket",
+    "project_version": "1.20.0rc3",
+    "project_release": "pytket-1.20.0rc3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2023-09-14 10:01:11.196",
+    "path": "packages/pytket/pytket-1.20.0rc3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/pytket/_tket/partition.cpython-311-x86_64-linux-gnu.so",
+    "archive_path": "pytket/_tket/partition.cpython-311-x86_64-linux-gnu.so",
+    "size": 208552,
+    "hash": "\\x04S\\x9E\\xF70B\\x1F?\\x06f(\\xBA\\x90\\xB9\\xBC\\xBA\\xD9:\\xE2q",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 230
   },
   {
-    "project_name": "tf-nightly-macos",
-    "project_version": "2.14.0.dev20230706",
-    "project_release": "tf_nightly_macos-2.14.0.dev20230706-cp39-cp39-macosx_12_0_arm64.whl",
-    "uploaded_on": "2023-07-07 04:40:17.598",
-    "path": "packages/tf-nightly-macos/tf_nightly_macos-2.14.0.dev20230706-cp39-cp39-macosx_12_0_arm64.whl/tensorflow/tsl/protobuf/__init__.py",
-    "archive_path": "tensorflow/tsl/protobuf/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
-    "lines": 0,
-    "repository": 218
+    "project_name": "simple-aws-wrapper-Trupyx",
+    "project_version": "0.0.1",
+    "project_release": "simple_aws_wrapper_trupyx-0.0.1-py3-none-any.whl",
+    "uploaded_on": "2023-09-08 10:45:12.802",
+    "path": "packages/simple-aws-wrapper-Trupyx/simple_aws_wrapper_trupyx-0.0.1-py3-none-any.whl/venv/Lib/site-packages/pip/_internal/utils/glibc.py",
+    "archive_path": "venv/Lib/site-packages/pip/_internal/utils/glibc.py",
+    "size": 3113,
+    "hash": "\\x814*\\xFADwF\\xDB\\xB8\\xF0`\\xDA-EL\\x01u\\xF1.0",
+    "skip_reason": "virtualenv",
+    "lines": 88,
+    "repository": 229
   }
 ]
