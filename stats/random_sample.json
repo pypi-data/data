@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pytket",
-    "project_version": "1.20.0rc3",
-    "project_release": "pytket-1.20.0rc3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2023-09-14 10:01:11.196",
-    "path": "packages/pytket/pytket-1.20.0rc3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/pytket/_tket/partition.cpython-311-x86_64-linux-gnu.so",
-    "archive_path": "pytket/_tket/partition.cpython-311-x86_64-linux-gnu.so",
-    "size": 208552,
-    "hash": "\\x04S\\x9E\\xF70B\\x1F?\\x06f(\\xBA\\x90\\xB9\\xBC\\xBA\\xD9:\\xE2q",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 230
+    "project_name": "intel-tensorflow",
+    "project_version": "2.12.0",
+    "project_release": "intel_tensorflow-2.12.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2023-03-29 19:30:49.809",
+    "path": "packages/intel-tensorflow/intel_tensorflow-2.12.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/include/google/protobuf/string_member_robber.h",
+    "archive_path": "tensorflow/include/google/protobuf/string_member_robber.h",
+    "size": 1854,
+    "hash": "\\xA4\\xC1\\x05\\x1E\\x01D\\xA9\\x04\\x7F\\x91\\xE2\\x0A\\x06\\xF9\\xD2Mj.\\xBC\\xA9",
+    "skip_reason": "",
+    "lines": 38,
+    "repository": 200
   },
   {
-    "project_name": "simple-aws-wrapper-Trupyx",
-    "project_version": "0.0.1",
-    "project_release": "simple_aws_wrapper_trupyx-0.0.1-py3-none-any.whl",
-    "uploaded_on": "2023-09-08 10:45:12.802",
-    "path": "packages/simple-aws-wrapper-Trupyx/simple_aws_wrapper_trupyx-0.0.1-py3-none-any.whl/venv/Lib/site-packages/pip/_internal/utils/glibc.py",
-    "archive_path": "venv/Lib/site-packages/pip/_internal/utils/glibc.py",
-    "size": 3113,
-    "hash": "\\x814*\\xFADwF\\xDB\\xB8\\xF0`\\xDA-EL\\x01u\\xF1.0",
-    "skip_reason": "virtualenv",
-    "lines": 88,
-    "repository": 229
+    "project_name": "botocore",
+    "project_version": "1.29.112",
+    "project_release": "botocore-1.29.112-py3-none-any.whl",
+    "uploaded_on": "2023-04-12 21:58:05.29",
+    "path": "packages/botocore/botocore-1.29.112-py3-none-any.whl/botocore/data/migrationhuborchestrator/2021-08-28/endpoint-rule-set-1.json.gz",
+    "archive_path": "botocore/data/migrationhuborchestrator/2021-08-28/endpoint-rule-set-1.json.gz",
+    "size": 1116,
+    "hash": "\\xB8\\x22\\xDAhBL\\x8A\\xCBVB\\x99H\\xD2]\\x7F(D\\xCD1\\xE3",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 202
   }
 ]
