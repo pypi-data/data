@@ -1219,12 +1219,12 @@
     "index": 258,
     "stats": {
       "earliest_package": "2024-02-21T16:34:53.920083Z",
-      "latest_package": "2024-02-24T22:22:16.984714Z",
-      "total_packages": 32067,
-      "done_packages": 32062
+      "latest_package": "2024-02-25T22:20:10.236735Z",
+      "total_packages": 37950,
+      "done_packages": 37674
     },
     "percent_done": 99,
-    "size": 1666291712,
+    "size": 1829253120,
     "url": "https://github.com/pypi-data/pypi-mirror-258",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-258/tree/code/packages",
     "projects": {}
