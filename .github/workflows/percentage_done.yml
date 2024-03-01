@@ -15,7 +15,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - uses: robinraju/release-downloader@v1.8
+      - uses: robinraju/release-downloader@v1.9
         with:
           repository: "pypi-data/toolchain"
           fileName: "pypi-data-toolchain.tar.gz"
