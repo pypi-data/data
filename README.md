@@ -1,4 +1,4 @@
-# pypi-code Datasets
+# pypi-code datasets
 
 This repository contains automatically updated data about code stored within PyPI. See the [website for instructions on how to use the datasets](https://py-code.org/datasets) inside this repository. 
 
