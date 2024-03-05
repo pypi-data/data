@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pyhip",
-    "project_version": "0.4.1",
-    "project_release": "pyhip-0.4.1.tar.gz",
-    "uploaded_on": "2021-09-30 10:05:14.471",
-    "path": "packages/pyhip/pyhip-0.4.1.tar.gz/pyhip-0.4.1/src/pyhip/gui/parser_utils.py",
-    "archive_path": "pyhip-0.4.1/src/pyhip/gui/parser_utils.py",
-    "size": 3219,
-    "hash": "=\\x10}\\xBC\\x5C|\\x83*\\x860U}\\xCAom3\\xBE\\xAA\\x86\\x16",
+    "project_name": "urwid",
+    "project_version": "2.2.3",
+    "project_release": "urwid-2.2.3.tar.gz",
+    "uploaded_on": "2023-10-19 13:02:19.258",
+    "path": "packages/urwid/urwid-2.2.3.tar.gz/urwid-2.2.3/urwid/raw_display.py",
+    "archive_path": "urwid-2.2.3/urwid/raw_display.py",
+    "size": 39363,
+    "hash": "\\x0D}\\x0A\\xB9\\xB8u\\xB2__\\x14\\xA5\\xF3\\x86\\xE6@2\\xDB\\x93\\x08\\x84",
     "skip_reason": "",
-    "lines": 123,
-    "repository": 121
+    "lines": 1115,
+    "repository": 236
   },
   {
-    "project_name": "imagecodecs",
-    "project_version": "2021.7.30",
-    "project_release": "imagecodecs-2021.7.30-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2021-07-30 08:27:12.772",
-    "path": "packages/imagecodecs/imagecodecs-2021.7.30-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/imagecodecs/_lzma.cpython-38-x86_64-linux-gnu.so",
-    "archive_path": "imagecodecs/_lzma.cpython-38-x86_64-linux-gnu.so",
-    "size": 1822664,
-    "hash": "_\\x17.\\x94\\xC7\\x96}\\x5C|\\x15\\x8C]\\x0CL\\x8A\\xC5\\xAE\\xF4\\xBF\\xB3",
+    "project_name": "afdko",
+    "project_version": "4.0.0a0",
+    "project_release": "afdko-4.0.0a0.tar.gz",
+    "uploaded_on": "2023-08-14 21:43:59.579",
+    "path": "packages/afdko/afdko-4.0.0a0.tar.gz/afdko-4.0.0a0/tests/buildcff2vf_data/input/CJKVar/MasterSet_Kanji-w890.00.otf",
+    "archive_path": "afdko-4.0.0a0/tests/buildcff2vf_data/input/CJKVar/MasterSet_Kanji-w890.00.otf",
+    "size": 22540,
+    "hash": "\\xED\\xF0\\xE3\\xE0!\\xB2\\x9E\\x13\\xF1\\x02\\x97\\x9F \\xB0\\xFCM\\xC4\\xFD\\xB6\\xE4",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 114
+    "repository": 225
   }
 ]
