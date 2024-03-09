@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "scancode-toolkit-mini",
-    "project_version": "31.0.1",
-    "project_release": "scancode-toolkit-mini-31.0.1.tar.gz",
-    "uploaded_on": "2022-08-17 22:57:32.09",
-    "path": "packages/scancode-toolkit-mini/scancode-toolkit-mini-31.0.1.tar.gz/scancode-toolkit-mini-31.0.1/src/licensedcode/data/rules/gpl-3.0-plus_260.RULE",
-    "archive_path": "scancode-toolkit-mini-31.0.1/src/licensedcode/data/rules/gpl-3.0-plus_260.RULE",
-    "size": 138,
-    "hash": "\\xB7%\\x95xh\\x18\\xE6\\xE5\\xBF\\xA9\\xD9\\x0Dl\\x89pU\\xA8\\xA3\\x98v",
+    "project_name": "ima-predeployed",
+    "project_version": "1.0.0a231",
+    "project_release": "ima_predeployed-1.0.0a231-py3-none-any.whl",
+    "uploaded_on": "2021-06-16 04:46:52.856",
+    "path": "packages/ima-predeployed/ima_predeployed-1.0.0a231-py3-none-any.whl/ima_predeployed/artifacts/G1Operations.dbg.json",
+    "archive_path": "ima_predeployed/artifacts/G1Operations.dbg.json",
+    "size": 111,
+    "hash": "\\x07\\x81\\x91\\xD2o\\xDA\\x7FC\\x95Zt\\xA69\\x80\\xFCMm<S\\xC8",
     "skip_reason": "",
-    "lines": 2,
-    "repository": 163
+    "lines": 4,
+    "repository": 109
   },
   {
-    "project_name": "vollseg",
-    "project_version": "5.2.7",
-    "project_release": "vollseg-5.2.7-py3-none-any.whl",
-    "uploaded_on": "2022-08-04 17:09:30.392",
-    "path": "packages/vollseg/vollseg-5.2.7-py3-none-any.whl/vollseg/models/Carcinoma_cells/Carcinoma_cells/weights_last.h5",
-    "archive_path": "vollseg/models/Carcinoma_cells/Carcinoma_cells/weights_last.h5",
-    "size": 1548880,
-    "hash": "\\xA79\\xD8]=\\xAA\\x8D\\xE2\\xAF\\x86\\xE1\\x00\\xF0\\x15d]\\xE7n\\xA2!",
-    "skip_reason": "binary",
+    "project_name": "django-koldar-utils",
+    "project_version": "1.18.11",
+    "project_release": "django_koldar_utils-1.18.11-py3-none-any.whl",
+    "uploaded_on": "2021-08-11 15:05:42.165",
+    "path": "packages/django-koldar-utils/django_koldar_utils-1.18.11-py3-none-any.whl/django_app_graphql/ariadne/__init__.py",
+    "archive_path": "django_app_graphql/ariadne/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 162
+    "repository": 116
   }
 ]
