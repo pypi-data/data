@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "ima-predeployed",
-    "project_version": "1.0.0a231",
-    "project_release": "ima_predeployed-1.0.0a231-py3-none-any.whl",
-    "uploaded_on": "2021-06-16 04:46:52.856",
-    "path": "packages/ima-predeployed/ima_predeployed-1.0.0a231-py3-none-any.whl/ima_predeployed/artifacts/G1Operations.dbg.json",
-    "archive_path": "ima_predeployed/artifacts/G1Operations.dbg.json",
-    "size": 111,
-    "hash": "\\x07\\x81\\x91\\xD2o\\xDA\\x7FC\\x95Zt\\xA69\\x80\\xFCMm<S\\xC8",
-    "skip_reason": "",
-    "lines": 4,
-    "repository": 109
+    "project_name": "BoatBuddy",
+    "project_version": "0.0.1",
+    "project_release": "boatbuddy-0.0.1.tar.gz",
+    "uploaded_on": "2023-02-02 20:14:53.473",
+    "path": "packages/BoatBuddy/boatbuddy-0.0.1.tar.gz/boatbuddy-0.0.1/venv/lib/python3.11/site-packages/pip/_internal/models/index.py",
+    "archive_path": "boatbuddy-0.0.1/venv/lib/python3.11/site-packages/pip/_internal/models/index.py",
+    "size": 1030,
+    "hash": "\\xB9L2Q\\x1F\\x0C\\xDA#c\\xBF\\xC4\\xF2\\x9C\\x9C\\x8B\\xFC\\xC7\\x10\\x1F\\x9B",
+    "skip_reason": "virtualenv",
+    "lines": 28,
+    "repository": 189
   },
   {
-    "project_name": "django-koldar-utils",
-    "project_version": "1.18.11",
-    "project_release": "django_koldar_utils-1.18.11-py3-none-any.whl",
-    "uploaded_on": "2021-08-11 15:05:42.165",
-    "path": "packages/django-koldar-utils/django_koldar_utils-1.18.11-py3-none-any.whl/django_app_graphql/ariadne/__init__.py",
-    "archive_path": "django_app_graphql/ariadne/__init__.py",
+    "project_name": "tf-nightly-cpu",
+    "project_version": "2.12.0.dev20230107",
+    "project_release": "tf_nightly_cpu-2.12.0.dev20230107-cp310-cp310-macosx_10_15_x86_64.whl",
+    "uploaded_on": "2023-01-07 11:08:22.858",
+    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.12.0.dev20230107-cp310-cp310-macosx_10_15_x86_64.whl/tensorflow/python/checkpoint/__init__.py",
+    "archive_path": "tensorflow/python/checkpoint/__init__.py",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 116
+    "repository": 184
   }
 ]
