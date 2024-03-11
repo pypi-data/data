@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "BoatBuddy",
-    "project_version": "0.0.1",
-    "project_release": "boatbuddy-0.0.1.tar.gz",
-    "uploaded_on": "2023-02-02 20:14:53.473",
-    "path": "packages/BoatBuddy/boatbuddy-0.0.1.tar.gz/boatbuddy-0.0.1/venv/lib/python3.11/site-packages/pip/_internal/models/index.py",
-    "archive_path": "boatbuddy-0.0.1/venv/lib/python3.11/site-packages/pip/_internal/models/index.py",
-    "size": 1030,
-    "hash": "\\xB9L2Q\\x1F\\x0C\\xDA#c\\xBF\\xC4\\xF2\\x9C\\x9C\\x8B\\xFC\\xC7\\x10\\x1F\\x9B",
-    "skip_reason": "virtualenv",
-    "lines": 28,
-    "repository": 189
+    "project_name": "PacbioDataProcessing",
+    "project_version": "0.19.1",
+    "project_release": "PacbioDataProcessing-0.19.1.tar.gz",
+    "uploaded_on": "2022-05-27 10:36:17.174",
+    "path": "packages/PacbioDataProcessing/PacbioDataProcessing-0.19.1.tar.gz/PacbioDataProcessing-0.19.1/tests/functional/data/expected.V3.methylation.sm-analysis.blasr.11mols.csv",
+    "archive_path": "PacbioDataProcessing-0.19.1/tests/functional/data/expected.V3.methylation.sm-analysis.blasr.11mols.csv",
+    "size": 2952,
+    "hash": "\\xFE\\x8Ca\\xF3Q{\\x89 \\x1D\\x06\\x07\\x8B\\x27\\xBD\\x845\\xDA\\x0E\\x27Z",
+    "skip_reason": "",
+    "lines": 9,
+    "repository": 152
   },
   {
-    "project_name": "tf-nightly-cpu",
-    "project_version": "2.12.0.dev20230107",
-    "project_release": "tf_nightly_cpu-2.12.0.dev20230107-cp310-cp310-macosx_10_15_x86_64.whl",
-    "uploaded_on": "2023-01-07 11:08:22.858",
-    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.12.0.dev20230107-cp310-cp310-macosx_10_15_x86_64.whl/tensorflow/python/checkpoint/__init__.py",
-    "archive_path": "tensorflow/python/checkpoint/__init__.py",
+    "project_name": "odoo12-addon-l10n-br-nfe",
+    "project_version": "12.0.6.0.0.99.dev26",
+    "project_release": "odoo12_addon_l10n_br_nfe-12.0.6.0.0.99.dev26-py3-none-any.whl",
+    "uploaded_on": "2022-05-10 03:19:42.837",
+    "path": "packages/odoo12-addon-l10n-br-nfe/odoo12_addon_l10n_br_nfe-12.0.6.0.0.99.dev26-py3-none-any.whl/odoo/addons/l10n_br_nfe/readme/USAGE.rst",
+    "archive_path": "odoo/addons/l10n_br_nfe/readme/USAGE.rst",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 184
+    "repository": 150
   }
 ]
