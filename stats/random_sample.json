@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "homeassistant",
-    "project_version": "2021.3.2",
-    "project_release": "homeassistant-2021.3.2-py3-none-any.whl",
-    "uploaded_on": "2021-03-06 00:27:04.96",
-    "path": "packages/homeassistant/homeassistant-2021.3.2-py3-none-any.whl/homeassistant/components/hisense_aehw4a1/translations/da.json",
-    "archive_path": "homeassistant/components/hisense_aehw4a1/translations/da.json",
-    "size": 388,
-    "hash": "\\x90\\x18C\\x02\\xEE\\xCB\\xB5\\xBDO.=\\xC3\\x021\\xF2\\xD1tUQE",
+    "project_name": "types-aiobotocore-fms",
+    "project_version": "2.3.3",
+    "project_release": "types_aiobotocore_fms-2.3.3-py3-none-any.whl",
+    "uploaded_on": "2022-06-09 01:40:06.369",
+    "path": "packages/types-aiobotocore-fms/types_aiobotocore_fms-2.3.3-py3-none-any.whl/types_aiobotocore_fms-2.3.3.dist-info/RECORD",
+    "archive_path": "types_aiobotocore_fms-2.3.3.dist-info/RECORD",
+    "size": 1524,
+    "hash": "\\x18\\x90\\xED\\x1A\\x81\\xB9\\xD5-\\x18\\xDF\\xA0\\xC0\\xC3Wv$G\\x19\\x80\\xAF",
     "skip_reason": "",
-    "lines": 13,
-    "repository": 97
+    "lines": 17,
+    "repository": 154
   },
   {
-    "project_name": "pyams-skin",
-    "project_version": "1.1.0",
-    "project_release": "pyams_skin-1.1.0-py3.5.egg",
-    "uploaded_on": "2021-01-01 18:09:17.625",
-    "path": "packages/pyams-skin/pyams_skin-1.1.0-py3.5.egg/pyams_skin/interfaces/__pycache__/__init__.cpython-35.pyc",
-    "archive_path": "pyams_skin/interfaces/__pycache__/__init__.cpython-35.pyc",
-    "size": 3152,
-    "hash": "\\xF0\\x10\\x0D\\x82\\x14\\xF1+D\\x80\\x1A\\xB1=\\xDF\\xB4\\xFC\\x8E\\x97\\xF1\\xFB\\x09",
+    "project_name": "Mathics3",
+    "project_version": "5.0.2",
+    "project_release": "Mathics3-5.0.2-py3.7.egg",
+    "uploaded_on": "2022-08-06 09:40:25.911",
+    "path": "packages/Mathics3/Mathics3-5.0.2-py3.7.egg/mathics/builtin/arithfns/__pycache__/basic.cpython-37.pyc",
+    "archive_path": "mathics/builtin/arithfns/__pycache__/basic.cpython-37.pyc",
+    "size": 20596,
+    "hash": "\\x1F\\xC5?\\x19\\x5C\\xB8\\xE8\\xFBW!\\x03\\xEFj\\x11\\xA1\\xFF\\x82\\xBE\\xE2\\x81",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 90
+    "repository": 162
   }
 ]
