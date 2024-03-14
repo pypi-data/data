@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "types-aiobotocore-fms",
-    "project_version": "2.3.3",
-    "project_release": "types_aiobotocore_fms-2.3.3-py3-none-any.whl",
-    "uploaded_on": "2022-06-09 01:40:06.369",
-    "path": "packages/types-aiobotocore-fms/types_aiobotocore_fms-2.3.3-py3-none-any.whl/types_aiobotocore_fms-2.3.3.dist-info/RECORD",
-    "archive_path": "types_aiobotocore_fms-2.3.3.dist-info/RECORD",
-    "size": 1524,
-    "hash": "\\x18\\x90\\xED\\x1A\\x81\\xB9\\xD5-\\x18\\xDF\\xA0\\xC0\\xC3Wv$G\\x19\\x80\\xAF",
-    "skip_reason": "",
-    "lines": 17,
-    "repository": 154
+    "project_name": "dstack",
+    "project_version": "0.10.2",
+    "project_release": "dstack-0.10.2-py3-none-any.whl",
+    "uploaded_on": "2023-06-22 13:43:42.439",
+    "path": "packages/dstack/dstack-0.10.2-py3-none-any.whl/dstack/_internal/hub/services/backends/azure/__init__.py",
+    "archive_path": "dstack/_internal/hub/services/backends/azure/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
+    "lines": 0,
+    "repository": 215
   },
   {
-    "project_name": "Mathics3",
-    "project_version": "5.0.2",
-    "project_release": "Mathics3-5.0.2-py3.7.egg",
-    "uploaded_on": "2022-08-06 09:40:25.911",
-    "path": "packages/Mathics3/Mathics3-5.0.2-py3.7.egg/mathics/builtin/arithfns/__pycache__/basic.cpython-37.pyc",
-    "archive_path": "mathics/builtin/arithfns/__pycache__/basic.cpython-37.pyc",
-    "size": 20596,
-    "hash": "\\x1F\\xC5?\\x19\\x5C\\xB8\\xE8\\xFBW!\\x03\\xEFj\\x11\\xA1\\xFF\\x82\\xBE\\xE2\\x81",
+    "project_name": "hiddifypanel",
+    "project_version": "7.0.1",
+    "project_release": "hiddifypanel-7.0.1-cp39-cp39-manylinux2014_aarch64.whl",
+    "uploaded_on": "2023-05-29 16:08:33.029",
+    "path": "packages/hiddifypanel/hiddifypanel-7.0.1-cp39-cp39-manylinux2014_aarch64.whl/hiddifypanel/static/images/splash/iphone5_splash.png",
+    "archive_path": "hiddifypanel/static/images/splash/iphone5_splash.png",
+    "size": 28231,
+    "hash": "M\\x0B\\x9F\\xAE\\xDA_\\x07\\x01\\xA8\\xA5\\xCA\\xB1\\x92\\xBA$\\x0BmE\\x17/",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 162
+    "repository": 211
   }
 ]
