@@ -1200,16 +1200,31 @@
     "projects": {}
   },
   {
+    "name": "pypi-mirror-262",
+    "index": 262,
+    "stats": {
+      "earliest_package": "2024-03-13T08:20:44.352817Z",
+      "latest_package": "2024-03-13T22:30:48.343561Z",
+      "total_packages": 7061,
+      "done_packages": 4253
+    },
+    "percent_done": 60,
+    "size": 155205632,
+    "url": "https://github.com/pypi-data/pypi-mirror-262",
+    "packages_url": "https://github.com/pypi-data/pypi-mirror-262/tree/code/packages",
+    "projects": {}
+  },
+  {
     "name": "pypi-mirror-261",
     "index": 261,
     "stats": {
       "earliest_package": "2024-03-07T17:12:40.370480Z",
-      "latest_package": "2024-03-12T22:21:40.696774Z",
-      "total_packages": 45876,
-      "done_packages": 42567
+      "latest_package": "2024-03-13T08:20:34.671328Z",
+      "total_packages": 50000,
+      "done_packages": 49993
     },
-    "percent_done": 92,
-    "size": 1731032064,
+    "percent_done": 99,
+    "size": 1990077440,
     "url": "https://github.com/pypi-data/pypi-mirror-261",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-261/tree/code/packages",
     "projects": {}
