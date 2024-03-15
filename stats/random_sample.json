@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "dstack",
-    "project_version": "0.10.2",
-    "project_release": "dstack-0.10.2-py3-none-any.whl",
-    "uploaded_on": "2023-06-22 13:43:42.439",
-    "path": "packages/dstack/dstack-0.10.2-py3-none-any.whl/dstack/_internal/hub/services/backends/azure/__init__.py",
-    "archive_path": "dstack/_internal/hub/services/backends/azure/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
-    "lines": 0,
-    "repository": 215
+    "project_name": "Cython",
+    "project_version": "3.0.6",
+    "project_release": "Cython-3.0.6-cp39-cp39-win_amd64.whl",
+    "uploaded_on": "2023-11-26 14:31:01.805",
+    "path": "packages/Cython/Cython-3.0.6-cp39-cp39-win_amd64.whl/Cython/Includes/cpython/pylifecycle.pxd",
+    "archive_path": "Cython/Includes/cpython/pylifecycle.pxd",
+    "size": 2068,
+    "hash": "\\x1D\\x88\\xB2\\xE0\\x03t7x\\x00<C\\xD8\\xE9,\\x83\\x8D\\x16{F\\xD3",
+    "skip_reason": "",
+    "lines": 68,
+    "repository": 243
   },
   {
-    "project_name": "hiddifypanel",
-    "project_version": "7.0.1",
-    "project_release": "hiddifypanel-7.0.1-cp39-cp39-manylinux2014_aarch64.whl",
-    "uploaded_on": "2023-05-29 16:08:33.029",
-    "path": "packages/hiddifypanel/hiddifypanel-7.0.1-cp39-cp39-manylinux2014_aarch64.whl/hiddifypanel/static/images/splash/iphone5_splash.png",
-    "archive_path": "hiddifypanel/static/images/splash/iphone5_splash.png",
-    "size": 28231,
-    "hash": "M\\x0B\\x9F\\xAE\\xDA_\\x07\\x01\\xA8\\xA5\\xCA\\xB1\\x92\\xBA$\\x0BmE\\x17/",
+    "project_name": "creme-crm",
+    "project_version": "2.3.17",
+    "project_release": "creme_crm-2.3.17-py3-none-any.whl",
+    "uploaded_on": "2023-12-14 09:06:30.504",
+    "path": "packages/creme-crm/creme_crm-2.3.17-py3-none-any.whl/creme/static/chantilly/images/training_tax_64.png",
+    "archive_path": "creme/static/chantilly/images/training_tax_64.png",
+    "size": 5804,
+    "hash": "\\xBE\\x19\\x0AU,\\x8A\\x1CF\\xAFd\\xBA-\\xB9\\xC5i\\xA8\\xDDj\\xCE\\x18",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 211
+    "repository": 246
   }
 ]
