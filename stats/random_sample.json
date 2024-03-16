@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "Cython",
-    "project_version": "3.0.6",
-    "project_release": "Cython-3.0.6-cp39-cp39-win_amd64.whl",
-    "uploaded_on": "2023-11-26 14:31:01.805",
-    "path": "packages/Cython/Cython-3.0.6-cp39-cp39-win_amd64.whl/Cython/Includes/cpython/pylifecycle.pxd",
-    "archive_path": "Cython/Includes/cpython/pylifecycle.pxd",
-    "size": 2068,
-    "hash": "\\x1D\\x88\\xB2\\xE0\\x03t7x\\x00<C\\xD8\\xE9,\\x83\\x8D\\x16{F\\xD3",
+    "project_name": "django-pg-bulk-update",
+    "project_version": "1.1.0",
+    "project_release": "django-pg-bulk-update-1.1.0.tar.gz",
+    "uploaded_on": "2018-04-30 09:53:17.154",
+    "path": "packages/django-pg-bulk-update/django-pg-bulk-update-1.1.0.tar.gz/django-pg-bulk-update-1.1.0/src/django_pg_bulk_update.egg-info/dependency_links.txt",
+    "archive_path": "django-pg-bulk-update-1.1.0/src/django_pg_bulk_update.egg-info/dependency_links.txt",
+    "size": 1,
+    "hash": "\\x8B\\x13x\\x91y\\x1F\\xE9i\\x27\\xADx\\xE6K\\x0A\\xAD{\\xDE\\xD0\\x8B\\xDC",
     "skip_reason": "",
-    "lines": 68,
-    "repository": 243
+    "lines": 1,
+    "repository": 31
   },
   {
-    "project_name": "creme-crm",
-    "project_version": "2.3.17",
-    "project_release": "creme_crm-2.3.17-py3-none-any.whl",
-    "uploaded_on": "2023-12-14 09:06:30.504",
-    "path": "packages/creme-crm/creme_crm-2.3.17-py3-none-any.whl/creme/static/chantilly/images/training_tax_64.png",
-    "archive_path": "creme/static/chantilly/images/training_tax_64.png",
-    "size": 5804,
-    "hash": "\\xBE\\x19\\x0AU,\\x8A\\x1CF\\xAFd\\xBA-\\xB9\\xC5i\\xA8\\xDDj\\xCE\\x18",
+    "project_name": "Fiona",
+    "project_version": "1.8.0",
+    "project_release": "Fiona-1.8.0-cp35-cp35m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl",
+    "uploaded_on": "2018-10-31 16:43:44.529",
+    "path": "packages/Fiona/Fiona-1.8.0-cp35-cp35m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl/fiona/.dylibs/libjson-c.2.dylib",
+    "archive_path": "fiona/.dylibs/libjson-c.2.dylib",
+    "size": 119600,
+    "hash": "\\x0E\\xA6\\x17\\x99\\x07&\\x9A\\x1B\\xF7\\xC7\\xB1\\xD0g\\xDE?2\\xFC\\xE1\\x12\\x89",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 246
+    "repository": 37
   }
 ]
