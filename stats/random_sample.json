@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "django-pg-bulk-update",
-    "project_version": "1.1.0",
-    "project_release": "django-pg-bulk-update-1.1.0.tar.gz",
-    "uploaded_on": "2018-04-30 09:53:17.154",
-    "path": "packages/django-pg-bulk-update/django-pg-bulk-update-1.1.0.tar.gz/django-pg-bulk-update-1.1.0/src/django_pg_bulk_update.egg-info/dependency_links.txt",
-    "archive_path": "django-pg-bulk-update-1.1.0/src/django_pg_bulk_update.egg-info/dependency_links.txt",
-    "size": 1,
-    "hash": "\\x8B\\x13x\\x91y\\x1F\\xE9i\\x27\\xADx\\xE6K\\x0A\\xAD{\\xDE\\xD0\\x8B\\xDC",
+    "project_name": "openbb-terminal-nightly",
+    "project_version": "3.2.4.dev202403080009",
+    "project_release": "openbb_terminal_nightly-3.2.4.dev202403080009-py3-none-any.whl",
+    "uploaded_on": "2024-03-08 00:09:53.183",
+    "path": "packages/openbb-terminal-nightly/openbb_terminal_nightly-3.2.4.dev202403080009-py3-none-any.whl/openbb_terminal/core/config/paths.py",
+    "archive_path": "openbb_terminal/core/config/paths.py",
+    "size": 1180,
+    "hash": "\\x11\\x0F\\xFB\\x9D\\xB5\\x9C \\xEA\\x81N(\\xB1\\x9AJ\\xCB\\x94\\x15\\xE3O\\xDA",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 31
+    "lines": 32,
+    "repository": 261
   },
   {
-    "project_name": "Fiona",
-    "project_version": "1.8.0",
-    "project_release": "Fiona-1.8.0-cp35-cp35m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl",
-    "uploaded_on": "2018-10-31 16:43:44.529",
-    "path": "packages/Fiona/Fiona-1.8.0-cp35-cp35m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl/fiona/.dylibs/libjson-c.2.dylib",
-    "archive_path": "fiona/.dylibs/libjson-c.2.dylib",
-    "size": 119600,
-    "hash": "\\x0E\\xA6\\x17\\x99\\x07&\\x9A\\x1B\\xF7\\xC7\\xB1\\xD0g\\xDE?2\\xFC\\xE1\\x12\\x89",
+    "project_name": "cascadio",
+    "project_version": "0.0.10",
+    "project_release": "cascadio-0.0.10-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2024-03-11 19:32:58.753",
+    "path": "packages/cascadio/cascadio-0.0.10-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/cascadiolibTKHLR-bd298c61.so.7.8.1",
+    "archive_path": "cascadio./libTKHLR-bd298c61.so.7.8.1",
+    "size": 1706393,
+    "hash": "e\\x1E\\x1E\\x17=h\\x18\\xA9p\\x90A\\xD6-\\x5C\\x9BI\\xDC\\x1E\\x1E\\x19",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 37
+    "repository": 261
   }
 ]
