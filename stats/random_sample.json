@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "openbb-terminal-nightly",
-    "project_version": "3.2.4.dev202403080009",
-    "project_release": "openbb_terminal_nightly-3.2.4.dev202403080009-py3-none-any.whl",
-    "uploaded_on": "2024-03-08 00:09:53.183",
-    "path": "packages/openbb-terminal-nightly/openbb_terminal_nightly-3.2.4.dev202403080009-py3-none-any.whl/openbb_terminal/core/config/paths.py",
-    "archive_path": "openbb_terminal/core/config/paths.py",
-    "size": 1180,
-    "hash": "\\x11\\x0F\\xFB\\x9D\\xB5\\x9C \\xEA\\x81N(\\xB1\\x9AJ\\xCB\\x94\\x15\\xE3O\\xDA",
+    "project_name": "dgl-cu101",
+    "project_version": "0.6.0.post1",
+    "project_release": "dgl_cu101-0.6.0.post1-cp37-cp37m-win_amd64.whl",
+    "uploaded_on": "2021-03-09 18:21:29.248",
+    "path": "packages/dgl-cu101/dgl_cu101-0.6.0.post1-cp37-cp37m-win_amd64.whl/dgl_cu101-0.6.0.post1.data/purelib/dgl/data/sbm.py",
+    "archive_path": "dgl_cu101-0.6.0.post1.data/purelib/dgl/data/sbm.py",
+    "size": 8907,
+    "hash": "\\x19\\xD2\\xDA\\x86\\x11\\xAE\\xD8I\\xFF\\x03\\x9A\\xD1~\\xF1\\xB2\\xFE\\xF1\\x88\\xB1\\x0C",
     "skip_reason": "",
-    "lines": 32,
-    "repository": 261
+    "lines": 240,
+    "repository": 97
   },
   {
-    "project_name": "cascadio",
-    "project_version": "0.0.10",
-    "project_release": "cascadio-0.0.10-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2024-03-11 19:32:58.753",
-    "path": "packages/cascadio/cascadio-0.0.10-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/cascadiolibTKHLR-bd298c61.so.7.8.1",
-    "archive_path": "cascadio./libTKHLR-bd298c61.so.7.8.1",
-    "size": 1706393,
-    "hash": "e\\x1E\\x1E\\x17=h\\x18\\xA9p\\x90A\\xD6-\\x5C\\x9BI\\xDC\\x1E\\x1E\\x19",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 261
+    "project_name": "kython",
+    "project_version": "1.4.0",
+    "project_release": "kython-1.4.0.tar.gz",
+    "uploaded_on": "2021-01-20 01:17:55.721",
+    "path": "packages/kython/kython-1.4.0.tar.gz/kython-1.4.0/venv/lib/python3.8/site-packages/scipy/io/matlab/tests/test_pathological.py",
+    "archive_path": "kython-1.4.0/venv/lib/python3.8/site-packages/scipy/io/matlab/tests/test_pathological.py",
+    "size": 1059,
+    "hash": "\\xF8I\\xA6\\xC5\\xB7\\xDC\\x82|\\xF0\\x15\\xA2\\xDDW\\x90\\x81Na\\xD1g\\x01",
+    "skip_reason": "virtualenv",
+    "lines": 33,
+    "repository": 92
   }
 ]
