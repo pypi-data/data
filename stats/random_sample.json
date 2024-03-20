@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "oci",
-    "project_version": "2.75.0",
-    "project_release": "oci-2.75.0.tar.gz",
-    "uploaded_on": "2022-07-12 16:53:37.584",
-    "path": "packages/oci/oci-2.75.0.tar.gz/oci-2.75.0/src/oci/data_safe/models/random_number_format_entry.py",
-    "archive_path": "oci-2.75.0/src/oci/data_safe/models/random_number_format_entry.py",
-    "size": 5185,
-    "hash": "\\x91|\\x1Cs:{\\xC4\\xCFfy_V&\\xF1<\\xBC\\xAA\\xDA\\x9BX",
+    "project_name": "customgpt-client",
+    "project_version": "1.1.9",
+    "project_release": "customgpt_client-1.1.9.tar.gz",
+    "uploaded_on": "2023-10-06 19:03:14.03",
+    "path": "packages/customgpt-client/customgpt_client-1.1.9.tar.gz/customgpt_client-1.1.9/customgpt_client/models/delete_source_response_500.py",
+    "archive_path": "customgpt_client-1.1.9/customgpt_client/models/delete_source_response_500.py",
+    "size": 2755,
+    "hash": "\\xA9\\xB81\\x19\\x88\\xF8!\\xAA\\x1AOe\\xC9\\x8Aj\\xB66\\xA8u@\\x9F",
     "skip_reason": "",
-    "lines": 131,
-    "repository": 158
+    "lines": 88,
+    "repository": 234
   },
   {
-    "project_name": "pycryptodome-test-vectors",
-    "project_version": "1.0.9",
-    "project_release": "pycryptodome-test-vectors-1.0.9.zip",
-    "uploaded_on": "2022-06-05 07:07:43.951",
-    "path": "packages/pycryptodome-test-vectors/pycryptodome-test-vectors-1.0.9.zip/pycryptodome-test-vectors-1.0.9/pycryptodome_test_vectors/PublicKey/ECC/ecc_p224_private_p8_clear.der",
-    "archive_path": "pycryptodome-test-vectors-1.0.9/pycryptodome_test_vectors/PublicKey/ECC/ecc_p224_private_p8_clear.der",
-    "size": 122,
-    "hash": "\\xD8\\x8D\\xBF\\x11qL\\xB7+\\xCB \\xE2KJ\\xE5\\xF2,\\x9Dn\\x89\\xE6",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 153
+    "project_name": "Antiland",
+    "project_version": "0.98.3",
+    "project_release": "antiland-0.98.3.tar.gz",
+    "uploaded_on": "2023-10-19 06:20:10.061",
+    "path": "packages/Antiland/antiland-0.98.3.tar.gz/antiland-0.98.3/docs/sphinx/Lib/site-packages/pip/_vendor/chardet/codingstatemachinedict.py",
+    "archive_path": "antiland-0.98.3/docs/sphinx/Lib/site-packages/pip/_vendor/chardet/codingstatemachinedict.py",
+    "size": 542,
+    "hash": "z<L~?\\xE1n\\x91\\x22Z\\x87\\xCB\\xC5\\x8B\\x8B\\xBDy\\x8F\\x9C\\xC1",
+    "skip_reason": "virtualenv",
+    "lines": 19,
+    "repository": 236
   }
 ]
