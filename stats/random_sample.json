@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "customgpt-client",
-    "project_version": "1.1.9",
-    "project_release": "customgpt_client-1.1.9.tar.gz",
-    "uploaded_on": "2023-10-06 19:03:14.03",
-    "path": "packages/customgpt-client/customgpt_client-1.1.9.tar.gz/customgpt_client-1.1.9/customgpt_client/models/delete_source_response_500.py",
-    "archive_path": "customgpt_client-1.1.9/customgpt_client/models/delete_source_response_500.py",
-    "size": 2755,
-    "hash": "\\xA9\\xB81\\x19\\x88\\xF8!\\xAA\\x1AOe\\xC9\\x8Aj\\xB66\\xA8u@\\x9F",
+    "project_name": "setuptools",
+    "project_version": "0.6c11",
+    "project_release": "setuptools-0.6c11-py2.6.egg",
+    "uploaded_on": "2009-10-20 16:08:07.665",
+    "path": "packages/setuptools/setuptools-0.6c11-py2.6.egg/easy_install.py",
+    "archive_path": "easy_install.py",
+    "size": 126,
+    "hash": "\\xD8~\\x98@4\\xB6\\xE6\\xE9\\xEBEn\\xBC\\xB2\\xB3\\xF4 \\xC0zH\\xBC",
     "skip_reason": "",
-    "lines": 88,
-    "repository": 234
+    "lines": 5,
+    "repository": 1
   },
   {
-    "project_name": "Antiland",
-    "project_version": "0.98.3",
-    "project_release": "antiland-0.98.3.tar.gz",
-    "uploaded_on": "2023-10-19 06:20:10.061",
-    "path": "packages/Antiland/antiland-0.98.3.tar.gz/antiland-0.98.3/docs/sphinx/Lib/site-packages/pip/_vendor/chardet/codingstatemachinedict.py",
-    "archive_path": "antiland-0.98.3/docs/sphinx/Lib/site-packages/pip/_vendor/chardet/codingstatemachinedict.py",
-    "size": 542,
-    "hash": "z<L~?\\xE1n\\x91\\x22Z\\x87\\xCB\\xC5\\x8B\\x8B\\xBDy\\x8F\\x9C\\xC1",
-    "skip_reason": "virtualenv",
-    "lines": 19,
-    "repository": 236
+    "project_name": "pymongo",
+    "project_version": "3.1.1",
+    "project_release": "pymongo-3.1.1-py3.2-win32.egg",
+    "uploaded_on": "2015-11-18 00:51:09.213",
+    "path": "packages/pymongo/pymongo-3.1.1-py3.2-win32.egg/bson/__pycache__/code.cpython-32.pyc",
+    "archive_path": "bson/__pycache__/code.cpython-32.pyc",
+    "size": 2946,
+    "hash": "\\xD6\\x00IY[\\x0B\\xC3\\xBCn_\\x90\\xE5r\\x1C\\x9C\\x9B\\xA8\\x8C\\x7Fc",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 12
   }
 ]
