@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "setuptools",
-    "project_version": "0.6c11",
-    "project_release": "setuptools-0.6c11-py2.6.egg",
-    "uploaded_on": "2009-10-20 16:08:07.665",
-    "path": "packages/setuptools/setuptools-0.6c11-py2.6.egg/easy_install.py",
-    "archive_path": "easy_install.py",
-    "size": 126,
-    "hash": "\\xD8~\\x98@4\\xB6\\xE6\\xE9\\xEBEn\\xBC\\xB2\\xB3\\xF4 \\xC0zH\\xBC",
+    "project_name": "amplpy",
+    "project_version": "0.13.3",
+    "project_release": "amplpy-0.13.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "uploaded_on": "2024-02-20 21:44:34.428",
+    "path": "packages/amplpy/amplpy-0.13.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/amplpy/vendor/ampltools/utils.py",
+    "archive_path": "amplpy/vendor/ampltools/utils.py",
+    "size": 1705,
+    "hash": "\\xC4GKJlhMK\\x16\\xF1m5\\x12\\x8B\\xC4\\xBA\\xF4\\x8E\\x0D\\xB2",
     "skip_reason": "",
-    "lines": 5,
-    "repository": 1
+    "lines": 60,
+    "repository": 257
   },
   {
-    "project_name": "pymongo",
-    "project_version": "3.1.1",
-    "project_release": "pymongo-3.1.1-py3.2-win32.egg",
-    "uploaded_on": "2015-11-18 00:51:09.213",
-    "path": "packages/pymongo/pymongo-3.1.1-py3.2-win32.egg/bson/__pycache__/code.cpython-32.pyc",
-    "archive_path": "bson/__pycache__/code.cpython-32.pyc",
-    "size": 2946,
-    "hash": "\\xD6\\x00IY[\\x0B\\xC3\\xBCn_\\x90\\xE5r\\x1C\\x9C\\x9B\\xA8\\x8C\\x7Fc",
+    "project_name": "onnx-weekly",
+    "project_version": "1.16.0.dev20240108",
+    "project_release": "onnx_weekly-1.16.0.dev20240108-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2024-01-08 00:14:43.906",
+    "path": "packages/onnx-weekly/onnx_weekly-1.16.0.dev20240108-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/onnx/backend/test/data/node/test_clip_default_int8_inbounds/test_data_set_0/output_0.pb",
+    "archive_path": "onnx/backend/test/data/node/test_clip_default_int8_inbounds/test_data_set_0/output_0.pb",
+    "size": 12,
+    "hash": "\\xC1\\x13\\x9A%\\xEFL\\x9E\\x94\\xCEo\\xA4\\xFF\\x05\\x9C\\xE9\\xE0\\xBDl\\xC8j",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 12
+    "repository": 249
   }
 ]
