@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "amplpy",
-    "project_version": "0.13.3",
-    "project_release": "amplpy-0.13.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "uploaded_on": "2024-02-20 21:44:34.428",
-    "path": "packages/amplpy/amplpy-0.13.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/amplpy/vendor/ampltools/utils.py",
-    "archive_path": "amplpy/vendor/ampltools/utils.py",
-    "size": 1705,
-    "hash": "\\xC4GKJlhMK\\x16\\xF1m5\\x12\\x8B\\xC4\\xBA\\xF4\\x8E\\x0D\\xB2",
+    "project_name": "talkytimes-package",
+    "project_version": "0.2.4",
+    "project_release": "talkytimes_package-0.2.4.tar.gz",
+    "uploaded_on": "2023-07-16 08:51:03.794",
+    "path": "packages/talkytimes-package/talkytimes_package-0.2.4.tar.gz/talkytimes_package-0.2.4/src/talkytimes_package.egg-info/requires.txt",
+    "archive_path": "talkytimes_package-0.2.4/src/talkytimes_package.egg-info/requires.txt",
+    "size": 39,
+    "hash": "\\x9DY?\\xB0[9\\x18Y=.\\x1CV>I\\x09\\xB48k\\xE6\\x07",
     "skip_reason": "",
-    "lines": 60,
-    "repository": 257
+    "lines": 4,
+    "repository": 219
   },
   {
-    "project_name": "onnx-weekly",
-    "project_version": "1.16.0.dev20240108",
-    "project_release": "onnx_weekly-1.16.0.dev20240108-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2024-01-08 00:14:43.906",
-    "path": "packages/onnx-weekly/onnx_weekly-1.16.0.dev20240108-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/onnx/backend/test/data/node/test_clip_default_int8_inbounds/test_data_set_0/output_0.pb",
-    "archive_path": "onnx/backend/test/data/node/test_clip_default_int8_inbounds/test_data_set_0/output_0.pb",
-    "size": 12,
-    "hash": "\\xC1\\x13\\x9A%\\xEFL\\x9E\\x94\\xCEo\\xA4\\xFF\\x05\\x9C\\xE9\\xE0\\xBDl\\xC8j",
+    "project_name": "openxlab-test",
+    "project_version": "0.0.6",
+    "project_release": "openxlab_test-0.0.6.tar.gz",
+    "uploaded_on": "2023-07-11 08:22:20.277",
+    "path": "packages/openxlab-test/openxlab_test-0.0.6.tar.gz/openxlab_test-0.0.6/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Jan_Mayen",
+    "archive_path": "openxlab_test-0.0.6/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Jan_Mayen",
+    "size": 2298,
+    "hash": "\\x7Fm\\x95\\x8F\\x860\\xCB\\xA5\\x12\\xD8\\xE5\\x8C\\xA8\\xED\\xFB\\xD5\\x16)\\x15\\x22",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 249
+    "repository": 218
   }
 ]
