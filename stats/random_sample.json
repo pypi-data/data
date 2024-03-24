@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "talkytimes-package",
-    "project_version": "0.2.4",
-    "project_release": "talkytimes_package-0.2.4.tar.gz",
-    "uploaded_on": "2023-07-16 08:51:03.794",
-    "path": "packages/talkytimes-package/talkytimes_package-0.2.4.tar.gz/talkytimes_package-0.2.4/src/talkytimes_package.egg-info/requires.txt",
-    "archive_path": "talkytimes_package-0.2.4/src/talkytimes_package.egg-info/requires.txt",
-    "size": 39,
-    "hash": "\\x9DY?\\xB0[9\\x18Y=.\\x1CV>I\\x09\\xB48k\\xE6\\x07",
+    "project_name": "tf-nightly-gpu",
+    "project_version": "2.10.0.dev20220624",
+    "project_release": "tf_nightly_gpu-2.10.0.dev20220624-cp37-cp37m-win_amd64.whl",
+    "uploaded_on": "2022-06-24 13:18:05.084",
+    "path": "packages/tf-nightly-gpu/tf_nightly_gpu-2.10.0.dev20220624-cp37-cp37m-win_amd64.whl/tensorflow/include/tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.h",
+    "archive_path": "tensorflow/include/tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.h",
+    "size": 2675,
+    "hash": "\\xC4#\\xDD*\\x1F\\xC1:[X\\xA5\\xB1\\xE7k\\xE0\\xEB\\x83\\xD9;.8",
     "skip_reason": "",
-    "lines": 4,
-    "repository": 219
+    "lines": 61,
+    "repository": 156
   },
   {
-    "project_name": "openxlab-test",
-    "project_version": "0.0.6",
-    "project_release": "openxlab_test-0.0.6.tar.gz",
-    "uploaded_on": "2023-07-11 08:22:20.277",
-    "path": "packages/openxlab-test/openxlab_test-0.0.6.tar.gz/openxlab_test-0.0.6/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Jan_Mayen",
-    "archive_path": "openxlab_test-0.0.6/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Jan_Mayen",
-    "size": 2298,
-    "hash": "\\x7Fm\\x95\\x8F\\x860\\xCB\\xA5\\x12\\xD8\\xE5\\x8C\\xA8\\xED\\xFB\\xD5\\x16)\\x15\\x22",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 218
+    "project_name": "elyra",
+    "project_version": "3.9.0",
+    "project_release": "elyra-3.9.0.tar.gz",
+    "uploaded_on": "2022-06-03 22:06:41.613",
+    "path": "packages/elyra/elyra-3.9.0.tar.gz/elyra-3.9.0/dist/labextensions/@elyra/pipeline-editor-extension/static/vendors-node_modules_elyra_pipeline-editor_dist_index_js.c6a47b7b09fbc5e6dd09.js",
+    "archive_path": "elyra-3.9.0/dist/labextensions/@elyra/pipeline-editor-extension/static/vendors-node_modules_elyra_pipeline-editor_dist_index_js.c6a47b7b09fbc5e6dd09.js",
+    "size": 13036438,
+    "hash": "\\x0A_\\xE3A\\x17@\\xE16\\x15\\x85\\x8F\\xF3\\xC1\\x02\\xEA\\xB0\\xF3\\xC7\\xD3w",
+    "skip_reason": "too-large",
+    "lines": 197229,
+    "repository": 153
   }
 ]
