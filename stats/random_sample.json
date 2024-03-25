@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-gpu",
-    "project_version": "2.10.0.dev20220624",
-    "project_release": "tf_nightly_gpu-2.10.0.dev20220624-cp37-cp37m-win_amd64.whl",
-    "uploaded_on": "2022-06-24 13:18:05.084",
-    "path": "packages/tf-nightly-gpu/tf_nightly_gpu-2.10.0.dev20220624-cp37-cp37m-win_amd64.whl/tensorflow/include/tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.h",
-    "archive_path": "tensorflow/include/tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.h",
-    "size": 2675,
-    "hash": "\\xC4#\\xDD*\\x1F\\xC1:[X\\xA5\\xB1\\xE7k\\xE0\\xEB\\x83\\xD9;.8",
+    "project_name": "ibm-wos-utils",
+    "project_version": "4.5.13",
+    "project_release": "ibm_wos_utils-4.5.13-cp38-cp38-macosx_10_9_x86_64.whl",
+    "uploaded_on": "2022-06-08 13:15:25.59",
+    "path": "packages/ibm-wos-utils/ibm_wos_utils-4.5.13-cp38-cp38-macosx_10_9_x86_64.whl/ibm_wos_utils/sample/batch/utils/addition.py",
+    "archive_path": "ibm_wos_utils/sample/batch/utils/addition.py",
+    "size": 535,
+    "hash": "\\xC1w1\\x08\\xDA<\\xED\\xA0\\xC7\\xD8\\xF4\\x882\\x7F\\x03\\xB8\\xA3;\\xE7\\xC9",
     "skip_reason": "",
-    "lines": 61,
-    "repository": 156
+    "lines": 12,
+    "repository": 154
   },
   {
-    "project_name": "elyra",
-    "project_version": "3.9.0",
-    "project_release": "elyra-3.9.0.tar.gz",
-    "uploaded_on": "2022-06-03 22:06:41.613",
-    "path": "packages/elyra/elyra-3.9.0.tar.gz/elyra-3.9.0/dist/labextensions/@elyra/pipeline-editor-extension/static/vendors-node_modules_elyra_pipeline-editor_dist_index_js.c6a47b7b09fbc5e6dd09.js",
-    "archive_path": "elyra-3.9.0/dist/labextensions/@elyra/pipeline-editor-extension/static/vendors-node_modules_elyra_pipeline-editor_dist_index_js.c6a47b7b09fbc5e6dd09.js",
-    "size": 13036438,
-    "hash": "\\x0A_\\xE3A\\x17@\\xE16\\x15\\x85\\x8F\\xF3\\xC1\\x02\\xEA\\xB0\\xF3\\xC7\\xD3w",
-    "skip_reason": "too-large",
-    "lines": 197229,
-    "repository": 153
+    "project_name": "PyMca5",
+    "project_version": "5.7.5",
+    "project_release": "PyMca5-5.7.5-cp310-cp310-macosx_10_9_universal2.whl",
+    "uploaded_on": "2022-08-19 15:40:25.181",
+    "path": "packages/PyMca5/PyMca5-5.7.5-cp310-cp310-macosx_10_9_universal2.whl/PyMca5/PyMcaData/HTML/mOrb_K.png",
+    "archive_path": "PyMca5/PyMcaData/HTML/mOrb_K.png",
+    "size": 863,
+    "hash": "\\x9B\\xA6\\xB8nAlSV\\xC5b\\x80\\x96>(\\x1F\\xEE\\xB3\\xBB*x",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 164
   }
 ]
