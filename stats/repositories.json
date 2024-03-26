@@ -1204,12 +1204,12 @@
     "index": 264,
     "stats": {
       "earliest_package": "2024-03-23T12:17:20.480186Z",
-      "latest_package": "2024-03-24T22:26:26.366715Z",
-      "total_packages": 8917,
-      "done_packages": 8167
+      "latest_package": "2024-03-25T22:23:16.379333Z",
+      "total_packages": 17589,
+      "done_packages": 15110
     },
-    "percent_done": 91,
-    "size": 326596608,
+    "percent_done": 85,
+    "size": 635742208,
     "url": "https://github.com/pypi-data/pypi-mirror-264",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-264/tree/code/packages",
     "projects": {}
