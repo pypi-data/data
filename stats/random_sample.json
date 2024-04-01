@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "uk-bin-collection",
-    "project_version": "0.11.0",
-    "project_release": "uk_bin_collection-0.11.0.tar.gz",
-    "uploaded_on": "2023-09-27 19:03:10.16",
-    "path": "packages/uk-bin-collection/uk_bin_collection-0.11.0.tar.gz/uk_bin_collection-0.11.0/uk_bin_collection/tests/outputs/MidSussexDistrictCouncil.json",
-    "archive_path": "uk_bin_collection-0.11.0/uk_bin_collection/tests/outputs/MidSussexDistrictCouncil.json",
-    "size": 148,
-    "hash": " \\xBD7\\xB7\\x02^\\xF7Yr\\x8F\\x13\\x06\\x01Y\\xCC\\x85u9\\xAF/",
+    "project_name": "oci",
+    "project_version": "2.35.1",
+    "project_release": "oci-2.35.1.tar.gz",
+    "uploaded_on": "2021-04-06 16:08:08.138",
+    "path": "packages/oci/oci-2.35.1.tar.gz/oci-2.35.1/src/oci/data_integration/models/create_connection_from_jdbc.py",
+    "archive_path": "oci-2.35.1/src/oci/data_integration/models/create_connection_from_jdbc.py",
+    "size": 7291,
+    "hash": "\\xF2\\xD8q\\xC0\\xBEY\\x1BA\\x19\\x27\\x1AQ\\x13Kl\\xCE\\xFEw>q",
     "skip_reason": "",
-    "lines": 8,
-    "repository": 232
+    "lines": 201,
+    "repository": 101
   },
   {
-    "project_name": "mayan-edms",
-    "project_version": "4.5.3",
-    "project_release": "mayan_edms-4.5.3-py2.py3-none-any.whl",
-    "uploaded_on": "2023-10-01 01:40:12.234",
-    "path": "packages/mayan-edms/mayan_edms-4.5.3-py2.py3-none-any.whl/mayan/apps/file_metadata/locale/pt/LC_MESSAGES/django.mo",
-    "archive_path": "mayan/apps/file_metadata/locale/pt/LC_MESSAGES/django.mo",
-    "size": 6431,
-    "hash": "\\xA2\\xF8\\xD3\\x1AU\\xCB\\xEF\\xD2\\xF5C<b_\\x01%\\x05\\xE90\\xF1\\xCB",
+    "project_name": "label-studio",
+    "project_version": "1.0.0.post0",
+    "project_release": "label-studio-1.0.0.post0.tar.gz",
+    "uploaded_on": "2021-03-18 14:29:23.966",
+    "path": "packages/label-studio/label-studio-1.0.0.post0.tar.gz/label-studio-1.0.0.post0/label_studio/core/static_build/rest_framework/fonts/fontawesome-webfont.8b27bc96115c.eot",
+    "archive_path": "label-studio-1.0.0.post0/label_studio/core/static_build/rest_framework/fonts/fontawesome-webfont.8b27bc96115c.eot",
+    "size": 38205,
+    "hash": "|y\\xC6\\xA6\\xBC\\x9A\\x12\\x8A*\\x8E\\xAF\\xFB\\xE4\\x9AC8b_\\xDB\\xC2",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 233
+    "repository": 99
   }
 ]
