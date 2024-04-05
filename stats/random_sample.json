@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-gpu",
-    "project_version": "2.10.0.dev20220530",
-    "project_release": "tf_nightly_gpu-2.10.0.dev20220530-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2022-05-30 08:34:53.273",
-    "path": "packages/tf-nightly-gpu/tf_nightly_gpu-2.10.0.dev20220530-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/include/tensorflow/core/kernels/data/experimental/lmdb_dataset_op.h",
-    "archive_path": "tensorflow/include/tensorflow/core/kernels/data/experimental/lmdb_dataset_op.h",
-    "size": 1550,
-    "hash": "\\xF5\\x84s\\xA7\\xA8djM\\xB8~\\xF7\\x05\\x086t\\xB9\\x91\\xB1Z\\xAA",
-    "skip_reason": "",
-    "lines": 44,
-    "repository": 152
+    "project_name": "eodash_catalog",
+    "project_version": "0.0.2",
+    "project_release": "eodash_catalog-0.0.2.tar.gz",
+    "uploaded_on": "2024-03-07 14:54:42.191",
+    "path": "packages/eodash_catalog/eodash_catalog-0.0.2.tar.gz/eodash_catalog-0.0.2/.venv/lib/python3.10/site-packages/pip/_vendor/rich/_cell_widths.py",
+    "archive_path": "eodash_catalog-0.0.2/.venv/lib/python3.10/site-packages/pip/_vendor/rich/_cell_widths.py",
+    "size": 10096,
+    "hash": "6(m\\xF3y\\xE2\\x8E\\xA9\\x97\\xBE\\xA3\\xEE\\x1F\\xD6,\\xAD\\xEB\\xEB\\xBB\\xA9",
+    "skip_reason": "virtualenv",
+    "lines": 451,
+    "repository": 260
   },
   {
-    "project_name": "give-me-python",
-    "project_version": "3.8.13",
-    "project_release": "give_me_python-3.8.13-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2022-05-01 04:02:34.325",
-    "path": "packages/give-me-python/give_me_python-3.8.13-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/give_me_python/data/lib/python3.8/site-packages/build-0.7.0.dist-info/METADATA",
-    "archive_path": "give_me_python/data/lib/python3.8/site-packages/build-0.7.0.dist-info/METADATA",
-    "size": 3820,
-    "hash": "?\\xF0\\xEAR\\xC5\\xE0w\\x1A)\\x90\\xAA\\xCDP\\xB4\\xE9\\xAE\\xC0B\\xDD\\xB1",
+    "project_name": "uvx",
+    "project_version": "0.1.0",
+    "project_release": "uvx-0.1.0.tar.gz",
+    "uploaded_on": "2024-02-29 15:26:53.017",
+    "path": "packages/uvx/uvx-0.1.0.tar.gz/uvx-0.1.0/venv/lib/python3.10/site-packages/cryptography/hazmat/_oid.py",
+    "archive_path": "uvx-0.1.0/venv/lib/python3.10/site-packages/cryptography/hazmat/_oid.py",
+    "size": 14460,
+    "hash": "\\xC5\\xD0b\\xC17J\\xECB|\\xE4\\x8D\\x94\\xAE\\x17\\x015`\\xF8)g",
     "skip_reason": "virtualenv",
-    "lines": 91,
-    "repository": 148
+    "lines": 296,
+    "repository": 259
   }
 ]
