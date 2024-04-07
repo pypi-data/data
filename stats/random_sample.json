@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "awscli",
-    "project_version": "1.18.4",
-    "project_release": "awscli-1.18.4.tar.gz",
-    "uploaded_on": "2020-02-21 01:53:34.792",
-    "path": "packages/awscli/awscli-1.18.4.tar.gz/awscli-1.18.4/awscli/examples/ses/set-identity-dkim-enabled.rst",
-    "archive_path": "awscli-1.18.4/awscli/examples/ses/set-identity-dkim-enabled.rst",
-    "size": 498,
-    "hash": "\\xC2F\\xC0\\xBC}\\xA1@ \\xE9b\\xC6\\xFE\\xCF\\x07NM\\x95~\\xD5\\x27",
+    "project_name": "shapely",
+    "project_version": "2.0b1",
+    "project_release": "shapely-2.0b1-cp311-cp311-win_amd64.whl",
+    "uploaded_on": "2022-10-17 13:19:32.543",
+    "path": "packages/shapely/shapely-2.0b1-cp311-cp311-win_amd64.whl/shapely/measurement.py",
+    "archive_path": "shapely/measurement.py",
+    "size": 10634,
+    "hash": "\\x82\\x8C\\x0E\\xC1_\\xCF\\x89\\xB0^q@\\x8A\\xED\\xA5\\x0B[\\xA8K\\xDB\\xCB",
     "skip_reason": "",
-    "lines": 10,
-    "repository": 61
+    "lines": 335,
+    "repository": 172
   },
   {
-    "project_name": "mdt",
-    "project_version": "1.1.3",
-    "project_release": "mdt-1.1.3-py2.py3-none-any.whl",
-    "uploaded_on": "2019-12-17 13:13:57.217",
-    "path": "packages/mdt/mdt-1.1.3-py2.py3-none-any.whl/mdt/data/qt_designs/model_fit/icon_status_red.png",
-    "archive_path": "mdt/data/qt_designs/model_fit/icon_status_red.png",
-    "size": 956,
-    "hash": "dJ\\xD9\\x02\\x94K\\xD2\\xC5C\\xD3\\x9D\\xA0yJ\\x02\\xCA\\xB8\\xAC\\x08\\xA9",
+    "project_name": "openmetadata-ingestion",
+    "project_version": "0.12.3.0",
+    "project_release": "openmetadata_ingestion-0.12.3.0-py3.9.egg",
+    "uploaded_on": "2022-11-18 14:33:29.551",
+    "path": "packages/openmetadata-ingestion/openmetadata_ingestion-0.12.3.0-py3.9.egg/metadata/cli/__pycache__/ingest.cpython-39.pyc",
+    "archive_path": "metadata/cli/__pycache__/ingest.cpython-39.pyc",
+    "size": 1234,
+    "hash": "\\xDB\\x95MdC\\xDF\\x8Ep\\x98\\xD5\\x01S\\xDB>@\\xDC\\x06\\x22MU",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 57
+    "repository": 177
   }
 ]
