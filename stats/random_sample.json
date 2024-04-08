@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "shapely",
-    "project_version": "2.0b1",
-    "project_release": "shapely-2.0b1-cp311-cp311-win_amd64.whl",
-    "uploaded_on": "2022-10-17 13:19:32.543",
-    "path": "packages/shapely/shapely-2.0b1-cp311-cp311-win_amd64.whl/shapely/measurement.py",
-    "archive_path": "shapely/measurement.py",
-    "size": 10634,
-    "hash": "\\x82\\x8C\\x0E\\xC1_\\xCF\\x89\\xB0^q@\\x8A\\xED\\xA5\\x0B[\\xA8K\\xDB\\xCB",
+    "project_name": "av",
+    "project_version": "12.0.0",
+    "project_release": "av-12.0.0.tar.gz",
+    "uploaded_on": "2024-03-21 11:17:51.518",
+    "path": "packages/av/av-12.0.0.tar.gz/av-12.0.0/av/option.pyi",
+    "archive_path": "av-12.0.0/av/option.pyi",
+    "size": 994,
+    "hash": "\\xB7\\xBAg\\x0F(m\\x90m\\x8D\\x19\\xCFCeA\\xFDQ\\x8C<\\xAD\\x06",
     "skip_reason": "",
-    "lines": 335,
-    "repository": 172
+    "lines": 54,
+    "repository": 263
   },
   {
-    "project_name": "openmetadata-ingestion",
-    "project_version": "0.12.3.0",
-    "project_release": "openmetadata_ingestion-0.12.3.0-py3.9.egg",
-    "uploaded_on": "2022-11-18 14:33:29.551",
-    "path": "packages/openmetadata-ingestion/openmetadata_ingestion-0.12.3.0-py3.9.egg/metadata/cli/__pycache__/ingest.cpython-39.pyc",
-    "archive_path": "metadata/cli/__pycache__/ingest.cpython-39.pyc",
-    "size": 1234,
-    "hash": "\\xDB\\x95MdC\\xDF\\x8Ep\\x98\\xD5\\x01S\\xDB>@\\xDC\\x06\\x22MU",
+    "project_name": "rdatasets",
+    "project_version": "0.2.7",
+    "project_release": "rdatasets-0.2.7-py3-none-any.whl",
+    "uploaded_on": "2024-03-01 10:27:54.669",
+    "path": "packages/rdatasets/rdatasets-0.2.7-py3-none-any.whl/_data/openintro/loan50.pkl.compress",
+    "archive_path": "_data/openintro/loan50.pkl.compress",
+    "size": 2580,
+    "hash": "cdWx\\xA3\\x9E\\xE0\\xF0\\x8F\\xE7\\xB1\\x17m\\xD3\\x1C\\xDE\\x7F\\xD9\\xDDk",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 177
+    "repository": 259
   }
 ]
