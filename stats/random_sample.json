@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "homeassistant",
-    "project_version": "0.107.6",
-    "project_release": "homeassistant-0.107.6-py3-none-any.whl",
-    "uploaded_on": "2020-03-24 13:38:27.351",
-    "path": "packages/homeassistant/homeassistant-0.107.6-py3-none-any.whl/homeassistant/components/gpslogger/.translations/zh-Hant.json",
-    "archive_path": "homeassistant/components/gpslogger/.translations/zh-Hant.json",
-    "size": 995,
-    "hash": "\\xC2\\x1Ev\\xA6\\xEE\\xE2\\x09\\x16MI\\x08\\x95+\\xEC\\xC3S\\xB1;\\x14S",
+    "project_name": "basx-bread",
+    "project_version": "0.4.81",
+    "project_release": "basx_bread-0.4.81-py3-none-any.whl",
+    "uploaded_on": "2022-03-25 12:17:38.566",
+    "path": "packages/basx-bread/basx_bread-0.4.81-py3-none-any.whl/bread/static/design/carbon_design/icons/raw_32/close--filled.svg",
+    "archive_path": "bread/static/design/carbon_design/icons/raw_32/close--filled.svg",
+    "size": 661,
+    "hash": "1\\xE2\\xBB8\\xEA7\\x92\\xE3/\\xD0\\xBA\\x01\\xA2\\x9D\\x82\\xCA\\x0E\\xB9\\xC3\\x8A",
     "skip_reason": "",
-    "lines": 18,
-    "repository": 64
+    "lines": 12,
+    "repository": 143
   },
   {
-    "project_name": "lalsuite",
-    "project_version": "6.62.1.dev20190925",
-    "project_release": "lalsuite-6.62.1.dev20190925-cp34-cp34m-manylinux1_x86_64.whl",
-    "uploaded_on": "2019-09-25 03:26:52.174",
-    "path": "packages/lalsuite/lalsuite-6.62.1.dev20190925-cp34-cp34m-manylinux1_x86_64.whl/lalapps/bin/lalapps_ValidateChi2Test",
-    "archive_path": "lalapps/bin/lalapps_ValidateChi2Test",
-    "size": 70896,
-    "hash": "_/\\x02[\\xD9\\x00\\x02}\\xF0g\\x0D\\xBD:?`\\xCD\\xAE\\xA74G",
+    "project_name": "PySide6",
+    "project_version": "6.2.4",
+    "project_release": "PySide6-6.2.4-6.2.4-cp36.cp37.cp38.cp39.cp310-abi3-macosx_10_14_universal2.whl",
+    "uploaded_on": "2022-03-21 08:36:20.059",
+    "path": "packages/PySide6/PySide6-6.2.4-6.2.4-cp36.cp37.cp38.cp39.cp310-abi3-macosx_10_14_universal2.whl/PySide6/Qt/qml/QtQuick3D/Particles3D/designer/images/target-direction-16px.png",
+    "archive_path": "PySide6/Qt/qml/QtQuick3D/Particles3D/designer/images/target-direction-16px.png",
+    "size": 253,
+    "hash": "B\\x953h3+1\\xAC\\xFF=\\xBD\\x0D/\\xA2}\\xE8\\xF0]\\x00\\xEA",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 53
+    "repository": 143
   }
 ]
