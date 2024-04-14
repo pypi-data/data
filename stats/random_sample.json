@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "basx-bread",
-    "project_version": "0.4.81",
-    "project_release": "basx_bread-0.4.81-py3-none-any.whl",
-    "uploaded_on": "2022-03-25 12:17:38.566",
-    "path": "packages/basx-bread/basx_bread-0.4.81-py3-none-any.whl/bread/static/design/carbon_design/icons/raw_32/close--filled.svg",
-    "archive_path": "bread/static/design/carbon_design/icons/raw_32/close--filled.svg",
-    "size": 661,
-    "hash": "1\\xE2\\xBB8\\xEA7\\x92\\xE3/\\xD0\\xBA\\x01\\xA2\\x9D\\x82\\xCA\\x0E\\xB9\\xC3\\x8A",
+    "project_name": "tf-nightly-intel",
+    "project_version": "2.16.0.dev20240120",
+    "project_release": "tf_nightly_intel-2.16.0.dev20240120-cp39-cp39-win_amd64.whl",
+    "uploaded_on": "2024-01-20 18:00:27.027",
+    "path": "packages/tf-nightly-intel/tf_nightly_intel-2.16.0.dev20240120-cp39-cp39-win_amd64.whl/tensorflow/include/tensorflow/core/framework/versions.proto",
+    "archive_path": "tensorflow/include/tensorflow/core/framework/versions.proto",
+    "size": 1090,
+    "hash": "\\xAA\\xC5\\xB6\\x1Cg\\x14\\xB96i+\\xC4G\\xBB8\\xD3]\\x5C\\x09\\x06N",
     "skip_reason": "",
-    "lines": 12,
-    "repository": 143
+    "lines": 33,
+    "repository": 252
   },
   {
-    "project_name": "PySide6",
-    "project_version": "6.2.4",
-    "project_release": "PySide6-6.2.4-6.2.4-cp36.cp37.cp38.cp39.cp310-abi3-macosx_10_14_universal2.whl",
-    "uploaded_on": "2022-03-21 08:36:20.059",
-    "path": "packages/PySide6/PySide6-6.2.4-6.2.4-cp36.cp37.cp38.cp39.cp310-abi3-macosx_10_14_universal2.whl/PySide6/Qt/qml/QtQuick3D/Particles3D/designer/images/target-direction-16px.png",
-    "archive_path": "PySide6/Qt/qml/QtQuick3D/Particles3D/designer/images/target-direction-16px.png",
-    "size": 253,
-    "hash": "B\\x953h3+1\\xAC\\xFF=\\xBD\\x0D/\\xA2}\\xE8\\xF0]\\x00\\xEA",
+    "project_name": "onnx-weekly",
+    "project_version": "1.16.0.dev20231225",
+    "project_release": "onnx_weekly-1.16.0.dev20231225-cp310-cp310-win_amd64.whl",
+    "uploaded_on": "2023-12-25 00:23:51.561",
+    "path": "packages/onnx-weekly/onnx_weekly-1.16.0.dev20231225-cp310-cp310-win_amd64.whl/onnx/backend/test/data/pytorch-operator/test_operator_params/model.onnx",
+    "archive_path": "onnx/backend/test/data/pytorch-operator/test_operator_params/model.onnx",
+    "size": 209,
+    "hash": "\\xDBy+o\\xBA\\xD8!\\xEC\\xA2\\xE9]ok\\x0A\\x82`$}\\x04D",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 143
+    "repository": 248
   }
 ]
