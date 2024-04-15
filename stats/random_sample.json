@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-intel",
-    "project_version": "2.16.0.dev20240120",
-    "project_release": "tf_nightly_intel-2.16.0.dev20240120-cp39-cp39-win_amd64.whl",
-    "uploaded_on": "2024-01-20 18:00:27.027",
-    "path": "packages/tf-nightly-intel/tf_nightly_intel-2.16.0.dev20240120-cp39-cp39-win_amd64.whl/tensorflow/include/tensorflow/core/framework/versions.proto",
-    "archive_path": "tensorflow/include/tensorflow/core/framework/versions.proto",
-    "size": 1090,
-    "hash": "\\xAA\\xC5\\xB6\\x1Cg\\x14\\xB96i+\\xC4G\\xBB8\\xD3]\\x5C\\x09\\x06N",
-    "skip_reason": "",
-    "lines": 33,
-    "repository": 252
-  },
-  {
-    "project_name": "onnx-weekly",
-    "project_version": "1.16.0.dev20231225",
-    "project_release": "onnx_weekly-1.16.0.dev20231225-cp310-cp310-win_amd64.whl",
-    "uploaded_on": "2023-12-25 00:23:51.561",
-    "path": "packages/onnx-weekly/onnx_weekly-1.16.0.dev20231225-cp310-cp310-win_amd64.whl/onnx/backend/test/data/pytorch-operator/test_operator_params/model.onnx",
-    "archive_path": "onnx/backend/test/data/pytorch-operator/test_operator_params/model.onnx",
-    "size": 209,
-    "hash": "\\xDBy+o\\xBA\\xD8!\\xEC\\xA2\\xE9]ok\\x0A\\x82`$}\\x04D",
+    "project_name": "pyuvdata",
+    "project_version": "2.3.0",
+    "project_release": "pyuvdata-2.3.0-cp310-cp310-macosx_11_0_arm64.whl",
+    "uploaded_on": "2023-03-14 22:21:55.557",
+    "path": "packages/pyuvdata/pyuvdata-2.3.0-cp310-cp310-macosx_11_0_arm64.whl/pyuvdata/data/day2_TDEM0003_10s_norx_1scan.ms/POLARIZATION/table.lock",
+    "archive_path": "pyuvdata/data/day2_TDEM0003_10s_norx_1scan.ms/POLARIZATION/table.lock",
+    "size": 325,
+    "hash": "\\xEC\\xC3\\xF9s\\xAA\\xB2D00 \\xD8\\x13+\\xEC\\xF7\\xDB\\x22\\xBA\\xD3\\x8E",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 248
+    "repository": 197
+  },
+  {
+    "project_name": "bashckup",
+    "project_version": "0.1.1",
+    "project_release": "bashckup-0.1.1.tar.gz",
+    "uploaded_on": "2023-02-26 10:08:55.503",
+    "path": "packages/bashckup/bashckup-0.1.1.tar.gz/bashckup-0.1.1/venv/lib/python3.10/site-packages/rich/theme.py",
+    "archive_path": "bashckup-0.1.1/venv/lib/python3.10/site-packages/rich/theme.py",
+    "size": 3627,
+    "hash": "\\xBF\\xB3\\xC7\\xF8!U\\xBAt\\xB5\\xD2\\xB93\\xC2R\\xD6\\xCE\\x80\\xFD\\x05\\x9D",
+    "skip_reason": "virtualenv",
+    "lines": 112,
+    "repository": 194
   }
 ]
