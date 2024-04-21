@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tzdata",
-    "project_version": "2022.1",
-    "project_release": "tzdata-2022.1-py2.py3-none-any.whl",
-    "uploaded_on": "2022-03-18 02:45:23.407",
-    "path": "packages/tzdata/tzdata-2022.1-py2.py3-none-any.whl/tzdata/zoneinfo/Africa/Kigali",
-    "archive_path": "tzdata/zoneinfo/Africa/Kigali",
-    "size": 131,
-    "hash": "e\\x1E\\x5C\\xF6zT\\xEA<r\\x97\\x80\\xCC\\x89\\x91@}\\xD2\\xA8\\xA8A",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 142
+    "project_name": "tf-nightly-cpu",
+    "project_version": "2.10.0.dev20220702",
+    "project_release": "tf_nightly_cpu-2.10.0.dev20220702-cp37-cp37m-macosx_10_14_x86_64.whl",
+    "uploaded_on": "2022-07-02 09:44:22.254",
+    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.10.0.dev20220702-cp37-cp37m-macosx_10_14_x86_64.whl/tensorflow/python/training/adadelta.py",
+    "archive_path": "tensorflow/python/training/adadelta.py",
+    "size": 7300,
+    "hash": "\\xC3i\\x0D\\xE5\\xF2~\\xEC\\xBD*\\xE7\\x5C[\\xF2\\xA6V2\\x96\\xBA0\\xD1",
+    "skip_reason": "",
+    "lines": 198,
+    "repository": 157
   },
   {
-    "project_name": "tensorflow-cpu",
-    "project_version": "2.7.2",
-    "project_release": "tensorflow_cpu-2.7.2-cp39-cp39-macosx_10_11_x86_64.whl",
-    "uploaded_on": "2022-05-16 18:56:27.432",
-    "path": "packages/tensorflow-cpu/tensorflow_cpu-2.7.2-cp39-cp39-macosx_10_11_x86_64.whl/tensorflow/python/training/__init__.py",
-    "archive_path": "tensorflow/python/training/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "pymlpipe",
+    "project_version": "0.2.5",
+    "project_release": "pymlpipe-0.2.5-py3-none-any.whl",
+    "uploaded_on": "2022-07-07 14:08:29.183",
+    "path": "packages/pymlpipe/pymlpipe-0.2.5-py3-none-any.whl/pymlpipe/.git/objects/eb/4b2105c4d088aa0ae7d9836c305e35c96cf119",
+    "archive_path": "pymlpipe/.git/objects/eb/4b2105c4d088aa0ae7d9836c305e35c96cf119",
+    "size": 166,
+    "hash": "\\x1B\\x10(j_Aim)\\xE8\\x03\\xF1\\x14ymW\\x18j|\\xDD",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 151
+    "repository": 158
   }
 ]
