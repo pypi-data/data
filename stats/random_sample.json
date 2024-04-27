@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "gscdk",
-    "project_version": "0.7.10",
-    "project_release": "gscdk-0.7.10.tar.gz",
-    "uploaded_on": "2023-05-24 02:31:10.715",
-    "path": "packages/gscdk/gscdk-0.7.10.tar.gz/gscdk-0.7.10/pysrc/tinygo/lib/eosio/sysroot/include/boost/fusion/view/reverse_view/detail/key_of_impl.hpp",
-    "archive_path": "gscdk-0.7.10/pysrc/tinygo/lib/eosio/sysroot/include/boost/fusion/view/reverse_view/detail/key_of_impl.hpp",
-    "size": 889,
-    "hash": "\\x98^_\\xA9\\xCD\\x01\\xEE\\xD0\\xFEJ[2\\xAA\\xEB\\x8F\\xB5\\xB6\\xD8\\xFF\\xEA",
+    "project_name": "rcsb.utils.seq",
+    "project_version": "0.44",
+    "project_release": "rcsb.utils.seq-0.44-py2.py3-none-any.whl",
+    "uploaded_on": "2020-08-23 18:12:52.841",
+    "path": "packages/rcsb.utils.seq/rcsb.utils.seq-0.44-py2.py3-none-any.whl/rcsb/utils/__init__.py",
+    "archive_path": "rcsb/utils/__init__.py",
+    "size": 65,
+    "hash": "\\x8D\\xB6m=\\x0F\\x0F%\\xD8\\x02\\xC0\\xAD]\\xE1\\xA0\\x19\\xCC\\xE9M=G",
     "skip_reason": "",
-    "lines": 29,
-    "repository": 210
+    "lines": 1,
+    "repository": 77
   },
   {
-    "project_name": "daisykit",
-    "project_version": "0.3.0.5",
-    "project_release": "daisykit-0.3.0.5-cp39-cp39-macosx_10_9_x86_64.whl",
-    "uploaded_on": "2023-06-17 15:58:06.484",
-    "path": "packages/daisykit/daisykit-0.3.0.5-cp39-cp39-macosx_10_9_x86_64.whl/daisykit/.dylibs/libswscale.7.1.100.dylib",
-    "archive_path": "daisykit/.dylibs/libswscale.7.1.100.dylib",
-    "size": 587376,
-    "hash": "E2$\\xEF\\xF8\\x92\\x01\\xB3\\xE2x\\xA5\\x11R\\x97*\\xE5\\x8D\\xADbJ",
-    "skip_reason": "binary",
+    "project_name": "ASAPPpy",
+    "project_version": "0.1b2",
+    "project_release": "ASAPPpy-0.1b2-py3-none-any.whl",
+    "uploaded_on": "2020-09-15 17:01:06.509",
+    "path": "packages/ASAPPpy/ASAPPpy-0.1b2-py3-none-any.whl/ASAPPpy/sentences/__init__.py",
+    "archive_path": "ASAPPpy/sentences/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 214
+    "repository": 79
   }
 ]
