@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "rcsb.utils.seq",
-    "project_version": "0.44",
-    "project_release": "rcsb.utils.seq-0.44-py2.py3-none-any.whl",
-    "uploaded_on": "2020-08-23 18:12:52.841",
-    "path": "packages/rcsb.utils.seq/rcsb.utils.seq-0.44-py2.py3-none-any.whl/rcsb/utils/__init__.py",
-    "archive_path": "rcsb/utils/__init__.py",
-    "size": 65,
-    "hash": "\\x8D\\xB6m=\\x0F\\x0F%\\xD8\\x02\\xC0\\xAD]\\xE1\\xA0\\x19\\xCC\\xE9M=G",
+    "project_name": "dagster-airbyte",
+    "project_version": "0.14.9",
+    "project_release": "dagster_airbyte-0.14.9-py3-none-any.whl",
+    "uploaded_on": "2022-04-14 20:18:24.824",
+    "path": "packages/dagster-airbyte/dagster_airbyte-0.14.9-py3-none-any.whl/dagster_airbyte/ops.py",
+    "archive_path": "dagster_airbyte/ops.py",
+    "size": 3966,
+    "hash": "\\xF0qY>G\\x22\\x0D\\xF5\\xF9iz\\xA2\\x01\\x1B\\x87Y\\x9B{\\xC2(",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 77
+    "lines": 106,
+    "repository": 146
   },
   {
-    "project_name": "ASAPPpy",
-    "project_version": "0.1b2",
-    "project_release": "ASAPPpy-0.1b2-py3-none-any.whl",
-    "uploaded_on": "2020-09-15 17:01:06.509",
-    "path": "packages/ASAPPpy/ASAPPpy-0.1b2-py3-none-any.whl/ASAPPpy/sentences/__init__.py",
-    "archive_path": "ASAPPpy/sentences/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
-    "lines": 0,
-    "repository": 79
+    "project_name": "kuksa-viss-client",
+    "project_version": "0.2.1",
+    "project_release": "kuksa_viss_client-0.2.1.tar.gz",
+    "uploaded_on": "2022-05-17 19:34:32.29",
+    "path": "packages/kuksa-viss-client/kuksa_viss_client-0.2.1.tar.gz/kuksa_viss_client-0.2.1/kuksa_viss_client/.venv2/lib/python3.9/site-packages/pip/_vendor/chardet/cli/__init__.py",
+    "archive_path": "kuksa_viss_client-0.2.1/kuksa_viss_client/.venv2/lib/python3.9/site-packages/pip/_vendor/chardet/cli/__init__.py",
+    "size": 2,
+    "hash": "\\xD3\\xF5\\xA1/\\xAA\\x99u\\x81\\x92\\xEC\\xC4\\xED?\\xC2,\\x92I#.\\x86",
+    "skip_reason": "virtualenv",
+    "lines": 1,
+    "repository": 151
   }
 ]
