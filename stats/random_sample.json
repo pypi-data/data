@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "myams-js",
-    "project_version": "1.12.1",
-    "project_release": "myams_js-1.12.1-py3.7.egg",
-    "uploaded_on": "2022-02-18 11:10:24.978",
-    "path": "packages/myams-js/myams_js-1.12.1-py3.7.egg/pkg/css/svgs/brands/google-drive.svg",
-    "archive_path": "pkg/css/svgs/brands/google-drive.svg",
-    "size": 397,
-    "hash": "\\x10DgD%EI\\xE7>{\\xF0\\x91q\\xE3\\xC8\\xB0\\xD7\\xE3\\xA6\\x1A",
+    "project_name": "tf-nightly-tpu",
+    "project_version": "2.17.0.dev20240222",
+    "project_release": "tf_nightly_tpu-2.17.0.dev20240222-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2024-02-22 17:29:51.001",
+    "path": "packages/tf-nightly-tpu/tf_nightly_tpu-2.17.0.dev20240222-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/include/external/com_github_grpc_grpc/include/grpc++/impl/codegen/method_handler_impl.h",
+    "archive_path": "tensorflow/include/external/com_github_grpc_grpc/include/grpc++/impl/codegen/method_handler_impl.h",
+    "size": 987,
+    "hash": "\\x0B\\xDBb\\x06\\x16\\xBD\\x84\\xDD\\x12\\x03\\x093\\x9A\\xE7 \\xAC\\xF1\\xCA\\x98\\x0D",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 139
+    "lines": 28,
+    "repository": 258
   },
   {
-    "project_name": "griddly",
-    "project_version": "1.2.35",
-    "project_release": "griddly-1.2.35-cp38-cp38-macosx_10_14_x86_64.whl",
-    "uploaded_on": "2022-02-16 13:07:35.484",
-    "path": "packages/griddly/griddly-1.2.35-cp38-cp38-macosx_10_14_x86_64.whl/griddly/resources/images/oryx/oryx_tiny_galaxy/tg_sliced/tg_fx/tg_fx_bullet_4.png",
-    "archive_path": "griddly/resources/images/oryx/oryx_tiny_galaxy/tg_sliced/tg_fx/tg_fx_bullet_4.png",
-    "size": 1058,
-    "hash": "\\x843,\\xE9\\xBF\\xA2\\xB8[b\\x82\\x7FSi\\x85\\xAF\\xB4\\x1BB\\xF4\\xE3",
+    "project_name": "rendercv",
+    "project_version": "1.5",
+    "project_release": "rendercv-1.5-py3-none-any.whl",
+    "uploaded_on": "2024-03-27 18:15:31.604",
+    "path": "packages/rendercv/rendercv-1.5-py3-none-any.whl/rendercv/tinytex-release/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfm",
+    "archive_path": "rendercv/tinytex-release/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfm",
+    "size": 1154,
+    "hash": "\\xD1\\xB1\\x11\\x13\\xC2\\xAB\\x94_y6\\x95\\xE6\\x18&\\x19\\xDEr\\xDCJ\\x8D",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 138
+    "repository": 264
   }
 ]
