@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "onnx-weekly",
-    "project_version": "1.15.0.dev20230724",
-    "project_release": "onnx_weekly-1.15.0.dev20230724-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "uploaded_on": "2023-07-24 02:14:15.346",
-    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230724-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/onnx/backend/test/data/node/test_reciprocal_example/test_data_set_0/input_0.pb",
-    "archive_path": "onnx/backend/test/data/node/test_reciprocal_example/test_data_set_0/input_0.pb",
-    "size": 17,
-    "hash": "\\xA2K\\x07f/\\xB1\\x80\\x8F\\x13\\xBA\\xFF>\\x15<b\\xB9\\xE5\\x16Y\\xB4",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 221
+    "project_name": "z4d-certified-devices",
+    "project_version": "1.1",
+    "project_release": "z4d-certified-devices-1.1.tar.gz",
+    "uploaded_on": "2023-03-01 08:04:37.503",
+    "path": "packages/z4d-certified-devices/z4d-certified-devices-1.1.tar.gz/z4d-certified-devices-1.1/z4d_certified_devices/Certified/Casa.ia/CSLC601-D-E.json",
+    "archive_path": "z4d-certified-devices-1.1/z4d_certified_devices/Certified/Casa.ia/CSLC601-D-E.json",
+    "size": 772,
+    "hash": "\\xDA:\\xA9\\x86\\xAB\\x05M\\xA4ce\\x98\\xACB\\xED$\\x85\\x8Er9i",
+    "skip_reason": "",
+    "lines": 47,
+    "repository": 194
   },
   {
-    "project_name": "python-rdma-qe",
-    "project_version": "0.0.12",
-    "project_release": "python_rdma_qe-0.0.12.tar.gz",
-    "uploaded_on": "2023-07-18 08:10:03.275",
-    "path": "packages/python-rdma-qe/python_rdma_qe-0.0.12.tar.gz/python_rdma_qe-0.0.12/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py",
-    "archive_path": "python_rdma_qe-0.0.12/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py",
-    "size": 17165,
-    "hash": "\\x8F\\x86x\\x12\\xA5\\xEB4T\\xF3\\x13b#{\\x90y-C:\\x8C\\x0B",
-    "skip_reason": "virtualenv",
-    "lines": 495,
-    "repository": 219
+    "project_name": "onnx-weekly",
+    "project_version": "1.15.0.dev20230501",
+    "project_release": "onnx_weekly-1.15.0.dev20230501-cp38-cp38-macosx_10_12_x86_64.whl",
+    "uploaded_on": "2023-05-01 00:25:30.491",
+    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230501-cp38-cp38-macosx_10_12_x86_64.whl/onnx/backend/test/data/node/test_batchnorm_example_training_mode/test_data_set_0/output_0.pb",
+    "archive_path": "onnx/backend/test/data/node/test_batchnorm_example_training_mode/test_data_set_0/output_0.pb",
+    "size": 496,
+    "hash": "w\\xCD\\x8A\\xAB\\xEDpuG\\xC7\\x96\\xB7m\\xD9\\x09L#\\xC8\\xF0>\\x0E",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 205
   }
 ]
