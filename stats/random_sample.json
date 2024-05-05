@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "z4d-certified-devices",
-    "project_version": "1.1",
-    "project_release": "z4d-certified-devices-1.1.tar.gz",
-    "uploaded_on": "2023-03-01 08:04:37.503",
-    "path": "packages/z4d-certified-devices/z4d-certified-devices-1.1.tar.gz/z4d-certified-devices-1.1/z4d_certified_devices/Certified/Casa.ia/CSLC601-D-E.json",
-    "archive_path": "z4d-certified-devices-1.1/z4d_certified_devices/Certified/Casa.ia/CSLC601-D-E.json",
-    "size": 772,
-    "hash": "\\xDA:\\xA9\\x86\\xAB\\x05M\\xA4ce\\x98\\xACB\\xED$\\x85\\x8Er9i",
+    "project_name": "graphscope-client",
+    "project_version": "0.26.0a20231204",
+    "project_release": "graphscope_client-0.26.0a20231204-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2023-12-04 20:13:38.235",
+    "path": "packages/graphscope-client/graphscope_client-0.26.0a20231204-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/graphscope/learning/graphlearn/python/nn/tf/data/hetero_batchgraph.py",
+    "archive_path": "graphscope/learning/graphlearn/python/nn/tf/data/hetero_batchgraph.py",
+    "size": 13268,
+    "hash": "\\xF8\\xEE\\xE2\\xBE.yF\\xFE\\x06\\xE7!\\xAA\\xF5\\x12\\xFB5\\xA5o:\\xF1",
     "skip_reason": "",
-    "lines": 47,
-    "repository": 194
+    "lines": 350,
+    "repository": 244
   },
   {
-    "project_name": "onnx-weekly",
-    "project_version": "1.15.0.dev20230501",
-    "project_release": "onnx_weekly-1.15.0.dev20230501-cp38-cp38-macosx_10_12_x86_64.whl",
-    "uploaded_on": "2023-05-01 00:25:30.491",
-    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230501-cp38-cp38-macosx_10_12_x86_64.whl/onnx/backend/test/data/node/test_batchnorm_example_training_mode/test_data_set_0/output_0.pb",
-    "archive_path": "onnx/backend/test/data/node/test_batchnorm_example_training_mode/test_data_set_0/output_0.pb",
-    "size": 496,
-    "hash": "w\\xCD\\x8A\\xAB\\xEDpuG\\xC7\\x96\\xB7m\\xD9\\x09L#\\xC8\\xF0>\\x0E",
+    "project_name": "home-assistant-frontend",
+    "project_version": "20231030.2",
+    "project_release": "home_assistant_frontend-20231030.2-py3-none-any.whl",
+    "uploaded_on": "2023-11-09 17:58:19.353",
+    "path": "packages/home-assistant-frontend/home_assistant_frontend-20231030.2-py3-none-any.whl/hass_frontend/static/translations/page-demo/de-0b466c8e3dc28f9914576695a1a5ec90.json.gz",
+    "archive_path": "hass_frontend/static/translations/page-demo/de-0b466c8e3dc28f9914576695a1a5ec90.json.gz",
+    "size": 613,
+    "hash": "\\xE4\\xFC\\xFDp \\xC4W\\x9DxE+\\xF7\\x9E\\xB1x#\\xF1\\x0F\\x94\\xC1",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 205
+    "repository": 240
   }
 ]
