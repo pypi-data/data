@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "graphscope-client",
-    "project_version": "0.26.0a20231204",
-    "project_release": "graphscope_client-0.26.0a20231204-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2023-12-04 20:13:38.235",
-    "path": "packages/graphscope-client/graphscope_client-0.26.0a20231204-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/graphscope/learning/graphlearn/python/nn/tf/data/hetero_batchgraph.py",
-    "archive_path": "graphscope/learning/graphlearn/python/nn/tf/data/hetero_batchgraph.py",
-    "size": 13268,
-    "hash": "\\xF8\\xEE\\xE2\\xBE.yF\\xFE\\x06\\xE7!\\xAA\\xF5\\x12\\xFB5\\xA5o:\\xF1",
+    "project_name": "azure-mgmt-netapp",
+    "project_version": "8.0.0",
+    "project_release": "azure_mgmt_netapp-8.0.0-py3-none-any.whl",
+    "uploaded_on": "2022-06-16 05:41:52.394",
+    "path": "packages/azure-mgmt-netapp/azure_mgmt_netapp-8.0.0-py3-none-any.whl/azure/mgmt/netapp/aio/operations/_snapshots_operations.py",
+    "archive_path": "azure/mgmt/netapp/aio/operations/_snapshots_operations.py",
+    "size": 33740,
+    "hash": "\\xFE\\xAE\\xC4\\xE7A\\xD38\\xEF@\\x07E\\xB0\\x7F45U-#T\\xBF",
     "skip_reason": "",
-    "lines": 350,
-    "repository": 244
+    "lines": 762,
+    "repository": 155
   },
   {
-    "project_name": "home-assistant-frontend",
-    "project_version": "20231030.2",
-    "project_release": "home_assistant_frontend-20231030.2-py3-none-any.whl",
-    "uploaded_on": "2023-11-09 17:58:19.353",
-    "path": "packages/home-assistant-frontend/home_assistant_frontend-20231030.2-py3-none-any.whl/hass_frontend/static/translations/page-demo/de-0b466c8e3dc28f9914576695a1a5ec90.json.gz",
-    "archive_path": "hass_frontend/static/translations/page-demo/de-0b466c8e3dc28f9914576695a1a5ec90.json.gz",
-    "size": 613,
-    "hash": "\\xE4\\xFC\\xFDp \\xC4W\\x9DxE+\\xF7\\x9E\\xB1x#\\xF1\\x0F\\x94\\xC1",
+    "project_name": "insightface-uniubi",
+    "project_version": "0.3.8",
+    "project_release": "insightface_uniubi-0.3.8-cp38-cp38-manylinux1_x86_64.whl",
+    "uploaded_on": "2022-08-01 11:05:43.431",
+    "path": "packages/insightface-uniubi/insightface_uniubi-0.3.8-cp38-cp38-manylinux1_x86_64.whl/insightface_uniubi-0.3.8.data/data/insightface/data/images/6.png",
+    "archive_path": "insightface_uniubi-0.3.8.data/data/insightface/data/images/6.png",
+    "size": 36805,
+    "hash": "\\xC1\\xE1\\xEA\\x04\\xCC0&\\xD54@\\xB3\\x0AG\\xBC%\\xEA\\x9A\\xA3h ",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 240
+    "repository": 161
   }
 ]
