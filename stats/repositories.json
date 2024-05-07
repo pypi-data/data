@@ -1189,12 +1189,12 @@
     "index": 271,
     "stats": {
       "earliest_package": "2024-05-01T01:19:05.632128Z",
-      "latest_package": "2024-05-05T22:24:05.978738Z",
-      "total_packages": 37585,
-      "done_packages": 37574
+      "latest_package": "2024-05-06T22:24:42.252907Z",
+      "total_packages": 47753,
+      "done_packages": 44691
     },
-    "percent_done": 99,
-    "size": 1622689792,
+    "percent_done": 93,
+    "size": 1820604416,
     "url": "https://github.com/pypi-data/pypi-mirror-271",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-271/tree/code/packages",
     "projects": {}
