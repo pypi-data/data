@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "odoo-addon-contract",
-    "project_version": "16.0.1.1.0.5",
-    "project_release": "odoo_addon_contract-16.0.1.1.0.5-py3-none-any.whl",
-    "uploaded_on": "2023-09-05 02:59:24.209",
-    "path": "packages/odoo-addon-contract/odoo_addon_contract-16.0.1.1.0.5-py3-none-any.whl/odoo/addons/contract/i18n/es_AR.po",
-    "archive_path": "odoo/addons/contract/i18n/es_AR.po",
-    "size": 131614,
-    "hash": "\\x90\\xE8/\\x9F=\\xF9c\\xC9W\\xA7\\x974\\x11\\x8E\\xE3\\xBCv\\xA3\\x0A&",
+    "project_name": "tf-nightly-cpu-aws",
+    "project_version": "2.16.0.dev20231112",
+    "project_release": "tf_nightly_cpu_aws-2.16.0.dev20231112-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "uploaded_on": "2023-11-12 11:24:14.538",
+    "path": "packages/tf-nightly-cpu-aws/tf_nightly_cpu_aws-2.16.0.dev20231112-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/tensorflow/include/Eigen/src/Core/Reshaped.h",
+    "archive_path": "tensorflow/include/Eigen/src/Core/Reshaped.h",
+    "size": 17004,
+    "hash": "\\xC1\\x18F\\x9D\\xD0\\x14\\x5C\\x1B3\\xDA\\x15Y\\x92\\x08\\xA8`\\x8E&\\xDC\\x90",
     "skip_reason": "",
-    "lines": 2939,
-    "repository": 229
+    "lines": 456,
+    "repository": 240
   },
   {
-    "project_name": "ddtrace",
-    "project_version": "2.0.0rc2",
-    "project_release": "ddtrace-2.0.0rc2-cp37-cp37m-win_amd64.whl",
-    "uploaded_on": "2023-09-22 18:00:00.972",
-    "path": "packages/ddtrace/ddtrace-2.0.0rc2-cp37-cp37m-win_amd64.whl/ddtrace/debugging/_exception/__init__.py",
-    "archive_path": "ddtrace/debugging/_exception/__init__.py",
+    "project_name": "pandas",
+    "project_version": "2.2.0rc0",
+    "project_release": "pandas-2.2.0rc0-cp312-cp312-macosx_10_9_x86_64.whl",
+    "uploaded_on": "2023-12-22 20:08:35.366",
+    "path": "packages/pandas/pandas-2.2.0rc0-cp312-cp312-macosx_10_9_x86_64.whl/pandas/core/interchange/__init__.py",
+    "archive_path": "pandas/core/interchange/__init__.py",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 231
+    "repository": 247
   }
 ]
