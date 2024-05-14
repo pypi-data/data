@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "odooku-odoo-stock",
-    "project_version": "11.0.3",
-    "project_release": "odooku_odoo_stock-11.0.3-py35-none-any.whl",
-    "uploaded_on": "2018-02-11 04:32:39.187",
-    "path": "packages/odooku-odoo-stock/odooku_odoo_stock-11.0.3-py35-none-any.whl/odoo/addons/stock_account/i18n/el.po",
-    "archive_path": "odoo/addons/stock_account/i18n/el.po",
-    "size": 30898,
-    "hash": "\\xBB\\xEF\\xB6\\xA2\\xAC5\\x0C@\\x0F\\xFA\\xB0\\xA7q\\xB5\\x02\\xEF\\xA5\\xF7\\xC6Q",
+    "project_name": "mkdocs-material",
+    "project_version": "9.4.9",
+    "project_release": "mkdocs_material-9.4.9-py3-none-any.whl",
+    "uploaded_on": "2023-11-17 11:21:19.924",
+    "path": "packages/mkdocs-material/mkdocs_material-9.4.9-py3-none-any.whl/material/templates/.icons/material/star-check.svg",
+    "archive_path": "material/templates/.icons/material/star-check.svg",
+    "size": 214,
+    "hash": "}\\xFA\\x0D\\xCC\\x98\\x12-\\xAF]\\x19|!vf\\xD7\\x8A\\x8A$m\\xED",
     "skip_reason": "",
-    "lines": 697,
-    "repository": 29
+    "lines": 1,
+    "repository": 241
   },
   {
-    "project_name": "django-geoexplorer",
-    "project_version": "4.0.21",
-    "project_release": "django-geoexplorer-4.0.21.tar.gz",
-    "uploaded_on": "2017-10-17 00:04:56.124",
-    "path": "packages/django-geoexplorer/django-geoexplorer-4.0.21.tar.gz/django-geoexplorer-4.0.21/geoexplorer/static/geoexplorer/externals/gxp/src/theme/img/thumbs/mapbox/blue-marble-topo-jul-bw.jpg",
-    "archive_path": "django-geoexplorer-4.0.21/geoexplorer/static/geoexplorer/externals/gxp/src/theme/img/thumbs/mapbox/blue-marble-topo-jul-bw.jpg",
-    "size": 8093,
-    "hash": "\\xBC\\xDD\\xF4\\x95\\xFF4\\x97\\x9Dy\\xBBK\\x1F\\xF4e{F^\\x03\\x8E\\xA7",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 25
+    "project_name": "spyder",
+    "project_version": "6.0.0a3",
+    "project_release": "spyder-6.0.0a3-py3-none-any.whl",
+    "uploaded_on": "2023-12-19 01:58:27.773",
+    "path": "packages/spyder/spyder-6.0.0a3-py3-none-any.whl/spyder/plugins/help/utils/js/mathjax/config/TeX-AMS-MML_HTMLorMML.js",
+    "archive_path": "spyder/plugins/help/utils/js/mathjax/config/TeX-AMS-MML_HTMLorMML.js",
+    "size": 244879,
+    "hash": "\\xEF]HM\\xC9,\\x1D2(\\xB2)\\xF5\\x07=\\xA3\\x86;Eb\\xDD",
+    "skip_reason": "too-large",
+    "lines": 69,
+    "repository": 247
   }
 ]
