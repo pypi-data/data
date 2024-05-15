@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "mkdocs-material",
-    "project_version": "9.4.9",
-    "project_release": "mkdocs_material-9.4.9-py3-none-any.whl",
-    "uploaded_on": "2023-11-17 11:21:19.924",
-    "path": "packages/mkdocs-material/mkdocs_material-9.4.9-py3-none-any.whl/material/templates/.icons/material/star-check.svg",
-    "archive_path": "material/templates/.icons/material/star-check.svg",
-    "size": 214,
-    "hash": "}\\xFA\\x0D\\xCC\\x98\\x12-\\xAF]\\x19|!vf\\xD7\\x8A\\x8A$m\\xED",
+    "project_name": "nicegui",
+    "project_version": "1.3.0",
+    "project_release": "nicegui-1.3.0.tar.gz",
+    "uploaded_on": "2023-07-14 02:49:35.333",
+    "path": "packages/nicegui/nicegui-1.3.0.tar.gz/nicegui-1.3.0/nicegui/elements/lib/highcharts/modules/arrow-symbols.js.map",
+    "archive_path": "nicegui-1.3.0/nicegui/elements/lib/highcharts/modules/arrow-symbols.js.map",
+    "size": 2990,
+    "hash": "\\x08$\\x7F\\xC6\\xA5I\\x0Ad\\xE4\\xE7\\x85\\x95\\xF3\\x13\\x9DFue\\x10\\xBB",
     "skip_reason": "",
     "lines": 1,
-    "repository": 241
+    "repository": 219
   },
   {
-    "project_name": "spyder",
-    "project_version": "6.0.0a3",
-    "project_release": "spyder-6.0.0a3-py3-none-any.whl",
-    "uploaded_on": "2023-12-19 01:58:27.773",
-    "path": "packages/spyder/spyder-6.0.0a3-py3-none-any.whl/spyder/plugins/help/utils/js/mathjax/config/TeX-AMS-MML_HTMLorMML.js",
-    "archive_path": "spyder/plugins/help/utils/js/mathjax/config/TeX-AMS-MML_HTMLorMML.js",
-    "size": 244879,
-    "hash": "\\xEF]HM\\xC9,\\x1D2(\\xB2)\\xF5\\x07=\\xA3\\x86;Eb\\xDD",
-    "skip_reason": "too-large",
-    "lines": 69,
-    "repository": 247
+    "project_name": "tencentcloud-sdk-python-solar",
+    "project_version": "3.0.928",
+    "project_release": "tencentcloud_sdk_python_solar-3.0.928-py2.py3-none-any.whl",
+    "uploaded_on": "2023-07-05 00:32:37.292",
+    "path": "packages/tencentcloud-sdk-python-solar/tencentcloud_sdk_python_solar-3.0.928-py2.py3-none-any.whl/tencentcloud/solar/__init__.py",
+    "archive_path": "tencentcloud/solar/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
+    "lines": 0,
+    "repository": 217
   }
 ]
