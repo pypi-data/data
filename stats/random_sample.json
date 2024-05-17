@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "mesher",
-    "project_version": "2.1.5",
-    "project_release": "mesher-2.1.5.tar.gz",
-    "uploaded_on": "2024-05-12 23:48:44.814",
-    "path": "packages/mesher/mesher-2.1.5.tar.gz/mesher-2.1.5/._venv-mesher/uhisduhrb2ci2oefpd5ssn2smmqydjei/share/terminfo/77/wy60-AT",
-    "archive_path": "mesher-2.1.5/._venv-mesher/uhisduhrb2ci2oefpd5ssn2smmqydjei/share/terminfo/77/wy60-AT",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
-    "lines": 0,
-    "repository": 273
+    "project_name": "lusid-sdk",
+    "project_version": "0.10.835",
+    "project_release": "lusid-sdk-0.10.835.tar.gz",
+    "uploaded_on": "2019-11-04 17:32:38.346",
+    "path": "packages/lusid-sdk/lusid-sdk-0.10.835.tar.gz/lusid-sdk-0.10.835/lusid/models/resource_list_of_scope_definition.py",
+    "archive_path": "lusid-sdk-0.10.835/lusid/models/resource_list_of_scope_definition.py",
+    "size": 28852,
+    "hash": ",x\\x84l\\x96n\\x81M\\x80\\xB3\\xC2\\x9F\\xD3\\xDC\\x12o\\x91<k\\x93",
+    "skip_reason": "",
+    "lines": 166,
+    "repository": 55
   },
   {
-    "project_name": "organage",
-    "project_version": "1.0.0",
-    "project_release": "organage-1.0.0-py3-none-any.whl",
-    "uploaded_on": "2024-05-05 20:18:39.314",
-    "path": "packages/organage/organage-1.0.0-py3-none-any.whl/organage/data/ml_models/KADRC/Zprot_stableassayps_perf95/Muscle/KADRC_HC_Zprot_stableassayps_perf95_lasso_Muscle_seed97_aging_model.pkl",
-    "archive_path": "organage/data/ml_models/KADRC/Zprot_stableassayps_perf95/Muscle/KADRC_HC_Zprot_stableassayps_perf95_lasso_Muscle_seed97_aging_model.pkl",
-    "size": 733,
-    "hash": "\\xC7\\x0B\\x06\\x95`\\xEA\\xD7\\xC1\\xD1S\\x1F]\\x8F\\xB5]\\xB6O\\x92\\xDC\\x1B",
+    "project_name": "tendenci",
+    "project_version": "11.4.4",
+    "project_release": "tendenci-11.4.4.tar.gz",
+    "uploaded_on": "2019-11-26 19:57:44.368",
+    "path": "packages/tendenci/tendenci-11.4.4.tar.gz/tendenci-11.4.4/tendenci/apps/forms_builder/forms/__pycache__/__init__.cpython-36.pyc",
+    "archive_path": "tendenci-11.4.4/tendenci/apps/forms_builder/forms/__pycache__/__init__.cpython-36.pyc",
+    "size": 194,
+    "hash": "{\\xDD\\xC6\\x0B\\xE8\\x16\\xC4.\\x5C\\xF8\\x11\\xAFce\\xE8\\xF2\\xF6\\xCB\\xC5\\xA8",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 271
+    "repository": 56
   }
 ]
