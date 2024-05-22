@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "awscli",
-    "project_version": "1.27.30",
-    "project_release": "awscli-1.27.30.tar.gz",
-    "uploaded_on": "2022-12-14 20:31:00.184",
-    "path": "packages/awscli/awscli-1.27.30.tar.gz/awscli-1.27.30/awscli/examples/rds/describe-db-cluster-parameters.rst",
-    "archive_path": "awscli-1.27.30/awscli/examples/rds/describe-db-cluster-parameters.rst",
-    "size": 4861,
-    "hash": "\\x8Cb\\xD9>\\x12\\x9C\\xF6NT4\\x8A\\x9B\\xD3\\xD9\\xD6P\\x1F\\xAEH\\x9F",
+    "project_name": "ais-dom",
+    "project_version": "0.106.4b2",
+    "project_release": "ais_dom-0.106.4b2-py3-none-any.whl",
+    "uploaded_on": "2020-03-05 17:44:17.494",
+    "path": "packages/ais-dom/ais_dom-0.106.4b2-py3-none-any.whl/homeassistant/components/twilio/.translations/da.json",
+    "archive_path": "homeassistant/components/twilio/.translations/da.json",
+    "size": 954,
+    "hash": "\\xD5\\xF4\\x0DVDn6V\\xF0\\x05\\xD3\\x05B\\x9B\\xA9\\xA2\\xD0E6\\x92",
     "skip_reason": "",
-    "lines": 141,
-    "repository": 181
+    "lines": 18,
+    "repository": 62
   },
   {
-    "project_name": "ylearn",
-    "project_version": "0.2.0",
-    "project_release": "ylearn-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2023-01-04 09:34:32.701",
-    "path": "packages/ylearn/ylearn-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/ylearn/sklearn_ex/cloned/tree/_splitter.cpp",
-    "archive_path": "ylearn/sklearn_ex/cloned/tree/_splitter.cpp",
-    "size": 1426282,
-    "hash": "\\x1F\\xA6\\x9E\\xEB\\xBE\\xCB\\xEA\\xB0g\\xB3\\xEC\\xC8\\x95\\xE2\\xC7\\x8C\\x99?Y\\xDD",
-    "skip_reason": "too-large",
-    "lines": 35356,
-    "repository": 184
+    "project_name": "insights-core",
+    "project_version": "3.0.140",
+    "project_release": "insights_core-3.0.140-py3.6.egg",
+    "uploaded_on": "2019-12-18 19:08:01.715",
+    "path": "packages/insights-core/insights_core-3.0.140-py3.6.egg/insights/specs/__pycache__/__init__.cpython-36.pyc",
+    "archive_path": "insights/specs/__pycache__/__init__.cpython-36.pyc",
+    "size": 17598,
+    "hash": "]\\xFB\\xFC\\x82\\xED\\x9D\\xDE\\xCE\\xDA\\xAB\\xEC&E\\xC3\\xCDd\\xC9\\xAD~\\x17",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 58
   }
 ]
