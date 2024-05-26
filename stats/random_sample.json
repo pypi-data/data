@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "muffin-sentry",
-    "project_version": "0.0.4",
-    "project_release": "muffin_sentry-0.0.4-py2.py3-none-any.whl",
-    "uploaded_on": "2015-07-21 15:21:52.502",
-    "path": "packages/muffin-sentry/muffin_sentry-0.0.4-py2.py3-none-any.whl/muffin_sentry-0.0.4.dist-info/pbr.json",
-    "archive_path": "muffin_sentry-0.0.4.dist-info/pbr.json",
-    "size": 47,
-    "hash": "\\xF9?\\x1F\\x0FgU?W\\x1E\\xBDD\\xAD\\xDA\\xE7L\\xBE\\x91C\\x8D_",
+    "project_name": "pharmpy-core",
+    "project_version": "0.22.5",
+    "project_release": "pharmpy-core-0.22.5.tar.gz",
+    "uploaded_on": "2021-04-14 11:33:04.68",
+    "path": "packages/pharmpy-core/pharmpy-core-0.22.5.tar.gz/pharmpy-core-0.22.5/src/pharmpy/__main__.py",
+    "archive_path": "pharmpy-core-0.22.5/src/pharmpy/__main__.py",
+    "size": 125,
+    "hash": "r\\x8CO\\x0E2\\x10\\x88R\\x0D\\x7F\\xA3\\xEB\\xE0\\x0DI?RO\\x1B\\x9B",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 11
+    "lines": 12,
+    "repository": 102
   },
   {
-    "project_name": "TGFKLookup",
-    "project_version": "0.1a0.dev-r652",
-    "project_release": "TGFKLookup-0.1a0.dev_r652-py2.4.egg",
-    "uploaded_on": "2007-04-09 00:55:20",
-    "path": "packages/TGFKLookup/TGFKLookup-0.1a0.dev_r652-py2.4.egg/tgfklookup/widgets.pyc",
-    "archive_path": "tgfklookup/widgets.pyc",
-    "size": 9018,
-    "hash": "\\xBC\\xA9\\x7F\\xE6\\xC4+8\\xF5|\\xDA\\xA9\\xCC\\x88\\xD1\\x92 \\x10\\x07\\xBAb",
+    "project_name": "insights-core",
+    "project_version": "3.0.210",
+    "project_release": "insights_core-3.0.210-py3.6.egg",
+    "uploaded_on": "2021-02-11 16:18:15.02",
+    "path": "packages/insights-core/insights_core-3.0.210-py3.6.egg/insights/tests/__pycache__/test_logfileoutput.cpython-36.pyc",
+    "archive_path": "insights/tests/__pycache__/test_logfileoutput.cpython-36.pyc",
+    "size": 14439,
+    "hash": "\\xCE\\x04\\xE7\\xAF\\xED\\xA2]T\\x017p\\xF3\\x82\\x8Ba\\xC7?\\xAAj\\xD4",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 1
+    "repository": 94
   }
 ]
