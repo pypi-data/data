@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pharmpy-core",
-    "project_version": "0.22.5",
-    "project_release": "pharmpy-core-0.22.5.tar.gz",
-    "uploaded_on": "2021-04-14 11:33:04.68",
-    "path": "packages/pharmpy-core/pharmpy-core-0.22.5.tar.gz/pharmpy-core-0.22.5/src/pharmpy/__main__.py",
-    "archive_path": "pharmpy-core-0.22.5/src/pharmpy/__main__.py",
-    "size": 125,
-    "hash": "r\\x8CO\\x0E2\\x10\\x88R\\x0D\\x7F\\xA3\\xEB\\xE0\\x0DI?RO\\x1B\\x9B",
+    "project_name": "pychoreo",
+    "project_version": "0.2.0",
+    "project_release": "pychoreo-0.2.0-py2.py3-none-any.whl",
+    "uploaded_on": "2019-11-21 04:36:44.14",
+    "path": "packages/pychoreo/pychoreo-0.2.0-py2.py3-none-any.whl/pychoreo_examples/data/models/kuka_kr6_r900/urdf/kuka_kr6_r900_mit_suction_gripper.urdf",
+    "archive_path": "pychoreo_examples/data/models/kuka_kr6_r900/urdf/kuka_kr6_r900_mit_suction_gripper.urdf",
+    "size": 9351,
+    "hash": "\\x12\\xF8\\x80\\x16\\xDB\\xAD\\x99\\xAB\\xD6\\x19\\xA4P\\xBF\\xB6]\\xB7\\x920\\xFC`",
     "skip_reason": "",
-    "lines": 12,
-    "repository": 102
+    "lines": 258,
+    "repository": 56
   },
   {
-    "project_name": "insights-core",
-    "project_version": "3.0.210",
-    "project_release": "insights_core-3.0.210-py3.6.egg",
-    "uploaded_on": "2021-02-11 16:18:15.02",
-    "path": "packages/insights-core/insights_core-3.0.210-py3.6.egg/insights/tests/__pycache__/test_logfileoutput.cpython-36.pyc",
-    "archive_path": "insights/tests/__pycache__/test_logfileoutput.cpython-36.pyc",
-    "size": 14439,
-    "hash": "\\xCE\\x04\\xE7\\xAF\\xED\\xA2]T\\x017p\\xF3\\x82\\x8Ba\\xC7?\\xAAj\\xD4",
+    "project_name": "tendenci",
+    "project_version": "11.2.4",
+    "project_release": "tendenci-11.2.4.tar.gz",
+    "uploaded_on": "2019-04-15 20:23:14.63",
+    "path": "packages/tendenci/tendenci-11.2.4.tar.gz/tendenci-11.2.4/tendenci/themes/t8-base/static/famfamfam/icons/images.png",
+    "archive_path": "tendenci-11.2.4/tendenci/themes/t8-base/static/famfamfam/icons/images.png",
+    "size": 661,
+    "hash": "\\x18H`\\xD1\\xE0\\xB1l\\xDD\\x06\\x98\\xA8\\x84\\x18j\\xA2|;hQ\\x06",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 94
+    "repository": 45
   }
 ]
