@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pychoreo",
-    "project_version": "0.2.0",
-    "project_release": "pychoreo-0.2.0-py2.py3-none-any.whl",
-    "uploaded_on": "2019-11-21 04:36:44.14",
-    "path": "packages/pychoreo/pychoreo-0.2.0-py2.py3-none-any.whl/pychoreo_examples/data/models/kuka_kr6_r900/urdf/kuka_kr6_r900_mit_suction_gripper.urdf",
-    "archive_path": "pychoreo_examples/data/models/kuka_kr6_r900/urdf/kuka_kr6_r900_mit_suction_gripper.urdf",
-    "size": 9351,
-    "hash": "\\x12\\xF8\\x80\\x16\\xDB\\xAD\\x99\\xAB\\xD6\\x19\\xA4P\\xBF\\xB6]\\xB7\\x920\\xFC`",
+    "project_name": "sunsynk",
+    "project_version": "0.1.4",
+    "project_release": "sunsynk-0.1.4.tar.gz",
+    "uploaded_on": "2022-03-04 18:15:49.83",
+    "path": "packages/sunsynk/sunsynk-0.1.4.tar.gz/sunsynk-0.1.4/MANIFEST.in",
+    "archive_path": "sunsynk-0.1.4/MANIFEST.in",
+    "size": 81,
+    "hash": "\\xE6\\xAD\\xF6\\xC1\\xA4\\xBE\\xE2\\x0D\\xDE\\x9As\\xA0\\x8C}\\xD6\\xBC\\xE4g\\x7F\\x82",
     "skip_reason": "",
-    "lines": 258,
-    "repository": 56
+    "lines": 4,
+    "repository": 141
   },
   {
-    "project_name": "tendenci",
-    "project_version": "11.2.4",
-    "project_release": "tendenci-11.2.4.tar.gz",
-    "uploaded_on": "2019-04-15 20:23:14.63",
-    "path": "packages/tendenci/tendenci-11.2.4.tar.gz/tendenci-11.2.4/tendenci/themes/t8-base/static/famfamfam/icons/images.png",
-    "archive_path": "tendenci-11.2.4/tendenci/themes/t8-base/static/famfamfam/icons/images.png",
-    "size": 661,
-    "hash": "\\x18H`\\xD1\\xE0\\xB1l\\xDD\\x06\\x98\\xA8\\x84\\x18j\\xA2|;hQ\\x06",
+    "project_name": "dtai-veritas",
+    "project_version": "0.1.1",
+    "project_release": "dtai_veritas-0.1.1-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2022-05-05 12:12:27.168",
+    "path": "packages/dtai-veritas/dtai_veritas-0.1.1-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/veritas/pyveritas.pypy37-pp73-x86_64-linux-gnu.so",
+    "archive_path": "veritas/pyveritas.pypy37-pp73-x86_64-linux-gnu.so",
+    "size": 615192,
+    "hash": "K\\x0A\\x1C\\xC1\\xD8\\x1E\\x14uUk\\xDD\\xAC\\xD1\\xF4\\x12z_y7\\xAE",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 45
+    "repository": 149
   }
 ]
