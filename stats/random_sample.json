@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "sunsynk",
-    "project_version": "0.1.4",
-    "project_release": "sunsynk-0.1.4.tar.gz",
-    "uploaded_on": "2022-03-04 18:15:49.83",
-    "path": "packages/sunsynk/sunsynk-0.1.4.tar.gz/sunsynk-0.1.4/MANIFEST.in",
-    "archive_path": "sunsynk-0.1.4/MANIFEST.in",
-    "size": 81,
-    "hash": "\\xE6\\xAD\\xF6\\xC1\\xA4\\xBE\\xE2\\x0D\\xDE\\x9As\\xA0\\x8C}\\xD6\\xBC\\xE4g\\x7F\\x82",
-    "skip_reason": "",
-    "lines": 4,
-    "repository": 141
+    "project_name": "sickrage",
+    "project_version": "8.0.6",
+    "project_release": "sickrage-8.0.6.zip",
+    "uploaded_on": "2016-07-28 00:42:20.986",
+    "path": "packages/sickrage/sickrage-8.0.6.zip/sickrage-8.0.6/sickrage/core/webserver/gui/default/css/core.min.css",
+    "archive_path": "sickrage-8.0.6/sickrage/core/webserver/gui/default/css/core.min.css",
+    "size": 66203,
+    "hash": "v\\x12u1\\x88\\xB1\\x0A\\xBFv\\xE2t\\xA2\\x83\\x8COf\\xBF \\xB8S",
+    "skip_reason": "text-long-lines",
+    "lines": 1,
+    "repository": 16
   },
   {
-    "project_name": "dtai-veritas",
-    "project_version": "0.1.1",
-    "project_release": "dtai_veritas-0.1.1-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2022-05-05 12:12:27.168",
-    "path": "packages/dtai-veritas/dtai_veritas-0.1.1-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/veritas/pyveritas.pypy37-pp73-x86_64-linux-gnu.so",
-    "archive_path": "veritas/pyveritas.pypy37-pp73-x86_64-linux-gnu.so",
-    "size": 615192,
-    "hash": "K\\x0A\\x1C\\xC1\\xD8\\x1E\\x14uUk\\xDD\\xAC\\xD1\\xF4\\x12z_y7\\xAE",
+    "project_name": "gvar",
+    "project_version": "7.1",
+    "project_release": "gvar-7.1.tar.gz",
+    "uploaded_on": "2015-07-24 15:50:21.798",
+    "path": "packages/gvar/gvar-7.1.tar.gz/gvar-7.1/doc/html/_static/dialog-seealso.png",
+    "archive_path": "gvar-7.1/doc/html/_static/dialog-seealso.png",
+    "size": 1473,
+    "hash": "\\xA2z\\x0F\\xCB\\xA01\\xE0\\xC7iUV\\x9E\\x97\\xBA\\xC6\\x96\\x1B\\xA2\\xA7\\xCB",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 149
+    "repository": 11
   }
 ]
