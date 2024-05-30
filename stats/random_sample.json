@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "sickrage",
-    "project_version": "8.0.6",
-    "project_release": "sickrage-8.0.6.zip",
-    "uploaded_on": "2016-07-28 00:42:20.986",
-    "path": "packages/sickrage/sickrage-8.0.6.zip/sickrage-8.0.6/sickrage/core/webserver/gui/default/css/core.min.css",
-    "archive_path": "sickrage-8.0.6/sickrage/core/webserver/gui/default/css/core.min.css",
-    "size": 66203,
-    "hash": "v\\x12u1\\x88\\xB1\\x0A\\xBFv\\xE2t\\xA2\\x83\\x8COf\\xBF \\xB8S",
-    "skip_reason": "text-long-lines",
-    "lines": 1,
-    "repository": 16
+    "project_name": "poseutil",
+    "project_version": "0.5.5",
+    "project_release": "poseutil-0.5.5-py3-none-any.whl",
+    "uploaded_on": "2024-01-05 07:00:19.725",
+    "path": "packages/poseutil/poseutil-0.5.5-py3-none-any.whl/utils/poseMeasure.py",
+    "archive_path": "utils/poseMeasure.py",
+    "size": 82334,
+    "hash": "`\\x05\\xF2\\xAC\\x16\\xF3z\\x0AA5\\xFB]\\xAF0\\xEE\\xC4\\xAF\\x06bm",
+    "skip_reason": "",
+    "lines": 1955,
+    "repository": 249
   },
   {
-    "project_name": "gvar",
-    "project_version": "7.1",
-    "project_release": "gvar-7.1.tar.gz",
-    "uploaded_on": "2015-07-24 15:50:21.798",
-    "path": "packages/gvar/gvar-7.1.tar.gz/gvar-7.1/doc/html/_static/dialog-seealso.png",
-    "archive_path": "gvar-7.1/doc/html/_static/dialog-seealso.png",
-    "size": 1473,
-    "hash": "\\xA2z\\x0F\\xCB\\xA01\\xE0\\xC7iUV\\x9E\\x97\\xBA\\xC6\\x96\\x1B\\xA2\\xA7\\xCB",
+    "project_name": "agilicus",
+    "project_version": "1.240.1",
+    "project_release": "agilicus-1.240.1.tar.gz",
+    "uploaded_on": "2024-02-06 20:55:57.292",
+    "path": "packages/agilicus/agilicus-1.240.1.tar.gz/agilicus-1.240.1/agilicus/agilicus_api/test/__pycache__/test_cert_signing_req.cpython-310-pytest-7.4.4.pyc",
+    "archive_path": "agilicus-1.240.1/agilicus/agilicus_api/test/__pycache__/test_cert_signing_req.cpython-310-pytest-7.4.4.pyc",
+    "size": 3640,
+    "hash": "\\x8F\\xE8\\x99x/\\x02W@\\x0EUa0w\\xF5\\x18\\xD8O\\xCF\\xF1\\xB4",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 11
+    "repository": 255
   }
 ]
