@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "evalidate",
-    "project_version": "2.0.1",
-    "project_release": "evalidate-2.0.1-py3-none-any.whl",
-    "uploaded_on": "2023-06-22 14:47:59.932",
-    "path": "packages/evalidate/evalidate-2.0.1-py3-none-any.whl/evalidate/security.py",
-    "archive_path": "evalidate/security.py",
-    "size": 2506,
-    "hash": "!\\x09\\xB8\\xEA\\x07\\xBDe\\xCD4V^z1R\\xD4o\\x0F\\xFD\\xD4\\xFE",
+    "project_name": "allennlp-pvt-nightly",
+    "project_version": "0.9.0.dev201909170200",
+    "project_release": "allennlp_pvt_nightly-0.9.0.dev201909170200.tar.gz",
+    "uploaded_on": "2019-09-17 02:00:37.967",
+    "path": "packages/allennlp-pvt-nightly/allennlp_pvt_nightly-0.9.0.dev201909170200.tar.gz/allennlp_pvt_nightly-0.9.0.dev201909170200/allennlp/tests/service/server_simple_test.py",
+    "archive_path": "allennlp_pvt_nightly-0.9.0.dev201909170200/allennlp/tests/service/server_simple_test.py",
+    "size": 3870,
+    "hash": "]\\x8B\\x17ADC\\xDE\\xA0\\xDA}^^\\xAEX-\\xEC\\xA7\\x1FZ\\xFC",
     "skip_reason": "",
-    "lines": 102,
-    "repository": 215
+    "lines": 112,
+    "repository": 52
   },
   {
-    "project_name": "apalib",
-    "project_version": "0.0.91",
-    "project_release": "apalib-0.0.91.tar.gz",
-    "uploaded_on": "2023-07-17 22:36:23.616",
-    "path": "packages/apalib/apalib-0.0.91.tar.gz/apalib-0.0.91/venv/Lib/site-packages/numpy/ma/tests/test_mrecords.py",
-    "archive_path": "apalib-0.0.91/venv/Lib/site-packages/numpy/ma/tests/test_mrecords.py",
-    "size": 20376,
-    "hash": "Q2ov\\xA94\\x08O\\xDE]\\xCC:g\\x99H\\xD1\\x94\\xB2+\\xDB",
-    "skip_reason": "virtualenv",
-    "lines": 493,
-    "repository": 219
+    "project_name": "ka-lite",
+    "project_version": "0.17.6b4",
+    "project_release": "ka_lite-0.17.6b4-py2-none-any.whl",
+    "uploaded_on": "2019-09-13 21:12:14.479",
+    "path": "packages/ka-lite/ka_lite-0.17.6b4-py2-none-any.whl/kalite/static-libraries/docs/_static/fonts/Inconsolata-Regular.ttf",
+    "archive_path": "kalite/static-libraries/docs/_static/fonts/Inconsolata-Regular.ttf",
+    "size": 96964,
+    "hash": "\\xFC\\x98\\x1C\\xE7\\xADlB\\xD28O\\x0E\\xF7Ks\\x17K\\x93\\x02\\xEEe",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 52
   }
 ]
