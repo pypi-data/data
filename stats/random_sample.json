@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "c2cciutils",
-    "project_version": "1.1.11",
-    "project_release": "c2cciutils-1.1.11-py3-none-any.whl",
-    "uploaded_on": "2022-05-09 09:19:41.667",
-    "path": "packages/c2cciutils/c2cciutils-1.1.11-py3-none-any.whl/c2cciutils/node_modules/prettier/doc.js",
-    "archive_path": "c2cciutils/node_modules/prettier/doc.js",
-    "size": 165289,
-    "hash": "\\x9C\\x1E.\\x86i\\x99ZC\\xDB{v\\xCDj\\x8A\\xAAg\\xE8\\x10\\xFB\\xB8",
+    "project_name": "tf-nightly",
+    "project_version": "2.17.0.dev20240524",
+    "project_release": "tf_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2024-05-24 21:45:16.527",
+    "path": "packages/tf-nightly/tf_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/include/external/local_config_cuda/cuda/cuda/include/cub/agent/agent_reduce.cuh",
+    "archive_path": "tensorflow/include/external/local_config_cuda/cuda/cuda/include/cub/agent/agent_reduce.cuh",
+    "size": 18284,
+    "hash": "J)\\xD7\\x07\\xB3\\x03N.\\x84\\xBD\\x88\\x0Et\\x84sT<\\xFE\\x90\\xEC",
     "skip_reason": "",
-    "lines": 5315,
-    "repository": 150
+    "lines": 475,
+    "repository": 275
   },
   {
-    "project_name": "nautobot",
-    "project_version": "1.2.9",
-    "project_release": "nautobot-1.2.9.tar.gz",
-    "uploaded_on": "2022-03-14 18:39:32.115",
-    "path": "packages/nautobot/nautobot-1.2.9.tar.gz/nautobot-1.2.9/nautobot/project-static/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png",
-    "archive_path": "nautobot-1.2.9/nautobot/project-static/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png",
-    "size": 7006,
-    "hash": "\\xC2\\xDA\\xAE\\x16c\\xD4\\x7F9z\\x01\\xFDAf\\xBC\\xE9\\xB6\\xB9\\xACA\\x83",
+    "project_name": "gamsapi",
+    "project_version": "46.5.0",
+    "project_release": "gamsapi-46.5.0-cp38-cp38-manylinux_2_17_x86_64.whl",
+    "uploaded_on": "2024-05-09 12:26:10.614",
+    "path": "packages/gamsapi/gamsapi-46.5.0-cp38-cp38-manylinux_2_17_x86_64.whl/gams/core/opt/_optcc.cpython-38-x86_64-linux-gnu.so",
+    "archive_path": "gams/core/opt/_optcc.cpython-38-x86_64-linux-gnu.so",
+    "size": 579952,
+    "hash": "D#\\xA3\\xA5\\xE4\\xA5\\xCC\\xD5\\x12\\x8E\\x1B\\xC5\\xB4\\xFBv\\xF2\\xE1\\x04t\\x8E",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 142
+    "repository": 272
   }
 ]
