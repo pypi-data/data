@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "simo",
-    "project_version": "1.7.16",
-    "project_release": "simo-1.7.16.tar.gz",
-    "uploaded_on": "2024-01-22 08:12:15.858",
-    "path": "packages/simo/simo-1.7.16.tar.gz/simo-1.7.16/src/simo/core/static/third_party/fontawesome-pro/svgs/regular/synagogue.svg",
-    "archive_path": "simo-1.7.16/src/simo/core/static/third_party/fontawesome-pro/svgs/regular/synagogue.svg",
-    "size": 1273,
-    "hash": "\\xFE}\\x8A\\x09U\\x1E\\xD2\\xA6\\xE9)\\xD4\\xE7\\xCA\\x83\\x85N\\xA6]T\\x91",
+    "project_name": "spyder-terminal",
+    "project_version": "0.4.0",
+    "project_release": "spyder-terminal-0.4.0.tar.gz",
+    "uploaded_on": "2020-07-21 20:34:56.572",
+    "path": "packages/spyder-terminal/spyder-terminal-0.4.0.tar.gz/spyder-terminal-0.4.0/spyder_terminal/server/static/components/sha.js/test/vectors.js",
+    "archive_path": "spyder-terminal-0.4.0/spyder_terminal/server/static/components/sha.js/test/vectors.js",
+    "size": 1638,
+    "hash": "H\\xA6F\\xEFi\\x1A/=\\xF0\\xEC\\xB4\\x04\\x9C\\xD7\\x16\\xB5\\xB4\\x80\\x912",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 252
+    "lines": 72,
+    "repository": 74
   },
   {
-    "project_name": "tf-nightly-tpu",
-    "project_version": "2.16.0.dev20240124",
-    "project_release": "tf_nightly_tpu-2.16.0.dev20240124-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2024-01-24 19:55:44.1",
-    "path": "packages/tf-nightly-tpu/tf_nightly_tpu-2.16.0.dev20240124-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/include/external/onednn/src/cpu/x64/xbyak/xbyak_mnemonic.h",
-    "archive_path": "tensorflow/include/external/onednn/src/cpu/x64/xbyak/xbyak_mnemonic.h",
-    "size": 255849,
-    "hash": "\\xE4\\xE5wu\\xB9\\x96\\xAF,x\\xF1?\\xD8\\xD6\\xAB\\xA6\\x93\\x8A\\xD08s",
-    "skip_reason": "too-large",
-    "lines": 2380,
-    "repository": 252
+    "project_name": "cognite-seismic-sdk",
+    "project_version": "0.1.52",
+    "project_release": "cognite-seismic-sdk-0.1.52.tar.gz",
+    "uploaded_on": "2020-08-17 06:24:11.451",
+    "path": "packages/cognite-seismic-sdk/cognite-seismic-sdk-0.1.52.tar.gz/cognite-seismic-sdk-0.1.52/.tox/py37/lib/python3.7/site-packages/setuptools/extension.py",
+    "archive_path": "cognite-seismic-sdk-0.1.52/.tox/py37/lib/python3.7/site-packages/setuptools/extension.py",
+    "size": 1729,
+    "hash": ")F\\x88\\x94\\xF8(\\x12\\x8FL6f\\x01g\\xDD\\x1F\\x9Eh\\xE5\\x84\\xBE",
+    "skip_reason": "virtualenv",
+    "lines": 57,
+    "repository": 76
   }
 ]
