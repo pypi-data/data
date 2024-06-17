@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pulumi-aws",
-    "project_version": "6.41.0a1718395916",
-    "project_release": "pulumi_aws-6.41.0a1718395916-py3-none-any.whl",
-    "uploaded_on": "2024-06-14 23:23:51.291",
-    "path": "packages/pulumi-aws/pulumi_aws-6.41.0a1718395916-py3-none-any.whl/pulumi_aws/ec2/get_network_insights_path.py",
-    "archive_path": "pulumi_aws/ec2/get_network_insights_path.py",
-    "size": 9903,
-    "hash": "\\xF1\\xEBg\\xF6@\\xF3\\x7F\\xB0\\xFD$\\xE3+]\\xE6O\\x8E\\xB0\\xCB\\xEC\\xEC",
+    "project_name": "huaweicloudsdkocr",
+    "project_version": "3.1.81",
+    "project_release": "huaweicloudsdkocr-3.1.81-py2.py3-none-any.whl",
+    "uploaded_on": "2024-02-07 08:02:54.065",
+    "path": "packages/huaweicloudsdkocr/huaweicloudsdkocr-3.1.81-py2.py3-none-any.whl/huaweicloudsdkocr/v1/model/recognize_pcr_test_record_response.py",
+    "archive_path": "huaweicloudsdkocr/v1/model/recognize_pcr_test_record_response.py",
+    "size": 3326,
+    "hash": "S\\xF0y\\x15\\xC5+j\\xD4a\\xED\\xF3!\\xAF\\x15\\xC8Qx0\\x91\\xE4",
     "skip_reason": "",
-    "lines": 253,
-    "repository": 279
+    "lines": 112,
+    "repository": 255
   },
   {
-    "project_name": "openmoji-dist",
-    "project_version": "15.0.0.2",
-    "project_release": "openmoji_dist-15.0.0.2-py3-none-any.whl",
-    "uploaded_on": "2024-06-13 19:55:10.163",
-    "path": "packages/openmoji-dist/openmoji_dist-15.0.0.2-py3-none-any.whl/openmoji_dist/openmoji/svg/1F396.svg.gz",
-    "archive_path": "openmoji_dist/openmoji/svg/1F396.svg.gz",
-    "size": 387,
-    "hash": "\\x18x\\x87\\x853\\xE5 \\xB7b\\xC3-\\xC3\\xD9\\x0E9\\xA3\\xB7\\xB4\\x87B",
+    "project_name": "opensesame-core",
+    "project_version": "4.0.17",
+    "project_release": "opensesame_core-4.0.17.tar.gz",
+    "uploaded_on": "2024-01-04 18:43:10.729",
+    "path": "packages/opensesame-core/opensesame_core-4.0.17.tar.gz/opensesame_core-4.0.17/libqtopensesame/resources/theme/default/MokaSesame/16x16/apps/xterm.png",
+    "archive_path": "opensesame_core-4.0.17/libqtopensesame/resources/theme/default/MokaSesame/16x16/apps/xterm.png",
+    "size": 607,
+    "hash": "a\\xAA>\\x8E6\\x17\\xE2D\\xAB\\xB2\\x274\\xFE\\x06\\x9E\\xBC6C\\xE8\\xC4",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 279
+    "repository": 249
   }
 ]
