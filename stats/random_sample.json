@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "huaweicloudsdkocr",
-    "project_version": "3.1.81",
-    "project_release": "huaweicloudsdkocr-3.1.81-py2.py3-none-any.whl",
-    "uploaded_on": "2024-02-07 08:02:54.065",
-    "path": "packages/huaweicloudsdkocr/huaweicloudsdkocr-3.1.81-py2.py3-none-any.whl/huaweicloudsdkocr/v1/model/recognize_pcr_test_record_response.py",
-    "archive_path": "huaweicloudsdkocr/v1/model/recognize_pcr_test_record_response.py",
-    "size": 3326,
-    "hash": "S\\xF0y\\x15\\xC5+j\\xD4a\\xED\\xF3!\\xAF\\x15\\xC8Qx0\\x91\\xE4",
+    "project_name": "tf-nightly-intel",
+    "project_version": "2.11.0.dev20220902",
+    "project_release": "tf_nightly_intel-2.11.0.dev20220902-cp38-cp38-win_amd64.whl",
+    "uploaded_on": "2022-09-02 15:18:55.389",
+    "path": "packages/tf-nightly-intel/tf_nightly_intel-2.11.0.dev20220902-cp38-cp38-win_amd64.whl/tensorflow/include/tensorflow/compiler/xla/service/memory_space_assignment_utils.h",
+    "archive_path": "tensorflow/include/tensorflow/compiler/xla/service/memory_space_assignment_utils.h",
+    "size": 1525,
+    "hash": "T=-\\xBD=\\xD7\\xCA\\xCF \\x1D\\xD1\\xEA\\x14:\\x9C\\xFC\\xC62=\\xEB",
     "skip_reason": "",
-    "lines": 112,
-    "repository": 255
+    "lines": 38,
+    "repository": 165
   },
   {
-    "project_name": "opensesame-core",
-    "project_version": "4.0.17",
-    "project_release": "opensesame_core-4.0.17.tar.gz",
-    "uploaded_on": "2024-01-04 18:43:10.729",
-    "path": "packages/opensesame-core/opensesame_core-4.0.17.tar.gz/opensesame_core-4.0.17/libqtopensesame/resources/theme/default/MokaSesame/16x16/apps/xterm.png",
-    "archive_path": "opensesame_core-4.0.17/libqtopensesame/resources/theme/default/MokaSesame/16x16/apps/xterm.png",
-    "size": 607,
-    "hash": "a\\xAA>\\x8E6\\x17\\xE2D\\xAB\\xB2\\x274\\xFE\\x06\\x9E\\xBC6C\\xE8\\xC4",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 249
+    "project_name": "tf-nightly-cpu",
+    "project_version": "2.10.0.dev20220629",
+    "project_release": "tf_nightly_cpu-2.10.0.dev20220629-cp38-cp38-macosx_10_14_x86_64.whl",
+    "uploaded_on": "2022-06-29 09:55:29.092",
+    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.10.0.dev20220629-cp38-cp38-macosx_10_14_x86_64.whl/tensorflow/include/external/llvm-project/mlir/include/mlir/Dialect/GPU/IR/GPUOps.cpp.inc",
+    "archive_path": "tensorflow/include/external/llvm-project/mlir/include/mlir/Dialect/GPU/IR/GPUOps.cpp.inc",
+    "size": 321912,
+    "hash": "n\\xF07K!\\xD9\\xF7w\\xD6\\xFA\\x9B\\xB2\\xF8\\xBB\\xB2\\x0F\\xFA\\x19\\xC5\\xD6",
+    "skip_reason": "too-large",
+    "lines": 7960,
+    "repository": 157
   }
 ]
