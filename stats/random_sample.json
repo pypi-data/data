@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-intel",
-    "project_version": "2.12.0.dev20221106",
-    "project_release": "tf_nightly_intel-2.12.0.dev20221106-cp310-cp310-win_amd64.whl",
-    "uploaded_on": "2022-11-06 15:19:22.961",
-    "path": "packages/tf-nightly-intel/tf_nightly_intel-2.12.0.dev20221106-cp310-cp310-win_amd64.whl/tensorflow/include/external/pybind11/_virtual_includes/pybind11/pybind11/stl.h",
-    "archive_path": "tensorflow/include/external/pybind11/_virtual_includes/pybind11/pybind11/stl.h",
-    "size": 14556,
-    "hash": "\\xAB0\\xEC\\xAC\\x0B/J\\x0Bfy\\x87^\\x13\\xFC\\x0C\\x1F\\x87Hh\\x1C",
+    "project_name": "text-fabric",
+    "project_version": "9.1.8",
+    "project_release": "text-fabric-9.1.8.tar.gz",
+    "uploaded_on": "2021-12-10 08:57:50.875",
+    "path": "packages/text-fabric/text-fabric-9.1.8.tar.gz/text-fabric-9.1.8/tf/docs/about/apps.md",
+    "archive_path": "text-fabric-9.1.8/tf/docs/about/apps.md",
+    "size": 5223,
+    "hash": ">\\xDB\\xC8\\x03\\x9D/QxAB\\xFF\\xA6\\x12I\\xC9\\xE7\\x1Ah\\x80\\xE4",
     "skip_reason": "",
-    "lines": 425,
-    "repository": 175
+    "lines": 140,
+    "repository": 130
   },
   {
-    "project_name": "ibllib",
-    "project_version": "2.17.1",
-    "project_release": "ibllib-2.17.1.tar.gz",
-    "uploaded_on": "2022-10-04 20:17:03.628",
-    "path": "packages/ibllib/ibllib-2.17.1.tar.gz/ibllib-2.17.1/ibllib/io/extractors/ephys_sessions/session_0_stim_phase.npy",
-    "archive_path": "ibllib-2.17.1/ibllib/io/extractors/ephys_sessions/session_0_stim_phase.npy",
-    "size": 16448,
-    "hash": "Z\\xFC\\xD8\\x27G\\xAF\\x90\\xBE\\x85\\xE4\\xA1n\\xDD\\xDB\\xBF7\\xA0\\x9AL%",
+    "project_name": "pyemr",
+    "project_version": "0.3.6",
+    "project_release": "pyemr-0.3.6.tar.gz",
+    "uploaded_on": "2022-01-25 01:10:42.632",
+    "path": "packages/pyemr/pyemr-0.3.6.tar.gz/pyemr-0.3.6/.git/objects/30/7e2589dc98ec1519c4b9dfd9583f58de03c2bd",
+    "archive_path": "pyemr-0.3.6/.git/objects/30/7e2589dc98ec1519c4b9dfd9583f58de03c2bd",
+    "size": 1921,
+    "hash": "\\xE1\\xEF%\\x0A\\xC6\\x80Lv\\x9B>%\\x0Ed\\xEC\\x01\\x0E`\\xB7\\x04\\xB9",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 170
+    "repository": 136
   }
 ]
