@@ -1174,12 +1174,12 @@
     "index": 280,
     "stats": {
       "earliest_package": "2024-06-19T05:23:20.175579Z",
-      "latest_package": "2024-06-20T22:27:43.279566Z",
-      "total_packages": 19685,
-      "done_packages": 16145
+      "latest_package": "2024-06-21T22:22:31.113169Z",
+      "total_packages": 30305,
+      "done_packages": 27167
     },
-    "percent_done": 82,
-    "size": 788319232,
+    "percent_done": 89,
+    "size": 1296141312,
     "url": "https://github.com/pypi-data/pypi-mirror-280",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-280/tree/code/packages",
     "projects": {}
