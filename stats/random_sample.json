@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "msgraph-beta-sdk",
-    "project_version": "1.0.0",
-    "project_release": "msgraph_beta_sdk-1.0.0-py3-none-any.whl",
-    "uploaded_on": "2023-10-31 22:38:25.316",
-    "path": "packages/msgraph-beta-sdk/msgraph_beta_sdk-1.0.0-py3-none-any.whl/msgraph_beta/generated/privileged_operation_events/privileged_operation_events_request_builder.py",
-    "archive_path": "msgraph_beta/generated/privileged_operation_events/privileged_operation_events_request_builder.py",
-    "size": 10888,
-    "hash": "g\\x1B\\xA0\\xFBL\\xA1\\x9E\\xD8#\\x8Cd\\x27\\xBA\\xAC\\xE0\\x19\\x0D\\xEA\\xAE\\xB9",
+    "project_name": "xacc",
+    "project_version": "0.1.7",
+    "project_release": "xacc-0.1.7-cp34-cp34m-macosx_10_11_x86_64.whl",
+    "uploaded_on": "2018-10-03 18:18:58.93",
+    "path": "packages/xacc/xacc-0.1.7-cp34-cp34m-macosx_10_11_x86_64.whl/xacc/include/boost/spirit/home/x3/directive/expect.hpp",
+    "archive_path": "xacc/include/boost/spirit/home/x3/directive/expect.hpp",
+    "size": 3376,
+    "hash": "\\xFED\\x91\\xA2.OD\\x97p\\xB5<L_9\\x83\\x16\\x8C\\x16D\\xB0",
     "skip_reason": "",
-    "lines": 226,
-    "repository": 238
+    "lines": 104,
+    "repository": 36
   },
   {
-    "project_name": "benchling-api-client",
-    "project_version": "2.0.236",
-    "project_release": "benchling_api_client-2.0.236-py3-none-any.whl",
-    "uploaded_on": "2023-11-30 19:15:13.519",
-    "path": "packages/benchling-api-client/benchling_api_client-2.0.236-py3-none-any.whl/benchling_api_client/api/nucleotide_alignments/__init__.py",
-    "archive_path": "benchling_api_client/api/nucleotide_alignments/__init__.py",
+    "project_name": "tensorflow-io-nightly",
+    "project_version": "0.4.0.dev600",
+    "project_release": "tensorflow_io_nightly-0.4.0.dev600-cp34-cp34m-manylinux1_x86_64.whl",
+    "uploaded_on": "2019-02-28 18:48:54.703",
+    "path": "packages/tensorflow-io-nightly/tensorflow_io_nightly-0.4.0.dev600-cp34-cp34m-manylinux1_x86_64.whl/tensorflow_io_nightly-0.4.0.dev600.data/purelib/tensorflow_io/libsvm/python/ops/__init__.py",
+    "archive_path": "tensorflow_io_nightly-0.4.0.dev600.data/purelib/tensorflow_io/libsvm/python/ops/__init__.py",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 243
+    "repository": 42
   }
 ]
