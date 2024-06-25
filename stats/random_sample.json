@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-macos",
-    "project_version": "2.14.0.dev20230602",
-    "project_release": "tf_nightly_macos-2.14.0.dev20230602-cp39-cp39-macosx_12_0_arm64.whl",
-    "uploaded_on": "2023-06-03 04:38:50.672",
-    "path": "packages/tf-nightly-macos/tf_nightly_macos-2.14.0.dev20230602-cp39-cp39-macosx_12_0_arm64.whl/tensorflow/include/tensorflow/compiler/xla/hlo/ir/hlo_module.h",
-    "archive_path": "tensorflow/include/tensorflow/compiler/xla/hlo/ir/hlo_module.h",
-    "size": 27790,
-    "hash": "\\xCF4,\\xA1\\xE0Q\\x0DG\\xA0&\\xA7\\xD0R\\x11Wp\\xB8\\x9Dj\\xF7",
+    "project_name": "mindspore",
+    "project_version": "1.8.1",
+    "project_release": "mindspore-1.8.1-cp37-cp37m-manylinux1_x86_64.whl",
+    "uploaded_on": "2022-08-17 03:03:20.761",
+    "path": "packages/mindspore/mindspore-1.8.1-cp37-cp37m-manylinux1_x86_64.whl/mindspore/_akg/akg/tvm/relay/op/vision/_yolo.py",
+    "archive_path": "mindspore/_akg/akg/tvm/relay/op/vision/_yolo.py",
+    "size": 1151,
+    "hash": "2\\xFCb\\xD5\\xC2:,|x\\xBB!G\\x09\\x9C\\x8E\\x9E/S\\xDD\\xC1",
     "skip_reason": "",
-    "lines": 685,
-    "repository": 211
+    "lines": 25,
+    "repository": 163
   },
   {
-    "project_name": "util-hj3415",
-    "project_version": "1.1.0",
-    "project_release": "util_hj3415-1.1.0.tar.gz",
-    "uploaded_on": "2023-08-08 23:54:39.224",
-    "path": "packages/util-hj3415/util_hj3415-1.1.0.tar.gz/util_hj3415-1.1.0/venv/Lib/site-packages/pygments/formatters/pangomarkup.py",
-    "archive_path": "util_hj3415-1.1.0/venv/Lib/site-packages/pygments/formatters/pangomarkup.py",
-    "size": 2200,
-    "hash": "\\x91\\xC1\\xB0\\x16\\x1E\\x1E\\x85\\x0A\\x92=\\x1F\\x91{\\xC3IQy\\xC9\\xE2\\x9E",
+    "project_name": "creativiousUtilities",
+    "project_version": "2.0.0.dev3",
+    "project_release": "creativiousutilities-2.0.0.dev3.tar.gz",
+    "uploaded_on": "2022-07-07 01:06:11.727",
+    "path": "packages/creativiousUtilities/creativiousutilities-2.0.0.dev3.tar.gz/creativiousutilities-2.0.0.dev3/venv/Lib/site-packages/pip/_vendor/chardet/cli/chardetect.py",
+    "archive_path": "creativiousutilities-2.0.0.dev3/venv/Lib/site-packages/pip/_vendor/chardet/cli/chardetect.py",
+    "size": 2747,
+    "hash": "mo\\x93\\xAA\\xBDD\\x90,\\xAF\\x08i\\x98\\x22j\\xA4\\x8F\\xD3\\xBB\\xE2!",
     "skip_reason": "virtualenv",
-    "lines": 83,
-    "repository": 223
+    "lines": 84,
+    "repository": 158
   }
 ]
