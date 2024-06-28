@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "breezy",
-    "project_version": "3.3.1",
-    "project_release": "breezy-3.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2022-11-22 20:12:58.508",
-    "path": "packages/breezy/breezy-3.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/breezy/bzr/check.py",
-    "archive_path": "breezy/bzr/check.py",
-    "size": 15522,
-    "hash": "R\\x07\\xCC\\xEF\\xFB\\x12\\xA0\\xCF\\xB6\\x01\\x909\\xAA-#\\xEA\\xEBiU\\xAE",
+    "project_name": "sqlglotrs",
+    "project_version": "0.2.7",
+    "project_release": "sqlglotrs-0.2.7.tar.gz",
+    "uploaded_on": "2024-06-21 17:24:55.102",
+    "path": "packages/sqlglotrs/sqlglotrs-0.2.7.tar.gz/sqlglotrs-0.2.7/src/tokenizer.rs",
+    "archive_path": "sqlglotrs-0.2.7/src/tokenizer.rs",
+    "size": 24751,
+    "hash": "\\x84\\xED%\\xD9\\xC0\\xB1\\x17T_sg\\xF5\\xEFD\\xD7\\x9A\\xF1\\x88?\\xC7",
     "skip_reason": "",
-    "lines": 328,
-    "repository": 177
+    "lines": 723,
+    "repository": 280
   },
   {
-    "project_name": "OpenGeode-core",
-    "project_version": "11.2.7",
-    "project_release": "OpenGeode_core-11.2.7-cp38-cp38-manylinux2014_x86_64.whl",
-    "uploaded_on": "2022-09-14 13:39:51.962",
-    "path": "packages/OpenGeode-core/OpenGeode_core-11.2.7-cp38-cp38-manylinux2014_x86_64.whl/opengeode/libabsl_random_seed_gen_exception.so",
-    "archive_path": "opengeode/libabsl_random_seed_gen_exception.so",
-    "size": 17008,
-    "hash": "gJ&\\xCEdqS\\xBF\\xC9\\xECa\\x1AT\\x8E\\xC4\\x160-\\xB9\\xAD",
+    "project_name": "otcdocstheme",
+    "project_version": "1.2.6",
+    "project_release": "otcdocstheme-1.2.6-py3-none-any.whl",
+    "uploaded_on": "2024-06-03 13:33:31.951",
+    "path": "packages/otcdocstheme/otcdocstheme-1.2.6-py3-none-any.whl/otcdocstheme/theme/otcdocs/static/scale-components/fonts/TeleNeoWeb/TeleNeoWeb-Medium.woff2",
+    "archive_path": "otcdocstheme/theme/otcdocs/static/scale-components/fonts/TeleNeoWeb/TeleNeoWeb-Medium.woff2",
+    "size": 53228,
+    "hash": "~\\x11Ql\\x03\\x19#\\xF9\\x1C<r\\x10\\xCA{d\\xC1j\\x0F\\xF7\\x16",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 167
+    "repository": 277
   }
 ]
