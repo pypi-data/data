@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "sqlglotrs",
-    "project_version": "0.2.7",
-    "project_release": "sqlglotrs-0.2.7.tar.gz",
-    "uploaded_on": "2024-06-21 17:24:55.102",
-    "path": "packages/sqlglotrs/sqlglotrs-0.2.7.tar.gz/sqlglotrs-0.2.7/src/tokenizer.rs",
-    "archive_path": "sqlglotrs-0.2.7/src/tokenizer.rs",
-    "size": 24751,
-    "hash": "\\x84\\xED%\\xD9\\xC0\\xB1\\x17T_sg\\xF5\\xEFD\\xD7\\x9A\\xF1\\x88?\\xC7",
+    "project_name": "yarp-middleware",
+    "project_version": "3.5.1.dev183",
+    "project_release": "yarp_middleware-3.5.1.dev183.tar.gz",
+    "uploaded_on": "2021-09-21 09:05:42.311",
+    "path": "packages/yarp-middleware/yarp_middleware-3.5.1.dev183.tar.gz/yarp_middleware-3.5.1.dev183/src/libYARP_os/src/yarp/os/impl/TextCarrier.cpp",
+    "archive_path": "yarp_middleware-3.5.1.dev183/src/libYARP_os/src/yarp/os/impl/TextCarrier.cpp",
+    "size": 3854,
+    "hash": "\\xF2\\x0D\\x849\\x1D\\xA9Y\\xCC0\\xCFE\\xC9\\x1B\\xD9Jn \\x87\\xD6\\xAD",
     "skip_reason": "",
-    "lines": 723,
-    "repository": 280
+    "lines": 161,
+    "repository": 120
   },
   {
-    "project_name": "otcdocstheme",
-    "project_version": "1.2.6",
-    "project_release": "otcdocstheme-1.2.6-py3-none-any.whl",
-    "uploaded_on": "2024-06-03 13:33:31.951",
-    "path": "packages/otcdocstheme/otcdocstheme-1.2.6-py3-none-any.whl/otcdocstheme/theme/otcdocs/static/scale-components/fonts/TeleNeoWeb/TeleNeoWeb-Medium.woff2",
-    "archive_path": "otcdocstheme/theme/otcdocs/static/scale-components/fonts/TeleNeoWeb/TeleNeoWeb-Medium.woff2",
-    "size": 53228,
-    "hash": "~\\x11Ql\\x03\\x19#\\xF9\\x1C<r\\x10\\xCA{d\\xC1j\\x0F\\xF7\\x16",
+    "project_name": "django-epic-sample",
+    "project_version": "0.5.0",
+    "project_release": "django-epic-sample-0.5.0.tar.gz",
+    "uploaded_on": "2021-06-11 20:37:39.574",
+    "path": "packages/django-epic-sample/django-epic-sample-0.5.0.tar.gz/django-epic-sample-0.5.0/epic_sample/epic/datasheets/Yageo-RC0402.pdf",
+    "archive_path": "django-epic-sample-0.5.0/epic_sample/epic/datasheets/Yageo-RC0402.pdf",
+    "size": 254529,
+    "hash": "(\\xB3\\x1E\\xCB\\xC7\\x84\\x05\\xC0\\xA0\\xC6\\xBE1\\x131\\x93\\xF0\\xBBaxx",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 277
+    "repository": 109
   }
 ]
