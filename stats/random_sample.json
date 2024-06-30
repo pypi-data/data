@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "yarp-middleware",
-    "project_version": "3.5.1.dev183",
-    "project_release": "yarp_middleware-3.5.1.dev183.tar.gz",
-    "uploaded_on": "2021-09-21 09:05:42.311",
-    "path": "packages/yarp-middleware/yarp_middleware-3.5.1.dev183.tar.gz/yarp_middleware-3.5.1.dev183/src/libYARP_os/src/yarp/os/impl/TextCarrier.cpp",
-    "archive_path": "yarp_middleware-3.5.1.dev183/src/libYARP_os/src/yarp/os/impl/TextCarrier.cpp",
-    "size": 3854,
-    "hash": "\\xF2\\x0D\\x849\\x1D\\xA9Y\\xCC0\\xCFE\\xC9\\x1B\\xD9Jn \\x87\\xD6\\xAD",
+    "project_name": "tensorflow",
+    "project_version": "2.9.3",
+    "project_release": "tensorflow-2.9.3-cp39-cp39-macosx_10_14_x86_64.whl",
+    "uploaded_on": "2022-11-16 19:25:06.77",
+    "path": "packages/tensorflow/tensorflow-2.9.3-cp39-cp39-macosx_10_14_x86_64.whl/tensorflow/include/absl/random/bernoulli_distribution.h",
+    "archive_path": "tensorflow/include/absl/random/bernoulli_distribution.h",
+    "size": 7582,
+    "hash": "%\\xBD\\x0D\\x5C\\xA4 (2\\xED\\xB3o\\x9DU,\\x94\\x8E\\xB1\\x0A\\xB96",
     "skip_reason": "",
-    "lines": 161,
-    "repository": 120
+    "lines": 200,
+    "repository": 177
   },
   {
-    "project_name": "django-epic-sample",
-    "project_version": "0.5.0",
-    "project_release": "django-epic-sample-0.5.0.tar.gz",
-    "uploaded_on": "2021-06-11 20:37:39.574",
-    "path": "packages/django-epic-sample/django-epic-sample-0.5.0.tar.gz/django-epic-sample-0.5.0/epic_sample/epic/datasheets/Yageo-RC0402.pdf",
-    "archive_path": "django-epic-sample-0.5.0/epic_sample/epic/datasheets/Yageo-RC0402.pdf",
-    "size": 254529,
-    "hash": "(\\xB3\\x1E\\xCB\\xC7\\x84\\x05\\xC0\\xA0\\xC6\\xBE1\\x131\\x93\\xF0\\xBBaxx",
+    "project_name": "libsumo",
+    "project_version": "1.15.0",
+    "project_release": "libsumo-1.15.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2022-11-07 22:19:44.126",
+    "path": "packages/libsumo/libsumo-1.15.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/libsumo.libs/libXft-c8adce8d.so.2.3.2",
+    "archive_path": "libsumo.libs/libXft-c8adce8d.so.2.3.2",
+    "size": 105968,
+    "hash": "\\x12\\x19\\x9A\\xC2\\x27M\\xD3\\xB3|~HC\\xAD\\xD6\\xB1\\x1B\\xD4\\x87\\xD3a",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 109
+    "repository": 175
   }
 ]
