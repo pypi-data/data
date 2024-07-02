@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "ka-lite-static",
-    "project_version": "0.17.6b2",
-    "project_release": "ka_lite_static-0.17.6b2-py2-none-any.whl",
-    "uploaded_on": "2019-09-12 17:50:13.051",
-    "path": "packages/ka-lite-static/ka_lite_static-0.17.6b2-py2-none-any.whl/kalite/packages/bundled/fle_utils/chronograph/templates/admin/chronograph/log/change_form.html",
-    "archive_path": "kalite/packages/bundled/fle_utils/chronograph/templates/admin/chronograph/log/change_form.html",
-    "size": 1578,
-    "hash": "\\xB6\\xCEMW{\\x89\\x0D\\x27\\xCB\\xDE\\x95\\x1D\\x0F\\xBB\\x14\\xDED\\xFB8\\xF8",
+    "project_name": "ont-pyguppy-client-lib",
+    "project_version": "7.2.15",
+    "project_release": "ont_pyguppy_client_lib-7.2.15-cp310-cp310-win_amd64.whl",
+    "uploaded_on": "2024-03-27 10:14:33.981",
+    "path": "packages/ont-pyguppy-client-lib/ont_pyguppy_client_lib-7.2.15-cp310-cp310-win_amd64.whl/ont_pyguppy_client_lib-7.2.15.dist-info/top_level.txt",
+    "archive_path": "ont_pyguppy_client_lib-7.2.15.dist-info/top_level.txt",
+    "size": 19,
+    "hash": "G\\x0A_Fu\\xEBuL\\xB0\\xC5\\xFF\\x90\\xA0Pn \\xBE>\\xF4b",
     "skip_reason": "",
-    "lines": 39,
-    "repository": 52
+    "lines": 1,
+    "repository": 264
   },
   {
-    "project_name": "zuul",
-    "project_version": "3.8.2.dev90",
-    "project_release": "zuul-3.8.2.dev90-py3-none-any.whl",
-    "uploaded_on": "2019-06-04 19:12:21.961",
-    "path": "packages/zuul/zuul-3.8.2.dev90-py3-none-any.whl/zuul/ansible/2.5/action/template.pyi",
-    "archive_path": "zuul/ansible/2.5/action/template.pyi",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "streamlit-nightly",
+    "project_version": "1.32.3.dev20240320",
+    "project_release": "streamlit-nightly-1.32.3.dev20240320.tar.gz",
+    "uploaded_on": "2024-03-21 07:00:28.955",
+    "path": "packages/streamlit-nightly/streamlit-nightly-1.32.3.dev20240320.tar.gz/streamlit-nightly-1.32.3.dev20240320/streamlit/static/static/media/KaTeX_Script-Regular.c81d1b2a4b75d3eded60.woff2",
+    "archive_path": "streamlit-nightly-1.32.3.dev20240320/streamlit/static/static/media/KaTeX_Script-Regular.c81d1b2a4b75d3eded60.woff2",
+    "size": 9644,
+    "hash": "\\xB3\\x04\\x8F\\xC1\\x15h\\x1E\\xE6\\xC1\\xBC\\x86\\xB0\\xAA\\x15\\x8C\\xFB\\xBFY\\xDA\\xA3",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 47
+    "repository": 263
   }
 ]
