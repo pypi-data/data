@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "lively-tk",
-    "project_version": "1.0.0rc2",
-    "project_release": "lively_tk-1.0.0rc2.tar.gz",
-    "uploaded_on": "2023-02-13 20:02:06.623",
-    "path": "packages/lively-tk/lively_tk-1.0.0rc2.tar.gz/lively_tk-1.0.0rc2/doc_src/src/theme/ReactLiveScope/Meshes/Nao/RFinger21.glb",
-    "archive_path": "lively_tk-1.0.0rc2/doc_src/src/theme/ReactLiveScope/Meshes/Nao/RFinger21.glb",
-    "size": 36312,
-    "hash": "\\xE3^\\x90\\x1B\\xB2!\\x9B\\xC8\\xA5\\x7F\\x01j\\xD7\\x99B\\x11\\xAE\\xC9\\x85\\xA7",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 191
+    "project_name": "PureCloudPlatformClientV2",
+    "project_version": "174.0.0",
+    "project_release": "PureCloudPlatformClientV2-174.0.0.tar.gz",
+    "uploaded_on": "2023-06-22 06:28:15.994",
+    "path": "packages/PureCloudPlatformClientV2/PureCloudPlatformClientV2-174.0.0.tar.gz/PureCloudPlatformClientV2-174.0.0/PureCloudPlatformClientV2/models/phone_number.py",
+    "archive_path": "PureCloudPlatformClientV2-174.0.0/PureCloudPlatformClientV2/models/phone_number.py",
+    "size": 6674,
+    "hash": "]Z(\\x00&J\\x02\\xC6\\x0D\\x9C}\\x84\\x88\\x03\\xD1w\\xC8\\x91>\\x27",
+    "skip_reason": "",
+    "lines": 274,
+    "repository": 215
   },
   {
-    "project_name": "rqfactor",
-    "project_version": "1.3.11",
-    "project_release": "rqfactor-1.3.11-cp39-cp39-macosx_10_9_x86_64.whl",
-    "uploaded_on": "2023-01-09 06:16:09.592",
-    "path": "packages/rqfactor/rqfactor-1.3.11-cp39-cp39-macosx_10_9_x86_64.whl/rqfactor/analysis/winsorize.cpython-39-darwin.so",
-    "archive_path": "rqfactor/analysis/winsorize.cpython-39-darwin.so",
-    "size": 81352,
-    "hash": "#\\x1C\\x07\\xCFY\\xC4\\xB8[1\\xFD\\xE5&\\x9D\\xD9W\\xAC\\x8A\\xE4\\xB5|",
+    "project_name": "edc-reference",
+    "project_version": "0.3.22",
+    "project_release": "edc_reference-0.3.22-py3-none-any.whl",
+    "uploaded_on": "2023-08-04 04:14:15.46",
+    "path": "packages/edc-reference/edc_reference-0.3.22-py3-none-any.whl/edc_reference/tests/etc/user-salt-local.key",
+    "archive_path": "edc_reference/tests/etc/user-salt-local.key",
+    "size": 256,
+    "hash": "\\x1Bgq\\xD6\\xA0\\xA8\\xB1\\xB2\\x1E\\xBA\\x0D\\x02\\xEF\\xDAR\\xEFgP\\xE5E",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 184
+    "repository": 223
   }
 ]
