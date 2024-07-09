@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "ztfy.myams",
-    "project_version": "0.1.30",
-    "project_release": "ztfy.myams-0.1.30.tar.gz",
-    "uploaded_on": "2018-06-04 10:29:41.272",
-    "path": "packages/ztfy.myams/ztfy.myams-0.1.30.tar.gz/ztfy.myams-0.1.30/src/ztfy/myams/resources/less/typo.less",
-    "archive_path": "ztfy.myams-0.1.30/src/ztfy/myams/resources/less/typo.less",
-    "size": 12015,
-    "hash": "\\x98`#\\xAA\\x9Eg\\x8Eu\\xFBB\\x8B(g\\xD9_)O\\x16\\xCC\\xC4",
+    "project_name": "ampel-core",
+    "project_version": "0.8.8a1",
+    "project_release": "ampel_core-0.8.8a1-py3-none-any.whl",
+    "uploaded_on": "2023-09-25 08:27:55.441",
+    "path": "packages/ampel-core/ampel_core-0.8.8a1-py3-none-any.whl/ampel/core/DefaultProcessController.py",
+    "archive_path": "ampel/core/DefaultProcessController.py",
+    "size": 10174,
+    "hash": "\\x82\\x9D!\\x9A\\x97\\x00Pd\\xD0\\x0B\\xE6\\xFB%\\xAF=\\x97F\\xC3\\x9A\\x03",
     "skip_reason": "",
-    "lines": 793,
-    "repository": 32
+    "lines": 317,
+    "repository": 232
   },
   {
-    "project_name": "km3pipe",
-    "project_version": "7.11",
-    "project_release": "km3pipe-7.11.tar.gz",
-    "uploaded_on": "2017-11-12 13:04:07.683",
-    "path": "packages/km3pipe/km3pipe-7.11.tar.gz/km3pipe-7.11/docs/auto_examples/images/thumb/sphx_glr_astro_orca_thumb.png",
-    "archive_path": "km3pipe-7.11/docs/auto_examples/images/thumb/sphx_glr_astro_orca_thumb.png",
-    "size": 10853,
-    "hash": "\\x92M\\xF1\\x92\\xB9\\x27&\\x15\\x8B\\xDA/\\xE2\\xA5\\xA8:n@\\x95\\x0B\\x91",
+    "project_name": "pretix",
+    "project_version": "2023.7.1",
+    "project_release": "pretix-2023.7.1-py3-none-any.whl",
+    "uploaded_on": "2023-09-11 08:13:05.643",
+    "path": "packages/pretix/pretix-2023.7.1-py3-none-any.whl/pretix/static.dist/fonts/OpenSans-BoldItalic.78b08a68d05d.ttf",
+    "archive_path": "pretix/static.dist/fonts/OpenSans-BoldItalic.78b08a68d05d.ttf",
+    "size": 213292,
+    "hash": "\\x9B\\xC8\\x00\\x95\\x8AB\\x1D\\x93\\x7F\\xC3\\x92\\xE0\\x0B\\xEA\\xEFN\\xEAv\\xDCq",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 26
+    "repository": 230
   }
 ]
