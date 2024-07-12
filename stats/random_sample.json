@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pip-audit",
+    "project_name": "nbkit",
     "project_version": "0.0.5",
-    "project_release": "pip-audit-0.0.5.tar.gz",
-    "uploaded_on": "2021-11-09 22:43:16.881",
-    "path": "packages/pip-audit/pip-audit-0.0.5.tar.gz/pip-audit-0.0.5/PKG-INFO",
-    "archive_path": "pip-audit-0.0.5/PKG-INFO",
-    "size": 6789,
-    "hash": "\\x9Eu`\\xA4\\xEE\\xCB\\x27H\\xEF\\x82k\\xDC\\x9DT\\xCD\\x0AS\\xFE8\\xE6",
+    "project_release": "nbkit-0.0.5-py3-none-any.whl",
+    "uploaded_on": "2023-10-08 13:09:52.967",
+    "path": "packages/nbkit/nbkit-0.0.5-py3-none-any.whl/nbkit-0.0.5.dist-info/LICENSE",
+    "archive_path": "nbkit-0.0.5.dist-info/LICENSE",
+    "size": 11337,
+    "hash": ";\\x10n\\x87\\xC0a\\x01\\x02\\xB4-\\x04+\\xE9\\xC7\\x9B\\xC9g\\xC8E\\x03",
     "skip_reason": "",
-    "lines": 185,
-    "repository": 126
+    "lines": 201,
+    "repository": 234
   },
   {
-    "project_name": "DI-engine",
-    "project_version": "0.2.1",
-    "project_release": "DI-engine-0.2.1.tar.gz",
-    "uploaded_on": "2021-11-22 08:29:36.873",
-    "path": "packages/DI-engine/DI-engine-0.2.1.tar.gz/DI-engine-0.2.1/dizoo/smac/envs/maps/SMAC_Maps/so_many_baneling.SC2Map",
-    "archive_path": "DI-engine-0.2.1/dizoo/smac/envs/maps/SMAC_Maps/so_many_baneling.SC2Map",
-    "size": 18133,
-    "hash": "j\\x18N5^\\xB0\\xF7$\\xA58w\\xC1,\\xA0U\\xDC\\x22\\x18-g",
-    "skip_reason": "binary",
+    "project_name": "dsps",
+    "project_version": "0.3.4",
+    "project_release": "dsps-0.3.4.tar.gz",
+    "uploaded_on": "2023-10-03 23:49:45.919",
+    "path": "packages/dsps/dsps-0.3.4.tar.gz/dsps-0.3.4/dsps/experimental/tests/__init__.py",
+    "archive_path": "dsps-0.3.4/dsps/experimental/tests/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 128
+    "repository": 233
   }
 ]
