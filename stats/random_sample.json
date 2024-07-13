@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "nbkit",
-    "project_version": "0.0.5",
-    "project_release": "nbkit-0.0.5-py3-none-any.whl",
-    "uploaded_on": "2023-10-08 13:09:52.967",
-    "path": "packages/nbkit/nbkit-0.0.5-py3-none-any.whl/nbkit-0.0.5.dist-info/LICENSE",
-    "archive_path": "nbkit-0.0.5.dist-info/LICENSE",
-    "size": 11337,
-    "hash": ";\\x10n\\x87\\xC0a\\x01\\x02\\xB4-\\x04+\\xE9\\xC7\\x9B\\xC9g\\xC8E\\x03",
+    "project_name": "tf-nightly-cpu",
+    "project_version": "2.10.0.dev20220529",
+    "project_release": "tf_nightly_cpu-2.10.0.dev20220529-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2022-05-29 09:41:26.917",
+    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.10.0.dev20220529-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/python/keras/distribute/distributed_training_utils.py",
+    "archive_path": "tensorflow/python/keras/distribute/distributed_training_utils.py",
+    "size": 2490,
+    "hash": "5c\\x0CL\\xADB\\x5C\\xD8\\xA5\\xAA\\x08\\xC7Q\\xCE!\\xEF\\x15\\x80VC",
     "skip_reason": "",
-    "lines": 201,
-    "repository": 234
+    "lines": 65,
+    "repository": 152
   },
   {
-    "project_name": "dsps",
-    "project_version": "0.3.4",
-    "project_release": "dsps-0.3.4.tar.gz",
-    "uploaded_on": "2023-10-03 23:49:45.919",
-    "path": "packages/dsps/dsps-0.3.4.tar.gz/dsps-0.3.4/dsps/experimental/tests/__init__.py",
-    "archive_path": "dsps-0.3.4/dsps/experimental/tests/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "edc-auth",
+    "project_version": "0.3.38",
+    "project_release": "edc_auth-0.3.38-py3-none-any.whl",
+    "uploaded_on": "2022-05-25 18:38:10.795",
+    "path": "packages/edc-auth/edc_auth-0.3.38-py3-none-any.whl/edc_auth/management/commands/__pycache__/import_users.cpython-37.pyc",
+    "archive_path": "edc_auth/management/commands/__pycache__/import_users.cpython-37.pyc",
+    "size": 1597,
+    "hash": "\\x11\\xDE\\xCBj*+b\\xC5\\xF93\\xC2\\x17\\xF8\\xA9,\\xB4\\xF2\\xAF\\xA2\\xF7",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 233
+    "repository": 152
   }
 ]
