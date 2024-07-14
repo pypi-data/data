@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly-cpu",
-    "project_version": "2.10.0.dev20220529",
-    "project_release": "tf_nightly_cpu-2.10.0.dev20220529-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2022-05-29 09:41:26.917",
-    "path": "packages/tf-nightly-cpu/tf_nightly_cpu-2.10.0.dev20220529-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/python/keras/distribute/distributed_training_utils.py",
-    "archive_path": "tensorflow/python/keras/distribute/distributed_training_utils.py",
-    "size": 2490,
-    "hash": "5c\\x0CL\\xADB\\x5C\\xD8\\xA5\\xAA\\x08\\xC7Q\\xCE!\\xEF\\x15\\x80VC",
+    "project_name": "awscli",
+    "project_version": "1.22.33",
+    "project_release": "awscli-1.22.33-py3-none-any.whl",
+    "uploaded_on": "2022-01-11 20:10:52.002",
+    "path": "packages/awscli/awscli-1.22.33-py3-none-any.whl/awscli/examples/iot/delete-security-profile.rst",
+    "archive_path": "awscli/examples/iot/delete-security-profile.rst",
+    "size": 415,
+    "hash": "\\xC0Q\\xEF/Q\\xF7\\xB7\\x15\\x9F}\\xF4g\\x89\\x15\\x07\\x91\\x88\\xABU\\x87",
     "skip_reason": "",
-    "lines": 65,
-    "repository": 152
+    "lines": 10,
+    "repository": 134
   },
   {
-    "project_name": "edc-auth",
-    "project_version": "0.3.38",
-    "project_release": "edc_auth-0.3.38-py3-none-any.whl",
-    "uploaded_on": "2022-05-25 18:38:10.795",
-    "path": "packages/edc-auth/edc_auth-0.3.38-py3-none-any.whl/edc_auth/management/commands/__pycache__/import_users.cpython-37.pyc",
-    "archive_path": "edc_auth/management/commands/__pycache__/import_users.cpython-37.pyc",
-    "size": 1597,
-    "hash": "\\x11\\xDE\\xCBj*+b\\xC5\\xF93\\xC2\\x17\\xF8\\xA9,\\xB4\\xF2\\xAF\\xA2\\xF7",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 152
+    "project_name": "spyder-terminal",
+    "project_version": "1.2.0",
+    "project_release": "spyder-terminal-1.2.0.tar.gz",
+    "uploaded_on": "2021-12-16 21:24:32.734",
+    "path": "packages/spyder-terminal/spyder-terminal-1.2.0.tar.gz/spyder-terminal-1.2.0/spyder_terminal.egg-info/SOURCES.txt",
+    "archive_path": "spyder-terminal-1.2.0/spyder_terminal.egg-info/SOURCES.txt",
+    "size": 647930,
+    "hash": "\\x94\\xBC\\x88\\x02&\\x87\\x8E\\x1E\\xD4c\\xD2\\xD3\\xC5P.rEo,\\xFF",
+    "skip_reason": "too-large",
+    "lines": 8547,
+    "repository": 131
   }
 ]
