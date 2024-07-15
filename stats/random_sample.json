@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "awscli",
-    "project_version": "1.22.33",
-    "project_release": "awscli-1.22.33-py3-none-any.whl",
-    "uploaded_on": "2022-01-11 20:10:52.002",
-    "path": "packages/awscli/awscli-1.22.33-py3-none-any.whl/awscli/examples/iot/delete-security-profile.rst",
-    "archive_path": "awscli/examples/iot/delete-security-profile.rst",
-    "size": 415,
-    "hash": "\\xC0Q\\xEF/Q\\xF7\\xB7\\x15\\x9F}\\xF4g\\x89\\x15\\x07\\x91\\x88\\xABU\\x87",
+    "project_name": "CodeIntel",
+    "project_version": "2.0.0b22",
+    "project_release": "CodeIntel-2.0.0b22-cp35-cp35m-manylinux1_i686.whl",
+    "uploaded_on": "2017-08-21 20:11:28.867",
+    "path": "packages/CodeIntel/CodeIntel-2.0.0b22-cp35-cp35m-manylinux1_i686.whl/codeintel/catalogs/sgml-lib/REC-SVG11-20030114/svg11-basic-model.mod",
+    "archive_path": "codeintel/catalogs/sgml-lib/REC-SVG11-20030114/svg11-basic-model.mod",
+    "size": 5697,
+    "hash": "a\\x10\\xED\\x16\\xCCr\\xA9 \\xBBJ\\x93\\x1A\\xB8\\x05\\xBC\\xDBk\\x82J\\xAF",
     "skip_reason": "",
-    "lines": 10,
-    "repository": 134
+    "lines": 185,
+    "repository": 24
   },
   {
-    "project_name": "spyder-terminal",
-    "project_version": "1.2.0",
-    "project_release": "spyder-terminal-1.2.0.tar.gz",
-    "uploaded_on": "2021-12-16 21:24:32.734",
-    "path": "packages/spyder-terminal/spyder-terminal-1.2.0.tar.gz/spyder-terminal-1.2.0/spyder_terminal.egg-info/SOURCES.txt",
-    "archive_path": "spyder-terminal-1.2.0/spyder_terminal.egg-info/SOURCES.txt",
-    "size": 647930,
-    "hash": "\\x94\\xBC\\x88\\x02&\\x87\\x8E\\x1E\\xD4c\\xD2\\xD3\\xC5P.rEo,\\xFF",
-    "skip_reason": "too-large",
-    "lines": 8547,
-    "repository": 131
+    "project_name": "slapos.toolbox",
+    "project_version": "0.73",
+    "project_release": "slapos.toolbox-0.73.tar.gz",
+    "uploaded_on": "2017-10-06 21:51:06.732",
+    "path": "packages/slapos.toolbox/slapos.toolbox-0.73.tar.gz/slapos.toolbox-0.73/slapos/runner/static/js/ace/worker-javascript.js",
+    "archive_path": "slapos.toolbox-0.73/slapos/runner/static/js/ace/worker-javascript.js",
+    "size": 140967,
+    "hash": "(\\xA7nt\\x93\\xFCg\\x8A\\x12\\xBF\\xC4\\x0E\\xCD\\xDB\\xC0\\xF7:\\xFC\\xEF\\xC6",
+    "skip_reason": "text-long-lines",
+    "lines": 1,
+    "repository": 25
   }
 ]
