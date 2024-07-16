@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "CodeIntel",
-    "project_version": "2.0.0b22",
-    "project_release": "CodeIntel-2.0.0b22-cp35-cp35m-manylinux1_i686.whl",
-    "uploaded_on": "2017-08-21 20:11:28.867",
-    "path": "packages/CodeIntel/CodeIntel-2.0.0b22-cp35-cp35m-manylinux1_i686.whl/codeintel/catalogs/sgml-lib/REC-SVG11-20030114/svg11-basic-model.mod",
-    "archive_path": "codeintel/catalogs/sgml-lib/REC-SVG11-20030114/svg11-basic-model.mod",
-    "size": 5697,
-    "hash": "a\\x10\\xED\\x16\\xCCr\\xA9 \\xBBJ\\x93\\x1A\\xB8\\x05\\xBC\\xDBk\\x82J\\xAF",
+    "project_name": "girder-large-image",
+    "project_version": "1.18.1.dev13",
+    "project_release": "girder-large-image-1.18.1.dev13.tar.gz",
+    "uploaded_on": "2022-12-16 14:33:01.289",
+    "path": "packages/girder-large-image/girder-large-image-1.18.1.dev13.tar.gz/girder-large-image-1.18.1.dev13/girder_large_image/web_client/views/imageViewerWidget/base.js",
+    "archive_path": "girder-large-image-1.18.1.dev13/girder_large_image/web_client/views/imageViewerWidget/base.js",
+    "size": 2049,
+    "hash": "\\xA0Xa\\xFD\\x8B#\\x00\\xAD\\xC4\\xD8\\xB0\\xF8\\x14\\xE6\\x8D\\xF7)4yY",
     "skip_reason": "",
-    "lines": 185,
-    "repository": 24
+    "lines": 57,
+    "repository": 181
   },
   {
-    "project_name": "slapos.toolbox",
-    "project_version": "0.73",
-    "project_release": "slapos.toolbox-0.73.tar.gz",
-    "uploaded_on": "2017-10-06 21:51:06.732",
-    "path": "packages/slapos.toolbox/slapos.toolbox-0.73.tar.gz/slapos.toolbox-0.73/slapos/runner/static/js/ace/worker-javascript.js",
-    "archive_path": "slapos.toolbox-0.73/slapos/runner/static/js/ace/worker-javascript.js",
-    "size": 140967,
-    "hash": "(\\xA7nt\\x93\\xFCg\\x8A\\x12\\xBF\\xC4\\x0E\\xCD\\xDB\\xC0\\xF7:\\xFC\\xEF\\xC6",
-    "skip_reason": "text-long-lines",
-    "lines": 1,
-    "repository": 25
+    "project_name": "faker-mobile-bank-clickstream",
+    "project_version": "1.0.1",
+    "project_release": "faker_mobile_bank_clickstream-1.0.1-py3.10.egg",
+    "uploaded_on": "2023-01-06 09:23:00.683",
+    "path": "packages/faker-mobile-bank-clickstream/faker_mobile_bank_clickstream-1.0.1-py3.10.egg/faker_mobile_bank_clickstream/__pycache__/clickstream.cpython-310.pyc",
+    "archive_path": "faker_mobile_bank_clickstream/__pycache__/clickstream.cpython-310.pyc",
+    "size": 4637,
+    "hash": "\\x07\\xDBk%f\\xC9\\xD6\\xF4\\xC2L\\xC2\\x7F\\x9D*S\\x9Ah\\x1Da\\xC9",
+    "skip_reason": "binary",
+    "lines": 0,
+    "repository": 184
   }
 ]
