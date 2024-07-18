@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "ais-dom",
-    "project_version": "2021.4.6b3",
-    "project_release": "ais-dom-2021.4.6b3.tar.gz",
-    "uploaded_on": "2021-04-27 13:16:00.073",
-    "path": "packages/ais-dom/ais-dom-2021.4.6b3.tar.gz/ais-dom-2021.4.6b3/homeassistant/components/vera/translations/de.json",
-    "archive_path": "ais-dom-2021.4.6b3/homeassistant/components/vera/translations/de.json",
-    "size": 1501,
-    "hash": "\\xF0\\xA6\\x80\\xE7\\xC2\\xDE\\xC7\\xA3@\\xEF\\xF6\\x8F>\\x5C\\x8C\\x19H\\x9C\\xFDc",
+    "project_name": "tf-nightly-intel",
+    "project_version": "2.10.0.dev20220718",
+    "project_release": "tf_nightly_intel-2.10.0.dev20220718-cp37-cp37m-win_amd64.whl",
+    "uploaded_on": "2022-07-18 14:52:52.974",
+    "path": "packages/tf-nightly-intel/tf_nightly_intel-2.10.0.dev20220718-cp37-cp37m-win_amd64.whl/tensorflow/include/tensorflow/stream_executor/stream_executor.h",
+    "archive_path": "tensorflow/include/tensorflow/stream_executor/stream_executor.h",
+    "size": 2312,
+    "hash": "\\xD6=H]\\xF5f\\x8A\\x5C\\xBB\\x5CaRT\\x01\\x94{\\xEB\\xEA\\xB6\\x16",
     "skip_reason": "",
-    "lines": 30,
-    "repository": 103
+    "lines": 49,
+    "repository": 159
   },
   {
-    "project_name": "Weblate",
-    "project_version": "4.6",
-    "project_release": "Weblate-4.6-py3-none-any.whl",
-    "uploaded_on": "2021-04-19 05:58:06.771",
-    "path": "packages/Weblate/Weblate-4.6-py3-none-any.whl/weblate/memory/migrations/__init__.py",
-    "archive_path": "weblate/memory/migrations/__init__.py",
+    "project_name": "tf-nightly-cpu-aws",
+    "project_version": "2.11.0.dev20220810",
+    "project_release": "tf_nightly_cpu_aws-2.11.0.dev20220810-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "uploaded_on": "2022-08-10 15:31:27.053",
+    "path": "packages/tf-nightly-cpu-aws/tf_nightly_cpu_aws-2.11.0.dev20220810-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/tensorflow/python/training/__init__.py",
+    "archive_path": "tensorflow/python/training/__init__.py",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 102
+    "repository": 162
   }
 ]
