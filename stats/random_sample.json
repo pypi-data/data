@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tensorflow",
-    "project_version": "2.4.4",
-    "project_release": "tensorflow-2.4.4-cp37-cp37m-macosx_10_14_x86_64.whl",
-    "uploaded_on": "2021-11-01 20:19:37.576",
-    "path": "packages/tensorflow/tensorflow-2.4.4-cp37-cp37m-macosx_10_14_x86_64.whl/tensorflow/include/tensorflow/core/kernels/mfcc_dct.h",
-    "archive_path": "tensorflow/include/tensorflow/core/kernels/mfcc_dct.h",
-    "size": 1350,
-    "hash": "\\x88\\x8B\\x8E\\x8D\\xF8\\xC4Pg\\x98\\x1E\\xF7\\xEA\\x27\\xDD\\xF5h\\x03]\\xD3\\xAE",
+    "project_name": "integreat-cms",
+    "project_version": "2022.5.3",
+    "project_release": "integreat-cms-2022.5.3.tar.gz",
+    "uploaded_on": "2022-05-24 18:58:39.398",
+    "path": "packages/integreat-cms/integreat-cms-2022.5.3.tar.gz/integreat-cms-2022.5.3/integreat_cms/static/dist/svg/email.svg",
+    "archive_path": "integreat-cms-2022.5.3/integreat_cms/static/dist/svg/email.svg",
+    "size": 1129,
+    "hash": "x\\x96\\x05\\xC2\\xCB#nV\\x908\\x87\\xCCq\\xF3\\x7F\\xEB\\xA1\\xD1f\\x0E",
     "skip_reason": "",
-    "lines": 44,
-    "repository": 125
+    "lines": 1,
+    "repository": 152
   },
   {
-    "project_name": "sym-cli",
-    "project_version": "0.2.3",
-    "project_release": "sym_cli-0.2.3-py3-none-any.whl",
-    "uploaded_on": "2022-01-10 21:45:41.622",
-    "path": "packages/sym-cli/sym_cli-0.2.3-py3-none-any.whl/sym/cli/helpers/ec2/__init__.py",
-    "archive_path": "sym/cli/helpers/ec2/__init__.py",
+    "project_name": "instancelib",
+    "project_version": "0.4.1.0",
+    "project_release": "instancelib-0.4.1.0.tar.gz",
+    "uploaded_on": "2022-03-03 16:16:15.767",
+    "path": "packages/instancelib/instancelib-0.4.1.0.tar.gz/instancelib-0.4.1.0/tests/__init__.py",
+    "archive_path": "instancelib-0.4.1.0/tests/__init__.py",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 134
+    "repository": 141
   }
 ]
