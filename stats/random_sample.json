@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "opensesame-core",
-    "project_version": "4.0.24",
-    "project_release": "opensesame_core-4.0.24-py3-none-any.whl",
-    "uploaded_on": "2024-03-19 17:23:01.35",
-    "path": "packages/opensesame-core/opensesame_core-4.0.24-py3-none-any.whl/libqtopensesame/resources/theme/default/MokaSesame/16x16/apps/rygel.png",
-    "archive_path": "libqtopensesame/resources/theme/default/MokaSesame/16x16/apps/rygel.png",
-    "size": 851,
-    "hash": "\\xEB\\xDBy\\xBE+\\xD6\\xECO\\xFF\\xFBi-\\x15\\xBF\\x94\\xED\\x17lbS",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 263
+    "project_name": "cbl-tools",
+    "project_version": "0.0.5",
+    "project_release": "cbl_tools-0.0.5.tar.gz",
+    "uploaded_on": "2022-07-21 10:00:35.318",
+    "path": "packages/cbl-tools/cbl_tools-0.0.5.tar.gz/cbl_tools-0.0.5/venv/lib/python3.11/site-packages/_virtualenv.py",
+    "archive_path": "cbl_tools-0.0.5/venv/lib/python3.11/site-packages/_virtualenv.py",
+    "size": 5662,
+    "hash": "\\xDA\\x98\\xB8\\x27\\xA2F\\x1B\\xD4+\\x95\\x17#\\x9D\\xAC\\xAD\\x80\\xFB\\x0BF\\xE2",
+    "skip_reason": "virtualenv",
+    "lines": 130,
+    "repository": 160
   },
   {
-    "project_name": "onnx",
-    "project_version": "1.16.0",
-    "project_release": "onnx-1.16.0-cp39-cp39-win_amd64.whl",
-    "uploaded_on": "2024-03-25 15:26:38.417",
-    "path": "packages/onnx/onnx-1.16.0-cp39-cp39-win_amd64.whl/onnx/backend/test/data/node/test_sce_NCd1d2d3_sum_weight_high_ii_log_prob_expanded/model.onnx",
-    "archive_path": "onnx/backend/test/data/node/test_sce_NCd1d2d3_sum_weight_high_ii_log_prob_expanded/model.onnx",
-    "size": 1921,
-    "hash": "\\xCBXr\\xDEvP\\x02\\xDE\\x91\\xF9\\xCA\\xAF\\xCF\\x8ES\\xDB(\\x82\\x82\\x99",
+    "project_name": "griddly",
+    "project_version": "1.4.2",
+    "project_release": "griddly-1.4.2-cp39-cp39-manylinux2014_x86_64.whl",
+    "uploaded_on": "2022-07-20 10:00:47.807",
+    "path": "packages/griddly/griddly-1.4.2-cp39-cp39-manylinux2014_x86_64.whl/griddly/resources/images/oryx/oryx_tiny_galaxy/tg_sliced/tg_interface/tg_interface_bubble_5.png",
+    "archive_path": "griddly/resources/images/oryx/oryx_tiny_galaxy/tg_sliced/tg_interface/tg_interface_bubble_5.png",
+    "size": 1029,
+    "hash": "\\xFF\\x99B&\\xD4\\x1E\\x95>\\x9F\\xCB}\\xF7*l\\x88\\xC71\\xB6s\\xE8",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 264
+    "repository": 159
   }
 ]
