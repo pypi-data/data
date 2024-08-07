@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "warsawbuspy",
-    "project_version": "0.0.4",
-    "project_release": "warsawbuspy-0.0.4.tar.gz",
-    "uploaded_on": "2024-02-15 15:15:38.371",
-    "path": "packages/warsawbuspy/warsawbuspy-0.0.4.tar.gz/warsawbuspy-0.0.4/schedules/2047_01_521.csv",
-    "archive_path": "warsawbuspy-0.0.4/schedules/2047_01_521.csv",
-    "size": 2036,
-    "hash": "KN\\xED\\x96\\xCB$\\x92\\xDFlc\\xF0OI\\x93@\\x9A\\x95JJ\\xE9",
+    "project_name": "rxmarbles",
+    "project_version": "0.1",
+    "project_release": "rxmarbles-0.1.tar.gz",
+    "uploaded_on": "2017-10-17 19:10:56.288",
+    "path": "packages/rxmarbles/rxmarbles-0.1.tar.gz/rxmarbles-0.1/rxmarbles.egg-info/entry_points.txt",
+    "archive_path": "rxmarbles-0.1/rxmarbles.egg-info/entry_points.txt",
+    "size": 56,
+    "hash": "\\x07)\\xD6\\x14s\\x0A\\x0A\\x0C\\x001\\xA561\\xD0\\xEF\\xCD\\xBF\\xC0\\xEAQ",
     "skip_reason": "",
-    "lines": 39,
-    "repository": 256
+    "lines": 3,
+    "repository": 26
   },
   {
-    "project_name": "opensesame-core",
-    "project_version": "4.0.19",
-    "project_release": "opensesame_core-4.0.19.tar.gz",
-    "uploaded_on": "2024-01-09 12:40:16.953",
-    "path": "packages/opensesame-core/opensesame_core-4.0.19.tar.gz/opensesame_core-4.0.19/libqtopensesame/resources/theme/default/MokaSesame/16x16/apps/fez.png",
-    "archive_path": "opensesame_core-4.0.19/libqtopensesame/resources/theme/default/MokaSesame/16x16/apps/fez.png",
-    "size": 468,
-    "hash": "\\xA2\\x0D\\xF2E\\xF0y\\xF5\\xD1\\xC4zh\\xAD\\x22\\x00y\\xA8\\x10Q\\xB0\\xA2",
-    "skip_reason": "binary",
+    "project_name": "udata",
+    "project_version": "1.6.5.dev13273",
+    "project_release": "udata-1.6.5.dev13273-py2.py3-none-any.whl",
+    "uploaded_on": "2019-02-27 09:36:21.128",
+    "path": "packages/udata/udata-1.6.5.dev13273-py2.py3-none-any.whl/udata/core/dataset/__init__.py",
+    "archive_path": "udata/core/dataset/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 250
+    "repository": 42
   }
 ]
