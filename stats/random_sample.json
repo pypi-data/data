@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "oci",
-    "project_version": "2.112.2",
-    "project_release": "oci-2.112.2-py3-none-any.whl",
-    "uploaded_on": "2023-09-25 10:47:39.618",
-    "path": "packages/oci/oci-2.112.2-py3-none-any.whl/oci/fusion_apps/models/refresh_issue_details.py",
-    "archive_path": "oci/fusion_apps/models/refresh_issue_details.py",
-    "size": 2403,
-    "hash": "\\x8E\\xF5\\xCFu\\xB9\\xC7\\x83x&\\xA8\\xB3N\\xA5\\xCA7U\\xA5\\xC7p&",
+    "project_name": "gluoncv",
+    "project_version": "0.4.0b20190110",
+    "project_release": "gluoncv-0.4.0b20190110-py2.py3-none-any.whl",
+    "uploaded_on": "2019-01-10 09:02:21.434",
+    "path": "packages/gluoncv/gluoncv-0.4.0b20190110-py2.py3-none-any.whl/gluoncv/data/__init__.py",
+    "archive_path": "gluoncv/data/__init__.py",
+    "size": 1135,
+    "hash": "y\\xB9\\xE1\\xF7\\xE4\\xBE\\xC6\\x86>V\\xC1\\xDB\\x06\\xCE\\x87Q\\x91{\\x90\\xA9",
     "skip_reason": "",
-    "lines": 72,
-    "repository": 232
+    "lines": 31,
+    "repository": 40
   },
   {
-    "project_name": "dvc-objects",
-    "project_version": "1.0.0",
-    "project_release": "dvc-objects-1.0.0.tar.gz",
-    "uploaded_on": "2023-08-16 01:55:18.646",
-    "path": "packages/dvc-objects/dvc-objects-1.0.0.tar.gz/dvc-objects-1.0.0/src/dvc_objects/__init__.py",
-    "archive_path": "dvc-objects-1.0.0/src/dvc_objects/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "wagtail",
+    "project_version": "2.0rc1",
+    "project_release": "wagtail-2.0rc1.tar.gz",
+    "uploaded_on": "2018-02-16 14:26:06.42",
+    "path": "packages/wagtail/wagtail-2.0rc1.tar.gz/wagtail-2.0rc1/wagtail/core/locale/sk_SK/LC_MESSAGES/django.mo",
+    "archive_path": "wagtail-2.0rc1/wagtail/core/locale/sk_SK/LC_MESSAGES/django.mo",
+    "size": 7318,
+    "hash": "\\x88\\xC91^MA\\xEFVx\\xA4/,\\xDA\\xCD\\x02\\xE6\\xFA\\x1FYH",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 225
+    "repository": 29
   }
 ]
