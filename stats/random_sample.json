@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "pulumi-aws",
-    "project_version": "6.14.0a1701983299",
-    "project_release": "pulumi_aws-6.14.0a1701983299.tar.gz",
-    "uploaded_on": "2023-12-08 02:47:51.761",
-    "path": "packages/pulumi-aws/pulumi_aws-6.14.0a1701983299.tar.gz/pulumi_aws-6.14.0a1701983299/pulumi_aws/s3outposts/_inputs.py",
-    "archive_path": "pulumi_aws-6.14.0a1701983299/pulumi_aws/s3outposts/_inputs.py",
-    "size": 1242,
-    "hash": "\\xF9\\xBC\\x13\\x8E\\xD8\\xE7mn\\xCBZ;\\xA6h1\\xCF|\\xD8\\x07\\x5C\\x09",
+    "project_name": "tencentcloud-sdk-python-cwp",
+    "project_version": "3.0.407",
+    "project_release": "tencentcloud_sdk_python_cwp-3.0.407-py2.py3-none-any.whl",
+    "uploaded_on": "2021-05-27 00:43:08.995",
+    "path": "packages/tencentcloud-sdk-python-cwp/tencentcloud_sdk_python_cwp-3.0.407-py2.py3-none-any.whl/tencentcloud/__init__.py",
+    "archive_path": "tencentcloud/__init__.py",
+    "size": 630,
+    "hash": "\\x07\\xBD\\x88\\xFB;)\\x95\\xA6\\xEE\\xEA*83\\xBB$\\xCF\\xBF\\x0E\\x07$",
     "skip_reason": "",
-    "lines": 38,
-    "repository": 245
+    "lines": 17,
+    "repository": 107
   },
   {
-    "project_name": "consolechess",
-    "project_version": "0.2.50",
-    "project_release": "consolechess-0.2.50.tar.gz",
-    "uploaded_on": "2023-12-22 21:05:05.666",
-    "path": "packages/consolechess/consolechess-0.2.50.tar.gz/consolechess-0.2.50/consolechess/board.cpython-311-darwin.so",
-    "archive_path": "consolechess-0.2.50/consolechess/board.cpython-311-darwin.so",
-    "size": 50552,
-    "hash": "S\\x1AF\\xA2j0M\\x80\\xBA\\xE6@\\xE9\\x8C\\x86=\\xDA\\x91\\xBE\\x1FY",
+    "project_name": "tendenci",
+    "project_version": "12.5.1",
+    "project_release": "tendenci-12.5.1.tar.gz",
+    "uploaded_on": "2021-05-07 19:54:43.116",
+    "path": "packages/tendenci/tendenci-12.5.1.tar.gz/tendenci-12.5.1/tendenci/themes/t7-base/static/famfamfam/icons/bullet_arrow_down.png",
+    "archive_path": "tendenci-12.5.1/tendenci/themes/t7-base/static/famfamfam/icons/bullet_arrow_down.png",
+    "size": 201,
+    "hash": "\\x9B#\\xC0m{OF\\x89\\xDC\\x8C\\x9F\\xD4\\xE9\\xD4\\xD1\\xF1\\x99\\xFE7o",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 247
+    "repository": 105
   }
 ]
