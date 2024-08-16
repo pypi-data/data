@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "onnx-weekly",
-    "project_version": "1.15.0.dev20230828",
-    "project_release": "onnx_weekly-1.15.0.dev20230828-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "uploaded_on": "2023-08-28 01:33:32.169",
-    "path": "packages/onnx-weekly/onnx_weekly-1.15.0.dev20230828-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/onnx/backend/test/data/node/test_dropout_default_mask_ratio/test_data_set_0/input_1.pb",
-    "archive_path": "onnx/backend/test/data/node/test_dropout_default_mask_ratio/test_data_set_0/input_1.pb",
-    "size": 11,
-    "hash": "\\x18\\xA4\\xDE\\xB5\\xFE\\x8B\\xE2\\xAB\\x0A\\xFDu\\xEB,\\xEBP\\xAF\\xF3\\x89\\x94\\x9C",
+    "project_name": "tf-nightly",
+    "project_version": "2.17.0.dev20240427",
+    "project_release": "tf_nightly-2.17.0.dev20240427-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "uploaded_on": "2024-04-27 17:26:57.124",
+    "path": "packages/tf-nightly/tf_nightly-2.17.0.dev20240427-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/tensorflow/include/external/mkl_dnn_acl_compatible/src/common/serialization.hpp",
+    "archive_path": "tensorflow/include/external/mkl_dnn_acl_compatible/src/common/serialization.hpp",
+    "size": 3168,
+    "hash": "\\xB7\\x0F\\x9C\\xFD\\xDFfL\\xBF\\xC8\\x9E\\xCB\\xCDX\\x80\\x0Fg\\xD7_\\xAA\\x8D",
     "skip_reason": "",
-    "lines": 1,
-    "repository": 227
+    "lines": 73,
+    "repository": 270
   },
   {
-    "project_name": "graphscope-client",
-    "project_version": "0.24.0a20230828",
-    "project_release": "graphscope_client-0.24.0a20230828-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2023-08-28 20:44:51.829",
-    "path": "packages/graphscope-client/graphscope_client-0.24.0a20230828-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/graphscope_client.libs/libcrypt-17112bff.so.1",
-    "archive_path": "graphscope_client.libs/libcrypt-17112bff.so.1",
-    "size": 202032,
-    "hash": " \\xE6Q\\xB5\\x5C\\xBF:k\\xE9a\\x82 \\xC8\\x92u7\\x97\\xE2D\\xEC",
-    "skip_reason": "binary",
-    "lines": 0,
-    "repository": 227
+    "project_name": "qsl",
+    "project_version": "0.2.40",
+    "project_release": "qsl-0.2.40-py2.py3-none-any.whl",
+    "uploaded_on": "2024-04-05 14:58:10.049",
+    "path": "packages/qsl/qsl-0.2.40-py2.py3-none-any.whl/qsl/ui/eelapp/index.js",
+    "archive_path": "qsl/ui/eelapp/index.js",
+    "size": 533420,
+    "hash": "\\xAFS\\xDE\\x5C#(\\xCEb\\xB6\\x0F\\xF3\\xA9\\x0D\\xF8[\\xC1T\\x87\\x85:",
+    "skip_reason": "too-large",
+    "lines": 2,
+    "repository": 266
   }
 ]
