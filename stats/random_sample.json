@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "tf-nightly",
-    "project_version": "2.17.0.dev20240427",
-    "project_release": "tf_nightly-2.17.0.dev20240427-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "uploaded_on": "2024-04-27 17:26:57.124",
-    "path": "packages/tf-nightly/tf_nightly-2.17.0.dev20240427-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/tensorflow/include/external/mkl_dnn_acl_compatible/src/common/serialization.hpp",
-    "archive_path": "tensorflow/include/external/mkl_dnn_acl_compatible/src/common/serialization.hpp",
-    "size": 3168,
-    "hash": "\\xB7\\x0F\\x9C\\xFD\\xDFfL\\xBF\\xC8\\x9E\\xCB\\xCDX\\x80\\x0Fg\\xD7_\\xAA\\x8D",
+    "project_name": "taichi",
+    "project_version": "1.0.2",
+    "project_release": "taichi-1.0.2-cp37-cp37m-win_amd64.whl",
+    "uploaded_on": "2022-05-18 07:42:37.583",
+    "path": "packages/taichi/taichi-1.0.2-cp37-cp37m-win_amd64.whl/taichi/examples/autodiff/minimization.py",
+    "archive_path": "taichi/examples/autodiff/minimization.py",
+    "size": 888,
+    "hash": ":[\\xF6\\xC4\\x9D\\xC2\\xCB\\xBC\\xC5?\\x83\\xD2\\xA6\\xB0\\xAC6\\x9Et\\x5C\\xA4",
     "skip_reason": "",
-    "lines": 73,
-    "repository": 270
+    "lines": 44,
+    "repository": 151
   },
   {
-    "project_name": "qsl",
-    "project_version": "0.2.40",
-    "project_release": "qsl-0.2.40-py2.py3-none-any.whl",
-    "uploaded_on": "2024-04-05 14:58:10.049",
-    "path": "packages/qsl/qsl-0.2.40-py2.py3-none-any.whl/qsl/ui/eelapp/index.js",
-    "archive_path": "qsl/ui/eelapp/index.js",
-    "size": 533420,
-    "hash": "\\xAFS\\xDE\\x5C#(\\xCEb\\xB6\\x0F\\xF3\\xA9\\x0D\\xF8[\\xC1T\\x87\\x85:",
-    "skip_reason": "too-large",
-    "lines": 2,
-    "repository": 266
+    "project_name": "fast-unit",
+    "project_version": "0.1.0",
+    "project_release": "fast_unit-0.1.0.tar.gz",
+    "uploaded_on": "2022-03-01 17:59:03.318",
+    "path": "packages/fast-unit/fast_unit-0.1.0.tar.gz/fast_unit-0.1.0/lib/lib/python3.10/site-packages/numpy/polynomial/chebyshev.py",
+    "archive_path": "fast_unit-0.1.0/lib/lib/python3.10/site-packages/numpy/polynomial/chebyshev.py",
+    "size": 62495,
+    "hash": "\\x89\\xCE\\x81]W\\x1E\\x81_z\\xDAqA\\xF0Z\\xD2y \\xE0\\x98\\x0D",
+    "skip_reason": "virtualenv",
+    "lines": 2075,
+    "repository": 140
   }
 ]
