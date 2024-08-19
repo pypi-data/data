@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "sofia-redux",
-    "project_version": "1.0rc1",
-    "project_release": "sofia_redux-1.0rc1.tar.gz",
-    "uploaded_on": "2021-07-08 20:03:19.905",
-    "path": "packages/sofia-redux/sofia_redux-1.0rc1.tar.gz/sofia_redux-1.0rc1/sofia_redux/spectroscopy/extinction_model.py",
-    "archive_path": "sofia_redux-1.0rc1/sofia_redux/spectroscopy/extinction_model.py",
-    "size": 3929,
-    "hash": "S\\xF33\\x0E\\xAB\\x12\\x0A\\x9A\\x85\\x5Ci\\x88\\x0B\\xD8G\\x80\\x93\\xC9k\\x8F",
+    "project_name": "homeassistant",
+    "project_version": "2023.5.0b7",
+    "project_release": "homeassistant-2023.5.0b7-py3-none-any.whl",
+    "uploaded_on": "2023-05-02 20:49:42.934",
+    "path": "packages/homeassistant/homeassistant-2023.5.0b7-py3-none-any.whl/homeassistant/components/tautulli/manifest.json",
+    "archive_path": "homeassistant/components/tautulli/manifest.json",
+    "size": 319,
+    "hash": "]=\\xA2U\\x01\\xD8\\xD6^n\\x06\\xAC#\\x8EV)i:\\x09\\xFFQ",
     "skip_reason": "",
-    "lines": 108,
-    "repository": 112
+    "lines": 11,
+    "repository": 206
   },
   {
-    "project_name": "tensorflow-io-nightly",
-    "project_version": "0.18.0.dev20210524191837",
-    "project_release": "tensorflow_io_nightly-0.18.0.dev20210524191837-cp36-cp36m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
-    "uploaded_on": "2021-05-24 20:10:57.994",
-    "path": "packages/tensorflow-io-nightly/tensorflow_io_nightly-0.18.0.dev20210524191837-cp36-cp36m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl/tensorflow_io_nightly-0.18.0.dev20210524191837.data/purelib/tensorflow_io/core/python/__init__.py",
-    "archive_path": "tensorflow_io_nightly-0.18.0.dev20210524191837.data/purelib/tensorflow_io/core/python/__init__.py",
+    "project_name": "tf-nightly-cpu-aws",
+    "project_version": "2.13.0.dev20230314",
+    "project_release": "tf_nightly_cpu_aws-2.13.0.dev20230314-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "uploaded_on": "2023-03-14 09:23:16.317",
+    "path": "packages/tf-nightly-cpu-aws/tf_nightly_cpu_aws-2.13.0.dev20230314-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/tensorflow/core/__init__.py",
+    "archive_path": "tensorflow/core/__init__.py",
     "size": 0,
     "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
     "skip_reason": "empty",
     "lines": 0,
-    "repository": 107
+    "repository": 197
   }
 ]
