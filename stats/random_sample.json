@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "homeassistant",
-    "project_version": "2023.5.0b7",
-    "project_release": "homeassistant-2023.5.0b7-py3-none-any.whl",
-    "uploaded_on": "2023-05-02 20:49:42.934",
-    "path": "packages/homeassistant/homeassistant-2023.5.0b7-py3-none-any.whl/homeassistant/components/tautulli/manifest.json",
-    "archive_path": "homeassistant/components/tautulli/manifest.json",
-    "size": 319,
-    "hash": "]=\\xA2U\\x01\\xD8\\xD6^n\\x06\\xAC#\\x8EV)i:\\x09\\xFFQ",
+    "project_name": "awscli",
+    "project_version": "1.25.46",
+    "project_release": "awscli-1.25.46-py3-none-any.whl",
+    "uploaded_on": "2022-08-04 19:08:19.65",
+    "path": "packages/awscli/awscli-1.25.46-py3-none-any.whl/awscli/examples/iotwireless/delete-destination.rst",
+    "archive_path": "awscli/examples/iotwireless/delete-destination.rst",
+    "size": 528,
+    "hash": "\\x90\\xFF6y(\\xB1\\xF9\\x93d%\\xAE\\x00;\\xD9\\x08\\x1E_\\xDB\\xF2I",
     "skip_reason": "",
-    "lines": 11,
-    "repository": 206
+    "lines": 10,
+    "repository": 162
   },
   {
-    "project_name": "tf-nightly-cpu-aws",
-    "project_version": "2.13.0.dev20230314",
-    "project_release": "tf_nightly_cpu_aws-2.13.0.dev20230314-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "uploaded_on": "2023-03-14 09:23:16.317",
-    "path": "packages/tf-nightly-cpu-aws/tf_nightly_cpu_aws-2.13.0.dev20230314-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/tensorflow/core/__init__.py",
-    "archive_path": "tensorflow/core/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "renovosolutions.aws-cdk-aws-ipam",
+    "project_version": "0.0.103",
+    "project_release": "renovosolutions.aws-cdk-aws-ipam-0.0.103.tar.gz",
+    "uploaded_on": "2022-07-18 09:01:28.878",
+    "path": "packages/renovosolutions.aws-cdk-aws-ipam/renovosolutions.aws-cdk-aws-ipam-0.0.103.tar.gz/renovosolutions.aws-cdk-aws-ipam-0.0.103/src/ipam/_jsii/cdk-library-elbv2-redirect@0.0.103.jsii.tgz",
+    "archive_path": "renovosolutions.aws-cdk-aws-ipam-0.0.103/src/ipam/_jsii/cdk-library-elbv2-redirect@0.0.103.jsii.tgz",
+    "size": 16591,
+    "hash": "\\x19|\\x88\\xB1\\xD1\\xD4d\\x03\\x9C\\xC3\\xDE!\\x12v\\x99\\xDA\\x8CDUO",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 197
+    "repository": 159
   }
 ]
