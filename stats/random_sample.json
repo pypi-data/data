@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "awscli",
-    "project_version": "1.25.46",
-    "project_release": "awscli-1.25.46-py3-none-any.whl",
-    "uploaded_on": "2022-08-04 19:08:19.65",
-    "path": "packages/awscli/awscli-1.25.46-py3-none-any.whl/awscli/examples/iotwireless/delete-destination.rst",
-    "archive_path": "awscli/examples/iotwireless/delete-destination.rst",
-    "size": 528,
-    "hash": "\\x90\\xFF6y(\\xB1\\xF9\\x93d%\\xAE\\x00;\\xD9\\x08\\x1E_\\xDB\\xF2I",
+    "project_name": "tf-nightly",
+    "project_version": "2.10.0.dev20220705",
+    "project_release": "tf_nightly-2.10.0.dev20220705-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2022-07-05 09:16:00.24",
+    "path": "packages/tf-nightly/tf_nightly-2.10.0.dev20220705-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/include/external/local_config_python/python_include/codecs.h",
+    "archive_path": "tensorflow/include/external/local_config_python/python_include/codecs.h",
+    "size": 6793,
+    "hash": ":\\xD0\\xF2\\xB5\\xAA\\xE7\\x9Cq\\xC5O\\xAB\\xFDQ\\xA4\\x1A\\xCAa\\x8F\\x1A\\xC0",
     "skip_reason": "",
-    "lines": 10,
-    "repository": 162
+    "lines": 240,
+    "repository": 157
   },
   {
-    "project_name": "renovosolutions.aws-cdk-aws-ipam",
-    "project_version": "0.0.103",
-    "project_release": "renovosolutions.aws-cdk-aws-ipam-0.0.103.tar.gz",
-    "uploaded_on": "2022-07-18 09:01:28.878",
-    "path": "packages/renovosolutions.aws-cdk-aws-ipam/renovosolutions.aws-cdk-aws-ipam-0.0.103.tar.gz/renovosolutions.aws-cdk-aws-ipam-0.0.103/src/ipam/_jsii/cdk-library-elbv2-redirect@0.0.103.jsii.tgz",
-    "archive_path": "renovosolutions.aws-cdk-aws-ipam-0.0.103/src/ipam/_jsii/cdk-library-elbv2-redirect@0.0.103.jsii.tgz",
-    "size": 16591,
-    "hash": "\\x19|\\x88\\xB1\\xD1\\xD4d\\x03\\x9C\\xC3\\xDE!\\x12v\\x99\\xDA\\x8CDUO",
-    "skip_reason": "binary",
+    "project_name": "pybids",
+    "project_version": "0.15.2",
+    "project_release": "pybids-0.15.2.tar.gz",
+    "uploaded_on": "2022-07-25 20:26:29.964",
+    "path": "packages/pybids/pybids-0.15.2.tar.gz/pybids-0.15.2/bids/tests/data/ds005/derivatives/affine/warped_stats/_runcode_1/_subject_id_sub-06/_warpstats_linear0/cope1_flirt_flirt.nii.gz",
+    "archive_path": "pybids-0.15.2/bids/tests/data/ds005/derivatives/affine/warped_stats/_runcode_1/_subject_id_sub-06/_warpstats_linear0/cope1_flirt_flirt.nii.gz",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 159
+    "repository": 160
   }
 ]
