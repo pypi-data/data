@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "blrec",
-    "project_version": "1.2.0",
-    "project_release": "blrec-1.2.0-py3-none-any.whl",
-    "uploaded_on": "2021-11-06 02:17:13.369",
-    "path": "packages/blrec/blrec-1.2.0-py3-none-any.whl/blrec/flv/format.py",
-    "archive_path": "blrec/flv/format.py",
-    "size": 6280,
-    "hash": "\\x09s\\xAD\\xBC\\xB3\\xDFL\\xB8d|gu\\xD2\\xAB\\xB5\\xF8YpS\\x1B",
+    "project_name": "EvoMSA",
+    "project_version": "1.9.17",
+    "project_release": "EvoMSA-1.9.17-cp310-cp310-macosx_10_9_x86_64.whl",
+    "uploaded_on": "2023-09-16 07:31:15.092",
+    "path": "packages/EvoMSA/EvoMSA-1.9.17-cp310-cp310-macosx_10_9_x86_64.whl/EvoMSA/model_selection.py",
+    "archive_path": "EvoMSA/model_selection.py",
+    "size": 1113,
+    "hash": "\\x81\\xB8\\x99U\\x14*\\xAE\\x9B1\\xB5\\xC9CE$\\xB8/\\x22G|\\x27",
     "skip_reason": "",
-    "lines": 185,
-    "repository": 126
+    "lines": 35,
+    "repository": 230
   },
   {
-    "project_name": "hashcat",
-    "project_version": "22.1.9",
-    "project_release": "hashcat-22.1.9-py3-none-win_amd64.whl",
-    "uploaded_on": "2022-01-09 04:06:54.252",
-    "path": "packages/hashcat/hashcat-22.1.9-py3-none-win_amd64.whl/hashcat/hashcat/modules/module_01100.so",
-    "archive_path": "hashcat/hashcat/modules/module_01100.so",
-    "size": 209064,
-    "hash": "\\xE6\\x9Cc=\\x015@\\x9D\\x07\\xBF\\xD9\\xD4m\\x81jR\\xA9g\\xCF\\xCD",
+    "project_name": "projectaria-client-sdk",
+    "project_version": "1.0.2",
+    "project_release": "projectaria_client_sdk-1.0.2-cp38-cp38-manylinux2014_x86_64.whl",
+    "uploaded_on": "2023-10-18 20:58:23.698",
+    "path": "packages/projectaria-client-sdk/projectaria_client_sdk-1.0.2-cp38-cp38-manylinux2014_x86_64.whl/aria/libomp.so",
+    "archive_path": "aria/libomp.so",
+    "size": 5069592,
+    "hash": "\\x5CK\\xD8\\xD2\\x5C\\xB6\\xE2!+\\xD4cw\\xC8\\xED\\x1A\\xD1\\xD7\\x87\\x0D[",
     "skip_reason": "binary",
     "lines": 0,
-    "repository": 133
+    "repository": 236
   }
 ]
