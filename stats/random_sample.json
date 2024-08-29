@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "EvoMSA",
-    "project_version": "1.9.17",
-    "project_release": "EvoMSA-1.9.17-cp310-cp310-macosx_10_9_x86_64.whl",
-    "uploaded_on": "2023-09-16 07:31:15.092",
-    "path": "packages/EvoMSA/EvoMSA-1.9.17-cp310-cp310-macosx_10_9_x86_64.whl/EvoMSA/model_selection.py",
-    "archive_path": "EvoMSA/model_selection.py",
-    "size": 1113,
-    "hash": "\\x81\\xB8\\x99U\\x14*\\xAE\\x9B1\\xB5\\xC9CE$\\xB8/\\x22G|\\x27",
+    "project_name": "searoute",
+    "project_version": "1.4.1",
+    "project_release": "searoute-1.4.1.tar.gz",
+    "uploaded_on": "2024-06-22 11:06:04.388",
+    "path": "packages/searoute/searoute-1.4.1.tar.gz/searoute-1.4.1/searoute/classes/passages.py",
+    "archive_path": "searoute-1.4.1/searoute/classes/passages.py",
+    "size": 793,
+    "hash": "1KQ\\x08\\xF6#\\x04\\xC7\\x0A\\xA6\\xEDX\\xE9\\xC1>K\\xCD\\xA2\\xD8.",
     "skip_reason": "",
-    "lines": 35,
-    "repository": 230
+    "lines": 26,
+    "repository": 280
   },
   {
-    "project_name": "projectaria-client-sdk",
-    "project_version": "1.0.2",
-    "project_release": "projectaria_client_sdk-1.0.2-cp38-cp38-manylinux2014_x86_64.whl",
-    "uploaded_on": "2023-10-18 20:58:23.698",
-    "path": "packages/projectaria-client-sdk/projectaria_client_sdk-1.0.2-cp38-cp38-manylinux2014_x86_64.whl/aria/libomp.so",
-    "archive_path": "aria/libomp.so",
-    "size": 5069592,
-    "hash": "\\x5CK\\xD8\\xD2\\x5C\\xB6\\xE2!+\\xD4cw\\xC8\\xED\\x1A\\xD1\\xD7\\x87\\x0D[",
-    "skip_reason": "binary",
+    "project_name": "tf-nightly-tpu",
+    "project_version": "2.18.0.dev20240623",
+    "project_release": "tf_nightly_tpu-2.18.0.dev20240623-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "uploaded_on": "2024-06-23 16:22:22.724",
+    "path": "packages/tf-nightly-tpu/tf_nightly_tpu-2.18.0.dev20240623-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/core/config/__init__.py",
+    "archive_path": "tensorflow/core/config/__init__.py",
+    "size": 0,
+    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
+    "skip_reason": "empty",
     "lines": 0,
-    "repository": 236
+    "repository": 280
   }
 ]
