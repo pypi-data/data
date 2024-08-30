@@ -221,14 +221,14 @@ wheels = [
 
 [[package]]
 name = "prql-python"
-version = "0.11.2"
+version = "0.9.5"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/4a/fd/4925e221ca85fdee1024a72db67a5caae2bfffe2cadad2ca467782ad19d2/prql_python-0.11.2.tar.gz", hash = "sha256:79924121c1cf4ae3b96a23753851f84ec0bf69f84524867ab17875d4657cd7e9", size = 440065 }
+sdist = { url = "https://files.pythonhosted.org/packages/f9/75/08e7747ac58ee3d66636abcdb510cf323fd36723a0d9e084bdf2ee437d08/prql_python-0.9.5.tar.gz", hash = "sha256:d37eb2d8aca9a655efc234d0038799a9cd7449c23127bd6ee97c58d673df4c72", size = 339588 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5e/a3/62cf5378fd1fb153fda4aa8a101af65b1bd2f20462a35a1cb240cbb10afa/prql_python-0.11.2-cp37-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:77472d54e40920012465170d2c18e55f968ef242051411f963358aa64fe8a707", size = 5309443 },
-    { url = "https://files.pythonhosted.org/packages/a7/2f/4e5723a0e10999e452509ef349a0850ebc54dbe77fdf34299a25b43a2394/prql_python-0.11.2-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7df71fb962c6fbd65bd28555f46a1d20d3b7c5aa684989c3351822e6d10e9228", size = 3964007 },
-    { url = "https://files.pythonhosted.org/packages/62/6c/5a67c02f4cf12b830656b3719f53452d7a73aebcdddef43abf4e3af12665/prql_python-0.11.2-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8b3d2b3a0fc88f5b5f2d84ed625ee5636ca1d2f19c4c3c5ce0efd5e7b3dc25b5", size = 4004740 },
-    { url = "https://files.pythonhosted.org/packages/3c/f2/675108d49f39fa017abd6324bb49881646e1106a77bf6f7068a5ce969525/prql_python-0.11.2-cp37-abi3-win_amd64.whl", hash = "sha256:78bf105a542421251463b33e2026ffb9dca6cdf0cc8a2194734cc57558513192", size = 2187438 },
+    { url = "https://files.pythonhosted.org/packages/ed/19/aefe6bb1bb73bef83dab0783e956550d43d246f1b334914d132b08a7974b/prql_python-0.9.5-cp37-abi3-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl", hash = "sha256:a9d13039f27b94c409e1da572e741764311a25557e33f1c9a350e6c06a76f38f", size = 5915732 },
+    { url = "https://files.pythonhosted.org/packages/e6/0e/a9ed6c3e5e39492b7d6b6ec1b6058590fd06c5a72f590ba604a693bb4723/prql_python-0.9.5-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:072f040cc216389ed3ce9f1fde763ec25cfc609ec3554884ff850a8d02b6a61b", size = 4339773 },
+    { url = "https://files.pythonhosted.org/packages/64/0e/46a52be66ddcfb42f4c437d3d3e117487edf5e6a58234a11eb911d16dedb/prql_python-0.9.5-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2856290eb8995728f5081bab0e80791b4a57eea70690668464ce3bdeca9b49af", size = 4289626 },
+    { url = "https://files.pythonhosted.org/packages/64/cf/1423f917446a3c3fdfec4b3e3c514404e958bb53db7d460c58a7f45daa7d/prql_python-0.9.5-cp37-abi3-win_amd64.whl", hash = "sha256:c5327cbc550032be7bcad1ecdebea04487227e47c944d832e5a2998263165e9c", size = 2680682 },
 ]
 
 [[package]]
@@ -336,12 +336,12 @@ dependencies = [
 requires-dist = [
     { name = "duckdb", specifier = ">=1.0.0" },
     { name = "more-itertools", specifier = ">=10.4.0" },
-    { name = "prql-python", specifier = ">=0.11.2" },
+    { name = "prql-python", specifier = "==0.9.5" },
     { name = "psutil", specifier = ">=6.0.0" },
     { name = "pygithub" },
     { name = "requests" },
     { name = "tqdm" },
-    { name = "typer", extras = ["all"] },
+    { name = "typer" },
 ]
 
 [[package]]
