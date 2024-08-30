@@ -4,13 +4,12 @@ use std::time::Duration;
 
 use anyhow::{anyhow, Result};
 use clap::Parser;
+use datafusion::config::{ParquetColumnOptions, TableParquetOptions};
+use datafusion::dataframe::DataFrameWriteOptions;
 use datafusion::parquet;
-use datafusion::parquet::basic::{Compression, Encoding, ZstdLevel};
 use datafusion::parquet::column::writer::ColumnCloseResult;
-use datafusion::parquet::file::properties::{WriterProperties, WriterVersion};
+use datafusion::parquet::file::properties::WriterProperties;
 use datafusion::parquet::file::writer::SerializedFileWriter;
-use datafusion::parquet::format::SortingColumn;
-use datafusion::parquet::schema::types::ColumnPath;
 use datafusion::prelude::*;
 use futures::StreamExt;
 use indicatif::{ProgressBar, ProgressStyle};
@@ -144,18 +143,23 @@ async fn run_sql(path: &Path, output: &Path, sql: &str) -> Result<()> {
     ctx.register_parquet("input_dataset", path.to_str().unwrap(), read_options)
         .await?;
 
-    let df = ctx.sql(sql).await.unwrap();
+    let df = ctx.sql(sql).await?;
 
-    let props = WriterProperties::builder()
-        .set_compression(Compression::ZSTD(ZstdLevel::try_new(13).unwrap()))
-        .set_writer_version(WriterVersion::PARQUET_2_0)
-        .set_sorting_columns(Some(vec![SortingColumn::new(0, true, true)]))
-        .set_column_encoding(
-            ColumnPath::new(vec!["hash".into()]),
-            Encoding::DELTA_BYTE_ARRAY,
-        )
-        .build();
-    df.write_parquet(output.to_str().unwrap(), Some(props))
+    let options = DataFrameWriteOptions::default();
+    let mut writer_options = TableParquetOptions::default();
+    writer_options.global.compression = Some("zstd(13)".to_string());
+    writer_options.global.writer_version = "2.0".to_string();
+
+    let column_options = ParquetColumnOptions {
+        encoding: Some("delta_byte_array".to_string()),
+        ..Default::default()
+    };
+
+    writer_options
+        .column_specific_options
+        .insert("hash".to_string(), column_options);
+
+    df.write_parquet(output.to_str().unwrap(), options, Some(writer_options))
         .await?;
     Ok(())
 }
