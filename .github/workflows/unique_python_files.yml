@@ -13,12 +13,18 @@ jobs:
     if: github.repository == 'pypi-data/data'
     env:
       RUST_BACKTRACE: "1"
+      SCCACHE_GHA_ENABLED: "true"
+      RUSTC_WRAPPER: "sccache"
+
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           cache-on-failure: 'false'
+
+      - name: Run sccache-cache
+        uses: mozilla-actions/sccache-action@v0.0.5
 
       - name: Build optimized release
         uses: actions-rs/cargo@v1
