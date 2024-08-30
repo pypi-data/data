@@ -1,28 +1,28 @@
 [
   {
-    "project_name": "searoute",
-    "project_version": "1.4.1",
-    "project_release": "searoute-1.4.1.tar.gz",
-    "uploaded_on": "2024-06-22 11:06:04.388",
-    "path": "packages/searoute/searoute-1.4.1.tar.gz/searoute-1.4.1/searoute/classes/passages.py",
-    "archive_path": "searoute-1.4.1/searoute/classes/passages.py",
-    "size": 793,
-    "hash": "1KQ\\x08\\xF6#\\x04\\xC7\\x0A\\xA6\\xEDX\\xE9\\xC1>K\\xCD\\xA2\\xD8.",
+    "project_name": "tccli",
+    "project_version": "3.0.1061.1",
+    "project_release": "tccli-3.0.1061.1.tar.gz",
+    "uploaded_on": "2024-02-22 20:12:11.144",
+    "path": "packages/tccli/tccli-3.0.1061.1.tar.gz/tccli-3.0.1061.1/tccli/examples/tat/v20201028/DisableInvoker.md",
+    "archive_path": "tccli-3.0.1061.1/tccli/examples/tat/v20201028/DisableInvoker.md",
+    "size": 237,
+    "hash": "\\xDC\\xF7\\x14\\xAC\\xE4\\x96\\x91R\\xD4 Z\\xF5\\xDC\\x026w\\xD0\\x16\\x01\\x01",
     "skip_reason": "",
-    "lines": 26,
-    "repository": 280
+    "lines": 20,
+    "repository": 258
   },
   {
-    "project_name": "tf-nightly-tpu",
-    "project_version": "2.18.0.dev20240623",
-    "project_release": "tf_nightly_tpu-2.18.0.dev20240623-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "uploaded_on": "2024-06-23 16:22:22.724",
-    "path": "packages/tf-nightly-tpu/tf_nightly_tpu-2.18.0.dev20240623-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl/tensorflow/core/config/__init__.py",
-    "archive_path": "tensorflow/core/config/__init__.py",
-    "size": 0,
-    "hash": "\\xE6\\x9D\\xE2\\x9B\\xB2\\xD1\\xD6CK\\x8B)\\xAEwZ\\xD8\\xC2\\xE4\\x8CS\\x91",
-    "skip_reason": "empty",
+    "project_name": "tf-nightly",
+    "project_version": "2.17.0.dev20240304",
+    "project_release": "tf_nightly-2.17.0.dev20240304-cp310-cp310-macosx_12_0_arm64.whl",
+    "uploaded_on": "2024-03-04 18:11:54.917",
+    "path": "packages/tf-nightly/tf_nightly-2.17.0.dev20240304-cp310-cp310-macosx_12_0_arm64.whl/tensorflow/python/grappler/_pywrap_tf_cluster.so",
+    "archive_path": "tensorflow/python/grappler/_pywrap_tf_cluster.so",
+    "size": 1423432,
+    "hash": "\\xB2kP\\xA4Y)\\xBB\\xA1\\xCF\\xF2oo.\\x0A\\xB9I5,\\xEC\\xA2",
+    "skip_reason": "binary",
     "lines": 0,
-    "repository": 280
+    "repository": 260
   }
 ]
