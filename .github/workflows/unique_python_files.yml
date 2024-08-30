@@ -16,15 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          toolchain: stable
-          override: true
-
-      - uses: Swatinem/rust-cache@v2
-        with:
-          prefix-key: unique-python-files-
+          cache-on-failure: 'false'
 
       - name: Build optimized release
         uses: actions-rs/cargo@v1

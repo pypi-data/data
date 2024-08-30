@@ -117,11 +117,9 @@ jobs:
         with:
           name: groups
 
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          toolchain: stable
-          override: true
+          cache-on-failure: 'false'
 
       - name: Install parquet cli from crates.io
         uses: baptiste0928/cargo-install@v3
