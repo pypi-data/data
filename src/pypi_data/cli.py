@@ -193,7 +193,7 @@ def run_sql(
         conn.execute(f"SET preserve_insertion_order=false;")
         if not no_limits:
             limits = f"PRAGMA threads={threads}; PRAGMA memory_limit='{memory}GB';"
-            conn.executemany(limits)
+            conn.executemany(limits, parameters=[[], []])
 
     print(sql)
     print("\n\n\n")
