@@ -26,11 +26,7 @@ jobs:
       - name: Run sccache-cache
         uses: mozilla-actions/sccache-action@v0.0.5
 
-      - name: Build optimized release
-        uses: actions-rs/cargo@v1
-        with:
-          command: build
-          args: --profile=optimized
+      - run: cargo build --profile=optimized
         env:
           RUSTFLAGS: '-C target-cpu=native'
 
