@@ -15,7 +15,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - uses: robinraju/release-downloader@v1.10
+      - uses: robinraju/release-downloader@v1.11
         with:
           repository: "pypi-data/toolchain"
           fileName: "pypi-data-toolchain.tar.gz"
@@ -25,7 +25,7 @@ jobs:
 
       - name: Generate token
         id: generate_token
-        uses: pypi-data/github-app-token@v1
+        uses: pypi-data/github-app-token@v2
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
