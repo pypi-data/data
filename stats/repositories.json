@@ -1129,12 +1129,12 @@
     "index": 302,
     "stats": {
       "earliest_package": "2024-10-14T21:30:16.312065Z",
-      "latest_package": "2024-10-15T22:31:39.111697Z",
-      "total_packages": 12830,
-      "done_packages": 8038
+      "latest_package": "2024-10-16T22:33:10.814230Z",
+      "total_packages": 25555,
+      "done_packages": 21590
     },
-    "percent_done": 62,
-    "size": 458360832,
+    "percent_done": 84,
+    "size": 1186228224,
     "url": "https://github.com/pypi-data/pypi-mirror-302",
     "packages_url": "https://github.com/pypi-data/pypi-mirror-302/tree/code/packages",
     "projects": {}
