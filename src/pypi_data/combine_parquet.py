@@ -50,7 +50,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
 
             with pq.ParquetWriter(roll_up_path,
                                   compression="zstd",
-                                  compression_level=6,
+                                  compression_level=7,
                                   write_statistics=True,
                                   schema=first_buffer.schema) as writer:
                 log.info(f"Writing {repo_file}")
