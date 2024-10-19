@@ -4,21 +4,30 @@ import httpx
 import pyarrow as pa
 import pyarrow.parquet as pq
 import structlog
+from pyarrow import RecordBatch
 
 from pypi_data.datasets import CodeRepository
 
 log = structlog.get_logger()
 
-TARGET_SIZE = 1024 * 1024 * 1024 * 1.5  # 1.5 GB
+TARGET_SIZE = 1024 * 1024 * 1024 * 1.8  # 1.5 GB
 
 
-def append_pq(writer: pq.ParquetWriter, repo_file: Path, roll_up_path: Path) -> bool:
-    log.info(f"Writing {repo_file}")
-    writer.write_table(pq.read_table(repo_file, memory_map=True))
+def append_buffer(writer: pq.ParquetWriter, batch: pa.RecordBatch, roll_up_path: Path) -> bool:
+    log.info(f"Writing batch: {batch.num_rows=} {batch.nbytes / 1024 / 1024:.1f} MB")
+    writer.write_batch(batch)
     writer.file_handle.flush()
     size = roll_up_path.stat().st_size
     log.info(f"Got size: {size / 1024 / 1024:.1f} MB")
     return size >= TARGET_SIZE
+
+
+async def fill_buffer(buffer: list[RecordBatch], client: httpx.AsyncClient, repo: CodeRepository, path: Path):
+    log.info(f"Downloading {repo.dataset_url}")
+    await repo.download_dataset(client, path)
+    log.info(f'Downloaded, reading {path}')
+    table = pq.read_table(path, memory_map=True).combine_chunks()
+    buffer.extend(table.to_batches(max_chunksize=2_000_000))
 
 
 async def combine_parquet(repositories: list[CodeRepository], directory: Path):
@@ -28,27 +37,32 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
     repo_file = directory / f"repo.parquet"
 
     roll_up_count = 0
+    buffer: list[RecordBatch] = []
 
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
             repo = repositories.pop(0)
-            await repo.download_dataset(client, repo_file)
-            schema = pq.read_schema(repo_file)
+            await fill_buffer(buffer, client, repo, repo_file)
 
             roll_up_path = directory / f"merged-{roll_up_count}.parquet"
+
+            first_buffer = buffer.pop(0)
 
             with pq.ParquetWriter(roll_up_path,
                                   compression="zstd",
                                   compression_level=6,
                                   write_statistics=True,
-                                  schema=schema) as writer:
+                                  schema=first_buffer.schema) as writer:
                 log.info(f"Writing {repo_file}")
-                append_pq(writer, repo_file, roll_up_path)
+                append_buffer(writer, first_buffer, roll_up_path)
 
-                while repositories:
-                    repo = repositories.pop(0)
-                    await repo.download_dataset(client, repo_file)
-                    if append_pq(writer, repo_file, roll_up_path):
+                while buffer or repositories:
+                    if not buffer:
+                        repo = repositories.pop(0)
+                        await fill_buffer(buffer, client, repo, repo_file)
+
+                    batch = buffer.pop(0)
+                    if append_buffer(writer, batch, roll_up_path):
                         break
 
             roll_up_count += 1

@@ -99,7 +99,6 @@ class CodeRepository(pydantic.BaseModel):
             raise RuntimeError(f'{self.index_url} failed to parse: {len(response.content)=}') from e
 
     async def download_dataset(self, client: httpx.AsyncClient, output: Path):
-        log.info(f"Downloading {self.dataset_url}")
         async with client.stream("GET", str(self.dataset_url)) as resp:
             with output.open("wb") as f:
                 async for buffer in resp.aiter_bytes():
