@@ -15,11 +15,12 @@ TARGET_SIZE = 1024 * 1024 * 1024 * 1.8  # 1.8 GB
 
 
 def append_buffer(writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Path) -> bool:
-    log.info(f"Writing batch: {batch.num_rows=} {batch.nbytes / 1024 / 1024:.1f} MB")
     writer.write_batch(batch)
     writer.file_handle.flush()
     size = roll_up_path.stat().st_size
-    log.info(f"Got size: {size / 1024 / 1024:.1f} MB")
+    log.info(f"Wrote batch: {batch.num_rows=} "
+             f"Input: {batch.nbytes / 1024 / 1024:.1f} MB "
+             f"Output: {size / 1024 / 1024:.1f} MB")
     return size >= TARGET_SIZE
 
 
