@@ -21,6 +21,7 @@ def finish_batch(merged_path: Path, batch: list[Path]):
 
 
 async def combine_parquet(repositories: list[CodeRepository], directory: Path):
+    directory.mkdir(exist_ok=True)
     combined_file = directory / "combined.parquet"
     temp_combined = directory / "temporary.parquet"
     repo_file = directory / f"repo.parquet"
