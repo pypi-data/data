@@ -1,9 +1,12 @@
 import enum
 import os
+import shutil
 import sys
 import tempfile
 import threading
 import time
+from http import HTTPStatus
+
 import duckdb
 import json
 from pathlib import Path
@@ -68,8 +71,13 @@ def group_by_size(github: Github, target_size: int) -> Iterable[list[tuple[int, 
         total_size = 0
         for (url, response) in stat_results:
             response: requests.Response
-            if response.status_code == 404:
-                continue
+            try:
+                response.raise_for_status()
+            except requests.HTTPError as e:
+                # Fucking DMCA takedowns...
+                if e.response.status_code in (HTTPStatus.NOT_FOUND, HTTPStatus.UNAVAILABLE_FOR_LEGAL_REASONS):
+                    continue
+                raise
             content_length = int(response.headers["content-length"])
             index = int(url.removeprefix('https://github.com/pypi-data/pypi-mirror-').split('/')[0])
             names.append({
@@ -92,7 +100,8 @@ def group_index_urls(github_token: GithubToken,
     g = github_client(github_token)
     outputs = []
     group_dir = output_path / "groups"
-    group_dir.mkdir()
+    shutil.rmtree(group_dir)
+    group_dir.mkdir(exist_ok=False)
 
     for idx, paths in enumerate(group_by_size(g, target_size=target_size)):
         name = str(idx)
