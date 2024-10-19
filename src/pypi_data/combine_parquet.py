@@ -13,11 +13,12 @@ log = structlog.get_logger()
 TARGET_SIZE = 1024 * 1024 * 1024 * 1.5  # 1.5 GB
 
 
-def finish_batch(merged_path: Path, batch: list[Path]):
-    log.info(f"Files merged to {merged_path.stat().st_size / 1024 / 1024 / 1024:.1f} GB",
-             files=batch)
-    for p in batch:
-        p.unlink()
+def finish_batch(combined_file: Path, roll_up_count: int, directory: Path, repo_file: Path, temp_combined: Path) -> int:
+    merged = combined_file.rename(directory / f"merged-{roll_up_count}.parquet")
+    log.info(f"Created merged file {roll_up_count} with size {merged.stat().st_size / 1024 / 1024:.1f} MB")
+    repo_file.rename(combined_file)
+    temp_combined.unlink()
+    return roll_up_count + 1
 
 
 async def combine_parquet(repositories: list[CodeRepository], directory: Path):
@@ -41,11 +42,10 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
                 repo_file.unlink()
             else:
                 # Too big! Roll over
-                merged = combined_file.rename(directory / f"merged-{roll_up_count}.parquet")
-                log.info(f"Created merged file {roll_up_count} with size {merged.stat().st_size / 1024 / 1024:.1f} MB")
-                repo_file.rename(combined_file)
-                temp_combined.unlink()
-                roll_up_count += 1
+                roll_up_count = finish_batch(combined_file, roll_up_count, directory, repo_file, temp_combined)
+
+        if repo_file.exists():
+            finish_batch(combined_file, roll_up_count, directory, repo_file, temp_combined)
 
 
 def append_parquet_file(output: Path, paths: list[Path]) -> Path:
