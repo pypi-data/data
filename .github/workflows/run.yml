@@ -7,7 +7,7 @@ on:
   schedule:
     - cron: "0 3 * * *"
 
-concurrency: data
+#concurrency: data
 
 name: Build data
 jobs:
@@ -50,6 +50,7 @@ jobs:
         id: create-release
         uses: shogo82148/actions-create-release@v1
         with:
+          overwrite: true
           draft: true
           release_name: ${{ steps.version.outputs.tag_name }}
           tag_name: ${{ steps.version.outputs.tag_name }}
@@ -90,11 +91,11 @@ jobs:
         with:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: ${{ github.workspace }}/dataset/dataset-*.parquet
-
-      - uses: EndBug/add-and-commit@v9
-        with:
-          add: links/*
-          message: "Add repository URLs"
-          push: true
-          fetch: true
-          pull: '--rebase --autostash'
+#
+#      - uses: EndBug/add-and-commit@v9
+#        with:
+#          add: links/*
+#          message: "Add repository URLs"
+#          push: true
+#          fetch: true
+#          pull: '--rebase --autostash'
