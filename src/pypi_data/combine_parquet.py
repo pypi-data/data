@@ -90,11 +90,3 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
             )
 
             roll_up_count += 1
-
-def append_parquet_file(output: Path, paths: list[Path]) -> Path:
-    table = pa.concat_tables(
-        (pq.read_table(str(p), memory_map=True) for p in paths if p.exists()),
-        promote_options="none"
-    )
-    pq.write_table(table, str(output), compression="zstd", compression_level=7)
-    return output
