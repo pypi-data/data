@@ -100,8 +100,9 @@ def group_index_urls(github_token: GithubToken,
     g = github_client(github_token)
     outputs = []
     group_dir = output_path / "groups"
-    shutil.rmtree(group_dir)
-    group_dir.mkdir(exist_ok=False)
+    if group_dir.exists():
+        shutil.rmtree(group_dir)
+    group_dir.mkdir(exist_ok=False, parents=True)
 
     for idx, paths in enumerate(group_by_size(g, target_size=target_size)):
         name = str(idx)
