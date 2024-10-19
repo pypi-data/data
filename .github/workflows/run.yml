@@ -73,11 +73,8 @@ jobs:
           fetch: true
           pull: '--rebase --autostash'
 
+      - name: Create dataset
+        run: uv run pypi-data merge-datasets links/repositories.json dataset/
 
-#
-#      - env:
-#          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-#        run: |
-#          uv run pypi-data print-git-urls > links/repositories.txt
-#          uv run pypi-data print-git-urls --ssh-urls > links/repositories_ssh.txt
-#
+      - name: Debug
+        run: ls -la dataset/

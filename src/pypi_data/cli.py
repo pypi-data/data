@@ -120,10 +120,7 @@ def create_links(repo_path: Path):
 @app.command()
 def merge_datasets(repo_path: Path, output: Path):
     with open_path(repo_path, mode="rb") as fd:
-        repos = [
-            CodeRepository.model_validate_json(line).without_index()
-            for line in fd
-        ]
+        repos = Repos.model_validate_json(fd.read()).root
     asyncio.run(combine_parquet(repos, output))
 
 
