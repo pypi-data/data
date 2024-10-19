@@ -2,7 +2,7 @@ import hashlib
 from pathlib import Path
 
 import httpx
-import pyarrow as pa
+import pyarrow
 import pyarrow.parquet as pq
 import structlog
 from pyarrow import RecordBatch
@@ -11,7 +11,7 @@ from pypi_data.datasets import CodeRepository
 
 log = structlog.get_logger()
 
-TARGET_SIZE = 1024 * 1024 * 1024 * 1.7  # 1.5 GB
+TARGET_SIZE = 1024 * 1024 * 1024 * 1.8  # 1.8 GB
 
 
 def append_buffer(writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Path) -> bool:
@@ -23,7 +23,7 @@ def append_buffer(writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Pa
     return size >= TARGET_SIZE
 
 
-async def fill_buffer(buffer: list[tuple[tuple[int, range], RecordBatch]], client: httpx.AsyncClient,
+async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client: httpx.AsyncClient,
                       repo: CodeRepository,
                       path: Path):
     log.info(f"Downloading {repo.dataset_url}")
@@ -33,14 +33,19 @@ async def fill_buffer(buffer: list[tuple[tuple[int, range], RecordBatch]], clien
 
     start = 0
     for idx, batch in enumerate(table.to_batches(max_chunksize=2_000_000)):
+        batch: RecordBatch
+        digest = hashlib.sha256()
+        for item in batch.column("path").cast(pyarrow.large_binary()).to_pylist():
+            digest.update(item)
+        digest = digest.hexdigest()
         buffer.append(
-            ((repo.number, range(start, start + batch.num_rows)), batch)
+            ((repo.number, digest), batch)
         )
         start += batch.num_rows
 
 
-def hash_parquet_keys(keys: list[tuple[int, range]]) -> str:
-    combined = "-".join(f"{number}-{rng.start}-{rng.stop}" for (number, rng) in keys)
+def hash_parquet_keys(keys: list[tuple[int, str]]) -> str:
+    combined = "-".join(f"{number}-{digest}" for (number, digest) in keys)
     return hashlib.sha256(combined.encode()).hexdigest()
 
 
@@ -49,7 +54,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
     repo_file = directory / f"repo.parquet"
 
     roll_up_count = 0
-    buffer: list[tuple[tuple[int, range], RecordBatch]] = []
+    buffer: list[tuple[tuple[int, str], RecordBatch]] = []
 
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
