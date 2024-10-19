@@ -57,7 +57,7 @@ jobs:
       - name: Generate Repo Metadata
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: uv run pypi-data load-repos repos.jsonl.zst  --limit=100
+        run: uv run pypi-data load-repos repos.jsonl.zst
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
