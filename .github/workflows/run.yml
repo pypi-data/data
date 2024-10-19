@@ -31,7 +31,7 @@ jobs:
 
       - name: Generate token
         id: generate_token
-        uses: pypi-data/github-app-token@v1
+        uses: pypi-data/github-app-token@v2
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
