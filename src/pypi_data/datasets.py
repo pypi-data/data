@@ -70,8 +70,8 @@ class CodeRepository(pydantic.BaseModel):
         async for attempt in AsyncRetrying(stop=stop_after_attempt(3),
                                            wait=wait_random_exponential(multiplier=1, max=4)):
             with attempt:
-                response = await client.head(str(url), headers={'Accept-Encoding': 'gzip'},
-                                             follow_redirects=follow_redirects)
+                response = await client.get(str(url), headers={'Accept-Encoding': 'gzip'},
+                                            follow_redirects=follow_redirects)
                 try:
                     response.raise_for_status()
                 except httpx.HTTPStatusError as e:
@@ -93,7 +93,10 @@ class CodeRepository(pydantic.BaseModel):
         response = await self._make_request(client, self.index_url)
         if response is None:
             return self.model_copy()
-        return self.model_copy(update={'index': RepositoryIndex.model_validate_json(response.content)})
+        try:
+            return self.model_copy(update={'index': RepositoryIndex.model_validate_json(response.content)})
+        except Exception as e:
+            raise RuntimeError(f'{self.index_url} failed to parse: {len(response.content)=}') from e
 
     async def download_dataset(self, client: httpx.AsyncClient, output: Path):
         log.info(f"Downloading {self.dataset_url}")
