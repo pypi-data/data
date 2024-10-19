@@ -16,23 +16,18 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version-file: "pyproject.toml"
           cache: pip
 
-      - name: Set up uv
-        # Install latest uv version using the installer
-        run: curl -LsSf https://astral.sh/uv/install.sh | sh
-
-      - name: Restore uv cache
-        uses: actions/cache@v4
-        with:
-          path: /tmp/.uv-cache
-          key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
-          restore-keys: |
-            uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
-            uv-${{ runner.os }}      
+      - name: Install deps
+        run: uv sync --frozen
 
       - name: Generate token
         id: generate_token
@@ -41,41 +36,10 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
-      - name: Install deps
-        run: uv sync --frozen
-
-      - env:
+      - name: Generate Repo Metadata
+        env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: |
-          uv run pypi-data print-git-urls > links/repositories.txt
-          uv run pypi-data print-git-urls --ssh-urls > links/repositories_ssh.txt
-
-      - uses: EndBug/add-and-commit@v9
-        with:
-          add: |
-            links/repositories.txt
-            links/repositories_ssh.txt
-          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
-          author_name: "commit-bot"
-          message: "Add repository URLs"
-          push: true
-          fetch: true
-          pull: '--rebase --autostash'
-
-      - env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        id: groups
-        name: Create groups
-        run: |
-          mkdir output/
-          uv run pypi-data group-index-urls output/
-          echo "matrix=$(cat output/groups.json)" >> "$GITHUB_OUTPUT"
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: groups
-          path: output/groups/
-          retention-days: 1
+        run: uv run pypi-data load-repos repos.json.zstd
 
       - name: "Set current date as env variable"
         run: |
@@ -91,131 +55,28 @@ jobs:
           tag_name: ${{ steps.version.outputs.tag_name }}
           commitish: ${{ github.sha }}
 
-      - name: Release URL
-        run: echo ${{ steps.create-release.html_url }}
-
-      - name: Minimize uv cache
-        run: uv cache prune --ci
-
-    outputs:
-      matrix: ${{ steps.groups.outputs.matrix }}
-      upload_url: ${{ steps.create-release.outputs.upload_url }}
-      release_id: ${{ steps.create-release.outputs.id }}
-
-  combine:
-    needs: [generate-matrix]
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        index: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
-    steps:
-      - name: Maximize build space
-        uses: easimon/maximize-build-space@master
-        with:
-          remove-dotnet: 'true'
-          remove-android: 'true'
-          remove-haskell: 'true'
-          remove-codeql: 'true'
-          remove-docker-images: 'true'
-
-      - name: checkout
-        uses: actions/checkout@v4
-
-      - uses: actions/download-artifact@v4
-        with:
-          name: groups
-
-      - uses: actions-rust-lang/setup-rust-toolchain@v1
-        with:
-          cache-on-failure: 'false'
-
-      - name: Install parquet cli from crates.io
-        uses: baptiste0928/cargo-install@v3
-        with:
-          crate: parquet
-          features: cli
-
-      - name: Download links
-        run: cat ${{ matrix.index }} | jq -rc '.[]'
-
-      - name: Debug
-        run: |
-          echo "Links for ${{ matrix.index }}" 
-          cat ${{ matrix.index }} | jq -rc '.[] | [.name, .id] | @tsv'
-
-      - name: Download
-        run: |
-          mkdir input/
-          cat ${{ matrix.index }} | jq -rc '.[] | [.name, .id] | @tsv' | parallel --colsep '\t' wget --tries=2 -nv -O input/{2}.parquet {1}
-
-      - run: ls -la ${{ github.workspace }}/input/
-
-      - name: Combine
-        run: parquet-concat ${{ github.workspace }}/merged.parquet ${{ github.workspace }}/input/*.parquet
-
-      - name: Merged size
-        run: du -hs ${{ github.workspace }}/merged.parquet
-
-      - name: Rewrite
-        run: |
-          parquet-rewrite \
-            --compression=zstd \
-            --writer-version=2.0 \
-            --dictionary-enabled=true \
-            --statistics-enabled=page \
-            --bloom-filter-enabled=true \
-            --bloom-filter-fpp 0.2 \
-            --input=${{ github.workspace }}/merged.parquet \
-            --output=${{ github.workspace }}/output.parquet 
-
-      - name: Output size
-        run: du -hs ${{ github.workspace }}/output.parquet
-
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
         with:
           upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
-          asset_path: ${{ github.workspace }}/output.parquet
-          asset_name: index-${{ matrix.index }}.parquet
+          asset_path: ${{ github.workspace }}/repos.json.zstd
+          asset_name: repos.json.zstd
 
-  makepublic:
-    needs: [generate-matrix, combine]
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-
-      - name: Publish release
-        uses: StuYarrow/publish-release@v1.1.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          id: ${{ needs.generate-matrix.outputs.release_id }}
-
-      - name: Get download links
-        id: get_download_links
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const response = await github.rest.repos.listReleaseAssets({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              release_id: ${{ needs.generate-matrix.outputs.release_id }},
-            });
-            const assets = response.data;
-            // Save the download links to a file
-            require('fs').writeFileSync('links/dataset.txt', assets.map(asset => asset.browser_download_url).join('\n'));
-
-      - run: cat links/dataset.txt
-
-      - uses: EndBug/add-and-commit@v9
-        with:
-          add: 'links/dataset.txt'
-          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
-          author_name: "commit-bot"
-          message: "Add download links for asset ${{ needs.generate-matrix.outputs.release_id }}"
-          push: true
-          fetch: true
-          pull: '--rebase --autostash'
+#
+#      - env:
+#          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+#        run: |
+#          uv run pypi-data print-git-urls > links/repositories.txt
+#          uv run pypi-data print-git-urls --ssh-urls > links/repositories_ssh.txt
+#
+#      - uses: EndBug/add-and-commit@v9
+#        with:
+#          add: |
+#            links/repositories.txt
+#            links/repositories_ssh.txt
+#          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+#          author_name: "commit-bot"
+#          message: "Add repository URLs"
+#          push: true
+#          fetch: true
+#          pull: '--rebase --autostash'
