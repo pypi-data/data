@@ -88,7 +88,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
             )
 
             log.info(
-                f"Finished batch {roll_up_count}, {len(keys)} keys, {final_path.name=} {final_path.stat().st_size / 1024 / 1024:.1f} MB"
+                f"Finished batch {roll_up_count}, {len(keys)} batches, {final_path.name=} {final_path.stat().st_size / 1024 / 1024:.1f} MB"
             )
 
             roll_up_count += 1
