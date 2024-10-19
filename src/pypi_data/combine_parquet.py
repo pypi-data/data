@@ -24,6 +24,7 @@ TARGET_SIZE = 1024 * 1024 * 1024 * 1.5  # 1.5 GB
 def append_pq(writer: pq.ParquetWriter, repo_file: Path, fd: BinaryIO, roll_up_path: Path) -> bool:
     log.info(f"Writing {repo_file}")
     writer.write_table(pq.read_table(repo_file, memory_map=True))
+    writer.file_handle.fush()
     fd.flush()
     size = roll_up_path.stat().st_size
     log.info(f"Got size: {size / 1024 / 1024:.1f} MB")
