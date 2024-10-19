@@ -84,7 +84,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
 
             hashed_keys = hash_parquet_keys(keys)
             final_path = roll_up_path.rename(
-                directory / f"merged-{roll_up_count}-{hashed_keys[:6]}.parquet"
+                directory / f"dataset-{hashed_keys[:8]}.parquet"
             )
 
             log.info(
