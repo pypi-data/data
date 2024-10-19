@@ -18,6 +18,14 @@ jobs:
       packages: write
 
     steps:
+      - name: Max build space
+        run: |
+          rm -rf /usr/share/dotnet/ &
+          rm -rf /usr/local/lib/android/ &
+          rm -rf /opt/ghc/ &
+          rm -rf /opt/hostedtoolcache/CodeQL/ &
+          sudo docker image prune --all --force &
+
       - name: checkout
         uses: actions/checkout@v4
 
@@ -70,14 +78,6 @@ jobs:
 
       - name: Remove repos.json.zst
         run: rm repos.jsonl.zst
-
-      - name: Max build space
-        run: |
-          rm -rf /usr/share/dotnet/ &
-          rm -rf /usr/local/lib/android/ &
-          rm -rf /opt/ghc/ &
-          rm -rf /opt/hostedtoolcache/CodeQL/ &
-          sudo docker image prune --all --force &
 
       - name: Create dataset
         run: uv run pypi-data merge-datasets links/repositories.json dataset/
