@@ -86,7 +86,7 @@ async def load_indexes(repositories: list[CodeRepository], output: BinaryIO, con
 
 
 @app.command()
-def create_links(github_token: GithubToken, repo_path: Path):
+def create_links(repo_path: Path):
     log.info(f'Reading repos from {repo_path}')
     with open_path(repo_path, mode="rb") as fd:
         repos = [
