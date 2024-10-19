@@ -71,13 +71,13 @@ jobs:
       - name: Remove repos.json.zst
         run: rm repos.jsonl.zst
 
-      - uses: EndBug/add-and-commit@v9
-        with:
-          add: links/*
-          message: "Add repository URLs"
-          push: true
-          fetch: true
-          pull: '--rebase --autostash'
+#      - uses: EndBug/add-and-commit@v9
+#        with:
+#          add: links/*
+#          message: "Add repository URLs"
+#          push: true
+#          fetch: true
+#          pull: '--rebase --autostash'
 
       - name: Max build space
         run: |
