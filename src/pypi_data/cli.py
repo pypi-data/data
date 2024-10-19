@@ -42,7 +42,6 @@ def github_client(github_token) -> Github:
 
 @contextlib.contextmanager
 def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None, None]:
-    log.info(f'Opening {path} with {mode} - {path.stat().st_size / MB:.2f} MB')
     if path.suffix in (".zst", ".zstd"):
         with ZstdFile(path, mode, level_or_option=6 if mode == "wb" else None) as fd:
             yield fd
@@ -50,6 +49,7 @@ def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None
         with path.open(mode) as fd:
             yield fd
 
+    log.info(f'Finished open_path on {path} with {mode} - {path.stat().st_size / MB:.2f} MB')
 
 @app.command()
 def load_repos(github_token: GithubToken, output: Path, limit: Annotated[Optional[int], typer.Option()] = None):
@@ -121,6 +121,7 @@ def merge_datasets(repo_path: Path, output: Path):
     with open_path(repo_path, mode="rb") as fd:
         repos = Repos.model_validate_json(fd.read()).root
     asyncio.run(combine_parquet(repos, output))
+
 
 #
 #
