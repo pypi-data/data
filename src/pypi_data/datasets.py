@@ -89,11 +89,11 @@ class CodeRepository(pydantic.BaseModel):
             return None
         return response.headers["Location"]
 
-    async def load_index(self, client: httpx.AsyncClient):
+    async def with_index(self, client: httpx.AsyncClient) -> Self:
         response = await self._make_request(client, self.index_url)
         if response is None:
-            return self
-        self.index = RepositoryIndex.model_validate_json(response.content)
+            return self.model_copy()
+        return self.model_copy(update={'index': RepositoryIndex.model_validate_json(response.content)})
 
     async def download_dataset(self, client: httpx.AsyncClient, output: Path):
         async with client.stream("GET", str(self.dataset_url)) as resp:

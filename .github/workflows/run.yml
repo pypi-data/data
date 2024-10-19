@@ -8,10 +8,8 @@ concurrency: data
 
 name: Build data
 jobs:
-  generate-matrix:
+  Build Data:
     runs-on: ubuntu-latest
-    env:
-      UV_CACHE_DIR: /tmp/.uv-cache
     steps:
       - name: checkout
         uses: actions/checkout@v4
@@ -39,7 +37,7 @@ jobs:
       - name: Generate Repo Metadata
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: uv run pypi-data load-repos repos.json.zstd
+        run: uv run pypi-data load-repos repos.jsonl.zst
 
       - name: "Set current date as env variable"
         run: |
@@ -58,9 +56,24 @@ jobs:
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
         with:
-          upload_url: ${{ needs.generate-matrix.outputs.upload_url }}
-          asset_path: ${{ github.workspace }}/repos.json.zstd
-          asset_name: repos.json.zstd
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: ${{ github.workspace }}/repos.jsonl.zst
+          asset_name: repos.jsonl.zst
+
+      - name: Create links
+        run: uv run pypi-data create-links repos.jsonl.zst
+
+      - name: Remove repos.json.zst
+        run: rm repos.jsonl.zst
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: links/*
+          message: "Add repository URLs"
+          push: true
+          fetch: true
+          pull: '--rebase --autostash'
+
 
 #
 #      - env:
@@ -69,14 +82,3 @@ jobs:
 #          uv run pypi-data print-git-urls > links/repositories.txt
 #          uv run pypi-data print-git-urls --ssh-urls > links/repositories_ssh.txt
 #
-#      - uses: EndBug/add-and-commit@v9
-#        with:
-#          add: |
-#            links/repositories.txt
-#            links/repositories_ssh.txt
-#          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
-#          author_name: "commit-bot"
-#          message: "Add repository URLs"
-#          push: true
-#          fetch: true
-#          pull: '--rebase --autostash'
