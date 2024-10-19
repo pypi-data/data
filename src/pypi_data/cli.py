@@ -42,14 +42,13 @@ def github_client(github_token) -> Github:
 
 @contextlib.contextmanager
 def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None, None]:
+    log.info(f'Opening {path} with {mode} - {path.stat().st_size / MB:.2f} MB')
     if path.suffix in (".zst", ".zstd"):
         with ZstdFile(path, mode, level_or_option=6 if mode == "wb" else None) as fd:
             yield fd
     else:
         with path.open(mode) as fd:
             yield fd
-
-    log.info(f'Wrote {path} - {path.stat().st_size / MB:.2f} MB')
 
 
 @app.command()
@@ -123,7 +122,7 @@ def merge_datasets(repo_path: Path, output: Path):
         repos = Repos.model_validate_json(fd.read()).root
     asyncio.run(combine_parquet(repos, output))
 
-
+#
 #
 # @app.command()
 # def output_sql(repo_path: Path, redirects: Annotated[bool, typer.Option()] = False,
@@ -166,24 +165,24 @@ def merge_datasets(repo_path: Path, output: Path):
 #             query += f'\nSETTINGS {settings}'
 #
 #         print(query + ';\n')
-#
-#
-# async def resolve_dataset_redirects(repositories: list[CodeRepository], concurrency: int = 10) -> list[str]:
-#     semaphore = asyncio.Semaphore(concurrency)
-#     async with httpx.AsyncClient() as client:
-#         with tqdm.tqdm(total=len(repositories)) as pbar:
-#             async def _run(r: CodeRepository) -> str | None:
-#                 async with semaphore:
-#                     result = await r.get_temporary_dataset_url(client)
-#                     pbar.update(1)
-#                     return result
-#
-#             async with asyncio.TaskGroup() as tg:
-#                 results = [
-#                     tg.create_task(_run(repo))
-#                     for repo in repositories
-#                 ]
-#             return [r.result() for r in results if r.result() is not None]
+
+
+async def resolve_dataset_redirects(repositories: list[CodeRepository], concurrency: int = 10) -> list[str]:
+    semaphore = asyncio.Semaphore(concurrency)
+    async with httpx.AsyncClient() as client:
+        with tqdm.tqdm(total=len(repositories)) as pbar:
+            async def _run(r: CodeRepository) -> str | None:
+                async with semaphore:
+                    result = await r.get_temporary_dataset_url(client)
+                    pbar.update(1)
+                    return result
+
+            async with asyncio.TaskGroup() as tg:
+                results = [
+                    tg.create_task(_run(repo))
+                    for repo in repositories
+                ]
+            return [r.result() for r in results if r.result() is not None]
 
 
 if __name__ == "__main__":

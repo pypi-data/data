@@ -70,12 +70,12 @@ class CodeRepository(pydantic.BaseModel):
         async for attempt in AsyncRetrying(stop=stop_after_attempt(3),
                                            wait=wait_random_exponential(multiplier=1, max=4)):
             with attempt:
-                response = await client.get(str(url), headers={'Accept-Encoding': 'gzip'},
-                                            follow_redirects=follow_redirects)
+                response = await client.head(str(url), headers={'Accept-Encoding': 'gzip'},
+                                             follow_redirects=follow_redirects)
                 try:
                     response.raise_for_status()
                 except httpx.HTTPStatusError as e:
-                    if e.response.status_code == HTTPStatus.NOT_FOUND:
+                    if e.response.status_code in (HTTPStatus.NOT_FOUND, HTTPStatus.UNAVAILABLE_FOR_LEGAL_REASONS):
                         log.warning(f"URL {url} not found for {self.name}")
                         return None
                     if not follow_redirects and e.response.is_redirect:
@@ -84,10 +84,10 @@ class CodeRepository(pydantic.BaseModel):
         return response
 
     async def get_temporary_dataset_url(self, client: httpx.AsyncClient) -> str | None:
-        response = await self._make_request(client, self.dataset_url, follow_redirects=False)
+        response = await self._make_request(client, self.dataset_url, follow_redirects=True)
         if response is None:
             return None
-        return response.headers["Location"]
+        return response.headers["Content-Length"]
 
     async def with_index(self, client: httpx.AsyncClient) -> Self:
         response = await self._make_request(client, self.index_url)
@@ -96,6 +96,7 @@ class CodeRepository(pydantic.BaseModel):
         return self.model_copy(update={'index': RepositoryIndex.model_validate_json(response.content)})
 
     async def download_dataset(self, client: httpx.AsyncClient, output: Path):
+        log.info(f"Downloading {self.dataset_url}")
         async with client.stream("GET", str(self.dataset_url)) as resp:
             with output.open("wb") as f:
                 async for buffer in resp.aiter_bytes():

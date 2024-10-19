@@ -54,7 +54,7 @@ jobs:
       - name: Generate Repo Metadata
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: uv run pypi-data load-repos repos.jsonl.zst --limit=25
+        run: uv run pypi-data load-repos repos.jsonl.zst
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
@@ -75,6 +75,14 @@ jobs:
           push: true
           fetch: true
           pull: '--rebase --autostash'
+
+      - name: Max build space
+        run: |
+          rm -rf /usr/share/dotnet/ &
+          rm -rf /usr/local/lib/android/ &
+          rm -rf /opt/ghc/ &
+          rm -rf /opt/hostedtoolcache/CodeQL/ &
+          sudo docker image prune --all --force &
 
       - name: Create dataset
         run: uv run pypi-data merge-datasets links/repositories.json dataset/
