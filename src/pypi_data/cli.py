@@ -49,6 +49,8 @@ def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None
         with path.open(mode) as fd:
             yield fd
 
+    log.info(f'Wrote {path} - {path.stat().st_size / MB:.2f} MB')
+
 
 @app.command()
 def load_repos(github_token: GithubToken, output: Path, limit: Annotated[Optional[int], typer.Option()] = None):
