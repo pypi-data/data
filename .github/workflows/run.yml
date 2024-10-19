@@ -22,7 +22,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version-file: "pyproject.toml"
-          cache: pip
 
       - name: Install deps
         run: uv sync --frozen
@@ -48,7 +47,7 @@ jobs:
         id: create-release
         uses: shogo82148/actions-create-release@v1
         with:
-          draft: true
+          draft: false
           release_name: ${{ steps.version.outputs.tag_name }}
           tag_name: ${{ steps.version.outputs.tag_name }}
           commitish: ${{ github.sha }}
