@@ -30,18 +30,6 @@ jobs:
       - name: Install deps
         run: uv sync --frozen
 
-      - name: Generate token
-        id: generate_token
-        uses: pypi-data/github-app-token@v2
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-
-      - name: Generate Repo Metadata
-        env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: uv run pypi-data load-repos repos.jsonl.zst
-
       - name: "Set current date as env variable"
         run: |
           echo "tag_name=$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_OUTPUT
@@ -55,6 +43,18 @@ jobs:
           release_name: ${{ steps.version.outputs.tag_name }}
           tag_name: ${{ steps.version.outputs.tag_name }}
           commitish: ${{ github.sha }}
+
+      - name: Generate token
+        id: generate_token
+        uses: pypi-data/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Generate Repo Metadata
+        env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+        run: uv run pypi-data load-repos repos.jsonl.zst
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
