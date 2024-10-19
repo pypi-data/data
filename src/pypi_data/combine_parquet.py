@@ -10,7 +10,7 @@ from pypi_data.datasets import CodeRepository
 
 log = structlog.get_logger()
 
-TARGET_SIZE = 1024 * 1024 * 1024 * 1.8  # 1.5 GB
+TARGET_SIZE = 1024 * 1024 * 1024 * 1.7  # 1.5 GB
 
 
 def append_buffer(writer: pq.ParquetWriter, batch: pa.RecordBatch, roll_up_path: Path) -> bool:
