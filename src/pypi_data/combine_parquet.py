@@ -40,7 +40,7 @@ async def fill_buffer(buffer: list[tuple[tuple[int, range], RecordBatch]], clien
 
 
 def hash_parquet_keys(keys: list[tuple[int, range]]) -> str:
-    combined = "-".join(f"{number}-{start}-{end}" for number, (start, end) in keys)
+    combined = "-".join(f"{number}-{rng.start}-{rng.stop}" for (number, rng) in keys)
     return hashlib.sha256(combined.encode()).hexdigest()
 
 
