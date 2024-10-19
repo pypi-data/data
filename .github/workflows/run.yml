@@ -61,7 +61,6 @@ jobs:
         with:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: ${{ github.workspace }}/repos.jsonl.zst
-          asset_name: repos.jsonl.zst
 
       - name: Create links
         run: uv run pypi-data create-links repos.jsonl.zst
@@ -82,3 +81,9 @@ jobs:
 
       - name: Debug
         run: ls -la dataset/
+
+      - name: Upload Dataset
+        uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: ${{ github.workspace }}/dataset/merged-*.parquet
