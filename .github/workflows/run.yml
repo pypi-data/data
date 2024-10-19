@@ -57,7 +57,7 @@ jobs:
       - name: Generate Repo Metadata
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: uv run pypi-data load-repos repos.jsonl.zst --limit=50
+        run: uv run pypi-data load-repos repos.jsonl.zst
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
@@ -70,14 +70,6 @@ jobs:
 
       - name: Remove repos.json.zst
         run: rm repos.jsonl.zst
-
-#      - uses: EndBug/add-and-commit@v9
-#        with:
-#          add: links/*
-#          message: "Add repository URLs"
-#          push: true
-#          fetch: true
-#          pull: '--rebase --autostash'
 
       - name: Max build space
         run: |
@@ -98,3 +90,11 @@ jobs:
         with:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: ${{ github.workspace }}/dataset/dataset-*.parquet
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: links/*
+          message: "Add repository URLs"
+          push: true
+          fetch: true
+          pull: '--rebase --autostash'
