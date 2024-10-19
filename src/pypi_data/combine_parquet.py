@@ -33,8 +33,8 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
         for repo in repositories:
             log.info("Downloading dataset", repo=repo.name)
             await repo.download_dataset(client, repo_file)
+            log.info("Merging dataset", repo=repo.name)
             await asyncio.to_thread(append_parquet_file, temp_combined, [combined_file, repo_file])
-
             log.info(f"Merged size: {temp_combined.stat().st_size / 1024 / 1024:.1f} MB")
 
             if temp_combined.stat().st_size < TARGET_SIZE:
