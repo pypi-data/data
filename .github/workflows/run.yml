@@ -80,6 +80,7 @@ jobs:
 
       - name: Upload hishel cache
         uses: actions/cache/save@v4
+        if: steps.hisel-cache.outputs.cache-hit != 'true'
         with:
           path: .hishel.sqlite
           key: ${{ steps.hisel-cache.outputs.cache-primary-key }}
