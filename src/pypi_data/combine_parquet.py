@@ -48,7 +48,6 @@ async def fill_buffer(
     max_buffer_size: int,
     client: httpx.AsyncClient,
     repositories: Deque[CodeRepository],
-    path: Path,
 ) -> bool:
     while repositories:
         buffer_size = buffer_mem_size(buffer)
@@ -59,11 +58,11 @@ async def fill_buffer(
 
         repo = repositories.popleft()
         log.info(f"Downloading {repo.dataset_url}")
-        if await repo.download_dataset(client, path) is False:
+        if (table := await repo.download_dataset(client)) is False:
             log.info(f"Failed to download {repo.dataset_url}")
             continue
-        log.info(f"Downloaded, reading {path}")
-        table = pq.read_table(path, memory_map=True).combine_chunks()
+
+        table = table.combine_chunks()
 
         for idx, batch in enumerate(table.to_batches(max_chunksize=2_500_000)):
             batch: RecordBatch
@@ -83,7 +82,6 @@ def hash_parquet_keys(keys: list[tuple[int, str]]) -> str:
 
 async def combine_parquet(repositories: list[CodeRepository], directory: Path):
     directory.mkdir(exist_ok=True)
-    repo_file = directory / "repo.parquet"
 
     roll_up_count = 0
     buffer: Deque[tuple[tuple[int, str], RecordBatch]] = deque()
@@ -100,9 +98,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
             if (
-                await fill_buffer(
-                    buffer, max_buffer_size, client, repositories, repo_file
-                )
+                await fill_buffer(buffer, max_buffer_size, client, repositories)
                 is False
             ):
                 continue
@@ -122,13 +118,12 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
                 write_statistics=True,
                 schema=first_buffer.schema,
             ) as writer:
-                log.info(f"Writing {repo_file}")
                 append_buffer(fd, writer, first_buffer, roll_up_path)
 
                 while buffer or repositories:
                     if not buffer:
                         res = await fill_buffer(
-                            buffer, max_buffer_size, client, repositories, repo_file
+                            buffer, max_buffer_size, client, repositories
                         )
                         if res is None:
                             continue

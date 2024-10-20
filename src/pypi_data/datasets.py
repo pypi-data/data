@@ -1,9 +1,10 @@
 from datetime import datetime
 from http import HTTPStatus
-from pathlib import Path
 from typing import Self
 
 import httpx
+import pyarrow as pa
+import pyarrow.parquet as pq
 import pydantic
 import structlog
 from github import Github
@@ -119,15 +120,23 @@ class CodeRepository(pydantic.BaseModel):
                 f"{self.index_url} failed to parse: {len(response.content)=}"
             ) from e
 
-    async def download_dataset(self, client: httpx.AsyncClient, output: Path) -> bool:
-        async with client.stream("GET", str(self.dataset_url)) as response:
-            if self.check_response(response, follow_redirects=True) is None:
-                return False
+    async def download_dataset(self, client: httpx.AsyncClient) -> pa.Table | None:
+        response = await self._make_request(client, self.dataset_url)
+        if response is None:
+            return None
+        log.info(
+            f"Loading parquet file with size {len(response.content) / 1024 / 1024:.1f} MB"
+        )
+        return pq.read_table(pa.py_buffer(memoryview(response.content)))
 
-            with output.open("wb") as f:
-                async for buffer in response.aiter_bytes():
-                    f.write(buffer)
-            return True
+        # async with client.stream("GET", str(self.dataset_url)) as response:
+        #     if self.check_response(response, follow_redirects=True) is None:
+        #         return None
+        #
+        #     with output.open("wb") as f:
+        #         async for buffer in response.aiter_bytes():
+        #             f.write(buffer)
+        #     return True
 
     def without_index(self) -> Self:
         return self.model_copy(update={"index": None})
