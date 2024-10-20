@@ -28,7 +28,7 @@ def append_buffer(
     writer.write_batch(batch)
     fd.flush()
     end_size = roll_up_path.stat().st_size
-    written_size = initial_size - end_size
+    written_size = end_size - initial_size
     log.info(
         f"Wrote {batch.num_rows} rows "
         f"Batch Size: {batch.nbytes / 1024 / 1024:.1f} MB "
