@@ -65,7 +65,7 @@ class CodeRepository(pydantic.BaseModel):
             if repo.name.startswith("pypi-mirror-")
         ]
 
-    def check_response(self, response: httpx.Response, follow_redirects: bool):
+    def check_response(self, response: httpx.Response, follow_redirects: bool) -> httpx.Response | None:
         try:
             response.raise_for_status()
         except httpx.HTTPStatusError as e:
@@ -75,6 +75,7 @@ class CodeRepository(pydantic.BaseModel):
             if not follow_redirects and e.response.is_redirect:
                 return e.response
             raise
+        return response
 
     async def _make_request(self, client: httpx.AsyncClient, url: HttpUrl,
                             follow_redirects: bool = True) -> httpx.Response | None:
