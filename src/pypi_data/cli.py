@@ -81,30 +81,30 @@ def load_repos(
         repos = repos[:limit]
 
     repos = asyncio.run(load_indexes(repos))
-    sorted_repos = sorted(repos, key=lambda r: r.number)
+    repos = sorted(repos, key=lambda r: r.number)
 
     log.info("Loaded: writing file")
     with open_path(repos_file, mode="wb") as fd:
-        for repo in repos:
+        for repo in tqdm.tqdm(repos):
             fd.write(repo.model_dump_json().encode("utf-8"))
             fd.write(b"\n")
 
     log.info("Writing links")
 
     (links_path / "dataset.txt").write_text(
-        "\n".join(str(repo.dataset_url) for repo in sorted_repos)
+        "\n".join(str(repo.dataset_url) for repo in repos)
     )
 
     (links_path / "repositories.txt").write_text(
-        "\n".join(str(repo.url) for repo in sorted_repos)
+        "\n".join(str(repo.url) for repo in repos)
     )
 
     (links_path / "repositories_ssh.txt").write_text(
-        "\n".join(str(repo.ssh_url) for repo in sorted_repos)
+        "\n".join(str(repo.ssh_url) for repo in repos)
     )
 
     (links_path / "repositories.json").write_text(
-        Repos([r.without_index() for r in sorted_repos]).model_dump_json(
+        Repos([r.without_index() for r in repos]).model_dump_json(
             indent=2, exclude_none=True
         )
     )
@@ -113,7 +113,7 @@ def load_repos(
 
     package_map: DefaultDict[str, list[PackageIndexPackage]] = defaultdict(list)
 
-    for repo in sorted_repos:
+    for repo in repos:
         for package in repo.index.packages:
             package_map[package.project_name].append(
                 PackageIndexPackage(
@@ -135,7 +135,7 @@ def load_repos(
     log.info("Writing package index")
 
     with open_path(packages_file, mode="wb") as fd:
-        for package_index in packages:
+        for package_index in tqdm.tqdm(packages):
             fd.write(package_index.model_dump_json().encode("utf-8"))
             fd.write(b"\n")
 

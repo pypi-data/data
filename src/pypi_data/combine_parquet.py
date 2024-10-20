@@ -1,5 +1,7 @@
 import hashlib
+from collections import deque
 from pathlib import Path
+from typing import Deque
 
 import httpx
 import pyarrow
@@ -30,15 +32,15 @@ def append_buffer(
 
 
 async def fill_buffer(
-    buffer: list[tuple[tuple[int, str], RecordBatch]],
+    buffer: Deque[tuple[tuple[int, str], RecordBatch]],
     client: httpx.AsyncClient,
-    repositories: list[CodeRepository],
+    repositories: Deque[CodeRepository],
     path: Path,
 ) -> bool:
     for _ in range(FILL_BUFFER_COUNT):
         if not repositories:
             break
-        repo = repositories.pop(0)
+        repo = repositories.popleft()
         log.info(f"Downloading {repo.dataset_url}")
         if await repo.download_dataset(client, path) is False:
             log.info(f"Failed to download {repo.dataset_url}")
@@ -67,7 +69,8 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
     repo_file = directory / "repo.parquet"
 
     roll_up_count = 0
-    buffer: list[tuple[tuple[int, str], RecordBatch]] = []
+    buffer: Deque[tuple[tuple[int, str], RecordBatch]] = deque()
+    repositories: Deque[CodeRepository] = deque(repositories)
 
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
@@ -77,7 +80,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
             roll_up_path = directory / f"merged-{roll_up_count}.parquet"
 
             keys = []
-            first_key, first_buffer = buffer.pop(0)
+            first_key, first_buffer = buffer.popleft()
             keys.append(first_key)
 
             with pq.ParquetWriter(
@@ -98,7 +101,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
                         ):
                             continue
 
-                    key, batch = buffer.pop(0)
+                    key, batch = buffer.popleft()
                     keys.append(key)
                     if append_buffer(writer, batch, roll_up_path):
                         break
