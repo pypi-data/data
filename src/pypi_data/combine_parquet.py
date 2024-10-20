@@ -36,7 +36,7 @@ def append_buffer(
 
 
 def buffer_mem_size(buffer: Deque[tuple[tuple[int, str], RecordBatch]]) -> int:
-    return sum(batch.get_total_buffer_size() for (_, _), batch in buffer)
+    return sum(batch.nbytes for (_, _), batch in buffer)
 
 
 def buffer_at_capacity(size: int) -> bool:
