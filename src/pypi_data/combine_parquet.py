@@ -24,15 +24,19 @@ def append_buffer(
     batch: RecordBatch,
     roll_up_path: Path,
 ) -> bool:
+    initial_size = roll_up_path.stat().st_size
     writer.write_batch(batch)
     fd.flush()
-    size = roll_up_path.stat().st_size
+    end_size = roll_up_path.stat().st_size
+    written_size = initial_size - end_size
     log.info(
-        f"Wrote batch: {batch.num_rows=} "
-        f"Input: {batch.nbytes / 1024 / 1024:.1f} MB "
-        f"Output: {size / 1024 / 1024:.1f} MB"
+        f"Wrote {batch.num_rows} rows "
+        f"Batch Size: {batch.nbytes / 1024 / 1024:.1f} MB "
+        f"Initial Size: {initial_size / 1024 / 1024:.1f} MB "
+        f"End Size: {end_size / 1024 / 1024:.1f} MB "
+        f"Written: {written_size / 1024 / 1024:.1f} MB"
     )
-    return size >= TARGET_SIZE
+    return end_size >= TARGET_SIZE
 
 
 def buffer_mem_size(buffer: Deque[tuple[tuple[int, str], RecordBatch]]) -> int:
