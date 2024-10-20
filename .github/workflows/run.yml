@@ -106,10 +106,23 @@ jobs:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: ${{ github.workspace }}/dataset/dataset-*.parquet
 
-      - name: Publish release
-        uses: StuYarrow/publish-release@v1.1.2
+      - name: Publish Draft Release
+        uses: actions/github-script@v7
         with:
-          id: ${{ steps.create-release.outputs.id }}
+          script: |
+            const releaseId = "${{ steps.create-release.outputs.id }}";
+            const response = await github.rest.repos.updateRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: releaseId,
+              draft: false
+            });
+            
+            if (response.status === 200) {
+              core.info(`Release ${releaseId} successfully published.`);
+            } else {
+              core.setFailed(`Failed to publish release ${releaseId}.`);
+            }
 
       - name: Get download links
         id: get_download_links
