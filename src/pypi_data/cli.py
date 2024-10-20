@@ -43,7 +43,7 @@ def github_client(github_token) -> Github:
 @contextlib.contextmanager
 def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None, None]:
     if path.suffix in (".zst", ".zstd"):
-        with ZstdFile(path, mode, level_or_option=6 if mode == "wb" else None) as fd:
+        with ZstdFile(path, mode, level_or_option=9 if mode == "wb" else None) as fd:
             yield fd
     else:
         with path.open(mode) as fd:
