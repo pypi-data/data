@@ -139,6 +139,9 @@ jobs:
             const urls = assets.filter(asset => asset.name.endsWith(".parquet")).map(asset => asset.browser_download_url)
             // Save the download links to a file
             require('fs').writeFileSync('links/dataset.txt', urls.join('\n'));
+            
+            const jsonUrls = assets.filter(asset => asset.name == "repos-with-packages.jsonl.gz").map(asset => asset.browser_download_url)
+            require('fs').writeFileSync('links/repositories-with-packages.txt', jsonUrls.join('\n'));
 
       - uses: EndBug/add-and-commit@v9
         with:
