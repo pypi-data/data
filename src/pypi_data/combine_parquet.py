@@ -25,27 +25,32 @@ def append_buffer(writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Pa
 
 
 async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client: httpx.AsyncClient,
-                      repo: CodeRepository,
+                      repositories: list[CodeRepository],
                       path: Path) -> bool:
-    log.info(f"Downloading {repo.dataset_url}")
-    if await repo.download_dataset(client, path) is False:
-        log.info(f"Failed to download {repo.dataset_url}")
-        return False
-    log.info(f'Downloaded, reading {path}')
-    table = pq.read_table(path, memory_map=True).combine_chunks()
+    for _ in range(4):
+        if not repositories:
+            break
+        repo = repositories.pop(0)
+        log.info(f"Downloading {repo.dataset_url}")
+        if await repo.download_dataset(client, path) is False:
+            log.info(f"Failed to download {repo.dataset_url}")
+            continue
+        log.info(f'Downloaded, reading {path}')
+        table = pq.read_table(path, memory_map=True).combine_chunks()
 
-    start = 0
-    for idx, batch in enumerate(table.to_batches(max_chunksize=2_000_000)):
-        batch: RecordBatch
-        digest = hashlib.sha256()
-        for item in batch.column("path").cast(pyarrow.large_binary()).to_pylist():
-            digest.update(item)
-        digest = digest.hexdigest()
-        buffer.append(
-            ((repo.number, digest), batch)
-        )
-        start += batch.num_rows
-    return True
+        start = 0
+        for idx, batch in enumerate(table.to_batches(max_chunksize=2_000_000)):
+            batch: RecordBatch
+            digest = hashlib.sha256()
+            for item in batch.column("path").cast(pyarrow.large_binary()).to_pylist():
+                digest.update(item)
+            digest = digest.hexdigest()
+            buffer.append(
+                ((repo.number, digest), batch)
+            )
+            start += batch.num_rows
+
+    return bool(buffer)
 
 
 def hash_parquet_keys(keys: list[tuple[int, str]]) -> str:
@@ -62,7 +67,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
 
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
-            if await fill_buffer(buffer, client, repositories.pop(0), repo_file) is False:
+            if await fill_buffer(buffer, client, repositories, repo_file) is False:
                 continue
 
             roll_up_path = directory / f"merged-{roll_up_count}.parquet"
@@ -81,7 +86,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
 
                 while buffer or repositories:
                     if not buffer:
-                        if await fill_buffer(buffer, client, repositories.pop(0), repo_file) is None:
+                        if await fill_buffer(buffer, client, repositories, repo_file) is None:
                             continue
 
                     key, batch = buffer.pop(0)

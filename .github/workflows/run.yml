@@ -66,19 +66,19 @@ jobs:
       - name: Generate Repo Metadata
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: uv run pypi-data load-repos repos-with-packages.jsonl.zst
+        run: uv run pypi-data load-repos repos-with-packages.jsonl.gz
 
       - name: Upload Assets
         uses: shogo82148/actions-upload-release-asset@v1
         with:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
-          asset_path: ${{ github.workspace }}/repos-with-packages.jsonl.zst
+          asset_path: ${{ github.workspace }}/repos-with-packages.jsonl.gz
 
       - name: Create links
-        run: uv run pypi-data create-links repos-with-packages.jsonl.zst
+        run: uv run pypi-data create-links repos-with-packages.jsonl.gz
 
-      - name: Remove repos-with-packages
-        run: rm repos-with-packages
+      - name: Remove repos-with-packages.jsonl.gz
+        run: rm repos-with-packages.jsonl.gz
 
       - name: Create dataset
         run: uv run pypi-data merge-datasets links/repositories.json dataset/

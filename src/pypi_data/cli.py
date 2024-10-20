@@ -1,5 +1,6 @@
 import asyncio
 import contextlib
+import gzip
 from pathlib import Path
 from typing import Annotated, Iterable, Optional, BinaryIO, Generator, Literal
 
@@ -45,11 +46,15 @@ def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None
     if path.suffix in (".zst", ".zstd"):
         with ZstdFile(path, mode, level_or_option=9 if mode == "wb" else None) as fd:
             yield fd
+    elif path.suffix == ".gz":
+        with gzip.open(path, mode) as fd:
+            yield fd
     else:
         with path.open(mode) as fd:
             yield fd
 
     log.info(f'Finished open_path on {path} with {mode} - {path.stat().st_size / MB:.2f} MB')
+
 
 @app.command()
 def load_repos(github_token: GithubToken, output: Path, limit: Annotated[Optional[int], typer.Option()] = None):
@@ -62,7 +67,7 @@ def load_repos(github_token: GithubToken, output: Path, limit: Annotated[Optiona
         asyncio.run(load_indexes(repos, fd))
 
 
-async def load_indexes(repositories: list[CodeRepository], output: BinaryIO, concurrency: int = 10):
+async def load_indexes(repositories: list[CodeRepository], output: BinaryIO, concurrency: int = 25):
     semaphore = asyncio.Semaphore(concurrency)
     async with httpx.AsyncClient() as client:
         with tqdm.tqdm(total=len(repositories)) as pbar:
