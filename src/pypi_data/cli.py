@@ -55,11 +55,12 @@ def github_client(github_token) -> Github:
 
 @contextlib.contextmanager
 def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None, None]:
-    if path.suffix == ".gz":
-        with gzip.open(path, mode) as fd:
-            yield fd
-    else:
-        with path.open(mode) as fd:
+    buffer_size = 1024 * 1024 * 50
+    with path.open(mode, buffering=buffer_size) as fd:
+        if path.suffix == ".gz":
+            with gzip.open(fd, mode) as gzip_fd:
+                yield gzip_fd
+        else:
             yield fd
 
     log.info(
@@ -85,7 +86,7 @@ def load_repos(
 
     log.info("Loaded: writing file")
     with open_path(repos_file, mode="wb") as fd:
-        for repo in tqdm.tqdm(repos):
+        for repo in tqdm.tqdm(repos, mininterval=1):
             fd.write(repo.model_dump_json().encode("utf-8"))
             fd.write(b"\n")
 
@@ -135,7 +136,7 @@ def load_repos(
     log.info("Writing package index")
 
     with open_path(packages_file, mode="wb") as fd:
-        for package_index in tqdm.tqdm(packages):
+        for package_index in tqdm.tqdm(packages, mininterval=1):
             fd.write(package_index.model_dump_json().encode("utf-8"))
             fd.write(b"\n")
 
@@ -146,7 +147,7 @@ async def load_indexes(
     semaphore = asyncio.Semaphore(concurrency)
     results = []
     async with httpx.AsyncClient() as client:
-        with tqdm.tqdm(total=len(repositories)) as pbar:
+        with tqdm.tqdm(total=len(repositories), mininterval=1) as pbar:
 
             async def _run(r: CodeRepository) -> CodeRepository | None:
                 async with semaphore:
@@ -221,7 +222,7 @@ async def resolve_dataset_redirects(
 ) -> list[str]:
     semaphore = asyncio.Semaphore(concurrency)
     async with httpx.AsyncClient() as client:
-        with tqdm.tqdm(total=len(repositories)) as pbar:
+        with tqdm.tqdm(total=len(repositories), mininterval=1) as pbar:
 
             async def _run(r: CodeRepository) -> str | None:
                 async with semaphore:
