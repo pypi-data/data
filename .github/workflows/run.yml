@@ -76,7 +76,7 @@ jobs:
         run: uv run pypi-data load-repos repos-with-packages.jsonl.gz links/
 
       - name: Upload hishel cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/save@v4
         with:
           path: .hishel.sqlite
           key: ${{ steps.hisel-cache.outputs.cache-primary-key }}
