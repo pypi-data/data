@@ -124,7 +124,7 @@ async def fill_buffer(
 
             # Hash the path column with zero copies.
             data_buffer = batch.column("path").cast(pyarrow.large_binary()).buffers()[1]
-            digest = hashlib.sha256(memoryview(data_buffer)).hexdigest()
+            digest = hashlib.md5(memoryview(data_buffer)).hexdigest()
 
             time_hashing_ns += time.perf_counter_ns() - start_hash_time
 
