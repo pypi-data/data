@@ -29,12 +29,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - name: Cache hishel
-        uses: actions/cache@v4
-        with:
-          path: .hishel.sqlite
-          key: ${{ runner.os }}-hishel-${{ hashFiles('links/*.json') }}
-
       - name: Install uv
         uses: astral-sh/setup-uv@v3
         with:
@@ -69,10 +63,23 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
+      - name: Download hishel cache
+        uses: actions/cache/restore@v4
+        id: hisel-cache
+        with:
+          path: .hishel.sqlite
+          key: ${{ runner.os }}-hishel-${{ hashFiles('links/*.json') }}
+
       - name: Generate Repo Metadata
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: uv run pypi-data load-repos repos-with-packages.jsonl.gz links/
+
+      - name: Upload hishel cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .hishel.sqlite
+          key: ${{ steps.hisel-cache.outputs.cache-primary-key }}
 
       - uses: EndBug/add-and-commit@v9
         with:
