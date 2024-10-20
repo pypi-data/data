@@ -53,7 +53,7 @@ async def fill_buffer(
         buffer_size = buffer_mem_size(buffer)
         log.info(f"Buffer size: {buffer_size / 1024 / 1024:.1f} MB")
         if buffer_at_capacity(buffer_size):
-            log.info("Buffer filled")
+            log.info(f"Buffer filled with {len(buffer)} entries")
             break
 
         repo = repositories.popleft()
