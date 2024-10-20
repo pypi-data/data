@@ -2,7 +2,6 @@ import asyncio
 import contextlib
 import gzip
 import io
-from collections import defaultdict
 from pathlib import Path
 from typing import (
     Annotated,
@@ -11,7 +10,6 @@ from typing import (
     BinaryIO,
     Generator,
     Literal,
-    DefaultDict,
 )
 
 import httpx
@@ -24,7 +22,7 @@ from github import Github
 from pydantic import RootModel
 
 from pypi_data.combine_parquet import combine_parquet
-from pypi_data.datasets import CodeRepository, PackageIndexPackage, PackageIndex
+from pypi_data.datasets import CodeRepository
 
 app = typer.Typer()
 session = requests.Session()
@@ -75,7 +73,6 @@ def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None
 def load_repos(
     github_token: GithubToken,
     repos_file: Path,
-    packages_file: Path,
     links_path: Path,
     limit: Annotated[Optional[int], typer.Option()] = None,
 ):
@@ -112,38 +109,6 @@ def load_repos(
             indent=2, exclude_none=True
         )
     )
-
-    log.info("Creating package index")
-
-    package_map: DefaultDict[str, list[PackageIndexPackage]] = defaultdict(list)
-
-    for repo in repos:
-        for package in repo.index.packages:
-            package_map[package.project_name].append(
-                PackageIndexPackage(
-                    project_version=package.project_version,
-                    url=package.url,
-                    upload_time=package.upload_time,
-                    repository_index=repo.number,
-                )
-            )
-
-    packages = []
-
-    for package_name, package_uploads in package_map.items():
-        package_uploads.sort(key=lambda p: p.upload_time)
-        packages.append(PackageIndex(name=package_name, versions=package_uploads))
-
-    packages.sort(key=lambda p: p.name)
-
-    log.info("Writing package index")
-
-    with open_path(packages_file, mode="wb") as fd:
-        for package_index in tqdm.tqdm(
-            packages, mininterval=1, desc="Writing package index"
-        ):
-            fd.write(package_index.model_dump_json().encode("utf-8"))
-            fd.write(b"\n")
 
 
 async def load_indexes(

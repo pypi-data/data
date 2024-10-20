@@ -15,13 +15,17 @@ log = structlog.get_logger()
 
 TARGET_SIZE = 1024 * 1024 * 1024 * 1.8  # 1.8 GB
 FILL_BUFFER_COUNT = 4  # Download this many datasets at once
+IO_BUFFER_SIZE = 1024 * 1024 * 10  # 10 MB
 
 
 def append_buffer(
-    writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Path
+    fd: pyarrow.BufferOutputStream,
+    writer: pq.ParquetWriter,
+    batch: RecordBatch,
+    roll_up_path: Path,
 ) -> bool:
     writer.write_batch(batch)
-    writer.file_handle.flush()
+    fd.flush()
     size = roll_up_path.stat().st_size
     log.info(
         f"Wrote batch: {batch.num_rows=} "
@@ -83,27 +87,27 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
             first_key, first_buffer = buffer.popleft()
             keys.append(first_key)
 
-            with pq.ParquetWriter(
-                roll_up_path,
+            with pyarrow.output_stream(
+                roll_up_path, compression=None, buffer_size=IO_BUFFER_SIZE
+            ) as fd, pq.ParquetWriter(
+                fd,
                 compression="zstd",
                 compression_level=7,
                 write_statistics=True,
                 schema=first_buffer.schema,
             ) as writer:
                 log.info(f"Writing {repo_file}")
-                append_buffer(writer, first_buffer, roll_up_path)
+                append_buffer(fd, writer, first_buffer, roll_up_path)
 
                 while buffer or repositories:
                     if not buffer:
-                        if (
-                            await fill_buffer(buffer, client, repositories, repo_file)
-                            is None
-                        ):
+                        res = await fill_buffer(buffer, client, repositories, repo_file)
+                        if res is None:
                             continue
 
                     key, batch = buffer.popleft()
                     keys.append(key)
-                    if append_buffer(writer, batch, roll_up_path):
+                    if append_buffer(fd, writer, batch, roll_up_path):
                         break
 
             hashed_keys = hash_parquet_keys(keys)

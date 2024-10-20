@@ -13,18 +13,6 @@ from tenacity import AsyncRetrying, stop_after_attempt, wait_random_exponential
 log = structlog.get_logger()
 
 
-class PackageIndexPackage(pydantic.BaseModel):
-    project_version: str
-    url: HttpUrl
-    upload_time: datetime
-    repository_index: int
-
-
-class PackageIndex(pydantic.BaseModel):
-    name: str
-    versions: list[PackageIndexPackage]
-
-
 class RepositoryPackage(pydantic.BaseModel):
     project_name: str
     project_version: str
