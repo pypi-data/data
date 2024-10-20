@@ -12,7 +12,6 @@ import typer
 from github import Auth
 from github import Github
 from pydantic import RootModel
-from pyzstd import ZstdFile
 
 from pypi_data.combine_parquet import combine_parquet
 from pypi_data.datasets import CodeRepository
@@ -43,10 +42,7 @@ def github_client(github_token) -> Github:
 
 @contextlib.contextmanager
 def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None, None]:
-    if path.suffix in (".zst", ".zstd"):
-        with ZstdFile(path, mode, level_or_option=9 if mode == "wb" else None) as fd:
-            yield fd
-    elif path.suffix == ".gz":
+    if path.suffix == ".gz":
         with gzip.open(path, mode) as fd:
             yield fd
     else:
