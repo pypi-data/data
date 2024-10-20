@@ -4,12 +4,10 @@ from http import HTTPStatus
 from typing import Self
 
 import httpx
-import pyarrow as pa
-import pyarrow.parquet as pq
 import pydantic
 import structlog
 from github import Github
-from pydantic import HttpUrl
+from pydantic import HttpUrl, ByteSize
 from tenacity import AsyncRetrying, stop_after_attempt, wait_random_exponential
 
 log = structlog.get_logger()
@@ -121,18 +119,14 @@ class CodeRepository(pydantic.BaseModel):
                 f"{self.index_url} failed to parse: {len(response.content)=}"
             ) from e
 
-    async def download_dataset(self, client: httpx.AsyncClient) -> pa.Table | None:
+    async def download_dataset(self, client: httpx.AsyncClient) -> bytes | None:
         response = await self._make_request(client, self.dataset_url)
         if response is None:
             return None
         log.info(
-            f"Loading parquet file with size {len(response.content) / 1024 / 1024:.1f} MB"
+            f"Downloaded parquet file with size {ByteSize(len(response.content)).human_readable(decimal=True)} MB"
         )
-        return await asyncio.to_thread(
-            lambda: pq.read_table(
-                pa.py_buffer(memoryview(response.content))
-            ).combine_chunks()
-        )
+        return response.content
 
     def without_index(self) -> Self:
         return self.model_copy(update={"index": None})

@@ -1,4 +1,6 @@
+import asyncio
 import hashlib
+import time
 from collections import deque
 from pathlib import Path
 from typing import Deque
@@ -6,9 +8,11 @@ from typing import Deque
 import httpx
 import psutil
 import pyarrow
+import pyarrow as pa
 import pyarrow.parquet as pq
 import structlog
 from pyarrow import RecordBatch
+from pydantic import ByteSize
 
 from pypi_data.datasets import CodeRepository
 
@@ -31,10 +35,10 @@ def append_buffer(
     written_size = end_size - initial_size
     log.info(
         f"Wrote {batch.num_rows} rows "
-        f"Batch Size: {batch.nbytes / 1024 / 1024:.1f} MB "
-        f"Initial Size: {initial_size / 1024 / 1024:.1f} MB "
-        f"End Size: {end_size / 1024 / 1024:.1f} MB "
-        f"Written: {written_size / 1024 / 1024:.1f} MB"
+        f"Batch Size: {ByteSize(batch.nbytes).human_readable(decimal=True)} MB "
+        f"Initial Size: {ByteSize(initial_size).human_readable(decimal=True)} MB "
+        f"End Size: {ByteSize(end_size).human_readable(decimal=True)} MB "
+        f"Written: {ByteSize(written_size).human_readable(decimal=True)} MB"
     )
     return end_size >= TARGET_SIZE
 
@@ -50,25 +54,71 @@ async def fill_buffer(
     repositories: Deque[CodeRepository],
 ) -> bool:
     while repositories:
+        time_hashing_ns = 0
+        time_iterating_ns = 0
+        time_loading_ns = 0
+        time_downloading_ns = 0
+
+        start_time_ns = time.perf_counter_ns()
+
         buffer_size = buffer_mem_size(buffer)
-        log.info(f"Buffer size: {buffer_size / 1024 / 1024:.1f} MB")
+        log.info(
+            f"Buffer size: {ByteSize(buffer_size).human_readable(decimal=True)} MB"
+        )
         if buffer_size >= max_buffer_size:
             log.info(f"Buffer filled with {len(buffer)} entries")
             break
 
         repo = repositories.popleft()
         log.info(f"Downloading {repo.dataset_url}")
-        if (table := await repo.download_dataset(client)) is False:
+        start_downloading_ns = time.perf_counter_ns()
+        if (dataset_bytes := await repo.download_dataset(client)) is False:
             log.info(f"Failed to download {repo.dataset_url}")
             continue
 
-        for idx, batch in enumerate(table.to_batches(max_chunksize=2_500_000)):
+        time_downloading_ns = time.perf_counter_ns() - start_downloading_ns
+
+        start_load_time = time.perf_counter_ns()
+
+        table_batches = await asyncio.to_thread(
+            lambda: pq.read_table(pa.py_buffer(memoryview(dataset_bytes)))
+            .combine_chunks()
+            .to_batches(max_chunksize=2_500_000)
+        )
+        del dataset_bytes
+        time_loading_ns += time.perf_counter_ns() - start_load_time
+
+        iterator = iter(enumerate(table_batches))
+
+        while True:
+            start_iterate_time = time.perf_counter_ns()
+            try:
+                idx, batch = next(iterator)
+            except StopIteration:
+                break
+
+            time_iterating_ns += time.perf_counter_ns() - start_iterate_time
+
             batch: RecordBatch
+
+            start_hash_time = time.perf_counter_ns()
             digest = hashlib.sha256()
             for item in batch.column("path").cast(pyarrow.large_binary()).to_pylist():
                 digest.update(item)
             digest = digest.hexdigest()
+            time_hashing_ns += time.perf_counter_ns() - start_hash_time
+
             buffer.append(((repo.number, digest), batch))
+
+        runtime_ns = time.perf_counter_ns() - start_time_ns
+
+        log.info(
+            f"Perf: total={runtime_ns // 1_000_000} ms "
+            f"download={time_downloading_ns // 1_000_000} ms "
+            f"load={time_loading_ns // 1_000_000} ms "
+            f"iter={time_iterating_ns // 1_000_000} ms "
+            f"hash={time_hashing_ns // 1_000_000} ms"
+        )
 
     return bool(buffer)
 
@@ -78,7 +128,9 @@ def hash_parquet_keys(keys: list[tuple[int, str]]) -> str:
     return hashlib.sha256(combined.encode()).hexdigest()
 
 
-async def combine_parquet(repositories: list[CodeRepository], directory: Path):
+async def combine_parquet(
+    repositories: list[CodeRepository], directory: Path, max_buffer_size: ByteSize
+):
     directory.mkdir(exist_ok=True)
 
     roll_up_count = 0
@@ -88,10 +140,14 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
     total_memory = psutil.virtual_memory().total
     max_buffer_size = min(
         int(total_memory * 0.75),  # 75% of total memory
-        1024 * 1024 * 1024 * 10,  # 10 GB
+        max_buffer_size,  # 10 GB
     )
-    log.info(f"Total system memory: {total_memory / 1024 / 1024:.1f} MB")
-    log.info(f"Configured buffer size: {max_buffer_size / 1024 / 1024:.1f} MB")
+    log.info(
+        f"Total system memory: {ByteSize(total_memory).human_readable(decimal=True)} MB"
+    )
+    log.info(
+        f"Configured buffer size: {ByteSize(max_buffer_size).human_readable(decimal=True)} MB"
+    )
 
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
@@ -137,7 +193,7 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
             )
 
             log.info(
-                f"Finished batch {roll_up_count}, {len(keys)} batches, {final_path.name=} {final_path.stat().st_size / 1024 / 1024:.1f} MB"
+                f"Finished batch {roll_up_count}, {len(keys)} batches, {final_path.name=} {ByteSize(final_path.stat().st_size).human_readable(decimal=True)} MB"
             )
 
             roll_up_count += 1

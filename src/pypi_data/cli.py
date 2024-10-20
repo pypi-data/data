@@ -14,13 +14,14 @@ from typing import (
 
 import hishel
 import httpx
+import pydantic
 import requests
 import structlog
 import tqdm
 import typer
 from github import Auth
 from github import Github
-from pydantic import RootModel
+from pydantic import RootModel, ByteSize
 
 from pypi_data.combine_parquet import combine_parquet
 from pypi_data.datasets import CodeRepository
@@ -151,10 +152,15 @@ async def load_indexes(
 
 
 @app.command()
-def merge_datasets(repo_path: Path, output: Path):
+def merge_datasets(
+    repo_path: Path,
+    output: Path,
+    max_buffer_size: Annotated[str, typer.Option()] = "10GB",
+):
     with open_path(repo_path, mode="rb") as fd:
         repos = Repos.model_validate_json(fd.read()).root
-    asyncio.run(combine_parquet(repos, output))
+    max_buffer_size = pydantic.RootModel[ByteSize].model_validate(max_buffer_size).root
+    asyncio.run(combine_parquet(repos, output, max_buffer_size))
 
 
 async def resolve_dataset_redirects(
