@@ -53,8 +53,7 @@ jobs:
         uses: shogo82148/actions-create-release@v1
         with:
           overwrite: true
-          draft: false
-          make_latest: true
+          draft: true
           release_name: ${{ steps.version.outputs.tag_name }}
           tag_name: ${{ steps.version.outputs.tag_name }}
           commitish: ${{ github.sha }}
@@ -66,13 +65,6 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
           revoke: false
-
-#      - name: Generate token
-#        id: generate_token
-#        uses: getsentry/action-github-app-token@v3
-#        with:
-#          app_id: ${{ secrets.APP_ID }}
-#          private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - name: Download hishel cache
         uses: actions/cache/restore@v4
@@ -102,7 +94,7 @@ jobs:
         run: rm repos-with-packages.jsonl.gz
 
       - name: Create dataset
-        run: uv run pypi-data merge-datasets links/repositories.json dataset/
+        run: uv run pypi-data merge-datasets links/repositories.json dataset/ --limit=1 # for testing
 
       - name: Debug
         run: ls -la dataset/
@@ -114,8 +106,24 @@ jobs:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: ${{ github.workspace }}/dataset/dataset-*.parquet
 
-      - name: Add dataset links
-        run: echo ${{ steps.upload-dataset.outputs.browser_download_url }} | sort > links/dataset.txt
+      - name: Publish release
+        uses: StuYarrow/publish-release@v1.1.2
+        with:
+          id: ${{ steps.create-release.outputs.id }}
+
+      - name: Get download links
+        id: get_download_links
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const response = await github.rest.repos.listReleaseAssets({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: ${{ steps.create-release.outputs.id }},
+            });
+            const assets = response.data;
+            // Save the download links to a file
+            require('fs').writeFileSync('links/dataset.txt', assets.map(asset => asset.browser_download_url).join('\n'));
 
       - uses: EndBug/add-and-commit@v9
         with:

@@ -159,12 +159,14 @@ def merge_datasets(
     output: Path,
     max_buffer_size: Annotated[str, typer.Option()] = "5GB",
     target_size: Annotated[str, typer.Option()] = "1.9GB",
+    limit: Annotated[Optional[int], typer.Option()] = None,
 ):
     with open_path(repo_path, mode="rb") as fd:
         repos = Repos.model_validate_json(fd.read()).root
     max_buffer_size = pydantic.RootModel[ByteSize].model_validate(max_buffer_size).root
     target_size = pydantic.RootModel[ByteSize].model_validate(target_size).root
-    # Debug failures...
+    if limit:
+        repos = repos[:limit]
     asyncio.run(combine_parquet(repos, output, max_buffer_size, target_size))
 
 
