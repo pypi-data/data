@@ -33,12 +33,21 @@ def append_buffer(
     fd.flush()
     end_size = roll_up_path.stat().st_size
     written_size = end_size - initial_size
+    disk_usage = psutil.disk_usage(str(roll_up_path.absolute()))
+
     log.info(
         f"Wrote {batch.num_rows} rows "
         f"Batch Size: {ByteSize(batch.nbytes).human_readable(decimal=True)} "
         f"Initial Size: {ByteSize(initial_size).human_readable(decimal=True)} "
         f"End Size: {ByteSize(end_size).human_readable(decimal=True)} "
         f"Written: {ByteSize(written_size).human_readable(decimal=True)}"
+    )
+    log.info(
+        f"Disk: "
+        f"total={ByteSize(disk_usage.total).human_readable(decimal=True)} "
+        f"used={ByteSize(disk_usage.used).human_readable(decimal=True)} "
+        f"free={ByteSize(disk_usage.free).human_readable(decimal=True)} "
+        f"percent={disk_usage.percent}%"
     )
     return end_size >= target_size
 
