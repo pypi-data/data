@@ -76,7 +76,7 @@ jobs:
       - name: Generate Repo Metadata
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: uv run pypi-data load-repos repos-with-packages.jsonl.gz links/ --limit=1
+        run: uv run pypi-data load-repos repos-with-packages.jsonl.gz links/
 
       - name: Upload hishel cache
         uses: actions/cache/save@v4
@@ -95,7 +95,7 @@ jobs:
         run: rm repos-with-packages.jsonl.gz
 
       - name: Create dataset
-        run: uv run pypi-data merge-datasets links/repositories.json dataset/ --limit=1 # for testing
+        run: uv run pypi-data merge-datasets links/repositories.json dataset/
 
       - name: Debug
         run: ls -la dataset/
