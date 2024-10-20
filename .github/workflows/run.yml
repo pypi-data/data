@@ -58,10 +58,18 @@ jobs:
 
       - name: Generate token
         id: generate_token
-        uses: getsentry/action-github-app-token@v3
+        uses: pypi-data/github-app-token@v2
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
+          revoke: false
+
+#      - name: Generate token
+#        id: generate_token
+#        uses: getsentry/action-github-app-token@v3
+#        with:
+#          app_id: ${{ secrets.APP_ID }}
+#          private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - name: Download hishel cache
         uses: actions/cache/restore@v4
