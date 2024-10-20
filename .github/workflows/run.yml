@@ -92,14 +92,6 @@ jobs:
           path: .hishel.sqlite
           key: ${{ steps.hisel-cache.outputs.cache-primary-key }}
 
-      - uses: EndBug/add-and-commit@v9
-        with:
-          add: links/*
-          message: "Add repository URLs"
-          push: true
-          fetch: true
-          pull: '--rebase --autostash'
-
       - name: Upload Repos with packages
         uses: shogo82148/actions-upload-release-asset@v1
         with:
@@ -117,6 +109,18 @@ jobs:
 
       - name: Upload Dataset
         uses: shogo82148/actions-upload-release-asset@v1
+        id: upload-dataset
         with:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: ${{ github.workspace }}/dataset/dataset-*.parquet
+
+      - name: Add dataset links
+        run: echo ${{ steps.upload-dataset.outputs.browser_download_url }} | sort > links/dataset.txt
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: links/*
+          message: "Add repository URLs"
+          push: true
+          fetch: true
+          pull: '--rebase --autostash'
