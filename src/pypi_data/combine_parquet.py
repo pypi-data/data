@@ -47,7 +47,6 @@ def append_buffer(
 def log_system_stats(path: Path):
     cpu_usage = psutil.cpu_percent(percpu=True)
     process_mem_percent = psutil.Process().memory_percent()
-    psutil.disk_partitions(all=False)
     mem = psutil.virtual_memory()
     log.info(
         f"System: cpu={cpu_usage} "
@@ -56,7 +55,7 @@ def log_system_stats(path: Path):
         f"mem_used={ByteSize(mem.used).human_readable(decimal=True)} "
         f"mem_percent={mem.percent:.1f}%"
     )
-    for partition in psutil.disk_partitions(all=True):
+    for partition in psutil.disk_partitions(all=False):
         disk_usage = psutil.disk_usage(partition.mountpoint)
         log.info(
             f"Disk: ({partition.fstype} - {partition.mountpoint}) "
