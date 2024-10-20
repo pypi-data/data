@@ -30,7 +30,11 @@ Repos = RootModel[list[CodeRepository]]
 def get_dataset_urls(github: Github) -> Iterable[tuple[str, str, str]]:
     for repo in github.get_organization("pypi-data").get_repos():
         if repo.name.startswith("pypi-mirror-"):
-            yield f'{repo.html_url}.git', repo.ssh_url, f"{repo.html_url}/releases/download/latest/dataset.parquet"
+            yield (
+                f"{repo.html_url}.git",
+                repo.ssh_url,
+                f"{repo.html_url}/releases/download/latest/dataset.parquet",
+            )
 
 
 def github_client(github_token) -> Github:
@@ -49,56 +53,32 @@ def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None
         with path.open(mode) as fd:
             yield fd
 
-    log.info(f'Finished open_path on {path} with {mode} - {path.stat().st_size / MB:.2f} MB')
+    log.info(
+        f"Finished open_path on {path} with {mode} - {path.stat().st_size / MB:.2f} MB"
+    )
 
 
 @app.command()
-def load_repos(github_token: GithubToken, output: Path, limit: Annotated[Optional[int], typer.Option()] = None):
+def load_repos(
+    github_token: GithubToken,
+    repos_file: Path,
+    links_path: Path,
+    limit: Annotated[Optional[int], typer.Option()] = None,
+):
     g = github_client(github_token)
     repos = CodeRepository.fetch_all(g)
     if limit:
         repos = repos[:limit]
 
-    with open_path(output, mode="wb") as fd:
-        asyncio.run(load_indexes(repos, fd))
-
-
-async def load_indexes(repositories: list[CodeRepository], output: BinaryIO, concurrency: int = 25):
-    semaphore = asyncio.Semaphore(concurrency)
-    async with httpx.AsyncClient() as client:
-        with tqdm.tqdm(total=len(repositories)) as pbar:
-            async def _run(r: CodeRepository) -> CodeRepository:
-                async with semaphore:
-                    result = await r.with_index(client)
-                    pbar.update(1)
-                    return result
-
-            async with asyncio.TaskGroup() as tg:
-                results = [
-                    tg.create_task(_run(repo))
-                    for repo in repositories
-                ]
-                for res in results:
-                    res = await res
-                    output.write(res.model_dump_json().encode('utf-8'))
-                    output.write(b'\n')
-            log.info(f'Fetched {len(results)} repository indexes')
-
-
-@app.command()
-def create_links(repo_path: Path):
-    log.info(f'Reading repos from {repo_path}')
-    with open_path(repo_path, mode="rb") as fd:
-        repos = [
-            CodeRepository.model_validate_json(line).without_index()
-            for line in fd
-        ]
-
-    log.info(f'Loaded: writing links')
-
-    links_path = Path("links")
-
+    repos = asyncio.run(load_indexes(repos))
     sorted_repos = sorted(repos, key=lambda r: r.number)
+
+    with open_path(repos_file, mode="wb") as fd:
+        for repo in repos:
+            fd.write(repo.model_dump_json().encode("utf-8"))
+            fd.write(b"\n")
+
+    log.info("Loaded: writing links")
 
     (links_path / "dataset.txt").write_text(
         "\n".join(str(repo.dataset_url) for repo in sorted_repos)
@@ -113,8 +93,34 @@ def create_links(repo_path: Path):
     )
 
     (links_path / "repositories.json").write_text(
-        Repos([r.without_index() for r in sorted_repos]).model_dump_json(indent=2, exclude_none=True)
+        Repos([r.without_index() for r in sorted_repos]).model_dump_json(
+            indent=2, exclude_none=True
+        )
     )
+
+
+async def load_indexes(
+    repositories: list[CodeRepository], concurrency: int = 25
+) -> list[CodeRepository]:
+    semaphore = asyncio.Semaphore(concurrency)
+    results = []
+    async with httpx.AsyncClient() as client:
+        with tqdm.tqdm(total=len(repositories)) as pbar:
+
+            async def _run(r: CodeRepository) -> CodeRepository | None:
+                async with semaphore:
+                    result = await r.with_index(client)
+                    pbar.update(1)
+                    return result
+
+            async with asyncio.TaskGroup() as tg:
+                tasks = [tg.create_task(_run(repo)) for repo in repositories]
+                for res in tasks:
+                    res = await res
+                    if res is not None:
+                        results.append(res)
+    log.info(f"Fetched {len(tasks)} repository indexes")
+    return results
 
 
 @app.command()
@@ -169,10 +175,13 @@ def merge_datasets(repo_path: Path, output: Path):
 #         print(query + ';\n')
 
 
-async def resolve_dataset_redirects(repositories: list[CodeRepository], concurrency: int = 10) -> list[str]:
+async def resolve_dataset_redirects(
+    repositories: list[CodeRepository], concurrency: int = 10
+) -> list[str]:
     semaphore = asyncio.Semaphore(concurrency)
     async with httpx.AsyncClient() as client:
         with tqdm.tqdm(total=len(repositories)) as pbar:
+
             async def _run(r: CodeRepository) -> str | None:
                 async with semaphore:
                     result = await r.get_temporary_dataset_url(client)
@@ -180,10 +189,7 @@ async def resolve_dataset_redirects(repositories: list[CodeRepository], concurre
                     return result
 
             async with asyncio.TaskGroup() as tg:
-                results = [
-                    tg.create_task(_run(repo))
-                    for repo in repositories
-                ]
+                results = [tg.create_task(_run(repo)) for repo in repositories]
             return [r.result() for r in results if r.result() is not None]
 
 

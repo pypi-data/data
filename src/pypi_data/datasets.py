@@ -40,7 +40,9 @@ class CodeRepository(pydantic.BaseModel):
     @pydantic.computed_field()
     @property
     def index_url(self) -> HttpUrl:
-        return HttpUrl(f"https://raw.githubusercontent.com/pypi-data/{self.name}/refs/heads/main/index.json")
+        return HttpUrl(
+            f"https://raw.githubusercontent.com/pypi-data/{self.name}/refs/heads/main/index.json"
+        )
 
     @pydantic.computed_field()
     @property
@@ -65,11 +67,16 @@ class CodeRepository(pydantic.BaseModel):
             if repo.name.startswith("pypi-mirror-")
         ]
 
-    def check_response(self, response: httpx.Response, follow_redirects: bool) -> httpx.Response | None:
+    def check_response(
+        self, response: httpx.Response, follow_redirects: bool
+    ) -> httpx.Response | None:
         try:
             response.raise_for_status()
         except httpx.HTTPStatusError as e:
-            if e.response.status_code in (HTTPStatus.NOT_FOUND, HTTPStatus.UNAVAILABLE_FOR_LEGAL_REASONS):
+            if e.response.status_code in (
+                HTTPStatus.NOT_FOUND,
+                HTTPStatus.UNAVAILABLE_FOR_LEGAL_REASONS,
+            ):
                 log.warning(f"URL {response.url} not found for {self.name}")
                 return None
             if not follow_redirects and e.response.is_redirect:
@@ -77,29 +84,41 @@ class CodeRepository(pydantic.BaseModel):
             raise
         return response
 
-    async def _make_request(self, client: httpx.AsyncClient, url: HttpUrl,
-                            follow_redirects: bool = True) -> httpx.Response | None:
-        async for attempt in AsyncRetrying(stop=stop_after_attempt(3),
-                                           wait=wait_random_exponential(multiplier=1, max=4)):
+    async def _make_request(
+        self, client: httpx.AsyncClient, url: HttpUrl, follow_redirects: bool = True
+    ) -> httpx.Response | None:
+        async for attempt in AsyncRetrying(
+            stop=stop_after_attempt(3),
+            wait=wait_random_exponential(multiplier=1, max=4),
+        ):
             with attempt:
-                response = await client.get(str(url), headers={'Accept-Encoding': 'gzip'},
-                                            follow_redirects=follow_redirects)
+                response = await client.get(
+                    str(url),
+                    headers={"Accept-Encoding": "gzip"},
+                    follow_redirects=follow_redirects,
+                )
                 return self.check_response(response, follow_redirects)
 
     async def get_temporary_dataset_url(self, client: httpx.AsyncClient) -> str | None:
-        response = await self._make_request(client, self.dataset_url, follow_redirects=True)
+        response = await self._make_request(
+            client, self.dataset_url, follow_redirects=True
+        )
         if response is None:
             return None
         return response.headers["Content-Length"]
 
-    async def with_index(self, client: httpx.AsyncClient) -> Self:
+    async def with_index(self, client: httpx.AsyncClient) -> Self | None:
         response = await self._make_request(client, self.index_url)
         if response is None:
-            return self.model_copy()
+            return None
         try:
-            return self.model_copy(update={'index': RepositoryIndex.model_validate_json(response.content)})
+            index = RepositoryIndex.model_validate_json(response.content)
+            index.packages.sort(key=lambda p: p.url)
+            return self.model_copy(update={"index": index})
         except Exception as e:
-            raise RuntimeError(f'{self.index_url} failed to parse: {len(response.content)=}') from e
+            raise RuntimeError(
+                f"{self.index_url} failed to parse: {len(response.content)=}"
+            ) from e
 
     async def download_dataset(self, client: httpx.AsyncClient, output: Path) -> bool:
         async with client.stream("GET", str(self.dataset_url)) as response:
@@ -112,4 +131,4 @@ class CodeRepository(pydantic.BaseModel):
             return True
 
     def without_index(self) -> Self:
-        return self.model_copy(update={'index': None})
+        return self.model_copy(update={"index": None})

@@ -15,19 +15,26 @@ TARGET_SIZE = 1024 * 1024 * 1024 * 1.8  # 1.8 GB
 FILL_BUFFER_COUNT = 4  # Download this many datasets at once
 
 
-def append_buffer(writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Path) -> bool:
+def append_buffer(
+    writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Path
+) -> bool:
     writer.write_batch(batch)
     writer.file_handle.flush()
     size = roll_up_path.stat().st_size
-    log.info(f"Wrote batch: {batch.num_rows=} "
-             f"Input: {batch.nbytes / 1024 / 1024:.1f} MB "
-             f"Output: {size / 1024 / 1024:.1f} MB")
+    log.info(
+        f"Wrote batch: {batch.num_rows=} "
+        f"Input: {batch.nbytes / 1024 / 1024:.1f} MB "
+        f"Output: {size / 1024 / 1024:.1f} MB"
+    )
     return size >= TARGET_SIZE
 
 
-async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client: httpx.AsyncClient,
-                      repositories: list[CodeRepository],
-                      path: Path) -> bool:
+async def fill_buffer(
+    buffer: list[tuple[tuple[int, str], RecordBatch]],
+    client: httpx.AsyncClient,
+    repositories: list[CodeRepository],
+    path: Path,
+) -> bool:
     for _ in range(FILL_BUFFER_COUNT):
         if not repositories:
             break
@@ -36,7 +43,7 @@ async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client:
         if await repo.download_dataset(client, path) is False:
             log.info(f"Failed to download {repo.dataset_url}")
             continue
-        log.info(f'Downloaded, reading {path}')
+        log.info(f"Downloaded, reading {path}")
         table = pq.read_table(path, memory_map=True).combine_chunks()
 
         for idx, batch in enumerate(table.to_batches(max_chunksize=2_000_000)):
@@ -45,9 +52,7 @@ async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client:
             for item in batch.column("path").cast(pyarrow.large_binary()).to_pylist():
                 digest.update(item)
             digest = digest.hexdigest()
-            buffer.append(
-                ((repo.number, digest), batch)
-            )
+            buffer.append(((repo.number, digest), batch))
 
     return bool(buffer)
 
@@ -59,7 +64,7 @@ def hash_parquet_keys(keys: list[tuple[int, str]]) -> str:
 
 async def combine_parquet(repositories: list[CodeRepository], directory: Path):
     directory.mkdir(exist_ok=True)
-    repo_file = directory / f"repo.parquet"
+    repo_file = directory / "repo.parquet"
 
     roll_up_count = 0
     buffer: list[tuple[tuple[int, str], RecordBatch]] = []
@@ -75,17 +80,22 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
             first_key, first_buffer = buffer.pop(0)
             keys.append(first_key)
 
-            with pq.ParquetWriter(roll_up_path,
-                                  compression="zstd",
-                                  compression_level=7,
-                                  write_statistics=True,
-                                  schema=first_buffer.schema) as writer:
+            with pq.ParquetWriter(
+                roll_up_path,
+                compression="zstd",
+                compression_level=7,
+                write_statistics=True,
+                schema=first_buffer.schema,
+            ) as writer:
                 log.info(f"Writing {repo_file}")
                 append_buffer(writer, first_buffer, roll_up_path)
 
                 while buffer or repositories:
                     if not buffer:
-                        if await fill_buffer(buffer, client, repositories, repo_file) is None:
+                        if (
+                            await fill_buffer(buffer, client, repositories, repo_file)
+                            is None
+                        ):
                             continue
 
                     key, batch = buffer.pop(0)
