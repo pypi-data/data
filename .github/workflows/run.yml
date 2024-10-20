@@ -85,9 +85,6 @@ jobs:
       - name: Remove repos-with-packages.jsonl.gz
         run: rm repos-with-packages.jsonl.gz
 
-      - name: Remove packages-with-repos.jsonl.gz
-        run: rm packages-with-repos.jsonl.gz
-
       - name: Create dataset
         run: uv run pypi-data merge-datasets links/repositories.json dataset/
 
