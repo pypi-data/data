@@ -1,6 +1,7 @@
 import asyncio
 import contextlib
 import gzip
+import io
 from collections import defaultdict
 from pathlib import Path
 from typing import (
@@ -56,11 +57,13 @@ def github_client(github_token) -> Github:
 @contextlib.contextmanager
 def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None, None]:
     buffer_size = 1024 * 1024 * 50
-    with path.open(mode, buffering=buffer_size) as fd:
-        if path.suffix == ".gz":
-            with gzip.open(fd, mode) as gzip_fd:
-                yield gzip_fd
-        else:
+
+    if path.suffix == ".gz":
+        with gzip.open(path, mode) as gzip_fd:
+            with io.BufferedWriter(gzip_fd, buffer_size=buffer_size) as buffered_fd:
+                yield buffered_fd
+    else:
+        with path.open(mode, buffering=buffer_size) as fd:
             yield fd
 
     log.info(
