@@ -64,7 +64,7 @@ async def fill_buffer(
         log.info(f"Downloaded, reading {path}")
         table = pq.read_table(path, memory_map=True).combine_chunks()
 
-        for idx, batch in enumerate(table.to_batches(max_chunksize=2_000_000)):
+        for idx, batch in enumerate(table.to_batches(max_chunksize=2_500_000)):
             batch: RecordBatch
             digest = hashlib.sha256()
             for item in batch.column("path").cast(pyarrow.large_binary()).to_pylist():
