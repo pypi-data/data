@@ -157,7 +157,7 @@ async def load_indexes(
 def merge_datasets(
     repo_path: Path,
     output: Path,
-    max_buffer_size: Annotated[str, typer.Option()] = "8GB",
+    max_buffer_size: Annotated[str, typer.Option()] = "5GB",
     target_size: Annotated[str, typer.Option()] = "1.8GB",
 ):
     with open_path(repo_path, mode="rb") as fd:
