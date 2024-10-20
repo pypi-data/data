@@ -51,7 +51,7 @@ jobs:
         uses: shogo82148/actions-create-release@v1
         with:
           overwrite: true
-          draft: false
+          draft: true
           release_name: ${{ steps.version.outputs.tag_name }}
           tag_name: ${{ steps.version.outputs.tag_name }}
           commitish: ${{ github.sha }}
