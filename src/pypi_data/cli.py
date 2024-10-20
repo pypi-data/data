@@ -164,7 +164,8 @@ def merge_datasets(
         repos = Repos.model_validate_json(fd.read()).root
     max_buffer_size = pydantic.RootModel[ByteSize].model_validate(max_buffer_size).root
     target_size = pydantic.RootModel[ByteSize].model_validate(target_size).root
-    asyncio.run(combine_parquet(repos, output, max_buffer_size, target_size))
+    # Debug failures...
+    asyncio.run(combine_parquet(repos[200:], output, max_buffer_size, target_size))
 
 
 async def resolve_dataset_redirects(
