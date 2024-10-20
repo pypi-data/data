@@ -62,8 +62,6 @@ async def fill_buffer(
             log.info(f"Failed to download {repo.dataset_url}")
             continue
 
-        table = table.combine_chunks()
-
         for idx, batch in enumerate(table.to_batches(max_chunksize=2_500_000)):
             batch: RecordBatch
             digest = hashlib.sha256()

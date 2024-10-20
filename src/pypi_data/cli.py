@@ -157,51 +157,6 @@ def merge_datasets(repo_path: Path, output: Path):
     asyncio.run(combine_parquet(repos, output))
 
 
-#
-#
-# @app.command()
-# def output_sql(repo_path: Path, redirects: Annotated[bool, typer.Option()] = False,
-#                batches_of: Annotated[Optional[int], typer.Option()] = None,
-#                settings: Annotated[str, typer.Option()] = '',
-#                dialect: Annotated[str, typer.Option()] = 'duckdb',
-#                insert: Annotated[bool, typer.Option()] = False):
-#     # log.info(f'Reading repos from {repo_path}')
-#     contents = _read_path(repo_path)
-#     repos = Repos.model_validate_json(contents)
-#
-#     if redirects:
-#         urls = asyncio.run(resolve_dataset_redirects(repos.root))
-#     else:
-#         urls = [r.dataset_url for r in repos.root]
-#
-#     if dialect == 'duckdb':
-#         def make_url(url: str):
-#             return f"read_parquet('{url}')"
-#     elif dialect == 'clickhouse':
-#         def make_url(url: str):
-#             return f"url('{url}', 'Parquet')"
-#     else:
-#         raise ValueError(f"Unknown dialect: {dialect}")
-#
-#     sql_queries = [
-#         f"SELECT * FROM {make_url(url)}"
-#         for url in urls
-#     ]
-#
-#     if batches_of:
-#         batches = list(itertools.batched(sql_queries, batches_of))
-#     else:
-#         batches = [sql_queries]
-#
-#     for batch in batches:
-#         query = 'INSERT INTO output\n' if insert else ''
-#         query += "\nUNION ALL ".join(batch)
-#         if settings:
-#             query += f'\nSETTINGS {settings}'
-#
-#         print(query + ';\n')
-
-
 async def resolve_dataset_redirects(
     repositories: list[CodeRepository], concurrency: int = 10
 ) -> list[str]:

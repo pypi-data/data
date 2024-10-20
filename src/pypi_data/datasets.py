@@ -35,7 +35,6 @@ class CodeRepository(pydantic.BaseModel):
     name: str
     url: HttpUrl
     ssh_url: str
-    parquet_url: HttpUrl
     index: RepositoryIndex | None = None
 
     @pydantic.computed_field()
@@ -62,7 +61,6 @@ class CodeRepository(pydantic.BaseModel):
                 name=repo.name,
                 url=repo.html_url,
                 ssh_url=repo.ssh_url,
-                parquet_url=f"{repo.html_url}/releases/download/latest/dataset.parquet",
             )
             for repo in github.get_organization("pypi-data").get_repos()
             if repo.name.startswith("pypi-mirror-")
@@ -127,16 +125,9 @@ class CodeRepository(pydantic.BaseModel):
         log.info(
             f"Loading parquet file with size {len(response.content) / 1024 / 1024:.1f} MB"
         )
-        return pq.read_table(pa.py_buffer(memoryview(response.content)))
-
-        # async with client.stream("GET", str(self.dataset_url)) as response:
-        #     if self.check_response(response, follow_redirects=True) is None:
-        #         return None
-        #
-        #     with output.open("wb") as f:
-        #         async for buffer in response.aiter_bytes():
-        #             f.write(buffer)
-        #     return True
+        return pq.read_table(
+            pa.py_buffer(memoryview(response.content))
+        ).combine_chunks()
 
     def without_index(self) -> Self:
         return self.model_copy(update={"index": None})
