@@ -196,8 +196,10 @@ async def combine_parquet(
             ) as fd, pq.ParquetWriter(
                 fd,
                 compression="zstd",
-                compression_level=7,
+                compression_level=9,
                 write_statistics=True,
+                write_batch_size=1024 * 10,
+                data_page_size=1024 * 1024 * 5,
                 schema=first_buffer.schema,
             ) as writer:
                 append_buffer(fd, writer, first_buffer, roll_up_path, target_size)
