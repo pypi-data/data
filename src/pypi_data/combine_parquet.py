@@ -102,10 +102,11 @@ async def fill_buffer(
             batch: RecordBatch
 
             start_hash_time = time.perf_counter_ns()
-            digest = hashlib.sha256()
-            for item in batch.column("path").cast(pyarrow.large_binary()).to_pylist():
-                digest.update(item)
-            digest = digest.hexdigest()
+
+            # Hash the path column with zero copies.
+            data_buffer = batch.column("path").cast(pyarrow.large_binary()).buffers()[1]
+            digest = hashlib.sha256(memoryview(data_buffer)).hexdigest()
+
             time_hashing_ns += time.perf_counter_ns() - start_hash_time
 
             buffer.append(((repo.number, digest), batch))
