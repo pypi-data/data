@@ -7,7 +7,7 @@ on:
   schedule:
     - cron: "0 3 * * *"
 
-#concurrency: data
+concurrency: data
 
 name: Build data
 jobs:
@@ -76,7 +76,7 @@ jobs:
       - name: Generate Repo Metadata
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        run: uv run pypi-data load-repos repos-with-packages.jsonl.gz links/
+        run: uv run pypi-data load-repos repos-with-packages.jsonl.gz links/ --limit=1
 
       - name: Upload hishel cache
         uses: actions/cache/save@v4
