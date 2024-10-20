@@ -124,7 +124,7 @@ class CodeRepository(pydantic.BaseModel):
         if response is None:
             return None
         log.info(
-            f"Downloaded parquet file with size {ByteSize(len(response.content)).human_readable(decimal=True)} MB"
+            f"Downloaded parquet file with size {ByteSize(len(response.content)).human_readable(decimal=True)}"
         )
         return response.content
 
