@@ -90,8 +90,8 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
         int(total_memory * 0.75),  # 75% of total memory
         1024 * 1024 * 1024 * 10,  # 10 GB
     )
-    log.info(f"Total system memory: {total_memory / 1024 / 1024} MB")
-    log.info(f"Configured buffer size: {max_buffer_size / 1024 / 1024} MB")
+    log.info(f"Total system memory: {total_memory / 1024 / 1024:.1f} MB")
+    log.info(f"Configured buffer size: {max_buffer_size / 1024 / 1024:.1f} MB")
 
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
