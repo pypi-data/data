@@ -54,7 +54,7 @@ def github_client(github_token) -> Github:
 
 @contextlib.contextmanager
 def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None, None]:
-    buffer_size = 1024 * 1024 * 50
+    buffer_size = 1024 * 1024 * 10  # 10 MB
 
     if path.suffix == ".gz":
         with gzip.open(path, mode) as gzip_fd:
