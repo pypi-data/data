@@ -1,3 +1,4 @@
+import asyncio
 from datetime import datetime
 from http import HTTPStatus
 from typing import Self
@@ -111,7 +112,9 @@ class CodeRepository(pydantic.BaseModel):
         if response is None:
             return None
         try:
-            index = RepositoryIndex.model_validate_json(response.content)
+            index = await asyncio.to_thread(
+                RepositoryIndex.model_validate_json, response.content
+            )
             return self.model_copy(update={"index": index})
         except Exception as e:
             raise RuntimeError(
@@ -125,9 +128,11 @@ class CodeRepository(pydantic.BaseModel):
         log.info(
             f"Loading parquet file with size {len(response.content) / 1024 / 1024:.1f} MB"
         )
-        return pq.read_table(
-            pa.py_buffer(memoryview(response.content))
-        ).combine_chunks()
+        return await asyncio.to_thread(
+            lambda: pq.read_table(
+                pa.py_buffer(memoryview(response.content))
+            ).combine_chunks()
+        )
 
     def without_index(self) -> Self:
         return self.model_copy(update={"index": None})

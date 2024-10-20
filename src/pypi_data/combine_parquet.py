@@ -26,7 +26,7 @@ def append_buffer(
 ) -> bool:
     initial_size = roll_up_path.stat().st_size
     writer.write_batch(batch)
-    # fd.flush()
+    fd.flush()
     end_size = roll_up_path.stat().st_size
     written_size = end_size - initial_size
     log.info(
