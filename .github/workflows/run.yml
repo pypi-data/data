@@ -135,8 +135,9 @@ jobs:
               release_id: ${{ steps.create-release.outputs.id }},
             });
             const assets = response.data;
+            const urls = assets.filter(asset => asset.name.endsWith(".parquet")).map(asset => asset.browser_download_url)
             // Save the download links to a file
-            require('fs').writeFileSync('links/dataset.txt', assets.map(asset => asset.browser_download_url).join('\n'));
+            require('fs').writeFileSync('links/dataset.txt', urls.join('\n'));
 
       - uses: EndBug/add-and-commit@v9
         with:
