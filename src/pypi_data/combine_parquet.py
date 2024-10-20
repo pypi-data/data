@@ -12,6 +12,7 @@ from pypi_data.datasets import CodeRepository
 log = structlog.get_logger()
 
 TARGET_SIZE = 1024 * 1024 * 1024 * 1.8  # 1.8 GB
+FILL_BUFFER_COUNT = 4  # Download this many datasets at once
 
 
 def append_buffer(writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Path) -> bool:
@@ -27,7 +28,7 @@ def append_buffer(writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Pa
 async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client: httpx.AsyncClient,
                       repositories: list[CodeRepository],
                       path: Path) -> bool:
-    for _ in range(4):
+    for _ in range(FILL_BUFFER_COUNT):
         if not repositories:
             break
         repo = repositories.pop(0)
