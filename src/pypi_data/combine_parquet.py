@@ -66,7 +66,7 @@ async def fill_buffer(
             log.info(f"Failed to download {repo.dataset_url}")
             continue
         log.info(f"Downloaded, reading {path}")
-        table = pq.read_table(path, memory_map=True).combine_chunks()
+        table = pq.read_table(path, memory_map=False).combine_chunks()
 
         for idx, batch in enumerate(table.to_batches(max_chunksize=2_500_000)):
             batch: RecordBatch
