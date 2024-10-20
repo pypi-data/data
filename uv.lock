@@ -24,6 +24,18 @@ wheels = [
 ]
 
 [[package]]
+name = "anysqlite"
+version = "0.0.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0f/4b/cd5d66b9f87e773bc71344a368b9472987e33514e6627e28342b9c3e7c43/anysqlite-0.0.5.tar.gz", hash = "sha256:9dfcf87baf6b93426ad1d9118088c41dbf24ef01b445eea4a5d486bac2755cce", size = 3432 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0b/31/349eae2bc9d9331dd8951684cf94528d91efaa71129dc30822ac111dfc66/anysqlite-0.0.5-py3-none-any.whl", hash = "sha256:cb345dc4f76f6b37f768d7a0b3e9cf5c700dfcb7a6356af8ab46a11f666edbe7", size = 3907 },
+]
+
+[[package]]
 name = "certifi"
 version = "2024.8.30"
 source = { registry = "https://pypi.org/simple" }
@@ -147,6 +159,24 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f5/38/3af3d3633a34a3316095b39c8e8fb4853a28a536e55d347bd8d8e9a14b03/h11-0.14.0.tar.gz", hash = "sha256:8f19fbbe99e72420ff35c00b27a34cb9937e902a8b810e2c88300c6f0a3b699d", size = 100418 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/95/04/ff642e65ad6b90db43e668d70ffb6736436c7ce41fcc549f4e9472234127/h11-0.14.0-py3-none-any.whl", hash = "sha256:e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761", size = 58259 },
+]
+
+[[package]]
+name = "hishel"
+version = "0.0.33"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ce/cf/d4414a62b77d1f3f58a0d812be20efe4a647fc1e103cec7c9ac559efe576/hishel-0.0.33.tar.gz", hash = "sha256:ab5b2661d5e2252f305fd0fb20e8c76bfab3ea73458f20f2591c53c37b270089", size = 35331 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fa/3e/0ca767da4715abad09eda4ffcc3c8b69684cab271a055d856a424c9f5f1d/hishel-0.0.33-py3-none-any.whl", hash = "sha256:6e6c6cdaf432ff4c4981e7792ef7d1fa4c8ede58b9dbbcefb9ab3fc9770f2a07", size = 41654 },
+]
+
+[package.optional-dependencies]
+sqlite = [
+    { name = "anysqlite" },
 ]
 
 [[package]]
@@ -325,6 +355,7 @@ name = "pypi-data"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "hishel", extra = ["sqlite"] },
     { name = "httpx" },
     { name = "pyarrow" },
     { name = "pydantic" },
@@ -339,6 +370,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "hishel", extras = ["sqlite"], specifier = ">=0.0.33" },
     { name = "httpx", specifier = ">=0.27.2" },
     { name = "pyarrow", specifier = ">=17.0.0" },
     { name = "pydantic", specifier = ">=2.9.2" },

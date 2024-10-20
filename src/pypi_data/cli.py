@@ -12,6 +12,7 @@ from typing import (
     Literal,
 )
 
+import hishel
 import httpx
 import requests
 import structlog
@@ -33,6 +34,14 @@ log = structlog.get_logger()
 GithubToken = Annotated[str, typer.Option(envvar="GITHUB_TOKEN")]
 
 Repos = RootModel[list[CodeRepository]]
+
+cache_storage = hishel.AsyncSQLiteStorage()
+cache_controller = hishel.Controller(
+    cacheable_methods=["GET"],
+    cacheable_status_codes=[200],
+    allow_stale=True,
+    always_revalidate=True,
+)
 
 
 def get_dataset_urls(github: Github) -> Iterable[tuple[str, str, str]]:
@@ -118,7 +127,9 @@ async def load_indexes(
 ) -> list[CodeRepository]:
     semaphore = asyncio.Semaphore(concurrency)
     results = []
-    async with httpx.AsyncClient() as client:
+    async with hishel.AsyncCacheClient(
+        controller=cache_controller, storage=cache_storage
+    ) as client:
         with tqdm.tqdm(
             total=len(repositories), mininterval=1, desc="Loading indexes"
         ) as pbar:
