@@ -26,9 +26,11 @@ def append_buffer(writer: pq.ParquetWriter, batch: RecordBatch, roll_up_path: Pa
 
 async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client: httpx.AsyncClient,
                       repo: CodeRepository,
-                      path: Path):
+                      path: Path) -> bool:
     log.info(f"Downloading {repo.dataset_url}")
-    await repo.download_dataset(client, path)
+    if await repo.download_dataset(client, path) is False:
+        log.info(f"Failed to download {repo.dataset_url}")
+        return False
     log.info(f'Downloaded, reading {path}')
     table = pq.read_table(path, memory_map=True).combine_chunks()
 
@@ -43,6 +45,7 @@ async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client:
             ((repo.number, digest), batch)
         )
         start += batch.num_rows
+    return True
 
 
 def hash_parquet_keys(keys: list[tuple[int, str]]) -> str:
@@ -59,8 +62,8 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
 
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
-            repo = repositories.pop(0)
-            await fill_buffer(buffer, client, repo, repo_file)
+            if await fill_buffer(buffer, client, repositories.pop(0), repo_file) is False:
+                continue
 
             roll_up_path = directory / f"merged-{roll_up_count}.parquet"
 
@@ -78,8 +81,8 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
 
                 while buffer or repositories:
                     if not buffer:
-                        repo = repositories.pop(0)
-                        await fill_buffer(buffer, client, repo, repo_file)
+                        if await fill_buffer(buffer, client, repositories.pop(0), repo_file) is None:
+                            continue
 
                     key, batch = buffer.pop(0)
                     keys.append(key)

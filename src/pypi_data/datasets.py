@@ -65,6 +65,17 @@ class CodeRepository(pydantic.BaseModel):
             if repo.name.startswith("pypi-mirror-")
         ]
 
+    def check_response(self, response: httpx.Response, follow_redirects: bool):
+        try:
+            response.raise_for_status()
+        except httpx.HTTPStatusError as e:
+            if e.response.status_code in (HTTPStatus.NOT_FOUND, HTTPStatus.UNAVAILABLE_FOR_LEGAL_REASONS):
+                log.warning(f"URL {response.url} not found for {self.name}")
+                return None
+            if not follow_redirects and e.response.is_redirect:
+                return e.response
+            raise
+
     async def _make_request(self, client: httpx.AsyncClient, url: HttpUrl,
                             follow_redirects: bool = True) -> httpx.Response | None:
         async for attempt in AsyncRetrying(stop=stop_after_attempt(3),
@@ -72,16 +83,7 @@ class CodeRepository(pydantic.BaseModel):
             with attempt:
                 response = await client.get(str(url), headers={'Accept-Encoding': 'gzip'},
                                             follow_redirects=follow_redirects)
-                try:
-                    response.raise_for_status()
-                except httpx.HTTPStatusError as e:
-                    if e.response.status_code in (HTTPStatus.NOT_FOUND, HTTPStatus.UNAVAILABLE_FOR_LEGAL_REASONS):
-                        log.warning(f"URL {url} not found for {self.name}")
-                        return None
-                    if not follow_redirects and e.response.is_redirect:
-                        return e.response
-                    raise
-        return response
+                return self.check_response(response, follow_redirects)
 
     async def get_temporary_dataset_url(self, client: httpx.AsyncClient) -> str | None:
         response = await self._make_request(client, self.dataset_url, follow_redirects=True)
@@ -98,11 +100,15 @@ class CodeRepository(pydantic.BaseModel):
         except Exception as e:
             raise RuntimeError(f'{self.index_url} failed to parse: {len(response.content)=}') from e
 
-    async def download_dataset(self, client: httpx.AsyncClient, output: Path):
-        async with client.stream("GET", str(self.dataset_url)) as resp:
+    async def download_dataset(self, client: httpx.AsyncClient, output: Path) -> bool:
+        async with client.stream("GET", str(self.dataset_url)) as response:
+            if self.check_response(response, follow_redirects=True) is None:
+                return False
+
             with output.open("wb") as f:
-                async for buffer in resp.aiter_bytes():
+                async for buffer in response.aiter_bytes():
                     f.write(buffer)
+            return True
 
     def without_index(self) -> Self:
         return self.model_copy(update={'index': None})
