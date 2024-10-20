@@ -33,9 +33,6 @@ def append_buffer(
     fd.flush()
     end_size = roll_up_path.stat().st_size
     written_size = end_size - initial_size
-    disk_usage = psutil.disk_usage(str(roll_up_path.absolute()))
-    cpu_usage = psutil.cpu_percent(percpu=True)
-
     log.info(
         f"Wrote {batch.num_rows} rows "
         f"Batch Size: {ByteSize(batch.nbytes).human_readable(decimal=True)} "
@@ -43,15 +40,29 @@ def append_buffer(
         f"End Size: {ByteSize(end_size).human_readable(decimal=True)} "
         f"Written: {ByteSize(written_size).human_readable(decimal=True)}"
     )
+    log_system_stats(roll_up_path.absolute())
+    return end_size >= target_size
+
+
+def log_system_stats(path: Path):
+    disk_usage = psutil.disk_usage(str(path))
+    cpu_usage = psutil.cpu_percent(percpu=True)
+    process_mem_percent = psutil.Process().memory_percent()
+    mem = psutil.virtual_memory()
     log.info(
-        f"System Stats: "
-        f"cpu={cpu_usage}% "
+        f"System: cpu={cpu_usage} "
+        f"process_mem_percent={process_mem_percent}% "
+        f"mem={ByteSize(mem.total).human_readable(decimal=True)} "
+        f"mem_used={ByteSize(mem.used).human_readable(decimal=True)} "
+        f"mem_percent={mem.percent}%"
+    )
+    log.info(
+        f"Disk: "
         f"total={ByteSize(disk_usage.total).human_readable(decimal=True)} "
         f"used={ByteSize(disk_usage.used).human_readable(decimal=True)} "
         f"free={ByteSize(disk_usage.free).human_readable(decimal=True)} "
         f"percent={disk_usage.percent}%"
     )
-    return end_size >= target_size
 
 
 def buffer_mem_size(buffer: Deque[tuple[tuple[int, str], RecordBatch]]) -> int:
