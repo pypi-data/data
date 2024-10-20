@@ -39,7 +39,6 @@ async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client:
         log.info(f'Downloaded, reading {path}')
         table = pq.read_table(path, memory_map=True).combine_chunks()
 
-        start = 0
         for idx, batch in enumerate(table.to_batches(max_chunksize=2_000_000)):
             batch: RecordBatch
             digest = hashlib.sha256()
@@ -49,7 +48,6 @@ async def fill_buffer(buffer: list[tuple[tuple[int, str], RecordBatch]], client:
             buffer.append(
                 ((repo.number, digest), batch)
             )
-            start += batch.num_rows
 
     return bool(buffer)
 
