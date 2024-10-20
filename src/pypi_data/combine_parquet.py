@@ -51,7 +51,7 @@ def log_system_stats(path: Path):
     mem = psutil.virtual_memory()
     log.info(
         f"System: cpu={cpu_usage} "
-        f"process_mem_percent={process_mem_percent}% "
+        f"process_mem_percent={process_mem_percent:1.f}% "
         f"mem={ByteSize(mem.total).human_readable(decimal=True)} "
         f"mem_used={ByteSize(mem.used).human_readable(decimal=True)} "
         f"mem_percent={mem.percent}%"
@@ -61,7 +61,7 @@ def log_system_stats(path: Path):
         f"total={ByteSize(disk_usage.total).human_readable(decimal=True)} "
         f"used={ByteSize(disk_usage.used).human_readable(decimal=True)} "
         f"free={ByteSize(disk_usage.free).human_readable(decimal=True)} "
-        f"percent={disk_usage.percent}%"
+        f"percent={disk_usage.percent:1.f}%"
     )
 
 
