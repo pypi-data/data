@@ -25,6 +25,8 @@ jobs:
           rm -rf /opt/ghc/ &
           rm -rf /opt/hostedtoolcache/CodeQL/ &
           sudo docker image prune --all --force &
+          
+          df -h
 
       - name: checkout
         uses: actions/checkout@v4
