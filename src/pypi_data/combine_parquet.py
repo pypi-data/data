@@ -34,6 +34,7 @@ def append_buffer(
     end_size = roll_up_path.stat().st_size
     written_size = end_size - initial_size
     disk_usage = psutil.disk_usage(str(roll_up_path.absolute()))
+    cpu_usage = psutil.cpu_percent(percpu=True)
 
     log.info(
         f"Wrote {batch.num_rows} rows "
@@ -43,7 +44,8 @@ def append_buffer(
         f"Written: {ByteSize(written_size).human_readable(decimal=True)}"
     )
     log.info(
-        f"Disk: "
+        f"System Stats: "
+        f"cpu={cpu_usage}% "
         f"total={ByteSize(disk_usage.total).human_readable(decimal=True)} "
         f"used={ByteSize(disk_usage.used).human_readable(decimal=True)} "
         f"free={ByteSize(disk_usage.free).human_readable(decimal=True)} "
