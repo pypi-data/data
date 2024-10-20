@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Deque
 
 import httpx
+import psutil
 import pyarrow
 import pyarrow.parquet as pq
 import structlog
@@ -14,7 +15,6 @@ from pypi_data.datasets import CodeRepository
 log = structlog.get_logger()
 
 TARGET_SIZE = 1024 * 1024 * 1024 * 1.8  # 1.8 GB
-FILL_BUFFER_MEM_SIZE = 1024 * 1024 * 1024 * 5  # 5 GB
 IO_BUFFER_SIZE = 1024 * 1024 * 50  # 50 MB
 
 
@@ -43,12 +43,9 @@ def buffer_mem_size(buffer: Deque[tuple[tuple[int, str], RecordBatch]]) -> int:
     return sum(batch.nbytes for (_, _), batch in buffer)
 
 
-def buffer_at_capacity(size: int) -> bool:
-    return size >= FILL_BUFFER_MEM_SIZE
-
-
 async def fill_buffer(
     buffer: Deque[tuple[tuple[int, str], RecordBatch]],
+    max_buffer_size: int,
     client: httpx.AsyncClient,
     repositories: Deque[CodeRepository],
     path: Path,
@@ -56,7 +53,7 @@ async def fill_buffer(
     while repositories:
         buffer_size = buffer_mem_size(buffer)
         log.info(f"Buffer size: {buffer_size / 1024 / 1024:.1f} MB")
-        if buffer_at_capacity(buffer_size):
+        if buffer_size >= max_buffer_size:
             log.info(f"Buffer filled with {len(buffer)} entries")
             break
 
@@ -92,9 +89,22 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
     buffer: Deque[tuple[tuple[int, str], RecordBatch]] = deque()
     repositories: Deque[CodeRepository] = deque(repositories)
 
+    total_memory = psutil.virtual_memory().total
+    max_buffer_size = min(
+        int(total_memory * 0.75),  # 75% of total memory
+        1024 * 1024 * 1024 * 10,  # 10 GB
+    )
+    log.info(f"Total system memory: {total_memory / 1024 / 1024} MB")
+    log.info(f"Configured buffer size: {max_buffer_size / 1024 / 1024} MB")
+
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
-            if await fill_buffer(buffer, client, repositories, repo_file) is False:
+            if (
+                await fill_buffer(
+                    buffer, max_buffer_size, client, repositories, repo_file
+                )
+                is False
+            ):
                 continue
 
             roll_up_path = directory / f"merged-{roll_up_count}.parquet"
@@ -117,7 +127,9 @@ async def combine_parquet(repositories: list[CodeRepository], directory: Path):
 
                 while buffer or repositories:
                     if not buffer:
-                        res = await fill_buffer(buffer, client, repositories, repo_file)
+                        res = await fill_buffer(
+                            buffer, max_buffer_size, client, repositories, repo_file
+                        )
                         if res is None:
                             continue
 
