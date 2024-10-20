@@ -57,7 +57,6 @@ async def fill_buffer(
         time_hashing_ns = 0
         time_iterating_ns = 0
         time_loading_ns = 0
-        time_downloading_ns = 0
 
         start_time_ns = time.perf_counter_ns()
 

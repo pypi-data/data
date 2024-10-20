@@ -143,10 +143,12 @@ async def load_indexes(
 
             async with asyncio.TaskGroup() as tg:
                 tasks = [tg.create_task(_run(repo)) for repo in repositories]
-                for res in tasks:
-                    res = await res
-                    if res is not None:
-                        results.append(res)
+
+            for res in tasks:
+                res = res.result()
+                if res is not None:
+                    results.append(res)
+
     log.info(f"Fetched {len(tasks)} repository indexes")
     return results
 
