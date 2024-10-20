@@ -53,15 +53,14 @@ def github_client(github_token) -> Github:
 
 
 @contextlib.contextmanager
-def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None, None]:
-    buffer_size = 1024 * 1024 * 10  # 10 MB
-
+def open_path(
+    path: Path, mode: Literal["wb", "wt", "rb", "rt"]
+) -> Generator[BinaryIO, None, None]:
     if path.suffix == ".gz":
         with gzip.open(path, mode) as gzip_fd:
-            with io.BufferedWriter(gzip_fd, buffer_size=buffer_size) as buffered_fd:
-                yield buffered_fd
+            yield gzip_fd
     else:
-        with path.open(mode, buffering=buffer_size) as fd:
+        with path.open(mode, buffering=io.DEFAULT_BUFFER_SIZE) as fd:
             yield fd
 
     log.info(
@@ -84,12 +83,6 @@ def load_repos(
     repos = asyncio.run(load_indexes(repos))
     repos = sorted(repos, key=lambda r: r.number)
 
-    log.info("Loaded: writing file")
-    with open_path(repos_file, mode="wb") as fd:
-        for repo in tqdm.tqdm(repos, mininterval=1, desc="Writing repos"):
-            fd.write(repo.model_dump_json().encode("utf-8"))
-            fd.write(b"\n")
-
     log.info("Writing links")
 
     (links_path / "dataset.txt").write_text(
@@ -109,6 +102,15 @@ def load_repos(
             indent=2, exclude_none=True
         )
     )
+
+    log.info("Serializing data")
+    serialized = [
+        repo.model_dump_json() + "\n"
+        for repo in tqdm.tqdm(repos, mininterval=1, desc="Serializing")
+    ]
+
+    with open_path(repos_file, mode="wt") as fd:
+        fd.writelines(tqdm.tqdm(serialized, mininterval=1, desc="Writing"))
 
 
 async def load_indexes(
