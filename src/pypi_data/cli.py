@@ -89,7 +89,7 @@ def load_repos(
 
     log.info("Loaded: writing file")
     with open_path(repos_file, mode="wb") as fd:
-        for repo in tqdm.tqdm(repos, mininterval=1):
+        for repo in tqdm.tqdm(repos, mininterval=1, desc="Writing repos"):
             fd.write(repo.model_dump_json().encode("utf-8"))
             fd.write(b"\n")
 
@@ -139,7 +139,9 @@ def load_repos(
     log.info("Writing package index")
 
     with open_path(packages_file, mode="wb") as fd:
-        for package_index in tqdm.tqdm(packages, mininterval=1):
+        for package_index in tqdm.tqdm(
+            packages, mininterval=1, desc="Writing package index"
+        ):
             fd.write(package_index.model_dump_json().encode("utf-8"))
             fd.write(b"\n")
 
@@ -150,7 +152,9 @@ async def load_indexes(
     semaphore = asyncio.Semaphore(concurrency)
     results = []
     async with httpx.AsyncClient() as client:
-        with tqdm.tqdm(total=len(repositories), mininterval=1) as pbar:
+        with tqdm.tqdm(
+            total=len(repositories), mininterval=1, desc="Loading indexes"
+        ) as pbar:
 
             async def _run(r: CodeRepository) -> CodeRepository | None:
                 async with semaphore:
@@ -225,7 +229,9 @@ async def resolve_dataset_redirects(
 ) -> list[str]:
     semaphore = asyncio.Semaphore(concurrency)
     async with httpx.AsyncClient() as client:
-        with tqdm.tqdm(total=len(repositories), mininterval=1) as pbar:
+        with tqdm.tqdm(
+            total=len(repositories), mininterval=1, desc="Resolving redirects"
+        ) as pbar:
 
             async def _run(r: CodeRepository) -> str | None:
                 async with semaphore:
