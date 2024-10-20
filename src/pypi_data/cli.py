@@ -1,8 +1,17 @@
 import asyncio
 import contextlib
 import gzip
+from collections import defaultdict
 from pathlib import Path
-from typing import Annotated, Iterable, Optional, BinaryIO, Generator, Literal
+from typing import (
+    Annotated,
+    Iterable,
+    Optional,
+    BinaryIO,
+    Generator,
+    Literal,
+    DefaultDict,
+)
 
 import httpx
 import requests
@@ -14,7 +23,7 @@ from github import Github
 from pydantic import RootModel
 
 from pypi_data.combine_parquet import combine_parquet
-from pypi_data.datasets import CodeRepository
+from pypi_data.datasets import CodeRepository, PackageIndexPackage, PackageIndex
 
 app = typer.Typer()
 session = requests.Session()
@@ -62,6 +71,7 @@ def open_path(path: Path, mode: Literal["wb", "rb"]) -> Generator[BinaryIO, None
 def load_repos(
     github_token: GithubToken,
     repos_file: Path,
+    packages_file: Path,
     links_path: Path,
     limit: Annotated[Optional[int], typer.Option()] = None,
 ):
@@ -73,12 +83,13 @@ def load_repos(
     repos = asyncio.run(load_indexes(repos))
     sorted_repos = sorted(repos, key=lambda r: r.number)
 
+    log.info("Loaded: writing file")
     with open_path(repos_file, mode="wb") as fd:
         for repo in repos:
             fd.write(repo.model_dump_json().encode("utf-8"))
             fd.write(b"\n")
 
-    log.info("Loaded: writing links")
+    log.info("Writing links")
 
     (links_path / "dataset.txt").write_text(
         "\n".join(str(repo.dataset_url) for repo in sorted_repos)
@@ -97,6 +108,36 @@ def load_repos(
             indent=2, exclude_none=True
         )
     )
+
+    log.info("Creating package index")
+
+    package_map: DefaultDict[str, list[PackageIndexPackage]] = defaultdict(list)
+
+    for repo in sorted_repos:
+        for package in repo.index.packages:
+            package_map[package.project_name].append(
+                PackageIndexPackage(
+                    project_version=package.project_version,
+                    url=package.url,
+                    upload_time=package.upload_time,
+                    repository_index=repo.number,
+                )
+            )
+
+    packages = []
+
+    for package_name, package_uploads in package_map.items():
+        package_uploads.sort(key=lambda p: p.upload_time)
+        packages.append(PackageIndex(name=package_name, versions=package_uploads))
+
+    packages.sort(key=lambda p: p.name)
+
+    log.info("Writing package index")
+
+    with open_path(packages_file, mode="wb") as fd:
+        for package_index in packages:
+            fd.write(package_index.model_dump_json().encode("utf-8"))
+            fd.write(b"\n")
 
 
 async def load_indexes(

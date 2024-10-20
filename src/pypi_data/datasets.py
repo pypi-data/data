@@ -13,6 +13,18 @@ from tenacity import AsyncRetrying, stop_after_attempt, wait_random_exponential
 log = structlog.get_logger()
 
 
+class PackageIndexPackage(pydantic.BaseModel):
+    project_version: str
+    url: HttpUrl
+    upload_time: datetime
+    repository_index: int
+
+
+class PackageIndex(pydantic.BaseModel):
+    name: str
+    versions: list[PackageIndexPackage]
+
+
 class RepositoryPackage(pydantic.BaseModel):
     project_name: str
     project_version: str
@@ -113,7 +125,6 @@ class CodeRepository(pydantic.BaseModel):
             return None
         try:
             index = RepositoryIndex.model_validate_json(response.content)
-            index.packages.sort(key=lambda p: p.url)
             return self.model_copy(update={"index": index})
         except Exception as e:
             raise RuntimeError(
