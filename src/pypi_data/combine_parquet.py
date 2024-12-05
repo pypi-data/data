@@ -174,6 +174,8 @@ async def combine_parquet(
         f"Configured buffer size: {ByteSize(max_buffer_size).human_readable(decimal=True)}"
     )
 
+    schema_hack = pa.schema([("repository", pa.int64())])
+
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
             if (
@@ -199,7 +201,9 @@ async def combine_parquet(
                 write_statistics=True,
                 write_batch_size=1024 * 10,
                 data_page_size=1024 * 1024 * 5,
-                schema=first_buffer.schema,
+                schema=pa.unify_schemas(
+                    [first_buffer.schema, schema_hack], promote_options="permissive"
+                ),
             ) as writer:
                 append_buffer(fd, writer, first_buffer, roll_up_path, target_size)
 
