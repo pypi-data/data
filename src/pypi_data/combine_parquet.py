@@ -22,11 +22,11 @@ IO_BUFFER_SIZE = 1024 * 1024 * 50  # 50 MB
 
 
 def append_buffer(
-    fd: pyarrow.BufferOutputStream,
-    writer: pq.ParquetWriter,
-    batch: RecordBatch,
-    roll_up_path: Path,
-    target_size: int,
+        fd: pyarrow.BufferOutputStream,
+        writer: pq.ParquetWriter,
+        batch: RecordBatch,
+        roll_up_path: Path,
+        target_size: int,
 ) -> bool:
     initial_size = roll_up_path.stat().st_size
     writer.write_batch(batch)
@@ -70,12 +70,12 @@ def buffer_mem_size(buffer: Deque[tuple[tuple[int, str], RecordBatch]]) -> int:
 
 
 async def fill_buffer(
-    buffer: Deque[tuple[tuple[int, str], RecordBatch]],
-    max_buffer_size: int,
-    client: httpx.AsyncClient,
-    repositories: Deque[CodeRepository],
-    directory: Path,
-    schema_merge: pa.Schema,
+        buffer: Deque[tuple[tuple[int, str], RecordBatch]],
+        max_buffer_size: int,
+        client: httpx.AsyncClient,
+        repositories: Deque[CodeRepository],
+        directory: Path,
+        schema_merge: pa.Schema,
 ) -> bool:
     while repositories:
         time_hashing_ns = 0
@@ -155,10 +155,10 @@ def hash_parquet_keys(keys: list[tuple[int, str]]) -> str:
 
 
 async def combine_parquet(
-    repositories: list[CodeRepository],
-    directory: Path,
-    max_buffer_size: ByteSize,
-    target_size: ByteSize,
+        repositories: list[CodeRepository],
+        directory: Path,
+        max_buffer_size: ByteSize,
+        target_size: ByteSize,
 ):
     directory.mkdir(exist_ok=True)
 
@@ -183,15 +183,15 @@ async def combine_parquet(
     async with httpx.AsyncClient(follow_redirects=True) as client:
         while repositories:
             if (
-                await fill_buffer(
-                    buffer,
-                    max_buffer_size,
-                    client,
-                    repositories,
-                    directory,
-                    schema_merge,
-                )
-                is False
+                    await fill_buffer(
+                        buffer,
+                        max_buffer_size,
+                        client,
+                        repositories,
+                        directory,
+                        schema_merge,
+                    )
+                    is False
             ):
                 continue
 
@@ -223,7 +223,6 @@ async def combine_parquet(
                     fd,
                     compression="zstd",
                     compression_level=3,
-                    write_statistics=True,
                     write_batch_size=1024 * 20,
                     data_page_size=1024 * 1024 * 10,
                     schema=pa.unify_schemas(
@@ -231,6 +230,13 @@ async def combine_parquet(
                         promote_options="permissive",
                     ),
                     version='2.6',
+                    write_statistics=[
+                        'project_name',
+                        'project_version',
+                        'project_release',
+                        'repository',
+                        'uploaded_on',
+                    ],
                     use_dictionary=False,
                     column_encoding={
                         'project_name': 'RLE_DICTIONARY',
