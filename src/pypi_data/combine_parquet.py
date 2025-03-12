@@ -237,9 +237,9 @@ async def combine_parquet(
                     ],
                     use_dictionary=False,
                     column_encoding={
-                        'project_name': 'RLE_DICTIONARY',
-                        'project_version': 'RLE_DICTIONARY',
-                        'project_release': 'RLE_DICTIONARY',
+                        #'project_name': 'RLE_DICTIONARY',
+                        #'project_version': 'RLE_DICTIONARY',
+                        #'project_release': 'RLE_DICTIONARY',
                         'uploaded_on': 'DELTA_BINARY_PACKED',
 
                         'path': 'DELTA_BYTE_ARRAY',
@@ -251,7 +251,7 @@ async def combine_parquet(
                         'skip_reason': 'DELTA_LENGTH_BYTE_ARRAY',
 
                         'lines': 'DELTA_BINARY_PACKED',
-                        'repository': 'RLE_DICTIONARY',
+                        #'repository': 'RLE_DICTIONARY',
                     }
                 ) as writer,
             ):
