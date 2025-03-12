@@ -18,9 +18,6 @@ from pypi_data.datasets import CodeRepository
 
 log = structlog.get_logger()
 
-IO_BUFFER_SIZE = 1024 * 1024 * 50  # 50 MB
-
-
 def append_buffer(
         fd: pyarrow.BufferOutputStream,
         writer: pq.ParquetWriter,
@@ -218,7 +215,7 @@ async def combine_parquet(
 
             with (
                 pyarrow.output_stream(
-                    roll_up_path, compression=None, buffer_size=IO_BUFFER_SIZE
+                    roll_up_path, compression=None, buffer_size=None
                 ) as fd,
                 pq.ParquetWriter(
                     fd,
