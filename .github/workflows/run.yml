@@ -13,7 +13,8 @@ name: Build data
 jobs:
   build-data:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 360
+
     permissions:
       contents: write
       packages: write
@@ -96,6 +97,7 @@ jobs:
         run: rm repos-with-packages.jsonl.gz
 
       - name: Create dataset
+        timeout-minutes: 360
         run: uv run pypi-data merge-datasets links/repositories.json dataset/
 
       - name: Debug
