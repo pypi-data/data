@@ -68,24 +68,10 @@ jobs:
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
           revoke: false
 
-      - name: Download hishel cache
-        uses: actions/cache/restore@v4
-        id: hisel-cache
-        with:
-          path: .hishel.sqlite
-          key: ${{ runner.os }}-hishel-${{ hashFiles('links/*.json') }}
-
       - name: Generate Repo Metadata
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: uv run pypi-data load-repos repos-with-packages.jsonl.gz links/
-
-      - name: Upload hishel cache
-        uses: actions/cache/save@v4
-        if: steps.hisel-cache.outputs.cache-hit != 'true'
-        with:
-          path: .hishel.sqlite
-          key: ${{ steps.hisel-cache.outputs.cache-primary-key }}
 
       - name: Upload Repos with packages
         uses: shogo82148/actions-upload-release-asset@v1
