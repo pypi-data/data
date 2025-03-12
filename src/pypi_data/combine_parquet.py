@@ -42,11 +42,15 @@ def append_buffer(
     return end_size >= target_size
 
 
-def log_system_stats(path: Path):
+def log_system_stats(path: Path, message: str = ''):
     cpu_usage = psutil.cpu_percent(percpu=True)
     process_mem_percent = psutil.Process().memory_percent()
     mem = psutil.virtual_memory()
+    if message:
+        message = message + ' '
+
     log.info(
+        f"{message}"
         f"System: cpu={cpu_usage} "
         f"process_mem_percent={process_mem_percent:.1f}% "
         f"mem={ByteSize(mem.total).human_readable(decimal=True)} "
@@ -55,6 +59,7 @@ def log_system_stats(path: Path):
     )
     disk_usage = psutil.disk_usage(str(path))
     log.info(
+        f"{message}"
         f"Disk: "
         f"total={ByteSize(disk_usage.total).human_readable(decimal=True)} "
         f"used={ByteSize(disk_usage.used).human_readable(decimal=True)} "
@@ -100,17 +105,19 @@ async def fill_buffer(
 
         start_load_time = time.perf_counter_ns()
 
+        log_system_stats(directory, message="Creating table")
         table = await asyncio.to_thread(
             lambda: pq.read_table(
                 pa.py_buffer(memoryview(dataset_bytes))
             ).combine_chunks()
         )
         del dataset_bytes
+        log_system_stats(directory, message="Casting")
         table_batches = table.cast(
             pa.unify_schemas([table.schema, schema_merge], promote_options="permissive")
         ).to_batches(max_chunksize=2_500_000)
         del table
-        log.info("Combining chunks")
+        log_system_stats(directory, message="Combining chunks")
         time_loading_ns += time.perf_counter_ns() - start_load_time
 
         iterator = iter(enumerate(table_batches))
