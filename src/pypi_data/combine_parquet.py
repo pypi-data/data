@@ -83,7 +83,7 @@ async def fill_buffer(
 
         buffer_size = buffer_mem_size(buffer)
         total_row_count = sum(x[1].num_rows for x in buffer)
-        log.info(f"Buffer size: {ByteSize(buffer_size).human_readable(decimal=True)} ({total_row_count} rows)")
+        log.info(f"Buffer size: {ByteSize(buffer_size).human_readable(decimal=True)} ({total_row_count:,} rows)")
         if buffer_size >= max_buffer_size:
             log.info(f"Buffer filled with {len(buffer)} entries")
             break
