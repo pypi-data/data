@@ -52,7 +52,6 @@ def github_client(github_token) -> Github:
     g.per_page = 100
     return g
 
-
 @contextlib.contextmanager
 def open_path(
     path: Path, mode: Literal["wb", "wt", "rb", "rt"]
@@ -103,11 +102,12 @@ def load_repos(
             indent=2, exclude_none=True
         )
     )
+    import pyarrow as pa
 
-    with open_path(repos_file, mode="wt") as fd:
+    with pa.output_stream(repos_file, compression='gzip', buffer_size=io.DEFAULT_BUFFER_SIZE) as fd:
         for repo in tqdm.tqdm(repos, mininterval=1, desc="Writing"):
-            fd.write(repo.model_dump_json())
-            fd.write("\n")
+            fd.write(repo.model_dump_json().encode())
+            fd.write(b"\n")
 
 
 async def load_indexes(
