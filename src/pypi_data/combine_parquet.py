@@ -105,10 +105,12 @@ async def fill_buffer(
                 pa.py_buffer(memoryview(dataset_bytes))
             ).combine_chunks()
         )
+        del dataset_bytes
         table_batches = table.cast(
             pa.unify_schemas([table.schema, schema_merge], promote_options="permissive")
         ).to_batches(max_chunksize=2_500_000)
-        del dataset_bytes, table
+        del table
+        log.info("Combining chunks")
         time_loading_ns += time.perf_counter_ns() - start_load_time
 
         iterator = iter(enumerate(table_batches))
@@ -133,6 +135,8 @@ async def fill_buffer(
             time_hashing_ns += time.perf_counter_ns() - start_hash_time
 
             buffer.append(((repo.number, digest), batch))
+
+            log_system_stats(directory)
 
         runtime_ns = time.perf_counter_ns() - start_time_ns
 
