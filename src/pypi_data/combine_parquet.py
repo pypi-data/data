@@ -31,7 +31,7 @@ def append_buffer(
     end_size = roll_up_path.stat().st_size
     written_size = end_size - initial_size
     log.info(
-        f"Wrote {batch.num_rows} rows "
+        f"Wrote {batch.num_rows:,} rows "
         f"Batch Size: {ByteSize(batch.nbytes).human_readable(decimal=True)} "
         f"Initial Size: {ByteSize(initial_size).human_readable(decimal=True)} "
         f"End Size: {ByteSize(end_size).human_readable(decimal=True)} "
