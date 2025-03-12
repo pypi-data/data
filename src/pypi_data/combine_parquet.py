@@ -201,6 +201,20 @@ async def combine_parquet(
             first_key, first_buffer = buffer.popleft()
             keys.append(first_key)
 
+            # message root {
+            #   OPTIONAL BYTE_ARRAY project_name (STRING);
+            #   OPTIONAL BYTE_ARRAY project_version (STRING);
+            #   OPTIONAL BYTE_ARRAY project_release (STRING);
+            #   OPTIONAL INT64 uploaded_on (TIMESTAMP(MILLIS,false));
+            #   OPTIONAL BYTE_ARRAY path (STRING);
+            #   OPTIONAL BYTE_ARRAY archive_path (STRING);
+            #   OPTIONAL INT64 size (INTEGER(64,false));
+            #   OPTIONAL BYTE_ARRAY hash;
+            #   OPTIONAL BYTE_ARRAY skip_reason (STRING);
+            #   OPTIONAL INT64 lines (INTEGER(64,false));
+            #   OPTIONAL INT32 repository (INTEGER(32,false));
+            # }
+
             with (
                 pyarrow.output_stream(
                     roll_up_path, compression=None, buffer_size=IO_BUFFER_SIZE
@@ -216,6 +230,25 @@ async def combine_parquet(
                         [first_buffer.schema, schema_merge],
                         promote_options="permissive",
                     ),
+                    version='2.6',
+                    use_dictionary=False,
+                    column_encoding={
+                        'project_name': 'RLE_DICTIONARY',
+                        'project_version': 'RLE_DICTIONARY',
+                        'project_release': 'RLE_DICTIONARY',
+                        'uploaded_on': 'DELTA_BINARY_PACKED',
+
+                        'path': 'DELTA_BYTE_ARRAY',
+                        'archive_path': 'DELTA_BYTE_ARRAY',
+
+                        'size': 'DELTA_BINARY_PACKED',
+
+                        'hash': 'DELTA_LENGTH_BYTE_ARRAY',
+                        'skip_reason': 'DELTA_LENGTH_BYTE_ARRAY',
+
+                        'lines': 'DELTA_BINARY_PACKED',
+                        'repository': 'RLE_DICTIONARY',
+                    }
                 ) as writer,
             ):
                 append_buffer(fd, writer, first_buffer, roll_up_path, target_size)
