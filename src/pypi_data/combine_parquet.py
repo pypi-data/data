@@ -1,5 +1,6 @@
 import asyncio
 import hashlib
+import io
 import time
 from collections import deque
 from pathlib import Path
@@ -215,7 +216,7 @@ async def combine_parquet(
 
             with (
                 pyarrow.output_stream(
-                    roll_up_path, compression=None, buffer_size=None
+                    roll_up_path, compression=None, buffer_size=io.DEFAULT_BUFFER_SIZE
                 ) as fd,
                 pq.ParquetWriter(
                     fd,
