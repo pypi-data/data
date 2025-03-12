@@ -104,14 +104,10 @@ def load_repos(
         )
     )
 
-    log.info("Serializing data")
-    serialized = [
-        repo.model_dump_json() + "\n"
-        for repo in tqdm.tqdm(repos, mininterval=1, desc="Serializing")
-    ]
-
     with open_path(repos_file, mode="wt") as fd:
-        fd.writelines(tqdm.tqdm(serialized, mininterval=1, desc="Writing"))
+        for repo in tqdm.tqdm(repos, mininterval=1, desc="Writing"):
+            fd.write(repo.model_dump_json())
+            fd.write("\n")
 
 
 async def load_indexes(
