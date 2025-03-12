@@ -222,8 +222,8 @@ async def combine_parquet(
                     fd,
                     compression="zstd",
                     compression_level=3,
-                    write_batch_size=1024 * 10,
-                    data_page_size=1024 * 1024 * 5,
+                    write_batch_size=1024 * 20,
+                    data_page_size=1024 * 1024 * 10,
                     schema=pa.unify_schemas(
                         [first_buffer.schema, schema_merge],
                         promote_options="permissive",
