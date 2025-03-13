@@ -111,7 +111,7 @@ async def fill_buffer(
         table = await asyncio.to_thread(
             lambda: pq.read_table(
                 pa.py_buffer(memoryview(dataset_bytes))
-            )#.combine_chunks()
+            ).unify_dictionaries()
         )
         del dataset_bytes
         log_system_stats(directory, message="Casting")
