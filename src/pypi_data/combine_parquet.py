@@ -234,7 +234,7 @@ async def combine_parquet(
                 pq.ParquetWriter(
                     fd,
                     compression="zstd",
-                    compression_level=3,
+                    compression_level=7,
                     write_batch_size=1024 * 20,
                     data_page_size=1024 * 1024 * 10,
                     schema=pa.unify_schemas(
