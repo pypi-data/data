@@ -2296,14 +2296,6 @@
     "number": 287
   },
   {
-    "name": "pypi-mirror-288",
-    "url": "https://github.com/pypi-data/pypi-mirror-288",
-    "ssh_url": "git@github.com:pypi-data/pypi-mirror-288.git",
-    "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-288/refs/heads/main/index.json",
-    "dataset_url": "https://github.com/pypi-data/pypi-mirror-288/releases/download/latest/dataset.parquet",
-    "number": 288
-  },
-  {
     "name": "pypi-mirror-289",
     "url": "https://github.com/pypi-data/pypi-mirror-289",
     "ssh_url": "git@github.com:pypi-data/pypi-mirror-289.git",
@@ -2598,5 +2590,61 @@
     "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-325/refs/heads/main/index.json",
     "dataset_url": "https://github.com/pypi-data/pypi-mirror-325/releases/download/latest/dataset.parquet",
     "number": 325
+  },
+  {
+    "name": "pypi-mirror-326",
+    "url": "https://github.com/pypi-data/pypi-mirror-326",
+    "ssh_url": "git@github.com:pypi-data/pypi-mirror-326.git",
+    "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-326/refs/heads/main/index.json",
+    "dataset_url": "https://github.com/pypi-data/pypi-mirror-326/releases/download/latest/dataset.parquet",
+    "number": 326
+  },
+  {
+    "name": "pypi-mirror-327",
+    "url": "https://github.com/pypi-data/pypi-mirror-327",
+    "ssh_url": "git@github.com:pypi-data/pypi-mirror-327.git",
+    "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-327/refs/heads/main/index.json",
+    "dataset_url": "https://github.com/pypi-data/pypi-mirror-327/releases/download/latest/dataset.parquet",
+    "number": 327
+  },
+  {
+    "name": "pypi-mirror-328",
+    "url": "https://github.com/pypi-data/pypi-mirror-328",
+    "ssh_url": "git@github.com:pypi-data/pypi-mirror-328.git",
+    "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-328/refs/heads/main/index.json",
+    "dataset_url": "https://github.com/pypi-data/pypi-mirror-328/releases/download/latest/dataset.parquet",
+    "number": 328
+  },
+  {
+    "name": "pypi-mirror-329",
+    "url": "https://github.com/pypi-data/pypi-mirror-329",
+    "ssh_url": "git@github.com:pypi-data/pypi-mirror-329.git",
+    "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-329/refs/heads/main/index.json",
+    "dataset_url": "https://github.com/pypi-data/pypi-mirror-329/releases/download/latest/dataset.parquet",
+    "number": 329
+  },
+  {
+    "name": "pypi-mirror-330",
+    "url": "https://github.com/pypi-data/pypi-mirror-330",
+    "ssh_url": "git@github.com:pypi-data/pypi-mirror-330.git",
+    "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-330/refs/heads/main/index.json",
+    "dataset_url": "https://github.com/pypi-data/pypi-mirror-330/releases/download/latest/dataset.parquet",
+    "number": 330
+  },
+  {
+    "name": "pypi-mirror-331",
+    "url": "https://github.com/pypi-data/pypi-mirror-331",
+    "ssh_url": "git@github.com:pypi-data/pypi-mirror-331.git",
+    "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-331/refs/heads/main/index.json",
+    "dataset_url": "https://github.com/pypi-data/pypi-mirror-331/releases/download/latest/dataset.parquet",
+    "number": 331
+  },
+  {
+    "name": "pypi-mirror-332",
+    "url": "https://github.com/pypi-data/pypi-mirror-332",
+    "ssh_url": "git@github.com:pypi-data/pypi-mirror-332.git",
+    "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-332/refs/heads/main/index.json",
+    "dataset_url": "https://github.com/pypi-data/pypi-mirror-332/releases/download/latest/dataset.parquet",
+    "number": 332
   }
 ]
