@@ -145,8 +145,6 @@ async def fill_buffer(
 
             buffer.append(((repo.number, digest), batch))
 
-            log_system_stats(directory)
-
         runtime_ns = time.perf_counter_ns() - start_time_ns
 
         log.info(
