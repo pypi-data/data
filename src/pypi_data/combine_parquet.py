@@ -1,4 +1,5 @@
 import asyncio
+import gc
 import hashlib
 import io
 import time
@@ -18,6 +19,7 @@ from pydantic import ByteSize
 from pypi_data.datasets import CodeRepository
 
 log = structlog.get_logger()
+
 
 def append_buffer(
         fd: pyarrow.BufferOutputStream,
@@ -109,7 +111,7 @@ async def fill_buffer(
         table = await asyncio.to_thread(
             lambda: pq.read_table(
                 pa.py_buffer(memoryview(dataset_bytes))
-            ).combine_chunks()
+            )#.combine_chunks()
         )
         del dataset_bytes
         log_system_stats(directory, message="Casting")
@@ -249,9 +251,9 @@ async def combine_parquet(
                     ],
                     use_dictionary=False,
                     column_encoding={
-                        #'project_name': 'RLE_DICTIONARY',
-                        #'project_version': 'RLE_DICTIONARY',
-                        #'project_release': 'RLE_DICTIONARY',
+                        # 'project_name': 'RLE_DICTIONARY',
+                        # 'project_version': 'RLE_DICTIONARY',
+                        # 'project_release': 'RLE_DICTIONARY',
                         'uploaded_on': 'DELTA_BINARY_PACKED',
 
                         'path': 'DELTA_BYTE_ARRAY',
@@ -263,13 +265,14 @@ async def combine_parquet(
                         'skip_reason': 'DELTA_LENGTH_BYTE_ARRAY',
 
                         'lines': 'DELTA_BINARY_PACKED',
-                        #'repository': 'RLE_DICTIONARY',
+                        # 'repository': 'RLE_DICTIONARY',
                     }
                 ) as writer,
             ):
                 append_buffer(fd, writer, first_buffer, roll_up_path, target_size)
 
                 while buffer or repositories:
+                    gc.collect()
                     if not buffer:
                         res = await fill_buffer(
                             buffer,
