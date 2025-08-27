@@ -2958,5 +2958,13 @@
     "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-371/refs/heads/main/index.json",
     "dataset_url": "https://github.com/pypi-data/pypi-mirror-371/releases/download/latest/dataset.parquet",
     "number": 371
+  },
+  {
+    "name": "pypi-mirror-372",
+    "url": "https://github.com/pypi-data/pypi-mirror-372",
+    "ssh_url": "git@github.com:pypi-data/pypi-mirror-372.git",
+    "index_url": "https://raw.githubusercontent.com/pypi-data/pypi-mirror-372/refs/heads/main/index.json",
+    "dataset_url": "https://github.com/pypi-data/pypi-mirror-372/releases/download/latest/dataset.parquet",
+    "number": 372
   }
 ]
